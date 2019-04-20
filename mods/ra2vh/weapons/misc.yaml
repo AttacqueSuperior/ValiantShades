@@ -104,3 +104,8 @@ DamageSparkSpawner:
 	Inherits: ^Spark
 	Projectile: BulletAS
 		Palette: effect
+
+TeslaSpark:
+	Inherits: ^Spark
+	Projectile: BulletAS
+		Palette: highlight
