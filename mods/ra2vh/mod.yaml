@@ -1,15 +1,15 @@
 Metadata:
-	Title: Red Alert 2
+	Title: Red Alert 2 - Valiant Hearts
 	Description: The Soviet Union is back!\nThis time to conquer the United States...
 	Version: {DEV_VERSION}
-	Author: the RA2 mod team
+	Author: Valiant Hearts Team
 
 PackageFormats: Mix, AudioBag
 
 Packages:
 	~^Content/ra2
 	.
-	$ra2: ra2
+	$ra2vh: ra2vh
 	./mods/common: common
 	~ra2.mix
 	~language.mix
@@ -36,80 +36,80 @@ Packages:
 	~urb.mix
 	~urban.mix
 	~audio.bag
-	ra2|bits
-	ra2|bits/cameos
-	ra2|bits/structures
-	ra2|bits/animations
-	ra2|bits/projectiles
-	ra2|uibits
+	ra2vh|bits
+	ra2vh|bits/cameos
+	ra2vh|bits/structures
+	ra2vh|bits/animations
+	ra2vh|bits/projectiles
+	ra2vh|uibits
 
 MapFolders:
-	ra2|maps: System
-	~^maps/ra2/{DEV_VERSION}: User
+	ra2vh|maps: System
+	~^maps/ra2vh/{DEV_VERSION}: User
 
 Rules:
-	ra2|rules/proxy-actors.yaml
-	ra2|rules/misc.yaml
-	ra2|rules/ai.yaml
-	ra2|rules/player.yaml
-	ra2|rules/world.yaml
-	ra2|rules/palettes.yaml
-	ra2|rules/defaults.yaml
-	ra2|rules/allied-infantry.yaml
-	ra2|rules/soviet-infantry.yaml
-	ra2|rules/civilians.yaml
-	ra2|rules/bridges.yaml
-	ra2|rules/animals.yaml
-	ra2|rules/allied-structures.yaml
-	ra2|rules/soviet-structures.yaml
-	ra2|rules/civilian-structures.yaml
-	ra2|rules/tech-structures.yaml
-	ra2|rules/allied-vehicles.yaml
-	ra2|rules/soviet-vehicles.yaml
-	ra2|rules/civilian-vehicles.yaml
-	ra2|rules/allied-naval.yaml
-	ra2|rules/soviet-naval.yaml
-	ra2|rules/aircraft.yaml
-	ra2|rules/civilian-props.yaml
-	ra2|rules/trees.yaml
-	ra2|rules/civilian-naval.yaml
+	ra2vh|rules/proxy-actors.yaml
+	ra2vh|rules/misc.yaml
+	ra2vh|rules/ai.yaml
+	ra2vh|rules/player.yaml
+	ra2vh|rules/world.yaml
+	ra2vh|rules/palettes.yaml
+	ra2vh|rules/defaults.yaml
+	ra2vh|rules/allied-infantry.yaml
+	ra2vh|rules/soviet-infantry.yaml
+	ra2vh|rules/civilians.yaml
+	ra2vh|rules/bridges.yaml
+	ra2vh|rules/animals.yaml
+	ra2vh|rules/allied-structures.yaml
+	ra2vh|rules/soviet-structures.yaml
+	ra2vh|rules/civilian-structures.yaml
+	ra2vh|rules/tech-structures.yaml
+	ra2vh|rules/allied-vehicles.yaml
+	ra2vh|rules/soviet-vehicles.yaml
+	ra2vh|rules/civilian-vehicles.yaml
+	ra2vh|rules/allied-naval.yaml
+	ra2vh|rules/soviet-naval.yaml
+	ra2vh|rules/aircraft.yaml
+	ra2vh|rules/civilian-props.yaml
+	ra2vh|rules/trees.yaml
+	ra2vh|rules/civilian-naval.yaml
 
 Sequences:
-	ra2|sequences/aircraft.yaml
-	ra2|sequences/allied-infantry.yaml
-	ra2|sequences/allied-structures.yaml
-	ra2|sequences/animals.yaml
-	ra2|sequences/bridges.yaml
-	ra2|sequences/civilians.yaml
-	ra2|sequences/civilian-props.yaml
-	ra2|sequences/civilian-structures.yaml
-	ra2|sequences/defaults.yaml
-	ra2|sequences/misc.yaml
-	ra2|sequences/soviet-infantry.yaml
-	ra2|sequences/soviet-structures.yaml
-	ra2|sequences/tech-structures.yaml
-	ra2|sequences/trees.yaml
-	ra2|sequences/vehicles.yaml
+	ra2vh|sequences/aircraft.yaml
+	ra2vh|sequences/allied-infantry.yaml
+	ra2vh|sequences/allied-structures.yaml
+	ra2vh|sequences/animals.yaml
+	ra2vh|sequences/bridges.yaml
+	ra2vh|sequences/civilians.yaml
+	ra2vh|sequences/civilian-props.yaml
+	ra2vh|sequences/civilian-structures.yaml
+	ra2vh|sequences/defaults.yaml
+	ra2vh|sequences/misc.yaml
+	ra2vh|sequences/soviet-infantry.yaml
+	ra2vh|sequences/soviet-structures.yaml
+	ra2vh|sequences/tech-structures.yaml
+	ra2vh|sequences/trees.yaml
+	ra2vh|sequences/vehicles.yaml
 
 ModelSequences:
-	ra2|sequences/voxels.yaml
+	ra2vh|sequences/voxels.yaml
 
 Cursors:
-	ra2|cursors.yaml
+	ra2vh|cursors.yaml
 
 Chrome:
-	ra2|chrome.yaml
+	ra2vh|chrome.yaml
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
 	common|OpenRA.Mods.Cnc.dll
-	ra2|OpenRA.Mods.RA2.dll
+	ra2vh|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	ra2|chrome/assetbrowser.yaml
-	ra2|chrome/ingame-player.yaml
-	ra2|chrome/ingame-infoobjectives.yaml
-	ra2|chrome/mainmenu.yaml
+	ra2vh|chrome/assetbrowser.yaml
+	ra2vh|chrome/ingame-player.yaml
+	ra2vh|chrome/ingame-infoobjectives.yaml
+	ra2vh|chrome/mainmenu.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-observerstats.yaml
 	common|chrome/musicplayer.yaml
@@ -149,26 +149,26 @@ ChromeLayout:
 	common|chrome/playerprofile.yaml
 
 Weapons:
-	ra2|weapons/bullets.yaml
-	ra2|weapons/defaults.yaml
-	ra2|weapons/explosions.yaml
-	ra2|weapons/flaks.yaml
-	ra2|weapons/melee.yaml
-	ra2|weapons/mgs.yaml
-	ra2|weapons/misc.yaml
-	ra2|weapons/missiles.yaml
-	ra2|weapons/zaps.yaml
+	ra2vh|weapons/bullets.yaml
+	ra2vh|weapons/defaults.yaml
+	ra2vh|weapons/explosions.yaml
+	ra2vh|weapons/flaks.yaml
+	ra2vh|weapons/melee.yaml
+	ra2vh|weapons/mgs.yaml
+	ra2vh|weapons/misc.yaml
+	ra2vh|weapons/missiles.yaml
+	ra2vh|weapons/zaps.yaml
 
 Voices:
-	ra2|audio/voices.yaml
+	ra2vh|audio/voices.yaml
 
 Notifications:
-	ra2|audio/notifications.yaml
+	ra2vh|audio/notifications.yaml
 
 TileSets:
-	ra2|tilesets/temperat.yaml
-	ra2|tilesets/snow.yaml
-	ra2|tilesets/urban.yaml
+	ra2vh|tilesets/temperat.yaml
+	ra2vh|tilesets/snow.yaml
+	ra2vh|tilesets/urban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
@@ -178,10 +178,10 @@ MapGrid:
 	MaximumTerrainHeight: 16
 
 Music:
-	ra2|audio/music.yaml
+	ra2vh|audio/music.yaml
 
 Translations:
-	ra2|languages/english.yaml
+	ra2vh|languages/english.yaml
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -189,10 +189,10 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
-	ra2|hotkeys.yaml
+	ra2vh|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: ra2|uibits/loadscreen.png
+	Image: ra2vh|uibits/loadscreen.png
 	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
 
 ServerTraits:
@@ -202,7 +202,7 @@ ServerTraits:
 
 ChromeMetrics:
 	common|metrics.yaml
-	ra2|metrics.yaml
+	ra2vh|metrics.yaml
 
 Fonts:
 	Regular:
@@ -287,6 +287,6 @@ ModContent:
 			TestFiles: ^Content/ra2/theme.mix
 			Sources: ra2, origin, tfd
 	Sources:
-		ra2|installer/ra2.yaml
-		ra2|installer/origin.yaml
-		ra2|installer/firstdecade.yaml
+		ra2vh|installer/ra2.yaml
+		ra2vh|installer/origin.yaml
+		ra2vh|installer/firstdecade.yaml
