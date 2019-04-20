@@ -804,7 +804,7 @@
 	FrozenUnderFog:
 	SeedsResource:
 		ResourceType: Ore
-		Interval: 55
+		Interval: 27
 	WithIdleAnimation:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
