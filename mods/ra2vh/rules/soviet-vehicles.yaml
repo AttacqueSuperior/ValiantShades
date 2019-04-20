@@ -56,8 +56,9 @@ harv:
 		Priority: 7
 		Bounds: 64, 52, 0, -6
 	Harvester:
-		Capacity: 40
+		Capacity: 20
 		Resources: Ore, Gems
+		BaleLoadDelay: 8
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12

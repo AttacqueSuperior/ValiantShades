@@ -175,9 +175,9 @@
 		Palette: resource
 		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 		MaxDensity: 12
-		ValuePerUnit: 25
+		ValuePerUnit: 50
 		Type: Ore
-		Name: Valuable Minerals
+		Name: Valuable Ore - ($50/bale)
 		PipColor: Yellow
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
@@ -187,9 +187,9 @@
 		Palette: resource
 		Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
 		MaxDensity: 12
-		ValuePerUnit: 50
+		ValuePerUnit: 100
 		Type: Gems
-		Name: Valuable Minerals
+		Name: Valuable Gems - ($100/bale)
 		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
