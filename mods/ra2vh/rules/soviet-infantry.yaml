@@ -162,7 +162,7 @@ terror:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 90
-		Prerequisites: naradr, ~infantry.cuba
+		Prerequisites: naradr, ~nahand #, ~infantry.cuba
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
 		Cost: 200
@@ -204,7 +204,7 @@ deso:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: naradr, ~infantry.iraq
+		Prerequisites: naradr, ~nahand #, ~infantry.iraq
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600

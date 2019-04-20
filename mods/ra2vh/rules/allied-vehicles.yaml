@@ -149,7 +149,7 @@ tnkd:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~vehicles.germany
+		Prerequisites: ~gaweap #, ~vehicles.germany
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75

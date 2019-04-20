@@ -148,7 +148,7 @@ orca:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: ~aircraft.harrier
+		Prerequisites: ~aircraft.allies # ~aircraft.harrier
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Selectable:
 		Bounds: 30,24
@@ -200,7 +200,7 @@ beag:
 		Name: Black Eagle
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: ~aircraft.korea
+		Prerequisites: ~aircraft.allies # ~aircraft.korea
 	SpawnActorOnDeath:
 		Actor: beaghusk
 	Armament:

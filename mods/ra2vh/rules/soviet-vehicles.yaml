@@ -309,7 +309,7 @@ ttnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
-		Prerequisites: ~naweap, naradr, ~vehicles.russia
+		Prerequisites: ~naweap, naradr #, ~vehicles.russia
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
@@ -351,7 +351,7 @@ dtruck:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
-		Prerequisites: naradr, ~vehicles.libya
+		Prerequisites: ~naweap, naradr #, ~vehicles.libya
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
 		Cost: 1500

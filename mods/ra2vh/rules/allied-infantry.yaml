@@ -219,7 +219,7 @@ snipe:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 80
-		Prerequisites: radar, ~infantry.england
+		Prerequisites: radar, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11

@@ -50,14 +50,14 @@ gacnst:
 	ProvidesPrerequisite:
 		Prerequisite: structures.allies
 		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@america:
-		Prerequisite: structures.america
-		RequiresCondition: !build-incomplete
-		Factions: america
-	ProvidesPrerequisite@france:
-		Prerequisite: structures.france
-		RequiresCondition: !build-incomplete
-		Factions: france
+	#ProvidesPrerequisite@america:
+	#	Prerequisite: structures.america
+	#	RequiresCondition: !build-incomplete
+	#	Factions: america
+	#ProvidesPrerequisite@france:
+	#	Prerequisite: structures.france
+	#	RequiresCondition: !build-incomplete
+	#	Factions: france
 	Power:
 		Amount: 0
 		RequiresCondition: !build-incomplete
@@ -128,10 +128,10 @@ gapile:
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@england:
-		Prerequisite: infantry.england
-		Factions: england
-		RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@england:
+	#	Prerequisite: infantry.england
+	#	Factions: england
+	#	RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
@@ -250,7 +250,7 @@ gaairc:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: garefn, ~structures.allies, ~!structures.america
+		Prerequisites: garefn, ~structures.allies #, ~!structures.america
 		Description: Provides radar\nSupports 4 aircraft.
 	Valued:
 		Cost: 1000
@@ -262,14 +262,14 @@ gaairc:
 	ProvidesPrerequisite@allies:
 		Prerequisite: aircraft.allies
 		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@harrier:
-		Prerequisite: aircraft.harrier
-		Factions: america, germany, england, france
-		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@korea:
-		Prerequisite: aircraft.korea
-		Factions: korea
-		RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@harrier:
+	#	Prerequisite: aircraft.harrier
+	#	Factions: america, germany, england, france
+	#	RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@korea:
+	#	Prerequisite: aircraft.korea
+	#	Factions: korea
+	#	RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
@@ -339,13 +339,25 @@ gaairc:
 		RequiresCondition: primary && !build-incomplete
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+	ParatroopersPower@paratroopers:
+		OrderName: AmericanParatroopers
+		Icon: airborne
+		ChargeInterval: 9000
+		Description: American Paratroopers
+		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: camera
+		ArrowSequence: arrow
+		RequiresCondition: !build-incomplete
 
 amradr:
 	Inherits: gaairc
 	Tooltip:
 		Name: American Airforce Command Headquarters
 	Buildable:
-		Prerequisites: garefn, ~structures.america
+		Prerequisites: garefn, ~disabled
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
@@ -378,10 +390,10 @@ gaweap:
 		Cost: 2000
 	Tooltip:
 		Name: War Factory
-	ProvidesPrerequisite@germany:
-		Prerequisite: vehicles.germany
-		Factions: germany
-		RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@germany:
+	#	Prerequisite: vehicles.germany
+	#	Factions: germany
+	#	RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
@@ -766,7 +778,7 @@ gtgcan:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50
-		Prerequisites: radar, ~structures.france
+		Prerequisites: radar, ~structures.allies #, ~structures.france
 		Description: Automated, long ranged anti-ground defense.
 	Valued:
 		Cost: 2000

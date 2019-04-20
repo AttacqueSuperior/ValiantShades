@@ -116,14 +116,14 @@ nahand:
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@cuba:
-		Prerequisite: infantry.cuba
-		Factions: cuba
-		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@iraq:
-		Prerequisite: infantry.iraq
-		Factions: iraq
-		RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@cuba:
+	#	Prerequisite: infantry.cuba
+	#	Factions: cuba
+	#	RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@iraq:
+	#	Prerequisite: infantry.iraq
+	#	Factions: iraq
+	#	RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
@@ -316,14 +316,14 @@ naweap:
 		Cost: 2000
 	Tooltip:
 		Name: War Factory
-	ProvidesPrerequisite@libya:
-		Prerequisite: vehicles.libya
-		Factions: libya
-		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@russia:
-		Prerequisite: vehicles.russia
-		Factions: russia
-		RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@libya:
+	#	Prerequisite: vehicles.libya
+	#	Factions: libya
+	#	RequiresCondition: !build-incomplete
+	#ProvidesPrerequisite@russia:
+	#	Prerequisite: vehicles.russia
+	#	Factions: russia
+	#	RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
