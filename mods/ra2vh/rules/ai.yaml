@@ -129,6 +129,8 @@ Player:
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
+		RushAttackScanRadius: 30
+		ProtectUnitScanRadius: 25
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
