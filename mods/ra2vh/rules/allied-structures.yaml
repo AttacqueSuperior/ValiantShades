@@ -21,6 +21,7 @@ gacnst:
 		Cost: 3000
 	Production:
 		Produces: Building,Support
+		RequiresCondition: !build-incomplete
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
@@ -29,7 +30,7 @@ gacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
-		RequiresCondition: factundeploy
+		RequiresCondition: factundeploy && !build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -42,18 +43,24 @@ gacnst:
 		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
 		PauseOnCondition: lowpower
 	WithBuildingPlacedOverlay:
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite:
 		Prerequisite: structures.allies
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@america:
 		Prerequisite: structures.america
+		RequiresCondition: !build-incomplete
 		Factions: america
 	ProvidesPrerequisite@france:
 		Prerequisite: structures.france
+		RequiresCondition: !build-incomplete
 		Factions: france
 	Power:
 		Amount: 0
+		RequiresCondition: !build-incomplete
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer
 		Factions: america, germany, england, france, korea
@@ -77,6 +84,7 @@ gapowr:
 		Name: Power Plant
 	ProvidesPrerequisite:
 		Prerequisite: power
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -88,9 +96,10 @@ gapowr:
 		Range: 4c0
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 200
-		RequiresCondition: !power-outage
+		RequiresCondition: !power-outage && !build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
@@ -118,10 +127,13 @@ gapile:
 		Name: Barracks
 	ProvidesPrerequisite:
 		Prerequisite: barracks
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@england:
 		Prerequisite: infantry.england
 		Factions: england
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -149,6 +161,7 @@ gapile:
 		ExitCell: 2, 2
 	Production:
 		Produces: Infantry
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	WithTextDecoration@primary:
@@ -156,11 +169,13 @@ gapile:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	ProductionBar:
 		ProductionType: Infantry
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -10
 	InfiltrateForSupportPower:
@@ -185,7 +200,9 @@ garefn:
 		Name: Ore Refinery
 	ProvidesPrerequisite:
 		Prerequisite: refinery
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
@@ -215,10 +232,13 @@ garefn:
 		SpawnOffset: 3, 1
 		Facing: 160
 	WithDockedOverlay:
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -50
 	Targetable:
@@ -238,15 +258,20 @@ gaairc:
 		Name: Airforce Command Headquarters
 	ProvidesPrerequisite:
 		Prerequisite: radar
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@allies:
 		Prerequisite: aircraft.allies
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@harrier:
 		Prerequisite: aircraft.harrier
 		Factions: america, germany, england, france
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@korea:
 		Prerequisite: aircraft.korea
 		Factions: korea
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -260,21 +285,25 @@ gaairc:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	ProvidesRadar:
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
@@ -307,7 +336,7 @@ gaairc:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 
@@ -333,6 +362,7 @@ amradr:
 		UnitType: pdplane
 		CameraActor: camera
 		ArrowSequence: arrow
+		RequiresCondition: !build-incomplete
 
 gaweap:
 	Inherits: ^Building
@@ -351,7 +381,9 @@ gaweap:
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
 		Factions: germany
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
@@ -370,6 +402,7 @@ gaweap:
 		ExitCell: 4,1
 	Production:
 		Produces: Vehicle
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	WithTextDecoration@primary:
@@ -377,19 +410,25 @@ gaweap:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	ProductionBar:
 		ProductionType: Vehicle
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
+		RequiresCondition: !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
+		RequiresCondition: !build-incomplete
 	WithExitOverlay@ramp:
 		Sequence: build-ramp
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
@@ -413,6 +452,7 @@ gayard:
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -494,6 +534,7 @@ gayard:
 		ExitCell: 5,5
 	Production:
 		Produces: Ship
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	WithTextDecoration@primary:
@@ -501,7 +542,7 @@ gayard:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	RallyPoint:
 		Offset: 5,1
 		Palette: mouse
@@ -514,10 +555,13 @@ gayard:
 		Amount: -20
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell@allies:
 	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
@@ -538,6 +582,7 @@ gadept:
 	Tooltip:
 		Name: Service Depot
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: x== x== x==
 		Dimensions: 3,3
@@ -556,14 +601,18 @@ gadept:
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@side:
 		Sequence: idle-side
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
+		RequiresCondition: !build-incomplete
 	WithResupplyAnimation:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
+		RequiresCondition: !build-incomplete
 
 gatech:
 	Inherits: ^Building
@@ -580,6 +629,7 @@ gatech:
 	Tooltip:
 		Name: Battle Lab
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xx xx xx
 		Dimensions: 3,2
@@ -591,6 +641,7 @@ gatech:
 		Range: 6c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	InfiltrateForSupportPower:
@@ -639,6 +690,7 @@ gapill:
 		MuzzleSplitFacings: 8
 	AttackTurreted:
 		Voice: Attack
+		RequiresCondition: !build-incomplete
 	Turreted:
 		TurnSpeed: 255
 	BodyOrientation:
@@ -681,6 +733,7 @@ nasam:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: RedEye2
 		LocalOffset: 500,0,900
@@ -689,6 +742,7 @@ nasam:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
 		Type: patriot
@@ -733,6 +787,7 @@ gtgcan:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: GrandCannonWeapon
 		Recoil: 127
@@ -744,7 +799,9 @@ gtgcan:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithVoxelBarrel:
+		RequiresCondition: !build-incomplete
 	AutoTarget:
 	WithMuzzleOverlay:
 	WithRangeCircle:
@@ -782,6 +839,7 @@ gaorep:
 		Range: 5c0
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -200
 
@@ -811,10 +869,11 @@ gaspysat:
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	ProvidesRadar:
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -846,7 +905,7 @@ gagap:
 		Range: 5c0
 	CreatesShroud:
 		Range: 10c0
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	RenderShroudCircle:
 	Power:
 		Amount: -100
@@ -910,6 +969,7 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
+		RequiresCondition: !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -930,6 +990,7 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 
 atesla:
 	Inherits: ^SupportBuilding
@@ -963,6 +1024,7 @@ atesla:
 		ReloadDelay: 60
 		ChargeAudio: bpripow.wav
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -75
 	AutoTarget:
@@ -972,6 +1034,7 @@ atesla:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithSpriteBody:
 		PauseOnCondition: lowpower
 	WithRangeCircle:

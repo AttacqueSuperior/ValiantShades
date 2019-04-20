@@ -13,6 +13,7 @@ nacnst:
 		Bounds: 220, 180, 0, -35
 	ProvidesPrerequisite@soviets:
 		Prerequisite: structures.soviets
+		RequiresCondition: !build-incomplete
 	Health:
 		HP: 1000
 	Armor:
@@ -23,6 +24,7 @@ nacnst:
 		Cost: 3000
 	Production:
 		Produces: Building, Support
+		RequiresCondition: !build-incomplete
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
@@ -31,19 +33,24 @@ nacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
-		RequiresCondition: factundeploy
+		RequiresCondition: factundeploy && !build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
 	ProductionBar@Building:
 		ProductionType: Building
+		RequiresCondition: !build-incomplete
 	ProductionBar@Support:
 		ProductionType: Support
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@top:
 		Sequence: idle-top
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
 	WithBuildingPlacedAnimation:
+		RequiresCondition: !build-incomplete
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer
 		Factions: america, germany, england, france, korea
@@ -65,6 +72,7 @@ napowr:
 		Name: Tesla Reactor
 	ProvidesPrerequisite:
 		Prerequisite: power
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -78,9 +86,10 @@ napowr:
 		Range: 4c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 150
-		RequiresCondition: !power-outage
+		RequiresCondition: !power-outage && !build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
@@ -106,13 +115,17 @@ nahand:
 		Name: Barracks
 	ProvidesPrerequisite:
 		Prerequisite: barracks
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@cuba:
 		Prerequisite: infantry.cuba
 		Factions: cuba
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@iraq:
 		Prerequisite: infantry.iraq
 		Factions: iraq
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -162,6 +175,7 @@ nahand:
 		ExitCell: 2, 2
 	Production:
 		Produces: Infantry
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	RallyPoint:
@@ -173,12 +187,11 @@ nahand:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	ProductionBar:
 		ProductionType: Infantry
 	Power:
 		Amount: -10
-	ConditionManager:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
@@ -201,7 +214,9 @@ narefn:
 		Name: Ore Refinery
 	ProvidesPrerequisite:
 		Prerequisite: refinery
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
@@ -231,10 +246,13 @@ narefn:
 		SpawnOffset: 3, 1
 		Facing: 160
 	WithDockedOverlay:
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -50
 	Targetable:
@@ -254,7 +272,9 @@ naradr:
 		Name: Radar Tower
 	ProvidesPrerequisite:
 		Prerequisite: radar
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -268,12 +288,13 @@ naradr:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	ProvidesRadar:
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
@@ -298,10 +319,13 @@ naweap:
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
 		Factions: libya
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@russia:
 		Prerequisite: vehicles.russia
 		Factions: russia
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
@@ -319,6 +343,7 @@ naweap:
 		ExitCell: 5,1
 	Production:
 		Produces: Vehicle
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	WithTextDecoration@primary:
@@ -326,17 +351,21 @@ naweap:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	ProductionBar:
 		ProductionType: Vehicle
 	WithExitOverlay@door:
 		Sequence: build-door
+		RequiresCondition: !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
@@ -360,6 +389,7 @@ nayard:
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -441,6 +471,7 @@ nayard:
 		ExitCell: 5,5
 	Production:
 		Produces: Ship
+		RequiresCondition: !build-incomplete
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	WithTextDecoration@primary:
@@ -448,7 +479,7 @@ nayard:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary
+		RequiresCondition: primary && !build-incomplete
 	RallyPoint:
 		Offset: 5,1
 		Palette: mouse
@@ -457,16 +488,21 @@ nayard:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
 		ProductionType: Ship
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -20
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	WithProductionOverlay@lights:
 		Sequence: production-lights
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell@allies:
 	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
@@ -488,6 +524,7 @@ nadept:
 		Name: Service Depot
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: x=== x=== x===
 		Dimensions: 4,3
@@ -507,10 +544,13 @@ nadept:
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
+		RequiresCondition: !build-incomplete
 	WithResupplyAnimation:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 
@@ -528,6 +568,7 @@ nanrct:
 		Name: Nuclear Reactor
 	ProvidesPrerequisite:
 		Prerequisite: power
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -541,13 +582,14 @@ nanrct:
 		Range: 5c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Explodes:
 		Type: CenterPosition
 		Weapon: NukePayload
 		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
-		RequiresCondition: !power-outage
+		RequiresCondition: !power-outage && !build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
@@ -572,6 +614,7 @@ natech:
 	Tooltip:
 		Name: Battle Lab
 	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -655,13 +698,16 @@ naclon:
 		ExitCell: 2, 2
 	Production:
 		Produces: Dummy
+		RequiresCondition: !build-incomplete
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
+		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
+		RequiresCondition: !build-incomplete
 
 napsis:
 	Inherits: ^Building
@@ -692,6 +738,7 @@ napsis:
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	GrantConditionOnPowerState@LOWPOWER:
@@ -737,6 +784,7 @@ nairon:
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	SupportPowerChargeBar:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
@@ -793,7 +841,9 @@ namisl:
 		ArrowSequence: arrow
 		CameraRange: 10
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithNukeLaunchAnimation:
+		RequiresCondition: !build-incomplete
 
 nawall:
 	Inherits: ^Wall
@@ -836,12 +886,14 @@ naflak:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: FlakWeapon
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
 		Type: flakcannon
@@ -878,6 +930,7 @@ tesla:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,3072
@@ -892,6 +945,7 @@ tesla:
 		ReloadDelay: 120
 		ChargeAudio: btespow.wav
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	AutoTarget:
 	GrantConditionOnPowerState@LOWPOWER:
 		RequiresCondition: !charged
@@ -904,7 +958,7 @@ tesla:
 		Amount: -75
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	ExternalCondition@CHARGED:
 		Condition: charged
 
@@ -938,12 +992,14 @@ nalasr:
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: vulcan
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 6c0
 		Type: pillbox
