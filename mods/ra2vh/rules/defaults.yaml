@@ -691,6 +691,11 @@
 		AltitudeVelocity: 120
 		LandWhenIdle: false
 		TakeOffOnCreation: false
+		TurnSpeed: 27
+		Speed: 341
+		MaximumPitch: 168
+		CanHover: false
+		VTOL: false
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	ReturnOnIdle:
