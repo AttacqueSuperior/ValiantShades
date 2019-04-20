@@ -69,6 +69,7 @@ Player:
 		AllyNotification: OurAllyIsUnderAttack
 	HarvesterAttackNotifier:
 		Notification: OreMinerUnderAttack
+	PlayerExperience:
 	PlayerStatistics:
 	PlaceBeacon:
 		IsPlayerPalette: true
