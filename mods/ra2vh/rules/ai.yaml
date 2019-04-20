@@ -41,6 +41,10 @@ Player:
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support
+		MinimumExcessPower: 50
+		MaximumExcessPower: 150
+		ExcessPowerIncrement: 40
+		ExcessPowerIncreaseThreshold: 4
 		ConstructionYardTypes: gacnst, nacnst
 		RefineryTypes: garefn, narefn
 		PowerTypes: gapowr, napowr, nanrct
@@ -50,13 +54,11 @@ Player:
 		BuildingLimits:
 			garefn: 4
 			narefn: 4
-			gapowr: 8
-			napowr: 8
 			nanrct: 1
-			gapile: 2
-			nahand: 2
-			gaweap: 2
-			naweap: 2
+			gapile: 3
+			nahand: 3
+			gaweap: 3
+			naweap: 3
 			gadept: 1
 			nadept: 1
 			gaairc: 2
@@ -66,17 +68,14 @@ Player:
 			natech: 1
 			gagap: 2
 		BuildingFractions:
-			garefn: 30
-			narefn: 30
-			gapowr: 35
-			napowr: 25
-			nanrct: 10
-			gapile: 1
-			nahand: 1
-			gaweap: 1
-			naweap: 1
-			gaairc: 1
-			amradr: 1
+			garefn: 15
+			narefn: 15
+			gapile: 15
+			nahand: 15
+			gaweap: 30
+			naweap: 30
+			gaairc: 15
+			amradr: 15
 			naradr: 1
 			gatech: 1
 			natech: 1
