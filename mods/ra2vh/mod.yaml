@@ -56,6 +56,7 @@ Rules:
 	ra2vh|rules/world.yaml
 	ra2vh|rules/palettes.yaml
 	ra2vh|rules/defaults.yaml
+	ra2vh|rules/attacheffects.yaml
 	ra2vh|rules/allied-infantry.yaml
 	ra2vh|rules/soviet-infantry.yaml
 	ra2vh|rules/civilians.yaml
