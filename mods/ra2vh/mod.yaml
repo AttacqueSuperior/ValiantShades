@@ -11,6 +11,7 @@ Packages:
 	.
 	$ra2vh: ra2vh
 	./mods/common: common
+	./mods/as: as
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -103,7 +104,7 @@ Chrome:
 Assemblies:
 	common|OpenRA.Mods.Common.dll
 	common|OpenRA.Mods.Cnc.dll
-	ra2vh|OpenRA.Mods.RA2.dll
+	as|OpenRA.Mods.AS.dll
 
 ChromeLayout:
 	ra2vh|chrome/assetbrowser.yaml
