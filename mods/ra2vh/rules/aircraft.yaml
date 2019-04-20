@@ -150,9 +150,6 @@ orca:
 		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.harrier
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
-	Aircraft:
-		TurnSpeed: 3
-		Speed: 210
 	Selectable:
 		Bounds: 30,24
 	Health:
