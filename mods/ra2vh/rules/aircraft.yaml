@@ -128,9 +128,13 @@ zephusk:
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 25
-	FallsToEarth:
+	-FallsToEarth:
+	FallsToEarthAS:
 		Explosion: KirovExplode
-		Spins: False # TODO: In the original they did spin, but that just looks weird.
+		Spins: true
+		SpinInitial: 0
+		SpinAcceleration: 1
+		VelocityAcceleration: 11
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
