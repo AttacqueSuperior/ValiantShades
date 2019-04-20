@@ -2,7 +2,14 @@ RedEye2:
 	Inherits: ^AAMissile
 	Projectile: Missile
 		TrailImage: smokey2
-		LockOnProbability: 80
+		HorizontalRateOfTurn: 38
+		VerticalRateOfTurn: 38
+		MinimumLaunchSpeed: 175
+		MaximumLaunchSpeed: 350
+		Speed: 650
+		Acceleration: 12
+		RangeLimit: 1
+		CruiseAltitude: 4c0
 
 MammothTusk:
 	Inherits: ^AAMissile
