@@ -149,8 +149,12 @@ yuri:
 		Start: 308
 	muzzle: yuricntl
 		Length: *
+	paradrop:
+		Start: 307
 	icon: yuriicon
 
 yuripr:
 	Inherits: yuri
+	paradrop: yuri
+		Start: 307
 	icon: yurpicon
