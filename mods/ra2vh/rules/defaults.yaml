@@ -233,8 +233,8 @@
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
-		LightAmbientColor: -0.5,-0.5,-0.5
-		LightDiffuseColor: 1.4,1.4,1.4
+		LightAmbientColor: -0.4,-0.4,-0.4
+		LightDiffuseColor: 1.2,1.2,1.2
 
 ^Wall:
 	Inherits@1: ^ExistsInWorld
@@ -693,8 +693,8 @@
 ^Husk:
 	Inherits: ^VoxelLighting
 	RenderVoxels:
-		LightAmbientColor: -0.5,-0.5,-0.5
-		LightDiffuseColor: 1.4,1.4,1.4
+		LightAmbientColor: -0.4,-0.6,-0.6
+		LightDiffuseColor: 1.2,1.1,1.1
 	WithVoxelBody:
 	BodyOrientation:
 		QuantizedFacings: 0
