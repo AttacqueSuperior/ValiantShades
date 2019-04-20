@@ -107,9 +107,9 @@ PrismShot:
 	ReloadDelay: 1
 	Range: 8c0
 	Report: bpriat1a.wav
-	Projectile: LaserZap
-		Width: 70
-		UsePlayerColor: true
+	Projectile: KKNDLaser
+		Radius: 5
+		Duration: 15
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 120000
@@ -132,10 +132,9 @@ Comet:
 	ReloadDelay: 100
 	Range: 10c0
 	Report: vpriatta.wav
-	Projectile: LaserZap
-		Width: 50
+	Projectile: KKNDLaser
+		Radius: 3
 		Duration: 15
-		UsePlayerColor: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 800
 		Damage: 100000
