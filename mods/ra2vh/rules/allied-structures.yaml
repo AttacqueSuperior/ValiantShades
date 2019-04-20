@@ -938,10 +938,21 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
-	# Nothing to disable at the moment
-	#GrantConditionOnPowerState@LOWPOWER:
-	#	Condition: lowpower
-	#	ValidPowerStates: Low, Critical
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	DetonateWeaponPower@WeatherStorm:
+		Icon: bolticon
+		ChargeInterval: 15000
+		Description: Weather Storm
+		LongDesc: Applies heavy damage over a large area.
+		OrderName: WeatherStormInfoOrder
+		Weapon: WeatherStormInit
+		AirburstAltitude: 4c512
+		AllowMultiple: true
+		DisplayTimerStances: Ally, Neutral, Enemy
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 
 gacsph:
 	Inherits: ^Building

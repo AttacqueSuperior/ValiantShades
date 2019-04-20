@@ -392,6 +392,20 @@ gaweat:
 		Offset: 0, -45
 	idle: ggweth
 	damaged-idle: ggweth
+	active:
+		Combine:
+			ggweth_f:
+				Length: 12
+			ggweth_h:
+				Length: 12
+	damaged-active:
+		Combine:
+			ggweth_f:
+				Start: 12
+				Length: 12
+			ggweth_h:
+				Start: 12
+				Length: 12
 	make: guwethmk
 	icon: wethicon
 
