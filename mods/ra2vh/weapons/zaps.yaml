@@ -108,8 +108,10 @@ PrismShot:
 	Range: 8c0
 	Report: bpriat1a.wav
 	Projectile: KKNDLaser
-		Radius: 5
-		Duration: 15
+		Radius: 4
+		Duration: 12
+		InnerLightness: 192
+		OuterLightness: 96
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 120000
@@ -133,8 +135,10 @@ Comet:
 	Range: 10c0
 	Report: vpriatta.wav
 	Projectile: KKNDLaser
-		Radius: 3
-		Duration: 15
+		Radius: 2
+		Duration: 12
+		InnerLightness: 192
+		OuterLightness: 96
 	Warhead@1Dam: SpreadDamage
 		Spread: 800
 		Damage: 100000
