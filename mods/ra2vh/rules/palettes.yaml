@@ -17,6 +17,10 @@
 	PlayerColorPalette:
 		BasePalette: player
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PlayerColorPalette@infantry:
+		BaseName: infantry
+		BasePalette: infantry
+		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 	PlayerHighlightPalette:
 	PaletteFromFile@playertem:
 		Name: player
@@ -63,6 +67,10 @@
 		Tileset: SNOW
 		Filename: unitsno.pal
 		ShadowIndex: 1
+	PaletteFromFile@infantry:
+		Name: infantry
+		Filename: unittem.pal
+		ShadowIndex: 1,12
 	PaletteFromPaletteWithAlpha@terrainalpha:
 		BasePalette: terrain
 		Name: terrainalpha
@@ -121,6 +129,10 @@
 	PaletteFromPlayerPaletteWithAlpha@cloak:
 		BaseName: cloak
 		BasePalette: player
+		Alpha: 0.50
+	PaletteFromPlayerPaletteWithAlpha@infantry-cloak:
+		BaseName: infantry-cloak
+		BasePalette: infantry
 		Alpha: 0.50
 	PaletteFromRGBA@invuln:
 		Name: invuln

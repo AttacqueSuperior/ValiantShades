@@ -315,11 +315,14 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+	RenderSprites:
+		PlayerPalette: infantry
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		DefaultAttackSequence: shoot
 	WithDeathAnimation@normal:
+		DeathSequencePalette: infantry
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
