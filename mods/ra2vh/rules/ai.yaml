@@ -5,19 +5,26 @@ Player:
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
 		Bots: test
-	SupportPowerBotModule@test:
+	SupportPowerBotASModule@test:
 		RequiresCondition: enable-test-ai
 		Decisions:
 			airborne:
 				OrderName: AmericanParatroopers
+				Types: Structure
 				MinimumAttractiveness: 5
 				Consideration@1:
 					Against: Enemy
 					Types: Structure
-					Attractiveness: 1
+					Attractiveness: 2
 					TargetMetric: None
 					CheckRadius: 8c0
 				Consideration@2:
+					Against: Enemy
+					Types: Defense
+					Attractiveness: -3
+					TargetMetric: None
+					CheckRadius: 8c0
+				Consideration@3:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
@@ -25,27 +32,12 @@ Player:
 					CheckRadius: 8c0
 			nukepower:
 				OrderName: NukePowerInfoOrder
-				MinimumAttractiveness: 3000
+				MinimumAttractiveness: 250
+				Types: Ground
+				IgnoreVisibility: true
 				Consideration@1:
 					Against: Enemy
 					Types: Structure
-					Attractiveness: 1
-					TargetMetric: Value
-					CheckRadius: 5c0
-				Consideration@2:
-					Against: Ally
-					Types: Air, Ground, Water
-					Attractiveness: -10
-					TargetMetric: Value
-					CheckRadius: 7c0
-			WeatherStorm:
-				OrderName: WeatherStormInfoOrder
-				MinimumAttractiveness: 250
-				CoarseScanRadius: 8
-				FineScanRadius: 8
-				Consideration@1:
-					Against: Enemy
-					Types: Building
 					Attractiveness: 100
 					TargetMetric: Health
 					CheckRadius: 5c0
@@ -59,7 +51,28 @@ Player:
 					Against: Ally
 					Types: Ground, Water
 					Attractiveness: -20
-	BaseBuilderBotModule@test:
+			WeatherStorm:
+				OrderName: WeatherStormInfoOrder
+				MinimumAttractiveness: 250
+				Types: Ground
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 100
+					TargetMetric: Health
+					CheckRadius: 5c0
+				Consideration@2:
+					Against: Enemy
+					Types: Ground, Water
+					Attractiveness: 10
+					TargetMetric: Health
+					CheckRadius: 6c768
+				Consideration@3:
+					Against: Ally
+					Types: Ground, Water
+					Attractiveness: -20
+	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support
 		MinimumExcessPower: 50
