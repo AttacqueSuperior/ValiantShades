@@ -74,6 +74,7 @@ Player:
 					Attractiveness: -20
 	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
+		BuildingQueues: Building
 		DefenseQueues: Support
 		MinimumExcessPower: 50
 		MaximumExcessPower: 150
@@ -142,7 +143,7 @@ Player:
 			flakt: 10
 			shk: 10
 			ivan: 3
-			jumpjet: 2
+			jumpjet: 10
 			deso: 1
 			tany: 1
 			yuri: 1
@@ -158,10 +159,16 @@ Player:
 			apoc: 10
 			tnkd: 15
 			ttnk: 15
+			zep: 1
+			orca: 5
+			beag: 5
 		UnitLimits:
 			dog: 4
 			cmin: 6
 			harv: 6
+			zep: 2
+			orca: 4
+			beag: 4
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		McvTypes: amcv, smcv
