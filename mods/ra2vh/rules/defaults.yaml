@@ -721,7 +721,7 @@
 	Health:
 		HP: 1000
 	FallsToEarth:
-		Velocity: 86
+		Velocity: 252
 	HitShape:
 	MapEditorData:
 		Categories: Husk
