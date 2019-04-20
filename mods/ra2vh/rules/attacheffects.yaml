@@ -52,6 +52,78 @@
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
+^BuildingParticles:
+	SmokeParticleEmitter@1:
+		RequiresCondition: dmg_heavy
+		Sequences: smallsmoke
+		Palette: effect
+		SpawnFrequency: 3, 10
+		Gravity: -32,-32,48, 32,32,48
+		Offset: -384,-384,0, 384,384,0
+		Duration: 38
+	SmokeParticleEmitter@2:
+		RequiresCondition: dmg_heavy
+		Sequences: fire
+		Palette: effect
+		SpawnFrequency: 96
+		Gravity: 0,0,0
+		Offset: -384,-384,0, 384,384,0
+		Duration: 80
+	SmokeParticleEmitter@3:
+		RequiresCondition: dmg_heavy
+		Sequences: fire
+		Palette: effect
+		SpawnFrequency: 96
+		Gravity: 0,0,0
+		Offset: -384,-384,0, 384,384,0
+		Duration: 80
+	SmokeParticleEmitter@4:
+		RequiresCondition: dmg_crit
+		Sequences: fire
+		Palette: effect
+		SpawnFrequency: 96
+		Gravity: 0,0,0
+		Offset: -384,-384,0, 384,384,0
+		Duration: 80
+	SmokeParticleEmitter@5:
+		RequiresCondition: dmg_crit
+		Sequences: largesmoke
+		Palette: effect
+		SpawnFrequency: 3, 10
+		Gravity: -48,-48,72, 48,48,72
+		Offset: -384,-384,0, 384,384,0
+		Duration: 38
+	GrantConditionOnDamageState@dmg_heavy:
+		Condition: dmg_heavy
+	GrantConditionOnDamageState@dmg_crit:
+		Condition: dmg_crit
+		ValidDamageStates: Critical
+
+ ^UnitParticles:
+	SmokeParticleEmitter@1:
+		RequiresCondition: enable_unitsmoke
+		Sequences: smallsmoke
+		Palette: effect
+		SpawnFrequency: 3, 10
+		Gravity: -32,-32,48, 32,32,48
+		Offset: 0,0,192
+		Duration: 38
+	GrantConditionOnDamageState@dmg_heavy:
+		Condition: dmg_heavy
+	GrantPeriodicCondition@enable_unitsmoke:
+		Condition: enable_unitsmoke
+		CooldownDuration: 10000000
+		StartsGranted: true
+		RequiresCondition: dmg_heavy
+		ResetTraitOnEnable: true
+
+ ^VehicleParticles:
+	Inherits: ^UnitParticles
+	ExplodeWeapon@damagesparks:
+		RequiresCondition: dmg_heavy
+		Weapon: DamageSparkSpawner
+		LocalOffset: 0,0,384
+
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
 		RequiresCondition: crate-firepower

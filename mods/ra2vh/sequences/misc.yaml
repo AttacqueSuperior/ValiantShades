@@ -83,6 +83,19 @@ crate:
 		Offset: 0, -12
 		UseTilesetExtension: true
 
+particles:
+	largesmoke: lgrysmk1
+		Length: *
+		Tick: 80
+	smallsmoke: sgrysmk1
+		Length: *
+		Tick: 80
+	fire: fire03
+		Length: *
+	damagespark: dmgspark
+		Length: *
+		Tick: 100
+
 rank:
 	veteran: pips
 		Start: 13

@@ -68,6 +68,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
+	Inherits@4: ^BuildingParticles 
 	Inherits@shape: ^1x1Shape
 	-DrawLineToTarget:
 	OwnerLostAction:
@@ -553,6 +554,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^ParachutableVehicle
+	Inherits@7: ^VehicleParticles
 	OwnerLostAction:
 		Action: Kill
 	Mobile:
@@ -631,6 +633,7 @@
 
 ^NeutralAircraft:
 	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^UnitParticles
 	OwnerLostAction:
 		Action: Kill
 	Targetable@airborne:
@@ -733,6 +736,7 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@6: ^VehicleParticles
 	OwnerLostAction:
 		Action: Kill
 	Mobile:
