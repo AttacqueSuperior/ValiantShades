@@ -47,7 +47,7 @@ Maverick:
 	ReloadDelay: 10
 	Range: 6c0
 	Report: vintatta.wav
-	ValidTargets: Ground, Water
+	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Speed: 373
 		Arm: 2
@@ -58,6 +58,7 @@ Maverick:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 200000
+		ValidTargets: Ground, Water, Air
 		Versus:
 			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
