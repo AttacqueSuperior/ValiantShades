@@ -15,6 +15,14 @@ UnitExplodeSmall:
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 
+InfantryExplode:
+	Inherits: UnitExplode
+	Warhead@1Eff: CreateEffect
+		Explosions: medium_bang
+		ImpactSounds: expnew13.wav
+		ValidTargets: Ground, Water, Air
+	-Warhead@DebrisSpawn:
+
 V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect
