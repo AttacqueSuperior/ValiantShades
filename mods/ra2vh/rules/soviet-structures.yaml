@@ -175,6 +175,7 @@ nahand:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Infantry
 	Power:
 		Amount: -10
 	ConditionManager:
@@ -327,6 +328,7 @@ naweap:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Vehicle
 	WithExitOverlay@door:
 		Sequence: build-door
 	WithExitOverlay@top-vehicles:
@@ -454,6 +456,7 @@ nayard:
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
+		ProductionType: Ship
 	Power:
 		Amount: -20
 	WithIdleOverlay@crane:
@@ -506,7 +509,7 @@ nadept:
 		Sequence: idle-normal
 	WithIdleOverlay@bib:
 		Sequence: bib
-	WithRepairAnimation:
+	WithResupplyAnimation:
 		Sequence: repair
 	Power:
 		Amount: -25

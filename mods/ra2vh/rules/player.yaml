@@ -10,31 +10,31 @@ Player:
 	TechTree:
 	ClassicProductionQueue@Building:
 		Type: Building
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Support:
 		Type: Support
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Ship:
 		Type: Ship
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	PlaceBuilding:
 		Palette: effect75alpha
@@ -64,9 +64,12 @@ Player:
 	HarvesterAttackNotifier:
 		Notification: OreMinerUnderAttack
 	PlayerStatistics:
-	PlaceSimpleBeacon:
+	PlaceBeacon:
 		IsPlayerPalette: true
 		Palette: player
+		BeaconSequence: idle
+		ArrowSequence:
+		CircleSequence:
 	ProvidesTechPrerequisite@infonly:
 		Name: Infantry Only
 		Prerequisites: techlevel.infonly

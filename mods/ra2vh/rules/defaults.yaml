@@ -170,6 +170,7 @@
 		Conditions:
 			500: rank-veteran
 			1000: rank-elite
+		LevelUpImage: crate-effects
 	FirepowerMultiplier@VETERAN:
 		RequiresCondition: rank-veteran && !rank-elite
 		Modifier: 110
@@ -251,7 +252,7 @@
 		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
-		RequiresCondition: !chronodisable
+		PauseOnCondition: !(!chronodisable)
 	ExternalCondition@CHRONODISABLE:
 		Condition: chronodisable
 
@@ -343,6 +344,7 @@
 	GivesBuildableArea:
 		AreaTypes: building
 	Capturable:
+		Types: building
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
@@ -372,7 +374,7 @@
 	WithMakeAnimation:
 	HitShape:
 		UseTargetableCellsOffsets: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Building
 	RequiresBuildableArea:
 		AreaTypes: building
@@ -382,6 +384,7 @@
 		Sequence: repair
 		ReferencePoint: Center
 		Palette: mouse
+	CaptureManager:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -409,7 +412,7 @@
 		Range: 4c0
 	Tooltip:
 		Name: Civilian Building
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Civilian building
 
 ^Rubble:
@@ -425,7 +428,7 @@
 	FrozenUnderFog:
 	HitShape:
 		UseTargetableCellsOffsets: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Building rubble
 	Interactable:
 
@@ -447,7 +450,7 @@
 	CaptureNotification:
 		Notification: TechBuildingCaptured
 		LoseNotification: TechBuildingLost
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Tech building
 
 ^Flag:
@@ -472,7 +475,7 @@
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Flag
 
 ^VoxelLighting:
@@ -518,7 +521,7 @@
 	Armor:
 		Type: Concrete
 	HitShape:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 	RequiresBuildableArea:
 		AreaTypes: building
@@ -620,11 +623,11 @@
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	Repairable:
-		RepairBuildings: cahosp
+		RepairActors: cahosp
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Infantry
 
 ^Parachutable:
@@ -747,7 +750,7 @@
 		VoiceSet: CivilianAlliedMaleVoice
 	WithInfantryBody:
 		IdleSequences: idle1
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Civilian infantry
 
 ^Animal:
@@ -790,7 +793,7 @@
 		DeathTypes:
 			FlameDeath: 1
 	-Crushable:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Animal
 
 ^Vehicle:
@@ -814,7 +817,7 @@
 		TargetTypes: Ground, Vehicle, Repair, DetonateAttack
 	Repairable:
 		Voice: Move
-		RepairBuildings: gadept, nadept, caoutp
+		RepairActors: gadept, nadept, caoutp
 	Passenger:
 		Voice: Move
 		CargoType: Vehicle
@@ -846,7 +849,7 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Vehicle
 
 ^CivVehicle:
@@ -873,7 +876,7 @@
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Civilian vehicle
 
 ^NeutralAircraft:
@@ -914,7 +917,7 @@
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Aircraft
 
 ^Aircraft:
@@ -957,7 +960,7 @@
 	FallsToEarth:
 		Velocity: 86
 	HitShape:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Husk
 	Interactable:
 
@@ -1000,7 +1003,7 @@
 		TargetTypes: Ground, Water, Repair
 	Repairable:
 		Voice: Attack
-		RepairBuildings: gayard, nayard
+		RepairActors: gayard, nayard
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
@@ -1029,7 +1032,7 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Naval
 
 ^OreDrill:
@@ -1054,7 +1057,7 @@
 		Palette: player
 	HitShape:
 		UseTargetableCellsOffsets: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Resource spawn
 	Interactable:
 
@@ -1080,7 +1083,7 @@
 	HitShape:
 	Armor:
 		Type: Wood
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Tree
 	Interactable:
 
@@ -1088,14 +1091,14 @@
 	Inherits: ^Tree
 	Tooltip:
 		Name: Street Sign
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ^TrafficLight:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Traffic Light
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ^StreetLight:
@@ -1106,7 +1109,7 @@
 		Type: steel
 	Health:
 		HP: 50
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ^TelephonePole:
@@ -1117,7 +1120,7 @@
 		HP: 20
 	Armor:
 		Type: Concrete
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ^Rock:
@@ -1136,7 +1139,7 @@
 		Palette: terrain
 	HitShape:
 		UseTargetableCellsOffsets: true
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Rock
 	Interactable:
 
@@ -1154,6 +1157,6 @@
 	WithCrateBody:
 		LandSequence: land
 		WaterSequence: water
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 	Interactable:

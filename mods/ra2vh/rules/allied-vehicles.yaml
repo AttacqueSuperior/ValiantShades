@@ -80,6 +80,7 @@ cmin:
 		LocalOffset: 121,0,0
 		Palette: effect
 	GainsExperience: # can get experience, i.e. speed
+		LevelUpImage: crate-effects
 	RenderSprites: # TODO: WithHarvestOverlay relies on this, but it should actually be removed
 	RenderVoxels:
 	WithVoxelUnloadBody:
@@ -198,7 +199,7 @@ fv:
 	Mobile:
 		Speed: 150
 		TurnSpeed: 5
-		RequiresCondition: !notmobile && !chronodisable
+		PauseOnCondition: !(!notmobile && !chronodisable)
 	Health:
 		HP: 200
 	Armor:

@@ -75,7 +75,7 @@ flakt:
 		RequiresCondition: !rank-elite
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
-		LocalOffset: 256,0,1024 
+		LocalOffset: 256,0,1024
 		RequiresCondition: !rank-elite
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
@@ -187,8 +187,6 @@ terror:
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
-	AttackSuicides:
-		Voice: Attack
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
@@ -342,7 +340,7 @@ yuri:
 	Health:
 		HP: 100
 	Mobile:
-		RequiresCondition: !deployed && !deploying && !chronodisable
+		PauseOnCondition: !(!deployed && !deploying && !chronodisable)
 	RevealsShroud:
 		Range: 12c0
 	Armor:

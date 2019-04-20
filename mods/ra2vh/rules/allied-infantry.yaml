@@ -38,6 +38,7 @@ engineer:
 		Sequence: stand
 	WithInfantryBody:
 		DefaultAttackSequence: stand
+	CaptureManager:
 
 dog:
 	Inherits: ^Infantry
@@ -122,7 +123,7 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
-		RequiresCondition: !chronodisable && undeployed
+		PauseOnCondition: !(!chronodisable && undeployed)
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -157,8 +158,8 @@ e1:
 		CanDeployOnRamps: True
 		Facing: 128
 		RequiresCondition: !parachute
-		DeploySound: igidepa.wav # igidepb.wav
-		UndeploySound: igidepa.wav # igidepb.wav
+		DeploySounds: igidepa.wav # igidepb.wav
+		UndeploySounds: igidepa.wav # igidepb.wav
 	# TODO: TakeCover is not yet conditional
 	-TakeCover:
 	Turreted:
@@ -466,7 +467,8 @@ tany:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	Voiced:
 		VoiceSet: TanyaVoice
 	ProducibleWithLevel:
@@ -521,8 +523,6 @@ jumpjet:
 		AltitudeVelocity: 83
 		Voice: Move
 		AirborneCondition: airborne
-		RepairBuildings:
-		RearmBuildings:
 		CanHover: True
 		IdealSeparation: 512
 		TakeOffOnResupply: true
@@ -555,6 +555,11 @@ jumpjet:
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
+	Repairable:
+		RepairActors:
+		Voice: Move
+	Rearmable:
+		RearmActors:
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk

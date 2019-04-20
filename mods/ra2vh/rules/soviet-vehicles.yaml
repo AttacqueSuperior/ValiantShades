@@ -157,7 +157,7 @@ htk:
 		Speed: 120
 		TurnSpeed: 5
 		Locomotor: tracked
-		RequiresCondition: !notmobile && !chronodisable
+		PauseOnCondition: !(!notmobile && !chronodisable)
 	Health:
 		HP: 180
 	Armor:
@@ -371,12 +371,11 @@ dtruck:
 	Explodes:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
-	AttackSuicides:
-		Voice: Attack
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
