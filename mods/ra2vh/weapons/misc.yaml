@@ -11,7 +11,7 @@ BlimpBomb:
 		IsPlayerPalette: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
-		Damage: 250
+		Damage: 250000
 		ValidTargets: Building, Ground, Water
 		Versus:
 			None: 100
@@ -51,7 +51,7 @@ RepairBullet:
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
-		Damage: -50
+		Damage: -50000
 		ValidTargets: Repair
 
 MindControl:
@@ -73,7 +73,7 @@ PsiWave:
 	Warhead@1Dam: SpreadDamage
 		Spread: 3c0
 		Falloff: 100, 100
-		Damage: 250
+		Damage: 250000
 		ValidTargets: Infantry
 		DamageTypes: PsychicDeath
 	Warhead@2Eff: CreateEffect

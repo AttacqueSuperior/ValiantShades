@@ -196,7 +196,7 @@
 		RequiresCondition: rank-elite
 		Modifier: 75
 	SelfHealing@ELITE:
-		Step: 2
+		Step: 2000
 		Delay: 100
 		HealIfBelow: 100
 		DamageCooldown: 125
@@ -353,6 +353,7 @@
 		Type: Footprint
 		Weapon: BuildingExplode
 	RepairableBuilding:
+		RepairStep: 7000
 	EngineerRepairable:
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1
@@ -407,7 +408,7 @@
 	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -444,7 +445,7 @@
 	OwnerLostAction:
 		Action: ChangeOwner
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -467,7 +468,7 @@
 	Tooltip:
 		Name: Flag
 	Health:
-		HP: 20
+		HP: 20000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -519,7 +520,7 @@
 	Valued:
 		Cost: 100
 	Health:
-		HP: 300
+		HP: 300000
 	Armor:
 		Type: Concrete
 	HitShape:
@@ -535,7 +536,7 @@
 	Valued:
 		Cost: 25
 	Health:
-		HP: 100
+		HP: 100000
 	Armor:
 		Type: Wood
 	Crushable:
@@ -735,7 +736,7 @@
 		GenericVisibility: Enemy, Ally, Neutral
 		GenericStancePrefix: false
 	Health:
-		HP: 50
+		HP: 50000
 	Mobile:
 		Voice: Move
 		Speed: 71
@@ -766,7 +767,7 @@
 	Armor:
 		Type: None
 	Health:
-		HP: 200
+		HP: 200000
 	Targetable:
 		TargetTypes: Ground, Infantry
 	RevealsShroud:
@@ -867,7 +868,7 @@
 	Mobile:
 		Speed: 113
 	Health:
-		HP: 100
+		HP: 100000
 	HitShape:
 	Armor:
 		Type: Light
@@ -958,7 +959,7 @@
 	Tooltip:
 		GenericName: Destroyed Aircraft
 	Health:
-		HP: 1
+		HP: 1000
 	FallsToEarth:
 		Velocity: 86
 	HitShape:
@@ -1081,7 +1082,7 @@
 	Targetable:
 		TargetTypes: Ground, Wall, DetonateAttack
 	Health:
-		HP: 200
+		HP: 200000
 	HitShape:
 	Armor:
 		Type: Wood
@@ -1110,7 +1111,7 @@
 	Armor:
 		Type: steel
 	Health:
-		HP: 50
+		HP: 50000
 	MapEditorData:
 		Categories: Decoration
 
@@ -1119,7 +1120,7 @@
 	Tooltip:
 		Name: Utility Pole
 	Health:
-		HP: 20
+		HP: 20000
 	Armor:
 		Type: Concrete
 	MapEditorData:

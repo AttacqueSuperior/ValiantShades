@@ -14,7 +14,7 @@ smcv:
 		Priority: 4
 		Bounds: 64, 52, 0, -6
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -64,7 +64,7 @@ harv:
 		HarvestVoice: Move
 		DeliverVoice: Move
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Medium
 	Armament@primary:
@@ -113,7 +113,7 @@ dron:
 		Speed: 150
 		TurnSpeed: 15
 	Health:
-		HP: 100
+		HP: 100000
 	Armor:
 		Type: Drone
 	RevealsShroud:
@@ -159,7 +159,7 @@ htk:
 		Locomotor: tracked
 		PauseOnCondition: !(!notmobile && !chronodisable)
 	Health:
-		HP: 180
+		HP: 180000
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -210,7 +210,7 @@ htnk:
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
-		HP: 400
+		HP: 400000
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -260,7 +260,7 @@ apoc:
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
-		HP: 800
+		HP: 800000
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -314,7 +314,7 @@ ttnk:
 		Speed: 75
 		Locomotor: heavytracked
 	Health:
-		HP: 300
+		HP: 300000
 	Armor:
 		Type: Heavy
 	RevealsShroud:
@@ -359,7 +359,7 @@ dtruck:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	Health:
-		HP: 150
+		HP: 150000
 	Armor:
 		Type: Light
 	Mobile:

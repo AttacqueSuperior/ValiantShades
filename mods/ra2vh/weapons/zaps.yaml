@@ -12,7 +12,7 @@ CRElectricBolt:
 	Range: 6c0
 	ReloadDelay: 45
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 60000
 
 AssaultBolt:
 	ReloadDelay: 70
@@ -35,7 +35,7 @@ CoilBolt:
 	Report: btesat1a.wav
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 200
+		Damage: 200000
 
 OPCoilBolt:
 	Inherits: CoilBolt
@@ -44,7 +44,7 @@ OPCoilBolt:
 	Projectile: TeslaZap
 		Image: litningupg
 	Warhead@1Dam: SpreadDamage
-		Damage: 300
+		Damage: 300000
 
 TankBolt:
 	Inherits: ^TeslaZap
@@ -54,7 +54,7 @@ TankBolt:
 	BurstDelays: 75
 	Report: vtesatta.wav, vtesattb.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 135
+		Damage: 135000
 
 TankBoltE:
 	Inherits: TankBolt
@@ -62,7 +62,7 @@ TankBoltE:
 	ReloadDelay: 60
 	BurstDelays: 60
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 150000
 
 SonicZap:
 	ReloadDelay: 180
@@ -83,7 +83,7 @@ SonicZap:
 	Warhead@1Dam: SpreadDamage
 		Range: 0, 32
 		Falloff: 100, 100
-		Damage: 4
+		Damage: 4000
 		AffectsParent: false
 		ValidStances: Neutral, Enemy
 		Versus:
@@ -94,7 +94,7 @@ SonicZap:
 	Warhead@2Dam: SpreadDamage
 		Range: 0, 32
 		Falloff: 50, 50
-		Damage: 4
+		Damage: 4000
 		AffectsParent: false
 		ValidStances: Ally
 		Versus:
@@ -112,7 +112,7 @@ PrismShot:
 		UsePlayerColor: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 120
+		Damage: 120000
 		Versus:
 			None: 200
 			Flak: 100
@@ -138,7 +138,7 @@ Comet:
 		UsePlayerColor: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 800
-		Damage: 100
+		Damage: 100000
 		Versus:
 			None: 100
 			Flak: 100
@@ -166,7 +166,7 @@ Comet:
 SuperComet:
 	Inherits: Comet
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 150000
 
 RadBeamWeapon:
 	ValidTargets: Ground
@@ -179,7 +179,7 @@ RadBeamWeapon:
 		Color: B900FF00
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 125
+		Damage: 125000
 		Versus:
 			None: 100
 			Flak: 100
@@ -198,14 +198,14 @@ RadBeamWeaponE:
 	Inherits: RadBeamWeapon
 	Range: 8c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 200
+		Damage: 200000
 
 CRRadBeamWeapon:
 	Inherits: RadBeamWeapon
 	Range: 7c0
 	ReloadDelay: 30
 	Warhead@1Dam: SpreadDamage
-		Damage: 175
+		Damage: 175000
 
 NeutronRifle:
 	ValidTargets: Ground
@@ -216,7 +216,7 @@ NeutronRifle:
 		Palette: highlight
 	Warhead@Damage: SpreadDamage
 		Spread: 64
-		Damage: 8
+		Damage: 8000
 	Warhead@Disable: GrantExternalCondition
 		Range: 64
 		Duration: 250

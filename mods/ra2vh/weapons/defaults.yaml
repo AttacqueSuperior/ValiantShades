@@ -8,7 +8,7 @@
 		Speed: 341
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
-		Damage: 20
+		Damage: 20000
 		Versus:
 			None: 150
 			Flak: 100
@@ -88,7 +88,7 @@
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
-		Damage: 75
+		Damage: 75000
 		ValidTargets: Air
 		Versus:
 			None: 100
@@ -120,7 +120,7 @@
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
-		Damage: 20
+		Damage: 20000
 		Versus:
 			None: 100
 			Flak: 80
@@ -145,7 +145,7 @@
 	Projectile: TeslaZap
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
-		Damage: 50
+		Damage: 50000
 		Versus:
 			None: 100
 			Flak: 100

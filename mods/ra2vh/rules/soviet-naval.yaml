@@ -13,7 +13,7 @@ sapc:
 	Selectable:
 		Bounds: 60, 80, 0, -6
 	Health:
-		HP: 300
+		HP: 300000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -52,7 +52,7 @@ sub:
 	Tooltip:
 		Name: Typhoon Attack Sub
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -123,7 +123,7 @@ hyd:
 	Selectable:
 		Bounds: 50, 30, 0, -6
 	Health:
-		HP: 300
+		HP: 300000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -163,9 +163,9 @@ sqd:
 	Armor:
 		Type: Light
 	Health:
-		HP: 200
+		HP: 200000
 	SelfHealing:
-		Step: 2
+		Step: 2000
 		Delay: 100
 		DamageCooldown: 125
 	Mobile:

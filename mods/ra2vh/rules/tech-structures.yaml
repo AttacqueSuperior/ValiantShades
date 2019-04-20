@@ -13,7 +13,7 @@ caoild:
 	Tooltip:
 		Name: Tech Oil Derrick
 	Health:
-		HP: 1000
+		HP: 1000000
 	RevealsShroud:
 		Range: 4c0
 	Armor:
@@ -34,7 +34,7 @@ caairp:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 800
+		HP: 800000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -84,13 +84,14 @@ cahosp:
 	Tooltip:
 		Name: Civilian Hospital
 	Health:
-		HP: 800
+		HP: 800000
 	RevealsShroud:
 		Range: 6c0
 	Armor:
 		Type: Concrete
 	RepairsUnits:
 		StartRepairingNotification:
+		HpPerStep: 10000
 	RallyPoint:
 	WithIdleOverlay:
 	WithIdleOverlay@flag:
@@ -114,7 +115,7 @@ caoutp:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 2000
+		HP: 2000000
 	Building:
 		Dimensions: 4,3
 		Footprint: xx== xx== xx==
@@ -125,6 +126,7 @@ caoutp:
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
+		HpPerStep: 10000
 	WithIdleOverlay@tower:
 		Sequence: idle-tower
 	WithIdleOverlay@bib:

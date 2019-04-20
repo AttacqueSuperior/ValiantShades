@@ -25,19 +25,19 @@ KirovExplode:
 	Inherits: UnitExplode
 	Warhead@2Dam: SpreadDamage
 		Spread: 426
-		Damage: 75
+		Damage: 75000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 ApocExplode:
 	Inherits: KirovExplode
 	Warhead@2Dam: SpreadDamage
-		Damage: 40
+		Damage: 40000
 
 PlaneExplode:
 	Inherits: KirovExplode
 	Warhead@2Dam: SpreadDamage
-		Damage: 20
+		Damage: 20000
 
 IvanBomber:
 	ReloadDelay: 50
@@ -54,7 +54,7 @@ IvanBomber:
 	Warhead@1Dam: SpreadDamage
 		Delay: 100
 		Spread: 213
-		Damage: 400
+		Damage: 400000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			None: 100
@@ -92,7 +92,7 @@ CRNuke:
 	Inherits: IvanDeath
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 200
+		Damage: 200000
 		Versus:
 			Light: 90
 			Medium: 50
@@ -110,7 +110,7 @@ TerrorBomb:
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 400
+		Damage: 400000
 		Falloff: 1024, 1024, 512, 512, 256, 256, 0
 		Versus:
 			None: 150
@@ -133,13 +133,13 @@ TerrorBomb:
 CRTerrorBomb:
 	Inherits: TerrorBomb
 	Warhead@1Dam: SpreadDamage
-		Damage: 425
+		Damage: 425000
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 1c0
-		Damage: 600
+		Damage: 600000
 		Falloff: 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -183,7 +183,7 @@ atomic:
 demobomb:
 	Inherits: NukePayload
 	Warhead@1Dam_impact: SpreadDamage
-		Damage: 150
+		Damage: 150000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			Light: 100
@@ -199,7 +199,7 @@ demobomb:
 		ImpactSounds: vdemdiea.wav
 	Warhead@4Dam_areanuke1: SpreadDamage
 		Spread: 2c0
-		Damage: 60
+		Damage: 60000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 5
 		ValidTargets: Ground, Water, Air
@@ -224,7 +224,7 @@ demobomb:
 		ValidTargets: Ground, Water, Air
 	Warhead@7Dam_areanuke2: SpreadDamage
 		Spread: 3c0
-		Damage: 60
+		Damage: 60000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 10
 		ValidTargets: Ground, Water, Air
@@ -246,7 +246,7 @@ demobomb:
 		Delay: 10
 	Warhead@9Dam_areanuke3: SpreadDamage
 		Spread: 4c0
-		Damage: 60
+		Damage: 60000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 15
 		ValidTargets: Ground, Water, Air

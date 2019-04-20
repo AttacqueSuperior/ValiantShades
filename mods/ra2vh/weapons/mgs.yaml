@@ -3,14 +3,14 @@ M1Carbine:
 	ReloadDelay: 25
 	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 15000
 
 M1CarbineE:
 	Inherits: M1Carbine
 	ReloadDelay: 20
 	Range: 5c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 20
+		Damage: 20000
 
 M60:
 	Inherits: ^MG
@@ -18,7 +18,7 @@ M60:
 M60E:
 	Inherits: M60
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 25000
 
 CRM60:
 	Inherits: M60
@@ -32,7 +32,7 @@ para:
 	ReloadDelay: 15
 	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 15000
 		Versus:
 			Flak: 100
 			Light: 60
@@ -44,7 +44,7 @@ paraE:
 	Inherits: para
 	Range: 7c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 25000
 
 MP5:
 	Inherits: ^MG
@@ -52,7 +52,7 @@ MP5:
 	Range: 6c0
 	Report: iseaatta.wav, iseaattb.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 125
+		Damage: 125000
 		Versus:
 			None: 200
 			Flak: 100
@@ -94,7 +94,7 @@ awp:
 		Speed: 6c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 125
+		Damage: 125000
 		DamageTypes: BulletDeath
 
 AWPE:
@@ -108,7 +108,7 @@ AWPE:
 	Report: irocatta.wav
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 25000
 		ValidTargets: Ground, Water, Air
 		Versus:
 			Flak: 100
@@ -129,7 +129,7 @@ vulcan:
 	Range: 5c512
 	Report: bsenatta.wav, bsenattb.wav, bsenattc.wav, bsenattd.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 50
+		Damage: 50000
 
 vulcan2:
 	Inherits: vulcan
@@ -141,4 +141,4 @@ BlackHawkCannon:
 	Range: 6c0
 	Report: vblhatta.wav, vblhattb.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 25000

@@ -19,7 +19,7 @@ MammothTusk:
 		TrailImage: smokey2
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
-		Damage: 80
+		Damage: 80000
 		Versus:
 			Flak: 90
 			Plate: 80
@@ -50,7 +50,7 @@ Maverick:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 200
+		Damage: 200000
 		Versus:
 			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -79,7 +79,7 @@ Medusa:
 		RangeLimit: 14c409
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
-		Damage: 100
+		Damage: 100000
 
 HoverMissile:
 	Inherits: ^Missile
@@ -97,7 +97,7 @@ HoverMissile:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 25
+		Damage: 25000
 		ValidTargets: Ground, Air
 		Versus:
 			None: 100
@@ -129,7 +129,7 @@ HoverMissileE:
 	Report: vifvatta.wav
 	ValidTargets: Ground, Air
 	Warhead@1Dam: SpreadDamage
-		Damage: 80
+		Damage: 80000
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_grey_explosion
 		ImpactSounds: gexp15a.wav
@@ -153,7 +153,7 @@ SubTorpedo:
 		TerrainHeightAware: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 100
+		Damage: 100000
 		ValidTargets: Water, Underwater, Bridge
 		Versus:
 			None: 25

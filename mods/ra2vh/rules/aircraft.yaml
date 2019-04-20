@@ -7,7 +7,7 @@ shad:
 	Selectable:
 		Bounds: 70,60,0,-20
 	Health:
-		HP: 175
+		HP: 175000
 	Armor:
 		Type: Light
 	Armament:
@@ -90,7 +90,7 @@ zep:
 		TakeOffOnResupply: true
 		VTOL: true
 	Health:
-		HP: 2000
+		HP: 2000000
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -156,7 +156,7 @@ orca:
 	Selectable:
 		Bounds: 30,24
 	Health:
-		HP: 150
+		HP: 150000
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -209,7 +209,7 @@ beag:
 	Armament:
 		Weapon: Maverick2
 	Health:
-		HP: 200
+		HP: 200000
 	Voiced:
 		VoiceSet: BlackEagleVoice
 	RenderSprites:
@@ -244,7 +244,7 @@ pdplane:
 		TurnSpeed: 5
 		Speed: 225
 	Health:
-		HP: 400
+		HP: 400000
 	Armor:
 		Type: Light
 	RenderSprites:

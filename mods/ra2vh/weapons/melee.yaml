@@ -5,7 +5,7 @@ DogJaw:
 	Report: idogatta.wav, idogatca.wav
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
-		Damage: 100
+		Damage: 100000
 		ValidTargets: Infantry
 		Versus:
 			None: 100
@@ -33,7 +33,7 @@ AlligatorBite:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
-		Damage: 30
+		Damage: 30000
 		DamageTypes: BulletDeath
 
 BearBite:
@@ -51,5 +51,5 @@ SquidPunch:
 	Report: vsquat1a.wav
 	ValidTargets: Water, Underwater
 	Warhead@1Dam: SpreadDamage
-		Damage: 50
+		Damage: 50000
 		ValidTargets: Water, Underwater

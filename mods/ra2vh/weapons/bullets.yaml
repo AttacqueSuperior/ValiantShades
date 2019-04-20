@@ -8,7 +8,7 @@ GrandCannonWeapon:
 		Blockable: false
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 150000
 		Versus:
 			None: 100
 			Flak: 100
@@ -34,7 +34,7 @@ sabot:
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Spread: 190
-		Damage: 150
+		Damage: 150000
 		Versus:
 			None: 2
 			Flak: 2
@@ -57,7 +57,7 @@ sabotE:
 		Blockable: false
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 175
+		Damage: 175000
 		Versus:
 			Medium: 50
 			Drone: 100
@@ -77,7 +77,7 @@ MirageGun:
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
-		Damage: 100
+		Damage: 100000
 		Versus:
 			None: 100
 			Flak: 100
@@ -102,14 +102,14 @@ MirageGunE:
 	ReloadDelay: 80
 	Range: 9c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 150000
 
 20mmrapid:
 	Inherits: ^MG
 	Range: 5c512
 	Report: vwaratta.wav, vwarattb.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 30000
 		Versus:
 			Medium: 20
 			Heavy: 20
@@ -124,7 +124,7 @@ MirageGunE:
 	Range: 5c512
 	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 50
+		Damage: 50000
 		Versus:
 			None: 100
 			Flak: 90
@@ -147,7 +147,7 @@ MirageGunE:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 65
+		Damage: 65000
 		Versus:
 			None: 25
 			Flak: 25
@@ -169,7 +169,7 @@ MirageGunE:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 55
+		Damage: 55000
 		Versus:
 			None: 100
 			Flak: 100
@@ -190,7 +190,7 @@ MirageGunE:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 90
+		Damage: 90000
 		Versus:
 			None: 25
 			Flak: 25
@@ -212,7 +212,7 @@ MirageGunE:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 85
+		Damage: 85000
 		Versus:
 			None: 100
 			Flak: 100
@@ -235,7 +235,7 @@ MirageGunE:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 100
+		Damage: 100000
 		Versus:
 			Wood: 100
 			Steel: 100
@@ -272,7 +272,7 @@ MirageGunE:
 		Blockable: false
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 60000
 		Versus:
 			None: 100
 			Flak: 80

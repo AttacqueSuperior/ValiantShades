@@ -125,9 +125,9 @@ FLAMEGUY:
 	WithInfantryBody:
 		IdleSequences: run
 	Health:
-		HP: 160
+		HP: 160000
 	SelfHealing:
-		Step: -10
+		Step: -10000
 		HealIfBelow: 101
 	ScaredyCat:
 		PanicSequencePrefix:

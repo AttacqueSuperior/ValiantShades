@@ -19,7 +19,7 @@ e2:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -62,7 +62,7 @@ flakt:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 100
+		HP: 100000
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -116,7 +116,7 @@ shk:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 130
+		HP: 130000
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -175,7 +175,7 @@ terror:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 75
+		HP: 75000
 	Mobile:
 		Speed: 90
 	RevealsShroud:
@@ -217,7 +217,7 @@ deso:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 150
+		HP: 150000
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -264,7 +264,7 @@ ivan:
 	Voiced:
 		VoiceSet: CrazyIvanVoice
 	Health:
-		HP: 125
+		HP: 125000
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -306,7 +306,7 @@ civan:
 		Payload: 500
 		PlayerExperience: 50
 	Health:
-		HP: 100
+		HP: 100000
 	PortableChrono:
 		ChronoshiftSound: ichrmova.wav
 		DeployCursor: chronosphere
@@ -338,7 +338,7 @@ yuri:
 	Voiced:
 		VoiceSet: YuriVoice
 	Health:
-		HP: 100
+		HP: 100000
 	Mobile:
 		PauseOnCondition: !(!deployed && !deploying && !chronodisable)
 	RevealsShroud:
@@ -405,7 +405,7 @@ yuripr:
 		Payload: 1000
 		PlayerExperience: 100
 	Health:
-		HP: 200
+		HP: 200000
 	Armor:
 		Type: Flak
 	-Crushable:

@@ -12,7 +12,7 @@ gacnst:
 	Selectable:
 		Bounds: 220, 155, 0, -20
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -89,7 +89,7 @@ gapowr:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 750
+		HP: 750000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -138,7 +138,7 @@ gapile:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	Health:
-		HP: 500
+		HP: 500000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -207,7 +207,7 @@ garefn:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -278,7 +278,7 @@ gaairc:
 	Selectable:
 		Bounds: 142, 150, -3, -42
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Steel
 	GrantConditionOnPowerState@LOWPOWER:
@@ -388,7 +388,7 @@ gaweap:
 		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -459,7 +459,7 @@ gayard:
 		TerrainTypes: Water
 	-GivesBuildableArea:
 	Health:
-		HP: 1500
+		HP: 1500000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -549,6 +549,7 @@ gayard:
 		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
+		HpPerStep: 10000
 	ProductionBar:
 		ProductionType: Ship
 	Power:
@@ -587,7 +588,7 @@ gadept:
 		Footprint: x== x== x==
 		Dimensions: 3,3
 	Health:
-		HP: 1200
+		HP: 1200000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -599,6 +600,7 @@ gadept:
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
+		HpPerStep: 10000
 	WithIdleOverlay@side:
 		Sequence: idle-side
 		RequiresCondition: !build-incomplete
@@ -634,7 +636,7 @@ gatech:
 		Footprint: xx xx xx
 		Dimensions: 3,2
 	Health:
-		HP: 500
+		HP: 500000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -676,7 +678,7 @@ gapill:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 400
+		HP: 400000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -718,7 +720,7 @@ nasam:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -772,7 +774,7 @@ gtgcan:
 		Footprint: xx xx
 		Dimensions: 2, 2
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -832,7 +834,7 @@ gaorep:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -861,7 +863,7 @@ gaspysat:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -898,7 +900,7 @@ gagap:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -929,7 +931,7 @@ gaweat:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -960,7 +962,7 @@ gacsph:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 4,3
 	Health:
-		HP: 750
+		HP: 750000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1010,7 +1012,7 @@ atesla:
 	Selectable:
 		Bounds: 44, 102, 0, -40
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Steel
 	RevealsShroud:

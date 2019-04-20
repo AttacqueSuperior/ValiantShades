@@ -10,7 +10,7 @@ CRFlakGuyGun:
 	ReloadDelay: 15
 	Range: 7c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 30000
 
 FlakGuyAAGun:
 	Inherits: ^AAFlak
@@ -24,20 +24,20 @@ FlakGuyAAGunE:
 	Burst: 2
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
-		Damage: 8
+		Damage: 8000
 
 FlakTrackGun:
 	Inherits: ^Flak
 	ValidTargets: Ground, Water
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 25000
 
 FlakTrackAAGun:
 	Inherits: ^AAFlak
 	ValidTargets: Air
 	Range: 10c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 35
+		Damage: 35000
 		Versus:
 			Flak: 80
 			Light: 100
@@ -48,4 +48,4 @@ FlakWeapon:
 	Range: 12c0
 	Report: bflaatta.wav, bflaattb.wav, bflaattc.wav, bflaattd.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 40
+		Damage: 40000

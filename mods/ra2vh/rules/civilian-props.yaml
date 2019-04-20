@@ -3,7 +3,7 @@ camisc01:
 	Tooltip:
 		Name: Barrels
 	Health:
-		HP: 5
+		HP: 5000
 	Armor:
 		Type: Concrete
 	SoundOnDamageTransition:
@@ -16,7 +16,7 @@ camisc02:
 	Tooltip:
 		Name: Barrel
 	Health:
-		HP: 5
+		HP: 5000
 	Armor:
 		Type: Concrete
 	SoundOnDamageTransition:
@@ -29,7 +29,7 @@ camisc03:
 	Tooltip:
 		Name: Dumpster
 	Health:
-		HP: 100
+		HP: 100000
 	Armor:
 		Type: Concrete
 	SoundOnDamageTransition:
@@ -43,7 +43,7 @@ camisc04:
 	Tooltip:
 		Name: Mailbox
 	Health:
-		HP: 10
+		HP: 10000
 	Armor:
 		Type: Concrete
 	SoundOnDamageTransition:
@@ -57,7 +57,7 @@ camisc05:
 	Tooltip:
 		Name: Pipes
 	Health:
-		HP: 10
+		HP: 10000
 	Armor:
 		Type: Concrete
 	SoundOnDamageTransition:
@@ -75,7 +75,7 @@ camisc06:
 	Tooltip:
 		Name: V3 Ammunition
 	Health:
-		HP: 10
+		HP: 10000
 	Armor:
 		Type: Concrete
 	Explodes:
@@ -91,7 +91,7 @@ camsc11:
 	Tooltip:
 		Name: Tires
 	Health:
-		HP: 10
+		HP: 10000
 	Armor:
 		Type: Concrete
 	MapEditorData:
@@ -102,7 +102,7 @@ camsc12:
 	Tooltip:
 		Name: Practice Target
 	Health:
-		HP: 10
+		HP: 10000
 	Armor:
 		Type: Concrete
 	MapEditorData:
@@ -117,7 +117,7 @@ camsc13:
 	Tooltip:
 		Name: Derelict Tank
 	Health:
-		HP: 800
+		HP: 800000
 	Armor:
 		Type: Concrete
 	MapEditorData:
@@ -128,7 +128,7 @@ ammocrat:
 	Tooltip:
 		Name: Ammo Crates
 	Health:
-		HP: 1
+		HP: 1000
 	RenderSprites:
 		Image: ammo01
 	MapEditorData:
@@ -141,7 +141,7 @@ camsc01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	MapEditorData:
 		Categories: Decoration
 
@@ -152,7 +152,7 @@ camsc02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 50
+		HP: 50000
 	MapEditorData:
 		Categories: Decoration
 
@@ -163,7 +163,7 @@ camsc03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	MapEditorData:
 		Categories: Decoration
 
@@ -174,7 +174,7 @@ camsc04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	MapEditorData:
 		Categories: Decoration
 
@@ -185,7 +185,7 @@ camsc05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	MapEditorData:
 		Categories: Decoration
 
@@ -196,7 +196,7 @@ camsc06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 10
+		HP: 10000
 	WithIdleOverlay@fire:
 		Sequence: idle-fire
 	MapEditorData:
@@ -212,7 +212,7 @@ caeuro05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -226,7 +226,7 @@ capark01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	MapEditorData:
 		Categories: Decoration
 
@@ -238,7 +238,7 @@ capark02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
@@ -253,7 +253,7 @@ capark03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1
+		HP: 1000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -269,7 +269,7 @@ castrt01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Decoration
 
@@ -282,7 +282,7 @@ castrt02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Decoration
 
@@ -295,7 +295,7 @@ castrt03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Decoration
 
@@ -308,7 +308,7 @@ castrt04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Decoration
 
@@ -321,7 +321,7 @@ castrt05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Decoration
 
@@ -335,7 +335,7 @@ camov01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 1,4
 		Footprint: x x x x
@@ -351,7 +351,7 @@ camov02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -446,7 +446,7 @@ carus02c:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Wall
 
@@ -455,7 +455,7 @@ carus02d:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Wall
 
@@ -464,7 +464,7 @@ carus02e:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Wall
 
@@ -473,7 +473,7 @@ carus02f:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	MapEditorData:
 		Categories: Wall
 
@@ -484,7 +484,7 @@ carus07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 
 cakrmw:
 	Inherits: ^Wall
@@ -499,7 +499,7 @@ gagate_a:
 	Valued:
 		Cost: 250
 	Health:
-		HP: 100
+		HP: 100000
 	Armor:
 		Type: Wood
 	-Building:

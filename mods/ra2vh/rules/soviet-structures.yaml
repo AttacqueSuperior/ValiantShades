@@ -15,7 +15,7 @@ nacnst:
 		Prerequisite: structures.soviets
 		RequiresCondition: !build-incomplete
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -79,7 +79,7 @@ napowr:
 	Selectable:
 		Bounds: 126, 94, 2, -16
 	Health:
-		HP: 750
+		HP: 750000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -132,7 +132,7 @@ nahand:
 	Selectable:
 		Bounds: 94, 168, 0, -58
 	Health:
-		HP: 500
+		HP: 500000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -221,7 +221,7 @@ narefn:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -281,7 +281,7 @@ naradr:
 	Selectable:
 		Bounds: 95, 130, 0, -40
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	GrantConditionOnPowerState@LOWPOWER:
@@ -330,7 +330,7 @@ naweap:
 		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -396,7 +396,7 @@ nayard:
 		TerrainTypes: Water
 	-GivesBuildableArea:
 	Health:
-		HP: 1500
+		HP: 1500000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -486,6 +486,7 @@ nayard:
 		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
+		HpPerStep: 10000
 	ProductionBar:
 		ProductionType: Ship
 		RequiresCondition: !build-incomplete
@@ -529,7 +530,7 @@ nadept:
 		Footprint: x=== x=== x===
 		Dimensions: 4,3
 	Health:
-		HP: 1200
+		HP: 1200000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -540,7 +541,7 @@ nadept:
 		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 148
-		HpPerStep: 20
+		HpPerStep: 20000
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
@@ -575,7 +576,7 @@ nanrct:
 	Selectable:
 		Bounds: 167, 130, 9, -31
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -621,7 +622,7 @@ natech:
 	Selectable:
 		Bounds: 152, 164, 0, -50
 	Health:
-		HP: 500
+		HP: 500000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -653,7 +654,7 @@ naclon:
 	Selectable:
 		Bounds: 108, 134, 0, -48
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -727,7 +728,7 @@ napsis:
 	Selectable:
 		Bounds: 82, 150, -1, -55
 	Health:
-		HP: 750
+		HP: 750000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -764,7 +765,7 @@ nairon:
 	Selectable:
 		Bounds: 136, 100, 0, -20
 	Health:
-		HP: 750
+		HP: 750000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -809,7 +810,7 @@ namisl:
 	Selectable:
 		Bounds: 152, 104, 0, -50
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -871,7 +872,7 @@ naflak:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 900
+		HP: 900000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -920,7 +921,7 @@ tesla:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -978,7 +979,7 @@ nalasr:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 400
+		HP: 400000
 	Armor:
 		Type: Steel
 	RevealsShroud:

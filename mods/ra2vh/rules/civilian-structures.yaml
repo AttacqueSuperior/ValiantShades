@@ -27,7 +27,7 @@ cahse01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -49,7 +49,7 @@ cahse02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -71,7 +71,7 @@ cahse03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -93,7 +93,7 @@ cahse04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -115,7 +115,7 @@ cahse05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 300
+		HP: 300000
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
@@ -137,7 +137,7 @@ cahse06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 300
+		HP: 300000
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
@@ -159,7 +159,7 @@ cahse07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -184,7 +184,7 @@ cawt01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 
 cats01:
 	Inherits: ^CivBuilding
@@ -196,7 +196,7 @@ cats01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 300
+		HP: 300000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -209,7 +209,7 @@ cabarn02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -223,7 +223,7 @@ cawash01:
 	Tooltip:
 		Name: White House
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -247,7 +247,7 @@ cawash03:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -271,7 +271,7 @@ cawash04:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -295,7 +295,7 @@ cawash05:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -320,7 +320,7 @@ cawash06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -343,7 +343,7 @@ cawash07:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -368,7 +368,7 @@ cawash08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -391,7 +391,7 @@ cawash09:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -415,7 +415,7 @@ cawash10:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -439,7 +439,7 @@ cawash11:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -465,7 +465,7 @@ cawsh12:
 	Tooltip:
 		Name: Washington Monument
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -504,7 +504,7 @@ cawash13:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -528,7 +528,7 @@ cawash14:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -552,7 +552,7 @@ cawash15:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -578,7 +578,7 @@ cawash16:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
@@ -604,7 +604,7 @@ cawash17:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -630,7 +630,7 @@ cawash18:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -649,7 +649,7 @@ cawash19:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -674,7 +674,7 @@ canewy01:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -701,7 +701,7 @@ canewy04:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -729,7 +729,7 @@ canewy05:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -742,7 +742,7 @@ canewy06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -766,7 +766,7 @@ canewy07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -790,7 +790,7 @@ canewy08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -814,7 +814,7 @@ canewy10:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -838,7 +838,7 @@ canewy11:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -862,7 +862,7 @@ canewy12:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -886,7 +886,7 @@ canewy13:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -910,7 +910,7 @@ canewy14:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -934,7 +934,7 @@ canewy15:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -958,7 +958,7 @@ canewy16:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -982,7 +982,7 @@ canewy17:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -1006,7 +1006,7 @@ canewy18:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -1032,7 +1032,7 @@ canewy20:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
@@ -1058,7 +1058,7 @@ canewy21:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
@@ -1084,7 +1084,7 @@ caswst01:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -1109,7 +1109,7 @@ caarmy01:
 	Tooltip:
 		Name: Army Tent
 	Health:
-		HP: 200
+		HP: 200000
 	RevealsShroud:
 		Range: 6c0
 
@@ -1120,7 +1120,7 @@ caarmy02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 
 caarmy03:
 	Inherits: ^CivBuilding
@@ -1129,7 +1129,7 @@ caarmy03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 
 caarmy04:
 	Inherits: ^CivBuilding
@@ -1138,7 +1138,7 @@ caarmy04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 
 cawa2a:
 	Inherits: ^CivBuilding
@@ -1149,7 +1149,7 @@ cawa2a:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1175,7 +1175,7 @@ cawa2b:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1201,7 +1201,7 @@ cawa2c:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1227,7 +1227,7 @@ cawa2d:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Health:
-		HP: 600
+		HP: 600000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1253,7 +1253,7 @@ cafarm01:
 	Tooltip:
 		Name: Farm
 	Health:
-		HP: 400
+		HP: 400000
 	RevealsShroud:
 		Range: 4c0
 
@@ -1265,7 +1265,7 @@ cafarm02:
 	Tooltip:
 		Name: Farm Silo
 	Health:
-		HP: 400
+		HP: 400000
 	SpawnActorOnDeath:
 		Actor: cafarm02.rubble
 
@@ -1284,7 +1284,7 @@ cafarm06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -1359,7 +1359,7 @@ cacolo01:
 	Tooltip:
 		Name: Air Force Academy Chapel
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1385,7 +1385,7 @@ caind01:
 	Tooltip:
 		Name: Factory
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1411,7 +1411,7 @@ calab:
 	Tooltip:
 		Name: Einstein's Lab
 	Health:
-		HP: 1000
+		HP: 1000000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1437,7 +1437,7 @@ cagas01:
 	Tooltip:
 		Name: Gas Station
 	Health:
-		HP: 1000
+		HP: 1000000
 	RevealsShroud:
 		Range: 6c0
 	SpawnActorOnDeath:
@@ -1461,7 +1461,7 @@ galite:
 	RevealsShroud:
 		Range: 0c0
 	Health:
-		HP: 600
+		HP: 600000
 	Power:
 		Amount: 0
 	RenderSprites:
@@ -1482,7 +1482,7 @@ cacity01:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1498,7 +1498,7 @@ cacity02:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 5,4
 		Footprint: xxxxx xxxxx xxxxx xxxxx
@@ -1514,7 +1514,7 @@ cacity03:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1530,7 +1530,7 @@ cacity04:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1548,7 +1548,7 @@ city05:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1566,7 +1566,7 @@ catech01:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1590,7 +1590,7 @@ catexs01:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -1616,7 +1616,7 @@ catexs02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 2000
+		HP: 2000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1640,7 +1640,7 @@ catexs03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1664,7 +1664,7 @@ catexs04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1688,7 +1688,7 @@ catexs05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1712,7 +1712,7 @@ catexs06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1736,7 +1736,7 @@ catexs07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1760,7 +1760,7 @@ catexs08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -1784,7 +1784,7 @@ capars01:
 	Armor:
 		Type: Steel
 	Health:
-		HP: 3000
+		HP: 3000000
 	Power:
 		Amount: -100
 	Building:
@@ -1810,7 +1810,7 @@ capars02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -1834,7 +1834,7 @@ capars04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1858,7 +1858,7 @@ capars05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1882,7 +1882,7 @@ capars06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -1905,7 +1905,7 @@ capars07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 100
+		HP: 100000
 	MapEditorData:
 		Categories: Decoration
 
@@ -1917,7 +1917,7 @@ capars08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -1941,7 +1941,7 @@ capars09:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -1965,7 +1965,7 @@ capars10:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
@@ -1991,7 +1991,7 @@ capars11:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -2017,7 +2017,7 @@ capars12:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
@@ -2043,7 +2043,7 @@ capars13:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -2069,7 +2069,7 @@ capars14:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
@@ -2093,7 +2093,7 @@ cafrma:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -2105,7 +2105,7 @@ cafrmb:
 	RevealsShroud:
 		Range: 4c0
 	Health:
-		HP: 50
+		HP: 50000
 	MapEditorData:
 		Categories: Decoration
 
@@ -2119,7 +2119,7 @@ caprs03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500
+		HP: 500000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -2144,7 +2144,7 @@ cagard01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 100
+		HP: 100000
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
 	MapEditorData:
@@ -2160,7 +2160,7 @@ carus01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2181,7 +2181,7 @@ carus02a:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 800
+		HP: 800000
 	SpawnActorOnDeath:
 		Actor: carus02a.rubble
 	MapEditorData:
@@ -2202,7 +2202,7 @@ carus02b:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 500
+		HP: 500000
 	SpawnActorOnDeath:
 		Actor: carus02b.rubble
 
@@ -2223,7 +2223,7 @@ carus02g:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	SpawnActorOnDeath:
 		Actor: carus02g.rubble
 	MapEditorData:
@@ -2244,7 +2244,7 @@ carus03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,5
 		Footprint: xx xx xx xx xx
@@ -2268,7 +2268,7 @@ carus04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2292,7 +2292,7 @@ carus05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2316,7 +2316,7 @@ carus06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2339,7 +2339,7 @@ carus08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	SpawnActorOnDeath:
 		Actor: carus08.rubble
 
@@ -2356,7 +2356,7 @@ carus09:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
@@ -2380,7 +2380,7 @@ carus10:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
@@ -2404,7 +2404,7 @@ carus11:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
@@ -2428,7 +2428,7 @@ camiam01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
@@ -2452,7 +2452,7 @@ camiam02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
@@ -2476,7 +2476,7 @@ camiam03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -2499,7 +2499,7 @@ camiam04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 	MapEditorData:
 		Categories: Decoration
 
@@ -2511,7 +2511,7 @@ camiam05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
@@ -2535,7 +2535,7 @@ camiam06:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2558,7 +2558,7 @@ camiam07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2583,7 +2583,7 @@ camiam08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,1
 		Footprint: xxx
@@ -2607,7 +2607,7 @@ canwy05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2631,7 +2631,7 @@ canwy09:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -2655,7 +2655,7 @@ canwy22:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -2679,7 +2679,7 @@ canwy23:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -2703,7 +2703,7 @@ canwy24:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -2727,7 +2727,7 @@ canwy25:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -2751,7 +2751,7 @@ canwy26:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
@@ -2777,7 +2777,7 @@ camex01:
 	RevealsShroud:
 		Range: 12c0
 	Health:
-		HP: 2000
+		HP: 2000000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -2803,7 +2803,7 @@ camex02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
@@ -2829,7 +2829,7 @@ camex03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -2855,7 +2855,7 @@ camex04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -2881,7 +2881,7 @@ camex05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -2905,7 +2905,7 @@ caeur1:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 300
+		HP: 300000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -2929,7 +2929,7 @@ caeur2:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 300
+		HP: 300000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -2953,7 +2953,7 @@ caeur04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 400
+		HP: 400000
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
@@ -2977,7 +2977,7 @@ cachig01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -3001,7 +3001,7 @@ cachig02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -3025,7 +3025,7 @@ cachig03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
@@ -3051,7 +3051,7 @@ cachig04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -3077,7 +3077,7 @@ cachig05:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3101,7 +3101,7 @@ cachig06:
 	Armor:
 		Type: Steel
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -3125,7 +3125,7 @@ castl01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3149,7 +3149,7 @@ castl02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3173,7 +3173,7 @@ castl03:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3197,7 +3197,7 @@ castl04:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 2,6
 		Footprint: xx xx xx xx xx xx
@@ -3223,7 +3223,7 @@ castl05a:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3249,7 +3249,7 @@ castl05b:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3275,7 +3275,7 @@ castl05c:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3301,7 +3301,7 @@ castl05d:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3327,7 +3327,7 @@ castl05e:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3353,7 +3353,7 @@ castl05f:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3379,7 +3379,7 @@ castl05g:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3405,7 +3405,7 @@ castl05h:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3431,7 +3431,7 @@ camsc07:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 600
+		HP: 600000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -3444,7 +3444,7 @@ camsc08:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 
 camsc09:
 	Inherits: ^CivBuilding
@@ -3454,7 +3454,7 @@ camsc09:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 200
+		HP: 200000
 
 camsc10:
 	Inherits: ^CivBuilding
@@ -3464,7 +3464,7 @@ camsc10:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 1000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -3490,7 +3490,7 @@ cabunk01:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 2000
+		HP: 2000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -3516,7 +3516,7 @@ cabunk02:
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 2000
+		HP: 2000000
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx

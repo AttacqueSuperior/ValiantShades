@@ -17,7 +17,7 @@ engineer:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 75
+		HP: 75000
 	Passenger:
 		PipType: Blue
 	EngineerRepair:
@@ -58,7 +58,7 @@ dog:
 	Selectable:
 		Bounds: 30, 24, 0, -5
 	Health:
-		HP: 100
+		HP: 100000
 	Mobile:
 		Speed: 120
 	Passenger:
@@ -121,7 +121,7 @@ e1:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	Mobile:
 		PauseOnCondition: !(!chronodisable && undeployed)
 	Passenger:
@@ -214,7 +214,7 @@ snipe:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -256,7 +256,7 @@ spy:
 	Selectable:
 		Bounds: 24, 28, -1, -8
 	Health:
-		HP: 25
+		HP: 25000
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
@@ -308,7 +308,7 @@ ghost:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	Mobile:
 		Speed: 75
 		Locomotor: swimsuit
@@ -354,7 +354,7 @@ ccomand:
 		Payload: 1000
 		PlayerExperience: 100
 	Health:
-		HP: 100
+		HP: 100000
 	Mobile:
 		Locomotor: foot
 	-Crushable:
@@ -447,7 +447,7 @@ tany:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	Mobile:
 		Speed: 75
 		Locomotor: swimsuit
@@ -497,7 +497,7 @@ jumpjet:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 125000
 	-TimedConditionBar@ChronoDisable:
 	-ExternalCondition@CHRONODISABLE:
 	-Mobile:
@@ -601,7 +601,7 @@ cleg:
 		PlayerExperience: 75
 		Voice: Move
 	Health:
-		HP: 125
+		HP: 125000
 	RevealsShroud:
 		Range: 8c0
 	Passenger:
