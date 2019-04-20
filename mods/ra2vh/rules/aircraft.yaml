@@ -82,7 +82,7 @@ zep:
 		Bounds: 100,60,0,-10
 	Aircraft:
 		CruiseAltitude: 5600
-		TurnSpeed: 5
+		TurnSpeed: 2
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
