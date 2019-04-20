@@ -10,32 +10,38 @@ Player:
 	TechTree:
 	ClassicProductionQueue@Building:
 		Type: Building
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	ClassicProductionQueue@Support:
 		Type: Support
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	ClassicParallelProductionQueue@Vehicle:
 		Type: Vehicle
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	ClassicParallelProductionQueue@Infantry:
 		Type: Infantry
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	ClassicParallelProductionQueue@Aircraft:
 		Type: Aircraft
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	ClassicParallelProductionQueue@Ship:
 		Type: Ship
-		LowPowerModifier: 300
+		LowPowerModifier: 200
 		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 	PlaceBuilding:
 		Palette: effect75alpha
 	SupportPowerManager:
