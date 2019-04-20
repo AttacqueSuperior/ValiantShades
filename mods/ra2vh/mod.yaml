@@ -277,6 +277,10 @@ GameSpeeds:
 		Name: Fastest
 		Timestep: 20
 		OrderLatency: 6
+	ludicrous:
+		Name: Ludicrous
+		Timestep: 5
+		OrderLatency: 9
 
 ModContent:
 	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
