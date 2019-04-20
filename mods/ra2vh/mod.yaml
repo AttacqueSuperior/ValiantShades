@@ -39,6 +39,7 @@ Packages:
 	~audio.bag
 	ra2vh|bits
 	ra2vh|bits/cameos
+	ra2vh|bits/infantry
 	ra2vh|bits/structures
 	ra2vh|bits/animations
 	ra2vh|bits/projectiles
