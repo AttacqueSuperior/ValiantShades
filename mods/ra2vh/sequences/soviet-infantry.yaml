@@ -126,10 +126,12 @@ ivan:
 		Length: 15
 	cheer:
 		Start: 259
+	paradrop: ivanfix
 	icon: ivanicon
 
 civan:
 	Inherits: ivan
+	paradrop: civanfix
 	icon: ivncicon
 
 yuri:
