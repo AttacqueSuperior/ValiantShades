@@ -89,6 +89,10 @@
 		Name: cameo-chevron
 		Filename: cameo-chevron.png
 		AllowModifiers: false
+	PaletteFromFile@flameguy:
+		Name: flameguy
+		Filename: anim.pal
+		ShadowIndex: 254
 	PaletteFromFile@pips:
 		Name: pips
 		Filename: palette.pal

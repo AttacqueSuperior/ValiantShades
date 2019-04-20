@@ -337,7 +337,7 @@
 			PsychicDeath: 5
 			ElectroDeath: 6
 	SpawnActorOnDeath@flames:
-		Actor: FLAMEGUY
+		Actor: flameguy
 		DeathType: FlameDeath
 	TakeCover:
 		DamageModifiers:

@@ -113,7 +113,7 @@ CAMERA:
 	MapEditorData:
 		Categories: System
 
-FLAMEGUY:
+flameguy:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Mobile:
@@ -121,7 +121,7 @@ FLAMEGUY:
 		Locomotor: flameguy
 	HiddenUnderFog:
 	RenderSprites:
-		Palette: effect
+		Palette: flameguy
 	WithInfantryBody:
 		IdleSequences: run
 	Health:
@@ -134,6 +134,6 @@ FLAMEGUY:
 	WithDeathAnimation:
 		FallbackSequence: die
 		UseDeathTypeSuffix: false
-		DeathSequencePalette: effect
+		DeathSequencePalette: flameguy
 		DeathPaletteIsPlayerPalette: false
 	HitShape:
