@@ -894,8 +894,8 @@ gagap:
 	Selectable:
 		Bounds: 50, 114, -16, -38
 	Building:
-		Footprint: _ x
-		Dimensions: 1,2
+		Footprint: x
+		Dimensions: 1,1
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
