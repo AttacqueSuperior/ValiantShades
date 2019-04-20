@@ -8,7 +8,7 @@ RedEye2:
 		MaximumLaunchSpeed: 350
 		Speed: 650
 		Acceleration: 12
-		RangeLimit: 1
+		RangeLimit: 24c0
 		CruiseAltitude: 4c0
 
 MammothTusk:
@@ -22,7 +22,7 @@ MammothTusk:
 		ContrailLength: 8
 		HorizontalRateOfTurn: 10
 		Speed: 170
-		RangeLimit: 9c614
+		RangeLimit: 16c0
 		TrailImage: smokey2
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
@@ -53,7 +53,7 @@ Maverick:
 		Arm: 2
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 8
-		RangeLimit: 7c204
+		RangeLimit: 12c0
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
@@ -83,7 +83,7 @@ Medusa:
 	Projectile: Missile
 		ContrailLength: 35
 		LockOnProbability: 85
-		RangeLimit: 14c409
+		RangeLimit: 24c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100000
@@ -100,7 +100,7 @@ HoverMissile:
 		Arm: 2
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 8
-		RangeLimit: 7c204
+		RangeLimit: 12c0
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
@@ -154,7 +154,7 @@ SubTorpedo:
 		Speed: 102
 		TrailImage: bbblelrg
 		HorizontalRateOfTurn: 12
-		RangeLimit: 8c409
+		RangeLimit: 14c0
 		BoundToTerrainType: Water
 		Palette: shadow
 		TerrainHeightAware: true
