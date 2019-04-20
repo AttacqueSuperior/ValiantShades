@@ -73,6 +73,7 @@
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -299,6 +300,7 @@
 	Health:
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	HitShape:
 		Type: Circle
 			Radius: 128
@@ -557,6 +559,7 @@
 	Inherits@7: ^VehicleParticles
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
 		TurnSpeed: 5
@@ -636,6 +639,7 @@
 	Inherits@2: ^UnitParticles
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
@@ -739,6 +743,7 @@
 	Inherits@6: ^VehicleParticles
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
 		Locomotor: naval
