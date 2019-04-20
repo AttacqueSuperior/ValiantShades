@@ -275,11 +275,11 @@ ivan:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
 	Armament@primary:
-		Weapon: IvanBomber
-		RequiresCondition: !rank-elite
-	Armament@elite:
-		Weapon: IvanBomberE
-		RequiresCondition: rank-elite
+		Weapon: PlaceIvanBomb
+	#	RequiresCondition: !rank-elite
+	# Armament@elite:
+	#	Weapon: IvanBomberE
+	#	RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 		Cursor: bomb

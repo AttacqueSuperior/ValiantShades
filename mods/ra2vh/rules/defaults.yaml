@@ -69,7 +69,8 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
-	Inherits@4: ^BuildingParticles 
+	Inherits@4: ^BuildingParticles
+	Inherits@ivanbomb: ^IvanBombable
 	Inherits@shape: ^1x1Shape
 	-DrawLineToTarget:
 	OwnerLostAction:
@@ -297,6 +298,7 @@
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@ivanbomb: ^IvanBombable
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -558,6 +560,7 @@
 	Inherits@6: ^ParachutableVehicle
 	Inherits@7: ^VehicleParticles
 	Inherits@8: ^VoxelLighting
+	Inherits@ivanbomb: ^IvanBombable
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -633,6 +636,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^UnitParticles
 	Inherits@3: ^VoxelLighting
+	Inherits@ivanbomb: ^IvanBombable
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -735,6 +739,7 @@
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^VehicleParticles
 	Inherits@7: ^VoxelLighting
+	Inherits@ivanbomb: ^IvanBombable
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath

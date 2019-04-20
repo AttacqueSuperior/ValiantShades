@@ -174,3 +174,16 @@
 		Sequence: mindcontrol
 		Palette: effect
 		RequiresCondition: controlled
+
+^IvanBombable:
+	DelayedWeaponAttachable@ivanbomb:
+		Type: ivanbomb
+		Condition: ivanbomb
+	Targetable@ivanbombed:
+		TargetTypes: IvanBombed
+		RequiresCondition: ivanbomb
+	WithIdleOverlayAS@ivanbomb:
+		Image: bomb-overlay
+		Sequence: ivanbomb
+		Palette: mouse
+		RequiresCondition: bombdetector && ivanbomb

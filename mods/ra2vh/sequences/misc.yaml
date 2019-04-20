@@ -461,6 +461,10 @@ bombcurs:
 		Length: *
 		Tick: 300
 
+bomb-overlay:
+	ivanbomb: bombcurs
+		Length: 2
+
 trock01:
 	Inherits: ^Rock
 

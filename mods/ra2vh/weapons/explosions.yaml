@@ -53,20 +53,26 @@ PlaneExplode:
 	Warhead@2Dam: SpreadDamage
 		Damage: 20000
 
+PlaceIvanBomb:
+	Range: 1c849
+	Projectile: InstantHit
+	Report: icraatta.wav
+	InvalidTargets: IvanBombed
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: IvanBomber
+		Type: ivanbomb
+		TriggerTime: 100
+		DeathTypes: DefaultDeath
+		Range: 1
+	Warhead@TargetValidator: SpreadDamage
+
 IvanBomber:
 	ReloadDelay: 50
 	Range: 1c849
-	Report: icraatta.wav
 	Projectile: BulletAS
 		Speed: 425
 		Blockable: false
-	Warhead@0Eff: CreateEffect
-		Delay: 2
-		Explosions: bombcurs
-		ExplosionPalette: mouse
-		ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
-		Delay: 100
 		Spread: 213
 		Damage: 400000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
@@ -96,7 +102,6 @@ IvanBomberE:
 
 IvanDeath:
 	Inherits: IvanBomber
-	-Warhead@0Eff: CreateEffect
 	Warhead@1Dam: SpreadDamage
 		Delay: 0
 	Warhead@2Eff: CreateEffect
