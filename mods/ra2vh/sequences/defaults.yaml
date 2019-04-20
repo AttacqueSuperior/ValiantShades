@@ -172,6 +172,16 @@
 		ShadowStart: 7
 		ZOffset: -3c0
 
+^Flag:
+	Defaults:
+		UseTilesetCode: true
+		Offset: 0,-15
+	idle: causfgl
+		ShadowStart: 4
+	damaged-idle: causfgl
+		Start: 1
+		ShadowStart: 5
+
 ^Wall:
 	Defaults:
 		Offset: 0,-15

@@ -304,92 +304,61 @@ cabarn02:
 		Offset: 0,-30
 
 causfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: causfgl_a
 		Length: 16
 		ShadowStart: 16
 
 carufgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: carufgl_a
 		Length: 16
 		ShadowStart: 16
 
 cairfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cairfgl_a
 		Length: 16
 		ShadowStart: 16
 
 capofgl:
-	Inherits: ^CivStructure
-	Defaults: capofgl
-		Offset: 0,-15
-		UseTilesetCode: false
-	-rubble:
+	Inherits: ^Flag
 	flag: capofgl_a
 		Length: 16
 		ShadowStart: 16
 
 caskfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cuskfgl_a
 		Length: 16
 		ShadowStart: 16
 
 calbfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: culbfgl_a
 		Length: 16
 		ShadowStart: 16
 
 cafrfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cufrfgl_a
 		Length: 16
 		ShadowStart: 16
 
 cagefgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cugefgl_a
 		Length: 16
 		ShadowStart: 16
 
 cacufgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cucufgl_a
 		Length: 16
 		ShadowStart: 16
 
 caukfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-15
-	-rubble:
+	Inherits: ^Flag
 	flag: cuukfgl_a
 		Length: 16
 		ShadowStart: 16
