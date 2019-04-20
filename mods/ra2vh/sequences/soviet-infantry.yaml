@@ -52,6 +52,8 @@ flakt:
 		Start: 165
 	prone-shoot:
 		Start: 245
+	paradrop:
+		Start: 164
 	icon: flkticon
 
 shk:
