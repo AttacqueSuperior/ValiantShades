@@ -347,7 +347,7 @@ yuri:
 		Type: None
 	Passenger:
 		PipType: Red
-	PeriodicExplosion:
+	ExplodeWeapon:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128
 		RequiresCondition: deployed
