@@ -90,7 +90,6 @@ spy:
 	cheer:
 		Start: 196
 	paradrop: spyfix
-		Start: 0
 	icon: spyicon
 
 seal: # TODO: seala on SNOW

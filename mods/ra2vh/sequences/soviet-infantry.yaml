@@ -107,6 +107,7 @@ deso:
 		Tick: 80
 	cheer:
 		Start: 314
+	paradrop: desofix
 	icon: desoicon
 
 ivan:
