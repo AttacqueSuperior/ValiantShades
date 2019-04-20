@@ -705,7 +705,8 @@ gapill:
 		Adjacent: 5
 
 nasam:
-	Inherits: ^VoxelLighting
+	Inherits: ^SupportBuilding
+	Inherits@2: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
 		Queue: Support
@@ -758,7 +759,8 @@ nasam:
 		Adjacent: 5
 
 gtgcan:
-	Inherits: ^VoxelLighting
+	Inherits: ^SupportBuilding
+	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^2x2Shape
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:

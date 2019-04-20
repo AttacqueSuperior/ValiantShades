@@ -107,6 +107,7 @@ cathosp:
 
 caoutp:
 	Inherits: ^TechBuilding
+	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^4x3Shape
 	Selectable:
 		Bounds: 178, 180, 0, -38
@@ -138,12 +139,6 @@ caoutp:
 	BodyOrientation:
 		QuantizedFacings: 16
 		CameraPitch: 90
-	RenderVoxels:
-		Scale: 11.7
-		LightYaw: 800
-		LightPitch: 150
-		LightAmbientColor: -0.5,-0.5,-0.5
-		LightDiffuseColor: 1.4,1.4,1.4
 	WithVoxelTurret:
 	WithRangeCircle:
 		Range: 12c0

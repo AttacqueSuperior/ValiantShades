@@ -860,7 +860,8 @@ nawall:
 		Name: Soviet Wall
 
 naflak:
-	Inherits: ^VoxelLighting
+	Inherits: ^SupportBuilding
+	Inherits@2: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
 		Queue: Support
@@ -967,7 +968,8 @@ tesla:
 		Condition: charged
 
 nalasr:
-	Inherits: ^VoxelLighting
+	Inherits: ^SupportBuilding
+	Inherits@2: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
