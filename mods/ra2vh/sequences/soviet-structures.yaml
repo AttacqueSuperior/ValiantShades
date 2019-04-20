@@ -3,13 +3,9 @@ nacnst:
 	Defaults:
 		Offset: 4, -58
 	idle: ngcnst_c
-		Length: 1
 		ShadowStart: 4
-		Tick: 150
 	damaged-idle: ngcnst_c
-		Length: 1
 		ShadowStart: 5
-		Tick: 150
 	make: ntcnstmk
 		Length: 31
 		ShadowStart: 31
@@ -32,10 +28,6 @@ nacnst:
 		Start: 21
 		Length: 21
 		Tick: 150
-	dead: ngcnstdm # SHP broken & unused
-		Length: 25
-		ShadowStart: 25
-		Tick: 100
 	icon: scnsicon
 
 napowr:
@@ -44,17 +36,10 @@ napowr:
 		Offset: -15, -37
 	idle: ngpowr
 	damaged-idle: ngpowr
-	critical-idle: ngpowr
-		Start: 2
-		ShadowStart: 5
 	idle-lights: ngpowr_a
 		Length: 19
 		Tick: 150
 	damaged-idle-lights: ngpowr_a
-		Start: 19
-		Length: 19
-		Tick: 150
-	critical-idle-lights: ngpowr_a
 		Start: 19
 		Length: 19
 		Tick: 150
@@ -69,9 +54,6 @@ nahand:
 		Offset: 1, -31
 	idle: nghand
 	damaged-idle: nghand
-	critical-idle: nghand
-		Start: 2
-		ShadowStart: 5
 	make: nthandmk
 	icon: handicon
 
@@ -105,9 +87,6 @@ naradr:
 		Offset: 2, -31
 	idle: ngradr
 	damaged-idle: ngradr
-	critical-idle: ngradr
-		Start: 2
-		ShadowStart: 5
 	idle-dish: ngradr_a
 		ShadowStart: 92
 		Length: 45
@@ -258,9 +237,6 @@ nanrct:
 		Offset: -12, -56
 	idle: ngnrct
 	damaged-idle: ngnrct
-	critical-idle: ngnrct
-		Start: 2
-		ShadowStart: 5
 	idle-lights: ngnrct_a
 		Length: 11
 		Tick: 150
@@ -281,9 +257,6 @@ natech:
 		Offset: 0, -45
 	idle: ngtech
 	damaged-idle: ngtech
-	critical-idle: ngtech
-		Start: 2
-		ShadowStart: 5
 	make: nttechmk
 	icon: ntchicon
 
@@ -299,10 +272,7 @@ naclon:
 		Start: 11
 		Length: 11
 		ShadowStart: 33
-	critical-idle: ngclon_a
-		Start: 11
-		Length: 11
-		ShadowStart: 33
+		Tick: 180
 	make: ntclonmk
 	icon: clonicon
 
@@ -312,9 +282,6 @@ napsis:
 		Offset: 1, -30
 	idle: ngpsis
 	damaged-idle: ngpsis
-	critical-idle: ngpsis
-		Start: 2
-		ShadowStart: 5
 	idle-spin: ngpsis_a
 		Length: 40
 		Tick: 150
@@ -338,9 +305,6 @@ namisl:
 	idle: ngmisl_e
 		ShadowStart: 2
 	damaged-idle: ngmisl_e
-		ShadowStart: 3
-	critical-idle: ngmisl_e
-		Start: 1
 		ShadowStart: 3
 	# TODO: ngmisl_f is actually the open sequence
 	active: ngmisl_f
@@ -403,9 +367,6 @@ nalasr:
 		Offset: 0, -20
 	idle: nalasr
 	damaged-idle: nalasr
-	critical-idle: nalasr
-		Start: 2
-		ShadowStart: 5
 	make: nalasrmk
 		Length: 12
 		ShadowStart: 12
@@ -417,9 +378,7 @@ tesla:
 	Defaults:
 		Offset: 0, -15
 	idle: ngtsla
-		Length: 1
 	damaged-idle: ngtsla
-		Length: 1
 	idle-powered: ngtsla_a
 		Length: 10
 		ShadowStart: 20
@@ -438,10 +397,6 @@ tesla:
 		Length: 10
 		Tick: 100
 		ZOffset: 10
-	dead: ngtsladm # SHP broken & unused
-		Length: 20
-		ShadowStart: 20
-		Tick: 100
 	make: nttslamk
 	icon: tslaicon
 
@@ -452,9 +407,6 @@ naflak:
 		ZOffset: -512
 	idle: ngflak
 	damaged-idle: ngflak
-	critical-idle: ngflak
-		Start: 2
-		ShadowStart: 5
 	make: ntflakmk
 		Length: 9
 		ShadowStart: 9

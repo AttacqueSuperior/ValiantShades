@@ -21,10 +21,6 @@ gacnst:
 		Start: 20
 		Length: 20
 		Tick: 150
-	dead: ggcnstdm # SHP broken & unused
-		Length: 30
-		ShadowStart: 30
-		Tick: 100
 	icon: acnsicon
 
 gapowr:
@@ -58,10 +54,6 @@ gapile:
 		Start: 16
 		Length: 16
 		ShadowStart: 48
-	dead: ggpiledm # SHP broken & unused
-		Length: 25
-		ShadowStart: 25
-		Tick: 100
 	make: gtpilemk
 	icon: brrkicon
 
@@ -304,9 +296,6 @@ gapill:
 		Offset: 0, -15
 	idle: ggpill
 	damaged-idle: ggpill
-	critical-idle: ggpill
-		Start: 2
-		ShadowStart: 5
 	muzzle0: mgun-n
 		Length: *
 		UseTilesetCode: false
@@ -343,9 +332,6 @@ nasam:
 		ZOffset: -512
 	idle: ngsam
 	damaged-idle: ngsam
-	critical-idle: ngsam
-		Start: 2
-		ShadowStart: 5
 	make: ntsammk
 		Length: 8
 		ShadowStart: 8
@@ -359,10 +345,6 @@ gtgcan:
 		ZOffset: -512
 	idle: gggcan
 	damaged-idle: gggcan
-	critical-idle: gggcan
-		Start: 2
-		ShadowStart: 5
-		Offset: 0, -30
 	make: gtgcanmk
 		Length: 12
 		ShadowStart: 12
@@ -397,10 +379,7 @@ gagap:
 	Defaults:
 		Offset: -15, -7
 	idle: gggap
-		Length: 1
 	damaged-idle: gggap
-		Start: 2
-		Length: 1
 	make: gtgapmk
 		Length: 9
 		ShadowStart: 9
@@ -421,17 +400,12 @@ gacsph:
 	Defaults:
 		Offset: -15, -50
 	idle: ggcsph
-		ShadowStart: 3
 	damaged-idle: ggcsph
 	idle-dome: ggcsph_e
 		ShadowStart: 2
 	damaged-idle-dome: ggcsph_e
 		Start: 1
 		ShadowStart: 3
-	dead: ggcsphdm # SHP broken & unused
-		Length: 25
-		ShadowStart: 25
-		Tick: 50
 	make: gtcsphmk
 	icon: csphicon
 
@@ -442,6 +416,8 @@ atesla:
 	idle-normal: ggpris
 		ShadowStart: 3
 	damaged-idle-normal: ggpris
+		Start: 1
+		ShadowStart: 4
 	idle: ggpris_b
 		Length: 9
 		Tick: 100
@@ -460,10 +436,6 @@ atesla:
 		Length: 10
 		Tick: 100
 		ShadowStart: 30
-	dead: ggprisdm # SHP broken & unused
-		Length: 21
-		ShadowStart: 21
-		Tick: 100
 	icon: prisicon
 	make: gtprismk
 		Length: 8
