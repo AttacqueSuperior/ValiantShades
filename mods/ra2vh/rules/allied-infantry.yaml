@@ -199,6 +199,10 @@ e1:
 	WithInfantryBody@Editor:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !editorhack
+	AIDeployHelper:
+		DeployChance: 75
+		DeployTicks: 1000
+		UndeployTicks: 1000
 
 snipe:
 	Inherits: ^Infantry
