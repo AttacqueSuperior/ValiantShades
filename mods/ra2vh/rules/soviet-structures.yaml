@@ -697,9 +697,12 @@ naclon:
 	Exit@2_2:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
+	GrantConditionOnPrerequisite@barracks:
+		Condition: barracks
+		Prerequisites: barracks
 	Production:
-		Produces: Dummy
-		RequiresCondition: !build-incomplete
+		Produces: Infantry
+		RequiresCondition: !build-incomplete && barracks
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
