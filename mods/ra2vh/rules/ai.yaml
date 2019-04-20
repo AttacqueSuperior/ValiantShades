@@ -117,13 +117,13 @@ Player:
 			naclon: 1
 			gadept: 1
 			nadept: 1
-			gapill: 10
-			nalasr: 10
-			nasam: 4
-			naflak: 4
-			tesla: 4
-			atesla: 4
-			gtgcan: 1
+			gapill: 15
+			nalasr: 15
+			nasam: 12
+			naflak: 12
+			tesla: 12
+			atesla: 12
+			gtgcan: 5
 			gagap: 1
 			namisl: 1
 			gaweat: 1
