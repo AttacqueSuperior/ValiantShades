@@ -4,6 +4,7 @@
 	CombatDebugOverlay:
 	DrawLineToTarget:
 	GivesExperience:
+		PlayerExperienceModifier: 5
 	ScriptTriggers:
 	ConditionManager:
 	Huntable:
