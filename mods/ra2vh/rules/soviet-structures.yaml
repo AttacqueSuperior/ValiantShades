@@ -832,7 +832,7 @@ namisl:
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 15000
-		Description: Atom Bomb
+		Description: Nuclear Missile
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
 		LaunchSound: snuklaun.wav
