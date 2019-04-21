@@ -136,12 +136,12 @@ ChromeLayout:
 	ra2vh|chrome/ingame-player.yaml
 	ra2vh|chrome/ingame-infoobjectives.yaml
 	ra2vh|chrome/mainmenu.yaml
+	ra2vh|chrome/ingame-observer.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-observerstats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	common|chrome/ingame.yaml
-	common|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
