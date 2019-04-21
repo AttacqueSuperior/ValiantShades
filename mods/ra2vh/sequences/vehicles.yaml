@@ -6,6 +6,10 @@ aegis:
 	Inherits@MC: ^MindControllable
 	icon: agisicon
 
+bfrt:
+	Inherits@MC: ^MindControllable
+	icon: bfrticon
+
 bus:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
