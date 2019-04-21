@@ -973,6 +973,10 @@ gaweat:
 		RequiresCondition: !build-incomplete
 	RenderSprites:
 		PlayerPalette: weathercontroller
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
 
 gacsph:
 	Inherits: ^Building
@@ -1024,6 +1028,10 @@ gacsph:
 		TargetCursor: chronosphere
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
 
 atesla:
 	Inherits: ^SupportBuilding

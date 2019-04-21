@@ -793,6 +793,10 @@ nairon:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
 
 namisl:
 	Inherits: ^Building
@@ -848,6 +852,10 @@ namisl:
 		RequiresCondition: !build-incomplete
 	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
 
 nawall:
 	Inherits: ^Wall
