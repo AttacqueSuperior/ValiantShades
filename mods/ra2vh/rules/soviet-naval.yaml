@@ -36,6 +36,8 @@ sapc:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	Voiced:
+		VoiceSet: SovietAmphibiousTransportVoice
 	HitShape:
 
 sub:
@@ -102,6 +104,8 @@ sub:
 	-MustBeDestroyed:
 	WithVoxelBody:
 	RenderSprites:
+	Voiced:
+		VoiceSet: TyphoonVoice
 	Targetable@underwater:
 		TargetTypes: Underwater, Repair
 		RequiresCondition: underwater
@@ -142,6 +146,8 @@ hyd:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
+	Voiced:
+		VoiceSet: SeaScorpionVoice
 	WithVoxelBody:
 	RenderSprites:
 	HitShape:

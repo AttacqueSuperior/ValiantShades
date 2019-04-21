@@ -71,16 +71,44 @@ AlliedVehicleVoice:
 AlliedConstructionVehicleVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
-		Move: vgramob, vgramod, vgramoe, vgramof
-		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+		Select: vmcasea, vmcaseb, vmcasec, vmcased, vmcasee, vmcasef
+		Move: vmcamoa, vmcamob, vmcamoc, vmcamod, vmcamoe, vmcamof
 
 ChronoMinerVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
-		Move: vgramob, vgramod, vgramoe, vgramof
-		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+		Select: vchrsea, vchrseb, vchrsec, vchrsed, vchrsee
+		Move: vchrmoa, vchrmob, vchrmoc, vchrmod, vchrmoe
+		Harvest: vchrhaa, vchrhab, vchrhac, vchrhad, vchrhae
+		Deliver: vchrgoa, vchrgob, vchrgoc, vchrgod, vchrgoe
+
+IFVVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vifvsea, vifvseb, vifvsec, vifvsed, vifvsee, vifvsef
+		Move: vifvmoa, vifvmob, vifvmoc, vifvmod, vifvmoe, vifvmof
+		Attack: vifvata, vifvatb, vifvatc, vifvatd, vifvate
+
+TankDestroyerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vtansea, vtanseb, vtansec, vtansed, vtansee
+		Move: vtanmoa, vtanmob, vtanmoc, vtanmod
+		Attack: vtanata, vtanatb, vtanatc, vtanatd, vtanate
+
+PrismTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vprisea, vpriseb, vprisec, vprised, vprisee
+		Move: vprimoa, vprimob, vprimoc, vprimod, vprimoe
+		Attack: vpriata, vpriatb, vpriatc, vpriatd, vpriate
+
+MirageTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmirsea, vmirseb, vmirsec, vmirsed, vmirsee, vmirsef
+		Move: vmirmoa, vmirmob, vmirmoc, vmirmod, vmirmoe, vmirmof, vmirmog
+		Attack: vmirata, vmiratb, vmiratc, vmiratd, vmirate
 
 HarrierVoice:
 	DefaultVariant: .wav
@@ -112,6 +140,26 @@ AlliedNavalVoice:
 		Select: vwaasea, vwaaseb, vwaasec, vwaased
 		Move: vwaamoa, vwaamob, vwaamoc, vwaamod, vwaamoe
 		Attack: vwaaata, vwaaatb, vwaaatc
+
+AlliedAmphibiousTransportVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhoasea, vhoaseb, vhoasec, vhoased, vhoasee
+		Move: vhoamoa, vhoamob, vhoamoc, vhoamod, vhoamoe
+
+AegisVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vaegsea, vaegseb, vaegsec, vaegsed, vaegsee
+		Move: vaegmoa, vaegmob, vaegmoc, vaegmod, vaegmoe
+		Attack: vaegata, vaegatb, vaegatc, vaegatd, vaegate, vaegatf, vaegatg, vaegath
+
+AircraftCarrierVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vairsea, vairseb, vairsec, vairsed, vairsee
+		Move: vairmoa, vairmob, vairmoc, vairmod, vairmoe
+		Attack: vairata, vairatb, vairatc, vairatd, vairate
 
 DolphinVoice:
 	DefaultVariant: .wav

@@ -65,6 +65,27 @@ SovietVehicleVoice:
 		Move: vgrsmoa, vgrsmob, vgrsmoc
 		Attack: vgrsata, vgrsatb, vgrsatc, vgrsatd
 
+SovietConstructionVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmcssea, vmcsseb, vmcssec, vmcssed, vmcssee
+		Move: vmcsmoa, vmcsmob, vmcsmoc, vmcsmod, vmcsmoe
+
+WarMinerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vwarsea, vwarseb, vwarsec, vwarsed, vwarsee
+		Move: vwarmoa, vwarmob, vwarmoc, vwarmod, vwarmoe
+		Attack: vwarata, vwaratb, vwaratc, vwaratd, vwarate
+		Harvest: vwarhaa, vwarhab, vwarhac, vwarhad
+
+FlakTrackVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vflasea, vflaseb, vflasec, vflased, vflasee
+		Move: vflamoa, vflamob, vflamoc, vflamod, vflamoe
+		Attack: vflaata, vflaatb, vflaatc, vflaatd, vflaate
+
 TerrorDroneVoice:
 	DefaultVariant: .wav
 	Voices:
@@ -73,6 +94,26 @@ TerrorDroneVoice:
 		Attack: vteratta
 		Die: vterdiea, vterdieb
 
+V3LauncherVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vv3lsea, vv3lseb, vv3lsec, vv3lsed, vv3lsee
+		Move: vv3lmob, vv3lmoc, vv3lmod, vv3lmoe
+		Attack: vv3lata, vv3latb, vv3latc, vv3latd, vv3late
+
+TeslaTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vtessea, vtesseb, vtessec, vtessed, vtessee
+		Move: vtesmoa, vtesmob, vtesmoc, vtesmod, vtesmoe
+		Attack: vtesata, vtesatb, vtesatc, vtesatd, vtesate
+
+ApocalypseVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vaposea, vaposeb, vaposec, vaposed, vaposee
+		Move: vapomoa, vapomob, vapomoc, vapomod, vapomoe
+		Attack: vapoata, vapoatb, vapoatc, vapoatd, vapoate, vapoatf
 
 DemolitionTruckVoice:
 	DefaultVariant: .wav
@@ -99,6 +140,26 @@ SovietNavalVoice:
 		Select: vwassea, vwasseb, vwassec
 		Move: vwasmoa, vwasmob, vwasmoc, vwasmod
 		Attack: vwasata, vwasatb, vwasatc
+
+SovietAmphibiousTransportVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhossea, vhosseb, vhossec, vhossed, vhossee
+		Move: vhosmoa, vhosmob, vhosmod, vhosmoe
+
+TyphoonVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vsubsea, vsubseb, vsubsec, vsubsed, vsubsee
+		Move: vsubmoa, vsubmob, vsubmoc, vsubmod, vsubmoe
+		Attack: vsubata, vsubatb, vsubatc, vsubatd, vsubate
+
+SeaScorpionVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vscosea, vscoseb, vscosec, vscosed, vscosee
+		Move: vscomoa, vscomob, vscomoc, vscomod, vscomoe
+		Attack: vscoata, vscoatb, vscoatc, vscoatd, vscoate
 
 GiantSquidVoice:
 	DefaultVariant: .wav

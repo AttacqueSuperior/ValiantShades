@@ -37,7 +37,7 @@ smcv:
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: SovietConstructionVehicleVoice
 	HitShape:
 
 harv:
@@ -62,7 +62,7 @@ harv:
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12
-		HarvestVoice: Move
+		HarvestVoice: Harvest
 		DeliverVoice: Move
 	Health:
 		HP: 1000000
@@ -96,7 +96,7 @@ harv:
 	WithVoxelTurret:
 	WithVoxelUnloadBody:
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: WarMinerVoice
 	HitShape:
 
 dron:
@@ -188,7 +188,7 @@ htk:
 	WithVoxelTurret:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: FlakTrackVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
@@ -293,7 +293,7 @@ apoc:
 		Weapon: ApocExplode
 		EmptyWeapon: ApocExplode
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: ApocalypseVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
@@ -340,7 +340,7 @@ ttnk:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: TeslaTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:

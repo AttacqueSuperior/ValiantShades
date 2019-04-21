@@ -61,8 +61,8 @@ cmin:
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12
-		HarvestVoice: Move
-		DeliverVoice: Move
+		HarvestVoice: Harvest
+		DeliverVoice: Deliver
 	ChronoResourceDelivery:
 		WarpInSequence: warpout
 		WarpInSound: vchrtele.wav
@@ -179,7 +179,7 @@ tnkd:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: TankDestroyerVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
@@ -321,7 +321,7 @@ fv:
 		Sequence: turret-hitech
 		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo || ifv-chrono
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: IFVVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
@@ -392,7 +392,7 @@ sref:
 		Sequence: turret-stage3
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: PrismTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
@@ -441,7 +441,7 @@ mgtk:
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: MirageTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
