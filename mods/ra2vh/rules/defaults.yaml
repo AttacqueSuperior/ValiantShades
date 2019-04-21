@@ -303,6 +303,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@ivanbomb: ^IvanBombable
+	Inherits@radiation: ^DamagedByRadiation
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -568,6 +569,7 @@
 	Inherits@7: ^VehicleParticles
 	Inherits@8: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
+	Inherits@radiation: ^DamagedByRadiation
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -649,6 +651,7 @@
 	Inherits@2: ^UnitParticles
 	Inherits@3: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
+	Inherits@radiation: ^DamagedByRadiation
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -684,6 +687,8 @@
 		Categories: Aircraft
 	RevealOnFire:
 		Duration: 50
+	DamagedByTintedCells:
+		RequiresCondition: !airborne
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -754,6 +759,7 @@
 	Inherits@6: ^VehicleParticles
 	Inherits@7: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
+	Inherits@radiation: ^DamagedByRadiation
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath

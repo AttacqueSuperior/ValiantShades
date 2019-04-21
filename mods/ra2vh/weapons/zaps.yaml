@@ -196,7 +196,7 @@ RadBeamWeapon:
 			Rocket: 100
 		DamageTypes: RadiationDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: desohit
+		Explosions: desolator_hit
 		ExplosionPalette: rookietsexp
 		ValidTargets: Ground, Water, Air
 

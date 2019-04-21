@@ -99,6 +99,7 @@ harv:
 	Voiced:
 		VoiceSet: WarMinerVoice
 	HitShape:
+	-DamagedByTintedCells:
 
 dron:
 	Inherits: ^Vehicle
@@ -139,6 +140,7 @@ dron:
 	Voiced:
 		VoiceSet: TerrorDroneVoice
 	HitShape:
+	-DamagedByTintedCells:
 
 htk:
 	Inherits: ^Vehicle

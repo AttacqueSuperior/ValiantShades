@@ -336,6 +336,9 @@ World:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
+	TintedCellsLayer@radiation:
+		Darkest: 32
+		Brightest: 128
 
 EditorWorld:
 	Inherits: ^BaseWorld

@@ -89,6 +89,7 @@ cmin:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
+	-DamagedByTintedCells:
 
 mtnk:
 	Inherits: ^Vehicle

@@ -187,3 +187,9 @@
 		Sequence: ivanbomb
 		Palette: mouse
 		RequiresCondition: bombdetector && ivanbomb
+
+^DamagedByRadiation:
+	DamagedByTintedCells:
+		Damage: 200
+		DamageLevel: 1
+		DamageTypes: RadiationDeath
