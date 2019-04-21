@@ -514,3 +514,18 @@ bfrt:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+
+bfrt.ai:
+	Inherits: bfrt
+	RenderSprites:
+		Image: bfrt
+	RenderVoxels:
+		Image: bfrt
+	Cargo:
+		InitialUnits: e1, e1, e1, ggi, ggi
+	Selectable:
+		Class: bfrt
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites: gatech, ~gaweap, ~testai
+		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.

@@ -5,6 +5,9 @@ Player:
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
 		Bots: test
+	ProvidesPrerequisite@test:
+		Prerequisite: testai
+		RequiresCondition: enable-test-ai
 	SupportPowerBotASModule@test:
 		RequiresCondition: enable-test-ai
 		Decisions:
@@ -160,6 +163,7 @@ Player:
 			mgtk: 10
 			apoc: 10
 			tnkd: 15
+			bfrt.ai: 5
 			ttnk: 15
 			zep: 1
 			orca: 5
