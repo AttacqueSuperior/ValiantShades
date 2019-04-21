@@ -270,6 +270,8 @@
 		HP: 300000
 	Armor:
 		Type: Concrete
+	Crushable:
+		CrushClasses: wall
 	HitShape:
 	MapEditorData:
 		Categories: Wall
@@ -356,6 +358,7 @@
 		Types: Infantry
 	Crushable:
 		CrushSound: igensqua.wav
+		WarnProbability: 0
 	Guard:
 		Voice: Attack
 	Guardable:
@@ -581,6 +584,9 @@
 		Voice: Move
 		CargoType: Vehicle
 		Weight: 3
+	Crushable:
+		CrushClasses: vehicle
+		WarnProbability: 0
 	HiddenUnderFog:
 	WithTextControlGroupDecoration:
 	ActorLostNotification:

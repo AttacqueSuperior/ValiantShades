@@ -21,6 +21,7 @@ amcv:
 		Speed: 60
 		TurnSpeed: 5
 		Locomotor: heavytracked
+	-Crushable:
 	RevealsShroud:
 		Range: 4c0
 	MustBeDestroyed:

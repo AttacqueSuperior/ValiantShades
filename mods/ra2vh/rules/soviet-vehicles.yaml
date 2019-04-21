@@ -21,6 +21,7 @@ smcv:
 		Speed: 60
 		TurnSpeed: 5
 		Locomotor: heavytracked
+	-Crushable:
 	RevealsShroud:
 		Range: 4c0
 	MustBeDestroyed:
@@ -260,6 +261,7 @@ apoc:
 		Speed: 60
 		TurnSpeed: 5
 		Locomotor: heavytracked
+	-Crushable:
 	Health:
 		HP: 800000
 	Armor:
