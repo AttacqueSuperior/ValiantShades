@@ -1,7 +1,7 @@
 GIVoice:
 	Inherits: ^InfantryDeath
 	Voices:
-		Select: igisea, igiseb, igisec, igised, igisee, igisef
+		Select: igisea, igiseb, igisec, igised, igisee, igisef, igiseg
 		Move: igimoa, igimob, igimoc, igimod, igimoe
 		Attack: igiata, igiatb, igiatc, igiatd, igiate, igiatf
 		Feedback: igifea, igifeb
@@ -49,7 +49,8 @@ SealVoice:
 		Select: iseasea, iseaseb, iseasec, iseased
 		Move: iseamoa, iseamob, iseamoc
 		Attack: iseaata, iseaatb, iseaatc
-		SpecialAttack: iseaexa, iseaexb
+		SpecialAttack: iseaexa, iseaexb, iseaexd
+		Feedback: iseafea
 		Die: iseadia, iseadib, iseadic
 
 TanyaVoice:
@@ -58,7 +59,7 @@ TanyaVoice:
 		Build: itanatb
 		Select: itansea, itanseb, itansec, itansed, itansee
 		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof
-		Attack: itanata, itanatb, itanatc, itanatd
+		Attack: itanata, itanatb, itanatc, itanatd, itanate
 		Die: itandia, itandib, itandic
 
 AlliedVehicleVoice:
@@ -129,7 +130,7 @@ BlackEagleVoice:
 NighthawkVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: vblhsea, vblhseb, vblhsec, vblhsed
+		Select: vblhsea, vblhseb, vblhsec, vblhsed, vblhsee
 		Move: vblhmoa, vblhmob, vblhmoc, vblhmod
 		Attack: vblhata, vblhatb, vblhatc, vblhatd
 		Die: vblhdia, vblhdib, vblhdic

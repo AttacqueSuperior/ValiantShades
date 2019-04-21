@@ -13,7 +13,7 @@ FlakTrooperVoice:
 		Select: iflasea, iflaseb, iflasec, iflased
 		Move: iflamoa, iflamob, iflamoc, iflamod
 		Attack: iflaata, iflaatb, iflaatc, iflaatd
-		Feedback: iflafea, iflafeb, iflafec, iflafed
+		Feedback: iflafea, iflafeb, iflafec, iflafed, iflafee
 		Die: ifladia, ifladib, ifladic, ifladid, ifladie
 
 TeslaTrooperVoice:
@@ -21,7 +21,7 @@ TeslaTrooperVoice:
 	Voices:
 		Select: itessea, itesseb, itessec, itessed, itessee
 		Move: itesmoa, itesmob, itesmoc, itesmod, itesmoe, itesmof
-		Attack: itesata, itesatb, itesatc, itesatd, itesate
+		Attack: itesata, itesatb, itesatc, itesatd, itesate, itesatf
 		Feedback: itesfea, itesfeb, itesfec
 		Die: itesdia, itesdib, itesdic, itesdid
 
@@ -131,7 +131,7 @@ KirovVoice:
 		Select: vkirseb, vkirsec, vkirsed
 		Move: vkirmoa, vkirmob, vkirmoc
 		Attack: vkirata, vkiratb, vkiratc, vkiratd
-		Feedback: vkirfea, vkirfeb, vkirfec
+		Feedback: vkirfea
 		Die: vkirdia, vkirdib, vkirdic, vkirdid
 
 SovietNavalVoice:
