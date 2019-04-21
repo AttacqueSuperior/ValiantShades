@@ -126,10 +126,9 @@ debris:
 	flyingbody: dbrs10sm
 
 rank:
-	veteran: pips
-		Start: 13
-	elite: pips
-		Start: 14
+	veteran: vpips
+	elite: vpips
+		Start: 1
 
 mpspawn:
 	idle:
