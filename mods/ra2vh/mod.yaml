@@ -186,6 +186,8 @@ Weapons:
 
 Voices:
 	ra2vh|audio/voices.yaml
+	ra2vh|audio/allied-voices.yaml
+	ra2vh|audio/soviet-voices.yaml
 
 Notifications:
 	ra2vh|audio/notifications.yaml

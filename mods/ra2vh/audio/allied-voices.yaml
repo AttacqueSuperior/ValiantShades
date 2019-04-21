@@ -1,0 +1,122 @@
+GIVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: igisea, igiseb, igisec, igised, igisee, igisef
+		Move: igimoa, igimob, igimoc, igimod, igimoe
+		Attack: igiata, igiatb, igiatc, igiatd, igiate, igiatf
+		Feedback: igifea, igifeb
+		Die: igidia, igidib, igidic, igidid, igidie
+
+RocketeerVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: irocsea, irocseb, irocsec, irocsed, irocsee, irocsef, irocseg
+		Move: irocmoa, irocmob, irocmoc, irocmod, irocmoe, irocmof
+		Attack: irocata, irocatb, irocatc, irocatd, irocate
+		Feedback: irocfea, irocfeb, irocfec
+		Die: irocdiea
+
+SpyVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ispysea, ispyseb, ispysec, ispysed
+		Move: ispyata, ispymob, ispymoc, ispymod, ispymoe
+		Action: ispyatb, ispyatd
+		Feedback: ispyfea, ispyfeb
+		Die: ispydia, ispydib, ispydic
+
+ChronoLegionnaireVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ichrsea
+		Move: ichrseb, ichrsec, ichrsed, ichrsee
+		Attack: ichrata, ichratb, ichratc, ichratd
+		Feedback: ichrfea, ichrfeb, ichrfec
+		Die: ichrdia, ichrdib, ichrdic
+
+SniperVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: isnisea, isniseb, isnisec, isnised
+		Move: isnimoa, isnimob, isnimoc, isnimod, isnimoe
+		Attack: isniata, isniatb, isniatc
+		Feedback: isnifea, isnifeb, isnifec
+		Die: isnidia, isnidib, isnidic
+
+SealVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iseasea, iseaseb, iseasec, iseased
+		Move: iseamoa, iseamob, iseamoc
+		Attack: iseaata, iseaatb, iseaatc
+		SpecialAttack: iseaexa, iseaexb
+		Die: iseadia, iseadib, iseadic
+
+TanyaVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Build: itanatb
+		Select: itansea, itanseb, itansec, itansed, itansee
+		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof
+		Attack: itanata, itanatb, itanatc, itanatd
+		Die: itandia, itandib, itandic
+
+AlliedVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
+		Move: vgramoa, vgramob, vgramoc, vgramod, vgramoe, vgramof
+		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+
+AlliedConstructionVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
+		Move: vgramob, vgramod, vgramoe, vgramof
+		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+
+ChronoMinerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
+		Move: vgramob, vgramod, vgramoe, vgramof
+		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+
+HarrierVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vintsea, vintseb, vintsec, vintsed
+		Move: vintmoa, vintmob, vintmoc, vintmod
+		Attack: vintata, vintatb, vintatc, vintatd, vintate
+		Die: vintdia, vintdib, vintdic
+
+BlackEagleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vblesea, vbleseb, vblesec, vblesed, vblesef
+		Move: vblemoa, vblemob, vblemoc
+		Attack: vbleata, vbleatb, vbleatc
+		Die: vbledia, vbledib, vbledic, vbledid, vbledie
+
+NighthawkVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vblhsea, vblhseb, vblhsec, vblhsed
+		Move: vblhmoa, vblhmob, vblhmoc, vblhmod
+		Attack: vblhata, vblhatb, vblhatc, vblhatd
+		Die: vblhdia, vblhdib, vblhdic
+
+AlliedNavalVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vwaasea, vwaaseb, vwaasec, vwaased
+		Move: vwaamoa, vwaamob, vwaamoc, vwaamod, vwaamoe
+		Attack: vwaaata, vwaaatb, vwaaatc
+
+DolphinVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vdolsela, vdolselb
+		Move: vdolmova, vdolmovb
+		Attack: vdolatca, vdolatcb, vdolatcc
+		Die: vdoldiea, vdoldieb
