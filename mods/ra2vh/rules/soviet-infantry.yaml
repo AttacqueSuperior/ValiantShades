@@ -57,7 +57,7 @@ flakt:
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 50
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 100
@@ -127,7 +127,7 @@ shk:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		Prerequisites: naradr, ~nahand
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 150
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 250
