@@ -113,6 +113,36 @@
 	PaletteFromFile@effect:
 		Name: effect
 		Filename: anim.pal
+	PaletteFromFile@tsanim:
+		Name: tsanim
+		Filename: tsanim.pal
+	PaletteFromPaletteWithAlpha@rookieraexp:
+		Name: rookieraexp
+		BasePalette: ra
+		Alpha: 0.4
+	PaletteFromPaletteWithAlpha@heroicraexp:
+		Name: heroicraexp
+		BasePalette: ra
+		Alpha: 0.8
+		Premultiply: false
+	PaletteFromPaletteWithAlpha@rookietsexp:
+		Name: rookietsexp
+		BasePalette: tsanim
+		Alpha: 0.4
+	PaletteFromPaletteWithAlpha@heroictsexp:
+		Name: heroictsexp
+		BasePalette: tsanim
+		Alpha: 0.8
+		Premultiply: false
+	PaletteFromPaletteWithAlpha@rookiera2exp:
+		Name: rookiera2exp
+		BasePalette: effect
+		Alpha: 0.4
+	PaletteFromPaletteWithAlpha@heroicra2exp:
+		Name: heroicra2exp
+		BasePalette: effect
+		Alpha: 0.8
+		Premultiply: false
 	PaletteFromPaletteWithAlpha@effect50alpha:
 		Name: effect50alpha
 		BasePalette: effect
