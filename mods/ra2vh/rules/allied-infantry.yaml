@@ -640,6 +640,12 @@ tany:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	-TakeCover: # TODO: needs to be conditional so we can disable in water
+	Cloak:
+		InitialDelay: 15
+		CloakDelay: 15
+		Palette: infantry-cloak
+		IsPlayerPalette: true
+		UncloakOn: Attack, Damage, Move
 
 jumpjet:
 	Inherits: ^Infantry
