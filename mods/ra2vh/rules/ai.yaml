@@ -170,6 +170,7 @@ Player:
 			beag: 5
 		UnitLimits:
 			dog: 4
+			ivan: 5
 			cmin: 6
 			harv: 6
 			zep: 2
