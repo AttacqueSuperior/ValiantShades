@@ -7,6 +7,16 @@ GIVoice:
 		Feedback: igifea, igifeb
 		Die: igidia, igidib, igidic, igidid, igidie
 
+GGIVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iggisea, iggiseb, iggisec, iggised, iggisee, iggisef
+		Move: iggimoa, iggimob, iggimoc, iggimod, iggimoe
+		Attack: iggiata, iggiatb, iggiatc, iggiatd, iggiate
+		Deploy: iggidea, iggideb, iggidec
+		Feedback: igifea, igifeb
+		Die: iggidia, iggidib, iggidic, iggidid, iggidie
+
 RocketeerVoice:
 	Inherits: ^InfantryDeath
 	Voices:

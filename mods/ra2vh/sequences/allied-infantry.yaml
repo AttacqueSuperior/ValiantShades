@@ -73,6 +73,39 @@ e1:
 		Start: 364
 	icon: giicon
 
+ggi:
+	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
+	Defaults: ggi2
+	liedown:
+		Start: 164
+	standup:
+		Start: 182
+	shoot:
+		Start: 204
+	prone-shoot:
+		Start: 252
+	run:
+		Tick: 120
+	deployed: ggi
+		Start: 315
+		Facings: 8
+	deploy:
+		Start: 300
+		Length: 15
+	undeploy:
+		Frames: 314, 313, 312, 311, 310, 309, 308, 307, 306, 305, 304, 303, 302, 301, 300
+		Length: 15
+	shoot-deployed: ggi
+		Start: 323
+		Length: 6
+		Facings: 8
+	paradrop:
+		Start: 315
+	cheer:
+		Start: 196
+	icon: gdgiicon
+
 snipe:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable

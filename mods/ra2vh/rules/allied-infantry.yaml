@@ -157,15 +157,15 @@ e1:
 		RequiresCondition: deployed && rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		RequiresCondition: undeployed
+		RequiresCondition: undeployed && !parachute
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: True
 		Facing: 128
 		RequiresCondition: !parachute
-		DeploySounds: igidepa.wav # igidepb.wav
-		UndeploySounds: igidepa.wav # igidepb.wav
+		DeploySounds: igidepa.wav, igidepb.wav
+		UndeploySounds: igidepa.wav, igidepb.wav
 	# TODO: TakeCover is not yet conditional
 	-TakeCover:
 	Turreted:
@@ -203,6 +203,116 @@ e1:
 		DeployChance: 75
 		DeployTicks: 1000
 		UndeployTicks: 1000
+
+ggi:
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~gapile
+		BuildPaletteOrder: 25
+		Description: Anti-tank infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+	Valued:
+		Cost: 400
+	DeliversCash:
+		Payload: 200
+		PlayerExperience: 20
+		Voice: Move
+	Tooltip:
+		Name: Guardian G.I.
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100000
+	Mobile:
+		PauseOnCondition: !(!chronodisable && undeployed)
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 6c0
+	AttackFrontal:
+		Voice: Attack
+		RequiresCondition: undeployed
+	AttackTurreted@deployed:
+		Armaments: deployed, deployed-elite
+		Voice: Attack
+		RequiresCondition: deployed
+	Crushable:
+		RequiresCondition: !deployed
+	Crushable@deployed:
+		CrushClasses: vehicle
+		RequiresCondition: deployed
+	Armament@primary:
+		Weapon: MissileLauncher
+		RequiresCondition: !deployed && !rank-elite
+		LocalOffset: 256,0,1024
+	Armament@elite:
+		Weapon: MissileLauncher
+		RequiresCondition: !deployed && rank-elite
+		LocalOffset: 256,0,1024
+	Armament@deployed:
+		Name: deployed
+		Weapon: MissileLauncher
+		RequiresCondition: deployed && !rank-elite
+		LocalOffset: 256,0,512
+	Armament@elite-deployed:
+		Name: deployed-elite
+		Weapon: MissileLauncher
+		RequiresCondition: deployed && rank-elite
+		LocalOffset: 256,0,512
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: undeployed && !parachute
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		CanDeployOnRamps: True
+		Facing: 92
+		RequiresCondition: !parachute
+		DeploySounds: iggidepa.wav
+		UndeploySounds: igidepa.wav, igidepb.wav
+	# TODO: TakeCover is not yet conditional
+	-TakeCover:
+	Turreted:
+		RealignDelay: -1
+		TurnSpeed: 50
+		InitialFacing: 92
+	WithSpriteTurret:
+		Sequence: deployed
+		RequiresCondition: !undeployed && editorhack
+	WithTurretDeployAnimation:
+	WithTurretAttackAnimation:
+		Sequence: shoot-deployed
+		Armament: deployed
+		RequiresCondition: !undeployed && !rank-elite
+	WithTurretAttackAnimation@elite:
+		Sequence: shoot-deployed
+		Armament: deployed-elite
+		RequiresCondition: !undeployed && rank-elite
+	RejectsOrders@deployment:
+		Reject: Move, EnterTransport, EnterTransports
+		RequiresCondition: deployed
+	Voiced:
+		VoiceSet: GGIVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	# HACK: negated conditions evaluate to true in EnabledByDefault, we can use this duplicate WIB to render it on map editor
+	GrantCondition:
+		Condition: editorhack
+	WithInfantryBody@Editor:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !editorhack
+	AIDeployHelper:
+		DeployChance: 75
+		DeployTicks: 1000
+		UndeployTicks: 1000
+	FirepowerMultiplier@deploy:
+		RequiresCondition: deployed
+		Modifier: 125
 
 snipe:
 	Inherits: ^Infantry

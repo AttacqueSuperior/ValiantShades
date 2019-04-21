@@ -139,6 +139,7 @@ Player:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
 			e1: 90
+			ggi: 25
 			e2: 90
 			dog: 1
 			flakt: 10
