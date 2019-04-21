@@ -92,7 +92,8 @@ MirageGun:
 			Rocket: 100
 		DamageTypes: FlameDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: iron_fx
+		Explosions: mirage_tank_hit
+		ExplosionPalette: rookiera2exp
 		ImpactSounds:
 		ValidTargets: Ground, Water, Air
 	-Warhead@3EffWater: CreateEffect
@@ -103,6 +104,8 @@ MirageGunE:
 	Range: 9c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 150000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 20mmrapid:
 	Inherits: ^MG

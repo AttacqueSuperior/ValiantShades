@@ -268,7 +268,8 @@ explosion:
 	weatherboltexplosion: explolb
 	weatherboltexplosionf: explolb
 		FlipX: true
-	desohit: desohit
+	desolator_hit: desohit
+	mirage_tank_hit: miraghit
 
 discus:
 	idle:
