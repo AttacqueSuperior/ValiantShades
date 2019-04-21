@@ -9,10 +9,10 @@ e2:
 		BuildPaletteOrder: 20
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 100
+		Cost: 50
 	DeliversCash:
-		Payload: 50
-		PlayerExperience: 5
+		Payload: 25
+		PlayerExperience: 3
 		Voice: Move
 	Tooltip:
 		Name: Conscript
@@ -56,13 +56,13 @@ flakt:
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
-		Prerequisites: naradr, ~nahand
+		Prerequisites: ~nahand
 		BuildPaletteOrder: 70
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
-		Cost: 300
+		Cost: 100
 	DeliversCash:
-		Payload: 150
+		Payload: 50
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
@@ -126,14 +126,14 @@ shk:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		Prerequisites: ~nahand
+		Prerequisites: naradr, ~nahand
 		BuildPaletteOrder: 50
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
-		Cost: 500
+		Cost: 250
 	DeliversCash:
-		Payload: 250
-		PlayerExperience: 25
+		Payload: 125
+		PlayerExperience: 13
 		Voice: Move
 	Tooltip:
 		Name: Tesla Trooper
@@ -197,10 +197,10 @@ terror:
 		Prerequisites: naradr, ~nahand #, ~infantry.cuba
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
-		Cost: 200
+		Cost: 100
 	DeliversCash:
-		Payload: 100
-		PlayerExperience: 10
+		Payload: 50
+		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
 		Name: Terrorist
@@ -239,10 +239,10 @@ deso:
 		Prerequisites: naradr, ~nahand #, ~infantry.iraq
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 600
+		Cost: 450
 	DeliversCash:
-		Payload: 300
-		PlayerExperience: 10
+		Payload: 225
+		PlayerExperience: 23
 		Voice: Move
 	Tooltip:
 		Name: Desolator
@@ -292,10 +292,10 @@ ivan:
 		Prerequisites: naradr, ~nahand
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
-		Cost: 600
+		Cost: 400
 	DeliversCash:
-		Payload: 300
-		PlayerExperience: 30
+		Payload: 200
+		PlayerExperience: 20
 		Voice: Move
 	Tooltip:
 		Name: Crazy Ivan
@@ -340,11 +340,11 @@ civan:
 	Tooltip:
 		Name: Chrono Ivan
 	Valued:
-		Cost: 1000
+		Cost: 800
 	-Crushable:
 	DeliversCash:
-		Payload: 500
-		PlayerExperience: 50
+		Payload: 400
+		PlayerExperience: 40
 	Health:
 		HP: 100000
 	PortableChrono:
@@ -366,10 +366,10 @@ yuri:
 		Prerequisites: natech, ~nahand
 		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
 	Valued:
-		Cost: 1200
+		Cost: 800
 	DeliversCash:
-		Payload: 600
-		PlayerExperience: 60
+		Payload: 400
+		PlayerExperience: 40
 		Voice: Move
 	Tooltip:
 		Name: Yuri
@@ -440,10 +440,10 @@ yuripr:
 	Tooltip:
 		Name: Yuri Prime
 	Valued:
-		Cost: 2000
+		Cost: 1200
 	DeliversCash:
-		Payload: 1000
-		PlayerExperience: 100
+		Payload: 600
+		PlayerExperience: 60
 	Health:
 		HP: 200000
 	Armor:

@@ -7,10 +7,10 @@ engineer:
 		BuildPaletteOrder: 30
 		Description: Captures enemy structures.\n  Unarmed
 	Valued:
-		Cost: 500
+		Cost: 250
 	DeliversCash:
-		Payload: 250
-		PlayerExperience: 25
+		Payload: 125
+		PlayerExperience: 12
 		Voice: Move
 	Tooltip:
 		Name: Engineer
@@ -48,10 +48,10 @@ dog:
 		BuildPaletteOrder: 40
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 200
+		Cost: 100
 	DeliversCash:
-		Payload: 100
-		PlayerExperience: 10
+		Payload: 50
+		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
 		Name: Attack Dog
@@ -117,10 +117,10 @@ e1:
 		BuildPaletteOrder: 10
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 200
+		Cost: 100
 	DeliversCash:
-		Payload: 100
-		PlayerExperience: 10
+		Payload: 50
+		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
 		Name: G.I.
@@ -223,10 +223,10 @@ ggi:
 		BuildPaletteOrder: 25
 		Description: Anti-tank infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
-		Cost: 400
+		Cost: 150
 	DeliversCash:
-		Payload: 200
-		PlayerExperience: 20
+		Payload: 75
+		PlayerExperience: 8
 		Voice: Move
 	Tooltip:
 		Name: Guardian G.I.
@@ -344,8 +344,8 @@ snipe:
 		Name: Sniper
 	Buildable:
 		Queue: Infantry
-		BuildPaletteOrder: 80
-		Prerequisites: radar, ~gapile #, ~infantry.england
+		BuildPaletteOrder: 180
+		Prerequisites: gatech, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
@@ -389,7 +389,7 @@ spy:
 		Prerequisites: gatech, ~gapile
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
-		Cost: 1000
+		Cost: 500
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
@@ -442,10 +442,10 @@ ghost:
 		Prerequisites: ~disabled
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
-		Cost: 1000
+		Cost: 400
 	DeliversCash:
-		Payload: 500
-		PlayerExperience: 50
+		Payload: 200
+		PlayerExperience: 20
 		Voice: Move
 	Tooltip:
 		Name: Navy SEAL
@@ -501,10 +501,10 @@ ccomand:
 	Tooltip:
 		Name: Chrono Commando
 	Valued:
-		Cost: 2000
+		Cost: 1000
 	DeliversCash:
-		Payload: 1000
-		PlayerExperience: 100
+		Payload: 500
+		PlayerExperience: 50
 	Health:
 		HP: 100000
 	Mobile:
@@ -653,7 +653,7 @@ jumpjet:
 		Prerequisites: ~gapile, radar
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
-		Cost: 600
+		Cost: 400
 	Tooltip:
 		Name: Rocketeer
 	Selectable:
@@ -757,10 +757,10 @@ cleg:
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	Valued:
-		Cost: 1500
+		Cost: 1000
 	DeliversCash:
-		Payload: 750
-		PlayerExperience: 75
+		Payload: 500
+		PlayerExperience: 50
 		Voice: Move
 	Health:
 		HP: 125000
