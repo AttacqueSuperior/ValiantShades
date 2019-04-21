@@ -219,6 +219,7 @@ htnk:
 		Range: 8c0
 	Turreted:
 		TurnSpeed: 5
+		Offset: 0,0,-120
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,0,384
@@ -234,10 +235,8 @@ htnk:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:
-		NormalsPalette: ts-normals
 	WithVoxelBody:
 	WithVoxelTurret:
-	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
