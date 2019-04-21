@@ -155,6 +155,14 @@ e1:
 		Name: deployed-elite
 		Weapon: paraE
 		RequiresCondition: deployed && rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: para
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: paraE
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed && !parachute
@@ -262,6 +270,14 @@ ggi:
 		Weapon: MissileLauncher
 		RequiresCondition: deployed && rank-elite
 		LocalOffset: 256,0,512
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: MissileLauncher
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: MissileLauncher
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed && !parachute
@@ -345,6 +361,14 @@ snipe:
 		Weapon: awp
 		RequiresCondition: !rank-elite
 	Armament@elite:
+		Weapon: awpe
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: awp
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
 		Weapon: awpe
 		RequiresCondition: rank-elite
 	AttackFrontal:
@@ -446,6 +470,14 @@ ghost:
 	Armament@elite:
 		Weapon: MP5E
 		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: MP5
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: MP5E
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	RenderSprites:
@@ -523,6 +555,8 @@ ptroop:
 		MuzzleSequence: muzzle
 		LocalOffset: 0,0,960
 	-Armament@elite:
+	-Armament@opentopped:
+	-Armament@elite-opentopped:
 	Demolition:
 		Voice: Attack
 	WithMuzzleOverlay:
@@ -583,6 +617,14 @@ tany:
 		Weapon: DoublePistols
 		RequiresCondition: !rank-elite
 	Armament@elite:
+		Weapon: DoublePistolsE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: DoublePistols
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
 		Weapon: DoublePistolsE
 		RequiresCondition: rank-elite
 	AttackFrontal:
@@ -738,6 +780,9 @@ cleg:
 	Voiced:
 		VoiceSet: ChronoLegionnaireVoice
 	Armament@Temporal:
+		Weapon: NeutronRifle
+	Armament@opentopped:
+		Name: opentopped
 		Weapon: NeutronRifle
 	AttackFrontal:
 		Voice: Attack

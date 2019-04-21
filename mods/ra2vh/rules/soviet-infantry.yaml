@@ -32,6 +32,14 @@ e2:
 	Armament@elite:
 		Weapon: M1CarbineE
 		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: M1Carbine
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: M1CarbineE
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -84,6 +92,22 @@ flakt:
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
 		LocalOffset: 256,0,1024
+		RequiresCondition: rank-elite
+	Armament@primary-opentopped:
+		Name: opentopped
+		Weapon: FlakGuyGun
+		RequiresCondition: !rank-elite
+	Armament@secondary-opentopped:
+		Name: opentopped
+		Weapon: FlakGuyAAGun 
+		RequiresCondition: !rank-elite
+	Armament@primary-elite-opentopped:
+		Name: opentopped
+		Weapon: FlakGuyGunE
+		RequiresCondition: rank-elite
+	Armament@secondary-elite-opentopped:
+		Name: opentopped
+		Weapon: FlakGuyAAGunE
 		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -140,6 +164,14 @@ shk:
 		ForceTargetStances: None
 		Cursor: ability
 		OutsideRangeCursor: ability
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: ElectricBolt
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: ElectricBoltE
+		RequiresCondition: rank-elite
 	AmmoPool:
 		PipCount: 0
 	ReloadAmmoPool:
@@ -229,6 +261,14 @@ deso:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-elite
 	Armament@elite:
+		Weapon: RadBeamWeaponE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: RadBeamWeapon
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
 		Weapon: RadBeamWeaponE
 		RequiresCondition: rank-elite
 	AttackFrontal:
