@@ -274,7 +274,7 @@ naclon:
 		ShadowStart: 33
 		Tick: 180
 	make: ntclonmk
-	icon: clonicon
+	icon: cameo|clonicon
 
 napsis:
 	Inherits: ^Structure
@@ -294,7 +294,7 @@ napsis:
 	make: ntpsismk
 		Length: 24
 		ShadowStart: 24
-	icon: psisicon
+	icon: cameo|psisicon
 
 namisl:
 	Inherits: ^Structure

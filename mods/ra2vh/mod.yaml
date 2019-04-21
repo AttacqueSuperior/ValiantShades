@@ -13,31 +13,52 @@ Packages:
 	./mods/common: common
 	./mods/as: as
 	~ra2.mix
+	~ra2md.mix
 	~language.mix
-	~multi.mix
+	~langmd.mix
 	~audio.mix
+	~audiomd.mix
 	~cache.mix
-	~cameo.mix
-	~conquer.mix: conquer
+	~cachemd.mix
+	~cameo.mix: cameo
+	~cameomd.mix
+	~conquer.mix
+	~conqmd.mix
+	~genermd.mix
 	~generic.mix
+	~isogenmd.mix
 	~isogen.mix
+	~isosnomd.mix
 	~isosnow.mix
+	~isotemmd.mix
 	~isotemp.mix
+	~isourbmd.mix
 	~isourb.mix
+	~isodesmd.mix
+	~isodes.mix
+	~isoubnmd.mix
+	~isoubn.mix
 	~load.mix
+	~loadmd.mix
 	~local.mix
-	~neutral.mix
+	~localmd.mix
 	~sidec01.mix
 	~sidec02.mix
 	~sno.mix
 	~snow.mix
+	~snowmd.mix
 	~tem.mix
 	~temperat.mix
 	~theme.mix
 	~urb.mix
 	~urban.mix
+	~des.mix
+	~desert.mix
+	~ubn.mix
+	~urbann.mix
 	~audio.bag
 	ra2vh|bits
+	ra2vh|bits/audio
 	ra2vh|bits/cameos
 	ra2vh|bits/infantry
 	ra2vh|bits/structures
@@ -234,7 +255,7 @@ Fonts:
 		Font: common|FreeSansBold.ttf
 		Size:10
 
-SupportsMapsFrom: ra2
+SupportsMapsFrom: ra2vh, ra2
 
 SoundFormats: Aud, Wav
 
@@ -294,7 +315,15 @@ ModContent:
 		music: Base Game Music
 			TestFiles: ^Content/ra2/theme.mix
 			Sources: ra2, origin, tfd
+		expansion: Expansion Files
+			TestFiles: ^Content/ra2/ra2md.mix, ^Content/ra2/langmd.mix
+			Sources: origin-yr
+			Required: true
+		expansion-music: Expansion Music
+			TestFiles: ^Content/ra2/thememd.mix
+			Sources: origin-yr
 	Sources:
 		ra2vh|installer/ra2.yaml
 		ra2vh|installer/origin.yaml
+		ra2vh|installer/origin-yr.yaml
 		ra2vh|installer/firstdecade.yaml
