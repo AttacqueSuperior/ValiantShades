@@ -970,6 +970,8 @@ gaweat:
 		DisplayTimerStances: Ally, Neutral, Enemy
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	RenderSprites:
+		PlayerPalette: weathercontroller
 
 gacsph:
 	Inherits: ^Building
