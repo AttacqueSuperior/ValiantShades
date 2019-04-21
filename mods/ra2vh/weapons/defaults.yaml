@@ -4,26 +4,26 @@
 	Report: vflaat1a.wav, vflaat1b.wav
 	Projectile: BulletAS
 		Image: 120mm
-		LaunchAngle: 128
+		LaunchAngle: 64
 		Speed: 341
 	Warhead@1Dam: SpreadDamage
-		Spread: 64
+		Spread: 128
 		Damage: 20000
 		Versus:
-			None: 150
-			Flak: 100
-			Plate: 50
-			Light: 60
-			Medium: 10
-			Heavy: 10
-			Wood: 30
-			Steel: 20
-			Concrete: 10
+			None: 35
+			Flak: 35
+			Plate: 30
+			Light: 120
+			Medium: 80
+			Heavy: 100
+			Wood: 60
+			Steel: 60
+			Concrete: 40
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: flak_puff
+		Explosions: tiny_brnl
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: small_watersplash
@@ -36,18 +36,10 @@
 	-Projectile: BulletAS
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
-		Spread: 120
 		ValidTargets: Air
+		DamageTypes: ExplosionDeath
 		Versus:
-			Light: 80
-			Medium: 20
-			Heavy: 20
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: flak_puff_AA
+			Flak: 80
 
 ^LargeBullet:
 	Projectile: BulletAS

@@ -22,9 +22,6 @@ FlakGuyAAGun:
 FlakGuyAAGunE:
 	Inherits: FlakGuyAAGun
 	Burst: 2
-	ValidTargets: Air
-	Warhead@1Dam: SpreadDamage
-		Damage: 8000
 
 FlakTrackGun:
 	Inherits: ^Flak
@@ -38,9 +35,8 @@ FlakTrackAAGun:
 	Range: 10c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 35000
-		Versus:
-			Flak: 80
-			Light: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: small_brnl
 
 FlakWeapon:
 	Inherits: FlakTrackAAGun
@@ -49,3 +45,5 @@ FlakWeapon:
 	Report: bflaatta.wav, bflaattb.wav, bflaattc.wav, bflaattd.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 40000
+	Warhead@2Eff: CreateEffect
+		Explosions: small_brnl
