@@ -916,6 +916,10 @@ gagap:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	WithIdleOverlay@head:
+		Sequence: idle-head
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Health:
 		HP: 600000
 	Armor:

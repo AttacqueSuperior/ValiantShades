@@ -380,10 +380,16 @@ gagap:
 		Offset: 0,-15
 	idle: gggap
 	damaged-idle: gggap
+	idle-head: gggap_a
+		Length: 12
+		ShadowStart: 12
 	make: gtgapmk
 		Length: 9
 		ShadowStart: 9
 		Tick: 90
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	icon: gapicon
 
 gaweat:
