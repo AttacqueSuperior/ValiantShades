@@ -446,6 +446,11 @@ mgtk:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	Cloak:
+		InitialDelay: 15
+		CloakDelay: 15
+		IsPlayerPalette: true
+		UncloakOn: Attack, Damage, Move
 
 bfrt:
 	Inherits: ^Vehicle
