@@ -62,23 +62,39 @@
 
 ^Missile:
 	ReloadDelay: 60
-	Range: 12c0
 	Report: bpatatta.wav
 	Projectile: Missile
 		Blockable: false
 		Shadow: true
+		CloseEnough: 192
 		Image: DRAGON
 		Palette: ra
+		TrailImage: smokey2
 		ContrailLength: 8
 		ContrailWidth: 24
-		HorizontalRateOfTurn: 55
-		Speed: 100
-		RangeLimit: 14c409
-		TerrainHeightAware: true
+		ContrailColor: D8D8FF
+		HorizontalRateOfTurn: 38
+		VerticalRateOfTurn: 38
+		MinimumLaunchSpeed: 175
+		MaximumLaunchSpeed: 350
+		Speed: 650
+		Acceleration: 12
+		RangeLimit: 1
+		CruiseAltitude: 4c0
 		AllowSnapping: true
+		TerrainHeightAware: true
 
 ^AAMissile:
 	Inherits: ^Missile
+	Projectile: Missile
+		#Image: bootsmis
+		#TrailImage: smokey4
+		#TrailPalette: tsanim
+		MinimumLaunchSpeed: 225
+		MaximumLaunchSpeed: 450
+		Speed: 864
+		Acceleration: 15
+		CruiseAltitude: 6c0
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 120

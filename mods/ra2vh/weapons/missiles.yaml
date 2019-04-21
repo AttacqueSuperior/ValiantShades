@@ -1,18 +1,11 @@
 RedEye2:
 	Inherits: ^AAMissile
+	Range: 12c0
 	Projectile: Missile
-		TrailImage: smokey2
-		HorizontalRateOfTurn: 38
-		VerticalRateOfTurn: 38
-		MinimumLaunchSpeed: 175
-		MaximumLaunchSpeed: 350
-		Speed: 650
-		Acceleration: 12
 		RangeLimit: 24c0
-		CruiseAltitude: 4c0
 
 MammothTusk:
-	Inherits: ^AAMissile
+	Inherits: ^Missile
 	ReloadDelay: 80
 	Range: 8c0
 	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
@@ -20,10 +13,7 @@ MammothTusk:
 	Projectile: Missile
 		Inaccuracy: 128
 		ContrailLength: 8
-		HorizontalRateOfTurn: 10
-		Speed: 170
 		RangeLimit: 16c0
-		TrailImage: smokey2
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
 		Damage: 80000
@@ -49,12 +39,8 @@ Maverick:
 	Report: vintatta.wav
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
-		Speed: 373
-		Arm: 2
 		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
 		RangeLimit: 12c0
-		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 200000
@@ -83,7 +69,6 @@ Medusa:
 	BurstDelays: 13
 	Projectile: Missile
 		ContrailLength: 35
-		LockOnProbability: 85
 		RangeLimit: 24c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
@@ -97,12 +82,7 @@ HoverMissile:
 	Report: vifvatta.wav
 	ValidTargets: Ground, Air
 	Projectile: Missile
-		Speed: 213
-		Arm: 2
-		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
 		RangeLimit: 12c0
-		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 25000
@@ -196,12 +176,7 @@ MissileLauncher:
 	Report: iggiat2a.wav, iggiat2b.wav
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
-		Speed: 213
-		Arm: 2
-		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
 		RangeLimit: 12c0
-		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 40
