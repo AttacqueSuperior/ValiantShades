@@ -958,6 +958,7 @@ gaweat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SupportPowerChargeBar:
 	DetonateWeaponPower@WeatherStorm:
 		Icon: bolticon
 		ChargeInterval: 15000
