@@ -56,11 +56,13 @@ SealVoice:
 TanyaVoice:
 	Inherits: ^InfantryDeath
 	Voices:
-		Build: itanatb
-		Select: itansea, itanseb, itansec, itansed, itansee
-		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof
-		Attack: itanata, itanatb, itanatc, itanatd, itanate
-		Die: itandia, itandib, itandic
+		Build: itapcrd
+		Select: itansea, itanseb, itansec, itansed, itansee, itapsea, itapseb, itapsec, itapsed, itapsee
+		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof, itapmoa, itapmob, itapmoc, itapmod
+		Attack: itanata, itanatc, itanatd, itanate, itapata, itapatb, itapatd
+		Demolish: itanatb, itapatc, itapcra, itapcrb, itapcrc
+		Feedback: itapfea, itapfeb, itapfec, itapfed
+		Die: itandia, itandib, itandic, itapdia, itapdib, itapdic, itapdid, itapdie
 
 AlliedVehicleVoice:
 	DefaultVariant: .wav
