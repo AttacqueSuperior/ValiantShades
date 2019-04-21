@@ -195,12 +195,18 @@ RadBeamWeapon:
 			Drone: 0 # This is actually 100, but drones are immune to Radiation
 			Rocket: 100
 		DamageTypes: RadiationDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: desohit
+		ExplosionPalette: rookietsexp
+		ValidTargets: Ground, Water, Air
 
 RadBeamWeaponE:
 	Inherits: RadBeamWeapon
 	Range: 8c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 200000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
 
 CRRadBeamWeapon:
 	Inherits: RadBeamWeapon
