@@ -143,6 +143,8 @@
 	-CaptureNotification:
 	-ShakeOnDeath:
 	-GivesBuildableArea:
+	RevealOnFire:
+		Duration: 50
 
 ^CivBuilding:
 	Inherits: ^Building
@@ -387,6 +389,8 @@
 		ExplodeInstead: true
 	MapEditorData:
 		Categories: Infantry
+	RevealOnFire:
+		Duration: 50
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
@@ -610,6 +614,8 @@
 		ReturnToOrigin: false
 	MapEditorData:
 		Categories: Vehicle
+	RevealOnFire:
+		Duration: 50
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -676,6 +682,8 @@
 		UseLocation: true
 	MapEditorData:
 		Categories: Aircraft
+	RevealOnFire:
+		Duration: 50
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -792,6 +800,8 @@
 		ReturnToOrigin: false
 	MapEditorData:
 		Categories: Naval
+	RevealOnFire:
+		Duration: 50
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
