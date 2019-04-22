@@ -95,6 +95,13 @@ ChronoMinerVoice:
 		Harvest: vchrhaa, vchrhab, vchrhac, vchrhad, vchrhae
 		Deliver: vchrgoa, vchrgob, vchrgoc, vchrgod, vchrgoe
 
+HumveeVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhumsea, vhumseb, vhumsec, vhumsed, vhumsee, vhumsef, vhumseg
+		Move: vhummoa, vhummob, vhummoc, vhummod, vhummoe, vhummof, vhummog
+		Attack: vhumata, vhumatb, vhumatc, vhumatd, vhumate, vhumatf
+
 IFVVoice:
 	DefaultVariant: .wav
 	Voices:

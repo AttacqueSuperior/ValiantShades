@@ -91,6 +91,57 @@ cmin:
 	HitShape:
 	-DamagedByTintedCells:
 
+hmmv:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Humvee
+	Selectable:
+		Bounds: 50, 40, 0, -6
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~gaweap
+		Description: Infantry Transport and Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Mobile:
+		Speed: 140
+		TurnSpeed: 6
+		Locomotor: wheeled
+		PauseOnCondition: !(!notmobile && !chronodisable)
+	Health:
+		HP: 150000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 6c0
+	Cargo:
+		Types: Infantry
+		MaxWeight: 3
+		PipCount: 3
+		PassengerFacing: 0
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
+		LoadingCondition: notmobile
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Armament@primary:
+		Weapon: CRM60
+	Turreted:
+		TurnSpeed: 15
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: HumveeVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+
 mtnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

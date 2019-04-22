@@ -157,6 +157,7 @@ Player:
 			harv: 5
 			htnk: 50
 			htk: 20
+			hmmv: 25
 			mtnk: 50
 			fv: 20
 			sref: 10

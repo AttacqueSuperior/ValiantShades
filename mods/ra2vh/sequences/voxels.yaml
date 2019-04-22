@@ -92,6 +92,10 @@ harv:
 hind:
 	idle:
 
+hmmv:
+	idle:
+	turret: hmmvtur
+
 hornet:
 	idle:
 

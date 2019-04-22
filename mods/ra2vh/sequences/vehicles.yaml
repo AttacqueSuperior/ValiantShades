@@ -105,6 +105,10 @@ harv:
 		Facings: 8
 	icon: harvicon
 
+hmmv:
+	Inherits@MC: ^MindControllable
+	icon: hmmvicon
+
 htk:
 	Inherits@MC: ^MindControllable
 	icon: htkicon
