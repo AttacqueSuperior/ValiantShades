@@ -954,7 +954,6 @@ tesla:
 		RequiresCondition: charged
 	AttackTesla:
 		Voice: Attack
-		MaxCharges: 3
 		ReloadDelay: 120
 		ChargeAudio: btespow.wav
 		PauseOnCondition: lowpower
