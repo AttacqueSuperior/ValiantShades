@@ -59,12 +59,9 @@ nacnst:
 	Power:
 		Amount: 50
 		RequiresCondition: !build-incomplete
-	SpawnActorsOnSell@allies:
-		ActorTypes: e1, e1, e1, engineer
-		Factions: america, germany, england, france, korea
-	SpawnActorsOnSell@soviets:
-		ActorTypes: e2, e2, e2, e2, engineer
-		Factions: cuba, libya, iraq, russia
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: engineer, e2, e2, e2, e2, e2, e2
 
 napowr:
 	Inherits: ^Building
@@ -108,6 +105,9 @@ napowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
 
 nahand:
 	Inherits: ^Building
@@ -205,6 +205,9 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
 
 narefn:
 	Inherits: ^Building
@@ -265,6 +268,9 @@ narefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
 
 naradr:
 	Inherits: ^Building
@@ -318,6 +324,9 @@ naradr:
 		Weapon: PsychicReveal
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2
 
 naweap:
 	Inherits: ^Building
@@ -390,6 +399,9 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2
 
 nayard:
 	Inherits: ^Building
@@ -521,8 +533,6 @@ nayard:
 	WithProductionOverlay@lights:
 		Sequence: production-lights
 		RequiresCondition: !build-incomplete
-	-SpawnActorsOnSell@allies:
-	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
 		Adjacent: 13
 
@@ -571,6 +581,9 @@ nadept:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
 
 nanrct:
 	Inherits: ^Building
@@ -618,6 +631,9 @@ nanrct:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2
 
 natech:
 	Inherits: ^Building
@@ -651,6 +667,9 @@ natech:
 		Proxy: soviets.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2
 
 naclon:
 	Inherits: ^Building
@@ -729,6 +748,9 @@ naclon:
 		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2
 
 napsis:
 	Inherits: ^Building
@@ -765,6 +787,9 @@ napsis:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
 
 nairon:
 	Inherits: ^Building
@@ -814,6 +839,9 @@ nairon:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2
 
 namisl:
 	Inherits: ^Building
@@ -873,6 +901,9 @@ namisl:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2
 
 nawall:
 	Inherits: ^Wall

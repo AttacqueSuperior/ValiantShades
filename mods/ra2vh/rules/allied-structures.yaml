@@ -61,12 +61,9 @@ gacnst:
 	Power:
 		Amount: 50
 		RequiresCondition: !build-incomplete
-	SpawnActorsOnSell@allies:
-		ActorTypes: e1, e1, e1, engineer
-		Factions: america, germany, england, france, korea
-	SpawnActorsOnSell@soviets:
-		ActorTypes: e2, e2, e2, e2, engineer
-		Factions: cuba, libya, iraq, russia
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: engineer, e1, e1, e1, e1
 
 gapowr:
 	Inherits: ^Building
@@ -110,6 +107,9 @@ gapowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1
 
 gapile:
 	Inherits: ^Building
@@ -183,6 +183,9 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1
 
 garefn:
 	Inherits: ^Building
@@ -243,6 +246,9 @@ garefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1
 
 gafcmd:
 	Inherits: ^Building
@@ -297,6 +303,9 @@ gafcmd:
 		Weapon: PsychicReveal
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1
 
 gaairc:
 	Inherits: ^Building
@@ -401,6 +410,9 @@ gaairc:
 		ArrowSequence: arrow
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1
 
 amradr:
 	Inherits: gaairc
@@ -498,6 +510,9 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1
 
 gayard:
 	Inherits: ^Building
@@ -625,8 +640,6 @@ gayard:
 	WithRepairOverlay:
 		Sequence: repair
 		RequiresCondition: !build-incomplete
-	-SpawnActorsOnSell@allies:
-	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
 		Adjacent: 13
 
@@ -677,6 +690,9 @@ gadept:
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1
 
 gatech:
 	Inherits: ^Building
@@ -713,6 +729,9 @@ gatech:
 		Proxy: allies.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1
 
 gawall:
 	Inherits: ^Wall
@@ -911,6 +930,9 @@ gaorep:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -200
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1
 
 gaspysat:
 	Inherits: ^Building
@@ -946,6 +968,9 @@ gaspysat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -1031,6 +1056,9 @@ gaweat:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1, e1
 
 gacsph:
 	Inherits: ^Building
@@ -1086,6 +1114,9 @@ gacsph:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1, e1
 
 atesla:
 	Inherits: ^SupportBuilding
