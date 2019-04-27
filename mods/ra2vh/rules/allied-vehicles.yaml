@@ -354,8 +354,6 @@ fv:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
-	Explodes:
-		RequiresCondition: !ifv-demo
 	Explodes@demo:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
@@ -417,9 +415,6 @@ sref:
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
-	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
 	RenderVoxels:
 	GrantConditionOnAttack@turretcharge1:
@@ -486,9 +481,6 @@ mgtk:
 		Voice: Attack
 	AutoTarget:
 		AllowMovement: false
-	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -559,9 +551,6 @@ bfrt:
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
 		RequiresCondition: loaded
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:

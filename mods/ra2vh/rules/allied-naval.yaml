@@ -31,9 +31,6 @@ lcrf:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -80,9 +77,6 @@ dest:
 		CloakTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -118,9 +112,6 @@ aegis:
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:

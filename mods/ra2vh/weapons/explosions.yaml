@@ -1,6 +1,7 @@
 UnitExplode:
 	Warhead@1Eff: CreateEffect
-		Explosions: large_twlt
+		Explosions: tankexplosion
+		ExplosionPalette: heroicapolloexp
 		ImpactSounds: expnew09.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@DebrisSpawn: FireShrapnel
@@ -11,7 +12,7 @@ UnitExplode:
 UnitExplodeSmall:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
-		Explosions: medium_brnl
+		Explosions: smalltankexplosion
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 
@@ -19,6 +20,7 @@ InfantryExplode:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: medium_bang
+		ExplosionPalette: effect
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
@@ -27,6 +29,7 @@ V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect
 		Explosions: terrorist_explosion
+		ExplosionPalette: effect
 
 BuildingExplode:
 	Inherits: UnitExplodeSmall
@@ -36,6 +39,11 @@ BuildingExplode:
 	Warhead@DebrisSpawn: FireShrapnel
 		Weapon: LargeDebris
 
+ShipExplode:
+	Inherits: UnitExplode
+	Warhead@DebrisSpawn: FireShrapnel
+		Amount: 2,5
+
 KirovExplode:
 	Inherits: UnitExplode
 	Warhead@2Dam: SpreadDamage
@@ -43,11 +51,6 @@ KirovExplode:
 		Damage: 75000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-
-ApocExplode:
-	Inherits: KirovExplode
-	Warhead@2Dam: SpreadDamage
-		Damage: 40000
 
 PlaneExplode:
 	Inherits: KirovExplode

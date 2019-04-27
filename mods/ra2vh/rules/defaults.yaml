@@ -749,6 +749,8 @@
 	Aircraft:
 		CanHover: true
 		VTOL: true
+	FallsToEarth:
+		Explosion: PlaneExplode
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -796,8 +798,8 @@
 	Tooltip:
 		GenericName: Ship
 	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
+		Weapon: ShipExplode
+		EmptyWeapon: ShipExplode
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: SovietNavalVoice

@@ -31,9 +31,6 @@ sapc:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -98,9 +95,6 @@ sub:
 		CloakTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	-MustBeDestroyed:
 	WithVoxelBody:
 	RenderSprites:
@@ -143,9 +137,6 @@ hyd:
 	Armament@secondary:
 		Weapon: FlakWeapon
 		LocalOffset: 256,0,1408
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
 	Voiced:
 		VoiceSet: SeaScorpionVoice
 	WithVoxelBody:

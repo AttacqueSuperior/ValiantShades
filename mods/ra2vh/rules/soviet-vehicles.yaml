@@ -292,9 +292,6 @@ apoc:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
-	Explodes:
-		Weapon: ApocExplode
-		EmptyWeapon: ApocExplode
 	Voiced:
 		VoiceSet: ApocalypseVoice
 	ProducibleWithLevel:
@@ -372,7 +369,7 @@ dtruck:
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
-	Explodes:
+	Explodes@demotruck:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
 	RenderSprites:

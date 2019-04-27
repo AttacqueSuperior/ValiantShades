@@ -282,6 +282,9 @@ explosion:
 		BlendMode: Translucent
 	buildingexplosion6: bldgexp6
 		BlendMode: Translucent
+	tankexplosion: tankexpl
+	smalltankexplosion: tanksexp
+		BlendMode: Translucent
 
 discus:
 	idle:
