@@ -108,10 +108,11 @@ Player:
 			gatech: 1
 			gagap: 2
 			narefn: 4
-			nanrct: 1
 			nahand: 3
 			naweap: 4
 			naradr: 1
+			naairc: 2
+			nanrct: 1
 			natech: 1
 		BuildingFractions:
 			garefn: 15
@@ -130,7 +131,8 @@ Player:
 			narefn: 15
 			nahand: 15
 			naweap: 30
-			naradr: 1
+			naradr: 15
+			naairc: 15
 			natech: 1
 			naclon: 1
 			nalasr: 15

@@ -75,7 +75,7 @@ zep:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
-		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, naairc, natech
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:

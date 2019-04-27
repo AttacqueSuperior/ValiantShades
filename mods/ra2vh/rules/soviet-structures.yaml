@@ -536,6 +536,111 @@ nayard:
 	RequiresBuildableArea:
 		Adjacent: 13
 
+naairc:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: naradr, ~structures.soviets #, ~!structures.america
+		Description: Supports 4 aircraft.
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Airforce Command Headquarters
+	ProvidesPrerequisite@allies:
+		Prerequisite: aircraft.soviets
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Selectable:
+		Bounds: 142, 150, -3, -42
+	Health:
+		HP: 600000
+	Armor:
+		Type: Steel
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	ProvidesRadar:
+		RequiresCondition: !lowpower && !build-incomplete
+	RevealsShroud:
+		Range: 10c0
+	WithIdleOverlay@top:
+		Sequence: idle-top
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@bottom:
+		Sequence: idle-bottom
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@mid:
+		Sequence: idle-mid
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	Power:
+		Amount: -50
+	Reservable:
+	Exit@1:
+		SpawnOffset: -370,370,0
+		MoveIntoWorld: false
+		Facing: 224
+	Exit@2:
+		SpawnOffset: 370,-370,0
+		MoveIntoWorld: false
+		Facing: 224
+	Exit@3:
+		SpawnOffset: 1000,370,0
+		MoveIntoWorld: false
+		Facing: 224
+	Exit@4:
+		SpawnOffset: 350,1000,0
+		MoveIntoWorld: false
+		Facing: 224
+	Production:
+		Produces: Aircraft
+	ProductionBar:
+		ProductionType: Aircraft
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary && !build-incomplete
+	#ParatroopersPower@paratroopers:
+	#	OrderName: AmericanParatroopers
+	#	Icon: airborne
+	#	ChargeInterval: 9000
+	#	Description: American Paratroopers
+	#	LongDesc: A Cargo Plane drops six GIs\nand 2 GGIs anywhere on the map.
+	#	DropItems: ggi,ggi,e1,e1,e1,e1,e1,e1
+	#	QuantizedFacings: 8
+	#	UnitType: pdplane
+	#	CameraActor: camera
+	#	ArrowSequence: arrow
+	#	PauseOnCondition: lowpower
+	#	RequiresCondition: !build-incomplete
+	RenderSprites:
+		Image: gaairc
+	WithTextDecoration@placeholder:
+		Text: PLACEHOLDER
+		ReferencePoint: Center
+		ZOffset: 256
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2
+
 nadept:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
