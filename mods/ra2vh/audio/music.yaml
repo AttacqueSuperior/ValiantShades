@@ -32,6 +32,7 @@ credits: Credits
 score: Score
 	Filename: ra2-sco
 	Extension: wav
+#YR themes
 brainfre: Brain Freeze
 	Extension: wav
 bully: Bully Kit
@@ -51,4 +52,97 @@ trancelv: Trance L. Vania
 optionx: Credits YR
 	Extension: wav
 scorex: Score YR
+	Extension: wav
+#RA1 theme pack
+arazoid: Arazoid
+	Extension: wav
+await: Await
+	Extension: wav
+backstab: Backstab
+	Extension: wav
+bigfoot: Big Foot
+	Extension: wav
+bog: Bog
+	Extension: wav
+backstab: Backstab
+	Extension: wav
+chaos: Chaos
+	Extension: wav
+crush: Crush
+	Extension: wav
+crushremix: Crush Remix
+	Extension: wav
+dense: Dense
+	Extension: wav
+facetheenemy: Face to the Enemy
+	Extension: wav
+facetheenemy2: Face to the Enemy 2
+	Extension: wav
+floating: Floating
+	Extension: wav
+fogger: Fogger
+	Extension: wav
+gloom: Gloom
+	Extension: wav
+groundwire: Ground Wire
+	Extension: wav
+hellmarch: Hell March
+	Extension: wav
+hellmarchremix: Hell March Remix
+	Extension: wav
+journey: Journey
+	Extension: wav
+militantforce: Militant Force
+	Extension: wav
+mud: Mud
+	Extension: wav
+mudremix: Mud Remix
+	Extension: wav
+ra1intro: RA1 Intro
+	Extension: wav
+radio2: Radio 2
+	Extension: wav
+radio2remix: Radio 2 Remix
+	Extension: wav
+reloadfire: Reload Fire
+	Extension: wav
+rollout: Roll Out
+	Extension: wav
+run: Run
+	Extension: wav
+runningthroughpipes: Running Through Pipes
+	Extension: wav
+shutit: Shut It
+	Extension: wav
+smash: Smash
+	Extension: wav
+snake: Snake
+	Extension: wav
+surfnomercy: Surf No Mercy
+	Extension: wav
+terminate: Terminate
+	Extension: wav
+thesearch: The Search
+	Extension: wav
+thesecondhand: The Second Hand
+	Extension: wav
+traction: Traction
+	Extension: wav
+trenches: Trenches
+	Extension: wav
+twincannon: Twin Cannon
+	Extension: wav
+twincannonremix: Twin Cannon Remix
+	Extension: wav
+underlyingthoughts: Underlying Thoughts
+	Extension: wav
+vector: Vector
+	Extension: wav
+voicerhythm2: Voice Rhythm 2
+	Extension: wav
+wasteland: Wasteland
+	Extension: wav
+workmen: Workmen
+	Extension: wav
+workmenremix: Workmen Remix
 	Extension: wav
