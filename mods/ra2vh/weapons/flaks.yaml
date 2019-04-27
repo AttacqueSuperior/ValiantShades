@@ -25,9 +25,6 @@ CRFlakGuyGunE:
 FlakGuyAAGun:
 	Inherits: ^AAFlak
 	Range: 8c0
-	ValidTargets: Air
-	Projectile: BulletAS
-		Inaccuracy: 128
 
 FlakGuyAAGunE:
 	Inherits: FlakGuyAAGun

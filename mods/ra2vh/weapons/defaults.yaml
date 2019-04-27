@@ -39,6 +39,7 @@
 	Inherits: ^Flak
 	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
 	Projectile: InstantHit
+	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
 		DamageTypes: ExplosionDeath
