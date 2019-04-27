@@ -134,7 +134,8 @@ zephusk:
 		Spins: true
 		SpinInitial: 0
 		SpinAcceleration: 1
-		VelocityAcceleration: 11
+		SpinAccelerationDelay: 8
+		VelocityAcceleration: 2
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
