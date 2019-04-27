@@ -343,12 +343,17 @@ litning:
 	dim:
 		Start: 4
 		Length: 4
-
-litningupg:
-	bright:
+	bright-charge:
+		Start: 8
 		Length: 4
-	dim: litning
-		Start: 4
+	dim-charge:
+		Start: 12
+		Length: 4
+	bright-grey:
+		Start: 16
+		Length: 4
+	dim-grey:
+		Start: 20
 		Length: 4
 
 moveflsh:

@@ -1,6 +1,8 @@
 ElectricBolt:
 	Inherits: ^TeslaZap
 	Report: itesat2a.wav, itesat2b.wav
+	Projectile: TeslaZap
+		BrightSequence: bright-grey
 
 ElectricBoltE:
 	Inherits: ElectricBolt
@@ -25,7 +27,9 @@ AssaultBolt:
 	Report: iteschaa.wav
 	ValidTargets: TeslaBoost
 	Projectile: TeslaZap
-		Image: litningupg
+		BrightSequence: bright-charge
+		DimSequence: dim-charge
+		DimZaps: 1
 	Warhead@charge: GrantExternalCondition
 		Range: 42
 		Duration: 75
@@ -38,6 +42,9 @@ CoilBolt:
 	ReloadDelay: 3
 	Range: 8c0
 	Report: btesat1a.wav
+	Projectile: TeslaZap
+		BrightZaps: 2
+		DimZaps: 1
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 200000
@@ -47,7 +54,8 @@ OPCoilBolt:
 	Range: 8c512
 	Report: btesat2a.wav
 	Projectile: TeslaZap
-		Image: litningupg
+		BrightSequence: bright-charge
+		DimSequence: dim-charge
 	Warhead@1Dam: SpreadDamage
 		Damage: 300000
 
@@ -58,6 +66,10 @@ TankBolt:
 	Burst: 2
 	BurstDelays: 3
 	Report: vtesatta.wav, vtesattb.wav
+	Projectile: TeslaZap
+		BrightZaps: 2
+		DimZaps: 1
+		DimSequence: dim-grey
 	Warhead@1Dam: SpreadDamage
 		Damage: 67000
 

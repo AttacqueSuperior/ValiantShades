@@ -163,6 +163,7 @@
 	ReloadDelay: 60
 	Report: itesatta.wav
 	Projectile: TeslaZap
+		Palette: ra
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 50000
