@@ -210,6 +210,8 @@ atomic:
 	Warhead@2Res_impact: DestroyResource
 		Delay: 25
 	Warhead@3Eff_impact: CreateEffect
+		Explosions: donut_nuke_explosion
+		ExplosionPalette: apollo
 		Delay: 25
 		ValidTargets: Ground, Water, Air
 	Warhead@4Smu_areanuke: LeaveSmudge

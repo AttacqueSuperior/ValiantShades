@@ -288,6 +288,7 @@ explosion:
 	prismtowerhit: prismthit
 	prismhit: prismhit
 	prismshrapnel: prismshr
+	donut_nuke_explosion: donutnuke
 
 discus:
 	idle:
