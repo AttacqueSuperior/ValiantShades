@@ -31,7 +31,8 @@ V3AmmunitionExplode:
 BuildingExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect
-		Explosions: large_twlt, large_bang, large_brnl, verylarge_clsn, large_tumu
+		Explosions: buildingexplosion1, buildingexplosion2, buildingexplosion3, buildingexplosion4, buildingexplosion5, buildingexplosion6
+		ExplosionPalette: apollo
 	Warhead@DebrisSpawn: FireShrapnel
 		Weapon: LargeDebris
 

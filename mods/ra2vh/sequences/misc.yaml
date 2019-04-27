@@ -270,6 +270,18 @@ explosion:
 		FlipX: true
 	desolator_hit: desohit
 	mirage_tank_hit: miraghit
+	buildingexplosion1: bldgexp1
+		BlendMode: Translucent
+	buildingexplosion2: bldgexp2
+		BlendMode: Translucent
+	buildingexplosion3: bldgexp3
+		BlendMode: Translucent
+	buildingexplosion4: bldgexp4
+		BlendMode: Translucent
+	buildingexplosion5: bldgexp5
+		BlendMode: Translucent
+	buildingexplosion6: bldgexp6
+		BlendMode: Translucent
 
 discus:
 	idle:
