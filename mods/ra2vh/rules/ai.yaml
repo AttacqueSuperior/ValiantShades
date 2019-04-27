@@ -54,7 +54,7 @@ Player:
 					Against: Ally
 					Types: Ground, Water
 					Attractiveness: -20
-			WeatherStorm:
+			weatherstorm:
 				OrderName: WeatherStormInfoOrder
 				MinimumAttractiveness: 250
 				Types: Ground
@@ -75,6 +75,16 @@ Player:
 					Against: Ally
 					Types: Ground, Water
 					Attractiveness: -20
+			psychicreveal:
+				OrderName: PsychicRevealInfoOrder
+				Types: Ground, Water
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: Ground, Water
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 7c0
 	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
 		BuildingQueues: Building

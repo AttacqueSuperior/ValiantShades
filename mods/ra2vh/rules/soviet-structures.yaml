@@ -309,6 +309,15 @@ naradr:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
+	DetonateWeaponPower@PsychicReveal:
+		Icon: psyreveal
+		ChargeInterval: 6000
+		Description: Psychic Reveal
+		LongDesc: Reveals a target area.
+		OrderName: PsychicRevealInfoOrder
+		Weapon: PsychicReveal
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 
 naweap:
 	Inherits: ^Building

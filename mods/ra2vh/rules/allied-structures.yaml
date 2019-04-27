@@ -288,6 +288,15 @@ gafcmd:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
+	DetonateWeaponPower@PsychicReveal:
+		Icon: psyreveal
+		ChargeInterval: 6000
+		Description: Psychic Reveal
+		LongDesc: Reveals a target area.
+		OrderName: PsychicRevealInfoOrder
+		Weapon: PsychicReveal
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 
 gaairc:
 	Inherits: ^Building
@@ -390,6 +399,7 @@ gaairc:
 		UnitType: pdplane
 		CameraActor: camera
 		ArrowSequence: arrow
+		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 
 amradr:

@@ -452,6 +452,7 @@ icon:
 	paradrop: paraicon
 	airborne: aparicon
 	bolticon: bolticon
+	psyreveal: psyricon
 
 atomic:
 	up: nkmslup
