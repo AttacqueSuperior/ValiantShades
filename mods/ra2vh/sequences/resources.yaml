@@ -6,6 +6,7 @@ resources:
 		Offset: 0, -15
 	tib01: tib01
 	tib02: tib02
+		UseTilesetExtension: false
 	tib03: tib03
 	tib04: tib04
 	tib05: tib05
@@ -18,6 +19,7 @@ resources:
 	tib12: tib12
 	tib13: tib13
 	tib14: tib14
+		UseTilesetExtension: false
 	tib15: tib15
 	tib16: tib16
 	tib17: tib17
