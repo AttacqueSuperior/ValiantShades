@@ -101,6 +101,7 @@ Rules:
 	ra2vh|rules/civilian-naval.yaml
 
 Sequences:
+	ra2vh|sequences/resources.yaml
 	ra2vh|sequences/aircraft.yaml
 	ra2vh|sequences/allied-infantry.yaml
 	ra2vh|sequences/allied-structures.yaml
