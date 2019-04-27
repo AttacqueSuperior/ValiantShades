@@ -234,10 +234,10 @@ PsychicReveal:
 	Warhead@1Dam: SpreadDamage
 	Warhead@2Reveal: RevealShroud
 		Duration: 75
-		Radius: 7c0
+		Radius: 11c0
 	Warhead@3Reveal: RevealShroud
 		Duration: 38
-		Radius: 7c0
+		Radius: 11c0
 		RevealGeneratedShroud: true
 	Warhead4Eff: CreateEffect
 		ImpactSounds: spsyreve.wav
