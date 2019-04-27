@@ -151,6 +151,7 @@ Player:
 			e1: 90
 			ggi: 25
 			jumpjet: 10
+			ghost: 5
 			snipe: 5
 			tany: 1
 			cmin: 5
@@ -181,6 +182,7 @@ Player:
 			orca: 4
 			beag: 4
 			ivan: 5
+			yuri: 4
 			harv: 6
 			zep: 2
 	McvManagerBotModule@test:
