@@ -32,6 +32,13 @@ MammothTusk:
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
 
+MammothTuskE:
+	Inherits: MammothTusk
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 Maverick:
 	Inherits: ^Missile
 	ReloadDelay: 10
@@ -57,9 +64,23 @@ Maverick:
 		ImpactSounds: gexpwala.wav
 		ValidTargets: Water
 
+MaverickE:
+	Inherits: Maverick
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 Maverick2:
 	Inherits: Maverick
 	Report: vblaatta.wav
+
+Maverick2E:
+	Inherits: Maverick2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 Medusa:
 	Inherits: ^AAMissile
@@ -73,6 +94,13 @@ Medusa:
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100000
+
+MedusaE:
+	Inherits: Medusa
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 HoverMissile:
 	Inherits: ^Missile
@@ -113,15 +141,10 @@ HoverMissile:
 
 HoverMissileE:
 	Inherits: HoverMissile
-	Burst: 4
-	Report: vifvatta.wav
-	ValidTargets: Ground, Air
-	Warhead@1Dam: SpreadDamage
-		Damage: 80000
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_grey_explosion
-		ImpactSounds: gexp15a.wav
-		ValidTargets: Ground, Air
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 SubTorpedo:
 	ReloadDelay: 75
@@ -156,18 +179,23 @@ SubTorpedo:
 			Drone: 25
 			Rocket: 100
 		DamageTypes: ExplosionDeath
-	Warhead@2EffWater: CreateEffect
+	Warhead@3EffWater: CreateEffect
 		Explosions: large_watersplash
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-	Warhead@3EffGround: CreateEffect
+	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasb.wav
 		ValidTargets: Ground
 
 SubTorpedoE:
 	Inherits: SubTorpedo
-	Burst: 2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 MissileLauncher:
 	Inherits: ^Missile
@@ -197,10 +225,12 @@ MissileLauncher:
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_grey_explosion
 		ImpactSounds: gexpifva.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+
+MissileLauncherE:
+	Inherits: MissileLauncher
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp

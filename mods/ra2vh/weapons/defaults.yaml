@@ -19,9 +19,11 @@
 		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_brnl
+		ExplosionPalette: rookiera2exp
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: small_watersplash
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 
@@ -55,10 +57,12 @@
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
+		Explosions: medium_watersplash
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 
@@ -85,6 +89,16 @@
 		CruiseAltitude: 4c0
 		AllowSnapping: true
 		TerrainHeightAware: true
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp10a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
 
 ^AAMissile:
 	Inherits: ^Missile
@@ -114,15 +128,7 @@
 			Concrete: 0
 			Drone: 100
 			Rocket: 100
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: small_bang
-		ImpactSounds: gexp10a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
+		DamageTypes: TriggerProne, ExplosionDeath
 
 ^MG:
 	ReloadDelay: 20
@@ -148,7 +154,8 @@
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
-		ValidTargets: Ground, Water
+		ExplosionPalette: rookiera2exp
+		ValidTargets: Ground, Water, Air
 
 ^TeslaZap:
 	Range: 3c0
@@ -170,10 +177,11 @@
 			Concrete: 50
 			Drone: 200
 			Rocket: 100
-		DamageTypes: ElectroDeath
+		DamageTypes: TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tesla_impact
-		ValidTargets: Ground, Water
+		ExplosionPalette: rookiera2exp
+		ValidTargets: Ground, Water, Air
 	Warhead@spark: FireShrapnel
 		Weapon: TeslaSpark
 		Amount: 6

@@ -1,11 +1,11 @@
 ElectricBolt:
 	Inherits: ^TeslaZap
+	Report: itesat2a.wav, itesat2b.wav
 
 ElectricBoltE:
 	Inherits: ElectricBolt
-	Range: 5c0
-	ReloadDelay: 40
-	Report: itesat2a.wav, itesat2b.wav
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 CRElectricBolt:
 	Inherits: ElectricBolt
@@ -13,6 +13,11 @@ CRElectricBolt:
 	ReloadDelay: 45
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
+
+CRElectricBoltE:
+	Inherits: CRElectricBolt
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 AssaultBolt:
 	ReloadDelay: 70
@@ -58,10 +63,8 @@ TankBolt:
 
 TankBoltE:
 	Inherits: TankBolt
-	Range: 6c0
-	ReloadDelay: 60
-	Warhead@1Dam: SpreadDamage
-		Damage: 80000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 SonicZap:
 	ReloadDelay: 180
@@ -127,6 +130,16 @@ PrismShot:
 			Drone: 200
 			Rocket: 100
 		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallScorch
 
 Comet:
 	ValidTargets: Ground, Water
@@ -156,19 +169,23 @@ Comet:
 		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: small_watersplash
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater, SmallScorch
+		SmudgeType: SmallScorch
 
 SuperComet:
 	Inherits: Comet
-	Warhead@1Dam: SpreadDamage
-		Damage: 150000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 RadBeamWeapon:
 	ValidTargets: Ground
@@ -201,9 +218,6 @@ RadBeamWeapon:
 
 RadBeamWeaponE:
 	Inherits: RadBeamWeapon
-	Range: 8c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 200000
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
 
@@ -213,6 +227,11 @@ CRRadBeamWeapon:
 	ReloadDelay: 30
 	Warhead@1Dam: SpreadDamage
 		Damage: 175000
+
+CRRadBeamWeaponE:
+	Inherits: RadBeamWeapon
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
 
 NeutronRifle:
 	ValidTargets: Ground

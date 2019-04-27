@@ -7,24 +7,27 @@ M1Carbine:
 
 M1CarbineE:
 	Inherits: M1Carbine
-	ReloadDelay: 20
-	Range: 5c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 20000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 M60:
 	Inherits: ^MG
 
 M60E:
 	Inherits: M60
-	Warhead@1Dam: SpreadDamage
-		Damage: 25000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 CRM60:
 	Inherits: M60
 	ReloadDelay: 15
 	Range: 6c0
 	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
+
+CRM60E:
+	Inherits: CRM60
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 para:
 	Inherits: ^MG
@@ -42,13 +45,12 @@ para:
 
 paraE:
 	Inherits: para
-	Range: 7c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 25000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 MP5:
 	Inherits: ^MG
-	ReloadDelay: 10
+	ReloadDelay: 30
 	Range: 6c0
 	Report: iseaatta.wav, iseaattb.wav
 	Warhead@1Dam: SpreadDamage
@@ -57,41 +59,48 @@ MP5:
 			None: 200
 			Flak: 100
 			Plate: 100
-			Light: 0
-			Medium: 0
-			Heavy: 0
+			Light: 5
+			Medium: 5
+			Heavy: 5
 			Wood: 0
 			Steel: 0
 			Concrete: 0
 			Drone: 0
-			Rocket: 100
+			Rocket: 5
 		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
 
 MP5E:
 	Inherits: MP5
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 DoublePistols:
 	Inherits: MP5
+	ReloadDelay: 10
 	Report: itanatta.wav, itanattb.wav
+	ValidTargets: Infantry
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
 
 DoublePistolsE:
 	Inherits: DoublePistols
-	Range: 8c0
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 CRMP5:
-	Inherits: DoublePistols
+	Inherits: MP5
 	ReloadDelay: 20
 
+CRMP5E:
+	Inherits: CRMP5
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	
 awp:
 	Inherits: DoublePistols
-	ValidTargets: Infantry
 	ReloadDelay: 100
 	Range: 14c0
 	Report: isniatta.wav
-	Projectile: BulletAS
-		Speed: 6c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125000
@@ -99,7 +108,8 @@ awp:
 
 AWPE:
 	Inherits: awp
-	ReloadDelay: 60
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 20mm:
 	Inherits: ^MG
@@ -121,7 +131,8 @@ AWPE:
 
 20mme:
 	Inherits: 20mm
-	Burst: 2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 vulcan:
 	Inherits: ^MG
@@ -142,3 +153,8 @@ BlackHawkCannon:
 	Report: vblhatta.wav, vblhattb.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 25000
+
+BlackHawkCannonE:
+	Inherits: BlackHawkCannon
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

@@ -51,22 +51,10 @@ sabot:
 
 sabotE:
 	Inherits: sabot
-	Range: 6c768
-	ReloadDelay: 60
-	Projectile: BulletAS
-		Blockable: false
-		Speed: 682
-	Warhead@1Dam: SpreadDamage
-		Damage: 175000
-		Versus:
-			Medium: 50
-			Drone: 100
 	Warhead@2Eff: CreateEffect
-		Explosions: elite_explosion
-		ImpactSounds: gexpapoa.wav
+		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
-		ImpactSounds: gexpwala.wav
+		ExplosionPalette: heroicra2exp
 
 MirageGun:
 	Inherits: ^LargeBullet
@@ -100,10 +88,6 @@ MirageGun:
 
 MirageGunE:
 	Inherits: MirageGun
-	ReloadDelay: 80
-	Range: 9c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 150000
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
@@ -122,25 +106,9 @@ MirageGunE:
 			Drone: 200
 
 20mmrapidE:
-	Inherits: ^LargeBullet
-	ReloadDelay: 50
-	Range: 5c512
-	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
-	Warhead@1Dam: SpreadDamage
-		Damage: 50000
-		Versus:
-			None: 100
-			Flak: 90
-			Plate: 80
-			Light: 60
-			Medium: 40
-			Heavy: 40
-			Wood: 50
-			Steel: 40
-			Concrete: 25
-			Drone: 80
-			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath
+	Inherits: 20mmrapid
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 105mm:
 	Inherits: ^LargeBullet
@@ -166,24 +134,10 @@ MirageGunE:
 
 105mmE:
 	Inherits: 105mm
-	ReloadDelay: 75
-	Burst: 2
-	BurstDelays: 5
-	Projectile: BulletAS
-		Speed: 682
-	Warhead@1Dam: SpreadDamage
-		Damage: 55000
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
 	Warhead@2Eff: CreateEffect
-		Explosions: elite_explosion
-		ImpactSounds: gexpapoa.wav
+		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
-		ImpactSounds: gexpwala.wav
+		ExplosionPalette: heroicra2exp
 
 120mm:
 	Inherits: ^LargeBullet
@@ -209,27 +163,10 @@ MirageGunE:
 
 120mmE:
 	Inherits: 120mm
-	ReloadDelay: 80
-	Burst: 2
-	BurstDelays: 5
-	Projectile: BulletAS
-		Speed: 682
-	Warhead@1Dam: SpreadDamage
-		Damage: 85000
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Wood: 50
-			Steel: 100
-			Concrete: 50
 	Warhead@2Eff: CreateEffect
-		Explosions: elite_explosion
-		ImpactSounds: gexpapoa.wav
+		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
-		ImpactSounds: gexpwala.wav
+		ExplosionPalette: heroicra2exp
 
 120mmx:
 	Inherits: 120mm
@@ -246,31 +183,21 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		Explosions: apoc_explosion
 		ImpactSounds: gexpapoa.wav
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
 
 120mmxE:
 	Inherits: 120mmx
-	Burst: 4
-	BurstDelays: 5
-	Projectile: BulletAS
-		Speed: 682
-	Warhead@1Dam: SpreadDamage
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
 	Warhead@2Eff: CreateEffect
-		Explosions: elite_explosion
+		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
-		ImpactSounds: gexpwala.wav
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: MediumCrater, MediumScorch
+		ExplosionPalette: heroicra2exp
 
 155mm:
 	Inherits: ^LargeBullet
 	ReloadDelay: 110
 	Range: 8c0
-	Report: vdesatta.wav, vrdesattb.wav
+	Report: vdesatta.wav, vdesattb.wav
 	Projectile: BulletAS
 		Blockable: false
 		Speed: 682
@@ -288,7 +215,12 @@ MirageGunE:
 			Concrete: 60
 			Drone: 100
 			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_grey_explosion
 
 155mmE:
 	Inherits: 155mm
-	Burst: 2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp

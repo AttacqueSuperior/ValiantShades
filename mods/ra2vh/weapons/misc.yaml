@@ -25,13 +25,14 @@ BlimpBomb:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone70Percent, TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
+		Explosions: kirovtesla
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
+		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
@@ -40,7 +41,9 @@ BlimpBomb:
 BlimpBombE:
 	Inherits: BlimpBomb
 	Warhead@2Eff: CreateEffect
-		Explosions: kirovtesla
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 RepairBullet:
 	ReloadDelay: 80

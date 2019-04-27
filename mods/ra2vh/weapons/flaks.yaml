@@ -3,7 +3,10 @@ FlakGuyGun:
 
 FlakGuyGunE:
 	Inherits: FlakGuyGun
-	Burst: 2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 CRFlakGuyGun:
 	Inherits: FlakGuyGun
@@ -11,6 +14,13 @@ CRFlakGuyGun:
 	Range: 7c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 30000
+
+CRFlakGuyGunE:
+	Inherits: CRFlakGuyGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 FlakGuyAAGun:
 	Inherits: ^AAFlak
@@ -21,7 +31,10 @@ FlakGuyAAGun:
 
 FlakGuyAAGunE:
 	Inherits: FlakGuyAAGun
-	Burst: 2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 FlakTrackGun:
 	Inherits: ^GroundFlak
@@ -31,15 +44,21 @@ FlakTrackGun:
 
 FlakTrackAAGun:
 	Inherits: ^AAFlak
-	ValidTargets: Air
 	Range: 10c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 35000
 	Warhead@2Eff: CreateEffect
 		Explosions: small_brnl
 
-FlakWeapon:
+FlakTrackAAGunE:
 	Inherits: FlakTrackAAGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
+FlakWeapon:
+	Inherits: ^AAFlak
 	ReloadDelay: 20
 	Range: 12c0
 	Report: bflaatta.wav, bflaattb.wav, bflaattc.wav, bflaattd.wav
@@ -47,3 +66,10 @@ FlakWeapon:
 		Damage: 40000
 	Warhead@2Eff: CreateEffect
 		Explosions: small_brnl
+
+FlakWeaponE:
+	Inherits: FlakWeapon
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
