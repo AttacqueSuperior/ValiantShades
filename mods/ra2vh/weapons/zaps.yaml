@@ -131,13 +131,10 @@ PrismShot:
 			Rocket: 100
 		DamageTypes: ElectroDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
+		Explosions: prismtowerhit
+		ExplosionPalette: rookietsexp
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
+		ValidTargets: Ground, Water, Air
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallScorch
 
@@ -147,7 +144,7 @@ Comet:
 	Range: 10c0
 	Report: vpriatta.wav
 	Projectile: KKNDLaser
-		Radius: 2
+		Radius: 3
 		Duration: 12
 		InnerLightness: 192
 		OuterLightness: 96
@@ -168,24 +165,44 @@ Comet:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
-		ExplosionPalette: rookiera2exp
+		Explosions: prismhit
+		ExplosionPalette: rookietsexp
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ExplosionPalette: rookiera2exp
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
+		ValidTargets: Ground, Water, Air
+	Warhead@3Shr: FireShrapnel
+		Weapon: CometFragment
+		Amount: 3
+		AimChance: 100
+		AimTargetStances: Enemy, Neutral
+		ValidTargets: Infantry, Vehicle, Ship, Tree
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallScorch
+
+CometFragment:
+	Inherits: Comet
+	Range: 5c0
+	Projectile: KKNDLaser
+		Radius: 2
+		Duration: 8
+		InnerLightness: 192
+		OuterLightness: 96
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+	Warhead@2Eff: CreateEffect
+		Explosions: prismshrapnel
+	-Warhead@3Shr:
 
 SuperComet:
 	Inherits: Comet
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
-	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroictsexp
+	Warhead@3Shr: FireShrapnel
+		Weapon: SuperCometFragment
+
+SuperCometFragment:
+	Inherits: CometFragment
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
 
 RadBeamWeapon:
 	ValidTargets: Ground
