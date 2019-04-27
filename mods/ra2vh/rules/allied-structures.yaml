@@ -244,6 +244,51 @@ garefn:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
+gafcmd:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: power, garefn, ~structures.allies
+		Description: Allows production of advanced units.
+		IconPalette: fcmdicon
+	Selectable:
+		Bounds: 96, 98, -4, -30
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Field Command
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 600000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite:
+		Prerequisite: radar
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	ProvidesRadar:
+		RequiresCondition: !lowpower && !build-incomplete
+	InfiltrateForExploration:
+		Types: SpyInfiltrate
+	Power:
+		Amount: -50
+
 gaairc:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
@@ -256,9 +301,6 @@ gaairc:
 		Cost: 1000
 	Tooltip:
 		Name: Airforce Command Headquarters
-	ProvidesPrerequisite:
-		Prerequisite: radar
-		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@allies:
 		Prerequisite: aircraft.allies
 		RequiresCondition: !build-incomplete
@@ -337,8 +379,6 @@ gaairc:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary && !build-incomplete
-	InfiltrateForExploration:
-		Types: SpyInfiltrate
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
 		Icon: airborne

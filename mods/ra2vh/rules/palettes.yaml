@@ -97,6 +97,10 @@
 		Name: cameo-chevron
 		Filename: cameo-chevron.png
 		AllowModifiers: false
+	PaletteFromPng@fcmdicon:
+		Name: fcmdicon
+		Filename: fcmdicon.png
+		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy
 		Filename: anim.pal

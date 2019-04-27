@@ -79,6 +79,25 @@ garefn:
 		ShadowStart: 20
 	icon: reficon
 
+gafcmd:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -31
+	idle: ggfcmd
+		ShadowStart: 2
+	damaged-idle: ggfcmd
+		ShadowStart: 3
+	idle-dish: ggfcmd_a
+		Length: 32
+		Tick: 120
+	make: ggfcmdmk
+		Tick: 90
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: fcmdicon.png
+		AddExtension: false
+
 gaairc:
 	Inherits: ^Structure
 	Defaults:
