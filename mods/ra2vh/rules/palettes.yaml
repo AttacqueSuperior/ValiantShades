@@ -120,6 +120,9 @@
 	PaletteFromFile@tsanim:
 		Name: tsanim
 		Filename: tsanim.pal
+	PaletteFromFile@apollora2:
+		Name: apollo
+		Filename: apollora2.pal
 	PaletteFromPaletteWithAlpha@rookieraexp:
 		Name: rookieraexp
 		BasePalette: ra
@@ -145,6 +148,15 @@
 	PaletteFromPaletteWithAlpha@heroicra2exp:
 		Name: heroicra2exp
 		BasePalette: effect
+		Alpha: 0.8
+		Premultiply: false
+	PaletteFromPaletteWithAlpha@rookieapolloexp:
+		Name: rookieapolloexp
+		BasePalette: apollo
+		Alpha: 0.4
+	PaletteFromPaletteWithAlpha@heroicapolloexp:
+		Name: heroicapolloexp
+		BasePalette: apollo
 		Alpha: 0.8
 		Premultiply: false
 	PaletteFromPaletteWithAlpha@effect50alpha:
