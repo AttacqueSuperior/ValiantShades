@@ -43,13 +43,21 @@ nacnst:
 	ProductionBar@Support:
 		ProductionType: Support
 		RequiresCondition: !build-incomplete
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: lowpower
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: lowpower
 	WithBuildingPlacedAnimation:
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 50
 		RequiresCondition: !build-incomplete
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer

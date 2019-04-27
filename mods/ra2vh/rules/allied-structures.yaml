@@ -59,7 +59,7 @@ gacnst:
 	#	RequiresCondition: !build-incomplete
 	#	Factions: france
 	Power:
-		Amount: 0
+		Amount: 50
 		RequiresCondition: !build-incomplete
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer
