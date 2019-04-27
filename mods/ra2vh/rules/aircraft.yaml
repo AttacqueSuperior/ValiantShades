@@ -113,8 +113,6 @@ zep:
 	Explodes:
 		Weapon: UnitExplode
 		Chance: 75
-	VoiceAnnouncement:
-		Voice: Build
 	Voiced:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:
