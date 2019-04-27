@@ -160,7 +160,7 @@ sqd:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
-		Prerequisites: natech, ~nayard
+		Prerequisites: naradr, ~nayard
 		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Valued:
 		Cost: 1000

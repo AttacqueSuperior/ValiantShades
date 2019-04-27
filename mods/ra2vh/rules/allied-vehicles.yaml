@@ -4,7 +4,7 @@ amcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~gaweap, gadept
+		Prerequisites: gafcmd, ~gaweap
 		Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
@@ -202,7 +202,7 @@ tnkd:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~gaweap #, ~vehicles.germany
+		Prerequisites: ~gaweap, gafcmd #, ~vehicles.germany
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75

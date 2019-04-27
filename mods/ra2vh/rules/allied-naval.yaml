@@ -96,7 +96,7 @@ aegis:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
-		Prerequisites: radar, ~gayard
+		Prerequisites: gafcmd, ~gayard
 		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Valued:
 		Cost: 1200
@@ -136,7 +136,7 @@ dlph:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
-		Prerequisites: gatech, ~gayard
+		Prerequisites: gafcmd, ~gayard
 		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Valued:
 		Cost: 500

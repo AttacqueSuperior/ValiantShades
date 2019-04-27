@@ -386,7 +386,7 @@ spy:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 130
-		Prerequisites: gatech, ~gapile
+		Prerequisites: gafcmd, ~gapile
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
 		Cost: 500
@@ -439,7 +439,7 @@ ghost:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 100
-		Prerequisites: ~disabled
+		Prerequisites: gafcmd, ~gapile
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
 		Cost: 400
@@ -656,7 +656,7 @@ jumpjet:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 60
-		Prerequisites: ~gapile, radar
+		Prerequisites: ~gapile, gaairc
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
 		Cost: 400

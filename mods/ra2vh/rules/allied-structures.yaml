@@ -117,7 +117,7 @@ gapile:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
-		Prerequisites: power, ~structures.allies
+		Prerequisites: ~structures.allies
 		Description: Trains infantry.
 	Selectable:
 		Bounds: 134, 132, 0, -28
@@ -190,7 +190,7 @@ garefn:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
-		Prerequisites: power, ~structures.allies
+		Prerequisites: ~structures.allies
 		Description: Processes ore into credits.
 	Selectable:
 		Bounds: 176, 150, 0, -20
@@ -250,7 +250,7 @@ gafcmd:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: power, garefn, ~structures.allies
+		Prerequisites: gapile, garefn, ~structures.allies
 		Description: Allows production of advanced units.
 		IconPalette: fcmdicon
 	Selectable:
@@ -295,8 +295,8 @@ gaairc:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: garefn, ~structures.allies #, ~!structures.america
-		Description: Provides radar\nSupports 4 aircraft.
+		Prerequisites: gafcmd, ~structures.allies #, ~!structures.america
+		Description: Supports 4 aircraft.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -422,7 +422,7 @@ gaweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: garefn, gapile, ~structures.allies
+		Prerequisites: gapile, ~structures.allies
 		Description: Produces vehicles.
 	Selectable:
 		Bounds: 212, 158, -7, -28
@@ -499,7 +499,7 @@ gayard:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: power, refinery, ~structures.allies
+		Prerequisites: gapile, ~structures.allies
 		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
@@ -674,7 +674,7 @@ gatech:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
-		Prerequisites: radar, gaweap, ~structures.allies
+		Prerequisites: gafcmd, gaweap, ~structures.allies
 		Description: Allows deployment of advanced units.
 	Selectable:
 		Bounds: 122, 216, 0, -81
@@ -818,7 +818,7 @@ gtgcan:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50
-		Prerequisites: radar, ~structures.allies #, ~structures.france
+		Prerequisites: gatech, ~structures.allies #, ~structures.france
 		Description: Automated, long ranged anti-ground defense.
 	Valued:
 		Cost: 2000
@@ -875,7 +875,7 @@ gaorep:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
-		Prerequisites: garefn, gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
 	Selectable:

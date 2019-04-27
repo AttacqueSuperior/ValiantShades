@@ -115,7 +115,7 @@ nahand:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
-		Prerequisites: power, ~structures.soviets
+		Prerequisites: ~structures.soviets
 		Description: Produces infantry.
 	Valued:
 		Cost: 500
@@ -212,7 +212,7 @@ narefn:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
-		Prerequisites: power, ~structures.soviets
+		Prerequisites: ~structures.soviets
 		Description: Processes ore into credits.
 	Selectable:
 		Bounds: 170, 150, -6, -33
@@ -272,7 +272,7 @@ naradr:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: power, narefn, ~structures.soviets
+		Prerequisites: nahand, narefn, ~structures.soviets
 		Description: Provides radar.
 	Valued:
 		Cost: 1000
@@ -316,7 +316,7 @@ naweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: refinery, nahand, ~structures.soviets
+		Prerequisites: nahand, ~structures.soviets
 		Description: Produces vehicles.
 	Selectable:
 		Bounds: 196, 178, -6, -48
@@ -392,7 +392,7 @@ nayard:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: power, refinery, ~structures.soviets
+		Prerequisites: nahand, ~structures.soviets
 		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
@@ -569,7 +569,7 @@ nanrct:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 90
-		Prerequisites: natech, ~structures.soviets
+		Prerequisites: naradr, ~structures.soviets
 		Description: Provides power for other structures.
 	Valued:
 		Cost: 1000
@@ -870,7 +870,7 @@ nawall:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10
-		Prerequisites: barracks, ~structures.soviets
+		Prerequisites: ~structures.soviets
 		Description: Light wall.\nCrushable by vehicles.
 	Tooltip:
 		Name: Soviet Wall

@@ -4,7 +4,7 @@ smcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~naweap, repairpad
+		Prerequisites: naradr, ~naweap
 		Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
