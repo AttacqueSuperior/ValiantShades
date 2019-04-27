@@ -90,7 +90,6 @@ IvanBomber:
 			Rocket: 100
 		DamageTypes: PsychicDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
-		Delay: 100
 		Explosions: ivan_explosion
 		ImpactSounds: gexpcraa.wav
 		ValidTargets: Ground, Water, Air
