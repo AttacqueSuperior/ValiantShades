@@ -1,11 +1,6 @@
 ^Flak:
 	ReloadDelay: 25
 	Range: 5c0
-	Report: vflaat1a.wav, vflaat1b.wav
-	Projectile: BulletAS
-		Image: 120mm
-		LaunchAngle: 64
-		Speed: 341
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 20000
@@ -30,10 +25,17 @@
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 
+^GroundFlak:
+	Inherits: ^Flak
+	Report: vflaat1a.wav, vflaat1b.wav
+	Projectile: BulletAS
+		Image: 120mm
+		LaunchAngle: 64
+		Speed: 341
+
 ^AAFlak:
 	Inherits: ^Flak
 	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
-	-Projectile: BulletAS
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air

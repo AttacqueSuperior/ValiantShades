@@ -1,5 +1,5 @@
 FlakGuyGun:
-	Inherits: ^Flak
+	Inherits: ^GroundFlak
 
 FlakGuyGunE:
 	Inherits: FlakGuyGun
@@ -24,7 +24,7 @@ FlakGuyAAGunE:
 	Burst: 2
 
 FlakTrackGun:
-	Inherits: ^Flak
+	Inherits: ^GroundFlak
 	ValidTargets: Ground, Water
 	Warhead@1Dam: SpreadDamage
 		Damage: 25000
