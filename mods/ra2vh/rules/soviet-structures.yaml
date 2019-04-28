@@ -798,7 +798,7 @@ natech:
 		Prerequisites: natek, ~structures.soviets
 		Description: Allows deployment of advanced units.
 	Valued:
-		Cost: 2000
+		Cost: 3000
 	Tooltip:
 		Name: Palace
 	ProvidesPrerequisite@default:
@@ -809,13 +809,13 @@ natech:
 	Selectable:
 		Bounds: 152, 164, 0, -50
 	Health:
-		HP: 500000
+		HP: 650000
 	Armor:
 		Type: Wood
 	RevealsShroud:
 		Range: 6c0
 	Power:
-		Amount: -100
+		Amount: -200
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: soviets.tech.infiltrated
@@ -823,7 +823,7 @@ natech:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
-		Actors: e2, e2, e2, e2, e2, e2
+		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 
 naclon:
 	Inherits: ^Building
