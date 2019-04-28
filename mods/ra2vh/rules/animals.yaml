@@ -52,6 +52,11 @@ josh:
 			RadiationDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
+	WithDeathAnimation@ra:
+		DeathSequencePalette: ra
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			TeslaDeath: 11
 	-WithDeathAnimation@flames:
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY

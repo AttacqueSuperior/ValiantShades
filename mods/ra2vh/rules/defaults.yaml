@@ -338,6 +338,11 @@
 			RadiationDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
+	WithDeathAnimation@ra:
+		DeathSequencePalette: ra
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			TeslaDeath: 11
 	SpawnActorOnDeath@flames:
 		Actor: flameguy
 		DeathType: FlameDeath
@@ -364,7 +369,7 @@
 		DeathTypes: ExplosionDeath, BulletDeath
 	DeathSounds@zapped:
 		Voice: Zapped
-		DeathTypes: ElectroDeath
+		DeathTypes: ElectroDeath, TeslaDeath
 	DeathSounds@radiation:
 		Voice: Melted
 		DeathTypes: RadiationDeath
@@ -449,8 +454,6 @@
 		RequiresCondition: !swimming
 	WithDeathAnimation@normal:
 		RequiresCondition: !swimming
-	WithDeathAnimation@effect:
-		RequiresCondition: !swimming
 	GrantConditionOnTerrain@Water:
 		TerrainTypes: Water
 		Condition: swimming
@@ -466,9 +469,6 @@
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
-			RadiationDeath: 1
-			PsychicDeath: 2
-			ElectroDeath: 1
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		RequiresCondition: swimming
@@ -546,6 +546,7 @@
 		DeathTypes:
 			RadiationDeath: 1
 			ElectroDeath: 2
+			TeslaDeath: 2
 	-SpawnActorOnDeath@flames:
 	WithDeathAnimation@flames:
 		DeathTypes:

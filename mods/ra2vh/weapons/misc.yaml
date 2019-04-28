@@ -25,7 +25,7 @@ BlimpBomb:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, ElectroDeath
+		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: kirovtesla
 		ExplosionPalette: rookiera2exp

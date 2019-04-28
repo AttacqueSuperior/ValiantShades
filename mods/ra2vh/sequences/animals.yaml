@@ -58,3 +58,6 @@ josh:
 	die6: electro
 		Length: *
 		Tick: 80
+	die11: tselectro
+		Length: *
+		Tick: 80
