@@ -699,7 +699,7 @@ nanrct:
 		Prerequisites: naradr, ~structures.soviets
 		Description: Provides power for other structures.
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	Tooltip:
 		Name: Nuclear Reactor
 	ProvidesPrerequisite:
@@ -724,7 +724,7 @@ nanrct:
 		Weapon: NukePayload
 		EmptyWeapon: NukePayload
 	Power:
-		Amount: 2000
+		Amount: 1250
 		RequiresCondition: !power-outage && !build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
