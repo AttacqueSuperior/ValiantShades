@@ -346,7 +346,7 @@ snipe:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 180
-		Prerequisites: gatech, ~gapile #, ~infantry.england
+		Prerequisites: garbur, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
@@ -757,7 +757,7 @@ cleg:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 150
-		Prerequisites: ~gapile, gatech
+		Prerequisites: ~gapile, garbur
 		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated

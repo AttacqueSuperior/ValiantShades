@@ -502,7 +502,7 @@ bfrt:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 100
-		Prerequisites: gatech, ~gaweap
+		Prerequisites: garbur, ~gaweap
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.
 	Valued:
 		Cost: 2000
@@ -572,5 +572,5 @@ bfrt.ai:
 		Class: bfrt
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: gatech, ~gaweap, ~testai
+		Prerequisites: garbur, ~gaweap, ~testai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.

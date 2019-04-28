@@ -995,7 +995,7 @@ gaspysat:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 70
-		Prerequisites: gatech, ~structures.allies
+		Prerequisites: garbur, ~structures.allies
 		Description: Reveals the entire battlefield.
 	Selectable:
 		Bounds: 96, 98, -4, -30
@@ -1069,7 +1069,7 @@ gaweat:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
-		Prerequisites: gatech, ~structures.allies
+		Prerequisites: garbur, ~structures.allies
 		BuildLimit: 1
 		Description: Play God with deadly weather!
 	Selectable:
@@ -1179,7 +1179,7 @@ atesla:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: power, radar, ~structures.allies
+		Prerequisites: radar, ~structures.allies
 		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1500
