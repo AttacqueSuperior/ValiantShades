@@ -251,6 +251,42 @@ nanrct:
 	make: ntnrctmk
 	icon: nrcticon
 
+natek:
+	Inherits: ^Structure
+	Defaults:
+		Offset: -15, -40
+	idle: ngtek
+		ShadowStart: 2
+	damaged-idle: ngtek
+		ShadowStart: 3
+	idle-lights: ngtek_a
+		Length: 5
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-bolts: ngtek_b
+		Length: 44
+		Tick: 60
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-body-lights: ngtek_c
+		Length: 9
+		Tick: 160
+		TilesetOverrides:
+			SNOW: GENERIC
+	damaged-idle-body-lights: ngtek_cd
+		Length: 9
+		Tick: 160
+		TilesetOverrides:
+			SNOW: GENERIC
+	make: ngtekmk
+		Length: 15
+		ShadowStart: 15
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: ntekicon
+
 natech:
 	Inherits: ^Structure
 	Defaults:

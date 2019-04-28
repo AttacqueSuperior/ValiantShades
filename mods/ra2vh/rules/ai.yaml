@@ -113,6 +113,7 @@ Player:
 			naradr: 1
 			naairc: 2
 			nanrct: 1
+			natek: 1
 			natech: 1
 		BuildingFractions:
 			garefn: 15
@@ -133,6 +134,7 @@ Player:
 			naweap: 30
 			naradr: 15
 			naairc: 15
+			natek: 1
 			natech: 1
 			naclon: 1
 			nalasr: 15

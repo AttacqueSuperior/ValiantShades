@@ -740,18 +740,67 @@ nanrct:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2
 
+natek:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: naweap, naradr, ~structures.soviets
+		Description: Allows deployment of advanced units.
+	Selectable:
+		Bounds: 122, 216, 0, -81
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Tech Center
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 3,2
+	Health:
+		HP: 500000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@bolts:
+		Sequence: idle-bolts
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@body-lights:
+		Sequence: idle-body-lights
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -100
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: soviet.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2
+
 natech:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
-		Prerequisites: naweap, naradr, ~structures.soviets
+		Prerequisites: natek, ~structures.soviets
 		Description: Allows deployment of advanced units.
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Battle Lab
+		Name: Palace
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
