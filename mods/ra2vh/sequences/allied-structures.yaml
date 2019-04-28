@@ -90,6 +90,8 @@ gafcmd:
 	idle-dish: ggfcmd_a
 		Length: 32
 		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
 	make: ggfcmdmk
 		Tick: 90
 		TilesetOverrides:

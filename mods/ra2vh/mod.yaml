@@ -22,7 +22,7 @@ Packages:
 	~cachemd.mix
 	~cameo.mix: cameo
 	~cameomd.mix
-	~conquer.mix
+	~conquer.mix: conquer
 	~conqmd.mix
 	~genermd.mix
 	~generic.mix

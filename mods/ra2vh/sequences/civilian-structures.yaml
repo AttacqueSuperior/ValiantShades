@@ -324,6 +324,7 @@ cairfgl:
 capofgl:
 	Inherits: ^Flag
 	flag: capofgl_a
+		UseTilesetCode: false
 		Length: 16
 		ShadowStart: 16
 
