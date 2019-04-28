@@ -25,6 +25,14 @@
 		BaseName: weathercontroller
 		BasePalette: weathercontroller
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PlayerColorPalette@xuetallied1:
+		BaseName: xuetallied1
+		BasePalette: xuetallied1
+		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PlayerColorPalette@xuetallied2:
+		BaseName: xuetallied2
+		BasePalette: xuetallied2
+		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 	PlayerHighlightPalette:
 	PaletteFromFile@playertem:
 		Name: player
@@ -75,6 +83,14 @@
 		Name: weathercontroller
 		Filename: gaweth.pal
 		ShadowIndex: 1
+	PaletteFromFile@xuetallied1:
+		Name: xuetallied1
+		Filename: xuetall1.pal
+		ShadowIndex: 1
+	PaletteFromFile@xuetallied2:
+		Name: xuetallied2
+		Filename: xuetall2.pal
+		ShadowIndex: 1
 	PaletteFromFile@infantry:
 		Name: infantry
 		Filename: unittem.pal
@@ -100,6 +116,10 @@
 	PaletteFromPng@fcmdicon:
 		Name: fcmdicon
 		Filename: fcmdicon.png
+		AllowModifiers: false
+	PaletteFromPng@rburicon:
+		Name: rburicon
+		Filename: rburicon.png
 		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy

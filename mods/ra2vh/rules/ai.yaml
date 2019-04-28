@@ -106,6 +106,7 @@ Player:
 			gafcmd: 1
 			gaairc: 2
 			gatech: 1
+			garbur: 1
 			gagap: 2
 			narefn: 4
 			nahand: 3
@@ -122,6 +123,7 @@ Player:
 			gafcmd: 15
 			gaairc: 15
 			gatech: 1
+			garbur: 1
 			gaorep: 1
 			gapill: 15
 			nasam: 12

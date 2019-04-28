@@ -272,6 +272,40 @@ gatech:
 	make: gttechmk
 	icon: techicon
 
+garbur:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -45
+	idle: ggrbur
+		ShadowStart: 2
+	damaged-idle: ggrbur
+		ShadowStart: 2
+	idle-bolt: ggrbur_a
+		Length: 18
+		BlendMode: Additive
+		Tick: 80
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-ball: ggrbur_b
+		Length: 18
+		BlendMode: Additive
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-top: ggrbur_c
+		Length: 11
+		Tick: 160
+		TilesetOverrides:
+			SNOW: GENERIC
+	make: ggrburmk
+		Length: 44
+		ShadowStart: 44
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: rburicon.png
+		AddExtension: false
+
 gaorep:
 	Inherits: ^Structure
 	Defaults:

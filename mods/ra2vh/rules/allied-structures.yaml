@@ -736,6 +736,58 @@ gatech:
 		#DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
 
+garbur:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: gatech, ~structures.allies
+		Description: Allows deployment of advanced units.
+		IconPalette: rburicon
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Research Bureau
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Selectable:
+		Bounds: 152, 164, 0, -50
+	Health:
+		HP: 650000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Power:
+		Amount: -200
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	RenderSprites:
+		PlayerPalette: xuetallied2
+	WithIdleOverlay@bolt:
+		Sequence: idle-bolt
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@ball:
+		Sequence: idle-ball
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@top:
+		Sequence: idle-top
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: allies.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1, e1, e1
+
 gawall:
 	Inherits: ^Wall
 	Buildable:
