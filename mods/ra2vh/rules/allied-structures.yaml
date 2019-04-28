@@ -719,9 +719,12 @@ gatech:
 		Type: Wood
 	RevealsShroud:
 		Range: 6c0
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 	Power:
 		Amount: -100
 	InfiltrateForSupportPower:
