@@ -26,6 +26,9 @@
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 ^GroundFlak:
 	Inherits: ^Flak
@@ -66,6 +69,9 @@
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 ^Missile:
 	ReloadDelay: 60
@@ -100,6 +106,9 @@
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 ^AAMissile:
 	Inherits: ^Missile
@@ -188,3 +197,6 @@
 		Weapon: TeslaSpark
 		Amount: 6
 		AffectsParent: true
+	Warhead@flames: FireFragment
+		Weapon: SmallFlame
+		Chance: 50

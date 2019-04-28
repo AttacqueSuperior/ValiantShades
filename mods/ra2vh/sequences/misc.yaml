@@ -289,6 +289,20 @@ explosion:
 	prismhit: prismhit
 	prismshrapnel: prismshr
 	donut_nuke_explosion: donutnuke
+	hugeflame: tsfire
+		Tick: 80
+	largeflame: tsfire
+		Length: 51
+		Start: 18
+		Tick: 80
+	mediumflame: tsfire
+		Length: 33
+		Start: 36
+		Tick: 80
+	smallflame: tsfire
+		Length: 15
+		Start: 54
+		Tick: 80
 
 discus:
 	idle:
@@ -428,6 +442,9 @@ largecraters:
 		Offset: 0, -30
 	cr11: crater11
 	cr12: crater12
+
+inviso:
+	null:
 
 icon:
 	gps: asaticon

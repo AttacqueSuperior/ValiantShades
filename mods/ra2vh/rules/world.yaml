@@ -223,30 +223,33 @@ World:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
-		SmokeType: smallfire
-		SmokePercentage: 50
+		SmokeType: inviso
+		SmokeSequence: null
 	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
-		SmokeType: mediumfire
-		SmokePercentage: 75
+		SmokeType: inviso
+		SmokeSequence: null
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
-		SmokeType: largefire
-		SmokePercentage: 100
+		SmokeType: inviso
+		SmokeSequence: null
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
-		SmokeType: smallsmoke
 		Sequence: smallcraters
+		SmokeType: inviso
+		SmokeSequence: null
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
-		SmokeType: smallsmoke
 		Sequence: mediumcraters
+		SmokeType: inviso
+		SmokeSequence: null
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
-		SmokeType: largesmoke
 		Sequence: largecraters
+		SmokeType: inviso
+		SmokeSequence: null
 	ResourceLayer:
 	ResourceClaimLayer:
 	BridgeLayer:

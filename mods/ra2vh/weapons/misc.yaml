@@ -227,6 +227,35 @@ WeatherStormInit:
 	Projectile: BulletAS
 		Sequences: rock1, rock2, rock3
 
+^Flame:
+	Projectile: InstantHit
+	Range: 512
+	Warhead@4: CreateEffect
+		ExplosionPalette: heroictsexp
+		ValidTargets: Ground
+		InvalidTargets: ScorchImmune
+	Warhead@Validation: TargetDamage
+
+HugeFlame:
+	Inherits: ^Flame
+	Warhead@4: CreateEffect
+		Explosions: hugeflame
+
+LargeFlame:
+	Inherits: ^Flame
+	Warhead@4: CreateEffect
+		Explosions: largeflame
+
+MediumFlame:
+	Inherits: ^Flame
+	Warhead@4: CreateEffect
+		Explosions: mediumflame
+
+SmallFlame:
+	Inherits: ^Flame
+	Warhead@4: CreateEffect
+		Explosions: smallflame
+
 PsychicReveal:
 	ReloadDelay: 384
 	Range: 1

@@ -8,6 +8,9 @@ UnitExplode:
 		Weapon: SmallDebris
 		Amount: 1,4
 		AffectsParent: true
+	Warhead@flames: FireFragment
+		Weapon: HugeFlame
+		Chance: 50
 
 UnitExplodeSmall:
 	Inherits: UnitExplode
@@ -15,6 +18,8 @@ UnitExplodeSmall:
 		Explosions: smalltankexplosion
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
 
 InfantryExplode:
 	Inherits: UnitExplode
@@ -24,15 +29,19 @@ InfantryExplode:
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
 
 V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect
 		Explosions: terrorist_explosion
 		ExplosionPalette: effect
+	Warhead@flames: FireFragment
+		Weapon: LargeFlame
 
 BuildingExplode:
-	Inherits: UnitExplodeSmall
+	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: buildingexplosion1, buildingexplosion2, buildingexplosion3, buildingexplosion4, buildingexplosion5, buildingexplosion6
 		ExplosionPalette: apollo
@@ -103,6 +112,9 @@ IvanBomber:
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpcraa.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: LargeFlame
+		Chance: 50
 
 IvanBomberE:
 	Inherits: IvanBomber
@@ -160,6 +172,9 @@ TerrorBomb:
 		Explosions: terrorist_explosion
 		ValidTargets: Ground, Water, Air
 		ExplosionPalette: rookiera2exp
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 CRTerrorBomb:
 	Inherits: CRNuke
@@ -197,6 +212,8 @@ NukePayload:
 		Spread: 2c512
 		Falloff: 100, 75, 50, 25, 0
 		Level: 750
+	Warhead@flames: FireFragment
+		Weapon: HugeFlame
 
 atomic:
 	Inherits: NukePayload
@@ -217,6 +234,8 @@ atomic:
 	Warhead@4Smu_areanuke: LeaveSmudge
 		Delay: 25
 	Warhead@4Radiation: CreateTintedCells
+		Delay: 25
+	Warhead@flames: FireFragment
 		Delay: 25
 
 demobomb:
