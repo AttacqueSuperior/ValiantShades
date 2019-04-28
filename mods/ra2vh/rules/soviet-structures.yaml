@@ -696,7 +696,7 @@ nanrct:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 90
-		Prerequisites: naradr, ~structures.soviets
+		Prerequisites: natek, ~structures.soviets
 		Description: Provides power for other structures.
 	Valued:
 		Cost: 1500
@@ -912,7 +912,7 @@ napsis:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
-		Prerequisites: natech, ~structures.soviets
+		Prerequisites: natek, ~structures.soviets
 		Description: Detects enemy units and strikepoints
 	Valued:
 		Cost: 1000
@@ -951,7 +951,7 @@ nairon:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
-		Prerequisites: natech, ~structures.soviets
+		Prerequisites: natek, ~structures.soviets
 		BuildLimit: 1
 		Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Valued:
