@@ -84,6 +84,8 @@ crate:
 		UseTilesetExtension: true
 
 particles:
+	# For synced-with-art particle expiration
+	# (framecount*Tick/40) -1 for rounding errors
 	largesmoke: lgrysmk1
 		Length: *
 		Tick: 80

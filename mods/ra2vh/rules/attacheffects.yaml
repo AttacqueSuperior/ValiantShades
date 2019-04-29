@@ -60,7 +60,7 @@
 		SpawnFrequency: 3, 10
 		Gravity: -32,-32,48, 32,32,48
 		Offset: -384,-384,0, 384,384,0
-		Duration: 38
+		Duration: 39
 	SmokeParticleEmitter@2:
 		RequiresCondition: dmg_heavy
 		Sequences: fire
@@ -92,7 +92,7 @@
 		SpawnFrequency: 3, 10
 		Gravity: -48,-48,72, 48,48,72
 		Offset: -384,-384,0, 384,384,0
-		Duration: 38
+		Duration: 39
 	GrantConditionOnDamageState@dmg_heavy:
 		Condition: dmg_heavy
 	GrantConditionOnDamageState@dmg_crit:
@@ -107,7 +107,7 @@
 		SpawnFrequency: 3, 10
 		Gravity: -32,-32,48, 32,32,48
 		Offset: 0,0,192
-		Duration: 38
+		Duration: 39
 	GrantConditionOnDamageState@dmg_heavy:
 		Condition: dmg_heavy
 	GrantPeriodicCondition@enable_unitsmoke:
