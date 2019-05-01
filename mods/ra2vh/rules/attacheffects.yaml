@@ -99,6 +99,14 @@
 		Condition: dmg_crit
 		ValidDamageStates: Critical
 
+^LargeBuildingDeathEffects:
+	Explodes@deathsmokes:
+		Weapon: BuildingDeathSmokeSpawner
+		EmptyWeapon: BuildingDeathSmokeSpawner
+	Explodes@flameguy:
+		Weapon: BuildingDeathFlameGuySpawner
+		EmptyWeapon: BuildingDeathFlameGuySpawner
+
  ^UnitParticles:
 	SmokeParticleEmitter@1:
 		RequiresCondition: enable_unitsmoke

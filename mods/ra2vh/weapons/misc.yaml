@@ -270,3 +270,40 @@ PsychicReveal:
 		RevealGeneratedShroud: true
 	Warhead4Eff: CreateEffect
 		ImpactSounds: spsyreve.wav
+
+BuildingDeathSmokeSpawner:
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@1: SpawnSmokeParticle
+		ValidTargets: Ground, Air, Water
+		Sequences: inviso
+		Palette: effect
+		Weapon: BuildingDeathSmokeSpawner2
+		Duration: 2
+		Offset: -768,-768,0, 768,768,0
+		Neutral: true
+
+BuildingDeathSmokeSpawner2:
+	ReloadDelay: 1
+	ValidTargets: Ground, Air, Water
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@spawn: SpawnSmokeParticle
+		ValidTargets: Ground, Air, Water
+		Sequences: toveenasmoke1
+		Palette: heroicra2exp
+		Duration: 67
+		Gravity: -64,-64,12, 64,64,12
+		Offset: -384,-384,0, 384,384,0
+		Neutral: true
+
+BuildingDeathFlameGuySpawner:
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@spawn: SpawnActor
+		Actors: flameguy, flameguy
+		ForceGround: true
+		OwnerType: InternalName
+	Warhead@Validation: TargetDamage

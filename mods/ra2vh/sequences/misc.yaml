@@ -98,6 +98,16 @@ particles:
 		Length: *
 		Tick: 100
 	inviso: inviso
+	toveenasmoke1: nukepuff
+		Start: 3
+		Length: 17
+		Tick: 160
+		BlendMode: Translucent
+	toveenasmoke2: gcmuzzle
+		Start: 2
+		Length: 15
+		Tick: 160
+		BlendMode: Translucent
 
 debris:
 	Defaults:
