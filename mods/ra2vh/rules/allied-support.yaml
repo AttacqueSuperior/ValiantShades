@@ -1,0 +1,125 @@
+gawall:
+	Inherits: ^FactionWall
+	Buildable:
+		Prerequisites: ~structures.allies
+	Tooltip:
+		Name: Allied Wall
+
+gapill:
+	Inherits: ^BasicDefense
+	Buildable:
+		Prerequisites: barracks, ~structures.allies
+	Tooltip:
+		Name: Pill Box
+	Selectable:
+		Bounds: 50, 30, 0, -4
+	Armament:
+		Weapon: vulcan2
+		LocalOffset: 768,85,512
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+	Turreted:
+		TurnSpeed: 255
+	BodyOrientation:
+		QuantizedFacings: 8
+
+nasam:
+	Inherits: ^AADefense
+	Inherits@2: ^VoxelLighting
+	Buildable:
+		Prerequisites: barracks, ~structures.allies
+	Tooltip:
+		Name: Patriot Missile System
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		Offset: 550,0,0
+	Armament:
+		Weapon: RedEye2
+		LocalOffset: 500,0,900
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
+
+atesla:
+	Inherits: ^Tier2Defense
+	Buildable:
+		Prerequisites: radar, ~structures.allies
+	Tooltip:
+		Name: Prism Tower
+	Selectable:
+		Bounds: 44, 102, 0, -40
+	WithTeslaChargeAnimation:
+	Armament:
+		Weapon: PrismShot
+		LocalOffset: 0,0,3000
+	AttackTesla:
+		ChargeAudio: bpripow.wav
+	WithIdleOverlay@normal:
+		Sequence: idle-normal
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithSpriteBody:
+		PauseOnCondition: lowpower
+
+gtgcan:
+	Inherits: ^SupportBuilding
+	Inherits@2: ^VoxelLighting
+	Inherits@shape: ^2x2Shape
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 50
+		Prerequisites: gatech, ~structures.allies #, ~structures.france
+		Description: Automated, long ranged anti-ground defense.
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Grand Cannon
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 900000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 10c0
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		TurnSpeed: 3
+		InitialFacing: 224
+		PreviewFacing: 224
+		Offset: 400,0,0
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	Armament:
+		Weapon: GrandCannonWeapon
+		Recoil: 127
+		RecoilRecovery: 26
+		MuzzleSequence: muzzle
+		LocalOffset: 1792,0,1280
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
+	WithVoxelBarrel:
+		RequiresCondition: !build-incomplete
+	AutoTarget:
+	WithMuzzleOverlay:
+	WithRangeCircle:
+		Range: 15c0
+		Type: grandcannon
+	Power:
+		Amount: -100
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical

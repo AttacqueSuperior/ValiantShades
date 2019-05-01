@@ -1,0 +1,75 @@
+nawall:
+	Inherits: ^FactionWall
+	Buildable:
+		Prerequisites: ~structures.soviets
+	Tooltip:
+		Name: Soviet Wall
+
+nalasr:
+	Inherits: ^BasicDefense
+	Inherits@2: ^VoxelLighting
+	Buildable:
+		Prerequisites: barracks, ~structures.soviets
+	Tooltip:
+		Name: Sentry Gun
+	Selectable:
+		Bounds: 50, 30, 0, -12
+	Turreted:
+		TurnSpeed: 10
+		InitialFacing: 224
+		PreviewFacing: 224
+		Offset: 320,0,0
+	Armament:
+		Weapon: vulcan
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
+
+naflak:
+	Inherits: ^AADefense
+	Inherits@2: ^VoxelLighting
+	Buildable:
+		Prerequisites: barracks, ~structures.soviets
+	Tooltip:
+		Name: Flak Cannon
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		Offset: 450,0,0
+	Armament:
+		Weapon: FlakWeapon
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
+
+tesla:
+	Inherits: ^Tier2Defense
+	Buildable:
+		Prerequisites: naradr, ~structures.soviets
+	Tooltip:
+		Name: Tesla Coil
+	Selectable:
+		Bounds: 44, 88, -2, -33
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
+	WithTeslaChargeOverlay:
+		RequiresCondition: !build-incomplete
+	Armament:
+		Weapon: CoilBolt
+		LocalOffset: 0,0,3072
+		RequiresCondition: !charged
+	Armament@charged:
+		Weapon: OPCoilBolt
+		LocalOffset: 0,0,3072
+		RequiresCondition: charged
+	AttackTesla:
+		ChargeAudio: btespow.wav
+	WithIdleOverlay@powered:
+		Sequence: idle-powered
+		RequiresCondition: !lowpower && !build-incomplete
+	ExternalCondition@CHARGED:
+		Condition: charged
