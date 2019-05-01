@@ -1,48 +1,11 @@
 nacnst:
-	Inherits: ^Building
-	Inherits@shape: ^4x4Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 1000
-		Prerequisites: ~disabled
-		Description: Allows construction of base structures.
-	Building:
-		Footprint: xxxx xxxx xxxx xxxx
-		Dimensions: 4,4
+	Inherits: ^ConYard
 	Selectable:
 		Bounds: 220, 180, 0, -35
-	ProvidesPrerequisite@soviets:
-		Prerequisite: structures.soviets
-		RequiresCondition: !build-incomplete
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Concrete
-	RevealsShroud:
-		Range: 8c0
-	Valued:
-		Cost: 3000
-	Production:
-		Produces: Building, Support
-		RequiresCondition: !build-incomplete
-	Tooltip:
-		Name: Construction Yard
-	BaseBuilding:
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
 		Facing: 96
-		DeployCursor: undeploy
-		RequiresCondition: factundeploy && !build-incomplete
-	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
-		Condition: factundeploy
-		Prerequisites: global-factundeploy
-	ProductionBar@Building:
-		ProductionType: Building
-		RequiresCondition: !build-incomplete
-	ProductionBar@Support:
-		ProductionType: Support
-		RequiresCondition: !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -56,21 +19,18 @@ nacnst:
 		PauseOnCondition: lowpower
 	WithBuildingPlacedAnimation:
 		RequiresCondition: !build-incomplete
-	Power:
-		Amount: 50
+	ProvidesPrerequisite@soviets:
+		Prerequisite: structures.soviets
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: engineer, e2, e2, e2, e2, e2, e2
 
 napowr:
-	Inherits: ^Building
+	Inherits: ^BasicPower
 	Inherits@shape: ^3x2Shape
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
 		Prerequisites: ~structures.soviets
-		Description: Provides power for other structures.
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -83,47 +43,20 @@ napowr:
 		Dimensions: 3,2
 	Selectable:
 		Bounds: 126, 94, 2, -16
-	Health:
-		HP: 750000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 4c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 150
-		RequiresCondition: !power-outage && !build-incomplete
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
-	ScalePowerWithHealth:
-	SoundOnDamageTransition:
-		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
-	PowerTooltip:
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 nahand:
-	Inherits: ^Building
+	Inherits: ^Barracks
 	Inherits@shape: ^2x2Shape
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 20
 		Prerequisites: ~structures.soviets
-		Description: Produces infantry.
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Barracks
-	ProvidesPrerequisite:
-		Prerequisite: barracks
-		RequiresCondition: !build-incomplete
 	#ProvidesPrerequisite@cuba:
 	#	Prerequisite: infantry.cuba
 	#	Factions: cuba
@@ -132,19 +65,11 @@ nahand:
 	#	Prerequisite: infantry.iraq
 	#	Factions: iraq
 	#	RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Selectable:
 		Bounds: 94, 168, 0, -58
-	Health:
-		HP: 500000
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 6c0
 	Exit@n1_0:
 		SpawnOffset: 0,0,0
 		ExitCell: -1, 0
@@ -181,81 +106,20 @@ nahand:
 	Exit@2_2:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
-	Production:
-		Produces: Infantry
-		RequiresCondition: !build-incomplete
-	PrimaryBuilding:
-		PrimaryCondition: primary
 	RallyPoint:
 		Offset: 3,3
-		Palette: mouse
-		IsPlayerPalette: false
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
-	ProductionBar:
-		ProductionType: Infantry
-	Power:
-		Amount: -10
-	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
-		Proxy: barracks.infiltrated
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 narefn:
-	Inherits: ^Building
-	Inherits@shape: ^4x3Shape
+	Inherits: ^Refinery
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 30
 		Prerequisites: ~structures.soviets
-		Description: Processes ore into credits.
 	Selectable:
 		Bounds: 170, 150, -6, -33
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: Ore Refinery
-	ProvidesPrerequisite:
-		Prerequisite: refinery
-		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xxx= xxx= xxx=
-		Dimensions: 4,3
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-	TiberianSunRefinery:
-		DockOffset: 3, 1
-		ShowTicks: True
-		TickLifetime: 30
-		TickVelocity: 1
-		TickRate: 10
-		DockAngle: 160
-		UseStorage: false
-	CustomSellValue:
-		Value: 300
-	InfiltrateForCash:
-		Types: SpyInfiltrate
-		Percentage: 50
-		Notification: CreditsStolen
-		Minimum: 500
 	FreeActor:
 		Actor: harv
-		SpawnOffset: 3, 1
-		Facing: 160
 	WithDockedOverlay:
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
@@ -264,84 +128,16 @@ narefn:
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
 		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -50
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
-naradr:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: nahand, narefn, ~structures.soviets
-		Description: Provides radar.
-	Valued:
-		Cost: 1000
-	Tooltip:
-		Name: Radar Tower
-	ProvidesPrerequisite:
-		Prerequisite: radar
-		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	Selectable:
-		Bounds: 95, 130, 0, -40
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Wood
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
-	ProvidesRadar:
-		RequiresCondition: !lowpower && !build-incomplete
-	RevealsShroud:
-		Range: 10c0
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
-		PauseOnCondition: lowpower
-		RequiresCondition: !build-incomplete
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	InfiltrateForExploration:
-		Types: SpyInfiltrate
-	Power:
-		Amount: -50
-	DetonateWeaponPower@PsychicReveal:
-		Icon: psyreveal
-		ChargeInterval: 6000
-		Description: Psychic Reveal
-		LongDesc: Reveals a target area.
-		OrderName: PsychicRevealInfoOrder
-		Weapon: PsychicReveal
-		PauseOnCondition: lowpower
-		RequiresCondition: !build-incomplete
-	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
-		Actors: e2, e2, e2, e2
-
 naweap:
-	Inherits: ^Building
-	Inherits@shape: ^5x3Shape
+	Inherits: ^WarFactory
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 40
 		Prerequisites: nahand, ~structures.soviets
-		Description: Produces vehicles.
 	Selectable:
 		Bounds: 196, 178, -6, -48
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: War Factory
 	#ProvidesPrerequisite@libya:
 	#	Prerequisite: vehicles.libya
 	#	Factions: libya
@@ -350,36 +146,6 @@ naweap:
 	#	Prerequisite: vehicles.russia
 	#	Factions: russia
 	#	RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xxxx= xxxx= xxxx=
-		Dimensions: 5,3
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 4c0
-	RallyPoint:
-		Offset: 6,1
-		Palette: mouse
-		IsPlayerPalette: false
-	Exit@1:
-		ExitCell: 5,1
-	Production:
-		Produces: Vehicle
-		RequiresCondition: !build-incomplete
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
-	ProductionBar:
-		ProductionType: Vehicle
 	WithExitOverlay@door:
 		Sequence: build-door
 		RequiresCondition: !build-incomplete
@@ -392,135 +158,35 @@ naweap:
 	WithIdleOverlay@bib:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -25
-	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
-		Proxy: warfactory.infiltrated
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
 
+naradr:
+	Inherits: ^Tier2
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: nahand, narefn, ~structures.soviets
+		Description: Provides radar.
+	Tooltip:
+		Name: Radar Tower
+	Selectable:
+		Bounds: 95, 130, 0, -40
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2
+
 nayard:
-	Inherits: ^Building
-	Inherits@shape: ^4x4Shape
-	Valued:
-		Cost: 1000
+	Inherits: ^NavalYard
 	Tooltip:
 		Name: Naval Yard
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 50
 		Prerequisites: nahand, ~structures.soviets
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
-	Targetable:
-		TargetTypes: Ground, Water, C4
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xxxx xxxx xxxx xxxx
-		Dimensions: 4,4
-		TerrainTypes: Water
-	-GivesBuildableArea:
-	Health:
-		HP: 1500000
-	Armor:
-		Type: Concrete
-	RevealsShroud:
-		Range: 10c0
-	# X -2 column
-	Exit@n2_n2:
-		ExitCell: -2,-2
-	Exit@n2_n1:
-		ExitCell: -2,-1
-	Exit@n2_0:
-		ExitCell: -2,0
-	Exit@n2_1:
-		ExitCell: -2,1
-	Exit@n2_2:
-		ExitCell: -2,2
-	Exit@n2_3:
-		ExitCell: -2,3
-	Exit@n2_4:
-		ExitCell: -2,4
-	Exit@n2_5:
-		ExitCell: -2,5
-	# X -1 column
-	Exit@n1_n2:
-		ExitCell: -1,-2
-	Exit@n1_5:
-		ExitCell: -1,5
-	# X 0 column
-	Exit@0_n2:
-		ExitCell: 0,-2
-	Exit@0_5:
-		ExitCell: 0,5
-	# X 1 column
-	Exit@1_n2:
-		ExitCell: 1,-2
-	Exit@1_5:
-		ExitCell: 1,5
-	# X 2 column
-	Exit@2_n2:
-		ExitCell: 2,-2
-	Exit@2_5:
-		ExitCell: 2,5
-	# X 3 column
-	Exit@3_n2:
-		ExitCell: 3,-2
-	Exit@3_5:
-		ExitCell: 3,5
-	# X 4 column
-	Exit@4_n2:
-		ExitCell: 4,-2
-	Exit@4_5:
-		SpawnOffset: 0,-113,0
-		Facing: 160
-		ExitCell: 4,5
-	# X 5 column
-	Exit@5_n2:
-		ExitCell: 5,-2
-	Exit@5_n1:
-		ExitCell: 5,-1
-	Exit@5_0:
-		ExitCell: 5,0
-	Exit@5_1:
-		ExitCell: 5,1
-	Exit@5_2:
-		ExitCell: 5,2
-	Exit@5_3:
-		ExitCell: 5,3
-	Exit@5_4:
-		SpawnOffset: 0,-113,0
-		Facing: 96
-		ExitCell: 5,4
-	Exit@5_5:
-		ExitCell: 5,5
-	Production:
-		Produces: Ship
-		RequiresCondition: !build-incomplete
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
-	RallyPoint:
-		Offset: 5,1
-		Palette: mouse
-		IsPlayerPalette: false
-	RepairsUnits:
-		FinishRepairingNotification: UnitRepaired
-		HpPerStep: 10000
-	ProductionBar:
-		ProductionType: Ship
-		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -20
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
 		RequiresCondition: !build-incomplete
@@ -533,42 +199,21 @@ nayard:
 	WithProductionOverlay@lights:
 		Sequence: production-lights
 		RequiresCondition: !build-incomplete
-	RequiresBuildableArea:
-		Adjacent: 13
 
 naairc:
-	Inherits: ^Building
-	Inherits@shape: ^3x2Shape
+	Inherits: ^AirPad
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: naradr, ~structures.soviets #, ~!structures.america
-		Description: Supports 4 aircraft.
-	Valued:
-		Cost: 1000
+		Prerequisites: naradr, ~structures.soviets
 	Tooltip:
 		Name: Airforce Command Headquarters
-	ProvidesPrerequisite@allies:
+	ProvidesPrerequisite:
 		Prerequisite: aircraft.soviets
 		RequiresCondition: !build-incomplete
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xxx xxx
-		Dimensions: 3,2
 	Selectable:
 		Bounds: 142, 150, -3, -42
-	Health:
-		HP: 600000
-	Armor:
-		Type: Steel
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	ProvidesRadar:
-		RequiresCondition: !lowpower && !build-incomplete
-	RevealsShroud:
-		Range: 10c0
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		PauseOnCondition: lowpower
@@ -585,11 +230,6 @@ naairc:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	Power:
-		Amount: -50
-	Reservable:
 	Exit@1:
 		SpawnOffset: -370,370,0
 		MoveIntoWorld: false
@@ -606,31 +246,6 @@ naairc:
 		SpawnOffset: 350,1000,0
 		MoveIntoWorld: false
 		Facing: 224
-	Production:
-		Produces: Aircraft
-	ProductionBar:
-		ProductionType: Aircraft
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
-	#ParatroopersPower@paratroopers:
-	#	OrderName: AmericanParatroopers
-	#	Icon: airborne
-	#	ChargeInterval: 9000
-	#	Description: American Paratroopers
-	#	LongDesc: A Cargo Plane drops six GIs\nand 2 GGIs anywhere on the map.
-	#	DropItems: ggi,ggi,e1,e1,e1,e1,e1,e1
-	#	QuantizedFacings: 8
-	#	UnitType: pdplane
-	#	CameraActor: camera
-	#	ArrowSequence: arrow
-	#	PauseOnCondition: lowpower
-	#	RequiresCondition: !build-incomplete
 	RenderSprites:
 		Image: gaairc
 	WithTextDecoration@placeholder:
@@ -641,70 +256,43 @@ naairc:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
-nadept:
-	Inherits: ^Building
-	Inherits@shape: ^4x3Shape
+natek:
+	Inherits: ^Tier3
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 70
-		Prerequisites: naweap, ~structures.soviets
-		Description: Repairs vehicles and removes Terror Drones (for a price).
+		Prerequisites: naweap, naradr, ~structures.soviets
 	Selectable:
-		Bounds: 156, 150, 0, -38
-	Valued:
-		Cost: 800
+		Bounds: 122, 216, 0, -81
 	Tooltip:
-		Name: Service Depot
-	ProvidesPrerequisite:
-		Prerequisite: repairpad
+		Name: Tech Center
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@bolts:
+		Sequence: idle-bolts
+		RequiresCondition: !build-incomplete && !lowpower
+	WithIdleOverlay@body-lights:
+		Sequence: idle-body-lights
+		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: x=== x=== x===
-		Dimensions: 4,3
-	Health:
-		HP: 1200000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 5c0
-	Reservable:
-	RallyPoint:
-		Palette: mouse
-		IsPlayerPalette: false
-	RepairsUnits:
-		Interval: 148
-		HpPerStep: 20000
-		FinishRepairingNotification: UnitRepaired
-	WithIdleOverlay@normal:
-		Sequence: idle-normal
-		RequiresCondition: !build-incomplete
-	WithIdleOverlay@bib:
-		Sequence: bib
-		RequiresCondition: !build-incomplete
-	WithResupplyAnimation:
-		Sequence: repair
-		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -25
+	InfiltrateForSupportPower:
+		Proxy: soviet.tech.infiltrated
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
-		Actors: e2, e2, e2
+		Actors: e2, e2, e2, e2, e2, e2
 
 nanrct:
-	Inherits: ^Building
+	Inherits: ^Power
 	Inherits@shape: ^4x4Shape
 	Buildable:
-		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: natek, ~structures.soviets
-		Description: Provides power for other structures.
 	Valued:
 		Cost: 1500
 	Tooltip:
 		Name: Nuclear Reactor
-	ProvidesPrerequisite:
-		Prerequisite: power
-		RequiresCondition: !build-incomplete
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -725,102 +313,18 @@ nanrct:
 		EmptyWeapon: NukePayload
 	Power:
 		Amount: 1250
-		RequiresCondition: !power-outage && !build-incomplete
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
-	ScalePowerWithHealth:
-	SoundOnDamageTransition:
-		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
-	PowerTooltip:
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2
 
-natek:
-	Inherits: ^Building
-	Inherits@shape: ^3x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 80
-		Prerequisites: naweap, naradr, ~structures.soviets
-		Description: Allows deployment of advanced units.
-	Selectable:
-		Bounds: 122, 216, 0, -81
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: Tech Center
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xx xx xx
-		Dimensions: 3,2
-	Health:
-		HP: 500000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
-	WithIdleOverlay@lights:
-		Sequence: idle-lights
-		RequiresCondition: !build-incomplete && !lowpower
-	WithIdleOverlay@bolts:
-		Sequence: idle-bolts
-		RequiresCondition: !build-incomplete && !lowpower
-	WithIdleOverlay@body-lights:
-		Sequence: idle-body-lights
-		PauseOnCondition: lowpower
-		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -100
-	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
-		Proxy: soviet.tech.infiltrated
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
-		Actors: e2, e2, e2, e2, e2, e2
-
 natech:
-	Inherits: ^Building
-	Inherits@shape: ^3x3Shape
+	Inherits: ^Tier4
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 80
 		Prerequisites: natek, ~structures.soviets
-		Description: Allows deployment of advanced units.
-	Valued:
-		Cost: 3000
-	Tooltip:
-		Name: Palace
-	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
-	Building:
-		Footprint: xxx xxx xxx
-		Dimensions: 3,3
 	Selectable:
 		Bounds: 152, 164, 0, -50
-	Health:
-		HP: 650000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-	Power:
-		Amount: -200
 	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
 		Proxy: soviets.tech.infiltrated
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
@@ -830,7 +334,7 @@ naclon:
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 150
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Clones most trained infantry.
@@ -1221,3 +725,52 @@ nalasr:
 	AutoTarget:
 	RequiresBuildableArea:
 		Adjacent: 5
+
+nadept:
+	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: naweap, ~structures.soviets
+		Description: Repairs vehicles and removes Terror Drones (for a price).
+	Selectable:
+		Bounds: 156, 150, 0, -38
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Service Depot
+	ProvidesPrerequisite:
+		Prerequisite: repairpad
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: x=== x=== x===
+		Dimensions: 4,3
+	Health:
+		HP: 1200000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Reservable:
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	RepairsUnits:
+		Interval: 148
+		HpPerStep: 20000
+		FinishRepairingNotification: UnitRepaired
+	WithIdleOverlay@normal:
+		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@bib:
+		Sequence: bib
+		RequiresCondition: !build-incomplete
+	WithResupplyAnimation:
+		Sequence: repair
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -25
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2

@@ -88,6 +88,7 @@ Rules:
 	ra2vh|rules/civilians.yaml
 	ra2vh|rules/bridges.yaml
 	ra2vh|rules/animals.yaml
+	ra2vh|rules/shared-structures.yaml
 	ra2vh|rules/allied-structures.yaml
 	ra2vh|rules/soviet-structures.yaml
 	ra2vh|rules/civilian-structures.yaml

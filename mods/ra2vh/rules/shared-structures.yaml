@@ -1,0 +1,506 @@
+^ConYard:
+	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+		Description: Builds base structures.
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+	Selectable:
+		Bounds: 220, 155, 0, -20
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 8c0
+	Valued:
+		Cost: 3000
+	Production:
+		Produces: Building,Support
+		RequiresCondition: !build-incomplete
+	Tooltip:
+		Name: Construction Yard
+	BaseBuilding:
+	Transforms:
+		Offset: 1,1
+		DeployCursor: undeploy
+		RequiresCondition: factundeploy && !build-incomplete
+	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
+		Condition: factundeploy
+		Prerequisites: global-factundeploy
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Support:
+		ProductionType: Support
+	Power:
+		Amount: 50
+		RequiresCondition: !build-incomplete
+
+^Power:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		Description: Provides power for other structures.
+	ProvidesPrerequisite:
+		Prerequisite: power
+		RequiresCondition: !build-incomplete
+	Power:
+		RequiresCondition: !power-outage && !build-incomplete
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	SoundOnDamageTransition:
+		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+^BasicPower:
+	Inherits: ^Power
+	Buildable:
+		BuildPaletteOrder: 10
+	Health:
+		HP: 750000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+
+^Barracks:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Description: Trains infantry.
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Barracks
+	ProvidesPrerequisite:
+		Prerequisite: barracks
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Health:
+		HP: 500000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 5c0
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	Production:
+		Produces: Infantry
+		RequiresCondition: !build-incomplete
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary && !build-incomplete
+	ProductionBar:
+		ProductionType: Infantry
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -10
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: barracks.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+^Refinery:
+	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 30
+		Description: Processes ore into credits.
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Ore Refinery
+	ProvidesPrerequisite:
+		Prerequisite: refinery
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxx= xxx= xxx=
+		Dimensions: 4,3
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	TiberianSunRefinery:
+		DockOffset: 3,1
+		ShowTicks: True
+		TickLifetime: 30
+		TickVelocity: 1
+		TickRate: 10
+		DockAngle: 160
+		UseStorage: false
+	CustomSellValue:
+		Value: 300
+	InfiltrateForCash:
+		Types: SpyInfiltrate
+		Percentage: 50
+		Notification: CreditsStolen
+		Minimum: 500
+	FreeActor:
+		SpawnOffset: 3, 1
+		Facing: 160
+	Power:
+		Amount: -50
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+^WarFactory:
+	Inherits: ^Building
+	Inherits@shape: ^5x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 40
+		Description: Produces vehicles.
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: War Factorye
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxxx= xxxx= xxxx=
+		Dimensions: 5,3
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
+	Exit@1:
+		SpawnOffset: -384,-384,0
+		ExitCell: 4,1
+	Production:
+		Produces: Vehicle
+		RequiresCondition: !build-incomplete
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary && !build-incomplete
+	ProductionBar:
+		ProductionType: Vehicle
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -25
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: warfactory.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+^Tier2:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Description: Allows production of advanced units.
+	Valued:
+		Cost: 1000
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 600000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite:
+		Prerequisite: radar
+		RequiresCondition: !build-incomplete
+	ProvidesRadar:
+		RequiresCondition: !lowpower && !build-incomplete
+	InfiltrateForExploration:
+		Types: SpyInfiltrate
+	Power:
+		Amount: -50
+	DetonateWeaponPower@PsychicReveal:
+		Icon: psyreveal
+		ChargeInterval: 6000
+		Description: Psychic Reveal
+		LongDesc: Reveals a target area.
+		OrderName: PsychicRevealInfoOrder
+		Weapon: PsychicReveal
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+
+^NavalYard:
+	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Naval Yard
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 50
+		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+	Targetable:
+		TargetTypes: Ground, Water, C4
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 1500000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 10c0
+	# X -2 column
+	Exit@n2_n2:
+		ExitCell: -2,-2
+	Exit@n2_n1:
+		ExitCell: -2,-1
+	Exit@n2_0:
+		ExitCell: -2,0
+	Exit@n2_1:
+		ExitCell: -2,1
+	Exit@n2_2:
+		ExitCell: -2,2
+	Exit@n2_3:
+		ExitCell: -2,3
+	Exit@n2_4:
+		ExitCell: -2,4
+	Exit@n2_5:
+		ExitCell: -2,5
+	# X -1 column
+	Exit@n1_n2:
+		ExitCell: -1,-2
+	Exit@n1_5:
+		ExitCell: -1,5
+	# X 0 column
+	Exit@0_n2:
+		ExitCell: 0,-2
+	Exit@0_5:
+		ExitCell: 0,5
+	# X 1 column
+	Exit@1_n2:
+		ExitCell: 1,-2
+	Exit@1_5:
+		ExitCell: 1,5
+	# X 2 column
+	Exit@2_n2:
+		ExitCell: 2,-2
+	Exit@2_5:
+		ExitCell: 2,5
+	# X 3 column
+	Exit@3_n2:
+		ExitCell: 3,-2
+	Exit@3_5:
+		ExitCell: 3,5
+	# X 4 column
+	Exit@4_n2:
+		ExitCell: 4,-2
+	Exit@4_5:
+		SpawnOffset: 0,-113,0
+		Facing: 160
+		ExitCell: 4,5
+	# X 5 column
+	Exit@5_n2:
+		ExitCell: 5,-2
+	Exit@5_n1:
+		ExitCell: 5,-1
+	Exit@5_0:
+		ExitCell: 5,0
+	Exit@5_1:
+		ExitCell: 5,1
+	Exit@5_2:
+		ExitCell: 5,2
+	Exit@5_3:
+		ExitCell: 5,3
+	Exit@5_4:
+		SpawnOffset: 0,-113,0
+		Facing: 96
+		ExitCell: 5,4
+	Exit@5_5:
+		ExitCell: 5,5
+	Production:
+		Produces: Ship
+		RequiresCondition: !build-incomplete
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary && !build-incomplete
+	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
+	RepairsUnits:
+		FinishRepairingNotification: UnitRepaired
+		HpPerStep: 10000
+	ProductionBar:
+		ProductionType: Ship
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -20
+	RequiresBuildableArea:
+		Adjacent: 13
+
+^AirPad:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Description: Allows production of fixed-wing aircraft.
+	Valued:
+		Cost: 1000
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 600000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 10c0
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	Power:
+		Amount: -50
+	Reservable:
+	Production:
+		Produces: Aircraft
+	ProductionBar:
+		ProductionType: Aircraft
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary && !build-incomplete
+
+^Tier3:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Description: Allows deployment of advanced units.
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Tech Center
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 3,2
+	Health:
+		HP: 500000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Power:
+		Amount: -100
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+^Tier4:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 120
+		Description: Allows deployment of even more advanced units.
+	Valued:
+		Cost: 3000
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Health:
+		HP: 650000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Power:
+		Amount: -200
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+power:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Power Plant
+
+refinery:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Ore Refinery
+
+barracks:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Infantry Production
+
+radar:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Radar
+
+repairpad:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Service Depot
