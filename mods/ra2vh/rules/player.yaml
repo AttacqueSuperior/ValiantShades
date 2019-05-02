@@ -11,37 +11,69 @@ Player:
 	ClassicProductionQueue@Building:
 		Type: Building
 		LowPowerModifier: 200
-		QueuedAudio: Building
-		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 	ClassicProductionQueue@Support:
 		Type: Support
 		LowPowerModifier: 200
-		QueuedAudio: Building
-		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 	ClassicParallelProductionQueue@Vehicle:
 		Type: Vehicle
 		LowPowerModifier: 200
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: UnitReady
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
 	ClassicParallelProductionQueue@Infantry:
 		Type: Infantry
 		LowPowerModifier: 200
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: UnitReady
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
 	ClassicParallelProductionQueue@Aircraft:
 		Type: Aircraft
 		LowPowerModifier: 200
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: UnitReady
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
 	ClassicParallelProductionQueue@Ship:
 		Type: Ship
 		LowPowerModifier: 200
 		SpeedUp: true
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: UnitReady
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
 	PlaceBuilding:
 		Palette: effect75alpha
 	SupportPowerManager:
