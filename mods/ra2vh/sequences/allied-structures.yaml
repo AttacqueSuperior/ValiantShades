@@ -38,6 +38,23 @@ gapowr:
 		Length: 8
 		ShadowStart: 24
 		Tick: 150
+	idle-smokes: ggpowr_s
+		Length: 16
+		Tick: 120
+		BlendMode: Translucent
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			SNOW: GENERIC
+	damaged-idle-smokes: ggpowr_s
+		Length: 16
+		Start: 16
+		Tick: 120
+		BlendMode: Translucent
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			SNOW: GENERIC
 	make: gtpowrmk
 	icon: powricon
 
