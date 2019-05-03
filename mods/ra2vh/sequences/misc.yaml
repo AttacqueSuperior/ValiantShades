@@ -37,14 +37,11 @@ allyrepair:
 		ZOffset: 2047
 
 rallypoint:
-	flag: mouse
-		Start: 269
-		Length: 10
-		Offset: 2,-12
+	flag: rallypoint
+		Length: *
 		ZOffset: -1023
-	circles: mouse
-		Start: 249
-		Length: 10
+	circles: rallypb
+		Length: *
 		ZOffset: -2047
 
 beacon:

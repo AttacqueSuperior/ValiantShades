@@ -94,8 +94,6 @@
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
-		Palette: mouse
-		IsPlayerPalette: false
 	Production:
 		Produces: Infantry
 		RequiresCondition: !build-incomplete
@@ -190,8 +188,6 @@
 		Range: 4c0
 	RallyPoint:
 		Offset: 5,1
-		Palette: mouse
-		IsPlayerPalette: false
 	Exit@1:
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
@@ -368,8 +364,6 @@
 		RequiresCondition: primary && !build-incomplete
 	RallyPoint:
 		Offset: 5,1
-		Palette: mouse
-		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000

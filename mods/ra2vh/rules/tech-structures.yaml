@@ -122,8 +122,6 @@ caoutp:
 		Footprint: xx== xx== xx==
 	Reservable:
 	RallyPoint:
-		Palette: mouse
-		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired

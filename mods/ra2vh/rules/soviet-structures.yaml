@@ -399,8 +399,6 @@ naclon:
 		RequiresCondition: !build-incomplete && barracks
 	RallyPoint:
 		Offset: 3,3
-		Palette: mouse
-		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 		RequiresCondition: !build-incomplete
@@ -591,8 +589,6 @@ nadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
-		Palette: mouse
-		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20000
