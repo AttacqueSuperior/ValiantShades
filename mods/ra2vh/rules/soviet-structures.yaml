@@ -329,6 +329,44 @@ natech:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 
+naindp:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 100
+		Prerequisites: natek, ~structures.soviets
+		BuildLimit: 1
+		Description: Decreases all vehicles' cost by 25%.
+	Selectable:
+		Bounds: 134, 102, -10, -21
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Industrial Plant
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Health:
+		HP: 900000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	WithIdleOverlay@pistons:
+		Sequence: idle-pistons
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -200
+	SpawnSurvivors:
+		#DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2
+
 naclon:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape

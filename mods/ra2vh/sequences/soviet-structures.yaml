@@ -296,6 +296,32 @@ natech:
 	make: nttechmk
 	icon: ntchicon
 
+naindp:
+	Inherits@MC: ^Structure
+	Defaults:
+		Offset: 0, -45
+	idle: ngindp
+	damaged-idle: ngindp
+	idle-pistons: ngindp_a
+		Length: 13
+		ShadowStart: 26
+	damaged-idle-pistons: ngindp_a
+		Start: 13
+		Length: 13
+		ShadowStart: 39
+	idle-lights: ngindp_b
+		Length: 13
+		ShadowStart: 26
+	damaged-idle-lights: ngindp_b
+		Start: 13
+		Length: 13
+		ShadowStart: 39
+	make: ntindpmk
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: indpicon
+
 naclon:
 	Inherits: ^Structure
 	Defaults:

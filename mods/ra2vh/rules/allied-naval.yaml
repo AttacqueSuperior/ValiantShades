@@ -1,6 +1,7 @@
 lcrf:
 	Inherits: ^Ship
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
@@ -41,6 +42,7 @@ dest:
 	Inherits: ^Ship
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
@@ -87,6 +89,7 @@ aegis:
 	Inherits: ^Ship
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30

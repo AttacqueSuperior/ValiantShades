@@ -1,6 +1,7 @@
 smcv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
@@ -44,6 +45,7 @@ smcv:
 harv:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
@@ -103,6 +105,7 @@ harv:
 
 dron:
 	Inherits: ^Vehicle
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -146,6 +149,7 @@ htk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -200,6 +204,7 @@ htnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -249,6 +254,7 @@ apoc:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -302,6 +308,7 @@ ttnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -348,6 +355,7 @@ ttnk:
 dtruck:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60

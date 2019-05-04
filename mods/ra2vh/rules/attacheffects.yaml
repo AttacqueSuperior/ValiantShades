@@ -208,3 +208,8 @@
 	ProductionCostMultiplier@cloning:
 		Multiplier: 150
 		Prerequisites: naclon
+
+^AffectedByIndustrialPlant:
+	ProductionCostMultiplier@IndustrialPlant:
+		Multiplier: 75
+		Prerequisites: naindp
