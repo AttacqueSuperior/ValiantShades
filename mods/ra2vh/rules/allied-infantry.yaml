@@ -626,8 +626,6 @@ tany:
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 6c0
-	Demolition:
-		Voice: Demolish
 	Armor:
 		Type: Flak
 	Passenger:
@@ -645,6 +643,16 @@ tany:
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: DoublePistolsE
+		RequiresCondition: rank-elite
+	Armament@sapper:
+		Weapon: PlaceTanyaC4
+		Cursor: tanya-c4
+		OutsideRangeCursor: tanya-c4
+		RequiresCondition: !rank-elite
+	Armament@sapper-elite:
+		Weapon: PlaceTanyaC4E
+		Cursor: tanya-c4
+		OutsideRangeCursor: tanyxa-c4
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack

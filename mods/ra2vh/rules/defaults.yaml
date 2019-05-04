@@ -74,6 +74,7 @@
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@shape: ^1x1Shape
 	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -578,6 +579,7 @@
 	Inherits@8: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
+	Inherits@tanyac4: ^TanyaC4Plantable
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath

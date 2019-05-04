@@ -208,6 +208,18 @@
 		Palette: ts-mouse
 		RequiresCondition: c4
 
+^TanyaC4Plantable:
+	DelayedWeaponAttachable@TanyaC4:
+		Type: tanyac4
+		Condition: tanyac4
+	Targetable@tanyac4:
+		TargetTypes: TanyaC4Attached
+		RequiresCondition: tanyac4
+	WithIdleOverlay@tanyac4:
+		Sequence: tanyac4
+		Palette: mouse
+		RequiresCondition: tanyac4
+
 ^DamagedByRadiation:
 	DamagedByTintedCells:
 		Damage: 200

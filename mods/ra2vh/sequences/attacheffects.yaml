@@ -15,3 +15,10 @@
 		Start: 309
 		Length: 10
 		Offset: 0, 0, 24
+
+^TanyaC4Plantable:
+	tanyac4: mouse
+		UseTilesetCode: false
+		Start: 309
+		Length: 10
+		Offset: 0, 0, 24

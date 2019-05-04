@@ -129,6 +129,7 @@
 ^Structure:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
 	Defaults:
 		UseTilesetCode: true
 		TilesetOverrides:
@@ -175,6 +176,7 @@
 
 ^Vehicle:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@tanyac4: ^TanyaC4Plantable
 
 ^Flag:
 	Inherits@IvanBomb: ^IvanBombable

@@ -163,6 +163,32 @@ C4E:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
 
+PlaceTanyaC4:
+	Inherits: PlaceC4
+	ValidTargets: C4, Vehicle
+	InvalidTargets: TanyaC4Attached
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: TanyaC4
+		Type: tanyac4
+
+PlaceTanyaC4E:
+	Inherits: PlaceTanyaC4
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: TanyaC4E
+
+TanyaC4:
+	Inherits: C4
+	Warhead@1Dam: SpreadDamage
+		Damage: 1000000
+	Warhead@2Eff: CreateEffect
+		Explosions: tanya_c4_explosion
+		ExplosionPalette: rookiera2exp
+
+TanyaC4E:
+	Inherits: TanyaC4
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 CRNuke:
 	Inherits: IvanDeath
 	Warhead@1Dam: SpreadDamage
