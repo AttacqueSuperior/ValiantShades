@@ -247,7 +247,7 @@ pdplane:
 	Cargo:
 		MaxWeight: 10
 	ParaDrop:
-		DropRange: 4c0
+		DropRange: 6c0
 		ChuteSound: sparadra.wav
 	SpawnActorOnDeath:
 		Actor: pdplanehusk
