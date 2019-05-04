@@ -1,6 +1,7 @@
 engineer:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
@@ -42,6 +43,7 @@ engineer:
 
 dog:
 	Inherits: ^Infantry
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
@@ -112,6 +114,7 @@ e1:
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -218,6 +221,7 @@ ggi:
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -335,6 +339,7 @@ snipe:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
 	Valued:
 		Cost: 600
 	DeliversCash:
@@ -383,6 +388,7 @@ snipe:
 
 spy:
 	Inherits: ^Infantry
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -436,6 +442,7 @@ ghost:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@SWIMSUIT: ^WithSwimSuit
+	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -649,6 +656,7 @@ tany:
 jumpjet:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@cloning: ^Cloneable
 	HiddenUnderFog:
 		Type: CenterPosition
 	Buildable:
@@ -749,6 +757,7 @@ jumpjet.husk:
 cleg:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Tooltip:

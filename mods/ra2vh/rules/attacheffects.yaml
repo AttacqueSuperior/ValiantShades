@@ -201,3 +201,10 @@
 		Damage: 200
 		DamageLevel: 1
 		DamageTypes: RadiationDeath
+
+^Cloneable:
+	Cloneable:
+		Types: infantry
+	ProductionCostMultiplier@cloning:
+		Multiplier: 150
+		Prerequisites: naclon

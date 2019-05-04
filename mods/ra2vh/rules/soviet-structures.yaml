@@ -402,6 +402,8 @@ naclon:
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
