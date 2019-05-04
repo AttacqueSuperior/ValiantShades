@@ -591,6 +591,10 @@ namisl:
 		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
+		TrailImage: nukesmoke
+		TrailDelay: 0
+		TrailInterval: 2
+		FlightDelay: 200
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithNukeLaunchAnimation:
