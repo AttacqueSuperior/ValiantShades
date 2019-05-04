@@ -340,3 +340,6 @@ ModContent:
 		ra2vh|installer/origin.yaml
 		ra2vh|installer/origin-yr.yaml
 		ra2vh|installer/firstdecade.yaml
+
+ColorValidator:
+	TeamColorPresets: ffc9ca, f50606, 98331f, f57606, f7bb06, f861a4, da06f3, ddb8ff, 06f739, cef7b2, 200738, 280df6, 2f86f2, 76d2f8, 34ba93, 000000
