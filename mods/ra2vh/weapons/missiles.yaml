@@ -207,7 +207,7 @@ MissileLauncher:
 		RangeLimit: 12c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 40
+		Damage: 40000
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 20
