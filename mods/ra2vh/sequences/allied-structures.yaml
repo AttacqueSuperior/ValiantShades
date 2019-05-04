@@ -99,7 +99,7 @@ garefn:
 gafcmd:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -31
+		Offset: 0, -30
 	idle: ggfcmd
 		ShadowStart: 2
 	damaged-idle: ggfcmd
@@ -110,7 +110,6 @@ gafcmd:
 		TilesetOverrides:
 			SNOW: GENERIC
 	make: ggfcmdmk
-		Tick: 90
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
