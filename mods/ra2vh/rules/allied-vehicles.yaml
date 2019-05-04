@@ -41,6 +41,7 @@ amcv:
 	Voiced:
 		VoiceSet: AlliedConstructionVehicleVoice
 	HitShape:
+	-Guard:
 
 cmin:
 	Inherits: ^Vehicle
@@ -92,6 +93,7 @@ cmin:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
 	-DamagedByTintedCells:
+	-Guard:
 
 hmmv:
 	Inherits: ^Vehicle
@@ -538,7 +540,8 @@ bfrt:
 	AttackFrontal:
 		Voice: Attack
 	Cargo:
-		Types: Infantry, Garrisoner
+		Types: Infantry
+		UnloadVoice: Move
 		MaxWeight: 5
 		PipCount: 5
 		LoadingCondition: notmobile
@@ -555,6 +558,7 @@ bfrt:
 			snipe: loaded
 			cleg: loaded
 	AttackGarrisoned:
+		Voice: Attack
 		Armaments: opentopped
 		PortOffsets: 768,0,256, 448,-682,256, -448,-682,256, -768,0,256, -448,682,256, 448,682,256
 		PortYaws: 0, 176, 341, 512, 682, 853

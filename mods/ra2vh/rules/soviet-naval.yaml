@@ -37,6 +37,7 @@ sapc:
 	Voiced:
 		VoiceSet: SovietAmphibiousTransportVoice
 	HitShape:
+	-Guard:
 
 sub:
 	Inherits: ^Ship

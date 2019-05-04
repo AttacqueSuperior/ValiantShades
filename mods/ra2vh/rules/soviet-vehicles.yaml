@@ -41,6 +41,7 @@ smcv:
 	Voiced:
 		VoiceSet: SovietConstructionVehicleVoice
 	HitShape:
+	-Guard:
 
 harv:
 	Inherits: ^Vehicle
@@ -134,7 +135,7 @@ dron:
 		DefaultAttackSequence: shoot
 	Armament:
 		Weapon: DroneJump
-	AttackLeap:
+	AttackLeapAS:
 		Voice: Attack
 	AutoTarget:
 		InitialStance: AttackAnything

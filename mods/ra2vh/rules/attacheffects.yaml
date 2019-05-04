@@ -123,7 +123,6 @@
 		CooldownDuration: 10000000
 		StartsGranted: true
 		RequiresCondition: dmg_heavy
-		ResetTraitOnEnable: true
 
  ^VehicleParticles:
 	Inherits: ^UnitParticles

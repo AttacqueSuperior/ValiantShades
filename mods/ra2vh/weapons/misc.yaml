@@ -268,7 +268,7 @@ PsychicReveal:
 		Duration: 38
 		Radius: 11c0
 		RevealGeneratedShroud: true
-	Warhead4Eff: CreateEffect
+	Warhead@4Eff: CreateEffect
 		ImpactSounds: spsyreve.wav
 
 BuildingDeathSmokeSpawner:
@@ -281,7 +281,6 @@ BuildingDeathSmokeSpawner:
 		Palette: effect
 		Weapon: BuildingDeathSmokeSpawner2
 		Duration: 2
-		Offset: -768,-768,0, 768,768,0
 		Neutral: true
 
 BuildingDeathSmokeSpawner2:
@@ -296,7 +295,6 @@ BuildingDeathSmokeSpawner2:
 		Palette: heroicra2exp
 		Duration: 67
 		Gravity: -64,-64,12, 64,64,12
-		Offset: -384,-384,0, 384,384,0
 		Neutral: true
 
 BuildingDeathFlameGuySpawner:

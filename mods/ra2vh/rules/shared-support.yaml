@@ -94,7 +94,6 @@
 		RequiresCondition: !build-incomplete
 	AutoTarget:
 	GrantConditionOnPowerState@LOWPOWER:
-		RequiresCondition: !charged
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	WithRangeCircle:

@@ -57,7 +57,6 @@ tesla:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:
-		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,3072
@@ -73,3 +72,5 @@ tesla:
 		RequiresCondition: !lowpower && !build-incomplete
 	ExternalCondition@CHARGED:
 		Condition: charged
+	GrantConditionOnPowerState@LOWPOWER:
+		RequiresCondition: charged < 2

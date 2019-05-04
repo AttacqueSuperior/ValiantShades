@@ -37,6 +37,7 @@ lcrf:
 	Voiced:
 		VoiceSet: AlliedAmphibiousTransportVoice
 	HitShape:
+	-Guard:
 
 dest:
 	Inherits: ^Ship

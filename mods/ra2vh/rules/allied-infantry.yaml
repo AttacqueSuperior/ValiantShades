@@ -25,7 +25,6 @@ engineer:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
 	Captures:
-		Sabotage: false
 		CaptureTypes: building, husk
 	RevealsShroud:
 		Range: 4c0
@@ -73,7 +72,7 @@ dog:
 		Range: 5c0
 	Armament:
 		Weapon: DogJaw
-	AttackLeap:
+	AttackLeapAS:
 		Voice: Attack
 	AutoTarget:
 		InitialStance: AttackAnything
@@ -177,6 +176,7 @@ e1:
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
+		Voice: Move
 		CanDeployOnRamps: True
 		Facing: 128
 		RequiresCondition: !parachute
@@ -293,6 +293,7 @@ ggi:
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
+		Voice: Move
 		CanDeployOnRamps: True
 		Facing: 92
 		RequiresCondition: !parachute

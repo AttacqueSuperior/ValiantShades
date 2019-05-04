@@ -278,7 +278,7 @@ natek:
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	InfiltrateForSupportPower:
-		Proxy: soviet.tech.infiltrated
+		Proxy: soviets.tech.infiltrated
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
@@ -319,6 +319,8 @@ nanrct:
 
 natech:
 	Inherits: ^Tier4
+	Tooltip:
+		Name: Palace
 	Buildable:
 		Prerequisites: natek, ~structures.soviets
 	Selectable:
@@ -439,11 +441,11 @@ naclon:
 		Offset: 3,3
 	ClonesProducedUnits:
 		CloneableTypes: infantry
-		RequiresCondition: !build-incomplete
+		# RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
-		RequiresCondition: !build-incomplete
+		# RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		#DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
