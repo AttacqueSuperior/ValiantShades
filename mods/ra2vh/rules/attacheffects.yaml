@@ -190,6 +190,8 @@
 	Targetable@ivanbombed:
 		TargetTypes: IvanBombed
 		RequiresCondition: ivanbomb
+	ExternalCondition@bombdetector:
+		Condition: bombdetector
 	WithIdleOverlayAS@ivanbomb:
 		Image: bomb-overlay
 		Sequence: ivanbomb

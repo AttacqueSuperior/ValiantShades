@@ -40,6 +40,10 @@ engineer:
 	WithInfantryBody:
 		DefaultAttackSequence: stand
 	CaptureManager:
+	ProximityExternalCondition@bombdetector:
+		Condition: bombdetector
+		Range: 6c0
+		AffectsParent: true
 
 dog:
 	Inherits: ^Infantry
