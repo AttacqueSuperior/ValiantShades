@@ -325,6 +325,14 @@ dragon:
 	idle:
 		Facings: 32
 
+missile:
+	idle:
+		Facings: 32
+
+patriot:
+	idle:
+		Facings: 32
+
 smokey2:
 	idle:
 		Length: *
@@ -335,10 +343,6 @@ smokey2:
 bbblelrg:
 	idle:
 		Length: *
-
-missile:
-	idle:
-		Facings: 32
 
 zbomb:
 	idle:

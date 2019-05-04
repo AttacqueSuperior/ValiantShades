@@ -2,6 +2,7 @@ RedEye2:
 	Inherits: ^AAMissile
 	Range: 12c0
 	Projectile: Missile
+		Image: missile
 		RangeLimit: 24c0
 
 MammothTusk:
@@ -46,6 +47,7 @@ Maverick:
 	Report: vintatta.wav
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
+		Image: patriot
 		Inaccuracy: 128
 		RangeLimit: 12c0
 	Warhead@1Dam: SpreadDamage
@@ -89,6 +91,7 @@ Medusa:
 	Burst: 3
 	BurstDelays: 13
 	Projectile: Missile
+		Image: missile
 		ContrailLength: 35
 		RangeLimit: 24c0
 	Warhead@1Dam: SpreadDamage

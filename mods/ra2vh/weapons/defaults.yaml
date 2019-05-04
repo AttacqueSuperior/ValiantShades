@@ -80,7 +80,7 @@
 		Blockable: false
 		Shadow: true
 		CloseEnough: 192
-		Image: DRAGON
+		Image: dragon
 		Palette: ra
 		TrailImage: smokey2
 		ContrailLength: 8
@@ -113,9 +113,6 @@
 ^AAMissile:
 	Inherits: ^Missile
 	Projectile: Missile
-		#Image: bootsmis
-		#TrailImage: smokey4
-		#TrailPalette: tsanim
 		MinimumLaunchSpeed: 225
 		MaximumLaunchSpeed: 450
 		Speed: 864
