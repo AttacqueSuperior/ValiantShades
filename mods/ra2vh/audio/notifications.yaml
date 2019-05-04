@@ -126,6 +126,9 @@ Speech:
 		WeathercontrolDeviceDetected: 010
 		WeathercontrolDeviceOffline: 122
 		Win: 022
+		GameSaved: gamesave
+		GameLoaded: gameload
+	DisablePrefixes: GameSaved, GameLoaded
 
 Sounds:
 	DefaultVariant: .wav
