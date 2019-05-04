@@ -1,6 +1,7 @@
 ^ExistsInWorld:
 	AppearsOnRadar:
 	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	CombatDebugOverlay:
 	DrawLineToTarget:
 	GivesExperience:
