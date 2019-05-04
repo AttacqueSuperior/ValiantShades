@@ -117,11 +117,6 @@
 	cheer:
 		Start: 293
 
-^MindControllable:
-	mindcontrol: yuricntl
-		Length: *
-		Offset: 0, -24, 24
-
 ^bridge:
 	Defaults:
 		ZOffset: -1c511

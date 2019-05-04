@@ -108,6 +108,8 @@ Rules:
 
 Sequences:
 	ra2vh|sequences/resources.yaml
+	ra2vh|sequences/defaults.yaml
+	ra2vh|sequences/attacheffects.yaml
 	ra2vh|sequences/aircraft.yaml
 	ra2vh|sequences/allied-infantry.yaml
 	ra2vh|sequences/allied-structures.yaml
@@ -116,7 +118,6 @@ Sequences:
 	ra2vh|sequences/civilians.yaml
 	ra2vh|sequences/civilian-props.yaml
 	ra2vh|sequences/civilian-structures.yaml
-	ra2vh|sequences/defaults.yaml
 	ra2vh|sequences/misc.yaml
 	ra2vh|sequences/soviet-infantry.yaml
 	ra2vh|sequences/soviet-structures.yaml

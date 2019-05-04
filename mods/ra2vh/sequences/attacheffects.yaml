@@ -1,0 +1,4 @@
+^MindControllable:
+	mindcontrol: yuricntl
+		Length: *
+		Offset: 0, -24, 24
