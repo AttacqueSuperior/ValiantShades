@@ -471,8 +471,6 @@ ghost:
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 8c0
-	Demolition:
-		Voice: SpecialAttack
 	Armor:
 		Type: Flak
 	Passenger:
@@ -490,6 +488,16 @@ ghost:
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: MP5E
+		RequiresCondition: rank-elite
+	Armament@sapper:
+		Weapon: PlaceC4
+		Cursor: c4
+		OutsideRangeCursor: c4
+		RequiresCondition: !rank-elite
+	Armament@sapper-elite:
+		Weapon: PlaceC4E
+		Cursor: c4
+		OutsideRangeCursor: c4
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack

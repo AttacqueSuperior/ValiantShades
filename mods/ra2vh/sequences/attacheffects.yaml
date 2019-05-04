@@ -8,3 +8,10 @@
 		UseTilesetCode: false
 		Length: 2
 		Offset: 0, 0, 24
+
+^C4Plantable:
+	c4: ts-mouse
+		UseTilesetCode: false
+		Start: 309
+		Length: 10
+		Offset: 0, 0, 24

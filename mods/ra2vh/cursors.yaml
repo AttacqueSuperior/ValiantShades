@@ -167,7 +167,7 @@ Cursors:
 		detonate:
 			Start: 299
 			Length: 10
-		c4:
+		tanya-c4:
 			Start: 309
 			Length: 10
 		nuke:
@@ -293,3 +293,7 @@ Cursors:
 			Length: 9
 		assaultmove-minimap:
 			Start: 9
+	ts-mouse.shp: ts-mouse
+		c4:
+			Start: 309
+			Length: 10

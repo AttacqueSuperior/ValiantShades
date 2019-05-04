@@ -190,6 +190,7 @@
 	PaletteFromFile@ts-mousepal:
 		Name: ts-mouse
 		Filename: ts-mousepal.pal
+		CursorPalette: true
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: unittem.pal

@@ -128,6 +128,7 @@
 
 ^Structure:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
 	Defaults:
 		UseTilesetCode: true
 		TilesetOverrides:

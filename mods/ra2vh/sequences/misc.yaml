@@ -316,6 +316,7 @@ explosion:
 		BlendMode: Translucent
 	largedebrishit: tss_bang24
 		BlendMode: Translucent
+	c4_explosion: tstwlt070
 
 discus:
 	idle:

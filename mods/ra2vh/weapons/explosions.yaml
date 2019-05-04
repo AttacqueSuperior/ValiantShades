@@ -87,9 +87,7 @@ PlaceIvanBombE:
 IvanBomber:
 	ReloadDelay: 50
 	Range: 1c849
-	Projectile: BulletAS
-		Speed: 425
-		Blockable: false
+	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 400000
@@ -123,6 +121,47 @@ IvanBomberE:
 
 IvanDeath:
 	Inherits: IvanBomber
+
+PlaceC4:
+	Range: 1c849
+	Projectile: InstantHit
+	Report: icolseta.wav
+	ValidTargets: C4
+	InvalidTargets: C4Attached
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: C4
+		Type: c4
+		TriggerTime: 50
+		DeathTypes: DefaultDeath
+		Range: 1
+	Warhead@TargetValidator: SpreadDamage
+
+PlaceC4E:
+	Inherits: PlaceC4
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: C4E
+
+C4:
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air, Ground, Water
+		Spread: 64
+		Falloff: 100, 50, 0
+		Damage: 444000
+		DamageTypes: DefaultDeath, ExplosionDeath, Prone100Percent
+	Warhead@2Eff: CreateEffect
+		Explosions: c4_explosion
+		ExplosionPalette: rookietsexp
+		ImpactSounds: icolexpa.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: LargeFlame
+		Chance: 50
+
+C4E:
+	Inherits: C4
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
 
 CRNuke:
 	Inherits: IvanDeath

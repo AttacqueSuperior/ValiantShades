@@ -73,6 +73,7 @@
 	Inherits@4: ^BuildingParticles
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@shape: ^1x1Shape
+	Inherits@c4: ^C4Plantable
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -257,7 +258,7 @@
 	LineBuildNode:
 		Types: wall
 	Targetable:
-		TargetTypes: Ground, Wall, C4, DetonateAttack, NoAutoTarget
+		TargetTypes: Ground, Wall, DetonateAttack, NoAutoTarget
 	WithWallSpriteBody:
 		Type: wall
 	Sellable:

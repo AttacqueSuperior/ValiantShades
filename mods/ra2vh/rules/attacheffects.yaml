@@ -196,6 +196,18 @@
 		Palette: mouse
 		RequiresCondition: bombdetector && ivanbomb
 
+^C4Plantable:
+	DelayedWeaponAttachable@C4:
+		Type: c4
+		Condition: c4
+	Targetable@c4:
+		TargetTypes: C4Attached
+		RequiresCondition: c4
+	WithIdleOverlay@c4:
+		Sequence: c4
+		Palette: ts-mouse
+		RequiresCondition: c4
+
 ^DamagedByRadiation:
 	DamagedByTintedCells:
 		Damage: 200
