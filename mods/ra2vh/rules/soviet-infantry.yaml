@@ -432,6 +432,9 @@ yuri:
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
+		QuantizedSegments: 32
+		Width: 63
+		Angle: 120
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: MindControl
