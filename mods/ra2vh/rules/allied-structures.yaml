@@ -453,7 +453,7 @@ gaweat:
 	DetonateWeaponPower@WeatherStorm:
 		Icon: bolticon
 		ChargeInterval: 15000
-		Description: Weather Storm
+		Description: Lightning Storm
 		LongDesc: Applies heavy damage over a large area.
 		OrderName: WeatherStormInfoOrder
 		Weapon: WeatherStormInit
