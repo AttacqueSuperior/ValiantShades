@@ -1,27 +1,36 @@
 asw:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: xxicon
 
 beag:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: beagicon
 
 cargoplane:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: xxicon
 
 falc:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: falcicon
 
 hind:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: hindicon
 
 hornet:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: xxicon
 
 pdplane:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: xxicon
 
 shad:
+	Inherits@IvanBomb: ^IvanBombable
 	Inherits@MC: ^MindControllable
 	icon: shadicon
 
 zep:
+	Inherits@IvanBomb: ^IvanBombable
 	icon: zepicon

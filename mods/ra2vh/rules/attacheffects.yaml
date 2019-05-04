@@ -191,8 +191,7 @@
 		RequiresCondition: ivanbomb
 	ExternalCondition@bombdetector:
 		Condition: bombdetector
-	WithIdleOverlayAS@ivanbomb:
-		Image: bomb-overlay
+	WithIdleOverlay@ivanbomb:
 		Sequence: ivanbomb
 		Palette: mouse
 		RequiresCondition: bombdetector && ivanbomb

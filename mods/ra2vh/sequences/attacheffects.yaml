@@ -2,3 +2,9 @@
 	mindcontrol: yuricntl
 		Length: *
 		Offset: 0, -24, 24
+
+^IvanBombable:
+	ivanbomb: bombcurs
+		UseTilesetCode: false
+		Length: 2
+		Offset: 0, 0, 24

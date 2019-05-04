@@ -1,4 +1,5 @@
 ^Animal:
+	Inherits@IvanBomb: ^IvanBombable
 	stand:
 		Facings: 8
 	run:
@@ -126,6 +127,7 @@
 		Offset: 0, 0, 0.5
 
 ^Structure:
+	Inherits@IvanBomb: ^IvanBombable
 	Defaults:
 		UseTilesetCode: true
 		TilesetOverrides:
@@ -170,7 +172,11 @@
 		ShadowStart: 7
 		ZOffset: -3c0
 
+^Vehicle:
+	Inherits@IvanBomb: ^IvanBombable
+
 ^Flag:
+	Inherits@IvanBomb: ^IvanBombable
 	Defaults:
 		UseTilesetCode: true
 		Offset: 0,-15

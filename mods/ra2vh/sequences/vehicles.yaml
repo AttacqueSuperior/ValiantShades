@@ -1,40 +1,50 @@
 amcv:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: mcvicon
 
 aegis:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: agisicon
 
 bfrt:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: bfrticon
 
 bus:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 car:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 carrier:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: carricon
 
 cdest:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cona:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cop:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cmin:
+	Inherits: ^Vehicle
 	harvest: oregath
 		Length: 15
 		Facings: 8
@@ -44,18 +54,22 @@ cmin:
 	icon: ahrvicon
 
 cruise:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 dest:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: desticon
 
 dred:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: dredicon
 
 dron:
+	Inherits: ^Vehicle
 	stand:
 		Start: 48
 		ShadowStart: 136
@@ -77,18 +91,22 @@ dron:
 	icon: dronicon
 
 euroc:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 flata:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 fv:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: fvicon
 
 mgtk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: rtnkicon
 
@@ -96,135 +114,168 @@ gtgcan:
 	icon: gcanicon
 
 mtnk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: gtnkicon
 
 harv:
+	Inherits: ^Vehicle
 	harvest: oregath
 		Length: 15
 		Facings: 8
 	icon: harvicon
 
 hmmv:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: hmmvicon
 
 htk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: htkicon
 
 htnk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: htnkicon
 
 howi:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 hyd:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: hovricon
 
 lcrf:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: landicon
 
 limo:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ltnk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 apoc:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: mtnkicon
 
 pick:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 propa:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ptruck:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 rtnk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: rtnkicon
 
 smcv:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: smcvicon
 
 sref:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: sreficon
 
 stang:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 sub:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: subicon
 
 suvb:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 suvw:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 taxi:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 tnkd:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: tnkdicon
 
 tractor:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 sapc:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: sapcicon
 
 dtruck:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: trkaicon
 
 trucka:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 truckb:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ttnk:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: ttnkicon
 
 tug:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 v3:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: v3icon
 
 vlad:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 wini:
+	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
