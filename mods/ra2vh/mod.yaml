@@ -175,6 +175,8 @@ ChromeLayout:
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
 	common|chrome/missionbrowser.yaml
+	common|chrome/gamesave-browser.yaml
+	common|chrome/gamesave-loading.yaml
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/color-picker.yaml
 	common|chrome/dropdowns.yaml
