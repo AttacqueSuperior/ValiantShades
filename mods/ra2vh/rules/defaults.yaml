@@ -321,6 +321,12 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+	GrantConditionOnDamageState@damaged:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	Targetable@Heal:
+		RequiresCondition: damaged
+		TargetTypes: Heal
 	RenderSprites:
 		PlayerPalette: infantry
 	WithInfantryBody:
@@ -424,6 +430,8 @@
 		RequiresCondition: !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
+	Targetable@Heal:
+		RequiresCondition: damaged && !parachute
 
 ^ParachutableVehicle:
 	Parachutable:
@@ -445,6 +453,8 @@
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: parachute
+	Targetable@Repair:
+		RequiresCondition: damaged && !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
 
@@ -579,7 +589,13 @@
 	Selectable:
 		Bounds: 32,32
 	Targetable:
-		TargetTypes: Ground, Vehicle, Repair, DetonateAttack
+		TargetTypes: Ground, Vehicle, DetonateAttack
+	GrantConditionOnDamageState@damaged:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	Targetable@Repair:
+		RequiresCondition: damaged
+		TargetTypes: Repair
 	Repairable:
 		Voice: Move
 		RepairActors: gadept, nadept, caoutp
@@ -675,8 +691,14 @@
 	Guardable:
 	MustBeDestroyed:
 	Targetable@ground:
-		TargetTypes: Ground, Repair, Vehicle
+		TargetTypes: Ground, Vehicle
 		RequiresCondition: !airborne
+	GrantConditionOnDamageState@damaged:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	Targetable@Repair:
+		RequiresCondition: damaged && !airborne
+		TargetTypes: Repair
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
@@ -777,7 +799,13 @@
 	Selectable:
 		Bounds: 32,32
 	Targetable:
-		TargetTypes: Ground, Water, Repair
+		TargetTypes: Ground, Water
+	GrantConditionOnDamageState@damaged:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	Targetable@Repair:
+		RequiresCondition: damaged
+		TargetTypes: Repair
 	Repairable:
 		Voice: Move
 		RepairActors: gayard, nayard
