@@ -121,13 +121,13 @@ WeatherStormInit:
 		Sequences: inviso
 		Palette: effect
 		Weapon: WeatherCloudDirectInit
-		Duration: 210
+		Duration: 315
 	Warhead@2: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: inviso
 		Palette: effect
 		Weapon: WeatherCloudRandomInit
-		Duration: 210
+		Duration: 315
 	Warhead@4: CreateEffect
 		ImpactSounds: sweaintr.wav
 		ValidTargets: Ground, Air, Water
