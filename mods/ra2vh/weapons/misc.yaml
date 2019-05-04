@@ -145,7 +145,7 @@ WeatherStormInit:
 	Warhead@barrage3: FireShrapnel
 		Weapon: WeatherCloud
 		Amount: 3
-		AimChance: 50
+		AimChance: 75
 		ValidTargets: Air, Ground, Water
 
  WeatherCloud:
