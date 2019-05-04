@@ -312,6 +312,10 @@ explosion:
 		Length: 15
 		Start: 54
 		Tick: 80
+	debrishit: tss_bang16
+		BlendMode: Translucent
+	largedebrishit: tss_bang24
+		BlendMode: Translucent
 
 discus:
 	idle:
