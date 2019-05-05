@@ -548,6 +548,8 @@ atesla:
 		ShadowStart: 30
 	icon: prisicon
 	make: gtprismk
-		Length: 8
-		ShadowStart: 8
-		Tick: 160
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+		Length: 27
+		ShadowStart: 27
