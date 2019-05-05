@@ -288,7 +288,7 @@ atomic:
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		Damage: 900000
-		DamageTypes: RadiationDeath
+		DamageTypes: RadiationDeath, DefaultDeath
 		Delay: 25
 	Warhead@2Res_impact: DestroyResource
 		Delay: 25

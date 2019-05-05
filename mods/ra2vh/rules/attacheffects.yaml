@@ -226,7 +226,7 @@
 	DamagedByTintedCells:
 		Damage: 200
 		DamageLevel: 1
-		DamageTypes: RadiationDeath
+		DamageTypes: RadiationDeath, DefaultDeath
 
 ^Cloneable:
 	Cloneable:
