@@ -78,7 +78,7 @@
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: DefaultDeath
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -104,6 +104,7 @@
 		Type: Footprint
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
+		DeathTypes: DefaultDeath
 	RepairableBuilding:
 		RepairStep: 7000
 	EngineerRepairable:
@@ -305,7 +306,7 @@
 	Health:
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: BulletDeath, DefaultDeath
 	HitShape:
 		Type: Circle
 			Radius: 128
@@ -582,7 +583,7 @@
 	Inherits@tanyac4: ^TanyaC4Plantable
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: DefaultDeath
 	Mobile:
 		Voice: Move
 		TurnSpeed: 5
@@ -624,6 +625,7 @@
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
+		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
@@ -670,7 +672,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: DefaultDeath
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
@@ -786,7 +788,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: DefaultDeath
 	Mobile:
 		Voice: Move
 		Locomotor: naval
@@ -828,6 +830,7 @@
 	Explodes:
 		Weapon: ShipExplode
 		EmptyWeapon: ShipExplode
+		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: SovietNavalVoice

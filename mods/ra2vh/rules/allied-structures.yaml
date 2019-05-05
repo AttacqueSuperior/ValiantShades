@@ -27,7 +27,7 @@ gacnst:
 	#	RequiresCondition: !build-incomplete
 	#	Factions: france
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: engineer, e1, e1, e1, e1
 
 gapowr:
@@ -54,7 +54,7 @@ gapowr:
 		Amount: 200
 		RequiresCondition: !power-outage && !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
 
 gapile:
@@ -89,7 +89,7 @@ gapile:
 		Sequence: idle-flag
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
 garefn:
@@ -109,7 +109,7 @@ garefn:
 		Sequence: idle-drill
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
 gaweap:
@@ -139,7 +139,7 @@ gaweap:
 		Sequence: build-ramp
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
 
 gafcmd:
@@ -156,7 +156,7 @@ gafcmd:
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
 
 gayard:
@@ -246,7 +246,7 @@ gaairc:
 		RequiresCondition: !build-incomplete
 	SupportPowerChargeBar:
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
 amradr:
@@ -277,7 +277,7 @@ gatech:
 	InfiltrateForSupportPower:
 		Proxy: allies.tech.infiltrated
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
 
 garbur:
@@ -307,7 +307,7 @@ garbur:
 	InfiltrateForSupportPower:
 		Proxy: allies.tech.infiltrated
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1, e1
 
 gaorep:
@@ -343,7 +343,7 @@ gaorep:
 	Power:
 		Amount: -200
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
 
 gaspysat:
@@ -381,7 +381,7 @@ gaspysat:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
 gagap:
@@ -469,7 +469,7 @@ gaweat:
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1
 
 gacsph:
@@ -527,7 +527,7 @@ gacsph:
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1
 
 gadept:
@@ -576,5 +576,5 @@ gadept:
 		Prerequisite: repairpad
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e1, e1

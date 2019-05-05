@@ -381,6 +381,7 @@ dtruck:
 	Explodes@demotruck:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
+		DeathTypes: DefaultDeath
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:

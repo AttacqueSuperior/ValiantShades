@@ -23,7 +23,7 @@ nacnst:
 		Prerequisite: structures.soviets
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: engineer, e2, e2, e2, e2, e2, e2
 
 napowr:
@@ -49,7 +49,7 @@ napowr:
 	Power:
 		Amount: 150
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 nahand:
@@ -109,7 +109,7 @@ nahand:
 	RallyPoint:
 		Offset: 3,3
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 narefn:
@@ -129,7 +129,7 @@ narefn:
 		Sequence: idle-drill
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 naweap:
@@ -159,7 +159,7 @@ naweap:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
 
 naradr:
@@ -178,7 +178,7 @@ naradr:
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
 
 nayard:
@@ -253,7 +253,7 @@ naairc:
 		ReferencePoint: Center
 		ZOffset: 256
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 natek:
@@ -280,7 +280,7 @@ natek:
 	InfiltrateForSupportPower:
 		Proxy: soviets.tech.infiltrated
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
 
 nanrct:
@@ -311,10 +311,11 @@ nanrct:
 		Type: CenterPosition
 		Weapon: NukePayload
 		EmptyWeapon: NukePayload
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: 1250
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2
 
 natech:
@@ -328,7 +329,7 @@ natech:
 	InfiltrateForSupportPower:
 		Proxy: soviets.tech.infiltrated
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 
 naindp:
@@ -366,7 +367,7 @@ naindp:
 	Power:
 		Amount: -200
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
 
 naclon:
@@ -447,7 +448,7 @@ naclon:
 	AcceptsDeliveredCash:
 		# RequiresCondition: !build-incomplete
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
 
 napsis:
@@ -486,7 +487,7 @@ napsis:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 
 nairon:
@@ -538,7 +539,7 @@ nairon:
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
 
 namisl:
@@ -604,7 +605,7 @@ namisl:
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
 
 nadept:
@@ -651,5 +652,5 @@ nadept:
 	Power:
 		Amount: -25
 	SpawnSurvivors:
-		#DeathTypes: DefaultDeath
+		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2

@@ -366,6 +366,7 @@ fv:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
 		RequiresCondition: ifv-demo
+		DeathTypes: DefaultDeath
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono

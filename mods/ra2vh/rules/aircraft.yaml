@@ -49,6 +49,7 @@ shad:
 		UnloadVoice: Move
 	SpawnActorOnDeath:
 		Actor: shadhusk
+		DeathType: DefaultDeath
 	HitShape:
 
 shadhusk:
@@ -114,6 +115,7 @@ zep:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:
 		Actor: zephusk
+		DeathType: DefaultDeath
 	HitShape:
 
 zephusk:
@@ -181,6 +183,7 @@ orca:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
+		DeathType: DefaultDeath
 	HitShape:
 	Rearmable:
 		RearmActors: gaairc, amradr
@@ -255,6 +258,7 @@ pdplane:
 		ChuteSound: sparadra.wav
 	SpawnActorOnDeath:
 		Actor: pdplanehusk
+		DeathType: DefaultDeath
 	HitShape:
 
 pdplanehusk:

@@ -223,6 +223,7 @@ terror:
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
+		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
@@ -320,6 +321,7 @@ ivan:
 	Explodes:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
+		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: PlaceIvanBomb
 	#	RequiresCondition: !rank-elite

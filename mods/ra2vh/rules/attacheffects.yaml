@@ -103,9 +103,11 @@
 	Explodes@deathsmokes:
 		Weapon: BuildingDeathSmokeSpawner
 		EmptyWeapon: BuildingDeathSmokeSpawner
+		DeathTypes: DefaultDeath
 	Explodes@flameguy:
 		Weapon: BuildingDeathFlameGuySpawner
 		EmptyWeapon: BuildingDeathFlameGuySpawner
+		DeathTypes: DefaultDeath
 
  ^UnitParticles:
 	SmokeParticleEmitter@1:
