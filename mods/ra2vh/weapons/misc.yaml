@@ -284,13 +284,10 @@ BuildingDeathSmokeSpawner:
 	Projectile: InstantExplode
 	Range: 512
 	Warhead@Validation: TargetDamage
-	Warhead@1: SpawnSmokeParticle
+	Warhead@1: FireFragment
 		ValidTargets: Ground, Air, Water
-		Sequences: inviso
-		Palette: effect
 		Weapon: BuildingDeathSmokeSpawner2
-		Duration: 2
-		Neutral: true
+		Chance: 33
 
 BuildingDeathSmokeSpawner2:
 	ReloadDelay: 1
@@ -303,14 +300,23 @@ BuildingDeathSmokeSpawner2:
 		Sequences: toveenasmoke1
 		Palette: heroicra2exp
 		Duration: 67
-		Gravity: -64,-64,12, 64,64,12
+		Gravity: -32,-32,16, 32,32,32
 		Neutral: true
 
 BuildingDeathFlameGuySpawner:
 	Projectile: InstantExplode
 	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@1: FireFragment
+		ValidTargets: Ground, Air, Water
+		Weapon: BuildingDeathFlameGuySpawner2
+		Chance: 33
+
+BuildingDeathFlameGuySpawner2:
+	Projectile: InstantExplode
+	Range: 512
 	Warhead@spawn: SpawnActor
-		Actors: flameguy, flameguy
+		Actors: flameguy
 		ForceGround: true
 		OwnerType: InternalName
 	Warhead@Validation: TargetDamage

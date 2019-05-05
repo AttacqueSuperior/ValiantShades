@@ -105,6 +105,16 @@
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
 		DeathTypes: DefaultDeath
+	Explodes@flameguyspawn:
+		Type: Footprint
+		Weapon: BuildingDeathFlameGuySpawner
+		EmptyWeapon: BuildingDeathFlameGuySpawner
+		DeathTypes: DefaultDeath
+	Explodes@smokespawn:
+		Type: Footprint
+		Weapon: BuildingDeathSmokeSpawner
+		EmptyWeapon: BuildingDeathSmokeSpawner
+		DeathTypes: DefaultDeath
 	RepairableBuilding:
 		RepairStep: 7000
 	EngineerRepairable:
@@ -144,6 +154,7 @@
 	-GivesBuildableArea:
 	RevealOnFire:
 		Duration: 50
+	-Explodes@flameguyspawn:
 
 ^CivBuilding:
 	Inherits: ^Building
