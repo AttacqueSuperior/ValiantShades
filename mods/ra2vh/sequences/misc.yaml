@@ -86,9 +86,11 @@ particles:
 	largesmoke: tslgrysmk1
 		Length: *
 		Tick: 80
+		BlendMode: Translucent
 	smallsmoke: tssgrysmk1
 		Length: *
 		Tick: 80
+		BlendMode: Translucent
 	fire: fire03
 		Length: *
 	damagespark: dmgspark
