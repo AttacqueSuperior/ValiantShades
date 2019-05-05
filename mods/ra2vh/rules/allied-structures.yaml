@@ -334,9 +334,12 @@ gaorep:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 	ResourcePurifier:
 		Modifier: 25
 		RequiresCondition: !build-incomplete
