@@ -59,7 +59,8 @@ flakt:
 shk:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	run:
+	run: shkfix
+		Start: 0
 		Tick: 120
 	paradrop:
 		Start: 292
