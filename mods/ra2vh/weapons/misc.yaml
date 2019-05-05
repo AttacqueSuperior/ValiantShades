@@ -154,6 +154,7 @@ WeatherStormInit:
  WeatherCloud:
 	ReloadDelay: 120
 	Range: 10c0
+	ValidTargets: Structure
 	Projectile: AthenaProjectile
 		Altitude: 5c768
 	Warhead@1: FireFragment
