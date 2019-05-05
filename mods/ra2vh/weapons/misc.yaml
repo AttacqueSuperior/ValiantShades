@@ -287,7 +287,11 @@ BuildingDeathSmokeSpawner:
 	Warhead@1: FireFragment
 		ValidTargets: Ground, Air, Water
 		Weapon: BuildingDeathSmokeSpawner2
-		Chance: 33
+		Chance: 20
+	Warhead@2: FireFragment
+		ValidTargets: Ground, Air, Water
+		Weapon: BuildingDeathSmoke2Spawner2
+		Chance: 20
 
 BuildingDeathSmokeSpawner2:
 	ReloadDelay: 1
@@ -300,6 +304,20 @@ BuildingDeathSmokeSpawner2:
 		Sequences: toveenasmoke1
 		Palette: heroicra2exp
 		Duration: 67
+		Gravity: -32,-32,16, 32,32,32
+		Neutral: true
+
+BuildingDeathSmoke2Spawner2:
+	ReloadDelay: 1
+	ValidTargets: Ground, Air, Water
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@spawn: SpawnSmokeParticle
+		ValidTargets: Ground, Air, Water
+		Sequences: toveenasmoke2
+		Palette: heroicra2exp
+		Duration: 59
 		Gravity: -32,-32,16, 32,32,32
 		Neutral: true
 
