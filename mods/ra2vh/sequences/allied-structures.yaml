@@ -38,13 +38,20 @@ gapowr:
 		Length: 8
 		ShadowStart: 24
 		Tick: 150
+	idle-glow-turbine: ggpowr_b
+		Length: 8
+		ShadowStart: 16
+		Tick: 150
+	damaged-idle-glow-turbine: ggpowr_b
+		Start: 8
+		Length: 8
+		ShadowStart: 24
+		Tick: 150
 	idle-smokes: ggpowr_s
 		Length: 16
 		Tick: 120
 		BlendMode: Translucent
 		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 			SNOW: GENERIC
 	damaged-idle-smokes: ggpowr_s
 		Length: 16
@@ -52,11 +59,23 @@ gapowr:
 		Tick: 120
 		BlendMode: Translucent
 		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
+			SNOW: GENERIC
+	idle-smokes-turbine: ggpowr_s
+		Length: 16
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	damaged-idle-smokes-turbine: ggpowr_s
+		Length: 16
+		Start: 16
+		Tick: 120
+		TilesetOverrides:
 			SNOW: GENERIC
 	make: gtpowrmk
 	icon: powricon
+
+gapowrup:
+	icon: gpowuico
 
 gapile:
 	Inherits: ^Structure

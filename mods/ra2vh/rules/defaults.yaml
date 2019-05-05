@@ -216,6 +216,16 @@
 	MapEditorData:
 		Categories: Tech building
 
+^BuildingPlug:
+	Interactable:
+	AlwaysVisible:
+	Building:
+		BuildSounds: uplace.wav
+		UndeploySounds: uselbuil.wav
+	KillsSelf:
+		RemoveInstead: true
+	RenderSprites:
+
 ^Flag:
 	Inherits: ^CivBuilding
 	OwnerLostAction:

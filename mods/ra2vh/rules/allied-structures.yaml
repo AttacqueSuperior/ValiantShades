@@ -44,18 +44,68 @@ gapowr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+	Pluggable@1:
+		Offset: 0,0
+		Conditions:
+			powrup: powrup
+		Requirements:
+			powrup: !build-incomplete && !powrup
+	Pluggable@2:
+		Offset: 0,1
+		Conditions:
+			powrup: powrup
+		Requirements:
+			powrup: !build-incomplete && !powrup
+	Pluggable@3:
+		Offset: 1,0
+		Conditions:
+			powrup: powrup
+		Requirements:
+			powrup: !build-incomplete && !powrup
+	Pluggable@4:
+		Offset: 1,1
+		Conditions:
+			powrup: powrup
+		Requirements:
+			powrup: !build-incomplete && !powrup
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powrup
+	WithIdleOverlay@glow-turbine:
+		Sequence: idle-glow-turbine
+		RequiresCondition: !build-incomplete && powrup
 	WithIdleOverlay@smokes:
 		Sequence: idle-smokes
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powrup
+	WithIdleOverlay@smokes-turbine:
+		Sequence: idle-smokes-turbine
+		RequiresCondition: !build-incomplete && powrup
 	Power:
 		Amount: 200
 		RequiresCondition: !power-outage && !build-incomplete
+	Power@turbine:
+		Amount: 100
+		RequiresCondition: powrup && !power-outage && !build-incomplete
+	GivesExperienceMultiplier@turbine:
+		Modifier: 133
+		RequiresCondition: powrup
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
+
+gapowrup:
+	Inherits: ^BuildingPlug
+	Valued:
+		Cost: 250
+	Tooltip:
+		Name: Power Turbine
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 180
+		Prerequisites: gatech, ~structures.allies
+		Description: Provides 100 more power when placed\non top of a Power Plant.
+	Plug:
+		Type: powrup
 
 gapile:
 	Inherits: ^Barracks
