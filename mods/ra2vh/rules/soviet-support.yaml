@@ -7,7 +7,6 @@ nawall:
 
 nalasr:
 	Inherits: ^BasicDefense
-	Inherits@2: ^VoxelLighting
 	Buildable:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
@@ -18,13 +17,11 @@ nalasr:
 		TurnSpeed: 10
 		InitialFacing: 224
 		PreviewFacing: 224
-		Offset: 320,0,0
 	Armament:
 		Weapon: vulcan
 	BodyOrientation:
-		QuantizedFacings: 16
-	RenderVoxels:
-	WithVoxelTurret:
+		QuantizedFacings: 32
+	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 
 naflak:

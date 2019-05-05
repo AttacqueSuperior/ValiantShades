@@ -427,12 +427,19 @@ nalasr:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -20
-	idle: nalasr
-	damaged-idle: nalasr
-	make: nalasrmk
-		Length: 12
-		ShadowStart: 12
-		ZOffset: 0
+	idle: nasnty
+	damaged-idle: nasnty
+	turret: nasntytur
+		Facings: 32
+		ShadowStart: 32
+		TilesetOverrides:
+			SNOW: GENERIC
+	make: nasntymk
+		Length: 21
+		ShadowStart: 21
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	icon: plticon
 
 tesla:
