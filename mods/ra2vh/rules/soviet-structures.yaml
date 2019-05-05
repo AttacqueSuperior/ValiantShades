@@ -342,7 +342,7 @@ naindp:
 		BuildLimit: 1
 		Description: Decreases all vehicles' cost by 25%.
 	Selectable:
-		Bounds: 134, 102, -10, -21
+		Bounds: 152, 164, 0, -50
 	Valued:
 		Cost: 2500
 	Tooltip:
