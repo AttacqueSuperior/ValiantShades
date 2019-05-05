@@ -420,12 +420,28 @@ nasam:
 	Defaults:
 		Offset: 0, -15
 		ZOffset: -512
-	idle: ngsam
-	damaged-idle: ngsam
-	make: ntsammk
-		Length: 8
-		ShadowStart: 8
+	idle: ggsam
+		ShadowStart: 2
+		TilesetOverrides:
+			SNOW: GENERIC
+	damaged-idle: ggsam
+		Start: 1
+		ShadowStart: 3
+		TilesetOverrides:
+			SNOW: GENERIC
+	turret: ggsam_a
+		Facings: 32
+		ShadowStart: 32
+		TilesetOverrides:
+			SNOW: GENERIC
+	make: ggsammk
+		Length: 41
+		ShadowStart: 41
 		ZOffset: 0
+		TilesetOverrides:
+			SNOW: GENERIC
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	icon: samicon
 
 gtgcan:

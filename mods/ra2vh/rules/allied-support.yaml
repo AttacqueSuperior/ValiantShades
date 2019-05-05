@@ -25,7 +25,6 @@ gapill:
 
 nasam:
 	Inherits: ^AADefense
-	Inherits@2: ^VoxelLighting
 	Buildable:
 		Prerequisites: barracks, ~structures.allies
 	Tooltip:
@@ -33,15 +32,13 @@ nasam:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		Offset: 550,0,0
+		Offset: 0,0,0
 	Armament:
 		Weapon: RedEye2
 		LocalOffset: 500,0,900
 	BodyOrientation:
-		QuantizedFacings: 16
-	RenderVoxels:
-		NormalsPalette: ts-normals
-	WithVoxelTurret:
+		QuantizedFacings: 32
+	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 
 atesla:

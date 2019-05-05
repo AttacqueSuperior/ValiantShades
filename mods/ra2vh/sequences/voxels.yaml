@@ -152,9 +152,6 @@ ptruck:
 mgtk:
 	idle: rtnk
 
-nasam:
-	turret: sam
-
 shad:
 	idle:
 
