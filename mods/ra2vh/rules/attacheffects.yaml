@@ -56,7 +56,7 @@
 	SmokeParticleEmitter@1:
 		RequiresCondition: dmg_heavy
 		Sequences: smallsmoke
-		Palette: effect
+		Palette: tsanim
 		SpawnFrequency: 3, 10
 		Gravity: -32,-32,48, 32,32,48
 		Offset: -384,-384,0, 384,384,0
@@ -88,7 +88,7 @@
 	SmokeParticleEmitter@5:
 		RequiresCondition: dmg_crit
 		Sequences: largesmoke
-		Palette: effect
+		Palette: tsanim
 		SpawnFrequency: 3, 10
 		Gravity: -48,-48,72, 48,48,72
 		Offset: -384,-384,0, 384,384,0
@@ -113,7 +113,7 @@
 	SmokeParticleEmitter@1:
 		RequiresCondition: enable_unitsmoke
 		Sequences: smallsmoke
-		Palette: effect
+		Palette: tsanim
 		SpawnFrequency: 3, 10
 		Gravity: -32,-32,48, 32,32,48
 		Offset: 0,0,192

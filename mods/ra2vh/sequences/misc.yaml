@@ -83,10 +83,10 @@ crate:
 particles:
 	# For synced-with-art particle expiration
 	# (framecount*Tick/40) -1 for rounding errors
-	largesmoke: lgrysmk1
+	largesmoke: tslgrysmk1
 		Length: *
 		Tick: 80
-	smallsmoke: sgrysmk1
+	smallsmoke: tssgrysmk1
 		Length: *
 		Tick: 80
 	fire: fire03
@@ -105,6 +105,12 @@ particles:
 		Length: 15
 		Tick: 160
 		BlendMode: Translucent
+	ra2-largesmoke: lgrysmk1
+		Length: *
+		Tick: 80
+	ra2-smallsmoke: sgrysmk1
+		Length: *
+		Tick: 80
 
 debris:
 	Defaults:
