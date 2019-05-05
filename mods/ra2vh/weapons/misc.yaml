@@ -174,7 +174,7 @@ WeatherStormInit:
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
 		Falloff: 100, 66, 33, 0
-		Damage: 120000
+		Damage: 180000
 		DamageTypes: TriggerProne, ElectroDeath, DefaultDeath
 		Versus:
 			Wood: 85
