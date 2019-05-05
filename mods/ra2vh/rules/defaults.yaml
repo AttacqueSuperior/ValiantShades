@@ -421,6 +421,9 @@
 		Categories: Infantry
 	RevealOnFire:
 		Duration: 50
+	TurnOnIdle:
+		MinDelay: 50
+		MaxDelay: 50
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
