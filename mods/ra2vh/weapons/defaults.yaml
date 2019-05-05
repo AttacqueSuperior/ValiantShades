@@ -16,7 +16,7 @@
 			Concrete: 40
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_brnl
 		ExplosionPalette: rookiera2exp
@@ -45,7 +45,7 @@
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
-		DamageTypes: ExplosionDeath
+		DamageTypes: ExplosionDeath, DefaultDeath
 		Versus:
 			Flak: 80
 
@@ -58,7 +58,7 @@
 		LaunchAngle: 62
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
 		ExplosionPalette: rookiera2exp
@@ -135,7 +135,7 @@
 			Concrete: 0
 			Drone: 100
 			Rocket: 100
-		DamageTypes: TriggerProne, ExplosionDeath
+		DamageTypes: TriggerProne, ExplosionDeath, DefaultDeath
 
 ^MG:
 	ReloadDelay: 20
@@ -158,7 +158,7 @@
 			Concrete: 25
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
 		ExplosionPalette: rookiera2exp
@@ -185,7 +185,7 @@
 			Concrete: 50
 			Drone: 200
 			Rocket: 100
-		DamageTypes: TriggerProne, TeslaDeath
+		DamageTypes: TriggerProne, TeslaDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tesla_impact
 		ExplosionPalette: rookiera2exp

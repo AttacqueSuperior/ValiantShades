@@ -19,7 +19,7 @@ DogJaw:
 			Concrete: 0
 			Drone: 0
 			Rocket: 0
-		DamageTypes: BulletDeath
+		DamageTypes: BulletDeath, DefaultDeath
 
 DroneJump:
 	Inherits: DogJaw
@@ -34,7 +34,7 @@ AlligatorBite:
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 30000
-		DamageTypes: BulletDeath
+		DamageTypes: BulletDeath, DefaultDeath
 
 BearBite:
 	Inherits: AlligatorBite

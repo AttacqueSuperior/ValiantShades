@@ -41,7 +41,7 @@ para:
 			Light: 60
 			Medium: 40
 			Heavy: 40
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, DefaultDeath
 
 paraE:
 	Inherits: para
@@ -67,7 +67,7 @@ MP5:
 			Concrete: 0
 			Drone: 0
 			Rocket: 5
-		DamageTypes: BulletDeath
+		DamageTypes: BulletDeath, DefaultDeath
 
 MP5E:
 	Inherits: MP5

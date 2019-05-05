@@ -25,7 +25,7 @@ BlimpBomb:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath
+		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: kirovtesla
 		ExplosionPalette: rookiera2exp
@@ -81,7 +81,7 @@ PsiWave:
 		Falloff: 100, 100
 		Damage: 250000
 		ValidTargets: Infantry
-		DamageTypes: PsychicDeath
+		DamageTypes: PsychicDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: psi_wave
 
@@ -175,7 +175,7 @@ WeatherStormInit:
 		Spread: 256
 		Falloff: 100, 66, 33, 0
 		Damage: 120000
-		DamageTypes: TriggerProne, ElectroDeath
+		DamageTypes: TriggerProne, ElectroDeath, DefaultDeath
 		Versus:
 			Wood: 85
 			Steel: 75

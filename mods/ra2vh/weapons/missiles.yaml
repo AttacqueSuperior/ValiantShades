@@ -29,7 +29,7 @@ MammothTusk:
 			Concrete: 20
 			Drone: 80
 			Rocket: 100
-		DamageTypes: ExplosionDeath
+		DamageTypes: ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
 
@@ -56,7 +56,7 @@ Maverick:
 		ValidTargets: Ground, Water, Air
 		Versus:
 			Concrete: 75
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: gexp14a.wav
@@ -130,7 +130,7 @@ HoverMissile:
 			Concrete: 20
 			Drone: 80
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_grey_explosion
 		ImpactSounds: gexpifva.wav
@@ -181,7 +181,7 @@ SubTorpedo:
 			Concrete: 60
 			Drone: 25
 			Rocket: 100
-		DamageTypes: ExplosionDeath
+		DamageTypes: ExplosionDeath, DefaultDeath
 	Warhead@3EffWater: CreateEffect
 		Explosions: large_watersplash
 		ExplosionPalette: rookiera2exp
@@ -224,7 +224,7 @@ MissileLauncher:
 			Concrete: 10
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_grey_explosion
 		ImpactSounds: gexpifva.wav

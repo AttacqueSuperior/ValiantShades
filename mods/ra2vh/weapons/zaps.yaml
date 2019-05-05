@@ -103,7 +103,7 @@ SonicZap:
 		Versus:
 			Heavy: 80
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 		ValidTargets: Water, Underwater
 	Warhead@2Dam: SpreadDamage
 		Range: 0, 32
@@ -114,7 +114,7 @@ SonicZap:
 		Versus:
 			Heavy: 80
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 		ValidTargets: Water, Underwater
 
 PrismShot:
@@ -141,7 +141,7 @@ PrismShot:
 			Concrete: 50
 			Drone: 200
 			Rocket: 100
-		DamageTypes: ElectroDeath
+		DamageTypes: ElectroDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: prismtowerhit
 		ExplosionPalette: rookietsexp
@@ -175,7 +175,7 @@ Comet:
 			Concrete: 200
 			Drone: 200
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
+		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: prismhit
 		ExplosionPalette: rookietsexp
@@ -239,7 +239,7 @@ RadBeamWeapon:
 			Concrete: 0
 			Drone: 0 # This is actually 100, but drones are immune to Radiation
 			Rocket: 100
-		DamageTypes: RadiationDeath
+		DamageTypes: RadiationDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: desolator_hit
 		ExplosionPalette: rookietsexp

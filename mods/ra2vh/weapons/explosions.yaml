@@ -59,7 +59,7 @@ KirovExplode:
 		Spread: 426
 		Damage: 75000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 
 PlaneExplode:
 	Inherits: KirovExplode
@@ -104,7 +104,7 @@ IvanBomber:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
-		DamageTypes: PsychicDeath, Prone100Percent
+		DamageTypes: PsychicDeath, Prone100Percent, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: ivan_explosion
 		ExplosionPalette: rookiera2exp
@@ -232,7 +232,7 @@ TerrorBomb:
 			Drone: 100
 			Rocket: 100
 		AffectsParent: true
-		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: terrorist_explosion
 		ValidTargets: Ground, Water, Air
@@ -266,7 +266,7 @@ NukePayload:
 			Drone: 100
 			Rocket: 100
 		AffectsParent: true
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 	Warhead@2Res_impact: DestroyResource
 		Size: 10
 	Warhead@3Eff_impact: CreateEffect
@@ -340,7 +340,7 @@ demobomb:
 			Concrete: 10
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 	Warhead@5Res_areanuke1: DestroyResource
 		Size: 2
 		Delay: 5
@@ -365,7 +365,7 @@ demobomb:
 			Concrete: 10
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 	Warhead@8Res_areanuke2: DestroyResource
 		Size: 3
 		Delay: 10
@@ -387,7 +387,7 @@ demobomb:
 			Concrete: 10
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 	Warhead@10Res_areanuke3: DestroyResource
 		Size: 4
 		Delay: 15

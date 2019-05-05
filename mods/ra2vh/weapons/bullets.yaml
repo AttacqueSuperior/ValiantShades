@@ -47,7 +47,7 @@ sabot:
 			Concrete: 2
 			Drone: 2
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, DefaultDeath
 
 sabotE:
 	Inherits: sabot
@@ -78,7 +78,7 @@ MirageGun:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
-		DamageTypes: FlameDeath
+		DamageTypes: FlameDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: mirage_tank_hit
 		ExplosionPalette: rookiera2exp
