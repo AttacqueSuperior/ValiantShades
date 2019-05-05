@@ -491,7 +491,6 @@ mgtk:
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
-		AllowMovement: false
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
