@@ -346,7 +346,11 @@ UnitDeathSmokeSpawner:
 	Warhead@1: FireFragment
 		ValidTargets: Ground, Air, Water
 		Weapon: UnitDeathSmokeSpawner2
-		Chance: 20
+		Chance: 33
+	Warhead@2: FireFragment
+		ValidTargets: Ground, Air, Water
+		Weapon: UnitDeathSmoke2Spawner2
+		Chance: 66
 
 UnitDeathSmokeSpawner2:
 	ReloadDelay: 1
@@ -357,7 +361,21 @@ UnitDeathSmokeSpawner2:
 	Warhead@spawn: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: unitdeathsmoke1
-		Palette: heroicra2exp
-		Duration: 59
+		Palette: rookiera2exp
+		Duration: 33
+		Gravity: -32,-32,16, 32,32,32
+		Neutral: true
+
+UnitDeathSmoke2Spawner2:
+	ReloadDelay: 1
+	ValidTargets: Ground, Air, Water
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@spawn: SpawnSmokeParticle
+		ValidTargets: Ground, Air, Water
+		Sequences: unitdeathsmoke2
+		Palette: rookiera2exp
+		Duration: 33
 		Gravity: -32,-32,16, 32,32,32
 		Neutral: true
