@@ -338,3 +338,26 @@ BuildingDeathFlameGuySpawner2:
 		ForceGround: true
 		OwnerType: InternalName
 	Warhead@Validation: TargetDamage
+
+UnitDeathSmokeSpawner:
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@1: FireFragment
+		ValidTargets: Ground, Air, Water
+		Weapon: UnitDeathSmokeSpawner2
+		Chance: 20
+
+UnitDeathSmokeSpawner2:
+	ReloadDelay: 1
+	ValidTargets: Ground, Air, Water
+	Projectile: InstantExplode
+	Range: 512
+	Warhead@Validation: TargetDamage
+	Warhead@spawn: SpawnSmokeParticle
+		ValidTargets: Ground, Air, Water
+		Sequences: unitdeathsmoke1
+		Palette: heroicra2exp
+		Duration: 59
+		Gravity: -32,-32,16, 32,32,32
+		Neutral: true

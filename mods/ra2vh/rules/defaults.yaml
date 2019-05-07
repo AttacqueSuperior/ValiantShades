@@ -650,6 +650,10 @@
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 		DeathTypes: DefaultDeath
+	Explodes@smokespawn:
+		Weapon: UnitDeathSmokeSpawner
+		EmptyWeapon: UnitDeathSmokeSpawner
+		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
@@ -790,6 +794,10 @@
 		SpawnFrequency: 1, 3
 		Gravity: -48,-48,72, 48,48,72
 		Duration: 39
+	Explodes@smokespawn:
+		Weapon: UnitDeathSmokeSpawner
+		EmptyWeapon: UnitDeathSmokeSpawner
+		DeathTypes: DefaultDeath
 
 ^PlaneHusk:
 	Inherits: ^Husk
@@ -860,6 +868,10 @@
 	Explodes:
 		Weapon: ShipExplode
 		EmptyWeapon: ShipExplode
+		DeathTypes: DefaultDeath
+	Explodes@smokespawn:
+		Weapon: UnitDeathSmokeSpawner
+		EmptyWeapon: UnitDeathSmokeSpawner
 		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 	Voiced:

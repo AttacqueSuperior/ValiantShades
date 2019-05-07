@@ -113,6 +113,11 @@ particles:
 	ra2-smallsmoke: sgrysmk1
 		Length: *
 		Tick: 80
+	unitdeathsmoke1: v3trail
+		Start: 5
+		Length: 15
+		Tick: 160
+		BlendMode: Translucent
 
 debris:
 	Defaults:
