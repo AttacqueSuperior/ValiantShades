@@ -8,13 +8,14 @@ RedEye2:
 MammothTusk:
 	Inherits: ^Missile
 	ReloadDelay: 80
-	Range: 8c0
+	Range: 5c768
 	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
 	Burst: 2
+	ValidTargets: Ground, Water
 	Projectile: Missile
 		Inaccuracy: 128
 		ContrailLength: 8
-		RangeLimit: 16c0
+		RangeLimit: 11c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
 		Damage: 80000
@@ -35,6 +36,20 @@ MammothTusk:
 
 MammothTuskE:
 	Inherits: MammothTusk
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
+MammothTuskAA:
+	Inherits: MammothTusk
+	ValidTargets: Air
+	Range: 8c0
+	Projectile: Missile
+		RangeLimit: 16c0
+
+MammothTuskAAE:
+	Inherits: MammothTuskAA
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect

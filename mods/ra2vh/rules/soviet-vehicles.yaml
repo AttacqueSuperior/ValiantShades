@@ -286,9 +286,37 @@ apoc:
 		Weapon: 120mmxE
 		LocalOffset: 640,100,512, 640,-100,512
 		RequiresCondition: rank-elite
-	Armament@antiair:
+	Armament@missiles:
 		Weapon: MammothTusk
 		LocalOffset: 80,200,768, 80,-200,768
+		PauseOnCondition: !ammo
+		RequiresCondition: !rank-elite
+		Name: secondary
+	Armament@missiles-elite:
+		Weapon: MammothTuskE
+		LocalOffset: 80,200,768, 80,-200,768
+		PauseOnCondition: !ammo
+		RequiresCondition: rank-elite
+		Name: secondary
+	Armament@antiair:
+		Weapon: MammothTuskAA
+		LocalOffset: 80,200,768, 80,-200,768
+		PauseOnCondition: !ammo
+		RequiresCondition: !rank-elite
+		Name: secondary
+	Armament@antiair-elite:
+		Weapon: MammothTuskAAE
+		LocalOffset: 80,200,768, 80,-200,768
+		PauseOnCondition: !ammo
+		RequiresCondition: rank-elite
+		Name: secondary
+	AmmoPool:
+		Ammo: 2
+		PipCount: 0
+		AmmoCondition: ammo
+	ReloadAmmoPool:
+		Delay: 20
+		Count: 2
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
