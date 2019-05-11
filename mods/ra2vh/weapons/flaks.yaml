@@ -39,6 +39,13 @@ FlakTrackGun:
 	Warhead@1Dam: SpreadDamage
 		Damage: 25000
 
+FlakTrackGunE:
+	Inherits: FlakTrackAAGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 FlakTrackAAGun:
 	Inherits: ^AAFlak
 	Range: 10c0

@@ -186,8 +186,16 @@ htk:
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: FlakTrackGunE
+		RequiresCondition: rank-elite
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
+		RequiresCondition: !rank-elite
+	Armament@secondary-elite:
+		Weapon: FlakTrackAAGunE
+		RequiresCondition: rank-elite
 	Turreted:
 		TurnSpeed: 15
 		Offset: -280,-3,0
