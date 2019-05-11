@@ -96,7 +96,7 @@ DamageSparkSpawner:
 		Amount: 6
 		AffectsParent: true
 
- ^Spark:
+^Spark:
 	Range: 1c512
 	MinRange: 640
 	ReloadDelay: 1
@@ -107,7 +107,7 @@ DamageSparkSpawner:
 		Sequences: damagespark
 	Warhead@1Dam: SpreadDamage
 
- DamageSpark:
+DamageSpark:
 	Inherits: ^Spark
 	Projectile: BulletAS
 		Palette: effect
@@ -136,14 +136,14 @@ WeatherStormInit:
 		ImpactSounds: sweaintr.wav
 		ValidTargets: Ground, Air, Water
 
- WeatherCloudDirectInit:
+WeatherCloudDirectInit:
 	Projectile: InstantHit
 	ReloadDelay: 120
 	Warhead@barrage3: FireFragment
 		Weapon: WeatherCloud
 		ValidTargets: Air, Ground, Water
 
- WeatherCloudRandomInit:
+WeatherCloudRandomInit:
 	Projectile: InstantHit
 	ReloadDelay: 8
 	Warhead@barrage3: FireShrapnel
@@ -152,7 +152,7 @@ WeatherStormInit:
 		AimChance: 75
 		ValidTargets: Air, Ground, Water
 
- WeatherCloud:
+WeatherCloud:
 	ReloadDelay: 120
 	Range: 10c0
 	ValidTargets: Structure
@@ -169,7 +169,7 @@ WeatherStormInit:
 		ExplosionPalette: player
 		ValidTargets: Ground, Air, Water
 
- WeatherBolt:
+WeatherBolt:
 	Projectile: InstantHit
 	Range: 512
 	Warhead@1Dam: SpreadDamage
@@ -213,26 +213,26 @@ WeatherStormInit:
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 
- SmallDebris:
+SmallDebris:
 	Inherits: ^Debris
 	Projectile: BulletAS
 		Sequences: small1, small2, small3, small4, small5, small6, small7, small8, small9
 
- LargeDebris:
+LargeDebris:
 	Inherits: ^Debris
 	Projectile: BulletAS
 		Sequences: large1, large2, large3, large4, large5, large6, large7, large8, large9, large10
 	Warhead@2Eff: CreateEffect
 		Explosions: largedebrishit
 
- FlyingBody:
+FlyingBody:
 	Inherits: ^Debris
 	Projectile: BulletAS
 		Sequences: flyingbody
 	Warhead@2Eff: CreateEffect
 		Explosions: largedebrishit
 
- RockDebris:
+RockDebris:
 	Inherits: ^Debris
 	Projectile: BulletAS
 		Sequences: rock1, rock2, rock3
