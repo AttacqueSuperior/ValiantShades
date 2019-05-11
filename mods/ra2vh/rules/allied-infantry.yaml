@@ -65,17 +65,18 @@ dog:
 	Health:
 		HP: 100000
 	Mobile:
-		Speed: 120
+		Speed: 140
 	Passenger:
 		PipType: Yellow
 	RevealsShroud:
 		Range: 5c0
 	Armament:
 		Weapon: DogJaw
-	AttackLeapAS:
+	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
 		InitialStance: AttackAnything
+		ScanRadius: 5
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry
 	RenderSprites:
@@ -620,6 +621,7 @@ ccomand:
 	-WithDeathAnimation@Water:
 	-Targetable@WaterBorne:
 	TakeCover:
+		-RequiresCondition:
 		DamageModifiers:
 			Prone50Percent: 50
 			Prone70Percent: 70
