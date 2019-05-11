@@ -96,6 +96,7 @@ Rules:
 	ra2vh|rules/allied-support.yaml
 	ra2vh|rules/soviet-support.yaml
 	ra2vh|rules/tech-structures.yaml
+	ra2vh|rules/shared-vehicles.yaml
 	ra2vh|rules/allied-vehicles.yaml
 	ra2vh|rules/soviet-vehicles.yaml
 	ra2vh|rules/civilian-vehicles.yaml

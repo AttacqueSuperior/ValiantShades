@@ -144,15 +144,16 @@ MirageGunE:
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
 
-105mm:
+^StandardTankShell:
 	Inherits: ^LargeBullet
 	ReloadDelay: 60
-	Range: 5c0
-	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Range: 5c768
 	Projectile: BulletAS
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 65000
+		Damage: 100000
+		Spread: 768
+		Falloff: 100, 50, 0
 		Versus:
 			None: 25
 			Flak: 25
@@ -165,6 +166,10 @@ MirageGunE:
 			Concrete: 60
 			Drone: 60
 			Rocket: 100
+
+105mm:
+	Inherits: ^StandardTankShell
+	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 
 105mmE:
 	Inherits: 105mm
@@ -174,26 +179,8 @@ MirageGunE:
 		ExplosionPalette: heroicra2exp
 
 120mm:
-	Inherits: ^LargeBullet
-	ReloadDelay: 65
-	Range: 5c768
+	Inherits: ^StandardTankShell
 	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
-	Projectile: BulletAS
-		Speed: 682
-	Warhead@1Dam: SpreadDamage
-		Damage: 90000
-		Versus:
-			None: 25
-			Flak: 25
-			Plate: 25
-			Light: 75
-			Medium: 100
-			Heavy: 100
-			Wood: 65
-			Steel: 45
-			Concrete: 60
-			Drone: 60
-			Rocket: 100
 
 120mmE:
 	Inherits: 120mm

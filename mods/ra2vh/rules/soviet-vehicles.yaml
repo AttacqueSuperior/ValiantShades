@@ -269,54 +269,26 @@ slost:
 		Modifier: 83
 
 htnk:
-	Inherits: ^Vehicle
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Inherits@MC: ^MindControllable
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
-	Valued:
-		Cost: 900
+	Inherits: ^StandardTank
 	Tooltip:
 		Name: Rhino Heavy Tank
 	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~naweap
+		Prerequisites: ~naweap, naradr
 		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
-	Mobile:
-		Speed: 90
-		TurnSpeed: 5
-		Locomotor: heavytracked
-	Health:
-		HP: 400000
-	Armor:
-		Type: Heavy
-	RevealsShroud:
-		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
 		Offset: 0,0,-120
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,0,384
-		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmE
 		LocalOffset: 640,0,384
-		RequiresCondition: rank-elite
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
-	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
-	ProducibleWithLevel:
-		Prerequisites: warfactory.infiltrated
-	HitShape:
 
 apoc:
 	Inherits: ^Vehicle

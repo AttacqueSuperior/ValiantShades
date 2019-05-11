@@ -1,0 +1,34 @@
+^StandardTank:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Valued:
+		Cost: 950
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 75
+	Mobile:
+		Speed: 90
+		TurnSpeed: 5
+		Locomotor: heavytracked
+	Health:
+		HP: 500000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		RequiresCondition: rank-elite
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	RenderSprites:
+	RenderVoxels:
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
