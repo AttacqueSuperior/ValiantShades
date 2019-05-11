@@ -145,6 +145,7 @@ e1:
 		Voice: Attack
 		RequiresCondition: undeployed
 	AttackTurreted@deployed:
+		Turrets: deploy
 		Armaments: deployed, deployed-elite
 		Voice: Attack
 		RequiresCondition: deployed
@@ -155,10 +156,12 @@ e1:
 		Weapon: M60E
 		RequiresCondition: !deployed && rank-elite
 	Armament@deployed:
+		Turret: deploy
 		Name: deployed
 		Weapon: para
 		RequiresCondition: deployed && !rank-elite
 	Armament@elite-deployed:
+		Turret: deploy
 		Name: deployed-elite
 		Weapon: paraE
 		RequiresCondition: deployed && rank-elite
@@ -185,21 +188,26 @@ e1:
 	TakeCover:
 		RequiresCondition: undeployed
 	Turreted:
+		Turret: deploy
 		RealignDelay: -1
 		TurnSpeed: 50
 		InitialFacing: 128
 	WithSpriteTurret:
+		Turret: deploy
 		Sequence: deployed
 		RequiresCondition: !undeployed && editorhack
 	WithTurretDeployAnimation:
+		Turret: deploy
 	WithTurretAttackAnimation:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-elite
 	WithTurretAttackAnimation@elite:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-elite
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: !undeployed && rank-elite
 	RejectsOrders@deployment:
 		Reject: Move, EnterTransport, EnterTransports
 		RequiresCondition: deployed
@@ -253,6 +261,7 @@ ggi:
 		Voice: Attack
 		RequiresCondition: undeployed
 	AttackTurreted@deployed:
+		Turrets: deploy
 		Armaments: deployed, deployed-elite, deployed-secondary, deployed-secondary-elite
 		Voice: Attack
 		RequiresCondition: deployed
@@ -282,24 +291,28 @@ ggi:
 		RequiresCondition: !deployed && rank-elite
 		LocalOffset: 256,0,1024
 	Armament@deployed:
+		Turret: deploy
 		Name: deployed
 		Weapon: MissileLauncher
 		PauseOnCondition: !ammo
 		RequiresCondition: deployed && !rank-elite
 		LocalOffset: 256,0,512
 	Armament@elite-deployed:
+		Turret: deploy
 		Name: deployed-elite
 		Weapon: MissileLauncherE
 		PauseOnCondition: !ammo
 		RequiresCondition: deployed && rank-elite
 		LocalOffset: 256,0,512
 	Armament@deployed-secondary:
+		Turret: deploy
 		Name: deployed-secondary
 		Weapon: MissileLauncherAA
 		PauseOnCondition: !ammo
 		RequiresCondition: deployed && !rank-elite
 		LocalOffset: 256,0,512
 	Armament@elite-deployed-secondary:
+		Turret: deploy
 		Name: deployed-secondary-elite
 		Weapon: MissileLauncherAAE
 		PauseOnCondition: !ammo
@@ -346,29 +359,36 @@ ggi:
 	TakeCover:
 		RequiresCondition: undeployed
 	Turreted:
+		Turret: deploy
 		RealignDelay: -1
 		TurnSpeed: 50
 		InitialFacing: 92
 	WithSpriteTurret:
+		Turret: deploy
 		Sequence: deployed
-		RequiresCondition: deployed && editorhack
+		RequiresCondition: !undeployed && editorhack
 	WithTurretDeployAnimation:
+		Turret: deploy
 	WithTurretAttackAnimation:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-elite
 	WithTurretAttackAnimation@elite:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-elite
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: !undeployed && rank-elite
 	WithTurretAttackAnimation@secondary:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-secondary
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-elite
 	WithTurretAttackAnimation@secondary-elite:
+		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-secondary-elite
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: !undeployed && rank-elite
 	RejectsOrders@deployment:
 		Reject: Move, EnterTransport, EnterTransports
 		RequiresCondition: deployed
