@@ -131,6 +131,10 @@ narefn:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
+	SmokeParticleEmitter@refinerysmoke1:
+		Offset: -320,-928,1488
+	SmokeParticleEmitter@refinerysmoke2:
+		Offset: 320,928,1488
 
 naweap:
 	Inherits: ^WarFactory
