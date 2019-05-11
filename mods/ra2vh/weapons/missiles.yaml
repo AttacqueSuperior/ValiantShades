@@ -218,11 +218,10 @@ SubTorpedoE:
 MissileLauncher:
 	Inherits: ^Missile
 	ReloadDelay: 40
-	Range: 6c0
+	Range: 5c0
 	Report: iggiat2a.wav, iggiat2b.wav
-	ValidTargets: Ground, Water, Air
 	Projectile: Missile
-		RangeLimit: 12c0
+		RangeLimit: 10c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 40000
@@ -246,8 +245,23 @@ MissileLauncher:
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
+MissileLauncherAA:
+	Inherits: MissileLauncher
+	Range: 7c0
+	Report: iggiat2a.wav, iggiat2b.wav
+	ValidTargets: Air
+	Projectile: Missile
+		RangeLimit: 14c0
+
 MissileLauncherE:
 	Inherits: MissileLauncher
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
+MissileLauncherAAE:
+	Inherits: MissileLauncherAA
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect

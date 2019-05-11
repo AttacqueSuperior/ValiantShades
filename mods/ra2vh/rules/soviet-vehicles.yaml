@@ -378,6 +378,7 @@ apoc:
 		RequiresCondition: rank-elite
 		Name: secondary
 	AmmoPool:
+		Armaments: secondary
 		Ammo: 2
 		PipCount: 0
 		AmmoCondition: ammo
