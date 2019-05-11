@@ -556,3 +556,6 @@ flameguy:
 		Facings: 1
 		Length: 104
 
+twinkle:
+	idle: twnk1
+		Length: *
