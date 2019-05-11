@@ -80,7 +80,7 @@ gtgcan:
 		Footprint: xx xx
 		Dimensions: 2, 2
 	Health:
-		HP: 900000
+		HP: 600000
 	Armor:
 		Type: Steel
 	RevealsShroud:

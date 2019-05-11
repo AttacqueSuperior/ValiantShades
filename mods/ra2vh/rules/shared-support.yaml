@@ -15,7 +15,7 @@
 	Valued:
 		Cost: 500
 	Health:
-		HP: 400000
+		HP: 266000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -47,7 +47,7 @@
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 900000
+		HP: 600000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -80,7 +80,7 @@
 	Valued:
 		Cost: 1500
 	Health:
-		HP: 600000
+		HP: 400000
 	Armor:
 		Type: Steel
 	RevealsShroud:
