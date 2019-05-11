@@ -30,17 +30,6 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-	ClassicParallelProductionQueue@Vehicle:
-		Type: Vehicle
-		LowPowerModifier: 200
-		SpeedUp: true
-		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
-		ReadyAudio: UnitReady
-		QueuedAudio: Building
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		BlockedAudio: NoBuild
-		LimitedAudio: NoBuild
 	ClassicParallelProductionQueue@Infantry:
 		Type: Infantry
 		LowPowerModifier: 200
@@ -48,6 +37,17 @@ Player:
 		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
 		ReadyAudio: UnitReady
 		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		BlockedAudio: NoBuild
+		LimitedAudio: NoBuild
+	ClassicParallelProductionQueue@Vehicle:
+		Type: Vehicle
+		LowPowerModifier: 200
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 75, 56, 32, 10, 1
+		ReadyAudio: UnitReady
+		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		BlockedAudio: NoBuild
