@@ -209,6 +209,65 @@ htk:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 
+slost:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Slostin
+	Selectable:
+		Bounds: 50, 40, 0, -6
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap
+		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Mobile:
+		Speed: 140
+		TurnSpeed: 5
+		Locomotor: wheeled
+	Health:
+		HP: 210000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Armament@primary:
+		Weapon: GattlingGun
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: GattlingGunE
+		RequiresCondition: rank-elite
+	Turreted:
+		TurnSpeed: 15
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelTurret:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: GattlingTankVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	GrantConditionOnAttack:
+		Condition: gattling
+		ArmamentNames: primary
+		RequiredShotsPerInstance: 4
+		MaximumInstances: 2
+		RevokeDelay: 100
+	ReloadDelayMultiplier@gattling:
+		RequiresCondition: gattling
+		Modifier: 83
+	ReloadDelayMultiplier@gattling-stage2:
+		RequiresCondition: gattling > 1
+		Modifier: 83
+
 htnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

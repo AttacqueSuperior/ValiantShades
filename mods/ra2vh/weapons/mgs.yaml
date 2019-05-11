@@ -158,3 +158,31 @@ BlackHawkCannonE:
 	Inherits: BlackHawkCannon
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+GattlingGun:
+	Inherits: ^MG
+	ReloadDelay: 16
+	Range: 6c0
+	BurstDelays: 2
+	StartBurstReport: gun13.wav
+	Report: #crashes vgatlo2a.wav, vgatlo2b.wav, vgatlo2c.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25000
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 30
+			Heavy: 10
+			Wood: 10
+			Steel: 5
+			Concrete: 3
+			Drone: 200
+			Rocket: 50
+		DamageTypes: BulletDeath, DefaultDeath
+
+GattlingGunE:
+	Inherits: GattlingGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

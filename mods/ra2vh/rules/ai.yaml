@@ -180,8 +180,9 @@ Player:
 			deso: 1
 			yuri: 1
 			harv: 5
-			htnk: 50
+			slost: 20
 			htk: 20
+			htnk: 20
 			apoc: 10
 			ttnk: 15
 			zep: 1

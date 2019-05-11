@@ -158,6 +158,10 @@ shad:
 smcv:
 	idle:
 
+slost:
+	idle: ytnk
+	turret: ytnktur
+
 sref:
 	idle:
 	turret: sreftur

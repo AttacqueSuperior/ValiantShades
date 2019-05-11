@@ -195,6 +195,11 @@ smcv:
 	Inherits@MC: ^MindControllable
 	icon: smcvicon
 
+slost:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: ytnkicon
+
 sref:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

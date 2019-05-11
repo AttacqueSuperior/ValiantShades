@@ -79,6 +79,13 @@ WarMinerVoice:
 		Attack: vwarata, vwaratb, vwaratc, vwaratd, vwarate
 		Harvest: vwarhaa, vwarhab, vwarhac, vwarhad
 
+GattlingTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgatsea, vgatseb, vgatsec, vgatsed, vgatsee
+		Move: vgatmoa, vgatmob, vgatmoc, vgatmod, vgatmoe
+		Attack: vgatata, vgatatb, vgatatc, vgatatd, vgatate, vgatatf
+
 FlakTrackVoice:
 	DefaultVariant: .wav
 	Voices:
