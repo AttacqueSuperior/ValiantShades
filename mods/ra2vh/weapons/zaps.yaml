@@ -30,6 +30,7 @@ AssaultBolt:
 		BrightSequence: bright-charge
 		DimSequence: dim-charge
 		DimZaps: 1
+		Palette: ra
 	Warhead@charge: GrantExternalCondition
 		Range: 42
 		Duration: 75
