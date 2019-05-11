@@ -10,7 +10,8 @@ BlimpBomb:
 		Palette: player
 		IsPlayerPalette: true
 	Warhead@1Dam: SpreadDamage
-		Spread: 400
+		Spread: 960
+		Falloff: 100, 66, 33, 0
 		Damage: 250000
 		ValidTargets: Building, Ground, Water
 		Versus:
