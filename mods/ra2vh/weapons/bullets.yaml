@@ -110,6 +110,40 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+90mm:
+	Inherits: ^LargeBullet
+	ReloadDelay: 50
+	Range: 5c768
+	Report: vlasatta.wav
+	Projectile: BulletAS
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 36000
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: small_clsn
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+
+90mmE:
+	Inherits: 90mm
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 105mm:
 	Inherits: ^LargeBullet
 	ReloadDelay: 60

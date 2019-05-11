@@ -165,7 +165,8 @@ Player:
 			tany: 1
 			cmin: 5
 			hmmv: 25
-			mtnk: 50
+			ltnk: 20
+			mtnk: 20
 			fv: 20
 			sref: 10
 			mgtk: 10

@@ -122,9 +122,9 @@ limo:
 	idle:
 
 ltnk:
-	idle:
-	turret: ltnktur
-	barrel: ltnkbarl
+	idle: ltnk2
+	turret: ltnk2tur
+	barrel: ltnk2barlt
 
 apoc:
 	idle: mtnk
