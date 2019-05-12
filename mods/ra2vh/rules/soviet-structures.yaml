@@ -132,9 +132,9 @@ narefn:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 	SmokeParticleEmitter@refinerysmoke1:
-		Offset: -320,-928,1488
+		Offset: -1024,-384,4096
 	SmokeParticleEmitter@refinerysmoke2:
-		Offset: 320,928,1488
+		Offset: 128,-1408,4096
 
 naweap:
 	Inherits: ^WarFactory

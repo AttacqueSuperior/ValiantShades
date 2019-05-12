@@ -168,14 +168,14 @@
 		Duration: 3
 	SmokeParticleEmitter@refinerysmoke1:
 		RequiresCondition: resource-delivered
-		Sequences: ra2-largesmoke
+		Sequences: ra2-smallsmoke
 		Palette: effect
 		SpawnFrequency: 1,2
 		Gravity: -48,-48,72, 48,48,72
 		Duration: 39
 	SmokeParticleEmitter@refinerysmoke2:
 		RequiresCondition: resource-delivered
-		Sequences: ra2-largesmoke
+		Sequences: ra2-smallsmoke
 		Palette: effect
 		SpawnFrequency: 1,2
 		Gravity: -48,-48,72, 48,48,72

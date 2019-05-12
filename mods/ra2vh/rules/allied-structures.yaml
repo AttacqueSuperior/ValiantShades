@@ -162,9 +162,9 @@ garefn:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1
 	SmokeParticleEmitter@refinerysmoke1:
-		Offset: -368,-832,1248
+		Offset: -1024,-512,3456
 	SmokeParticleEmitter@refinerysmoke2:
-		Offset: 368,832,1248
+		Offset: -64,-1280,3456
 
 gaweap:
 	Inherits: ^WarFactory
