@@ -121,6 +121,9 @@ particles:
 		Length: 17
 		Tick: 80
 		BlendMode: Translucent
+	refinerysmoke: syelsmk1
+		Length: *
+		Tick: 80
 
 debris:
 	Defaults:
