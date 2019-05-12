@@ -813,7 +813,6 @@ jumpjet:
 	Targetable@airborne:
 		TargetTypes: Air, Disguise
 		RequiresCondition: airborne
-	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:

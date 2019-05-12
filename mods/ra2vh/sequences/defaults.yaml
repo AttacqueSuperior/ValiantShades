@@ -20,6 +20,8 @@
 		Start: 101
 		Length: 15
 	paradrop:
+	shadow: infshdw
+		Start: 1
 	icon: xxicon
 
 ^BasicInfantry:

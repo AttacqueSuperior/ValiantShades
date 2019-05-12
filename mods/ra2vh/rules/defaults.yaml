@@ -424,6 +424,14 @@
 	TurnOnIdle:
 		MinDelay: 50
 		MaxDelay: 50
+	GrantConditionAboveAltitude:
+		Condition: inair
+		MinAltitude: 256
+	WithSpriteBody@shadow:
+		Name: shadow
+		Sequence: shadow
+		ForceToGround: true
+		RequiresCondition: inair
 
 ^Parachutable:
 	WithSpriteBody@Parachute:

@@ -234,27 +234,28 @@ tany:
 	icon: tanyicon
 
 jumpjet:
+	Inherits@IvanBomb: ^IvanBombable
 	Defaults: rock
-		Length: 6
-		Facings: 8
 	stand:
-		Length: 1
+		Facings: 8
 	run:
 		Start: 8
 		Tick: 120
+		Length: 6
+		Facings: 8
 	idle1:
 		Start: 56
 		Length: 15
-		Facings: 1
 		Tick: 100
 	idle2:
 		Start: 71
 		Length: 15
-		Facings: 1
 		Tick: 100
 	prone-run:
 		Start: 86
 		Tick: 100
+		Length: 6
+		Facings: 8
 	die1: # copied from die-air
 		# Start: 134
 		# Length: 14
@@ -272,20 +273,24 @@ jumpjet:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		Facings: 1
 	die6: electro
 		Length: *
-		Facings: 1
 		Tick: 80
 	shoot:
 		Start: 164
 		Tick: 80
+		Length: 6
+		Facings: 8
 	prone-shoot:
 		Start: 212
 		Tick: 80
+		Length: 6
+		Facings: 8
 	fly:
 		Start: 292
 		Tick: 100
+		Length: 6
+		Facings: 8
 	die-air:
 		Start: 340
 		Length: 16
@@ -294,14 +299,15 @@ jumpjet:
 	shoot-air:
 		Start: 370
 		Tick: 80
+		Length: 6
+		Facings: 8
 	idle-air:
 		Start: 418
 		Length: 9
-		Facings: 1
 		Tick: 100
+	shadow: infshdw
+		Start: 1
 	icon: jjeticon
-		Length: 1
-		Facings: 1
 
 jumpjet.husk:
 	idle: rock
