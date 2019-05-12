@@ -144,6 +144,35 @@ MirageGunE:
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+90mmMortar:
+	Inherits: 90mm
+	Range: 2c768
+	Report: vlasatta.wav
+	Projectile: BulletAS
+		Speed: 1c512
+		LaunchAngle: 196
+
+90mmMortarE:
+	Inherits: 90mmMortar
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
+90mmMortarAA:
+	Inherits: 90mmMortar
+	ValidTargets: Air
+	Range: 5c768
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air, Ground, Water
+
+90mmMortarAAE:
+	Inherits: 90mmMortarAA
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 ^StandardTankShell:
 	Inherits: ^LargeBullet
 	ReloadDelay: 60

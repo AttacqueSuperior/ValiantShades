@@ -125,6 +125,7 @@ ltnk:
 	idle: ltnk2
 	turret: ltnk2tur
 	barrel: ltnk2barlt
+	barrel-mortar: ltnk2barl
 
 apoc:
 	idle: mtnk

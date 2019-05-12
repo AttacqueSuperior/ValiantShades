@@ -160,7 +160,7 @@ ltnk:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+		Description: Light Tank. Can be deployed to sacrifice speed and\nground range for attacking air.\n  Strong vs Vehicles, Ships\n    Aircraft (deployed)\n  Weak vs Infantry
 	Mobile:
 		Speed: 120
 		TurnSpeed: 5
@@ -176,11 +176,38 @@ ltnk:
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 640,0,512
-		RequiresCondition: !rank-elite
+		PauseOnCondition: !ammo
+		RequiresCondition: undeployed && !rank-elite
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 640,0,512
-		RequiresCondition: rank-elite
+		PauseOnCondition: !ammo
+		RequiresCondition: undeployed && rank-elite
+	Armament@mortar:
+		Weapon: 90mmMortar
+		LocalOffset: 640,0,512
+		PauseOnCondition: !ammo
+		RequiresCondition: deployed && !rank-elite
+	Armament@mortar-elite:
+		Weapon: 90mmMortarE
+		LocalOffset: 640,0,512
+		PauseOnCondition: !ammo
+		RequiresCondition: deployed && rank-elite
+	Armament@aamortar:
+		Weapon: 90mmMortarAA
+		LocalOffset: 640,0,512
+		PauseOnCondition: !ammo
+		RequiresCondition: deployed && !rank-elite
+	Armament@aamortar-elite:
+		Weapon: 90mmMortarAAE
+		LocalOffset: 640,0,512
+		PauseOnCondition: !ammo
+		RequiresCondition: deployed && rank-elite
+	AmmoPool:
+		PipCount: 0
+		AmmoCondition: ammo
+	ReloadAmmoPool:
+		Delay: 20
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -191,11 +218,34 @@ ltnk:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
+		RequiresCondition: !deployed
+	WithVoxelBarrel@mortar:
+		Sequence: barrel-mortar
+		RequiresCondition: deployed
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		Voice: Move
+		CanDeployOnRamps: True
+	AutoTargetPriority@air:
+		ValidTargets: Air
+		InvalidTargets: NoAutoTarget
+		RequiresCondition: deployed
+	AIDeployHelper:
+		DeployChance: 50
+		DeployTicks: 1000
+		UndeployTicks: 1000
+	SpeedMultiplier@deploy:
+		RequiresCondition: deployed
+		Modifier: 66
+	FirepowerMultiplier@deploy:
+		RequiresCondition: deployed
+		Modifier: 150
 
 mtnk:
 	Inherits: ^StandardTank
