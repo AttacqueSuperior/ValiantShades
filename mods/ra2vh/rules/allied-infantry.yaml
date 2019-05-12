@@ -727,7 +727,7 @@ tany:
 	Armament@sapper-elite:
 		Weapon: PlaceTanyaC4E
 		Cursor: tanya-c4
-		OutsideRangeCursor: tanyxa-c4
+		OutsideRangeCursor: tanya-c4
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
@@ -828,8 +828,6 @@ jumpjet:
 	Repairable:
 		RepairActors:
 		Voice: Move
-	Rearmable:
-		RearmActors:
 	-TurnOnIdle:
 
 jumpjet.husk:
