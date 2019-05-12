@@ -254,7 +254,7 @@ nanrct:
 natek:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -40
+		Offset: -15, -37
 	idle: ngtek
 		ShadowStart: 2
 	damaged-idle: ngtek
