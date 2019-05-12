@@ -326,8 +326,8 @@ fv:
 		Name: Infantry Fighting Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
-		Prerequisites: ~gaweap
+		BuildPaletteOrder: 130
+		Prerequisites: ~gaweap, gafcmd
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
 		Speed: 150
