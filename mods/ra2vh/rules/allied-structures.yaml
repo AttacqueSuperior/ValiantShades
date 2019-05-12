@@ -402,6 +402,17 @@ gaorep:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
+	GrantConditionOnResourcePurify:
+		Condition: resource-purify
+		Duration: 3
+	SmokeParticleEmitter@purifiersmoke:
+		RequiresCondition: resource-purify
+		Sequences: refinerysmoke
+		Palette: rookiera2exp
+		SpawnFrequency: 1,2
+		Gravity: -48,-48,72, 48,48,72
+		Duration: 39
+		Offset: -128,0,3560
 
 gaspysat:
 	Inherits: ^Building
