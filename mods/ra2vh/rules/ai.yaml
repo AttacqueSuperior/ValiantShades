@@ -202,6 +202,8 @@ Player:
 		ConstructionYardTypes: gacnst, nacnst
 		McvFactoryTypes: gaweap, naweap
 	HarvesterBotModule:
+		HarvesterTypes: cmin, harv
+		RefineryTypes: garefn, narefn
 		RequiresCondition: enable-test-ai
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
