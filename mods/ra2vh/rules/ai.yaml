@@ -207,3 +207,11 @@ Player:
 		RequiresCondition: enable-test-ai
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
+	GrantConditionOnPrerequisite@powerplants:
+		Condition: allow-powerplug
+		Prerequisites: unupgraded-gapowr, gatech, ~structures.allies
+	PlugSpawnerBotModule:
+		RequiresCondition: enable-test-ai && allow-powerplug
+		Plug: gapowrup
+		Pluggables: gapowr
+		Interval: 350

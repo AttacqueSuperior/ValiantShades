@@ -92,6 +92,9 @@ gapowr:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
+	ProvidesPrerequisite@upgradable:
+		Prerequisite: unupgraded-gapowr
+		RequiresCondition: !build-incomplete && !powrup
 
 gapowrup:
 	Inherits: ^BuildingPlug
