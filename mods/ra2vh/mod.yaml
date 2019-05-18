@@ -124,6 +124,7 @@ Sequences:
 	ra2vh|sequences/tech-structures.yaml
 	ra2vh|sequences/trees.yaml
 	ra2vh|sequences/vehicles.yaml
+	ra2vh|sequences/explosions.yaml
 	ra2vh|sequences/particles.yaml
 	ra2vh|sequences/misc.yaml
 
