@@ -380,3 +380,47 @@ UnitDeathSmoke2Spawner2:
 		Duration: 33
 		Gravity: -32,-32,16, 32,32,32
 		Neutral: true
+
+RadiationDeath:
+	Projectile: InstantExplode
+	Warhead@Validation: TargetDamage
+	Warhead@2Eff: CreateEffect
+		Explosions: virusdeath
+		ExplosionPalette: flameguy
+		ImpactSounds: gvirexpa.wav, gvirexpb.wav
+		ValidTargets: Ground, Air, Water
+	Warhead@spawn: SpawnSmokeParticle
+		Delay: 26
+		ValidTargets: Ground, Air, Water
+		Sequences: radparticle
+		Palette: heroictsexp
+		Duration: 191
+		Gravity: -64,-64,0, 64,64,0
+		Neutral: true
+		Weapon: RadiationParticle
+	Warhead@spawn2: SpawnSmokeParticle
+		Delay: 26
+		ValidTargets: Ground, Air, Water
+		Sequences: radparticle
+		Palette: heroictsexp
+		Duration: 191
+		Gravity: -64,-64,0, 64,64,0
+		Neutral: true
+		Weapon: RadiationParticle
+
+RadiationParticle:
+	ReloadDelay: 2
+	ValidTargets: Ground, Air, Water
+	Projectile: InstantExplode
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Ground, Air, Water
+		InvalidTargets: Structure
+		Spread: 768
+		Falloff: 100, 0
+		Damage: 5000
+		DamageTypes: RadiationDeath, DefaultDeath
+		Versus:
+			Light: 50
+			Medium: 50
+			Heavy: 50
+	

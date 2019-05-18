@@ -49,7 +49,7 @@ josh:
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: false
 		DeathTypes:
-			RadiationDeath: 4
+			MeltingDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
 	WithDeathAnimation@ra:
@@ -61,3 +61,7 @@ josh:
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
 		DeathType: FlameDeath
+	Explodes@radiation:
+		Weapon: RadiationDeath
+		EmptyWeapon: RadiationDeath
+		DeathTypes: RadiationDeath

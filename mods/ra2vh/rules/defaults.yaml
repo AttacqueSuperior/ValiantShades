@@ -366,7 +366,7 @@
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
-			RadiationDeath: 4
+			MeltingDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
 	WithDeathAnimation@ra:
@@ -377,6 +377,10 @@
 	SpawnActorOnDeath@flames:
 		Actor: flameguy
 		DeathType: FlameDeath
+	Explodes@radiation:
+		Weapon: RadiationDeath
+		EmptyWeapon: RadiationDeath
+		DeathTypes: RadiationDeath
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -403,7 +407,7 @@
 		DeathTypes: ElectroDeath, TeslaDeath
 	DeathSounds@radiation:
 		Voice: Melted
-		DeathTypes: RadiationDeath
+		DeathTypes: MeltingDeath
 	DeathSounds@psycrush:
 		Voice: PsyCrush
 		DeathTypes: PsychicDeath
@@ -590,13 +594,15 @@
 		DeathSequencePalette: player
 		DeathPaletteIsPlayerPalette: true
 		DeathTypes:
-			RadiationDeath: 1
+			MeltingDeath: 1
 			ElectroDeath: 2
 			TeslaDeath: 2
+			RadiationDeath: 1
 	-SpawnActorOnDeath@flames:
 	WithDeathAnimation@flames:
 		DeathTypes:
 			FlameDeath: 1
+	-Explodes@radiation:
 	-Crushable:
 	MapEditorData:
 		Categories: Animal

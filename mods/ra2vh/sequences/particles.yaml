@@ -45,3 +45,7 @@ particles:
 	ra1-smoke: ra1smokey
 		Length: *
 		Tick: 80
+	radparticle: radparticle
+		Length: *
+		Tick: 80
+		Offset: 0, -20

@@ -7,7 +7,7 @@ DogJaw:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 150000
-		Fallout: 100, 0
+		Falloff: 100, 0
 		ValidTargets: Infantry
 		Versus:
 			None: 100

@@ -102,13 +102,15 @@ dog:
 			ExplosionDeath: 1
 			BulletDeath: 2
 			FlameDeath: 1
-			RadiationDeath: 1
+			MeltingDeath: 1
 			PsychicDeath: 1
 			ElectroDeath: 2
 			TeslaDeath: 2
+			RadiationDeath: 1
 	-WithDeathAnimation@effect:
+	-Explodes@radiation:
 	DeathSounds@normal:
-		DeathTypes: ExplosionDeath, BulletDeath, RadiationDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath
+		DeathTypes: ExplosionDeath, BulletDeath, MeltingDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath, RadiationDeath
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
@@ -846,6 +848,7 @@ jumpjet.husk:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
+	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
 		MinAltitude: 256
