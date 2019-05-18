@@ -42,3 +42,6 @@ particles:
 	refinerysmoke: syelsmk1
 		Length: *
 		Tick: 80
+	ra1-smoke: ra1smokey
+		Length: *
+		Tick: 80

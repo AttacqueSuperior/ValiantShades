@@ -847,6 +847,12 @@ jumpjet.husk:
 		Range: 8c0
 		Type: CenterPosition
 	WithShadow:
+	SmokeParticleEmitter@crashsmoke:
+		Sequences: ra1-smoke
+		Palette: ra
+		Gravity: -24,-24,36, 24,24,36
+		Duration: 13
+	-Explodes@smokespawn:
 
 cleg:
 	Inherits: ^Infantry
