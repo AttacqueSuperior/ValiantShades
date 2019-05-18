@@ -142,6 +142,9 @@ naweap:
 		Prerequisites: nahand, ~structures.soviets
 	Selectable:
 		Bounds: 196, 178, -6, -48
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	#ProvidesPrerequisite@libya:
 	#	Prerequisite: vehicles.libya
 	#	Factions: libya
@@ -158,7 +161,7 @@ naweap:
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@bib:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
@@ -360,12 +363,16 @@ naindp:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@pistons:
 		Sequence: idle-pistons
+		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Power:
