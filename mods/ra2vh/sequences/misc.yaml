@@ -80,51 +80,6 @@ crate:
 		Offset: 0, -12
 		UseTilesetExtension: true
 
-particles:
-	# For synced-with-art particle expiration
-	# (framecount*Tick/40) -1 for rounding errors
-	largesmoke: tslgrysmk1
-		Length: *
-		Tick: 80
-		BlendMode: Translucent
-	smallsmoke: tssgrysmk1
-		Length: *
-		Tick: 80
-		BlendMode: Translucent
-	fire: fire03
-		Length: *
-	damagespark: dmgspark
-		Length: *
-		Tick: 100
-	inviso: inviso
-	toveenasmoke1: nukepuff
-		Start: 3
-		Length: 17
-		Tick: 160
-		BlendMode: Translucent
-	toveenasmoke2: gcmuzzle
-		Start: 2
-		Length: 15
-		Tick: 160
-		BlendMode: Translucent
-	ra2-largesmoke: lgrysmk1
-		Length: *
-		Tick: 80
-	ra2-smallsmoke: sgrysmk1
-		Length: *
-		Tick: 80
-	unitdeathsmoke1: unitdsmok1
-		Length: 17
-		Tick: 80
-		BlendMode: Translucent
-	unitdeathsmoke2: unitdsmok2
-		Length: 17
-		Tick: 80
-		BlendMode: Translucent
-	refinerysmoke: syelsmk1
-		Length: *
-		Tick: 80
-
 debris:
 	Defaults:
 		Length: *

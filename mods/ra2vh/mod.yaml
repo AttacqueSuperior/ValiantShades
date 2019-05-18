@@ -119,12 +119,13 @@ Sequences:
 	ra2vh|sequences/civilians.yaml
 	ra2vh|sequences/civilian-props.yaml
 	ra2vh|sequences/civilian-structures.yaml
-	ra2vh|sequences/misc.yaml
 	ra2vh|sequences/soviet-infantry.yaml
 	ra2vh|sequences/soviet-structures.yaml
 	ra2vh|sequences/tech-structures.yaml
 	ra2vh|sequences/trees.yaml
 	ra2vh|sequences/vehicles.yaml
+	ra2vh|sequences/particles.yaml
+	ra2vh|sequences/misc.yaml
 
 ModelSequences:
 	ra2vh|sequences/voxels.yaml
