@@ -164,6 +164,19 @@ yuri:
 		Start: 307
 	icon: yuriicon
 
+virus:
+	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
+	shoot:
+		Start: 204
+	prone-shoot:
+		Start: 252
+	paradrop:
+		Start: 300
+	cheer:
+		Start: 196
+	icon: vrusicon
+
 yuripr:
 	Inherits: yuri
 	paradrop: yuri

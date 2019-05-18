@@ -286,3 +286,46 @@ CRNeutronRifle:
 	Range: 6c0
 	Warhead@Disable: GrantExternalCondition
 		Duration: 350
+
+VirusGun:
+	ValidTargets: Ground
+	Range: 10c0
+	ReloadDelay: 100
+	Report: iviratta.wav
+	Projectile: RadBeam
+		Amplitude: 238
+		WaveLength: 384
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125000
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0 # This is actually 100, but drones are immune to Radiation
+			Rocket: 100
+		DamageTypes: RadiationDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: desolator_hit
+		ExplosionPalette: rookietsexp
+		ValidTargets: Ground, Water, Air
+
+VirusGunE:
+	Inherits: VirusGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
+
+CRVirusGun:
+	Inherits: VirusGun
+	ReloadDelay: 85
+
+CRVirusGunE:
+	Inherits: CRVirusGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp

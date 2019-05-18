@@ -442,6 +442,59 @@ yuri:
 		ValidTargets: MindControl
 		RequiresCondition: !controlling
 
+virus:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 150
+		Prerequisites: natech, ~nahand #, ~infantry.iraq
+		Description: Poisonous sniper.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Valued:
+		Cost: 650
+	DeliversCash:
+		Payload: 325
+		PlayerExperience: 33
+		Voice: Move
+	Tooltip:
+		Name: Virus
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100000
+	RevealsShroud:
+		Range: 6c0
+	-Crushable:
+	Passenger:
+		PipType: Green
+	Armament@primary:
+		Weapon: VirusGun
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: VirusGunE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: VirusGun
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: VirusGunE
+		RequiresCondition: rank-elite
+	AttackFrontal:
+		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: VirusVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
 yuripr:
 	Inherits: yuri
 	Buildable:

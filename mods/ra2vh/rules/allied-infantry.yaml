@@ -812,6 +812,8 @@ jumpjet:
 	-Targetable:
 	-WithDeathAnimation@normal:
 	-WithDeathAnimation@effect:
+	-WithDeathAnimation@ra:
+	-Explodes@radiation:
 	Targetable@airborne:
 		TargetTypes: Air, Disguise
 		RequiresCondition: airborne
