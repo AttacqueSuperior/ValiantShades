@@ -153,6 +153,9 @@
 		UseTilesetCode: false
 
 ^TechStructure:
+	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
 	Defaults:
 		UseTilesetCode: true
 	idle:
@@ -164,6 +167,9 @@
 		Length: 16
 
 ^CivStructure:
+	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
 	Defaults:
 		UseTilesetCode: true
 	idle:
@@ -182,6 +188,8 @@
 
 ^Flag:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
 	Defaults:
 		UseTilesetCode: true
 		Offset: 0,-15
