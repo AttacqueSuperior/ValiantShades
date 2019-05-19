@@ -7,6 +7,18 @@ TIBTRE02:
 TIBTRE03:
 	Inherits: ^OreDrill
 
+TIBTRE04:
+	Inherits: ^OreDrill
+	RenderSprites:
+		Palette: gemdrill
+	Tooltip:
+		Name: Gem Drill
+	RadarColorFromTerrain:
+		Terrain: Gems
+	SeedsResource:
+		ResourceType: Gems
+		Interval: 54
+
 TREE01:
 	Inherits: ^Tree
 

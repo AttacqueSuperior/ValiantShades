@@ -7,6 +7,9 @@ tibtre02:
 tibtre03:
 	Inherits: ^Drill
 
+tibtre04:
+	Inherits: ^Drill
+
 tree01:
 	Inherits: ^Tree
 

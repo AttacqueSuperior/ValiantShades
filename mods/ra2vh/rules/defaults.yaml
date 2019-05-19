@@ -917,7 +917,7 @@
 	WithIdleAnimation:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
-		Palette: player
+		Palette: oredrill
 	HitShape:
 		UseTargetableCellsOffsets: true
 	MapEditorData:

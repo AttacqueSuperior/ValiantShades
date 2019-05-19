@@ -225,9 +225,12 @@
 		UseTilesetExtension: true
 
 ^Drill:
-	Defaults:
-		UseTilesetExtension: true
+	Defaults: cgdrill
 		Offset: -1, -16
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	idle:
 		ShadowStart: 11
 	active:
