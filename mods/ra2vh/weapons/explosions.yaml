@@ -263,9 +263,9 @@ CRTerrorBomb:
 NukePayload:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
-		Spread: 1c0
+		Spread: 1c384
+		Falloff: 100, 75, 50, 25, 12, 6, 3, 0
 		Damage: 600000
-		Falloff: 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 100
@@ -288,8 +288,8 @@ NukePayload:
 		ImpactSounds: snukexpl.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@4Radiation: CreateTintedCells
-		Spread: 2c512
-		Falloff: 100, 75, 50, 25, 0
+		Spread: 1c948
+		Falloff: 100, 80, 60, 40, 20, 0
 		Level: 750
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
@@ -301,7 +301,7 @@ atomic:
 		ImpactSounds: snukintr.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
-		Damage: 900000
+		Damage: 1600000
 		DamageTypes: RadiationDeath, DefaultDeath
 		Delay: 25
 	Warhead@2Res_impact: DestroyResource
