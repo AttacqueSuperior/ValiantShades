@@ -293,8 +293,10 @@ VirusGun:
 	ReloadDelay: 100
 	Report: iviratta.wav
 	Projectile: RadBeam
-		Amplitude: 238
+		Amplitude: 119
 		WaveLength: 384
+		QuantizationCount: 6
+		ScaleAmplitudeWithDuration: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125000
