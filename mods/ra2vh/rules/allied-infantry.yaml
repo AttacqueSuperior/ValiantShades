@@ -853,7 +853,7 @@ jumpjet.husk:
 	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
-		MinAltitude: 256
+		MinAltitude: 640
 	WithSpriteBody@shadow:
 		Name: shadow
 		Sequence: shadow
