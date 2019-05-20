@@ -95,6 +95,10 @@ gapowr:
 	ProvidesPrerequisite@upgradable:
 		Prerequisite: unupgraded-gapowr
 		RequiresCondition: !build-incomplete && !powrup
+	Explodes@powerplant:
+		Weapon: AlliedPowerPlantExplode
+		EmptyWeapon: AlliedPowerPlantExplode
+		DeathTypes: DefaultDeath
 
 gapowrup:
 	Inherits: ^BuildingPlug

@@ -66,6 +66,20 @@ PlaneExplode:
 	Warhead@2Dam: SpreadDamage
 		Damage: 20000
 
+AlliedPowerPlantExplode:
+	Warhead@1Eff: CreateEffect
+		Explosions: alliedpowerplantexplosion
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: bpowdiea.wav, bpowdieb.wav
+		ValidTargets: Ground, Water, Air
+
+SovietPowerPlantExplode:
+	Warhead@1Eff: CreateEffect
+		Explosions: sovietpowerplantexplosion
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: bpowdiea.wav, bpowdieb.wav
+		ValidTargets: Ground, Water, Air
+
 PlaceIvanBomb:
 	Range: 1c849
 	Projectile: InstantHit

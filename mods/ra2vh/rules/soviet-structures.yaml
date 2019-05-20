@@ -51,6 +51,10 @@ napowr:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
+	Explodes@powerplant:
+		Weapon: SovietPowerPlantExplode
+		EmptyWeapon: SovietPowerPlantExplode
+		DeathTypes: DefaultDeath
 
 nahand:
 	Inherits: ^Barracks
