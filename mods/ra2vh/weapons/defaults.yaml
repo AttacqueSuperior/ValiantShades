@@ -194,6 +194,7 @@
 		Weapon: TeslaSpark
 		Amount: 6
 		AffectsParent: true
+		ValidTargets: Ground, Water, Air
 	Warhead@flames: FireFragment
 		Weapon: SmallFlame
 		Chance: 50
