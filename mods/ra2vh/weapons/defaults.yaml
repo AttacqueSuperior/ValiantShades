@@ -83,6 +83,7 @@
 		Image: dragon
 		Palette: ra
 		TrailImage: smokey2
+		TrailInterval: 1
 		ContrailLength: 8
 		ContrailWidth: 24
 		ContrailColor: D8D8FF
