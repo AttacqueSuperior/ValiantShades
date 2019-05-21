@@ -404,5 +404,9 @@ flameguy:
 		Length: 104
 
 twinkle:
-	idle: twnk1
+	Defaults:
 		Length: *
+	idle: twnk1
+	ra1-twinkle1: twinkle1
+	ra1-twinkle2: twinkle2
+	ra1-twinkle3: twinkle3

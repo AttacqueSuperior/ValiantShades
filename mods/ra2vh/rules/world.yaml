@@ -349,8 +349,13 @@ World:
 	TintedCellsLayer@radiation:
 		Darkest: 32
 		Brightest: 128
-	ResourceTwinkleLayer:
-		Types: Ore, Gems
+	ResourceTwinkleLayer@ore:
+		Types: Ore
+		Image: twinkle
+		Sequences: ra1-twinkle1, ra1-twinkle2, ra1-twinkle3
+		Palette: ra
+	ResourceTwinkleLayer@gems:
+		Types: Gems
 		Image: twinkle
 		Palette: effect
 
