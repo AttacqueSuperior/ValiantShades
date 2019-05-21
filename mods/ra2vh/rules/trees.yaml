@@ -17,7 +17,7 @@ TIBTRE04:
 		Terrain: Gems
 	SeedsResource:
 		ResourceType: Gems
-		Interval: 54
+		Interval: 80
 
 TREE01:
 	Inherits: ^Tree
