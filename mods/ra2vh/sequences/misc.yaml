@@ -195,6 +195,11 @@ patriot:
 
 smokey2:
 	idle:
+		Frames: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
+		Length: 9
+
+smokey2-slow:
+	idle: smokey2
 		Length: *
 
 120mm:
