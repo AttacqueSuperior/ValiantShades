@@ -140,6 +140,13 @@ DemolitionTruckVoice:
 		Attack: vdemata, vdematb, vdematc, vdematd, vdemate
 		Die: vdemdiea
 
+MastermindVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmassea, vmasseb, vmassec, vmassed, vmassee, vmassef
+		Move: vmasmoa, vmasmob, vmasmoc, vmasmod, vmasmoe
+		Attack: vmasata, vmasatb, vmasatc, vmasatd, vmasate, vmasatf
+
 KirovVoice:
 	DefaultVariant: .wav
 	Voices:

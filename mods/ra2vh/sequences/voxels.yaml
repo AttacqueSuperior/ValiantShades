@@ -132,6 +132,9 @@ apoc:
 	turret: mtnktur
 	barrel: mtnkbarl
 
+mind:
+	idle:
+
 caoutp:
 	turret: outp
 

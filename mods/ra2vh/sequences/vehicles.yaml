@@ -250,6 +250,10 @@ dtruck:
 	Inherits@MC: ^MindControllable
 	icon: trkaicon
 
+mind:
+	Inherits: ^Vehicle
+	icon: mindicon
+
 trucka:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

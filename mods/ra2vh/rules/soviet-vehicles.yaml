@@ -458,3 +458,56 @@ dtruck:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
+
+mind:
+	Inherits: ^Vehicle
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Mastermind
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 70
+		Prerequisites: ~naweap, natech
+		Description: Heavy vehicle capable of mind controlling enemy units.\n  Strong vs Ground Unis\n  Weak vs Aircraft
+	Mobile:
+		Speed: 60
+		TurnSpeed: 5
+		Locomotor: heavytracked
+	Health:
+		HP: 500000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	Armament:
+		Weapon: MindControl
+		LocalOffset: 0,0,960
+	MindController:
+		ControllingCondition: controlling
+		Sounds: iyurat1a.wav
+		Capacity: 0
+	WithMindControlArc:
+		UsePlayerColor: true
+		Offset: 0,0,960
+	AttackFrontal:
+		FacingTolerance: 64
+		Voice: Attack
+	AttackMove:
+		Voice: Move
+	AutoTarget:
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: MindControl
+	RenderSprites:
+	RenderVoxels:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: MastermindVoice
+	HitShape:
+	ExplodeWeapon@brainwaveoverload:
+		RequiresCondition: controlling > 2
+		Weapon: BrainWaveOverload
+		LocalOffset: 0,0,384

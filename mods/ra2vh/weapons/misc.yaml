@@ -422,4 +422,18 @@ RadiationParticle:
 			Light: 50
 			Medium: 50
 			Heavy: 50
-	
+
+BrainWaveOverload:
+	ReloadDelay: 75
+	Range: 1
+	Projectile: InstantExplode
+	Warhead@TargetValidation: SpreadDamage
+		AffectsParent: true
+		Spread: 1
+		Falloff: 100, 0
+		Damage: 5000
+		DamageTypes: ExplosionDeath, DefaultDeath
+	Warhead@op: FireShrapnel
+		Weapon: DamageSpark
+		Amount: 18
+		AffectsParent: true

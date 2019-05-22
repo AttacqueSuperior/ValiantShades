@@ -187,6 +187,7 @@ Player:
 			htnk: 20
 			apoc: 10
 			ttnk: 15
+			mind: 10
 			zep: 1
 		UnitLimits:
 			dog: 4
@@ -196,6 +197,7 @@ Player:
 			ivan: 5
 			yuri: 4
 			harv: 6
+			mind: 3
 			zep: 2
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
