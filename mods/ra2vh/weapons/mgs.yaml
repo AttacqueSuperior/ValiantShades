@@ -126,13 +126,14 @@ AWPE:
 			Medium: 40
 			Heavy: 40
 	Warhead@2Eff: CreateEffect
-		Explosions: piff
+		Explosions: rocketeerhit
+		ExplosionPalette: rookieraexp
 		ValidTargets: Ground, Water, Air
 
 20mme:
 	Inherits: 20mm
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicraexp
 
 vulcan:
 	Inherits: ^MG
