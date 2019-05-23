@@ -129,6 +129,9 @@ AWPE:
 		Explosions: rocketeerhit
 		ExplosionPalette: rookieraexp
 		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 20mme:
 	Inherits: 20mm
