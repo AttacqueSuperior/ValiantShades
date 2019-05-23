@@ -663,7 +663,7 @@ ptroop:
 		UsePlayerColor: true
 		Offset: 0,0,960
 	AttackMove:
-		-AssaultMoveScanCondition:
+		-AssaultMoveCondition:
 	AutoTarget:
 		-AttackAnythingCondition:
 	AutoTargetPriority@DEFAULT:
