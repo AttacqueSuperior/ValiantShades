@@ -316,7 +316,7 @@ apoc:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 3
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 640,100,512, 640,-100,512
