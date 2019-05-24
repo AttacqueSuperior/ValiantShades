@@ -163,8 +163,8 @@ smcv:
 	idle:
 
 slost:
-	idle: ytnk
-	turret: ytnktur
+	idle:
+	turret: slosttur
 
 sref:
 	idle:

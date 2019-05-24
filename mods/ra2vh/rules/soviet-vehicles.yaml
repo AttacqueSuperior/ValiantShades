@@ -245,7 +245,8 @@ slost:
 		Weapon: GattlingGunE
 		RequiresCondition: rank-elite
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 10
+		Offset: -160,0,0
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
