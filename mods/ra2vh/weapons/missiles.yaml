@@ -266,3 +266,38 @@ MissileLauncherAAE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+PlaneShmel:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vintatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		Image: v2
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 200000
+		ValidTargets: Ground, Water
+		Versus:
+			Light: 75
+			Medium: 50
+			Heavy: 75
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: fireflashhit
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: huge_watersplash
+		ImpactSounds: gexpwala.wav
+		ValidTargets: Water
+
+PlaneShmelE:
+	Inherits: PlaneShmel
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicapolloexp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp

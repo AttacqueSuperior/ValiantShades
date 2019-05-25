@@ -117,3 +117,4 @@ explosion:
 	alliedpowerplantexplosion: gtpowexp
 	sovietpowerplantexplosion: tstlexp
 	rocketeerhit: art-exp1
+	fireflashhit: fflashhit

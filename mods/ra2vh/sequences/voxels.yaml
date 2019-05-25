@@ -62,6 +62,9 @@ euroc:
 falc:
 	idle:
 
+fflash:
+	idle:
+
 naflak:
 	turret: flaktur
 

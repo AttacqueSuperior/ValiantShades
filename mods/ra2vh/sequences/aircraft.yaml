@@ -14,6 +14,10 @@ falc:
 	Inherits@IvanBomb: ^IvanBombable
 	icon: falcicon
 
+fflash:
+	Inherits@IvanBomb: ^IvanBombable
+	icon: bplnicon
+
 hind:
 	Inherits@IvanBomb: ^IvanBombable
 	icon: hindicon
