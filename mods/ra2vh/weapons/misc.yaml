@@ -46,6 +46,53 @@ BlimpBombE:
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+SpiritBomb:
+	ReloadDelay: 50
+	Range: 3c0
+	MinRange: 0c001
+	Report: vkiratta.wav
+	Projectile: BulletAS
+		Speed: 300
+		Image: spiritbomb
+		Palette: player
+		IsPlayerPalette: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 960
+		Falloff: 100, 66, 33, 0
+		Damage: 375000
+		ValidTargets: Building, Ground, Water
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+SpiritBombE:
+	Inherits: SpiritBomb
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 RepairBullet:
 	ReloadDelay: 80
 	Range: 1c819

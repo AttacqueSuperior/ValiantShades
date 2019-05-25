@@ -262,6 +262,64 @@ fflashhusk:
 	RenderVoxels:
 		Image: fflash
 
+spirit:
+	Inherits: ^Plane
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Spirit
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 70
+		Prerequisites: ~aircraft.allies, garbur # ~aircraft.harrier
+		Description: Bomber aircraft.\n  Strong vs Buildings\n  Weak vs Units
+	Selectable:
+		Bounds: 30,24
+	Health:
+		HP: 250000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: SpiritBomb
+		PauseOnCondition: !ammo
+	AttackAircraft:
+		FacingTolerance: 20
+		Voice: Attack
+	Voiced:
+		VoiceSet: HarrierVoice
+	AmmoPool:
+		Ammo: 2
+		PipCount: 2
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+		AmmoCondition: ammo
+	AutoTarget:
+	RenderSprites:
+	RenderVoxels:
+	SpawnActorOnDeath:
+		Actor: spirithusk
+		DeathType: DefaultDeath
+	HitShape:
+	Rearmable:
+		RearmActors: gaairc, amradr, naairc
+	Aircraft:
+		TurnSpeed: 18
+		Speed: 226
+
+spirithusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Spirit
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 210
+	RenderVoxels:
+		Image: spirit
+
 pdplane:
 	Inherits: ^NeutralAircraft
 	Valued:

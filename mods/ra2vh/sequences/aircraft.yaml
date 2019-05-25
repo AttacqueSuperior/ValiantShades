@@ -35,6 +35,10 @@ shad:
 	Inherits@MC: ^MindControllable
 	icon: shadicon
 
+spirit:
+	Inherits@IvanBomb: ^IvanBombable
+	icon: xxicon
+
 zep:
 	Inherits@IvanBomb: ^IvanBombable
 	icon: zepicon

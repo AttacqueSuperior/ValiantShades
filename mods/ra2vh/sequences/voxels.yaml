@@ -169,6 +169,9 @@ slost:
 	idle:
 	turret: slosttur
 
+spirit:
+	idle:
+
 sref:
 	idle:
 	turret: sreftur
