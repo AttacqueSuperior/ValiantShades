@@ -153,6 +153,14 @@ BlackEagleVoice:
 		Attack: vbleata, vbleatb, vbleatc
 		Die: vbledia, vbledib, vbledic, vbledid, vbledie
 
+SpiritVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vstesea, vsteseb, vstesec, vstesed, vstesee
+		Move: vstemoa, vstemob, vstemoc, vstemod, vstemoe
+		Attack: vsteata, vsteatb, vsteatc, vsteatd, vsteate, vsteatf
+		Die: vstefaa, vstefab, vstefac
+
 NighthawkVoice:
 	DefaultVariant: .wav
 	Voices:
