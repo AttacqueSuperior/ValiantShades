@@ -157,6 +157,14 @@ KirovVoice:
 		Feedback: vkirfea
 		Die: vkirdia, vkirdib, vkirdic, vkirdid
 
+FlashFireVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vflfsea, vflfseb, vflfsec, vflfsed, vflfsee, vflfsef
+		Move: vflfmoa, vflfmob, vflfmoc, vflfmod, vflfmoe, vflfmof
+		Attack: vflfata, vflfatb, vflfatc, vflfatd, vflfate, vflfatf, vflfatg
+		Die: vflfdia
+
 SovietNavalVoice:
 	DefaultVariant: .wav
 	Voices:

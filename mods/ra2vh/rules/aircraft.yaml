@@ -245,7 +245,7 @@ fflash:
 	Health:
 		HP: 200000
 	Voiced:
-		VoiceSet: BlackEagleVoice
+		VoiceSet: FlashFireVoice
 	RenderSprites:
 		Image: fflash
 	RenderVoxels:
@@ -290,7 +290,7 @@ spirit:
 		FacingTolerance: 20
 		Voice: Attack
 	Voiced:
-		VoiceSet: HarrierVoice
+		VoiceSet: SpiritVoice
 	AmmoPool:
 		Ammo: 2
 		PipCount: 2
