@@ -104,7 +104,6 @@ awp:
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125000
-		DamageTypes: BulletDeath
 
 AWPE:
 	Inherits: awp
