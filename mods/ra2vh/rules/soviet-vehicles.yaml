@@ -42,6 +42,7 @@ smcv:
 		VoiceSet: SovietConstructionVehicleVoice
 	HitShape:
 	-Guard:
+	PlayerCashTricklerBar:
 
 harv:
 	Inherits: ^Vehicle

@@ -42,6 +42,7 @@ amcv:
 		VoiceSet: AlliedConstructionVehicleVoice
 	HitShape:
 	-Guard:
+	PlayerCashTricklerBar:
 
 cmin:
 	Inherits: ^Vehicle

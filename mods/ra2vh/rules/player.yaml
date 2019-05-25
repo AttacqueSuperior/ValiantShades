@@ -132,3 +132,7 @@ Player:
 		Image: cameo-chevron
 		Sequence: idle
 		Palette: cameo-chevron
+	PlayerCashTrickler:
+		Interval: 2000
+		InitialDelay: 1000
+		Amount: 500

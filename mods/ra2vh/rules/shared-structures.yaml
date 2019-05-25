@@ -39,6 +39,7 @@
 	Power:
 		Amount: 50
 		RequiresCondition: !build-incomplete
+	PlayerCashTricklerBar:
 
 ^Power:
 	Inherits: ^Building
