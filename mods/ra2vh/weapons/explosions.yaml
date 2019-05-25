@@ -417,5 +417,6 @@ Demolish:
 	Warhead@1Dam: SpreadDamage
 		DamageTypes: DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: large_twlt
+		Explosions: buildingexplosion1, buildingexplosion2, buildingexplosion3, buildingexplosion4, buildingexplosion5, buildingexplosion6
+		ExplosionPalette: apollo
 		ImpactSounds: expnew09.wav
