@@ -334,11 +334,11 @@ BuildingDeathSmokeSpawner:
 	Warhead@1: FireFragment
 		ValidTargets: Ground, Air, Water
 		Weapon: BuildingDeathSmokeSpawner2
-		Chance: 20
+		Chance: 40
 	Warhead@2: FireFragment
 		ValidTargets: Ground, Air, Water
 		Weapon: BuildingDeathSmoke2Spawner2
-		Chance: 20
+		Chance: 40
 
 BuildingDeathSmokeSpawner2:
 	ReloadDelay: 1
