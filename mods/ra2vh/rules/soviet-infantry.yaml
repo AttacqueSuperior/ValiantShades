@@ -126,6 +126,15 @@ shk:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	AttackMove:
+		AttackMoveCondition: attack-move
+	AutoTargetPriority@DEFAULT:
+		InvalidTargets: NoAutoTarget, WaterStructure, TeslaBoost
+	AutoTargetPriority@ATTACKANYTHING:
+		InvalidTargets: NoAutoTarget, TeslaBoost
+	AutoTargetPriority@TESLANORMAL:
+		RequiresCondition: !assault-move && !attack-move
+		ValidTargets: TeslaBoost
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
