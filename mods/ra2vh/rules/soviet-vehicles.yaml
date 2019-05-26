@@ -1,6 +1,5 @@
 smcv:
 	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Buildable:
 		Queue: Vehicle
