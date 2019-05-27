@@ -42,6 +42,8 @@ amcv:
 	HitShape:
 	-Guard:
 	PlayerCashTricklerBar:
+	Targetable@radimmune:
+		TargetTypes: ImmuneToRadiation
 
 cmin:
 	Inherits: ^Vehicle
@@ -94,6 +96,8 @@ cmin:
 	HitShape:
 	-DamagedByTintedCells:
 	-Guard:
+	Targetable@radimmune:
+		TargetTypes: ImmuneToRadiation
 
 hmmv:
 	Inherits: ^Vehicle

@@ -457,10 +457,11 @@ RadiationDeath:
 RadiationParticle:
 	ReloadDelay: 2
 	ValidTargets: Ground, Air, Water
+	InvalidTargets: Structure, Wall, ImmuneToRadiation
 	Projectile: InstantExplode
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Ground, Air, Water
-		InvalidTargets: Structure
+		InvalidTargets: Structure, Wall, ImmuneToRadiation
 		Spread: 768
 		Falloff: 100, 0
 		Damage: 5000

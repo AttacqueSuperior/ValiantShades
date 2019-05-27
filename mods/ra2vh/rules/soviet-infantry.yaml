@@ -296,6 +296,8 @@ deso:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Targetable@radimmune:
+		TargetTypes: ImmuneToRadiation
 
 ivan:
 	Inherits: ^Infantry
