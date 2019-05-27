@@ -274,6 +274,7 @@ spirit:
 		BuildPaletteOrder: 70
 		Prerequisites: ~aircraft.allies, garbur # ~aircraft.harrier
 		Description: Bomber aircraft.\n  Strong vs Buildings\n  Weak vs Units
+		IconPalette: spiricon
 	Selectable:
 		Bounds: 30,24
 	Health:

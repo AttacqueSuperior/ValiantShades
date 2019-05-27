@@ -37,7 +37,8 @@ shad:
 
 spirit:
 	Inherits@IvanBomb: ^IvanBombable
-	icon: xxicon
+	icon: spiricon.png
+		AddExtension: false
 
 zep:
 	Inherits@IvanBomb: ^IvanBombable
