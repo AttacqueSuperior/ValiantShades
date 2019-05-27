@@ -364,7 +364,7 @@ gaorep:
 gawall:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -12
+		Offset: 0, -15
 		-TilesetOverrides:
 	-make:
 	idle: gtwall
