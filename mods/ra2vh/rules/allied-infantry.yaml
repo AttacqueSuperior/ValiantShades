@@ -750,6 +750,12 @@ tany:
 		Palette: infantry-cloak
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
 
 jumpjet:
 	Inherits: ^Infantry

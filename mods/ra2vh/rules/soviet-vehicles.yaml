@@ -107,6 +107,12 @@ harv:
 	-DamagedByTintedCells:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
 
 dron:
 	Inherits: ^Vehicle
