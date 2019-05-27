@@ -385,6 +385,12 @@ apoc:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 50
 
 ttnk:
 	Inherits: ^Vehicle
