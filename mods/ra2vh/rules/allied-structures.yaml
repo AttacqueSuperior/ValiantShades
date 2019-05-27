@@ -533,7 +533,7 @@ gaweat:
 		OrderName: WeatherStormInfoOrder
 		Weapon: WeatherStormInit
 		AirburstAltitude: 4c512
-		AllowMultiple: true
+		DisplayRadarPing: true
 		DisplayTimerStances: Ally, Neutral, Enemy
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
