@@ -19,6 +19,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
+		DisplayOrder: 0
 	ClassicProductionQueue@Support:
 		Type: Support
 		LowPowerModifier: 200
@@ -30,6 +31,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
+		DisplayOrder: 1
 	ClassicParallelProductionQueue@Infantry:
 		Type: Infantry
 		LowPowerModifier: 200
@@ -41,6 +43,7 @@ Player:
 		CancelledAudio: Cancelled
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
+		DisplayOrder: 2
 	ClassicParallelProductionQueue@Vehicle:
 		Type: Vehicle
 		LowPowerModifier: 200
@@ -52,6 +55,7 @@ Player:
 		CancelledAudio: Cancelled
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
+		DisplayOrder: 3
 	ClassicParallelProductionQueue@Aircraft:
 		Type: Aircraft
 		LowPowerModifier: 200
@@ -63,6 +67,7 @@ Player:
 		CancelledAudio: Cancelled
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
+		DisplayOrder: 4
 	ClassicParallelProductionQueue@Ship:
 		Type: Ship
 		LowPowerModifier: 200
@@ -74,6 +79,7 @@ Player:
 		CancelledAudio: Cancelled
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
+		DisplayOrder: 5
 	PlaceBuilding:
 		Palette: effect75alpha
 	SupportPowerManager:
