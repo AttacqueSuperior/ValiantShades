@@ -68,5 +68,6 @@ tesla:
 		RequiresCondition: !lowpower && !build-incomplete
 	ExternalCondition@CHARGED:
 		Condition: charged
+		SourceCap: 1
 	GrantConditionOnPowerState@LOWPOWER:
 		RequiresCondition: charged < 2
