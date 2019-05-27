@@ -26,7 +26,6 @@ nalasr:
 
 naflak:
 	Inherits: ^AADefense
-	Inherits@2: ^VoxelLighting
 	Buildable:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
@@ -34,14 +33,14 @@ naflak:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		Offset: 450,0,0
+		Offset: 0,0,0
 	Armament:
 		Weapon: FlakWeapon
+		LocalOffset: 450,0,900
 	BodyOrientation:
-		QuantizedFacings: 16
-	RenderVoxels:
-	WithVoxelTurret:
-		RequiresCondition: !build-incomplete
+		QuantizedFacings: 32
+	-WithSpriteBody:
+	WithEmbeddedTurretSpriteBody:
 
 tesla:
 	Inherits: ^Tier2Defense

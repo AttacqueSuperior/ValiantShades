@@ -473,11 +473,16 @@ naflak:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15
-		ZOffset: -512
-	idle: ngflak
-	damaged-idle: ngflak
-	make: ntflakmk
-		Length: 9
-		ShadowStart: 9
-		ZOffset: 0
+	idle: ngflaktur
+		Facings: 32
+		ShadowStart: 32
+		TilesetOverrides:
+			SNOW: GENERIC
+	make: ngflakmk
+		Length: 41
+		ShadowStart: 41
+		TilesetOverrides:
+			SNOW: GENERIC
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	icon: flakicon
