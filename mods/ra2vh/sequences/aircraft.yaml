@@ -20,6 +20,7 @@ fflash:
 
 hind:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@MC: ^MindControllable
 	icon: hindicon
 
 hornet:

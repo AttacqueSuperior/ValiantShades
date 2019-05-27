@@ -147,6 +147,12 @@ MastermindVoice:
 		Move: vmasmoa, vmasmob, vmasmoc, vmasmod, vmasmoe
 		Attack: vmasata, vmasatb, vmasatc, vmasatd, vmasate, vmasatf
 
+HindVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhoysed, vhoymoe
+		Move: vhoymoa, vhoymob, vhoymoc
+
 KirovVoice:
 	DefaultVariant: .wav
 	Voices:

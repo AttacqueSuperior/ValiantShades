@@ -687,6 +687,7 @@
 		Categories: Vehicle
 	RevealOnFire:
 		Duration: 50
+	Carryable:
 
 ^CivVehicle:
 	Inherits: ^Vehicle

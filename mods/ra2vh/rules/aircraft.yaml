@@ -67,6 +67,67 @@ shadhusk:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 
+hind:
+	Inherits: ^Aircraft
+	Inherits@MC: ^MindControllable
+	Tooltip:
+		Name: Hind Carryall
+	Selectable:
+		Bounds: 70,60,0,-20
+	Health:
+		HP: 175000
+	Armor:
+		Type: Light
+	Voiced:
+		VoiceSet: HindVoice
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~naweap, naairc
+		Description: Vehicle Transport Helicopter\n  Unarmed.
+		IconPalette: ts-chrome
+	Valued:
+		Cost: 1250
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	Aircraft:
+		CruiseAltitude: 3072
+		LandWhenIdle: true
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
+		TurnSpeed: 10
+		Speed: 125
+		AltitudeVelocity: 160
+		CruisingCondition: cruising
+	RenderSprites:
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelBody:
+	Carryall:
+		LocalOffset: 0,0,-512
+		Voice: Move
+	SpawnActorOnDeath:
+		Actor: hindhusk
+		DeathType: DefaultDeath
+	HitShape:
+	-DeathSounds:
+
+hindhusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Hind Carryall
+	Aircraft:
+		TurnSpeed: 10
+		Speed: 140
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderVoxels:
+		Image: hind
+		IconPalette: ts-chrome
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+
 zep:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
