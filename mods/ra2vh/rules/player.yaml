@@ -102,6 +102,13 @@ Player:
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
+	LobbyPrerequisiteCheckbox@GLOBALTECHAREA:
+		ID: techbuildarea
+		Label: Tech Build Area
+		Description: Allow building placement around tech structures.
+		Enabled: True
+		DisplayOrder: 8
+		Prerequisites: global-techbuildarea
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		AllyNotification: OurAllyIsUnderAttack

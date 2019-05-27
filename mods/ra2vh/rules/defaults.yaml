@@ -91,6 +91,7 @@
 		BuildSounds: uplace.wav
 		UndeploySounds: uselbuil.wav
 		TerrainTypes: Clear, Road, DirtRoad, Rough
+		RequiresBaseProvider: True
 	FrozenUnderFog:
 	GivesBuildableArea:
 		AreaTypes: building
@@ -215,6 +216,14 @@
 		LoseNotification: TechBuildingLost
 	MapEditorData:
 		Categories: Tech building
+	GivesBuildableArea:
+		RequiresCondition: techbuild
+	BaseProvider:
+		Range: 6c0
+		RequiresCondition: techbuild
+	GrantConditionOnPrerequisite@BUILD:
+		Condition: techbuild
+		Prerequisites: global-techbuildarea
 
 ^BuildingPlug:
 	Interactable:
