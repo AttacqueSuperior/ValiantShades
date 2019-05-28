@@ -7,9 +7,12 @@ caoild:
 		Footprint: xx xx
 		Dimensions: 2, 2
 	EngineerRepairable:
+	GrantConditionIfOwnerIsNeutral:
+		Condition: ownerless
 	CashTrickler:
 		Interval: 100
 		Amount: 20
+		RequiresCondition: !ownerless
 	Tooltip:
 		Name: Tech Oil Derrick
 	Health:
@@ -20,11 +23,13 @@ caoild:
 		Type: Steel
 	WithIdleOverlay@pump:
 		Sequence: idle-pump
+		PauseOnCondition: ownerless
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 1000,0,0
 	GivesCashOnCapture:
 		Amount: 1000
+		#TO-DO - Wire this to an explicit CaptureType.
 
 caairp:
 	Inherits: ^TechBuilding
