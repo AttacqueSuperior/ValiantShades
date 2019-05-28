@@ -4,6 +4,8 @@ RedEye2:
 	Projectile: Missile
 		Image: missile
 		RangeLimit: 24c0
+	Warhead@2Eff: CreateEffect
+		Explosions: small_explosion
 
 MammothTusk:
 	Inherits: ^Missile
