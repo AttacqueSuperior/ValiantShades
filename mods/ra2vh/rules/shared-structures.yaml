@@ -43,6 +43,8 @@
 	BaseProvider:
 		Range: 22c0
 		PauseOnCondition: build-incomplete
+	Armor@resistsupers:
+		Type: ResistSupers
 
 ^Power:
 	Inherits: ^Building

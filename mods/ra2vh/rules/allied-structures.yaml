@@ -546,6 +546,8 @@ gaweat:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1
+	Armor@resistsupers:
+		Type: ResistSupers
 
 gacsph:
 	Inherits: ^Building
@@ -604,6 +606,8 @@ gacsph:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1
+	Armor@resistsupers:
+		Type: ResistSupers
 
 gadept:
 	Inherits: ^Building

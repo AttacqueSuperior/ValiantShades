@@ -274,11 +274,12 @@ NukePayload:
 			Light: 200
 			Medium: 100
 			Heavy: 100
-			Wood: 60
+			Wood: 100
 			Steel: 100
-			Concrete: 8
+			Concrete: 80
 			Drone: 100
 			Rocket: 100
+			ResistSupers: 25
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 	Warhead@2Res_impact: DestroyResource
@@ -330,6 +331,7 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
+			ResistSupers: 100
 	Warhead@2Res_impact: DestroyResource
 		Size: 1
 	Warhead@3Eff_impact: CreateEffect

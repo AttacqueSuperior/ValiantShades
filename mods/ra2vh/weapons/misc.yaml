@@ -224,9 +224,7 @@ WeatherBolt:
 		Damage: 180000
 		DamageTypes: TriggerProne, ElectroDeath, DefaultDeath
 		Versus:
-			Wood: 85
-			Steel: 75
-			Concrete: 50
+			ResistSupers: 25
 	Warhead@4: CreateEffect
 		Explosions: weatherbolt1, weatherbolt2, weatherbolt3, weatherbolt1f, weatherbolt2f, weatherbolt3f
 		ImpactSounds: sweastra.wav, sweastrb.wav, sweastrc.wav, sweastrd.wav

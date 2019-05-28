@@ -44,6 +44,8 @@ smcv:
 	PlayerCashTricklerBar:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
+	Armor@resistsupers:
+		Type: ResistSupers
 
 harv:
 	Inherits: ^Vehicle

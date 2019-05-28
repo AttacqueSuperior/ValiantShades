@@ -556,6 +556,8 @@ nairon:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
+	Armor@resistsupers:
+		Type: ResistSupers
 
 namisl:
 	Inherits: ^Building
@@ -623,6 +625,8 @@ namisl:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
+	Armor@resistsupers:
+		Type: ResistSupers
 
 nadept:
 	Inherits: ^Building
