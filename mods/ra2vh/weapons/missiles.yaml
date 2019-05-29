@@ -114,6 +114,8 @@ Medusa:
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100000
+	Warhead@2Eff: CreateEffect
+		Explosions: small_twlt
 
 MedusaE:
 	Inherits: Medusa
