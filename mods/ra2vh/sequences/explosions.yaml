@@ -11,18 +11,20 @@ explosion:
 	small_explosion: explosml
 	medium_explosion: explomed
 	large_explosion: explolrg
-	tiny_bang: s_bang16
-	small_bang: s_bang24
+	# tiny_bang: s_bang16 - muzzle-sized, should be used as such
+	# small_bang: s_bang24 - muzzle-sized, should be used as such
 	medium_bang: s_bang34
 	large_bang: s_bang48
 	tiny_brnl: s_brnl20
 	small_brnl: s_brnl30
 	medium_brnl: s_brnl40
+		Tick: 80
 	large_brnl: s_brnl58
-	tiny_tumu: s_tumu22
+		Tick: 80
+	# tiny_tumu: s_tumu22 - small_clsn with fewer frames
 	small_tumu: s_tumu30
-	medium_tumu: s_tumu42
-	large_tumu: s_tumu60
+	# medium_tumu: s_tumu42 - large_clsn with fewer frames
+	# large_tumu: s_tumu60 - too many debris frames
 	tiny_clsn: s_clsn16
 	small_clsn: s_clsn22
 	medium_clsn: s_clsn30

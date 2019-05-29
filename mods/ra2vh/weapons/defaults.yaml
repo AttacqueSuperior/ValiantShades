@@ -98,7 +98,7 @@
 		AllowSnapping: true
 		TerrainHeightAware: true
 	Warhead@2Eff: CreateEffect
-		Explosions: small_bang
+		Explosions: medium_bang
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexp10a.wav
 		ValidTargets: Ground, Air
