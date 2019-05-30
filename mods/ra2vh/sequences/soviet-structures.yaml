@@ -478,6 +478,11 @@ naflak:
 		ShadowStart: 32
 		TilesetOverrides:
 			SNOW: GENERIC
+	damaged-idle: ngflaktur
+		Facings: 32
+		ShadowStart: 32
+		TilesetOverrides:
+			SNOW: GENERIC
 	make: ngflakmk
 		Length: 41
 		ShadowStart: 41
