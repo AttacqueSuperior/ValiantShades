@@ -699,3 +699,18 @@ bfrt.ai:
 		BuildPaletteOrder: 10000
 		Prerequisites: garbur, ~gaweap, ~testai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
+
+bfrt.ai2:
+	Inherits: bfrt
+	RenderSprites:
+		Image: bfrt
+	RenderVoxels:
+		Image: bfrt
+	Cargo:
+		InitialUnits: gren, gren, gren, ggi, ggi
+	Selectable:
+		Class: bfrt
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites: garbur, ~gaweap, ~testai
+		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
