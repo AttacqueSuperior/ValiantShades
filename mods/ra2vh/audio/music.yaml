@@ -32,6 +32,7 @@ credits: Credits
 score: Score
 	Filename: ra2-sco
 	Extension: wav
+	Hidden: true
 #YR themes
 brainfre: Brain Freeze
 	Extension: wav
@@ -53,6 +54,7 @@ optionx: Credits YR
 	Extension: wav
 scorex: Score YR
 	Extension: wav
+	Hidden: true
 #RA1 theme pack
 arazoid: Arazoid
 	Extension: wav
