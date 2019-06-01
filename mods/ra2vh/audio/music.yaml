@@ -26,10 +26,10 @@ motorize: Motorized
 	Extension: wav
 hm2: HM 2
 	Extension: wav
-credits: Credits
+credits: Optical
 	Filename: ra2-opt
 	Extension: wav
-score: Score
+score: Militant Force 2
 	Filename: ra2-sco
 	Extension: wav
 	Hidden: true
