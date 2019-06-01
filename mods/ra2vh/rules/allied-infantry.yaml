@@ -538,6 +538,64 @@ spy:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
+gren:
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
+	Buildable:
+		Queue: Infantry
+		Prerequisites: gafcmd, ~gapile
+		BuildPaletteOrder: 90
+		Description: Assault infantry with handgrenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		IconPalette: grenicon
+	Valued:
+		Cost: 350
+	DeliversCash:
+		Payload: 175
+		PlayerExperience: 18
+		Voice: Move
+	Tooltip:
+		Name: Grenadier
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125000
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: GrenadeDisc
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: GrenadeDiscE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: GrenadeDisc
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: GrenadeDiscE
+		RequiresCondition: rank-elite
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: GIVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Mobile:
+		Speed: 75
+
 ghost:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

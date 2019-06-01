@@ -276,3 +276,41 @@ MirageGunE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+GrenadeDisc:
+	Inherits: ^LargeBullet
+	Report: grenade1.wav
+	Range: 4c512
+	ReloadDelay: 50
+	Projectile: BulletAS
+		Image: discgrenade
+		Palette: effect
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 60000
+		Spread: 384
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: grenadierhit
+		ExplosionPalette: rookieraexp
+		ImpactSounds: kaboom30.wav
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+GrenadeDiscE:
+	Inherits: GrenadeDisc
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicraexp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp

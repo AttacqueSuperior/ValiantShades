@@ -121,6 +121,10 @@
 		Name: rburicon
 		Filename: rburicon.png
 		AllowModifiers: false
+	PaletteFromPng@grenicon:
+		Name: grenicon
+		Filename: grenicon.png
+		AllowModifiers: false
 	PaletteFromPng@spiricon:
 		Name: spiricon
 		Filename: spiricon.png

@@ -234,6 +234,9 @@ smokey2-slow:
 120mm:
 	idle:
 
+discgrenade:
+	idle: grendiscus
+
 bbblelrg:
 	idle:
 		Length: *
