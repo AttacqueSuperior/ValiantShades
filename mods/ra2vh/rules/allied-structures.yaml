@@ -395,6 +395,9 @@ gaorep:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -444,6 +447,9 @@ gaspysat:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
@@ -488,6 +494,9 @@ gagap:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	CreatesShroud:
 		Range: 10c0
 		RequiresCondition: !lowpower && !build-incomplete
@@ -519,6 +528,9 @@ gaweat:
 		Type: Concrete
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
 	GrantConditionOnPowerState@LOWPOWER:
@@ -573,6 +585,9 @@ gacsph:
 		Type: Concrete
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
 	WithIdleOverlay:

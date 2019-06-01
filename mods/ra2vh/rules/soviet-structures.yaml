@@ -315,6 +315,9 @@ nanrct:
 		Type: Concrete
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath	
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
@@ -367,6 +370,9 @@ naindp:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -409,6 +415,9 @@ naclon:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
 	Exit@n1_0:
@@ -489,6 +498,9 @@ napsis:
 		Type: Wood
 	RevealsShroud:
 		Range: 10c0
+	RevealOnDeath:
+		Range: 5c0
+		DeathTypes: DefaultDeath
 	RenderDetectionCircle:
 	DetectCloaked:
 		Range: 6c0
@@ -529,6 +541,9 @@ nairon:
 		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
 	GrantExternalConditionPower@IRONCURTAIN:
@@ -583,6 +598,9 @@ namisl:
 		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
 	GrantConditionOnPowerState@LOWPOWER:
@@ -654,6 +672,9 @@ nadept:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Reservable:
 	RallyPoint:
 	RepairsUnits:

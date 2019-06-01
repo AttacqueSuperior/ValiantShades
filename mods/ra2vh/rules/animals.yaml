@@ -6,6 +6,9 @@ cow:
 		HP: 150000
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Voiced:
 		VoiceSet: CowVoice
 	AmbientSound:

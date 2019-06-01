@@ -85,6 +85,9 @@ gtgcan:
 		Type: Steel
 	RevealsShroud:
 		Range: 10c0
+	RevealOnDeath:
+		Range: 5c0
+		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:

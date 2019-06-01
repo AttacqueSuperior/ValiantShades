@@ -28,6 +28,9 @@ engineer:
 		CaptureTypes: building, husk
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Voiced:
 		VoiceSet: EngineerVoice
 	Guard:
@@ -70,6 +73,9 @@ dog:
 		PipType: Yellow
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: DogJaw
 	AttackFrontal:
@@ -147,6 +153,9 @@ e1:
 		PipType: Green
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
 		RequiresCondition: undeployed
@@ -263,6 +272,9 @@ ggi:
 		PipType: Green
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
 		RequiresCondition: undeployed
@@ -444,6 +456,9 @@ snipe:
 		PipType: Red
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Armor:
 		Type: None
 	Armament@primary:
@@ -493,6 +508,9 @@ spy:
 		HP: 25000
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Passenger:
 		PipType: Yellow
 	TakeCover:
@@ -549,6 +567,9 @@ ghost:
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak
 	Passenger:
@@ -706,6 +727,9 @@ tany:
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak
 	Passenger:
@@ -860,6 +884,8 @@ jumpjet.husk:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
+	RevealOnDeath:
+		Range: 4c0
 	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
@@ -902,6 +928,9 @@ cleg:
 		HP: 125000
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Passenger:
 		PipType: Red
 	-Crushable:

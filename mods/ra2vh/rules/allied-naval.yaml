@@ -24,6 +24,9 @@ lcrf:
 		PauseOnCondition: !(!notmobile && !chronodisable)
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
@@ -62,6 +65,9 @@ dest:
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
+	RevealOnDeath:
+		Range: 3c512
+		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
@@ -111,6 +117,9 @@ aegis:
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: Medusa
 	AttackFrontal:
@@ -159,6 +168,9 @@ dlph:
 	AutoTarget:
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Cloak:
 		CloakTypes: Underwater
 		InitialDelay: 50

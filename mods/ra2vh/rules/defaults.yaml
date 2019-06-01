@@ -174,6 +174,9 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Tooltip:
 		Name: Civilian Building
 	MapEditorData:
@@ -211,6 +214,9 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	CaptureNotification:
 		Notification: TechBuildingCaptured
 		LoseNotification: TechBuildingLost
@@ -252,6 +258,9 @@
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	WithIdleOverlay@flag:
 		Sequence: flag
 	SoundOnDamageTransition:
@@ -344,6 +353,9 @@
 		Type: None
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Mobile:
 		Speed: 60
 		Voice: Move
@@ -557,6 +569,8 @@
 		Speed: 71
 	RevealsShroud:
 		Range: 2c0
+	RevealOnDeath:
+		Range: 1c0
 	AttackFrontal:
 		Voice: Attack
 	ProximityCaptor:
@@ -587,6 +601,8 @@
 		TargetTypes: Ground, Infantry
 	RevealsShroud:
 		Range: 2c0
+	RevealOnDeath:
+		Range: 1c0
 	Mobile:
 		Speed: 40
 	Selectable:
@@ -711,6 +727,9 @@
 		Type: Light
 	RevealsShroud:
 		Range: 5c0
+	RevealOnDeath:
+		Range: 2c512
+		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:

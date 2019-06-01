@@ -24,6 +24,9 @@ amcv:
 	-Crushable:
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	BaseBuilding:
@@ -85,6 +88,9 @@ cmin:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	WithHarvestOverlay:
 		LocalOffset: 121,0,0
 		Palette: effect
@@ -134,6 +140,9 @@ hmmv:
 		Type: Light
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry
 		MaxWeight: 3
@@ -183,6 +192,9 @@ ltnk:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
 	Armament@primary:
@@ -305,6 +317,9 @@ tnkd:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: sabot
 		LocalOffset: 704,0,768
@@ -351,6 +366,9 @@ fv:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
 	Cargo:
@@ -495,6 +513,9 @@ sref:
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 10
 		Offset: -30,0,85
@@ -564,6 +585,9 @@ mgtk:
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 9c0
+	RevealOnDeath:
+		Range: 4c512
+		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: MirageGun
 		LocalOffset: 640,0,640
@@ -620,6 +644,9 @@ bfrt:
 		Weight: 6
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: 20mmRapid
 	AttackFrontal:

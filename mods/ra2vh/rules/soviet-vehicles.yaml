@@ -24,6 +24,9 @@ smcv:
 	-Crushable:
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	BaseBuilding:
@@ -96,6 +99,9 @@ harv:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	WithHarvestOverlay:
 		LocalOffset: 121,0,0
 		Palette: effect
@@ -137,6 +143,9 @@ dron:
 		Type: Drone
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Passenger:
 		CargoType: Infantry
 		Weight: 2
@@ -187,6 +196,9 @@ htk:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
@@ -249,6 +261,9 @@ slost:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -330,6 +345,9 @@ apoc:
 		Type: Heavy
 	RevealsShroud:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 3
 	Armament@primary:
@@ -417,6 +435,9 @@ ttnk:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
 	Armament@primary:
@@ -467,6 +488,9 @@ dtruck:
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
+	RevealOnDeath:
+		Range: 2c0
+		DeathTypes: DefaultDeath
 	Explodes@demotruck:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
@@ -502,6 +526,9 @@ mind:
 		Type: Heavy
 	RevealsShroud:
 		Range: 7c0
+	RevealOnDeath:
+		Range: 3c512
+		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: MindControl
 		LocalOffset: 0,0,960

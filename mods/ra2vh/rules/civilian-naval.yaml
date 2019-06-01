@@ -14,6 +14,9 @@ tug:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -39,6 +42,9 @@ cruise:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+	RevealOnDeath:
+		Range: 4c0
+		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
