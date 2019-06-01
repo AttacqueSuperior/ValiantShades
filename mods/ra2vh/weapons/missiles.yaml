@@ -49,6 +49,8 @@ MammothTuskAA:
 	Range: 8c0
 	Projectile: Missile
 		RangeLimit: 16c0
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 MammothTuskAAE:
 	Inherits: MammothTuskAA
