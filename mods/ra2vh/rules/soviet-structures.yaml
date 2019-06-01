@@ -493,7 +493,7 @@ napsis:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
-		Prerequisites: natek, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets
 		Description: Detects enemy units and buildings.
 	Valued:
 		Cost: 1500
