@@ -7,7 +7,7 @@ cow:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Voiced:
 		VoiceSet: CowVoice

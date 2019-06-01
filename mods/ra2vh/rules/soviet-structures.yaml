@@ -320,7 +320,7 @@ nanrct:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath	
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
@@ -379,7 +379,7 @@ naindp:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
@@ -428,7 +428,7 @@ naclon:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
@@ -515,7 +515,7 @@ napsis:
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	GpsASProvider:
 		RequiresCondition: !build-incomplete && !lowpower
@@ -561,7 +561,7 @@ nairon:
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
@@ -622,7 +622,7 @@ namisl:
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
@@ -700,7 +700,7 @@ nadept:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Reservable:
 	RallyPoint:

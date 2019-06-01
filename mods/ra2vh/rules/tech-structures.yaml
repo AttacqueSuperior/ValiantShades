@@ -24,7 +24,7 @@ caoild:
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Steel
@@ -106,7 +106,7 @@ cahosp:
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Concrete

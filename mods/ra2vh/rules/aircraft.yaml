@@ -63,7 +63,7 @@ shadhusk:
 		Range: 7c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 3c512
+		Radius: 3c512
 	RenderVoxels:
 		Image: shad
 	BodyOrientation:
@@ -125,7 +125,7 @@ hindhusk:
 		Range: 6c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 	RenderVoxels:
 		Image: hind
 		IconPalette: ts-chrome
@@ -202,7 +202,7 @@ zephusk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 	RenderVoxels:
 		Image: zep
 	BodyOrientation:
@@ -268,7 +268,7 @@ orcahusk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 
 beag:
 	Inherits: orca
@@ -305,7 +305,7 @@ beaghusk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 
 fflash:
 	Inherits: orca
@@ -342,7 +342,7 @@ fflashhusk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 
 spirit:
 	Inherits: ^Plane
@@ -406,7 +406,7 @@ spirithusk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 
 pdplane:
 	Inherits: ^NeutralAircraft

@@ -400,7 +400,7 @@ gaorep:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
@@ -456,7 +456,7 @@ gaspysat:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
@@ -510,7 +510,7 @@ gagap:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	CreatesShroud:
 		Range: 10c0
@@ -553,7 +553,7 @@ gaweat:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
@@ -614,7 +614,7 @@ gacsph:
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200

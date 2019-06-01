@@ -26,7 +26,7 @@ e2:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
@@ -81,7 +81,7 @@ flakt:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
@@ -162,7 +162,7 @@ shk:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Plate
@@ -235,7 +235,7 @@ terror:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak
@@ -280,7 +280,7 @@ deso:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Plate
@@ -341,7 +341,7 @@ ivan:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: None
@@ -422,7 +422,7 @@ yuri:
 	RevealsShroud:
 		Range: 12c0
 	RevealOnDeath:
-		Range: 6c0
+		Radius: 6c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: None
@@ -500,7 +500,7 @@ virus:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	-Crushable:
 	Passenger:
@@ -554,7 +554,7 @@ yuripr:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: SuperMindControl

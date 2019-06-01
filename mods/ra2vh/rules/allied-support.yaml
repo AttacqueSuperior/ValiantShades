@@ -86,7 +86,7 @@ gtgcan:
 	RevealsShroud:
 		Range: 10c0
 	RevealOnDeath:
-		Range: 5c0
+		Radius: 5c0
 		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 46, 62, 0, -20

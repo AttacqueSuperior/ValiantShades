@@ -29,7 +29,7 @@ engineer:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Voiced:
 		VoiceSet: EngineerVoice
@@ -74,7 +74,7 @@ dog:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: DogJaw
@@ -154,7 +154,7 @@ e1:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
@@ -273,7 +273,7 @@ ggi:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
@@ -457,7 +457,7 @@ snipe:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: None
@@ -509,7 +509,7 @@ spy:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Passenger:
 		PipType: Yellow
@@ -567,7 +567,7 @@ gren:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
@@ -626,7 +626,7 @@ ghost:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak
@@ -786,7 +786,7 @@ tany:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak
@@ -943,7 +943,7 @@ jumpjet.husk:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
@@ -987,7 +987,7 @@ cleg:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Passenger:
 		PipType: Red

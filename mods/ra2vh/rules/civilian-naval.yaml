@@ -15,7 +15,7 @@ tug:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
@@ -43,7 +43,7 @@ cruise:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:

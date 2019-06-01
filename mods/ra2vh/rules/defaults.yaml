@@ -186,7 +186,7 @@
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Tooltip:
 		Name: Civilian Building
@@ -230,7 +230,7 @@
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	CaptureNotification:
 		Notification: TechBuildingCaptured
@@ -280,7 +280,7 @@
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	WithIdleOverlay@flag:
 		Sequence: flag
@@ -375,7 +375,7 @@
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Mobile:
 		Speed: 60
@@ -591,7 +591,7 @@
 	RevealsShroud:
 		Range: 2c0
 	RevealOnDeath:
-		Range: 1c0
+		Radius: 1c0
 	AttackFrontal:
 		Voice: Attack
 	ProximityCaptor:
@@ -623,7 +623,7 @@
 	RevealsShroud:
 		Range: 2c0
 	RevealOnDeath:
-		Range: 1c0
+		Radius: 1c0
 	Mobile:
 		Speed: 40
 	Selectable:
@@ -754,7 +754,7 @@
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 64, 52, 0, -6

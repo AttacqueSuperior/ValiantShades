@@ -25,7 +25,7 @@ smcv:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -100,7 +100,7 @@ harv:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	WithHarvestOverlay:
 		LocalOffset: 121,0,0
@@ -144,7 +144,7 @@ dron:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Passenger:
 		CargoType: Infantry
@@ -197,7 +197,7 @@ htk:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry
@@ -262,7 +262,7 @@ slost:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	AttackTurreted:
 		Voice: Attack
@@ -346,7 +346,7 @@ apoc:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 3
@@ -436,7 +436,7 @@ ttnk:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
@@ -489,7 +489,7 @@ dtruck:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Explodes@demotruck:
 		Weapon: demobomb
@@ -527,7 +527,7 @@ mind:
 	RevealsShroud:
 		Range: 7c0
 	RevealOnDeath:
-		Range: 3c512
+		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: MindControl

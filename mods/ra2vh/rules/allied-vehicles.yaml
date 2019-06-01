@@ -25,7 +25,7 @@ amcv:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -89,7 +89,7 @@ cmin:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	WithHarvestOverlay:
 		LocalOffset: 121,0,0
@@ -141,7 +141,7 @@ hmmv:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry
@@ -193,7 +193,7 @@ ltnk:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
@@ -318,7 +318,7 @@ tnkd:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: sabot
@@ -367,7 +367,7 @@ fv:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
@@ -514,7 +514,7 @@ sref:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 10
@@ -586,7 +586,7 @@ mgtk:
 	RevealsShroud:
 		Range: 9c0
 	RevealOnDeath:
-		Range: 4c512
+		Radius: 4c512
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: MirageGun
@@ -645,7 +645,7 @@ bfrt:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: 20mmRapid

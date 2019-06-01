@@ -25,7 +25,7 @@ lcrf:
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Cargo:
 		Types: Infantry, Vehicle
@@ -66,7 +66,7 @@ dest:
 	RevealsShroud:
 		Range: 7c0
 	RevealOnDeath:
-		Range: 3c512
+		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Selectable:
 		Bounds: 80, 80, 0, -6
@@ -118,7 +118,7 @@ aegis:
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: Medusa
@@ -169,7 +169,7 @@ dlph:
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Cloak:
 		CloakTypes: Underwater

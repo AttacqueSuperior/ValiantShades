@@ -22,7 +22,7 @@
 		RevealGeneratedShroud: False
 		Range: 8c0
 	RevealOnDeath:
-		Range: 4c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Valued:
 		Cost: 3000
@@ -89,7 +89,7 @@
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 
 ^Barracks:
@@ -118,7 +118,7 @@
 		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
-		Range: 2c512
+		Radius: 2c512
 		DeathTypes: DefaultDeath
 	RallyPoint:
 	Production:
@@ -173,7 +173,7 @@
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	TiberianSunRefinery:
 		DockOffset: 3,1
@@ -242,7 +242,7 @@
 		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
-		Range: 2c0
+		Radius: 2c0
 		DeathTypes: DefaultDeath
 	RallyPoint:
 		Offset: 5,1
@@ -294,7 +294,7 @@
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -353,7 +353,7 @@
 		RevealGeneratedShroud: False
 		Range: 10c0
 	RevealOnDeath:
-		Range: 5c0
+		Radius: 5c0
 		DeathTypes: DefaultDeath
 	# X -2 column
 	Exit@n2_n2:
@@ -472,7 +472,7 @@
 		RevealGeneratedShroud: False
 		Range: 10c0
 	RevealOnDeath:
-		Range: 5c0
+		Radius: 5c0
 		DeathTypes: DefaultDeath
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -519,7 +519,7 @@
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -100
@@ -553,7 +553,7 @@
 		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
-		Range: 3c0
+		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
