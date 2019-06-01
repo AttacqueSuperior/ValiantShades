@@ -33,6 +33,8 @@ caoild:
 	GivesCashOnCapture:
 		Amount: 1000
 		#TO-DO - Wire this to an explicit CaptureType.
+	GpsDotAS:
+		Sequence: oil
 
 caairp:
 	Inherits: ^TechBuilding
@@ -108,6 +110,8 @@ cahosp:
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 0,-500,2520
+	GpsDotAS:
+		Sequence: hospital
 
 cathosp:
 	Inherits: cahosp

@@ -146,6 +146,8 @@
 		ReferencePoint: Center
 		Palette: mouse
 	CaptureManager:
+	GpsDotAS:
+		Sequence: structure
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -156,6 +158,8 @@
 	RevealOnFire:
 		Duration: 50
 	-Explodes@flameguyspawn:
+	GpsDotAS:
+		Sequence: defense
 
 ^CivBuilding:
 	Inherits: ^Building
@@ -230,6 +234,8 @@
 	GrantConditionOnPrerequisite@BUILD:
 		Condition: techbuild
 		Prerequisites: global-techbuildarea
+	GpsDotAS:
+		Sequence: techstructure
 
 ^BuildingPlug:
 	Interactable:
@@ -707,6 +713,8 @@
 	RevealOnFire:
 		Duration: 50
 	Carryable:
+	GpsDotAS:
+		Sequence: vehicle
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -792,6 +800,8 @@
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
 	WithTextControlGroupDecoration:
+	GpsDotAS:
+		Sequence: helicopter
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -810,6 +820,8 @@
 		RequiresCondition: cruising
 	ReturnOnIdle:
 	WithVoxelBody:
+	GpsDotAS:
+		Sequence: plane
 
 ^Husk:
 	Inherits: ^VoxelLighting
@@ -851,6 +863,8 @@
 		Explosion: PlaneExplode
 		Spins: false
 		Moves: true
+	GpsDotAS:
+		Sequence: plane
 
 ^HelicopterHusk:
 	Inherits: ^Husk
@@ -859,6 +873,8 @@
 		VTOL: true
 	FallsToEarth:
 		Explosion: PlaneExplode
+	GpsDotAS:
+		Sequence: helicopter
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -929,6 +945,8 @@
 		Categories: Naval
 	RevealOnFire:
 		Duration: 50
+	GpsDotAS:
+		Sequence: ship
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor

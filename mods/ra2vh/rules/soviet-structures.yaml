@@ -482,9 +482,9 @@ napsis:
 		Queue: Support
 		BuildPaletteOrder: 60
 		Prerequisites: natek, ~structures.soviets
-		Description: Detects enemy units and strikepoints
+		Description: Detects enemy units and buildings.
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	Tooltip:
 		Name: Psychic Sensor
 	Building:
@@ -497,13 +497,12 @@ napsis:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 10c0
-	RevealOnDeath:
-		Range: 5c0
-		DeathTypes: DefaultDeath
-	RenderDetectionCircle:
-	DetectCloaked:
 		Range: 6c0
+	RevealOnDeath:
+		Range: 3c0
+		DeathTypes: DefaultDeath
+	GpsASProvider:
+		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
 		PauseOnCondition: lowpower

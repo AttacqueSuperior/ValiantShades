@@ -23,6 +23,27 @@ editor-overlay:
 	paste:
 		Start: 1
 
+gpsdot:
+	idle:
+	structure:
+		Start: 1
+	defense:
+		Start: 2
+	vehicle:
+		Start: 3
+	ship:
+		Start: 4
+	helicopter:
+		Start: 5
+	plane:
+		Start: 6
+	techstructure:
+		Start: 7
+	oil:
+		Start: 8
+	hospital:
+		Start: 9
+
 poweroff:
 	offline: poweroff
 		Length: *

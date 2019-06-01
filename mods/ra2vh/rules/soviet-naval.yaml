@@ -237,3 +237,5 @@ sqd:
 	HitShape:
 	OwnerLostAction:
 		Action: Kill
+	GpsDotAS:
+		Sequence: ship

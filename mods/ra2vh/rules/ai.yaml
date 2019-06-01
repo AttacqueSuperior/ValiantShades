@@ -116,6 +116,7 @@ Player:
 			nanrct: 1
 			natek: 1
 			natech: 1
+			napsis: 1
 		BuildingFractions:
 			garefn: 15
 			gapile: 15
@@ -142,6 +143,7 @@ Player:
 			natech: 1
 			naindp: 1
 			naclon: 1
+			napsis: 1
 			nalasr: 15
 			naflak: 12
 			tesla: 12

@@ -149,3 +149,4 @@ Player:
 		Interval: 2000
 		InitialDelay: 1000
 		Amount: 500
+	GpsASWatcher:
