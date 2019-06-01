@@ -497,7 +497,7 @@ mind:
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
-		HP: 500000
+		HP: 350000
 	Armor:
 		Type: Heavy
 	RevealsShroud:
