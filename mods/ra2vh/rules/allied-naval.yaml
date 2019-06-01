@@ -212,5 +212,8 @@ dlph:
 	HitShape:
 	OwnerLostAction:
 		Action: Kill
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: ship
+		RequiresCondition: !hide-gpsdot

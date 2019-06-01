@@ -146,8 +146,11 @@
 		ReferencePoint: Center
 		Palette: mouse
 	CaptureManager:
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: structure
+		RequiresCondition: !hide-gpsdot
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -725,8 +728,11 @@
 	RevealOnFire:
 		Duration: 50
 	Carryable:
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: vehicle
+		RequiresCondition: !hide-gpsdot
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -812,8 +818,11 @@
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
 	WithTextControlGroupDecoration:
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: helicopter
+		RequiresCondition: !hide-gpsdot
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -837,6 +846,7 @@
 
 ^Husk:
 	Inherits: ^VoxelLighting
+	ConditionManager:
 	RenderVoxels:
 		LightAmbientColor: -0.4,-0.6,-0.6
 		LightDiffuseColor: 1.2,1.1,1.1
@@ -875,8 +885,11 @@
 		Explosion: PlaneExplode
 		Spins: false
 		Moves: true
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: plane
+		RequiresCondition: !hide-gpsdot
 
 ^HelicopterHusk:
 	Inherits: ^Husk
@@ -885,8 +898,11 @@
 		VTOL: true
 	FallsToEarth:
 		Explosion: PlaneExplode
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: helicopter
+		RequiresCondition: !hide-gpsdot
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -957,8 +973,11 @@
 		Categories: Naval
 	RevealOnFire:
 		Duration: 50
+	ExternalCondition@hide-gpsdot:
+		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: ship
+		RequiresCondition: !hide-gpsdot
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor

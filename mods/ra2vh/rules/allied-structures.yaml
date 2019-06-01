@@ -516,6 +516,11 @@ gagap:
 		Range: 10c0
 		RequiresCondition: !lowpower && !build-incomplete
 	RenderShroudCircle:
+	ProximityExternalCondition:
+		Range: 10c0
+		AffectsParent: true
+		Condition: hide-gpsdot
+		RequiresCondition: !lowpower && !build-incomplete
 	Power:
 		Amount: -100
 
