@@ -113,6 +113,10 @@ hind:
 		DeathType: DefaultDeath
 	HitShape:
 	-DeathSounds:
+	Hovers@CRUISING:
+		RequiresCondition: cruising
+		OffsetModifier: -45
+	-Guard:
 
 hindhusk:
 	Inherits: ^HelicopterHusk
@@ -128,7 +132,6 @@ hindhusk:
 		Radius: 3c0
 	RenderVoxels:
 		Image: hind
-		IconPalette: ts-chrome
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 
