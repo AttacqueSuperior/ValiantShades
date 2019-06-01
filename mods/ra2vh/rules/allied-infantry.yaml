@@ -588,7 +588,7 @@ gren:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
-		VoiceSet: GIVoice
+		VoiceSet: GrenadierVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

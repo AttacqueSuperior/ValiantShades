@@ -26,6 +26,15 @@ RocketeerVoice:
 		Feedback: irocfea, irocfeb, irocfec
 		Die: irocdiea
 
+GrenadierVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: igresea, igreseb, igresec, igresed, igresee, igresef
+		Move: igremoa, igremob, igremoc, igremod, igremoe
+		Attack: igreata, igreatb, igreatc, igreatd, igreate, igreatf, igreatg
+		Feedback: igrefea, igrefeb, igrefec, igrefed, igrefee
+		Die: igredia, igredib, igredic, igredid, igredie
+
 SpyVoice:
 	Inherits: ^InfantryDeath
 	Voices:
