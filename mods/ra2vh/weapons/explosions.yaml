@@ -2,7 +2,7 @@ UnitExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: tankexplosion
 		ExplosionPalette: heroicapolloexp
-		ImpactSounds: expnew09.wav
+		ImpactSounds: expnew05.wav, expnew11.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@DebrisSpawn: FireShrapnel
 		Weapon: SmallDebris
@@ -16,7 +16,7 @@ UnitExplodeSmall:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: smalltankexplosion
-		ImpactSounds: expnew13.wav
+		ImpactSounds: expnew07.wav, expnew10.wav, expnew18.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
@@ -45,6 +45,7 @@ BuildingExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: buildingexplosion1, buildingexplosion2, buildingexplosion3, buildingexplosion4, buildingexplosion5, buildingexplosion6
 		ExplosionPalette: apollo
+		ImpactSounds: expnew01.wav, expnew02.wav, expnew03.wav, expnew04.wav, expnew08.wav
 	Warhead@DebrisSpawn: FireShrapnel
 		Weapon: LargeDebris
 
