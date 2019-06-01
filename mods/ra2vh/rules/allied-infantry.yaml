@@ -90,6 +90,9 @@ dog:
 	IgnoresDisguise:
 	DetectCloaked:
 		Range: 5c0
+	DetectCloaked@mirage:
+		Range: 5c0
+		CloakTypes: mirage
 	Voiced:
 		VoiceSet: DogVoice
 	ProducibleWithLevel:
@@ -750,6 +753,7 @@ tany:
 		Palette: infantry-cloak
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
+		CloakTypes: mirage
 	SelfHealing:
 		PercentageStep: 1
 		Step: 0

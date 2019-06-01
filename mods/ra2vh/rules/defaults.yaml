@@ -445,6 +445,9 @@
 		Sequence: shadow
 		ForceToGround: true
 		RequiresCondition: inair
+	DetectCloaked@mirage:
+		Range: 3c0
+		CloakTypes: mirage
 
 ^Parachutable:
 	WithSpriteBody@Parachute:

@@ -588,6 +588,7 @@ mgtk:
 		CloakDelay: 15
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
+		CloakTypes: mirage
 
 bfrt:
 	Inherits: ^Vehicle
