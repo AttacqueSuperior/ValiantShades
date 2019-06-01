@@ -488,7 +488,7 @@ gagap:
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Selectable:
-		Bounds: 50, 114, -16, -38
+		Bounds: 50, 114, 0, -38
 	Building:
 		Footprint: x
 		Dimensions: 1,1
