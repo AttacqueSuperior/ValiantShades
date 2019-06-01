@@ -395,6 +395,10 @@ gaorep:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
 		DeathTypes: DefaultDeath
@@ -431,7 +435,7 @@ gaspysat:
 		Queue: Support
 		BuildPaletteOrder: 70
 		Prerequisites: garbur, ~structures.allies
-		Description: Reveals the entire battlefield.
+		Description: Reveals the shroud around all enemy structures.
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
@@ -447,6 +451,10 @@ gaspysat:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
 		DeathTypes: DefaultDeath
@@ -454,6 +462,9 @@ gaspysat:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	GivesIntelligence:
+		Types: SpySat
+		RequiresCondition: !build-incomplete && !lowpower
 	Power:
 		Amount: -100
 	ProvidesRadar:
@@ -494,6 +505,10 @@ gagap:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
 		DeathTypes: DefaultDeath
@@ -527,6 +542,10 @@ gaweat:
 	Armor:
 		Type: Concrete
 	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
@@ -584,6 +603,10 @@ gacsph:
 	Armor:
 		Type: Concrete
 	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
@@ -648,6 +671,10 @@ gadept:
 	Armor:
 		Type: Wood
 	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 5c0
 	Reservable:
 	RallyPoint:

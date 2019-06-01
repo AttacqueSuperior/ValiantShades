@@ -19,6 +19,10 @@ caoild:
 		HP: 1000000
 	RevealsShroud:
 		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
 	RevealOnDeath:
 		Range: 2c0
 		DeathTypes: DefaultDeath
@@ -96,6 +100,10 @@ cahosp:
 	Health:
 		HP: 800000
 	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
 		Range: 3c0

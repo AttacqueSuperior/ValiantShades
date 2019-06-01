@@ -108,6 +108,7 @@ Player:
 			gatech: 1
 			garbur: 1
 			gagap: 2
+			gaspysat: 1
 			narefn: 4
 			nahand: 3
 			naweap: 4
@@ -126,6 +127,7 @@ Player:
 			gatech: 1
 			garbur: 1
 			gaorep: 1
+			gaspysat: 1
 			# AI cannot place plugs
 			# gapowrup: 5
 			gapill: 15

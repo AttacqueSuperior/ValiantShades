@@ -17,6 +17,10 @@
 		Type: Concrete
 	RevealsShroud:
 		Range: 8c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 8c0
 	RevealOnDeath:
 		Range: 4c0
 		DeathTypes: DefaultDeath
@@ -80,6 +84,10 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
 	RevealOnDeath:
 		Range: 2c0
 		DeathTypes: DefaultDeath
@@ -104,6 +112,10 @@
 	Armor:
 		Type: Steel
 	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
 		Range: 2c512
@@ -155,6 +167,10 @@
 	Armor:
 		Type: Wood
 	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
 		Range: 3c0
@@ -221,6 +237,10 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
 	RevealOnDeath:
 		Range: 2c0
 		DeathTypes: DefaultDeath
@@ -268,6 +288,10 @@
 	Armor:
 		Type: Wood
 	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
 		Range: 3c0
@@ -323,6 +347,10 @@
 	Armor:
 		Type: Concrete
 	RevealsShroud:
+		Range: 10c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 10c0
 	RevealOnDeath:
 		Range: 5c0
@@ -439,6 +467,10 @@
 		Type: Steel
 	RevealsShroud:
 		Range: 10c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 10c0
 	RevealOnDeath:
 		Range: 5c0
 		DeathTypes: DefaultDeath
@@ -482,6 +514,10 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 6c0
 	RevealOnDeath:
 		Range: 3c0
 		DeathTypes: DefaultDeath
@@ -511,6 +547,10 @@
 	Armor:
 		Type: Wood
 	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
 		Range: 6c0
 	RevealOnDeath:
 		Range: 3c0
