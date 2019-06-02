@@ -118,6 +118,7 @@ hmmv:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -173,6 +174,7 @@ ltnk:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -298,6 +300,7 @@ tnkd:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -347,6 +350,7 @@ fv:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -492,6 +496,7 @@ sref:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
@@ -564,6 +569,7 @@ mgtk:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
@@ -619,6 +625,7 @@ bfrt:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 100

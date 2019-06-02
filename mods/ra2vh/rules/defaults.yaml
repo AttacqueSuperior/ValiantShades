@@ -570,6 +570,7 @@
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@Berserk: ^Berserkable
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Valued:
@@ -737,6 +738,7 @@
 ^CivVehicle:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@Berserk: ^Berserkable
 	OwnerLostAction:
 		Action: ChangeOwner
 	RenderSprites:

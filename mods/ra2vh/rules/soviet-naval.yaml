@@ -2,6 +2,7 @@ sapc:
 	Inherits: ^Ship
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
@@ -47,6 +48,7 @@ sub:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
@@ -119,6 +121,7 @@ hyd:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30

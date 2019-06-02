@@ -2,6 +2,7 @@ engineer:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
@@ -130,6 +131,7 @@ e1:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -249,6 +251,7 @@ ggi:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -435,6 +438,7 @@ snipe:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 600
 	DeliversCash:
@@ -487,6 +491,7 @@ snipe:
 spy:
 	Inherits: ^Infantry
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -544,6 +549,7 @@ gren:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: gafcmd, ~gapile
@@ -602,6 +608,7 @@ ghost:
 	Inherits@MC: ^MindControllable
 	Inherits@SWIMSUIT: ^WithSwimSuit
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -966,6 +973,7 @@ cleg:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Tooltip:

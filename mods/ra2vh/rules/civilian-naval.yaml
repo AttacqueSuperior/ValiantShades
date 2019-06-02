@@ -1,6 +1,7 @@
 tug:
 	Inherits: ^Ship
 	Inherits@MC: ^MindControllable
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -29,6 +30,7 @@ tug:
 cruise:
 	Inherits: ^Ship
 	Inherits@MC: ^MindControllable
+	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 500
 	Tooltip:

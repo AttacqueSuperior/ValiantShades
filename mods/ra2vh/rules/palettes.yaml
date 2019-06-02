@@ -255,6 +255,12 @@
 		G: 0
 		B: 0
 		A: 180
+	PaletteFromRGBA@berserk:
+		Name: berserk
+		R: 255
+		G: 88
+		B: 0
+		A: 128
 	TSShroudPalette@shroud:
 		Name: shroud
 	ShroudRenderer:

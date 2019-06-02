@@ -239,3 +239,19 @@
 	ProductionCostMultiplier@IndustrialPlant:
 		Multiplier: 75
 		Prerequisites: naindp
+
+^Berserkable:
+	ExternalCondition@berserk:
+		Condition: berserk
+	WithColoredOverlay@berserk:
+		Palette: berserk
+		RequiresCondition: berserk
+	TimedConditionBar@berserk:
+		Condition: berserk
+		Color: FF5800
+	Berserkable:
+		RequiresCondition: berserk
+	RejectsOrders@berserk:
+		RequiresCondition: berserk
+	Targetable@berserk:
+		TargetTypes: Berserkable

@@ -4,6 +4,7 @@ e2:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -59,6 +60,7 @@ flakt:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -132,6 +134,7 @@ shk:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	AttackMove:
 		AttackMoveCondition: attack-move
 	AutoTargetPriority@DEFAULT:
@@ -212,6 +215,7 @@ terror:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -259,6 +263,7 @@ deso:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -318,6 +323,7 @@ ivan:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -479,6 +485,7 @@ virus:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
