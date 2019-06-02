@@ -72,6 +72,7 @@ shadhusk:
 hind:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Tooltip:
 		Name: Hind Carryall
 	Selectable:
