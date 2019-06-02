@@ -959,6 +959,8 @@ jumpjet.husk:
 		Gravity: -24,-24,36, 24,24,36
 		Duration: 13
 	-Explodes@smokespawn:
+	-GpsDotAS:
+	-ExternalCondition@hide-gpsdot:
 
 cleg:
 	Inherits: ^Infantry
