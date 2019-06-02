@@ -125,6 +125,10 @@
 		Name: grenicon
 		Filename: grenicon.png
 		AllowModifiers: false
+	PaletteFromPng@ltnkicon:
+		Name: ltnkicon
+		Filename: ltnkicon.png
+		AllowModifiers: false
 	PaletteFromPng@spiricon:
 		Name: spiricon
 		Filename: spiricon.png

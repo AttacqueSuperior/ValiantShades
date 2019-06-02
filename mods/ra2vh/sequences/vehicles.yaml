@@ -163,7 +163,8 @@ limo:
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: ltnkicon.png
+		AddExtension: false
 
 apoc:
 	Inherits: ^Vehicle

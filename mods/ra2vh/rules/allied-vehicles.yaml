@@ -184,6 +184,7 @@ ltnk:
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
 		Description: Have a limited amount of missiles for attacking\narmor and air. Also armed with a cannon.\n  Strong vs Vehicles, Ships, Aircraft\n  Weak vs Infantry, Structures
+		IconPalette: ltnkicon
 	Mobile:
 		Speed: 120
 		TurnSpeed: 5
