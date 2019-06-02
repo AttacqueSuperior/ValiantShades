@@ -212,35 +212,35 @@ zephusk:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 
-orca:
+beag:
 	Inherits: ^Plane
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Harrier
+		Name: Black Eagle
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: ~aircraft.allies # ~aircraft.harrier
+		Prerequisites: ~aircraft.allies
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Selectable:
 		Bounds: 30,24
 	Health:
-		HP: 150000
+		HP: 200000
 	Armor:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
 	Armament:
-		Weapon: Maverick
+		Weapon: Maverick2
 		PauseOnCondition: !ammo
 	AttackAircraft:
 		FacingTolerance: 20
 		Voice: Attack
 	Voiced:
-		VoiceSet: HarrierVoice
+		VoiceSet: BlackEagleVoice
 	AmmoPool:
 		Ammo: 1
 		PipCount: 1
@@ -249,52 +249,12 @@ orca:
 		AmmoCondition: ammo
 	AutoTarget:
 	RenderSprites:
-		Image: falc
-	RenderVoxels:
-		Image: falc
 	SpawnActorOnDeath:
-		Actor: orcahusk
+		Actor: beaghusk
 		DeathType: DefaultDeath
 	HitShape:
 	Rearmable:
 		RearmActors: gaairc, amradr, naairc
-
-orcahusk:
-	Inherits: ^PlaneHusk
-	Tooltip:
-		Name: Harrier
-	Aircraft:
-		TurnSpeed: 5
-		Speed: 210
-	RenderVoxels:
-		Image: falc
-	RevealsShroud:
-		Range: 8c0
-		Type: CenterPosition
-	RevealOnDeath:
-		Radius: 4c0
-
-beag:
-	Inherits: orca
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
-	Tooltip:
-		Name: Black Eagle
-	Buildable:
-		BuildPaletteOrder: 20
-		Prerequisites: ~aircraft.allies # ~aircraft.korea
-	SpawnActorOnDeath:
-		Actor: beaghusk
-	Armament:
-		Weapon: Maverick2
-	Health:
-		HP: 200000
-	Voiced:
-		VoiceSet: BlackEagleVoice
-	RenderSprites:
-		Image: beag
-	RenderVoxels:
-		Image: beag
-	HitShape:
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -311,8 +271,47 @@ beaghusk:
 	RevealOnDeath:
 		Radius: 4c0
 
+orca:
+	Inherits: beag
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Tooltip:
+		Name: Harrier
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: ~aircraft.allies
+	Valued:
+		Cost: 1500
+	SpawnActorOnDeath:
+		Actor: orcahusk
+	Armament:
+		Weapon: Maverick
+	Health:
+		HP: 150000
+	Voiced:
+		VoiceSet: HarrierVoice
+	RenderSprites:
+		Image: falc
+	RenderVoxels:
+		Image: falc
+	HitShape:
+
+orcahusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Harrier
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 210
+	RenderVoxels:
+		Image: falc
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+
 fflash:
-	Inherits: orca
+	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Tooltip:
 		Name: Flashfire
@@ -323,15 +322,8 @@ fflash:
 		Actor: fflashhusk
 	Armament:
 		Weapon: PlaneShmel
-	Health:
-		HP: 200000
 	Voiced:
 		VoiceSet: FlashFireVoice
-	RenderSprites:
-		Image: fflash
-	RenderVoxels:
-		Image: fflash
-	HitShape:
 
 fflashhusk:
 	Inherits: ^PlaneHusk
