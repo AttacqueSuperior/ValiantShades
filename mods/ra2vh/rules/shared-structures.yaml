@@ -270,6 +270,11 @@
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	GrantConditionOnProduction:
+		Actors: zep, shad, hind
+		Condition: roof-open
+		Duration: 50
+		ShowSelectionBar: false
 
 ^Tier2:
 	Inherits: ^Building

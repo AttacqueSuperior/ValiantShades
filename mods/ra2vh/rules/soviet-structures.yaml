@@ -159,16 +159,22 @@ naweap:
 	#	RequiresCondition: !build-incomplete
 	WithExitOverlay@door:
 		Sequence: build-door
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@bib:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
+	WithIdleOverlay@air-open:
+		Sequence: build-air-open
+		RequiresCondition: roof-open && !build-incomplete
+	WithIdleOverlay@air-inside:
+		Sequence: build-air-inside
+		RequiresCondition: roof-open && !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2

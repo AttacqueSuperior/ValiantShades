@@ -195,10 +195,16 @@ gaweap:
 		RequiresCondition: !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
 	WithExitOverlay@ramp:
 		Sequence: build-ramp
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
+	WithIdleOverlay@air-open:
+		Sequence: build-air-open
+		RequiresCondition: roof-open && !build-incomplete
+	WithIdleOverlay@air-inside:
+		Sequence: build-air-inside
+		RequiresCondition: roof-open && !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
