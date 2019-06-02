@@ -17,16 +17,17 @@ nacnst:
 		Length: 11
 		Tick: 150
 	idle-normal: ngcnst
-		ShadowStart: 3
 		ZOffset: -1024
 	damaged-idle-normal: ngcnst
 		ZOffset: -1024
 	build: ngcnst_b
 		Length: 21
+		ShadowStart: 42
 		Tick: 150
 	damaged-build: ngcnst_b
 		Start: 21
 		Length: 21
+		ShadowStart: 63
 		Tick: 150
 	icon: scnsicon
 
