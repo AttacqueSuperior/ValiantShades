@@ -81,7 +81,6 @@ Player:
 		LimitedAudio: NoBuild
 		DisplayOrder: 5
 	PlaceBuilding:
-		Palette: effect75alpha
 	SupportPowerManager:
 	ScriptTriggers:
 	MissionObjectives:

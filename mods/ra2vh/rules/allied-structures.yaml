@@ -361,6 +361,8 @@ garbur:
 		ValidPowerStates: Low, Critical
 	RenderSprites:
 		PlayerPalette: xuetallied2
+	ActorPreviewPlaceBuildingPreview:
+		OverridePalette: placexuetallied2
 	WithIdleOverlay@bolt:
 		Sequence: idle-bolt
 		RequiresCondition: !build-incomplete && !lowpower
@@ -581,6 +583,8 @@ gaweat:
 		RequiresCondition: !build-incomplete
 	RenderSprites:
 		PlayerPalette: weathercontroller
+	ActorPreviewPlaceBuildingPreview:
+		OverridePalette: placeweathercontroller
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3

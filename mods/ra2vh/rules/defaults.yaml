@@ -92,6 +92,12 @@
 		UndeploySounds: uselbuil.wav
 		TerrainTypes: Clear, Road, DirtRoad, Rough
 		RequiresBaseProvider: True
+	ActorPreviewPlaceBuildingPreview:
+		Palette: placefootprint
+		LineBuildSegmentPalette: placelinesegment
+		OverridePalette: placebuilding
+		FootprintUnderPreview: Valid, LineBuild, Invalid
+		FootprintOverPreview: None
 	FrozenUnderFog:
 	GivesBuildableArea:
 		AreaTypes: building
@@ -256,6 +262,10 @@
 		UndeploySounds: uselbuil.wav
 	KillsSelf:
 		RemoveInstead: true
+	SequencePlaceBuildingPreview:
+		Sequence: place
+		SequencePalette: placebuilding
+		Palette: placefootprint
 	RenderSprites:
 
 ^Flag:
@@ -313,6 +323,9 @@
 		Footprint: x
 		BuildSounds: uplace.wav
 		TerrainTypes: Clear, Rough, Road, DirtRoad
+	FootprintPlaceBuildingPreview:
+		Palette: placefootprint
+		LineBuildSegmentPalette: placelinesegment
 	BlocksProjectiles:
 	LineBuild:
 		Range: 8

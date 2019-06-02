@@ -282,3 +282,27 @@
 	FlashPaletteEffect@NUKE:
 		Type: Nuke
 		Length: 45
+	PaletteFromPaletteWithAlpha@placefootprint:
+		Name: placefootprint
+		BasePalette: ra
+		Alpha: 0.7
+	PaletteFromPaletteWithAlpha@placelinesegment:
+		Name: placelinesegment
+		BasePalette: ra
+		Alpha: 0.5
+	PaletteFromPlayerPaletteWithAlpha@placebuilding:
+		BaseName: placebuilding
+		BasePalette: player
+		Alpha: 0.55
+	PaletteFromPlayerPaletteWithAlpha@placeweathercontroller:
+		BaseName: placeweathercontroller
+		BasePalette: weathercontroller
+		Alpha: 0.55
+	PaletteFromPlayerPaletteWithAlpha@placexuetallied1:
+		BaseName: placexuetallied1
+		BasePalette: xuetallied1
+		Alpha: 0.55
+	PaletteFromPlayerPaletteWithAlpha@placexuetallied2:
+		BaseName: placexuetallied2
+		BasePalette: xuetallied2
+		Alpha: 0.55
