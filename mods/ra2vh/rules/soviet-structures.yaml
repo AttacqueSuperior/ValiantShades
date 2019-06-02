@@ -484,7 +484,7 @@ naclon:
 		Offset: 3,3
 	ClonesProducedUnits:
 		CloneableTypes: infantry
-		# RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
