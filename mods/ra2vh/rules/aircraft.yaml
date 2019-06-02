@@ -41,7 +41,8 @@ shad:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-		OffsetModifier: -45
+		BobDistance: -64
+		InitialHeight: 64
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
@@ -116,7 +117,8 @@ hind:
 	-DeathSounds:
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-		OffsetModifier: -45
+		BobDistance: -64
+		InitialHeight: 64
 	-Guard:
 
 hindhusk:
@@ -179,7 +181,8 @@ zep:
 	RenderVoxels:
 	WithVoxelBody:
 	Hovers:
-		OffsetModifier: -10
+		BobDistance: -24
+		InitialHeight: 24
 	Voiced:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:

@@ -905,7 +905,8 @@ jumpjet:
 		DefaultAttackSequence: shoot-air
 		IdleSequences: idle-air
 	Hovers:
-		OffsetModifier: -45
+		BobDistance: -64
+		InitialHeight: 64
 	-Crushable:
 	-TakeCover:
 	-Targetable:
