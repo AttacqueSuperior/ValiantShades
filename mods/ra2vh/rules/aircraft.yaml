@@ -278,7 +278,8 @@ orca:
 		Name: Harrier
 	Buildable:
 		BuildPaletteOrder: 30
-		Prerequisites: ~aircraft.allies
+		Prerequisites: ~aircraft.allies, gatech
+		Description: Fighter armed with drug-disspating missile.\nAffected units go berserk and attack\neverything around them.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 	Valued:
 		Cost: 1500
 	SpawnActorOnDeath:

@@ -121,3 +121,6 @@ explosion:
 	rocketeerhit: art-exp1
 	fireflashhit: fflashhit
 	grenadierhit: fball1
+	berserkhit: brsrkexp
+	berserkgas: brsrkgas
+	

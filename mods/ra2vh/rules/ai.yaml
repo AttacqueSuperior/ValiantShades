@@ -178,9 +178,9 @@ Player:
 			tnkd: 15
 			bfrt.ai: 5
 			bfrt.ai2: 3
-			orca: 5
-			beag: 5
-			spirit: 1
+			beag: 15
+			orca: 1
+			spirit: 5
 			e2: 90
 			flakt: 10
 			shk: 10
@@ -196,19 +196,19 @@ Player:
 			ttnk: 15
 			mind: 10
 			zep: 1
-			fflash: 5
+			fflash: 15
 		UnitLimits:
 			dog: 4
 			cmin: 6
-			orca: 4
-			beag: 4
+			beag: 6
+			orca: 2
 			spirit: 2
 			ivan: 5
 			yuri: 4
 			harv: 6
 			mind: 3
 			zep: 2
-			fflash: 4
+			fflash: 6
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		McvTypes: amcv, smcv

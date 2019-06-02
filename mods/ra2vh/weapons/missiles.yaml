@@ -59,11 +59,11 @@ MammothTuskAAE:
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
 
-Maverick:
+Maverick2:
 	Inherits: ^Missile
 	ReloadDelay: 10
 	Range: 6c0
-	Report: vintatta.wav
+	Report: vblaatta.wav
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Image: patriot
@@ -85,23 +85,41 @@ Maverick:
 		ImpactSounds: gexpwala.wav
 		ValidTargets: Water
 
-MaverickE:
-	Inherits: Maverick
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
-	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
-
-Maverick2:
-	Inherits: Maverick
-	Report: vblaatta.wav
-
 Maverick2E:
 	Inherits: Maverick2
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+Maverick:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vintatta.wav
+	ValidTargets: Berserkable
+	InvalidTargets: Air
+	Projectile: Missile
+		Image: patriot
+		Inaccuracy: 128
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+	Warhead@2Eff: CreateEffect
+		Explosions: berserkhit
+		ExplosionPalette: rookieapolloexp
+		ValidTargets: Ground, Water, Air
+	Warhead@3Eff: CreateEffect
+		Explosions: berserkgas
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: vchaatta.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@4Berserk: GrantExternalCondition
+		Range: 2c512
+		Duration: 300
+		Condition: berserk
+		ValidTargets: Berserkable
+		InvalidTargets: Air
+		ValidStances: Neutral, Enemy
 
 Medusa:
 	Inherits: ^AAMissile
