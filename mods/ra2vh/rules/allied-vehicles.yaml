@@ -176,14 +176,14 @@ ltnk:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Valued:
-		Cost: 600
+		Cost: 650
 	Tooltip:
-		Name: Light Tank
+		Name: Wolverine Light Tank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: Light Tank. Can be deployed to sacrifice speed and\nground range for attacking air.\n  Strong vs Vehicles, Ships\n    Aircraft (deployed)\n  Weak vs Infantry
+		Description: Have a limited amount of missiles for attacking\narmor and air. Also armed with a cannon.\n  Strong vs Vehicles, Ships, Aircraft\n  Weak vs Infantry, Structures
 	Mobile:
 		Speed: 120
 		TurnSpeed: 5
@@ -202,38 +202,30 @@ ltnk:
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 640,0,512
-		PauseOnCondition: !ammo
-		RequiresCondition: undeployed && !rank-elite
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 640,0,512
+		RequiresCondition: rank-elite
+	Armament@tow:
+		Name: secondary
+		Weapon: WolverineTow
+		LocalOffset: 320,600,512
 		PauseOnCondition: !ammo
-		RequiresCondition: undeployed && rank-elite
-	Armament@mortar:
-		Weapon: 90mmMortar
-		LocalOffset: 640,0,512
+		RequiresCondition: !rank-elite
+	Armament@tow-elite:
+		Name: secondary
+		Weapon: WolverineTowE
+		LocalOffset: 320,600,512
 		PauseOnCondition: !ammo
-		RequiresCondition: deployed && !rank-elite
-	Armament@mortar-elite:
-		Weapon: 90mmMortarE
-		LocalOffset: 640,0,512
-		PauseOnCondition: !ammo
-		RequiresCondition: deployed && rank-elite
-	Armament@aamortar:
-		Weapon: 90mmMortarAA
-		LocalOffset: 640,0,512
-		PauseOnCondition: !ammo
-		RequiresCondition: deployed && !rank-elite
-	Armament@aamortar-elite:
-		Weapon: 90mmMortarAAE
-		LocalOffset: 640,0,512
-		PauseOnCondition: !ammo
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: rank-elite
 	AmmoPool:
-		PipCount: 0
+		Armaments: secondary
+		Ammo: 2
+		PipCount: 2
 		AmmoCondition: ammo
 	ReloadAmmoPool:
-		Delay: 20
+		Delay: 115
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -244,34 +236,15 @@ ltnk:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
-		RequiresCondition: !deployed
-	WithVoxelBarrel@mortar:
-		Sequence: barrel-mortar
-		RequiresCondition: deployed
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
-	GrantConditionOnDeploy:
-		DeployedCondition: deployed
-		UndeployedCondition: undeployed
-		Voice: Move
-		CanDeployOnRamps: True
 	AutoTargetPriority@air:
 		ValidTargets: Air
 		InvalidTargets: NoAutoTarget
-		RequiresCondition: deployed
-	AIDeployHelper:
-		DeployChance: 50
-		DeployTicks: 1000
-		UndeployTicks: 1000
-	SpeedMultiplier@deploy:
-		RequiresCondition: deployed
-		Modifier: 66
-	FirepowerMultiplier@deploy:
-		RequiresCondition: deployed
-		Modifier: 150
+		RequiresCondition: ammo
 
 mtnk:
 	Inherits: ^StandardTank

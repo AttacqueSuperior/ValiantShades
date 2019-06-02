@@ -325,3 +325,21 @@ PlaneShmelE:
 		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+WolverineTow:
+	Inherits: MissileLauncher
+	ReloadDelay: 15
+	Range: 7c512
+	Report: iggiat2a.wav, iggiat2b.wav
+	ValidTargets: Air, Vehicle
+	Projectile: Missile
+		RangeLimit: 15c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 60000
+
+WolverineTowE:
+	Inherits: WolverineTow
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicra2exp
