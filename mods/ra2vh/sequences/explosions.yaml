@@ -39,7 +39,7 @@ explosion:
 	small_grey_explosion: xgrysml2
 	medium_grey_explosion: xgrymed1
 	large_grey_explosion: xgrymed2
-	nuke_explosion: nukeanim
+	nuke_explosion: mignuke
 	nuke_ball: nukeball
 	demotruck_explosion: demtexp
 	elite_explosion: vtexplod
