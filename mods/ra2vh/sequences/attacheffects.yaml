@@ -22,3 +22,9 @@
 		Start: 309
 		Length: 10
 		Offset: 0, 0, 24
+
+^AffectedByEMP:
+	emp-overlay: emp_fx01
+		UseTilesetCode: false
+		Length: *
+		Offset: 0, 0, 24

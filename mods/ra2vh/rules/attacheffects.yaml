@@ -255,3 +255,20 @@
 		RequiresCondition: berserk
 	Targetable@berserk:
 		TargetTypes: Berserkable
+
+^AffectedByEMP:
+	WithColoredOverlay@emp:
+		RequiresCondition: emp
+		Palette: empdisabled
+	TimedConditionBar@emp:
+		Condition: emp
+		Color: 000080
+	WithIdleOverlay@emp:
+		Sequence: emp-overlay
+		Palette: tseffect
+		RequiresCondition: emp
+	ExternalCondition@emp:
+		Condition: emp
+	GrantCondition@emp-disable:
+		Condition: disabled
+		RequiresCondition: emp
