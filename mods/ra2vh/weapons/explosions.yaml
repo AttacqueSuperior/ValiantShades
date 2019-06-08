@@ -24,8 +24,8 @@ UnitExplodeSmall:
 InfantryExplode:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
-		Explosions: medium_bang
-		ExplosionPalette: effect
+		Explosions: infantryexplode
+		ExplosionPalette: ra
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
