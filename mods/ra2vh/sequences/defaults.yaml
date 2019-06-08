@@ -132,6 +132,7 @@
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	Defaults:
 		UseTilesetCode: true
 		TilesetOverrides:
@@ -156,6 +157,7 @@
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	Defaults:
 		UseTilesetCode: true
 	idle:
@@ -170,6 +172,7 @@
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	Defaults:
 		UseTilesetCode: true
 	idle:
@@ -185,11 +188,18 @@
 ^Vehicle:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
+
+^Aircraft:
+	Inherits@IvanBomb: ^IvanBombable
+	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 
 ^Flag:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	Defaults:
 		UseTilesetCode: true
 		Offset: 0,-15

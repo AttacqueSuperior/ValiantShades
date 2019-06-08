@@ -1,46 +1,46 @@
 asw:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: xxicon
 
 beag:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: beagicon
 
 cargoplane:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: xxicon
 
 falc:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: falcicon
 
 fflash:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: bplnicon
 
 hind:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
 	icon: hindicon
 
 hornet:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: xxicon
 
 pdplane:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: xxicon
 
 shad:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
 	icon: shadicon
 
 spirit:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: spiricon.png
 		AddExtension: false
 
 zep:
-	Inherits@IvanBomb: ^IvanBombable
+	Inherits: ^Aircraft
 	icon: zepicon

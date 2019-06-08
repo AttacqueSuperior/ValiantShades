@@ -259,13 +259,13 @@
 ^AffectedByEMP:
 	WithColoredOverlay@emp:
 		RequiresCondition: emp
-		Palette: empdisabled
+		Palette: empdisable
 	TimedConditionBar@emp:
 		Condition: emp
 		Color: 000080
 	WithIdleOverlay@emp:
 		Sequence: emp-overlay
-		Palette: tseffect
+		Palette: tsanim
 		RequiresCondition: emp
 	ExternalCondition@emp:
 		Condition: emp

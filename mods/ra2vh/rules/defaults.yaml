@@ -75,6 +75,7 @@
 	Inherits@shape: ^1x1Shape
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -187,6 +188,7 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
 		Types: SpySat
 		RevealGeneratedShroud: False
@@ -231,6 +233,7 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
 		Types: SpySat
 		RevealGeneratedShroud: False
@@ -285,6 +288,7 @@
 		Type: Steel
 	RevealsShroud:
 		Range: 5c0
+		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
 		Types: SpySat
 		RevealGeneratedShroud: False
@@ -394,6 +398,7 @@
 		Speed: 60
 		Voice: Move
 		Locomotor: foot
+		PauseOnCondition: !disabled
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
 		Palette: pips
@@ -554,6 +559,9 @@
 		RequiresCondition: damaged && !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
+	GrantCondition@parachute-disable:
+		Condition: disabled
+		RequiresCondition: parachute
 
 ^WithSwimSuit:
 	WithInfantryBody:
@@ -682,6 +690,7 @@
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -689,6 +698,7 @@
 		Voice: Move
 		TurnSpeed: 5
 		Locomotor: wheeled
+		PauseOnCondition: !disabled
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -785,6 +795,7 @@
 	Inherits@3: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
+	Inherits@emp: ^AffectedByEMP
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -929,6 +940,7 @@
 	Inherits@7: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
+	Inherits@emp: ^AffectedByEMP
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -936,6 +948,7 @@
 		Voice: Move
 		Locomotor: naval
 		TurnSpeed: 5
+		PauseOnCondition: !disabled
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha
