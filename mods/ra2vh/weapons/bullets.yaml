@@ -274,7 +274,7 @@ GrenadeDisc:
 			Rocket: 100
 	Warhead@2Eff: CreateEffect
 		Explosions: grenadierhit
-		ExplosionPalette: rookieraexp
+		ExplosionPalette: rookieapolloexp
 		ImpactSounds: kaboom30.wav
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
@@ -282,6 +282,6 @@ GrenadeDisc:
 GrenadeDiscE:
 	Inherits: GrenadeDisc
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicraexp
+		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp

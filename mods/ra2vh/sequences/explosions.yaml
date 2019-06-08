@@ -120,7 +120,8 @@ explosion:
 	sovietpowerplantexplosion: tstlexp
 	rocketeerhit: art-exp1
 	fireflashhit: fflashhit
-	grenadierhit: fball1
+	grenadierhit: grenahit
 	berserkhit: brsrkexp
 	berserkgas: brsrkgas
+	infantryexplode: fball1
 	
