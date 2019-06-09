@@ -3,11 +3,20 @@ ElectricBolt:
 	Report: itesat2a.wav, itesat2b.wav
 	Projectile: TeslaZap
 		BrightSequence: bright-grey
+	Warhead@emp: GrantExternalCondition
+		Range: 64
+		Duration: 3
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
 
 ElectricBoltE:
 	Inherits: ElectricBolt
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+	Warhead@emp: GrantExternalCondition
+		Duration: 6
 
 CRElectricBolt:
 	Inherits: ElectricBolt
@@ -20,6 +29,8 @@ CRElectricBoltE:
 	Inherits: CRElectricBolt
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+	Warhead@emp: GrantExternalCondition
+		Duration: 6
 
 AssaultBolt:
 	ReloadDelay: 70
@@ -73,11 +84,20 @@ TankBolt:
 		DimSequence: dim-grey
 	Warhead@1Dam: SpreadDamage
 		Damage: 67000
+	Warhead@emp: GrantExternalCondition
+		Range: 64
+		Duration: 7
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
 
 TankBoltE:
 	Inherits: TankBolt
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+	Warhead@emp: GrantExternalCondition
+		Duration: 15
 
 SonicZap:
 	ReloadDelay: 180
