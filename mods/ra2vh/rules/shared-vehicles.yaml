@@ -30,6 +30,7 @@
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	RenderVoxels:

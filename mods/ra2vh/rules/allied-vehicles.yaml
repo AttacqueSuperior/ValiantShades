@@ -37,6 +37,7 @@ amcv:
 		Facing: 96
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
+		PauseOnCondition: disabled
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -96,7 +97,7 @@ cmin:
 		Palette: effect
 	GainsExperience: # can get experience, i.e. speed
 		LevelUpImage: crate-effects
-	RenderSprites: # TODO: WithHarvestOverlay relies on this, but it should actually be removed
+	RenderSprites:
 	RenderVoxels:
 	WithVoxelUnloadBody:
 	Voiced:
@@ -134,7 +135,7 @@ hmmv:
 		Speed: 140
 		TurnSpeed: 6
 		Locomotor: wheeled
-		PauseOnCondition: !(!notmobile && !chronodisable)
+		PauseOnCondition: disabled || loading
 	Health:
 		HP: 150000
 	Armor:
@@ -151,9 +152,10 @@ hmmv:
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingCondition: notmobile
+		LoadingCondition: loading
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
 		Weapon: CRM60
@@ -227,8 +229,10 @@ ltnk:
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 115
+		PauseOnCondition: disabled
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -307,6 +311,7 @@ tnkd:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -337,7 +342,7 @@ fv:
 	Mobile:
 		Speed: 150
 		TurnSpeed: 5
-		PauseOnCondition: !(!notmobile && !chronodisable)
+		PauseOnCondition: disabled || loading
 	Health:
 		HP: 200000
 	Armor:
@@ -354,7 +359,7 @@ fv:
 		MaxWeight: 1
 		PipCount: 1
 		UnloadVoice: Move
-		LoadingCondition: notmobile
+		LoadingCondition: loading
 		PassengerConditions:
 			e1: ifv-mg
 			e2: ifv-mg
@@ -413,6 +418,7 @@ fv:
 		RequiresCondition: ifv-chrono
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTargetPriority@DEFAULT:
 		RequiresCondition: !stance-attackanything && !assault-move && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero && !ifv-demo && !ifv-chrono
 	AutoTargetPriority@ATTACKANYTHING:
@@ -508,6 +514,7 @@ sref:
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
@@ -578,7 +585,7 @@ mgtk:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-	AutoTarget:
+		PauseOnCondition: disabled
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -619,7 +626,7 @@ bfrt:
 		TurnSpeed: 5
 		Speed: 60
 		Locomotor: omnicrusher
-		PauseOnCondition: !(!notmobile && !chronodisable)
+		PauseOnCondition: disabled || loading
 	-Crushable:
 	Passenger:
 		Weight: 6
@@ -637,7 +644,7 @@ bfrt:
 		UnloadVoice: Move
 		MaxWeight: 5
 		PipCount: 5
-		LoadingCondition: notmobile
+		LoadingCondition: loading
 		PassengerConditions:
 			e1: loaded
 			e2: loaded

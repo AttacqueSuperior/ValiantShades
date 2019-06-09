@@ -28,6 +28,7 @@ shad:
 	-AppearsOnRadar:
 	AttackAircraft:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Aircraft:
 		CruiseAltitude: 3072
 		LandWhenIdle: true
@@ -176,6 +177,7 @@ zep:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
@@ -242,6 +244,7 @@ beag:
 	AttackAircraft:
 		FacingTolerance: 20
 		Voice: Attack
+		PauseOnCondition: disabled
 	Voiced:
 		VoiceSet: BlackEagleVoice
 	AmmoPool:
@@ -372,6 +375,7 @@ spirit:
 	AttackAircraft:
 		FacingTolerance: 20
 		Voice: Attack
+		PauseOnCondition: disabled
 	Voiced:
 		VoiceSet: SpiritVoice
 	AmmoPool:

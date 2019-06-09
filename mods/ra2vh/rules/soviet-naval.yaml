@@ -22,7 +22,7 @@ sapc:
 		TurnSpeed: 5
 		Speed: 90
 		Locomotor: lcraft
-		PauseOnCondition: !(!notmobile && !chronodisable)
+		PauseOnCondition: disabled || loading
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
@@ -35,7 +35,7 @@ sapc:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingCondition: notmobile
+		LoadingCondition: loading
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -100,6 +100,7 @@ sub:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
@@ -147,6 +148,7 @@ hyd:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: FlakTrackGun
 		LocalOffset: 256,0,1408
@@ -186,6 +188,7 @@ sqd:
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
+		PauseOnCondition: disabled
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -196,6 +199,7 @@ sqd:
 		Weapon: SquidPunch
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RevealsShroud:
 		Range: 5c0

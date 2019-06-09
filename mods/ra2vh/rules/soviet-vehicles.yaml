@@ -89,6 +89,7 @@ harv:
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	Turreted:
 		TurnSpeed: 10
@@ -158,6 +159,7 @@ dron:
 		Weapon: DroneJump
 	AttackLeapAS:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
@@ -190,7 +192,7 @@ htk:
 		Speed: 120
 		TurnSpeed: 5
 		Locomotor: tracked
-		PauseOnCondition: !(!notmobile && !chronodisable)
+		PauseOnCondition: disabled || loading
 	Health:
 		HP: 180000
 	Armor:
@@ -207,9 +209,10 @@ htk:
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingCondition: notmobile
+		LoadingCondition: loading
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
@@ -268,6 +271,7 @@ slost:
 		DeathTypes: DefaultDeath
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
 		Weapon: GattlingGun
@@ -395,6 +399,7 @@ apoc:
 		Count: 2
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -454,6 +459,7 @@ ttnk:
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: disabled
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -541,12 +547,14 @@ mind:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
 		Capacity: 0
+		RequiresCondition: !disabled
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
 	AttackFrontal:
 		FacingTolerance: 64
 		Voice: Attack
+		PauseOnCondition: disabled
 	AttackMove:
 		Voice: Move
 	AutoTarget:

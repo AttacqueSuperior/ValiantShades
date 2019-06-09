@@ -398,7 +398,7 @@
 		Speed: 60
 		Voice: Move
 		Locomotor: foot
-		PauseOnCondition: !disabled
+		PauseOnCondition: disabled
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
 		Palette: pips
@@ -698,7 +698,7 @@
 		Voice: Move
 		TurnSpeed: 5
 		Locomotor: wheeled
-		PauseOnCondition: !disabled
+		PauseOnCondition: disabled
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -948,7 +948,7 @@
 		Voice: Move
 		Locomotor: naval
 		TurnSpeed: 5
-		PauseOnCondition: !disabled
+		PauseOnCondition: disabled
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha
