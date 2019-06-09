@@ -289,6 +289,13 @@ litning:
 		Start: 20
 		Length: 4
 
+fireball:
+	idle: fb1
+		Length: *
+	trailer: fb2
+		Length: *
+		Tick: 80
+
 moveflsh:
 	idle: ring
 		Length: *

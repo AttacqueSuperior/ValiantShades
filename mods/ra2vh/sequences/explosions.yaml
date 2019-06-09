@@ -124,4 +124,5 @@ explosion:
 	berserkhit: brsrkexp
 	berserkgas: brsrkgas
 	infantryexplode: fball1
+	napalmhit: firehit
 	

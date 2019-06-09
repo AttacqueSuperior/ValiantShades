@@ -483,3 +483,11 @@ BrainWaveOverload:
 		Weapon: DamageSpark
 		Amount: 18
 		AffectsParent: true
+
+DragonFlamer:
+	Inherits: ^Flamer
+
+DragonFlamerE:
+	Inherits: DragonFlamer
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicapolloexp

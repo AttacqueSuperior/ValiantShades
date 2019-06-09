@@ -239,6 +239,58 @@ htk:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 
+drgn:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Dragon Tank
+	Selectable:
+		Bounds: 50, 40, 0, -6
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap
+		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Mobile:
+		Speed: 140
+		TurnSpeed: 5
+		Locomotor: tracked
+	Health:
+		HP: 210000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	Armament@primary:
+		Weapon: DragonFlamer
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: DragonFlamerE
+		RequiresCondition: rank-elite
+	Turreted:
+		TurnSpeed: 10
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelTurret:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: GattlingTankVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+
 slost:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

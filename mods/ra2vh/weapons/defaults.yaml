@@ -199,3 +199,43 @@
 	Warhead@flames: FireFragment
 		Weapon: SmallFlame
 		Chance: 50
+
+^Flamer:
+	ReloadDelay: 40
+	Range: 4c0
+	Report: flamtnk2.wav
+	InvalidTargets: Wall
+	Projectile: BulletAS
+		Speed: 320
+		Image: fireball
+		Palette: ra
+		TrailImage: fireball
+		TrailSequences: trailer
+		TrailPalette: ra
+		TrailInterval: 1
+		LaunchAngle: 41
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 50000
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 50
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 75
+			Concrete: 75
+			Drone: 33
+			Rocket: 33
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+	Warhead@3Eff: CreateEffect
+		Explosions: napalmhit
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: firebl3.wav
+	Warhead@flames: FireFragment
+		Weapon: LargeFlame
+		Chance: 50

@@ -68,6 +68,11 @@ dred:
 	Inherits@MC: ^MindControllable
 	icon: dredicon
 
+drgn:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 dron:
 	Inherits: ^Vehicle
 	stand:

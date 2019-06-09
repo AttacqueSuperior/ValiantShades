@@ -56,6 +56,10 @@ dred:
 	idle:
 #Needs without weapon image dredwo
 
+drgn:
+	idle: drgn
+	turret: drgntur
+
 euroc:
 	idle:
 
