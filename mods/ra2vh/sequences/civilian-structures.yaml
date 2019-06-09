@@ -52,7 +52,6 @@ cawash06:
 	idle: cgwash06_a # Custom artwork, original lacked shadow.
 		ShadowStart: 1
 	damaged-idle: cuwash06
-	rubble: cuwash06
 
 cawash07:
 	Inherits: ^CivStructure
@@ -230,25 +229,21 @@ caarmy01:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: -15,-37
-	-rubble:
 
 caarmy02:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 caarmy03:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 caarmy04:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 cawa2a:
 	Inherits: ^CivStructure
@@ -274,7 +269,6 @@ cafarm01:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-30
-	-rubble:
 
 cafarm02:
 	Inherits: ^CivStructure
@@ -290,13 +284,11 @@ cafrma:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-30
-	-rubble:
 
 cafrmb:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 cabarn02:
 	Inherits: ^CivStructure
@@ -368,25 +360,21 @@ camisc01:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camisc02:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camisc03:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camisc04:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camisc05:
 	Inherits: ^CivStructure
@@ -396,31 +384,26 @@ camisc05:
 		ShadowStart: 2
 	damaged-idle:
 		ShadowStart: 3
-	-rubble:
 
 camisc06:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: -15,-22
-	-rubble:
 
 camsc07:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-30
-	-rubble:
 
 camsc08:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camsc09:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camsc10:
 	Inherits: ^CivStructure
@@ -431,19 +414,16 @@ camsc11:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camsc12:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camsc13:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 15,-22
-	-rubble:
 
 camiam01:
 	Inherits: ^CivStructure
@@ -464,7 +444,6 @@ camiam04:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 camiam05:
 	Inherits: ^CivStructure
@@ -547,7 +526,6 @@ castl01:
 	Inherits: ^CivStructure
 	Defaults: custl01
 		Offset: 0,-60
-	-rubble:
 
 castl02:
 	Inherits: ^CivStructure
@@ -705,32 +683,26 @@ carus02c:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 carus02d:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 carus02e:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 carus02f:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 carus02g:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	rubble:
-		ShadowStart: -1
 
 carus03:
 	Inherits: ^CivStructure
@@ -948,7 +920,6 @@ capars07:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-	-rubble:
 
 capars08:
 	Inherits: ^CivStructure

@@ -255,8 +255,9 @@ smallsmoke:
 		Length: *
 
 nukesmoke:
-	idle: nukepuff
+	idle: nukepuff2
 		Length: *
+		BlendMode: Translucent
 
 largefire:
 	idle: fire01
