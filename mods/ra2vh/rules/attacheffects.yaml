@@ -165,10 +165,14 @@
 	TimedConditionBar@ChronoDisable:
 		Condition: chronodisable
 		Color: FFFFFF
-	Mobile:
-		PauseOnCondition: !(!chronodisable)
+	WithColoredOverlay@ChronoDisable:
+		RequiresCondition: chronodisable
+		Palette: temporal
 	ExternalCondition@CHRONODISABLE:
 		Condition: chronodisable
+	GrantCondition@chrono-disable:
+		Condition: disabled
+		RequiresCondition: chronodisable
 
 ^MindControllable:
 	MindControllable:

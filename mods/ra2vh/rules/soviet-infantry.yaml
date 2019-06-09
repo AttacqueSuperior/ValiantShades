@@ -424,7 +424,7 @@ yuri:
 	Health:
 		HP: 100000
 	Mobile:
-		PauseOnCondition: !(!deployed && !deploying && !chronodisable)
+		PauseOnCondition: deployed || deploying || disabled
 	RevealsShroud:
 		Range: 12c0
 	RevealOnDeath:

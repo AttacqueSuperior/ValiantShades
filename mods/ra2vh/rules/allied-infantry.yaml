@@ -150,7 +150,7 @@ e1:
 	Health:
 		HP: 125000
 	Mobile:
-		PauseOnCondition: !(!chronodisable && undeployed)
+		PauseOnCondition: !undeployed || disabled
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -270,7 +270,7 @@ ggi:
 	Health:
 		HP: 100000
 	Mobile:
-		PauseOnCondition: !(!chronodisable && undeployed)
+		PauseOnCondition: !undeployed || disabled
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -870,8 +870,6 @@ jumpjet:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125000
-	-TimedConditionBar@ChronoDisable:
-	-ExternalCondition@CHRONODISABLE:
 	-Mobile:
 	RevealsShroud:
 		Range: 8c0
