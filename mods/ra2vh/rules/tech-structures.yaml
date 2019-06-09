@@ -151,6 +151,8 @@ caoutp:
 		HpPerStep: 10000
 	WithIdleOverlay@tower:
 		Sequence: idle-tower
+	WithIdleOverlay@tower-shadow:
+		Sequence: idle-tower-shadow
 	WithIdleOverlay@bib:
 		Sequence: bib
 	WithIdleOverlay@flag:
