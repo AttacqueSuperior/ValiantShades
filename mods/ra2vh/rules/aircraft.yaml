@@ -428,6 +428,7 @@ pdplane:
 	Armor:
 		Type: Light
 	RenderSprites:
+		Image: pdplane
 	WithVoxelBody:
 	Cargo:
 		MaxWeight: 10
@@ -438,6 +439,8 @@ pdplane:
 		Actor: pdplanehusk
 		DeathType: DefaultDeath
 	HitShape:
+	GpsDotAS:
+		Sequence: plane
 
 pdplanehusk:
 	Inherits: ^PlaneHusk
@@ -448,3 +451,13 @@ pdplanehusk:
 		Speed: 100
 	RenderVoxels:
 		Image: pdplane
+
+pdplane.crate:
+	Inherits: pdplane
+	-Targetable@airborne:
+	-Targetable@ground:
+	-Targetable@Repair:
+	-DamagedByTintedCells:
+	-GrantConditionOnDamageState@damaged:
+	Aircraft:
+		-AirborneCondition:

@@ -1118,6 +1118,7 @@
 ^Crate:
 	Inherits@1: ^SpriteActor
 	HiddenUnderFog:
+	ConditionManager:
 	Tooltip:
 		Name: Crate
 		GenericName: Crate
@@ -1126,9 +1127,39 @@
 	RenderSprites:
 		Palette: terrain
 		Image: crate
-	WithCrateBody:
-		LandSequence: land
-		WaterSequence: water
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: water
+	WithSpriteBody:
+		Sequence: land
+		RequiresCondition: !parachute && !water
+	WithSpriteBody@water:
+		Name: body-in-water
+		Sequence: water
+		RequiresCondition: !parachute && water
+	WithSpriteBody@air:
+		Name: body-in-air
+		RequiresCondition: parachute
+	WithSpriteBody@shadow:
+		RequiresCondition: parachute
+		Name: shadow
+		Sequence: shadow
+		ForceToGround: true
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+		ParachutingCondition: parachute
+	Passenger:
+	WithParachute:
+		RequiresCondition: parachute
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
 	MapEditorData:
 		Categories: System
 	Interactable:

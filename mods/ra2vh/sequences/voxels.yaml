@@ -143,6 +143,9 @@ caoutp:
 pdplane:
 	idle:
 
+pdplane.crate:
+	idle: cratplne
+
 pick:
 	idle:
 
