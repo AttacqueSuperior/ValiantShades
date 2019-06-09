@@ -71,7 +71,7 @@ dred:
 drgn:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: drgnicon
 
 dron:
 	Inherits: ^Vehicle
