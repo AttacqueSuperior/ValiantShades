@@ -39,6 +39,17 @@ caoild:
 		#TO-DO - Wire this to an explicit CaptureType.
 	GpsDotAS:
 		Sequence: oil
+	SpawnActorOnDeath:
+		Actor: caoild.rubble
+
+caoild.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: caoild
 
 caairp:
 	Inherits: ^TechBuilding
@@ -88,6 +99,17 @@ caairp:
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
+	SpawnActorOnDeath:
+		Actor: caairp.rubble
+
+caairp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: caairp
 
 cahosp:
 	Inherits: ^TechBuilding
@@ -120,11 +142,33 @@ cahosp:
 		Offset: 0,-500,2520
 	GpsDotAS:
 		Sequence: hospital
+	SpawnActorOnDeath:
+		Actor: cahosp.rubble
+
+cahosp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
+	Building:
+		Dimensions: 6,4
+		Footprint: ____ ____ ____ ____ ____ ____
+	RenderSprites:
+		Image: cahosp
 
 cathosp:
 	Inherits: cahosp
 	EditorOnlyTooltip:
 		Name: Tech Hospital
+	RenderSprites:
+		Image: cahosp
+	SpawnActorOnDeath:
+		Actor: cathosp.rubble
+
+cathosp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
+	Building:
+		Dimensions: 6,4
+		Footprint: ____ ____ ____ ____ ____ ____
 	RenderSprites:
 		Image: cahosp
 
@@ -176,3 +220,15 @@ caoutp:
 	Armament:
 		Weapon: HoverMissile
 		LocalOffset: 500,0,900
+	SpawnActorOnDeath:
+		Actor: caoutp.rubble
+
+caoutp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
+	Building:
+		Dimensions: 4,3
+		Footprint: ____ ____ ____
+	RenderSprites:
+		Image: caoutp
+		Palette: isosnow

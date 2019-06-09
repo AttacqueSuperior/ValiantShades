@@ -95,6 +95,10 @@
 		Name: infantry
 		Filename: unittem.pal
 		ShadowIndex: 1,12
+	PaletteFromFile@isosnow:
+		Name: isosnow
+		Filename: isosno.pal
+		ShadowIndex: 1
 	PaletteFromPaletteWithAlpha@terrainalpha:
 		BasePalette: terrain
 		Name: terrainalpha
