@@ -306,7 +306,7 @@ slost:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~naweap
+		Prerequisites: ~naweap, ~disabled
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 140

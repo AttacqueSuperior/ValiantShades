@@ -190,7 +190,6 @@ Player:
 			virus: 1
 			harv: 5
 			drgn: 20
-			slost: 20
 			htk: 20
 			htnk: 20
 			apoc: 10
