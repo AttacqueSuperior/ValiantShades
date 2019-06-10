@@ -45,11 +45,15 @@ caoild:
 caoild.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Tech Oil Derrick Wreck
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: caoild
+	TransformOnCapture:
+		IntoActor: caoild
 
 caairp:
 	Inherits: ^TechBuilding
@@ -105,11 +109,15 @@ caairp:
 caairp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Tech Airport Wreck
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: caairp
+	TransformOnCapture:
+		IntoActor: caairp
 
 cahosp:
 	Inherits: ^TechBuilding
@@ -118,7 +126,7 @@ cahosp:
 		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
 		Dimensions: 6, 4
 	Tooltip:
-		Name: Civilian Hospital
+		Name: Tech Hospital
 	Health:
 		HP: 800000
 	RevealsShroud:
@@ -148,11 +156,15 @@ cahosp:
 cahosp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^6x4Shape
+	Tooltip:
+		Name: Tech Hospital Wreck
 	Building:
 		Dimensions: 6,4
-		Footprint: ____ ____ ____ ____ ____ ____
+		Footprint: ==== ==== ==== ==== ==== ====
 	RenderSprites:
 		Image: cahosp
+	TransformOnCapture:
+		IntoActor: cahosp
 
 cathosp:
 	Inherits: cahosp
@@ -166,11 +178,15 @@ cathosp:
 cathosp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^6x4Shape
+	Tooltip:
+		Name: Tech Hospital Wreck
 	Building:
 		Dimensions: 6,4
-		Footprint: ____ ____ ____ ____ ____ ____
+		Footprint: ==== ==== ==== ==== ==== ====
 	RenderSprites:
 		Image: cahosp
+	TransformOnCapture:
+		IntoActor: cathosp
 
 caoutp:
 	Inherits: ^TechBuilding
@@ -226,9 +242,13 @@ caoutp:
 caoutp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x3Shape
+	Tooltip:
+		Name: Tech Outpost Wreck
 	Building:
 		Dimensions: 4,3
-		Footprint: ____ ____ ____
+		Footprint: ==== ==== ====
 	RenderSprites:
 		Image: caoutp
 		Palette: isosnow
+	TransformOnCapture:
+		IntoActor: caoutp

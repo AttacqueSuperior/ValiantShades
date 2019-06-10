@@ -214,9 +214,32 @@
 	FrozenUnderFog:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	Tooltip:
+		Name: Tech Building Wreck
+		GenericName: Tech Building Wreck
 	MapEditorData:
-		Categories: Building rubble
+		Categories: Building Rubble
 	Interactable:
+	CaptureManager:
+	CapturableProgressBlink:
+	Capturable:
+		Types: rubble
+		ValidStances: Ally, Neutral, Enemy
+	CapturableProgressBar:
+	TransformOnCapture:
+		ForceHealthPercentage: 15
+	ScriptTriggers:
+	Targetable@AutoTargetIgnore:
+		TargetTypes: NoAutoTarget
+	SmokeParticleEmitter@1:
+		Sequences: largesmoke
+		Palette: tsanim
+		SpawnFrequency: 3, 10
+		Gravity: -48,-48,72, 48,48,72
+		Offset: -384,-384,0, 384,384,0
+		Duration: 39
+	Targetable@warpimmune:
+		TargetTypes: WarpImmune
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -256,6 +279,8 @@
 		Prerequisites: global-techbuildarea
 	GpsDotAS:
 		Sequence: techstructure
+	SpawnActorOnDeath:
+		OwnerType: InternalName
 
 ^BuildingPlug:
 	Interactable:

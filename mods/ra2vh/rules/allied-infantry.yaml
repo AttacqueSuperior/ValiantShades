@@ -26,7 +26,7 @@ engineer:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
 	Captures:
-		CaptureTypes: building, husk
+		CaptureTypes: building, rubble
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
