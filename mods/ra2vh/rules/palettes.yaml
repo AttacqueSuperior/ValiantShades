@@ -77,6 +77,10 @@
 		Name: isosnow
 		Filename: isosno.pal
 		ShadowIndex: 1
+	PaletteFromFile@isotem:
+		Name: isotem
+		Filename: isotem.pal
+		ShadowIndex: 1
 	PaletteFromPaletteWithAlpha@terrainalpha:
 		BasePalette: terrain
 		Name: terrainalpha

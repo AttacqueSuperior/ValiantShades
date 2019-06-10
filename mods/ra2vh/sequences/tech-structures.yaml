@@ -41,6 +41,31 @@ cahosp:
 		ZOffset: 128
 		Offset: 0,0
 
+cathosp:
+	Inherits: ^TechStructure
+	Defaults:
+		Offset: 7, -40
+	Defaults:
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		ShadowStart: 4
+	idle-overlay: cathosp_a
+		TilesetOverrides:
+			SNOW: GENERIC
+		Length: 4
+		Tick: 400
+	flag: cahosp_f
+		ZOffset: 128
+		UseTilesetCode: false
+		Offset: 0,0
+	rubble:
+		Start: 2
+		ShadowStart: 5
+
 caoutp:
 	Inherits: ^TechStructure
 	Defaults:

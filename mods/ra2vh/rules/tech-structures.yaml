@@ -168,23 +168,26 @@ cahosp.rubble:
 
 cathosp:
 	Inherits: cahosp
-	EditorOnlyTooltip:
-		Name: Tech Hospital
-	RenderSprites:
-		Image: cahosp
+	Inherits@shape: ^3x3Shape
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Tooltip:
+		Name: Tech Hospice
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
 
 cathosp.rubble:
 	Inherits: ^Rubble
-	Inherits@shape: ^6x4Shape
+	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Tech Hospital Wreck
+		Name: Tech Hospice Wreck
 	Building:
-		Dimensions: 6,4
-		Footprint: ==== ==== ==== ==== ==== ====
+		Dimensions: 3,3
+		Footprint: === === ===
 	RenderSprites:
-		Image: cahosp
+		Image: cathosp
+		Palette: isotem
 	TransformOnCapture:
 		IntoActor: cathosp
 
