@@ -911,7 +911,6 @@ galite:
 		Image: galite
 	WithSpriteBody:
 	BodyOrientation:
-		UseClassicPerspectiveFudge: False
 		QuantizedFacings: 1
 	FrozenUnderFog:
 	MapEditorData:

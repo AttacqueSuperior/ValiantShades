@@ -68,8 +68,6 @@ shadhusk:
 		Radius: 3c512
 	RenderVoxels:
 		Image: shad
-	BodyOrientation:
-		UseClassicPerspectiveFudge: false
 
 hind:
 	Inherits: ^Aircraft
@@ -136,8 +134,6 @@ hindhusk:
 		Radius: 3c0
 	RenderVoxels:
 		Image: hind
-	BodyOrientation:
-		UseClassicPerspectiveFudge: false
 
 zep:
 	Inherits: ^Aircraft
@@ -214,8 +210,6 @@ zephusk:
 		Radius: 4c0
 	RenderVoxels:
 		Image: zep
-	BodyOrientation:
-		UseClassicPerspectiveFudge: false
 
 beag:
 	Inherits: ^Plane

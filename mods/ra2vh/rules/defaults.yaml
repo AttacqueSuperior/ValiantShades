@@ -10,9 +10,13 @@
 	ConditionManager:
 	Huntable:
 
-^SpriteActor:
+^Orientable:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
+		CameraPitch: 85
+
+^SpriteActor:
+	Inherits: ^Orientable
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 
@@ -704,14 +708,15 @@
 		Categories: Animal
 
 ^Vehicle:
-	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
-	Inherits@3: ^IronCurtainable
-	Inherits@4: ^ChronoDisable
-	Inherits@5: ^CrateStatModifiers
-	Inherits@6: ^ParachutableVehicle
-	Inherits@7: ^VehicleParticles
-	Inherits@8: ^VoxelLighting
+	Inherits@1: ^Orientable
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^GainsExperience
+	Inherits@4: ^IronCurtainable
+	Inherits@5: ^ChronoDisable
+	Inherits@6: ^CrateStatModifiers
+	Inherits@7: ^ParachutableVehicle
+	Inherits@8: ^VehicleParticles
+	Inherits@9: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyac4: ^TanyaC4Plantable
@@ -756,8 +761,6 @@
 	Guardable:
 	BodyOrientation:
 		QuantizedFacings: 0
-		CameraPitch: 90
-		UseClassicPerspectiveFudge: false
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -815,9 +818,10 @@
 		Categories: Civilian vehicle
 
 ^NeutralAircraft:
-	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^UnitParticles
-	Inherits@3: ^VoxelLighting
+	Inherits@1: ^Orientable
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^UnitParticles
+	Inherits@4: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
@@ -840,8 +844,6 @@
 	ActorLostNotification:
 	BodyOrientation:
 		QuantizedFacings: 0
-		CameraPitch: 90
-		UseClassicPerspectiveFudge: false
 	Guard:
 		Voice: Attack
 	Guardable:
@@ -896,7 +898,8 @@
 		Sequence: plane
 
 ^Husk:
-	Inherits: ^VoxelLighting
+	Inherits@1: ^Orientable
+	Inherits@2: ^VoxelLighting
 	ConditionManager:
 	RenderVoxels:
 		LightAmbientColor: -0.4,-0.6,-0.6
@@ -904,7 +907,6 @@
 	WithVoxelBody:
 	BodyOrientation:
 		QuantizedFacings: 0
-		CameraPitch: 90
 	Aircraft:
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -956,13 +958,14 @@
 		RequiresCondition: !hide-gpsdot
 
 ^Ship:
-	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
-	Inherits@3: ^IronCurtainable
-	Inherits@4: ^ChronoDisable
-	Inherits@5: ^CrateStatModifiers
-	Inherits@6: ^VehicleParticles
-	Inherits@7: ^VoxelLighting
+	Inherits@1: ^Orientable
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^GainsExperience
+	Inherits@4: ^IronCurtainable
+	Inherits@5: ^ChronoDisable
+	Inherits@6: ^CrateStatModifiers
+	Inherits@7: ^VehicleParticles
+	Inherits@8: ^VoxelLighting
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
@@ -1004,8 +1007,6 @@
 	Guardable:
 	BodyOrientation:
 		QuantizedFacings: 0
-		CameraPitch: 90
-		UseClassicPerspectiveFudge: false
 	Tooltip:
 		GenericName: Ship
 	Explodes:
@@ -1043,7 +1044,6 @@
 	AppearsOnRadar:
 	RadarColorFromTerrain:
 		Terrain: Ore
-	BodyOrientation:
 	FrozenUnderFog:
 	SeedsResource:
 		ResourceType: Ore
@@ -1067,7 +1067,6 @@
 		Footprint: x
 		Dimensions: 1, 1
 	AppearsOnRadar:
-	BodyOrientation:
 	Tooltip:
 		Name: Tree
 	QuantizeFacingsFromSequence:
@@ -1128,7 +1127,6 @@
 		Footprint: x
 		Dimensions: 1, 1
 	AppearsOnRadar:
-	BodyOrientation:
 	Tooltip:
 		Name: Rock
 	QuantizeFacingsFromSequence:

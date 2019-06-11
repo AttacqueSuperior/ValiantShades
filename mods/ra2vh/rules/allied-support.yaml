@@ -106,7 +106,7 @@ gtgcan:
 		MuzzleSequence: muzzle
 		LocalOffset: 1792,0,1280
 	BodyOrientation:
-		QuantizedFacings: 16
+		QuantizedFacings: 32
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelTurret:

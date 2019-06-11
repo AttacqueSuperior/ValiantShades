@@ -223,8 +223,7 @@ caoutp:
 	WithResupplyAnimation:
 		Sequence: active-crane
 	BodyOrientation:
-		QuantizedFacings: 16
-		CameraPitch: 90
+		QuantizedFacings: 32
 	WithVoxelTurret:
 	WithRangeCircle:
 		Range: 12c0

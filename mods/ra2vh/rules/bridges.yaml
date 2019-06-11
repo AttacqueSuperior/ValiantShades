@@ -19,6 +19,7 @@ cabhut:
 	Interactable:
 
 ^LowBridgeRamp:
+	Inherits: ^Orientable
 	AlwaysVisible:
 	RenderSprites:
 		Palette: terrain
@@ -27,7 +28,6 @@ cabhut:
 	RadarColorFromTerrain:
 		Terrain: Bridge
 	BodyOrientation:
-		UseClassicPerspectiveFudge: false
 		QuantizedFacings: 1
 	Tooltip:
 		Name: Wooden Bridge
