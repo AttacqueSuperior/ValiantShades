@@ -117,6 +117,20 @@ deso:
 	paradrop: desofix
 	icon: desoicon
 
+agent:
+	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
+	Defaults: nspy
+	liedown:
+		Start: 164
+	standup:
+		Start: 180
+	cheer:
+		Start: 196
+	paradrop:
+		Start: 204
+	icon: nspyicon
+
 ivan:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable

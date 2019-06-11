@@ -399,6 +399,15 @@ civan:
 		TargetCursor: chronosphere
 	-Explodes:
 
+agent:
+	Inherits: ^Spy
+	Buildable:
+		Prerequisites: naradr, ~nahand
+	DisguiseTooltip:
+		Name: Agent
+	Voiced:
+		VoiceSet: SpyVoice
+
 yuri:
 	Inherits: ^Infantry
 	Inherits@2: ^Parachutable
