@@ -362,59 +362,13 @@ snipe:
 		DefaultAttackSequence: shoot
 
 spy:
-	Inherits: ^Infantry
-	Inherits@cloning: ^Cloneable
-	Inherits@Berserk: ^Berserkable
+	Inherits: ^Spy
 	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 130
 		Prerequisites: gafcmd, ~gapile
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
-	Valued:
-		Cost: 500
-	DeliversCash:
-		Payload: 250
-		PlayerExperience: 25
-		Voice: Move
 	DisguiseTooltip:
 		Name: Spy
-		GenericName: Soldier
-	Selectable:
-		Bounds: 24, 28, -1, -8
-	Health:
-		HP: 25000
-	RevealsShroud:
-		Range: 5c0
-	RevealOnDeath:
-		Radius: 2c512
-		DeathTypes: DefaultDeath
-	Passenger:
-		PipType: Yellow
-	TakeCover:
-	Disguise:
-		DisguisedCondition: disguise
-	Infiltrates:
-		Types: SpyInfiltrate
-	-WithInfantryBody:
-	WithDisguisingInfantryBody:
-		IdleSequences: idle1,idle2
-		StandSequences: stand
-	WithDecoration@disguise:
-		Image: pips
-		Sequence: pip-disguise
-		Palette: pips
-		ReferencePoint: Top, Right
-		ZOffset: 256
-		RequiresCondition: disguise
 	Voiced:
 		VoiceSet: SpyVoice
-	Guard:
-		Voice: Action
-	AttackMove:
-		Voice: Action
-	QuantizeFacingsFromSequence:
-		Sequence: stand
 
 gren:
 	Inherits@1: ^Infantry
