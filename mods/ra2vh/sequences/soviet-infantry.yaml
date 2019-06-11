@@ -79,7 +79,7 @@ shk:
 terror:
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: trst
+	Defaults: sabo
 	run:
 		Tick: 120
 	die1:
@@ -91,14 +91,10 @@ terror:
 		Length: 6
 		Facings: 8
 		Tick: 80
-	deploy:
-		Start: 164
-		Length: 15
-		Tick: 80
 	paradrop:
-		Start: 179
+		Start: 164
 	cheer:
-		Start: 180
+		Start: 165
 	icon: trsticon
 
 deso:
