@@ -93,7 +93,7 @@ harv:
 	AutoTarget:
 	Turreted:
 		TurnSpeed: 10
-		Offset: 196,0,-24
+		Offset: 92,0,0
 	Mobile:
 		Speed: 60
 		TurnSpeed: 8
