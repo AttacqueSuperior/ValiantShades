@@ -317,7 +317,7 @@ VirusGun:
 	Projectile: RadBeam
 		Amplitude: 119
 		WaveLength: 384
-		QuantizationCount: 6
+		QuantizationCount: 3
 		ScaleAmplitudeWithDuration: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
