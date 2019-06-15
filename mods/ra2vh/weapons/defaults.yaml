@@ -229,7 +229,7 @@
 			Concrete: 75
 			Drone: 33
 			Rocket: 33
-		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: MediumScorch
 	Warhead@3Eff: CreateEffect
