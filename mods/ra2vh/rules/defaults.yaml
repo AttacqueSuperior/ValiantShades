@@ -827,6 +827,8 @@
 		VoiceSet: CarVoice
 	MapEditorData:
 		Categories: Civilian vehicle
+	ActorTag:
+		Type: civilian-vehicle
 
 ^NeutralAircraft:
 	Inherits@1: ^Orientable

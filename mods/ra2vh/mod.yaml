@@ -220,6 +220,9 @@ MapGrid:
 	DefaultSubCell: 2
 	MaximumTerrainHeight: 16
 
+Missions:
+	ra2vh|missions.yaml
+
 Music:
 	ra2vh|audio/music.yaml
 

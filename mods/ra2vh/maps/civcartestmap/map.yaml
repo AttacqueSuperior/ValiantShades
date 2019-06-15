@@ -1,0 +1,52 @@
+MapFormat: 11
+
+RequiresMod: ra2vh
+
+Title: Civilian Car Testmap
+
+Author: Graion Dilach
+
+Tileset: TEMPERATE
+
+MapSize: 66,114
+
+Bounds: 1,17,64,96
+
+Visibility: MissionSelector
+
+Categories: Campaign
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: allies
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: allies
+	PlayerReference@GDI:
+		Name: GDI
+		Playable: True
+		AllowBots: False
+		Required: True
+		LockFaction: True
+		Faction: allies
+		LockColor: True
+		Color: F5D378
+		LockSpawn: True
+		LockTeam: True
+
+Actors:
+	lstStart: waypoint
+		Location: 60,20
+		Owner: Neutral
+	lstStart2: mpspawn
+		Location: 54,61
+		Owner: Neutral
+
+Rules:
+	World:
+		LuaScript:
+			Scripts: civcarsetup.lua
