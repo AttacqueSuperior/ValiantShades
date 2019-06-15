@@ -107,6 +107,12 @@
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@alliedengi
+		Prerequisite: alliedengi
+		Factions: america, germany, england, france, korea
+	ProvidesPrerequisite@sovietengi
+		Prerequisite: sovietengi
+		Factions: russia, cuba, libya, iraq
 	Health:
 		HP: 500000
 	Armor:

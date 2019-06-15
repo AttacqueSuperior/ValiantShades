@@ -1,3 +1,11 @@
+engineer:
+	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
+	Defaults: tengineer
+	paradrop:
+		Start: 244
+	icon: engnicon
+
 civ1:
 	Inherits: ^CivInfantry
 

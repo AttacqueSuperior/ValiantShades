@@ -28,7 +28,7 @@ gacnst:
 	#	Factions: france
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
-		Actors: engineer, e1, e1, e1, e1
+		Actors: aengineer, e1, e1, e1, e1
 
 gapowr:
 	Inherits: ^BasicPower

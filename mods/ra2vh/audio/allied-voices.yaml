@@ -1,3 +1,13 @@
+AlliedEngineerVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ienasea, ienaseb, ienasec, ienased
+		Move: ienamoa, ienamob, ienamoc
+		Action: ienaata, ienaatb, ienaatc
+		Feedback: ienafea, ienafeb, ienafec
+		PowerUp: ienapow
+		Die: ienadia, ienadib, ienadic, ienadid
+
 GIVoice:
 	Inherits: ^InfantryDeath
 	Voices:

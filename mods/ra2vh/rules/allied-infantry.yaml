@@ -1,3 +1,10 @@
+aengineer:
+	Inherits: engineer
+	Buildable:
+		Prerequisites: ~alliedengi
+	Voiced:
+		VoiceSet: AlliedEngineerVoice
+
 e1:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable

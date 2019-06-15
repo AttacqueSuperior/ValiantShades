@@ -1,3 +1,10 @@
+sengineer:
+	Inherits: engineer
+	Buildable:
+		Prerequisites: ~sovietengi
+	Voiced:
+		VoiceSet: SovietEngineerVoice
+
 e2:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable

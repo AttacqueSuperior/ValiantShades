@@ -1,3 +1,11 @@
+sengineer:
+	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
+	Defaults: engineer
+	paradrop:
+		Start: 244
+	icon: yengicon
+
 dog:
 	Inherits: adog
 	shoot: dogp

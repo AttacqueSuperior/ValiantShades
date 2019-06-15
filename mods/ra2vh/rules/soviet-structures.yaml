@@ -24,7 +24,7 @@ nacnst:
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
-		Actors: engineer, e2, e2, e2, e2, e2, e2
+		Actors: sengineer, e2, e2, e2, e2, e2, e2
 
 napowr:
 	Inherits: ^BasicPower

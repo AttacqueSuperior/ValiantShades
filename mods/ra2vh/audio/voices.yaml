@@ -8,24 +8,11 @@
 
 EngineerVoice:
 	Inherits: ^InfantryDeath
-	Prefixes:
-		america: iena
-		germany: iena
-		england: iena
-		france: iena
-		korea: iena
-		cuba: iens
-		libya: iens
-		iraq: iens
-		russia: iens
 	Voices:
-		Select: sea, seb, sec, sed
-		Move: moa, mob, moc
-		Action: ata, atb, atc
-		Feedback: fea, feb, fec
-		Die: dia, dib, dic, did
-		# [EngAllPowerDown] Sounds = ienapow
-		DisablePrefixes: Zapped, Melted, PsyCrush, Explosion
+		Select: eengin1, eyessir1
+		Move: eaffirm1, emovout1
+		Action: eaffirm1, emovout1
+		Die: dedman1, dedman2, dedman10
 
 DogVoice:
 	DefaultVariant: .wav
