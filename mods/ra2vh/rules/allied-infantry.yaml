@@ -186,7 +186,7 @@ ggi:
 		PauseOnCondition: !ammo
 		RequiresCondition: !deployed && !rank-elite
 		LocalOffset: 256,0,1024
-	Armament@secondary:
+	Armament@elite-secondary:
 		Weapon: MissileLauncherAAE
 		PauseOnCondition: !ammo
 		RequiresCondition: !deployed && rank-elite
