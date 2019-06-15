@@ -838,12 +838,30 @@ cleg:
 		TargetCursor: chronosphere
 	Voiced:
 		VoiceSet: ChronoLegionnaireVoice
-	Armament@Temporal:
+	Armament:
 		Weapon: NeutronRifle
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: NeutronRifle
+	Armament@2:
+		Weapon: NeutronRifleVisual
+	Armament@opentopped2:
+		Name: opentopped
+		Weapon: NeutronRifleVisual
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+	AttackMove:
+		AssaultMoveCondition: assault-move
+		Voice: Attack
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything && !assault-move
+		ValidTargets: Temporal
+		InvalidTargets: NoAutoTarget
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything || assault-move
+		ValidTargets: Temporal
+		InvalidTargets: NoAutoTarget

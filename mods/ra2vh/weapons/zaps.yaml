@@ -285,19 +285,28 @@ CRRadBeamWeaponE:
 		ExplosionPalette: heroictsexp
 
 NeutronRifle:
-	ValidTargets: Ground
+	ValidTargets: Temporal
+	ReloadDelay: 1
+	Range: 5c0
+	Projectile: InstantHit
+	Warhead@Damage: WarpDamage
+		Damage: 1000
+		Spread: 1
+		ValidTargets: Temporal
+
+NeutronRifleVisual:
+	ValidTargets: Temporal
 	ReloadDelay: 120
 	Range: 5c0
 	Report: ichratta.wav
-	Projectile: TeslaZap
-		Palette: highlight
-	Warhead@Damage: SpreadDamage
-		Spread: 64
-		Damage: 8000
-	Warhead@Disable: GrantExternalCondition
-		Range: 64
-		Duration: 250
-		Condition: chronodisable, notmobile
+	Projectile: RadBeam
+		Amplitude: 476
+		WaveLength: 384
+		Color: 80C8FF
+	Warhead@Damage: WarpDamage
+		Damage: 1
+		Spread: 1
+		ValidTargets: Temporal
 	Warhead@Stars: CreateEffect
 		Explosions: chronosk
 		ValidTargets: Ground, Water
@@ -305,8 +314,10 @@ NeutronRifle:
 CRNeutronRifle:
 	Inherits: NeutronRifle
 	Range: 6c0
-	Warhead@Disable: GrantExternalCondition
-		Duration: 350
+
+CRNeutronRifleVisual:
+	Inherits: NeutronRifleVisual
+	Range: 6c0
 
 VirusGun:
 	ValidTargets: Ground

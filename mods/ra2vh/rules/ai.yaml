@@ -168,6 +168,7 @@ Player:
 			ghost: 5
 			snipe: 5
 			tany: 1
+			cleg: 2
 			cmin: 5
 			hmmv: 25
 			ltnk: 20
