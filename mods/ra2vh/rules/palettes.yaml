@@ -253,8 +253,8 @@
 		A: 128
 	PaletteFromRGBA@temporal:
 		Name: temporal
-		R: 192
-		G: 192
+		R: 128
+		G: 200
 		B: 255
 		A: 128
 	PaletteFromRGBA@berserk:

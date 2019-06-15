@@ -424,3 +424,9 @@ Demolish:
 		Explosions: buildingexplosion1, buildingexplosion2, buildingexplosion3, buildingexplosion4, buildingexplosion5, buildingexplosion6
 		ExplosionPalette: apollo
 		ImpactSounds: expnew09.wav
+
+TemporalExplode:
+	Warhead@1Eff: CreateEffect
+		Explosions: warpaway
+		ImpactSounds: ichrkill.wav
+		ValidTargets: Ground, Water, Air

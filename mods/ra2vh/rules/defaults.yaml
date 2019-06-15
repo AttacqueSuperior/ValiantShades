@@ -405,7 +405,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
-	Inherits@4: ^ChronoDisable
+	Inherits@4: ^Warpable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
@@ -712,7 +712,7 @@
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^IronCurtainable
-	Inherits@5: ^ChronoDisable
+	Inherits@5: ^Warpable
 	Inherits@6: ^CrateStatModifiers
 	Inherits@7: ^ParachutableVehicle
 	Inherits@8: ^VehicleParticles
@@ -973,7 +973,7 @@
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^IronCurtainable
-	Inherits@5: ^ChronoDisable
+	Inherits@5: ^Warpable
 	Inherits@6: ^CrateStatModifiers
 	Inherits@7: ^VehicleParticles
 	Inherits@8: ^VoxelLighting

@@ -161,18 +161,24 @@
 	ExternalCondition@INVULNERABILITY:
 		Condition: invulnerability
 
-^ChronoDisable:
-	TimedConditionBar@ChronoDisable:
-		Condition: chronodisable
-		Color: FFFFFF
-	WithColoredOverlay@ChronoDisable:
-		RequiresCondition: chronodisable
+^Warpable:
+	Warpable:
+		Condition: being-warped
+		RevokeDelay: 3
+		DamageTypes: TemporalDeath
+		ScaleWithCurrentHealthPercentage: true
+	Targetable@Temporal:
+		TargetTypes: Temporal
+	WithColoredOverlay@temporal:
+		RequiresCondition: being-warped
 		Palette: temporal
-	ExternalCondition@CHRONODISABLE:
-		Condition: chronodisable
-	GrantCondition@chrono-disable:
+	Explodes@temporal:
+		Weapon: TemporalExplode
+		EmptyWeapon: TemporalExplode
+		DeathTypes: TemporalDeath
+	GrantCondition@warp-disable:
 		Condition: disabled
-		RequiresCondition: chronodisable
+		RequiresCondition: being-warped
 
 ^MindControllable:
 	MindControllable:
@@ -276,3 +282,4 @@
 	GrantCondition@emp-disable:
 		Condition: disabled
 		RequiresCondition: emp
+	
