@@ -47,6 +47,7 @@ TerroristVoice:
 		Select: itersea, iterseb, itersec
 		Move: itermoa, itermob, itermoc
 		Attack: iterata, iteratb, iteratc, iteratd
+		Action: itermob, iteratc, iteratd
 		Feedback: iterfea, iterfeb, iterfec
 		Die: iterdia, iterdib, iterdic
 

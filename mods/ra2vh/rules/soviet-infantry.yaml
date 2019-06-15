@@ -219,13 +219,13 @@ terror:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 90
-		Prerequisites: naradr, ~nahand #, ~infantry.cuba
-		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+		BuildPaletteOrder: 120
+		Prerequisites: natech, ~nahand #, ~infantry.cuba
+		Description: Demolition infantry, able to attach C4\nto enemy buildings. Can hijack enemy vehicles.\nStealthed when stopped.\n  Strong vs Vehicles, Buildings\n  Weak vs Aircraft
 	Valued:
-		Cost: 100
+		Cost: 500
 	DeliversCash:
-		Payload: 50
+		Payload: 250
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
@@ -233,7 +233,7 @@ terror:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 75000
+		HP: 100000
 	Mobile:
 		Speed: 90
 	RevealsShroud:
@@ -257,6 +257,40 @@ terror:
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Cloak:
+		InitialDelay: 15
+		CloakDelay: 15
+		Palette: infantry-cloak
+		IsPlayerPalette: true
+		UncloakOn: Attack, Damage, Move
+		CloakTypes: mirage
+	Armament@sapper:
+		Weapon: PlaceC4
+		Cursor: c4
+		OutsideRangeCursor: c4
+		RequiresCondition: !rank-elite
+	Armament@sapper-elite:
+		Weapon: PlaceC4E
+		Cursor: c4
+		OutsideRangeCursor: c4
+		RequiresCondition: rank-elite
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+		ScanRadius: 4
+	AttackMove:
+		AssaultMoveCondition: assault-move
+		Voice: Attack
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything && !assault-move
+		ValidTargets: Defense
+		InvalidTargets: NoAutoTarget, WaterStructure
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything || assault-move
+		ValidTargets: Structure, Defense
+		InvalidTargets: NoAutoTarget
+	CaptureManager:
+	Captures:
+		CaptureTypes: vehicle
 
 deso:
 	Inherits: ^Infantry
