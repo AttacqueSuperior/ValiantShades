@@ -50,6 +50,10 @@ amcv:
 		TargetTypes: ImmuneToRadiation
 	Armor@resistsupers:
 		Type: ResistSupers
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
+	-SpeedMultiplier@hijack:
 
 cmin:
 	Inherits: ^Vehicle

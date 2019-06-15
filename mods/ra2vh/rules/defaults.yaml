@@ -785,6 +785,17 @@
 	GpsDotAS:
 		Sequence: vehicle
 		RequiresCondition: !hide-gpsdot
+	CaptureManager:
+		BeingCapturedCondition: being-captured
+	Capturable:
+		Types: vehicle
+		CancelActivity: True
+	CaptureNotification:
+		Notification: UnitStolen
+		LoseNotification: UnitLost
+	SpeedMultiplier@hijack:
+		Modifier: 0
+		RequiresCondition: being-captured
 
 ^CivVehicle:
 	Inherits: ^Vehicle

@@ -119,6 +119,7 @@ Speech:
 		UnitReady: 062
 		UnitRepaired: 070
 		UnitSold: 071
+		UnitStolen: vh01
 		UnitSpeedUpgraded: 078
 		UnitUpgraded: 080
 		UpradeComplete: 085
