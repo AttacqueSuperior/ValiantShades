@@ -121,6 +121,13 @@ HumveeVoice:
 		Move: vhummoa, vhummob, vhummoc, vhummod, vhummoe, vhummof, vhummog
 		Attack: vhumata, vhumatb, vhumatc, vhumatd, vhumate, vhumatf
 
+WolverineVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vwolsea, vwolseb, vwolsec, vwolsed, vwolsee
+		Move: vwolmoa, vwolmob, vwolmoc, vwolmod, vwolmoe, vwolmof
+		Attack: vwolata, vwolatb, vwolatc, vwolatd, vwolate, vwolatf, vwolatg
+
 IFVVoice:
 	DefaultVariant: .wav
 	Voices:

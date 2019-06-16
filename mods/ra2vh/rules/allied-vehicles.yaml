@@ -246,7 +246,7 @@ ltnk:
 	WithVoxelTurret:
 	WithVoxelBarrel:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: WolverineVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
