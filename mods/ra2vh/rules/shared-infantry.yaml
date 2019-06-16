@@ -122,6 +122,7 @@ dog:
 			TeslaDeath: 2
 			RadiationDeath: 1
 	-WithDeathAnimation@effect:
+	-WithDeathAnimation@ra:
 	-Explodes@radiation:
 	DeathSounds@normal:
 		DeathTypes: BulletDeath, AltBulletDeath, MeltingDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath, RadiationDeath

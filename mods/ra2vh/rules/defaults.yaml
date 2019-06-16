@@ -708,6 +708,7 @@
 			ElectroDeath: 2
 			TeslaDeath: 2
 			RadiationDeath: 1
+	-WithDeathAnimation@ra:
 	-SpawnActorOnDeath@flames:
 	WithDeathAnimation@flames:
 		DeathTypes:
