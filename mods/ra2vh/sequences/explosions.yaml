@@ -126,4 +126,6 @@ explosion:
 	infantryexplode: fball1
 	napalmhit: firehit
 	warpaway: warpaway
+	smallwarpaway: smallwarpaway
+	largewarpaway: largewarpaway
 	

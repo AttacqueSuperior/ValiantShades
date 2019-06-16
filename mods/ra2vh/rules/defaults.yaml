@@ -558,6 +558,9 @@
 	DetectCloaked@mirage:
 		Range: 3c0
 		CloakTypes: mirage
+	Explodes@temporal:
+		Weapon: SmallTemporalExplode
+		EmptyWeapon: SmallTemporalExplode
 
 ^Parachutable:
 	WithSpriteBody@Parachute:

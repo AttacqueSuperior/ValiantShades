@@ -428,5 +428,16 @@ Demolish:
 TemporalExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: warpaway
+		ExplosionPalette: heroicra2exp
 		ImpactSounds: ichrkill.wav
 		ValidTargets: Ground, Water, Air
+
+SmallTemporalExplode:
+	Inherits: TemporalExplode
+	Warhead@1Eff: CreateEffect
+		Explosions: smallwarpaway
+
+LargeTemporalExplode:
+	Inherits: TemporalExplode
+	Warhead@1Eff: CreateEffect
+		Explosions: largewarpaway
