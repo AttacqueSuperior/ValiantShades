@@ -40,11 +40,13 @@ e1:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 		RequiresCondition: undeployed
 	AttackTurreted@deployed:
 		Turrets: deploy
 		Armaments: deployed, deployed-elite
 		Voice: Attack
+		PauseOnCondition: disabled
 		RequiresCondition: deployed
 	Armament@primary:
 		Weapon: M60
@@ -72,18 +74,18 @@ e1:
 		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		RequiresCondition: undeployed && !parachute
+		RequiresCondition: undeployed && !inair
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		Voice: Move
 		CanDeployOnRamps: True
 		Facing: 128
-		RequiresCondition: !parachute
+		RequiresCondition: !disabled
 		DeploySounds: igidepa.wav, igidepb.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
 	TakeCover:
-		RequiresCondition: undeployed
+		RequiresCondition: undeployed && !disabled
 	Turreted:
 		Turret: deploy
 		RealignDelay: -1
@@ -160,11 +162,13 @@ ggi:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 		RequiresCondition: undeployed
 	AttackTurreted@deployed:
 		Turrets: deploy
 		Armaments: deployed, deployed-elite, deployed-secondary, deployed-secondary-elite
 		Voice: Attack
+		PauseOnCondition: disabled
 		RequiresCondition: deployed
 	Crushable:
 		RequiresCondition: !deployed
@@ -247,18 +251,18 @@ ggi:
 		Delay: 20
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		RequiresCondition: undeployed && !parachute
+		RequiresCondition: undeployed && !inair
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		Voice: Move
 		CanDeployOnRamps: True
 		Facing: 92
-		RequiresCondition: !parachute
+		RequiresCondition: !disabled
 		DeploySounds: iggidepa.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
 	TakeCover:
-		RequiresCondition: undeployed
+		RequiresCondition: undeployed && !disabled
 	Turreted:
 		Turret: deploy
 		RealignDelay: -1
@@ -361,6 +365,7 @@ snipe:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Voiced:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
@@ -411,6 +416,7 @@ gren:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: GrenadeDisc
 		RequiresCondition: !rank-elite
@@ -499,6 +505,7 @@ ghost:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	RenderSprites:
 		Image: seal
 	Voiced:
@@ -510,7 +517,7 @@ ghost:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	TakeCover:
-		RequiresCondition: !swimming
+		RequiresCondition: !swimming && !disabled
 
 ccomand:
 	Inherits: ghost
@@ -546,12 +553,7 @@ ccomand:
 	-WithDeathAnimation@Water:
 	-Targetable@WaterBorne:
 	TakeCover:
-		-RequiresCondition:
-		DamageModifiers:
-			Prone50Percent: 50
-			Prone70Percent: 70
-			Prone100Percent: 100
-		DamageTriggers: TriggerProne
+		RequiresCondition: !disabled
 	RenderSprites:
 		Image: ccomand
 
@@ -582,6 +584,7 @@ ptroop:
 	MindController:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
+		RequiresCondition: !disabled
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
@@ -659,6 +662,7 @@ tany:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
@@ -677,12 +681,14 @@ tany:
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
 		CloakTypes: mirage
+		RequiresCondition: !disabled
 	SelfHealing:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
 		HealIfBelow: 100
+		RequiresCondition: !disabled
 
 jumpjet:
 	Inherits: ^Infantry
@@ -718,6 +724,7 @@ jumpjet:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Aircraft:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
@@ -741,16 +748,12 @@ jumpjet:
 		InitialHeight: 64
 	-Crushable:
 	-TakeCover:
-	-Targetable:
 	-WithDeathAnimation@normal:
 	-WithDeathAnimation@effect:
 	-WithDeathAnimation@ra:
 	-Explodes@explosion:
 	-Explodes@explosion-inair:
 	-Explodes@radiation:
-	Targetable@airborne:
-		TargetTypes: Air, Disguise
-		RequiresCondition: airborne
 	Voiced:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:
@@ -859,6 +862,7 @@ cleg:
 		Weapon: NeutronRifleVisual
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	AutoTarget:

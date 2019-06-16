@@ -38,6 +38,7 @@ e2:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: M1Carbine
 		RequiresCondition: !rank-elite
@@ -94,6 +95,7 @@ flakt:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: FlakGuyGun
 		LocalOffset: 256,0,1024
@@ -181,6 +183,7 @@ shk:
 		PipType: Red
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-elite
@@ -258,6 +261,7 @@ terror:
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice
@@ -298,6 +302,7 @@ terror:
 	CaptureManager:
 	Captures:
 		CaptureTypes: vehicle
+		RequiresCondition: !disabled
 
 deso:
 	Inherits: ^Infantry
@@ -349,6 +354,7 @@ deso:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -408,6 +414,7 @@ ivan:
 		Voice: Attack
 		Cursor: bomb
 		OutsideRangeCursor: bomb
+		PauseOnCondition: disabled
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -487,7 +494,7 @@ yuri:
 	ExplodeWeapon:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128
-		RequiresCondition: deployed
+		RequiresCondition: deployed && !disabled
 	GrantTimedConditionOnDeploy:
 		DeployedTicks: 50
 		CooldownTicks: 0
@@ -498,6 +505,7 @@ yuri:
 		UndeployAnimation: undeploy
 		ShowSelectionBar: false
 		Voice:
+		PauseOnCondition: disabled
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -510,6 +518,7 @@ yuri:
 		Sequence: stand
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	Armament:
 		Weapon: MindControl
 		MuzzleSequence: muzzle
@@ -519,6 +528,7 @@ yuri:
 	MindController:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
+		RequiresCondition: !disabled
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
@@ -578,6 +588,7 @@ virus:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		PauseOnCondition: disabled
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
