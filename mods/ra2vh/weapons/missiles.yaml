@@ -11,7 +11,7 @@ MammothTusk:
 	Inherits: ^Missile
 	ReloadDelay: 80
 	Range: 5c768
-	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
+	Report: vapoat2a.wav, vapoat2b.wav, vapoat2c.wav
 	Burst: 2
 	ValidTargets: Ground, Water
 	Projectile: Missile
@@ -63,7 +63,7 @@ Maverick2:
 	Inherits: ^Missile
 	ReloadDelay: 10
 	Range: 6c0
-	Report: vblaatta.wav
+	Report: vbleatta.wav, vbleattb.wav
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Image: patriot
