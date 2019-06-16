@@ -60,7 +60,7 @@ KirovExplode:
 		Spread: 426
 		Damage: 75000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, DefaultDeath
 
 PlaneExplode:
 	Inherits: KirovExplode
@@ -163,7 +163,7 @@ C4:
 		Spread: 64
 		Falloff: 100, 50, 0
 		Damage: 444000
-		DamageTypes: DefaultDeath, ExplosionDeath, Prone100Percent
+		DamageTypes: DefaultDeath, BulletDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
 		Explosions: c4_explosion
 		ExplosionPalette: rookietsexp

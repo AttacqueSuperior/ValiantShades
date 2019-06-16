@@ -449,8 +449,8 @@
 	WithDeathAnimation@normal:
 		DeathSequencePalette: infantry
 		DeathTypes:
-			ExplosionDeath: 1
-			BulletDeath: 2
+			BulletDeath: 1
+			AltBulletDeath: 2
 	WithDeathAnimation@effect:
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: False
@@ -466,6 +466,15 @@
 	SpawnActorOnDeath@flames:
 		Actor: flameguy
 		DeathType: FlameDeath
+	Explodes@explosion:
+		Weapon: InfantryExplode
+		EmptyWeapon: InfantryExplode
+		DeathTypes: ExplosionDeath
+	Explodes@explosion-inair:
+		Weapon: InfantryExplode
+		EmptyWeapon: InfantryExplode
+		DeathTypes: DefaultDeath
+		RequiresCondition: inair
 	Explodes@radiation:
 		Weapon: RadiationDeath
 		EmptyWeapon: RadiationDeath
@@ -490,7 +499,7 @@
 		Voice: Attack
 	Guardable:
 	DeathSounds@normal:
-		DeathTypes: ExplosionDeath, BulletDeath
+		DeathTypes: BulletDeath, AltBulletDeath
 	DeathSounds@zapped:
 		Voice: Zapped
 		DeathTypes: ElectroDeath, TeslaDeath
@@ -559,6 +568,8 @@
 		RequiresCondition: !parachute
 	WithDeathAnimation@effect:
 		RequiresCondition: !parachute
+	Explodes@explosion:
+		RequiresCondition: !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
 	Targetable@Heal:
@@ -598,8 +609,8 @@
 		RequiresCondition: swimming
 		DeathSequence: swim-die
 		DeathTypes:
-			ExplosionDeath: 1
-			BulletDeath: 2
+			BulletDeath: 1
+			AltBulletDeath: 2
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		RequiresCondition: swimming

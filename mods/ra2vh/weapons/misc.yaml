@@ -73,7 +73,7 @@ SpiritBomb:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: large_twlt
 		ExplosionPalette: rookiera2exp
@@ -478,7 +478,7 @@ BrainWaveOverload:
 		Spread: 1
 		Falloff: 100, 0
 		Damage: 5000
-		DamageTypes: ExplosionDeath, DefaultDeath
+		DamageTypes: BulletDeath, DefaultDeath
 	Warhead@op: FireShrapnel
 		Weapon: DamageSpark
 		Amount: 18

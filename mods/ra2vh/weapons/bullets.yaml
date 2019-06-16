@@ -47,7 +47,6 @@ sabot:
 			Concrete: 2
 			Drone: 2
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: elite_explosion
 
@@ -272,6 +271,7 @@ GrenadeDisc:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: grenadierhit
 		ExplosionPalette: rookieapolloexp

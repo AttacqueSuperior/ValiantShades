@@ -16,7 +16,7 @@
 			Concrete: 40
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath, DefaultDeath
+		DamageTypes: Prone100Percent, TriggerProne, AltBulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_brnl
 		ExplosionPalette: rookiera2exp
@@ -45,7 +45,7 @@
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
-		DamageTypes: ExplosionDeath, DefaultDeath
+		DamageTypes: BulletDeath, DefaultDeath
 		Versus:
 			Flak: 80
 
@@ -58,7 +58,7 @@
 		LaunchAngle: 62
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
 		ExplosionPalette: rookiera2exp

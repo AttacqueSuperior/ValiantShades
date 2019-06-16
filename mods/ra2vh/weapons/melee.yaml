@@ -21,7 +21,7 @@ DogJaw:
 			Concrete: 0
 			Drone: 0
 			Rocket: 0
-		DamageTypes: BulletDeath, DefaultDeath
+		DamageTypes: AltBulletDeath, DefaultDeath
 
 DroneJump:
 	ValidTargets: Infantry
@@ -44,7 +44,7 @@ DroneJump:
 			Concrete: 0
 			Drone: 0
 			Rocket: 0
-		DamageTypes: BulletDeath, DefaultDeath
+		DamageTypes: AltBulletDeath, DefaultDeath
 
 AlligatorBite:
 	ReloadDelay: 30
@@ -55,7 +55,7 @@ AlligatorBite:
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 30000
-		DamageTypes: BulletDeath, DefaultDeath
+		DamageTypes: AltBulletDeath, DefaultDeath
 
 BearBite:
 	Inherits: AlligatorBite
