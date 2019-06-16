@@ -760,9 +760,6 @@ jumpjet:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	Targetable@ground:
-		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-		RequiresCondition: !airborne
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
@@ -770,6 +767,7 @@ jumpjet:
 		RepairActors:
 		Voice: Move
 	-TurnOnIdle:
+	-GrantCondition@inair-disable:
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk
