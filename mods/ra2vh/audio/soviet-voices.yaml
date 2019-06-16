@@ -61,6 +61,16 @@ TerroristVoice:
 		Feedback: iterfea, iterfeb, iterfec
 		Die: iterdia, iterdib, iterdic
 
+AgentVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: isabsea, isabseb, isabsec, isabsee
+		Move: isabmoa, isabmob, isabmod, isabmoe
+		Action: isabatd, isabate, isabmoc
+		Enter: isabatb, isabatc
+		Feedback: isabfea, isabfeb, isabfec, isabfed
+		Die: isabdia, isabdib, isabdic, isabdid, isabdie
+
 YuriVoice:
 	Inherits: ^InfantryDeath
 	Voices:

@@ -454,7 +454,9 @@ agent:
 	DisguiseTooltip:
 		Name: Agent
 	Voiced:
-		VoiceSet: SpyVoice
+		VoiceSet: AgentVoice
+	Infiltrates:
+		Voice: Enter
 
 yuri:
 	Inherits: ^Infantry
