@@ -16,29 +16,29 @@
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		SharesCell: true
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 90
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Ore: 90
-			Gems: 80
+			Clear: 120
+			Rough: 120
+			Rail: 120
+			Road: 133
+			Bridge: 133
+			DirtRoad: 133
+			Ore: 120
+			Gems: 107
 	Locomotor@SWIMSUIT:
 		Name: swimsuit
 		Crushes: crate
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		SharesCell: true
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 90
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Ore: 90
-			Gems: 80
-			Water: 70
+			Clear: 120
+			Rough: 120
+			Rail: 120
+			Road: 133
+			Bridge: 133
+			DirtRoad: 133
+			Ore: 120
+			Gems: 107
+			Water: 93
 	Locomotor@FLAMEGUY:
 		Name: flameguy
 		SharesCell: true
@@ -55,76 +55,77 @@
 		Crushes: crate
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 50
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Beach: 100
-			Ore: 70
-			Gems: 70
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
 	Locomotor@TRACKED:
 		Name: tracked
 		Crushes: crate, infantry
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 50
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Beach: 100
-			Ore: 70
-			Gems: 70
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
 		Crushes: fence, crate, infantry
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 50
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Beach: 100
-			Ore: 70
-			Gems: 70
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
 	Locomotor@OMNICRUSHER:
 		Name: omnicrusher
 		Crushes: fence, wall, crate, infantry, vehicle
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 50
-			Road: 100
-			Bridge: 100
-			DirtRoad: 100
-			Beach: 100
-			Ore: 70
-			Gems: 70
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
 	Locomotor@NAVAL:
 		Name: naval
 		Crushes: crate
 		TerrainSpeeds:
-			Water: 100
+			Water: 133
 	Locomotor@LANDINGCRAFT:
 		Name: lcraft
 		Crushes: fence, crate
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
-			Clear: 80
-			Rough: 80
-			Rail: 50
-			Road: 100
-			DirtRoad: 100
-			Beach: 60
-			Ore: 50
-			Gems: 50
-			Water: 100
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
+			Water: 133
 	ShroudRenderer:
 		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
 		UseExtendedIndex: true
