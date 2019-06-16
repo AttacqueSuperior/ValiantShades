@@ -444,6 +444,7 @@ gaspysat:
 		BuildPaletteOrder: 70
 		Prerequisites: garbur, ~structures.allies
 		Description: Reveals the shroud around all enemy structures.
+		BuildLimit: 1
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
