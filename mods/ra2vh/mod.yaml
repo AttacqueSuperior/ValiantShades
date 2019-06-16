@@ -62,6 +62,7 @@ Packages:
 	ra2vh|bits
 	ra2vh|bits/audio
 	ra2vh|bits/audio/eva
+	ra2vh|bits/audio/voices
 	ra2vh|bits/cameos
 	ra2vh|bits/aircraft
 	ra2vh|bits/infantry
