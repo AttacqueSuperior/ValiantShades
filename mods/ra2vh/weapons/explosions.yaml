@@ -25,7 +25,7 @@ InfantryExplode:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: infantryexplode
-		ExplosionPalette: ra
+		ExplosionPalette: heroicraexp
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
