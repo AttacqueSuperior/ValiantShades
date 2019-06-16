@@ -188,7 +188,7 @@
 		Offset: 0,0,960
 	Targetable@MC:
 		TargetTypes: MindControl
-		RequiresCondition: !controlled
+		RequiresCondition: !controlled && !prevent-ground-target
 	WithIdleOverlay@mindcontrol:
 		Sequence: mindcontrol
 		Palette: effect
@@ -237,6 +237,7 @@
 		Damage: 200
 		DamageLevel: 1
 		DamageTypes: RadiationDeath, DefaultDeath
+		RequiresCondition: !prevent-ground-target
 
 ^Cloneable:
 	Cloneable:
@@ -265,6 +266,7 @@
 		RequiresCondition: berserk
 	Targetable@berserk:
 		TargetTypes: Berserkable
+		RequiresCondition: !prevent-ground-target
 
 ^AffectedByEMP:
 	WithColoredOverlay@emp:

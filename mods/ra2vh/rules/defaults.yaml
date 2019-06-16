@@ -579,18 +579,6 @@
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
-	Targetable:
-		RequiresCondition: !parachute
-	Targetable@airborne:
-		TargetTypes: Air
-		RequiresCondition: parachute
-	Targetable@Repair:
-		RequiresCondition: damaged && !parachute
-	ExternalCondition@PARACHUTE:
-		Condition: parachute
-	GrantCondition@parachute-disable:
-		Condition: disabled
-		RequiresCondition: parachute
 
 ^WithSwimSuit:
 	WithInfantryBody:
@@ -733,13 +721,26 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
+	GrantConditionAboveAltitude:
+		Condition: inair
+		MinAltitude: 640
+	GrantCondition@inair-disable:
+		Condition: disabled
+		RequiresCondition: inair
+	GrantCondition@preventgroundtargeting:
+		Condition: prevent-ground-target
+		RequiresCondition: inair || being-warped || invulnerability
 	Targetable:
 		TargetTypes: Ground, Vehicle, DetonateAttack
+		RequiresCondition: !prevent-ground-target
 	GrantConditionOnDamageState@damaged:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
+	Targetable@airborne:
+		TargetTypes: Air
+		RequiresCondition: inair
 	Targetable@Repair:
-		RequiresCondition: damaged
+		RequiresCondition: damaged && !prevent-ground-target
 		TargetTypes: Repair
 	Repairable:
 		Voice: Move
