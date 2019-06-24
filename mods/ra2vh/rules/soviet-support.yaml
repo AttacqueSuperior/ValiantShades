@@ -36,11 +36,14 @@ naflak:
 		Offset: 0,0,0
 	Armament:
 		Weapon: FlakWeapon
-		LocalOffset: 450,0,900
+		LocalOffset: 560,0,1860
+		MuzzleSequence: muzzle
+		MuzzlePalette: ra
 	BodyOrientation:
 		QuantizedFacings: 32
 	-WithSpriteBody:
 	WithEmbeddedTurretSpriteBody:
+	WithMuzzleOverlay:
 
 tesla:
 	Inherits: ^Tier2Defense

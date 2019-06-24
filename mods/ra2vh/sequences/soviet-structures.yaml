@@ -490,4 +490,8 @@ naflak:
 			SNOW: GENERIC
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	muzzle: flak
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
 	icon: flakicon
