@@ -6,17 +6,14 @@ nacnst:
 		IntoActor: smcv
 		Offset: 1,1
 		Facing: 96
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 	WithBuildingPlacedAnimation:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@soviets:
@@ -45,6 +42,7 @@ napowr:
 		Bounds: 126, 94, 2, -16
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 150
@@ -125,12 +123,15 @@ narefn:
 	FreeActor:
 		Actor: harv
 	WithDockedOverlay:
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -159,21 +160,27 @@ naweap:
 	#	RequiresCondition: !build-incomplete
 	WithExitOverlay@door:
 		Sequence: build-door
+		PauseOnCondition: disabled
 		RequiresCondition: !roof-open && !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
+		PauseOnCondition: disabled
 		RequiresCondition: !roof-open && !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@bib:
 		Sequence: bib
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@air-open:
 		Sequence: build-air-open
+		PauseOnCondition: disabled
 		RequiresCondition: roof-open && !build-incomplete
 	WithIdleOverlay@air-inside:
 		Sequence: build-air-inside
+		PauseOnCondition: disabled
 		RequiresCondition: roof-open && !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -192,7 +199,7 @@ naradr:
 		Bounds: 95, 130, 0, -40
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -206,16 +213,20 @@ nayard:
 		Prerequisites: nahand, ~structures.soviets
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		PauseOnCondition: being-warped
 		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithProductionOverlay@lights:
 		Sequence: production-lights
-		RequiresCondition: !build-incomplete
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !lowpower
 
 naairc:
 	Inherits: ^AirPad
@@ -228,24 +239,21 @@ naairc:
 		RequiresCondition: !build-incomplete
 	Selectable:
 		Bounds: 142, 150, -3, -42
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@top:
 		Sequence: idle-top
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Exit@1:
 		SpawnOffset: -370,370,0
@@ -268,7 +276,7 @@ naairc:
 	WithTextDecoration@placeholder:
 		Text: PLACEHOLDER
 		ReferencePoint: Center
-		ZOffset: 256
+		ZOffset: -256
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
@@ -281,18 +289,17 @@ natek:
 		Bounds: 122, 216, 0, -81
 	Tooltip:
 		Name: Tech Center
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@bolts:
 		Sequence: idle-bolts
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@body-lights:
 		Sequence: idle-body-lights
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	InfiltrateForSupportPower:
 		Proxy: soviets.tech.infiltrated
@@ -330,6 +337,7 @@ nanrct:
 		DeathTypes: DefaultDeath	
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Explodes:
 		Type: CenterPosition
@@ -359,6 +367,7 @@ natech:
 naindp:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -387,20 +396,19 @@ naindp:
 	RevealOnDeath:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@pistons:
 		Sequence: idle-pistons
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
@@ -408,6 +416,7 @@ naindp:
 naclon:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
@@ -438,6 +447,7 @@ naclon:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	Exit@n1_0:
 		SpawnOffset: 0,0,0
 		ExitCell: -1, 0
@@ -479,16 +489,16 @@ naclon:
 		Prerequisites: barracks
 	Production:
 		Produces: Infantry
-		RequiresCondition: !build-incomplete && barracks
+		RequiresCondition: !build-incomplete && barracks && !being-warped
 	RallyPoint:
 		Offset: 3,3
 	ClonesProducedUnits:
 		CloneableTypes: infantry
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	AcceptsDeliveredCash:
-		# RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
@@ -496,6 +506,7 @@ naclon:
 napsis:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
@@ -525,16 +536,14 @@ napsis:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
 	GpsASProvider:
-		RequiresCondition: !build-incomplete && !lowpower
+		RequiresCondition: !disabled
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !being-warped
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
@@ -542,6 +551,7 @@ napsis:
 nairon:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
@@ -572,6 +582,7 @@ nairon:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeInterval: 7500
@@ -584,12 +595,9 @@ nairon:
 		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SupportPowerChargeBar:
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
@@ -603,6 +611,7 @@ nairon:
 namisl:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -633,9 +642,7 @@ namisl:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !being-warped
 	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
@@ -663,7 +670,7 @@ namisl:
 		TrailDelay: 0
 		TrailInterval: 2
 		FlightDelay: 200
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete
