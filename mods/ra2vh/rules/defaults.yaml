@@ -80,6 +80,7 @@
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
+	Inherits@temporal: ^Warpable
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -90,6 +91,7 @@
 		Priority: 3
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
+		RequiresCondition: !being-warped
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -108,6 +110,7 @@
 		AreaTypes: building
 	Capturable:
 		Types: building
+		RequiresCondition: !build-incomplete && !being-warped
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
@@ -129,6 +132,7 @@
 		DeathTypes: DefaultDeath
 	RepairableBuilding:
 		RepairStep: 7000
+		RequiresCondition: !build-incomplete && !being-warped
 	EngineerRepairable:
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -138,12 +142,15 @@
 		Types: Building
 	Sellable:
 		SellSounds: uselbuil.wav
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	Guardable:
 		Range: 3c0
 	Demolishable:
 	WithMakeAnimation:
 		Condition: build-incomplete
+	GrantCondition@makeanim-disable:
+		RequiresCondition: build-incomplete
+		Condition: disabled
 	HitShape:
 		UseTargetableCellsOffsets: true
 	MapEditorData:
@@ -156,12 +163,17 @@
 		Sequence: repair
 		ReferencePoint: Center
 		Palette: mouse
+		RequiresCondition: !build-incomplete && !being-warped
 	CaptureManager:
 	ExternalCondition@hide-gpsdot:
 		Condition: hide-gpsdot
 	GpsDotAS:
 		Sequence: structure
 		RequiresCondition: !hide-gpsdot
+	WithDecoration@disabledisabledwarning:
+		Image: inviso
+		Sequence: null
+		RequiresCondition: !disabled
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -186,13 +198,15 @@
 	-Sellable:
 	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
+	-GrantCondition@makeanim-disable:
+	-RepairableBuilding:
+	-WithBuildingRepairDecoration:
 	Health:
 		HP: 900000
 	Armor:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
 		Types: SpySat
 		RevealGeneratedShroud: False
@@ -252,6 +266,7 @@
 	-Sellable:
 	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
+	-GrantCondition@makeanim-disable:
 	OwnerLostAction:
 		Action: ChangeOwner
 	Health:
@@ -260,7 +275,6 @@
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
 		Types: SpySat
 		RevealGeneratedShroud: False
@@ -285,6 +299,19 @@
 		Sequence: techstructure
 	SpawnActorOnDeath:
 		OwnerType: InternalName
+	-Warpable:
+	-Targetable@Temporal:
+	-WithColoredOverlay@temporal:
+	-Explodes@temporal:
+	-GrantCondition@warp-disable:
+	RepairableBuilding:
+		-RequiresCondition:
+	WithBuildingRepairDecoration:
+		-RequiresCondition:
+	Capturable:
+		-RequiresCondition:
+	Targetable:
+		-RequiresCondition:
 
 ^BuildingPlug:
 	Interactable:
