@@ -239,12 +239,12 @@
 		G: 255
 		B: 255
 		A: 64
-	PaletteFromRGBA@disabled:
-		Name: disabled
+	PaletteFromRGBA@lowpower:
+		Name: lowpower
 		R: 0
 		G: 0
 		B: 0
-		A: 180
+		A: 128
 	PaletteFromRGBA@empdisable:
 		Name: empdisable
 		R: 40

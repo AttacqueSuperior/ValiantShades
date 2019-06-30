@@ -284,4 +284,14 @@
 	GrantCondition@emp-disable:
 		Condition: disabled
 		RequiresCondition: emp
-	
+
+^DisableOnLowPower:
+	WithColoredOverlay@lowpower:
+		RequiresCondition: lowpower
+		Palette: lowpower
+	GrantConditionOnPowerState@lowpower:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	GrantCondition@lowpower-disable:
+		RequiresCondition: lowpower
+		Condition: disabled
