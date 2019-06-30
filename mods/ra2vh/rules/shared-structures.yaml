@@ -1,6 +1,7 @@
 ^ConYard:
 	Inherits: ^Building
 	Inherits@shape: ^4x4Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
@@ -27,15 +28,16 @@
 	Valued:
 		Cost: 3000
 	Production:
-		Produces: Building,Support
+		Produces: Building, Support
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
 	Transforms:
 		Offset: 1,1
 		DeployCursor: undeploy
-		RequiresCondition: factundeploy && !build-incomplete
+		RequiresCondition: factundeploy && !build-incomplete && !being-warped
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -45,11 +47,11 @@
 		ProductionType: Support
 	Power:
 		Amount: 50
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	PlayerCashTricklerBar:
 	BaseProvider:
 		Range: 22c0
-		PauseOnCondition: build-incomplete
+		PauseOnCondition: build-incomplete || being-warped
 	Armor@resistsupers:
 		Type: ResistSupers
 
@@ -62,7 +64,7 @@
 		Prerequisite: power
 		RequiresCondition: !build-incomplete
 	Power:
-		RequiresCondition: !power-outage && !build-incomplete
+		RequiresCondition: !power-outage && !build-incomplete && !being-warped
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
@@ -94,6 +96,7 @@
 
 ^Barracks:
 	Inherits: ^Building
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -130,8 +133,10 @@
 	Production:
 		Produces: Infantry
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		RequiresCondition: !being-warped
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -143,6 +148,7 @@
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -10
+		RequiresCondition: !being-warped
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
@@ -152,6 +158,7 @@
 ^Refinery:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
@@ -201,6 +208,7 @@
 		Facing: 160
 	Power:
 		Amount: -50
+		RequiresCondition: !being-warped
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	GrantConditionOnResourceDelivery:
@@ -224,6 +232,7 @@
 ^WarFactory:
 	Inherits: ^Building
 	Inherits@shape: ^5x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -258,8 +267,10 @@
 	Production:
 		Produces: Vehicle
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		RequiresCondition: !being-warped
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -271,6 +282,7 @@
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
+		RequiresCondition: !being-warped
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
@@ -285,6 +297,7 @@
 ^Tier2:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
@@ -309,20 +322,18 @@
 		DeathTypes: DefaultDeath
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite:
 		Prerequisite: radar
 		RequiresCondition: !build-incomplete
 	ProvidesRadar:
-		RequiresCondition: !lowpower && !build-incomplete
+		RequiresCondition: !disabled
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
+		RequiresCondition: !being-warped
 	DetonateWeaponPower@PsychicReveal:
 		Icon: psyreveal
 		ChargeInterval: 6000
@@ -330,12 +341,13 @@
 		LongDesc: Reveals a target area.
 		OrderName: PsychicRevealInfoOrder
 		Weapon: PsychicReveal
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 
 ^NavalYard:
 	Inherits: ^Building
 	Inherits@shape: ^4x4Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -437,8 +449,10 @@
 	Production:
 		Produces: Ship
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		RequiresCondition: !being-warped
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -450,17 +464,20 @@
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000
+		RequiresCondition: !build-incomplete && !being-warped
 	ProductionBar:
 		ProductionType: Ship
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -20
+		RequiresCondition: !being-warped
 	RequiresBuildableArea:
 		Adjacent: 13
 
 ^AirPad:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 70
@@ -489,13 +506,17 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -50
+		RequiresCondition: !being-warped
 	Reservable:
 	Production:
 		Produces: Aircraft
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	ProductionBar:
 		ProductionType: Aircraft
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		RequiresCondition: !being-warped
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -506,6 +527,7 @@
 ^Tier3:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
@@ -534,6 +556,7 @@
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -100
+		RequiresCondition: !being-warped
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 	Targetable:
@@ -542,6 +565,7 @@
 ^Tier4:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 120
@@ -568,6 +592,7 @@
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 	Targetable:
