@@ -310,7 +310,7 @@ gaairc:
 		LongDesc: A Cargo Plane drops six GIs\nand 2 GGIs anywhere on the map.
 		DropItems: ggi,ggi,e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
-		UnitType: pdplane
+		UnitType: pdplane.allied
 		CameraActor: camera
 		ArrowSequence: arrow
 		PauseOnCondition: disabled

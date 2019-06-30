@@ -83,7 +83,7 @@ caairp:
 		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
-		UnitType: pdplane
+		UnitType: pdplane.allied
 		CameraActor: camera
 		Prerequisites: ~techparadrops.allies
 		ArrowSequence: arrow
@@ -95,7 +95,7 @@ caairp:
 		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
 		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
-		UnitType: pdplane
+		UnitType: pdplane.soviet
 		CameraActor: camera
 		Prerequisites: ~techparadrops.soviets
 		ArrowSequence: arrow

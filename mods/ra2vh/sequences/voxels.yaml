@@ -147,6 +147,12 @@ caoutp:
 pdplane:
 	idle:
 
+pdplane.allied:
+	idle: pdplanea
+
+pdplane.soviet:
+	idle: pdplanes
+
 pdplane.crate:
 	idle: cratplne
 

@@ -450,6 +450,26 @@ pdplanehusk:
 	RenderVoxels:
 		Image: pdplane
 
+pdplane.allied:
+	Inherits: pdplane
+	SpawnActorOnDeath:
+		Actor: pdplane.allied.husk
+
+pdplane.allied.husk:
+	Inherits: pdplanehusk
+	RenderVoxels:
+		Image: pdplane.allied
+
+pdplane.soviet:
+	Inherits: pdplane
+	SpawnActorOnDeath:
+		Actor: pdplane.soviet.husk
+
+pdplane.soviet.husk:
+	Inherits: pdplanehusk
+	RenderVoxels:
+		Image: pdplane.soviet
+
 pdplane.crate:
 	Inherits: pdplane
 	-Targetable@airborne:
