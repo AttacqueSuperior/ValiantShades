@@ -262,7 +262,7 @@ beaghusk:
 		Name: Black Eagle
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 210
+		Speed: 225
 	RenderVoxels:
 		Image: beag
 	RevealsShroud:
@@ -302,7 +302,7 @@ orcahusk:
 		Name: Harrier
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 210
+		Speed: 225
 	RenderVoxels:
 		Image: falc
 	RevealsShroud:
@@ -332,7 +332,7 @@ fflashhusk:
 		Name: Fireflash
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 210
+		Speed: 225
 	RenderVoxels:
 		Image: fflash
 	RevealsShroud:
@@ -397,7 +397,7 @@ spirithusk:
 		Name: Spirit
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 210
+		Speed: 150
 	RenderVoxels:
 		Image: spirit
 	RevealsShroud:
@@ -446,7 +446,7 @@ pdplanehusk:
 		Name: Cargo Plane
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 100
+		Speed: 150
 	RenderVoxels:
 		Image: pdplane
 
