@@ -1187,19 +1187,9 @@
 	RenderSprites:
 		Palette: terrain
 		Image: crate
-	GrantConditionOnTerrain:
-		TerrainTypes: Water
-		Condition: water
-	WithSpriteBody:
-		Sequence: land
-		RequiresCondition: !parachute && !water
-	WithSpriteBody@water:
-		Name: body-in-water
-		Sequence: water
-		RequiresCondition: !parachute && water
-	WithSpriteBody@air:
-		Name: body-in-air
-		RequiresCondition: parachute
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water
 	WithSpriteBody@shadow:
 		RequiresCondition: parachute
 		Name: shadow
