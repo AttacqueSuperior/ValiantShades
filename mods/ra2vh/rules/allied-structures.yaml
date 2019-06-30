@@ -6,13 +6,10 @@ gacnst:
 		IntoActor: amcv
 		Offset: 1,1
 		Facing: 96
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 	WithBuildingPlacedOverlay:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite:
@@ -49,43 +46,46 @@ gapowr:
 		Conditions:
 			powrup: powrup
 		Requirements:
-			powrup: !build-incomplete && !powrup
+			powrup: !build-incomplete && !powrup && !being-warped
 	Pluggable@2:
 		Offset: 0,1
 		Conditions:
 			powrup: powrup
 		Requirements:
-			powrup: !build-incomplete && !powrup
+			powrup: !build-incomplete && !powrup && !being-warped
 	Pluggable@3:
 		Offset: 1,0
 		Conditions:
 			powrup: powrup
 		Requirements:
-			powrup: !build-incomplete && !powrup
+			powrup: !build-incomplete && !powrup && !being-warped
 	Pluggable@4:
 		Offset: 1,1
 		Conditions:
 			powrup: powrup
 		Requirements:
-			powrup: !build-incomplete && !powrup
+			powrup: !build-incomplete && !powrup && !being-warped
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
 		RequiresCondition: !build-incomplete && !powrup
+		PauseOnCondition: disabled
 	WithIdleOverlay@glow-turbine:
 		Sequence: idle-glow-turbine
-		RequiresCondition: !build-incomplete && powrup
+		RequiresCondition: !build-incomplete && powrup && !being-warped
+		PauseOnCondition: disabled
 	WithIdleOverlay@smokes:
 		Sequence: idle-smokes
 		RequiresCondition: !build-incomplete && !powrup
+		PauseOnCondition: disabled
 	WithIdleOverlay@smokes-turbine:
 		Sequence: idle-smokes-turbine
-		RequiresCondition: !build-incomplete && powrup
+		RequiresCondition: !build-incomplete && powrup && !being-warped
+		PauseOnCondition: disabled
 	Power:
 		Amount: 200
-		RequiresCondition: !power-outage && !build-incomplete
 	Power@turbine:
 		Amount: 100
-		RequiresCondition: powrup && !power-outage && !build-incomplete
+		RequiresCondition: powrup && !power-outage && !build-incomplete && !being-warped
 	GivesExperienceMultiplier@turbine:
 		Modifier: 133
 		RequiresCondition: powrup
@@ -144,6 +144,7 @@ gapile:
 		ExitCell: 2, 2
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+		PauseOnCondition: being-warped
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -158,12 +159,15 @@ garefn:
 	FreeActor:
 		Actor: cmin
 	WithDockedOverlay:
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -220,7 +224,7 @@ gafcmd:
 		Name: Field Command
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -234,12 +238,15 @@ gayard:
 		Prerequisites: gapile, ~structures.allies
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		PauseOnCondition: being-warped
 		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 
 gaairc:
@@ -263,24 +270,21 @@ gaairc:
 	#	RequiresCondition: !build-incomplete
 	Selectable:
 		Bounds: 142, 150, -3, -42
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@top:
 		Sequence: idle-top
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Exit@1:
 		SpawnOffset: -370,370,0
@@ -309,7 +313,7 @@ gaairc:
 		UnitType: pdplane
 		CameraActor: camera
 		ArrowSequence: arrow
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	SupportPowerChargeBar:
 	SpawnSurvivors:
@@ -335,11 +339,9 @@ gatech:
 		Bounds: 122, 216, 0, -81
 	Tooltip:
 		Name: Battle Lab
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	InfiltrateForSupportPower:
 		Proxy: allies.tech.infiltrated
@@ -356,22 +358,21 @@ garbur:
 		Name: Research Bureau
 	Selectable:
 		Bounds: 152, 164, 0, -50
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	RenderSprites:
 		PlayerPalette: xuetallied2
 	ActorPreviewPlaceBuildingPreview:
 		OverridePalette: placexuetallied2
 	WithIdleOverlay@bolt:
 		Sequence: idle-bolt
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@ball:
 		Sequence: idle-ball
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	WithIdleOverlay@top:
 		Sequence: idle-top
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	InfiltrateForSupportPower:
 		Proxy: allies.tech.infiltrated
@@ -382,6 +383,7 @@ garbur:
 gaorep:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -410,17 +412,16 @@ gaorep:
 	RevealOnDeath:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	ResourcePurifier:
 		Modifier: 25
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !being-warped
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
@@ -428,7 +429,7 @@ gaorep:
 		Condition: resource-purify
 		Duration: 3
 	SmokeParticleEmitter@purifiersmoke:
-		RequiresCondition: resource-purify
+		RequiresCondition: resource-purify && !being-warped
 		Sequences: refinerysmoke
 		Palette: rookiera2exp
 		SpawnFrequency: 1,2
@@ -439,6 +440,7 @@ gaorep:
 gaspysat:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 70
@@ -469,24 +471,23 @@ gaspysat:
 		DeathTypes: DefaultDeath
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	GivesIntelligence:
 		Types: SpySat
-		RequiresCondition: !build-incomplete && !lowpower
+		RequiresCondition: !disabled
 	Power:
 		Amount: -100
+		RequiresCondition: !being-warped
 	ProvidesRadar:
-		RequiresCondition: !lowpower && !build-incomplete
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !disabled
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
 gagap:
 	Inherits: ^SupportBuilding
+	Inherits@lowpower: ^DisableOnLowPower
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -501,12 +502,9 @@ gagap:
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithIdleOverlay@head:
 		Sequence: idle-head
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Health:
 		HP: 600000
@@ -523,19 +521,21 @@ gagap:
 		DeathTypes: DefaultDeath
 	CreatesShroud:
 		Range: 10c0
-		RequiresCondition: !lowpower && !build-incomplete
+		RequiresCondition: !disabled
 	RenderShroudCircle:
 	ProximityExternalCondition:
 		Range: 10c0
 		AffectsParent: true
 		Condition: hide-gpsdot
-		RequiresCondition: !lowpower && !build-incomplete
+		RequiresCondition: !disabled
 	Power:
 		Amount: -100
+		RequiresCondition: !being-warped
 
 gaweat:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -566,9 +566,7 @@ gaweat:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !being-warped
 	SupportPowerChargeBar:
 	DetonateWeaponPower@WeatherStorm:
 		Icon: bolticon
@@ -580,7 +578,7 @@ gaweat:
 		AirburstAltitude: 4c512
 		DisplayRadarPing: true
 		DisplayTimerStances: Ally, Neutral, Enemy
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	RenderSprites:
 		PlayerPalette: weathercontroller
@@ -599,6 +597,7 @@ gaweat:
 gacsph:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
@@ -629,12 +628,11 @@ gacsph:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
+		RequiresCondition: !being-warped
 	WithIdleOverlay:
 		Sequence: idle-dome
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
@@ -651,7 +649,7 @@ gacsph:
 		KillCargo: False
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
