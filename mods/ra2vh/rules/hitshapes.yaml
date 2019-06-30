@@ -14,6 +14,14 @@
 			TopLeft: -512, -1024
 			BottomRight: 512, 1024
 
+^1x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -1536
+			BottomRight: 512, 1536
+
 ^1x4Shape:
 	HitShape:
 		UseTargetableCellsOffsets: true
@@ -85,6 +93,9 @@
 			LocalYaw: -128
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^3x4Shape:
 	HitShape:
@@ -93,6 +104,9 @@
 			LocalYaw: -128
 			TopLeft: -1536, -2048
 			BottomRight: 1536, 2048
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^3x5Shape:
 	HitShape:
@@ -101,6 +115,9 @@
 			LocalYaw: -128
 			TopLeft: -1536, -2560
 			BottomRight: 1536, 2560
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^4x2Shape:
 	HitShape:
@@ -116,6 +133,9 @@
 			LocalYaw: -128
 			TopLeft: -2048, -1536
 			BottomRight: 2048, 1536
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^4x4Shape:
 	HitShape:
@@ -124,6 +144,9 @@
 			LocalYaw: -128
 			TopLeft: -2048, -2048
 			BottomRight: 2048, 2048
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^5x3Shape:
 	HitShape:
@@ -132,6 +155,9 @@
 			LocalYaw: -128
 			TopLeft: -2560, -1536
 			BottomRight: 2560, 1536
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^5x4Shape:
 	HitShape:
@@ -140,6 +166,9 @@
 			LocalYaw: -128
 			TopLeft: -2560, -2048
 			BottomRight: 2560, 2048
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
 
 ^6x4Shape:
 	HitShape:
@@ -148,3 +177,6 @@
 			LocalYaw: -128
 			TopLeft: -3072, -2048
 			BottomRight: 3072, 2048
+	Explodes@temporal:
+		Weapon: LargeTemporalExplode
+		EmptyWeapon: LargeTemporalExplode
