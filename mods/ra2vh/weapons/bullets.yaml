@@ -58,12 +58,14 @@ sabotE:
 		ExplosionPalette: heroicra2exp
 
 MirageGun:
-	Inherits: ^LargeBullet
 	ReloadDelay: 70
 	Range: 7c0
 	Report: vmiratta.wav
-	Projectile: BulletAS
-		Speed: 100c0
+	Projectile: LaserZap
+		Width: 48
+		Duration: 15
+		TrackTarget: false
+		Color: C06000
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 100000
@@ -85,7 +87,9 @@ MirageGun:
 		ExplosionPalette: rookiera2exp
 		ImpactSounds:
 		ValidTargets: Ground, Water, Air
-	-Warhead@3EffWater:
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
 
 MirageGunE:
 	Inherits: MirageGun
