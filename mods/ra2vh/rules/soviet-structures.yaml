@@ -310,7 +310,7 @@ natek:
 		ChargeInterval: 8000
 		Description: Parabombs
 		LongDesc: Send in a bomber\nto saturate an area with bombs.
-		OrderName: ParabombsOrder
+		OrderName: ParabombsInfoOrder
 		UnitType: pbombp
 		SquadSize: 1
 		Icon: parabombs

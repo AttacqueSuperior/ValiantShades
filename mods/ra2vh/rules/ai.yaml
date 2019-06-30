@@ -85,6 +85,22 @@ Player:
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 7c0
+			parabombs:
+				OrderName: ParabombsInfoOrder
+				Types: Structure
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 2
+					TargetMetric: None
+					CheckRadius: 4c0
+				Consideration@3:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 4c0
 	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
 		BuildingQueues: Building
