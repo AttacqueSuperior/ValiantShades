@@ -68,9 +68,9 @@ tesla:
 		ChargeAudio: btespow.wav
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		RequiresCondition: !lowpower && !build-incomplete
+		RequiresCondition: !disabled
 	ExternalCondition@CHARGED:
 		Condition: charged
 		SourceCap: 1
-	GrantConditionOnPowerState@LOWPOWER:
+	GrantConditionOnPowerState@lowpower:
 		RequiresCondition: charged < 2

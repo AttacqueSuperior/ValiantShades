@@ -57,16 +57,17 @@ atesla:
 		ChargeAudio: bpripow.wav
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithSpriteBody:
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 
 gtgcan:
 	Inherits: ^SupportBuilding
 	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^2x2Shape
 	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50
@@ -97,7 +98,7 @@ gtgcan:
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: GrandCannonWeapon
@@ -120,6 +121,4 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !being-warped

@@ -37,6 +37,7 @@
 		Type: pillbox
 	AutoTarget:
 	AttackTurreted:
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	RequiresBuildableArea:
 		Adjacent: 5
@@ -44,6 +45,7 @@
 ^AADefense:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetAir
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -72,7 +74,7 @@
 		PreviewFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
@@ -80,13 +82,12 @@
 	AutoTarget:
 	Power:
 		Amount: -50
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
+		RequiresCondition: !being-warped
 
 ^Tier2Defense:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@lowpower: ^DisableOnLowPower
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
@@ -111,14 +112,12 @@
 		Dimensions: 1, 1
 	AttackTesla:
 		ReloadDelay: 90
-		PauseOnCondition: lowpower
+		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
 	AutoTarget:
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	WithRangeCircle:
 		Range: 8c0
 		Type: tier2defense
 	Power:
 		Amount: -75
+		RequiresCondition: !being-warped
