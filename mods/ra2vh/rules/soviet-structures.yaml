@@ -306,6 +306,21 @@ natek:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
+	AirstrikePowerAS@parabombs:
+		ChargeInterval: 8000
+		Description: Parabombs
+		LongDesc: Send in a bomber\nto saturate an area with bombs.
+		OrderName: ParabombsOrder
+		UnitType: pbombp
+		SquadSize: 1
+		Icon: parabombs
+		Mission: Attack
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete
+		Cost: 1250
 
 nanrct:
 	Inherits: ^Power

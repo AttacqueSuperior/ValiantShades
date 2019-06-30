@@ -16,6 +16,9 @@ beag:
 bfrt:
 	idle
 
+bpln:
+	idle:
+
 bus:
 	idle:
 

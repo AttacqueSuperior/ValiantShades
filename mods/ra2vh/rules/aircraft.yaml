@@ -479,3 +479,45 @@ pdplane.crate:
 	-GrantConditionOnDamageState@damaged:
 	Aircraft:
 		-AirborneCondition:
+
+pbombp:
+	Inherits: beag
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Tooltip:
+		Name: Parabomber Plane
+	SpawnActorOnDeath:
+		Actor: pbombphusk
+	Armament:
+		Weapon: ParaBomb
+	AmmoPool:
+		Ammo: 3
+		PipCount: 3
+	AttackAircraft:
+		FacingTolerance: 128
+		PauseOnCondition: disabled
+		RequiresCondition: ammo
+	-Selectable:
+	Interactable:
+		Bounds: 64, 52, 0, -6
+	-Buildable:
+	-RevealsShroud:
+	FlyAwayOnIdle:
+	-ReturnOnIdle:
+	AutoTarget:
+		ScanRadius: 6
+	-Rearmable:
+	RejectsOrders:
+	RenderSprites:
+		Image: bpln
+	RenderVoxels:
+		Image: bpln
+
+pbombphusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Parabomber Plane
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 225
+	RenderVoxels:
+		Image: bpln

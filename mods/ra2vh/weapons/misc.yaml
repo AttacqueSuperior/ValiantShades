@@ -491,3 +491,47 @@ DragonFlamerE:
 	Inherits: DragonFlamer
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicapolloexp
+
+ParaBomb:
+	ReloadDelay: 4
+	Range: 3c0
+	MinRange: 0c001
+	Report: sparadra.wav
+	Projectile: ParaBomb
+		Velocity: 0, 0, -33
+		Acceleration: 0, 0, 0
+		Image: parabomb
+		ParachuteOpeningSequence: chute-open
+		ParachuteSequence: chute-idle
+		ParachuteClosingSequence: chute-close
+		Shadow: true
+		Palette: player
+		IsPlayerPalette: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 960
+		Falloff: 100, 66, 33, 0
+		Damage: 200000
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: kirovtesla
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch

@@ -246,6 +246,17 @@ zbomb:
 	idle:
 		Facings: 32
 
+parabomb:
+	idle: pbomb
+	chute-open: parach
+		Length: 19
+	chute-idle: parach
+		Start: 19
+		Length: 20
+	chute-close: parach
+		Start: 40
+		Length: 29
+
 largesmoke:
 	idle: lgrysmk1
 		Length: *
@@ -382,6 +393,7 @@ icon:
 	airborne: aparicon
 	bolticon: bolticon
 	psyreveal: psyricon
+	parabombs: pbombico
 
 atomic:
 	up: nkmslup

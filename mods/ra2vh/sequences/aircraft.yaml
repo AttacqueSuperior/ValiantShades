@@ -6,6 +6,10 @@ beag:
 	Inherits: ^Aircraft
 	icon: beagicon
 
+bpln:
+	Inherits: ^Aircraft
+	icon: bplnicon
+
 cargoplane:
 	Inherits: ^Aircraft
 	icon: xxicon
