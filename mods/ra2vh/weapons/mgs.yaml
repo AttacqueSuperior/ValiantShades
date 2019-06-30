@@ -97,13 +97,34 @@ CRMP5E:
 		ExplosionPalette: heroicra2exp
 	
 awp:
-	Inherits: DoublePistols
 	ReloadDelay: 100
 	Range: 14c0
 	Report: isniatta.wav
+	Projectile: LaserZap
+		Width: 32
+		Duration: 15
+		TrackTarget: false
+		Color: C0A000
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125000
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 5
+			Medium: 5
+			Heavy: 5
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0
+			Rocket: 5
+		DamageTypes: AltBulletDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ExplosionPalette: rookiera2exp
+		ValidTargets: Ground, Water, Air
 
 AWPE:
 	Inherits: awp
