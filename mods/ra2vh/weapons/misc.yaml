@@ -373,7 +373,8 @@ BuildingDeathFlameGuySpawner:
 	Warhead@1: FireFragment
 		ValidTargets: Ground, Air, Water
 		Weapon: BuildingDeathFlameGuySpawner2
-		Chance: 33
+		Chance: 50
+		Delay: 1
 
 BuildingDeathFlameGuySpawner2:
 	Projectile: InstantExplode
