@@ -730,7 +730,7 @@ jumpjet:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
-		TurnSpeed: 255
+		TurnSpeed: 64
 		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
