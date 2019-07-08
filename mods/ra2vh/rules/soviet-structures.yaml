@@ -349,7 +349,7 @@ nanrct:
 		Range: 5c0
 	RevealOnDeath:
 		Radius: 2c512
-		DeathTypes: DefaultDeath	
+		DeathTypes: DefaultDeath
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		PauseOnCondition: disabled

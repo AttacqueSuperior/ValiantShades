@@ -109,7 +109,7 @@
 		EmptyWeapon: BuildingDeathFlameGuySpawner
 		DeathTypes: DefaultDeath
 
- ^UnitParticles:
+^UnitParticles:
 	SmokeParticleEmitter@1:
 		RequiresCondition: enable_unitsmoke
 		Sequences: smallsmoke
@@ -126,7 +126,7 @@
 		StartsGranted: true
 		RequiresCondition: dmg_heavy
 
- ^VehicleParticles:
+^VehicleParticles:
 	Inherits: ^UnitParticles
 	ExplodeWeapon@damagesparks:
 		RequiresCondition: dmg_heavy

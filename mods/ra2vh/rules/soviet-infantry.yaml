@@ -118,7 +118,7 @@ flakt:
 		RequiresCondition: !rank-elite
 	Armament@secondary-opentopped:
 		Name: opentopped
-		Weapon: FlakGuyAAGun 
+		Weapon: FlakGuyAAGun
 		RequiresCondition: !rank-elite
 	Armament@primary-elite-opentopped:
 		Name: opentopped

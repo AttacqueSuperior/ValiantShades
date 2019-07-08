@@ -150,7 +150,7 @@
 		Name: America
 		InternalName: america
 		Side: Allies
-		Description: America#\nSpecial Ability: Paratroopers
+		Description: America #\nSpecial Ability: Paratroopers
 	#Faction@2:
 	#	Name: Germany
 	#	InternalName: germany
@@ -190,7 +190,7 @@
 		Name: Russia
 		InternalName: russia
 		Side: Soviets
-		Description: Russia#\nSpecial Vehicle: Tesla Tank
+		Description: Russia #\nSpecial Vehicle: Tesla Tank
 	ResourceType@Ore:
 		ResourceType: 1
 		Palette: resource
