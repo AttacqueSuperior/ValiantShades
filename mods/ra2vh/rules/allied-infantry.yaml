@@ -726,6 +726,7 @@ jumpjet:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, Hover, VTOL
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
@@ -734,10 +735,7 @@ jumpjet:
 		AltitudeVelocity: 83
 		Voice: Move
 		AirborneCondition: airborne
-		CanHover: True
 		IdealSeparation: 512
-		TakeOffOnResupply: true
-		VTOL: true
 	WithInfantryBody:
 		StandSequences: fly
 		MoveSequence: fly
@@ -778,6 +776,7 @@ jumpjet.husk:
 	Tooltip:
 		Name: Rocketeer
 	Aircraft:
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, Hover, VTOL
 		TurnSpeed: 10
 		Speed: 140
 	FallsToEarth:

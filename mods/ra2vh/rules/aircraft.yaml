@@ -155,9 +155,6 @@ zep:
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
-		CanHover: True
-		TakeOffOnResupply: true
-		VTOL: true
 	Health:
 		HP: 2000000
 	Armor:
@@ -295,6 +292,8 @@ orca:
 	RenderVoxels:
 		Image: falc
 	HitShape:
+	Aircraft:
+		FlightDynamics: MoveIntoShroud, VTOL, TurnToLand, TurnToDock, TakeOffOnCreation, TakeOffOnResupply
 
 orcahusk:
 	Inherits: ^PlaneHusk

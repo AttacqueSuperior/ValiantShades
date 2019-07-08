@@ -901,8 +901,7 @@
 	Aircraft:
 		Voice: Move
 		AirborneCondition: airborne
-		CanHover: True
-		VTOL: true
+		FlightDynamics: MoveIntoShroud
 	HiddenUnderFog:
 		Type: CenterPosition
 	ActorLostNotification:
@@ -940,6 +939,8 @@
 	GpsDotAS:
 		Sequence: helicopter
 		RequiresCondition: !hide-gpsdot
+	Aircraft:
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, Slide, Hover, VTOL
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -948,12 +949,11 @@
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
 		LandWhenIdle: false
-		TakeOffOnCreation: false
 		TurnSpeed: 27
 		Speed: 341
 		MaximumPitch: 168
-		CanHover: false
-		VTOL: false
+		InitialFacing: 224
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	ReturnOnIdle:
@@ -1011,8 +1011,7 @@
 ^HelicopterHusk:
 	Inherits: ^Husk
 	Aircraft:
-		CanHover: true
-		VTOL: true
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, Slide, Hover, VTOL
 	FallsToEarth:
 		Explosion: PlaneExplode
 	ExternalCondition@hide-gpsdot:
