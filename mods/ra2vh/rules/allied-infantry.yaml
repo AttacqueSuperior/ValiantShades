@@ -875,3 +875,5 @@ cleg:
 		RequiresCondition: stance-attackanything || assault-move
 		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
+	Targetable@radimmune:
+		TargetTypes: ImmuneToRadiation
