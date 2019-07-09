@@ -303,6 +303,7 @@
 	-Targetable@Temporal:
 	-WithColoredOverlay@temporal:
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	-GrantCondition@warp-disable:
 	RepairableBuilding:
 		-RequiresCondition:
@@ -590,6 +591,8 @@
 	Explodes@temporal:
 		Weapon: SmallTemporalExplode
 		EmptyWeapon: SmallTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 1, 3
 
 ^Parachutable:
 	WithSpriteBody@Parachute:

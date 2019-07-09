@@ -96,6 +96,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^3x4Shape:
 	HitShape:
@@ -107,6 +109,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^3x5Shape:
 	HitShape:
@@ -118,6 +122,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^4x2Shape:
 	HitShape:
@@ -136,6 +142,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^4x4Shape:
 	HitShape:
@@ -147,6 +155,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^5x3Shape:
 	HitShape:
@@ -158,6 +168,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^5x4Shape:
 	HitShape:
@@ -169,6 +181,8 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9
 
 ^6x4Shape:
 	HitShape:
@@ -180,3 +194,5 @@
 	Explodes@temporal:
 		Weapon: LargeTemporalExplode
 		EmptyWeapon: LargeTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 3, 9

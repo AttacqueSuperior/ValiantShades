@@ -49,3 +49,5 @@ particles:
 		Length: *
 		Tick: 80
 		Offset: 0, -20
+	warpspark: twinkle1
+		Length: *

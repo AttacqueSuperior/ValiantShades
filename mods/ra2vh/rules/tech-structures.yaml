@@ -123,6 +123,7 @@ cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^6x4Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
 		Dimensions: 6, 4
@@ -158,6 +159,7 @@ cahosp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^6x4Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Hospital Wreck
 	Building:
@@ -172,6 +174,7 @@ cathosp:
 	Inherits: cahosp
 	Inherits@shape: ^3x3Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -184,6 +187,7 @@ cathosp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Hospice Wreck
 	Building:
@@ -200,6 +204,7 @@ caoutp:
 	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^4x3Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Selectable:
 		Bounds: 178, 180, 0, -38
 	Tooltip:
@@ -250,6 +255,7 @@ caoutp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x3Shape
 	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Outpost Wreck
 	Building:
