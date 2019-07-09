@@ -66,6 +66,10 @@ MirageGun:
 		Duration: 15
 		TrackTarget: false
 		Color: C06000
+		SecondaryBeam: true
+		SecondaryBeamColor: C0600060
+		SecondaryBeamWidth: 96
+		SecondaryBeamZOffset: 1
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 100000
