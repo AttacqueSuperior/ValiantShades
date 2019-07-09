@@ -474,6 +474,8 @@
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: inair
+	Targetable@Temporal:
+		RequiresCondition: !inair
 	GrantConditionOnDamageState@damaged:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
@@ -792,6 +794,8 @@
 	Targetable@Repair:
 		RequiresCondition: damaged && !prevent-ground-target
 		TargetTypes: Repair
+	Targetable@Temporal:
+		RequiresCondition: !inair
 	Repairable:
 		Voice: Move
 		RepairActors: gadept, nadept, caoutp
