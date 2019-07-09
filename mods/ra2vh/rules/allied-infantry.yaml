@@ -761,6 +761,7 @@ jumpjet:
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
+		DeathType: DefaultDeath
 	Repairable:
 		RepairActors:
 		Voice: Move
