@@ -113,7 +113,10 @@
 		RequiresCondition: !build-incomplete && !being-warped
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
-		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
+	Voiced:
+		VoiceSet: Structure
+	DeathSounds:
+		DeathTypes: DefaultDeath
 	WithSpriteBody:
 	Explodes:
 		Type: Footprint

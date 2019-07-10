@@ -70,8 +70,8 @@
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
-	SoundOnDamageTransition:
-		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	Voiced:
+		VoiceSet: PowerPlant
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate

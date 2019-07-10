@@ -1,3 +1,16 @@
+Structure:
+	DefaultVariant: .wav
+	Voices:
+		Select: silence
+		Action: silence
+		Attack: silence
+		Die: bgendiea, bgendieb, bgendiec, bgendied, bgendiee, bgendief
+
+PowerPlant:
+	Inherits: Structure
+	Voices:
+		Die: bpowdiea, bpowdieb
+
 ^InfantryDeath:
 	DefaultVariant: .wav
 	Voices:
