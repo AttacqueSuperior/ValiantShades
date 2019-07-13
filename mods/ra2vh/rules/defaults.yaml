@@ -468,7 +468,7 @@
 	Selectable:
 	GrantConditionAboveAltitude:
 		Condition: inair
-		MinAltitude: 640
+		MinAltitude: 1024
 	GrantCondition@inair-disable:
 		Condition: disabled
 		RequiresCondition: inair
@@ -787,7 +787,7 @@
 		Bounds: 32,32
 	GrantConditionAboveAltitude:
 		Condition: inair
-		MinAltitude: 640
+		MinAltitude: 1024
 	GrantCondition@inair-disable:
 		Condition: disabled
 		RequiresCondition: inair
