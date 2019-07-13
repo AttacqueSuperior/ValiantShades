@@ -28,6 +28,12 @@
 	ReloadDelayMultiplier@ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
+	ReloadAmmoDelayMultiplier@VETERAN:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	ReloadAmmoDelayMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 75
 	SelfHealing@ELITE:
 		Step: 2000
 		Delay: 100
