@@ -536,3 +536,12 @@ ParaBomb:
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+
+V3Launcher:
+	ReloadDelay: 150
+	Range: 12c0
+	MinRange: 2c0
+	ValidTargets: Ground, Water
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Ground, Water

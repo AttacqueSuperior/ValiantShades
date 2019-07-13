@@ -463,3 +463,6 @@ twinkle:
 	ra1-twinkle1: twinkle1
 	ra1-twinkle2: twinkle2
 	ra1-twinkle3: twinkle3
+
+v3rocket:
+	idle: null

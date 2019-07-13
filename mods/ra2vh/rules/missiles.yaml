@@ -1,0 +1,27 @@
+v3rocket:
+	Inherits: ^BallisticMissile
+	Valued:
+		Cost: 10
+	Tooltip:
+		Name: V3 Rocket
+	Health:
+		HP: 90000
+	BallisticMissile:
+		LaunchAngle: 192
+		Speed: 112
+		DamageTypes: TriggerMissile
+	MissileSpawnerSlave:
+	SpawnedExplodes:
+		Weapon: V3MissileExplode
+		EmptyWeapon: V3MissileExplode
+		DeathTypes: TriggerMissile
+	SpawnedExplodes@killed:
+		Weapon: V3MissileProximityExplode
+		EmptyWeapon: V3MissileProximityExplode
+		DeathTypes: DefaultDeath
+	SmokeParticleEmitter@trailer:
+		Sequences: v3trailer
+		Palette: effect
+		SpawnFrequency: 1
+		Gravity: -40,-40,60, 40,40,60
+		Duration: 19

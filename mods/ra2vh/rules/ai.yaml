@@ -209,6 +209,7 @@ Player:
 			drgn: 20
 			htk: 20
 			htnk: 20
+			v3: 15
 			apoc: 10
 			ttnk: 15
 			mind: 10

@@ -1115,6 +1115,36 @@
 		Sequence: ship
 		RequiresCondition: !hide-gpsdot
 
+^BallisticMissile:
+	Inherits@1: ^Orientable
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^VoxelLighting
+	BodyOrientation:
+		QuantizedFacings: 32
+	Armor:
+		Type: Light
+	BallisticMissile:
+		LaunchAngle: 128
+		Speed: 170
+		AirborneCondition: airborne
+	Targetable@ground:
+		TargetTypes: Ground, Vehicle
+		RequiresCondition: !airborne
+	Targetable@air:
+		TargetTypes: Air
+		RequiresCondition: airborne
+	HiddenUnderFog:
+		Type: GroundPosition
+	Tooltip:
+		GenericName: Missile
+	WithShadow:
+	HitShape:
+	WithVoxelBody:
+		ShowShadow: false
+	Interactable:
+		Bounds: 30,30
+	RejectsOrders:
+
 ^OreDrill:
 	Inherits@1: ^SpriteActor
 	Tooltip:

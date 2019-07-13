@@ -51,3 +51,6 @@ particles:
 		Offset: 0, -20
 	warpspark: twinkle1
 		Length: *
+	v3trailer: v3trail
+		Length: *
+		BlendMode: Translucent

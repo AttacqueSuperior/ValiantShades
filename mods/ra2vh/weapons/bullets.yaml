@@ -293,3 +293,56 @@ GrenadeDiscE:
 		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+V3MissileExplode:
+	Warhead@1Dam: SpreadDamage
+		Spread: 512
+		Falloff: 100, 66, 33, 0
+		Damage: 250000
+		ValidTargets: Ground, Water
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
+	Warhead@1Eff: CreateEffect
+		Explosions: terrorist_explosion
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: HugeFlame
+		Chance: 50
+
+V3MissileProximityExplode:
+	Warhead@1Dam: SpreadDamage
+		Spread: 512
+		Falloff: 100, 66, 33, 0
+		Damage: 125000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
+	Warhead@1Eff: CreateEffect
+		Explosions: large_twlt
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: expnew05.wav, expnew11.wav
+		ValidTargets: Ground, Water, Air

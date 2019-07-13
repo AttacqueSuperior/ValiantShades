@@ -242,10 +242,10 @@ tug:
 
 v3:
 	idle:
-#Needs without weapon image v3wo
+	idle-empty: v3wo
 
-#v3rocket: #V3 Missile needs voxel projectiles
-#	idle:
+v3rocket:
+	idle:
 
 vlad:
 	idle:
