@@ -13,7 +13,7 @@ BlimpBomb:
 		Spread: 960
 		Falloff: 100, 66, 33, 0
 		Damage: 250000
-		ValidTargets: Building, Ground, Water
+		ValidTargets: Ground, Water
 		Versus:
 			None: 100
 			Flak: 100
@@ -60,7 +60,7 @@ SpiritBomb:
 		Spread: 960
 		Falloff: 100, 66, 33, 0
 		Damage: 375000
-		ValidTargets: Building, Ground, Water
+		ValidTargets: Ground, Water
 		Versus:
 			None: 100
 			Flak: 100
