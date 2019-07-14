@@ -3,9 +3,12 @@ explosion:
 		Length: *
 	ionring: ring1
 		Tick: 160
-	huge_watersplash: h2o_exp1
-	large_watersplash: h2o_exp2
-	small_watersplash: h2o_exp3
+	watersplash_size1: donutwater1
+	watersplash_size2: donutwater2
+	watersplash_size3: donutwater3
+	watersplash_size4: donutwater4
+	watersplash_size5: donutwater5
+	watersplash_size6: donutwater6
 	piff: piff
 	piffpiff: piffpiff
 	small_explosion: explosml

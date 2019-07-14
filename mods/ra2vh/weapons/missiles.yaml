@@ -41,7 +41,7 @@ MammothTuskE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 MammothTuskAA:
 	Inherits: MammothTusk
@@ -57,7 +57,7 @@ MammothTuskAAE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 Maverick2:
 	Inherits: ^Missile
@@ -81,7 +81,8 @@ Maverick2:
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: huge_watersplash
+		Explosions: watersplash_size2
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwala.wav
 		ValidTargets: Water
 
@@ -142,7 +143,7 @@ MedusaE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 HoverMissile:
 	Inherits: ^Missile
@@ -174,10 +175,6 @@ HoverMissile:
 		Explosions: small_grey_explosion
 		ImpactSounds: gexpifva.wav
 		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
@@ -186,7 +183,7 @@ HoverMissileE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 SubTorpedo:
 	ReloadDelay: 75
@@ -222,8 +219,8 @@ SubTorpedo:
 			Rocket: 100
 		DamageTypes: BulletDeath, DefaultDeath
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
-		ExplosionPalette: rookiera2exp
+		Explosions: watersplash_size3
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@2Eff: CreateEffect
@@ -237,7 +234,7 @@ SubTorpedoE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 MissileLauncher:
 	Inherits: ^Missile
@@ -282,14 +279,14 @@ MissileLauncherE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 MissileLauncherAAE:
 	Inherits: MissileLauncherAA
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 PlaneShmel:
 	Inherits: ^Missile
@@ -315,7 +312,7 @@ PlaneShmel:
 		ImpactSounds: kaboom1.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: huge_watersplash
+		Explosions: watersplash_size2
 		ImpactSounds: gexpwala.wav
 		ValidTargets: Water
 
@@ -324,7 +321,7 @@ PlaneShmelE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 WolverineTow:
 	Inherits: MissileLauncher
@@ -342,4 +339,4 @@ WolverineTowE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp

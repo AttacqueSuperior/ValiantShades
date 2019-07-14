@@ -33,7 +33,8 @@ BlimpBomb:
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
+		Explosions: watersplash_size1
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
@@ -44,7 +45,7 @@ BlimpBombE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 SpiritBomb:
 	ReloadDelay: 50
@@ -80,7 +81,8 @@ SpiritBomb:
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
+		Explosions: watersplash_size2
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
@@ -91,7 +93,7 @@ SpiritBombE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 RepairBullet:
 	ReloadDelay: 80
@@ -253,7 +255,8 @@ WeatherBolt:
 		InvalidTargets: Water
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
+		Explosions: watersplash_size6
+		ExplosionPalette: donutwater
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 
@@ -268,6 +271,8 @@ LargeDebris:
 		Sequences: large1, large2, large3, large4, large5, large6, large7, large8, large9, large10
 	Warhead@2Eff: CreateEffect
 		Explosions: largedebrishit
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size5
 
 FlyingBody:
 	Inherits: ^Debris
@@ -531,7 +536,8 @@ ParaBomb:
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: large_watersplash
+		Explosions: watersplash_size2
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge

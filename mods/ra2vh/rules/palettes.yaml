@@ -141,6 +141,9 @@
 	PaletteFromFile@apollora2:
 		Name: apollo
 		Filename: apollora2.pal
+	PaletteFromFile@donutwater:
+		Name: donutwater
+		Filename: donutwater.pal
 	PaletteFromPaletteWithAlpha@rookieraexp:
 		Name: rookieraexp
 		BasePalette: ra
@@ -175,6 +178,15 @@
 	PaletteFromPaletteWithAlpha@heroicapolloexp:
 		Name: heroicapolloexp
 		BasePalette: apollo
+		Alpha: 0.9
+		Premultiply: false
+	PaletteFromPaletteWithAlpha@rookiewaterexp:
+		Name: rookiewaterexp
+		BasePalette: donutwater
+		Alpha: 0.6
+	PaletteFromPaletteWithAlpha@heroicwaterexp:
+		Name: heroicwaterexp
+		BasePalette: donutwater
 		Alpha: 0.9
 		Premultiply: false
 	PaletteFromPaletteWithAlpha@effect50alpha:

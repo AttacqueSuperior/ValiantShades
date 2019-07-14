@@ -55,7 +55,7 @@ sabotE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 MirageGun:
 	ReloadDelay: 70
@@ -151,7 +151,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 ^StandardTankShell:
 	Inherits: ^LargeBullet
@@ -185,7 +185,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 120mm:
 	Inherits: ^StandardTankShell
@@ -196,7 +196,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 120mmx:
 	Inherits: 120mm
@@ -221,7 +221,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 155mm:
 	Inherits: ^LargeBullet
@@ -253,7 +253,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 GrenadeDisc:
 	Inherits: ^LargeBullet
@@ -292,7 +292,7 @@ GrenadeDiscE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicwaterexp
 
 V3MissileExplode:
 	Warhead@1Dam: SpreadDamage

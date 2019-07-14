@@ -22,8 +22,8 @@
 		ExplosionPalette: rookiera2exp
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ExplosionPalette: rookiera2exp
+		Explosions: watersplash_size5
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@flames: FireFragment
@@ -65,8 +65,8 @@
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: medium_watersplash
-		ExplosionPalette: rookiera2exp
+		Explosions: watersplash_size4
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@flames: FireFragment
@@ -103,8 +103,8 @@
 		ImpactSounds: gexp10a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ExplosionPalette: rookiera2exp
+		Explosions: watersplash_size5
+		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@flames: FireFragment
