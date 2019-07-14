@@ -987,6 +987,7 @@
 	RejectsOrders:
 	Aircraft:
 		Repulsable: False
+		Speed: 273
 	Explodes:
 		Weapon: SpawnedPlaneExplosion
 		EmptyWeapon: SpawnedPlaneExplosion

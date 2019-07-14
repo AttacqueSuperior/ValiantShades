@@ -543,6 +543,7 @@ hornet:
 		FacingTolerance: 20
 		Voice: Attack
 		PauseOnCondition: disabled
+		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, VTOL
 	AmmoPool:
 		Ammo: 2
 		PipCount: 2
@@ -553,7 +554,6 @@ hornet:
 	HitShape:
 	RenderVoxels:
 		NormalsPalette: ts-normals
-	Rearmable:
-		RearmActors: carrier
 	CarrierSlave:
-		LandingDistance: 6c0
+		LandingDistance: 8c0
+		DamageTypes: DefaultDeath
