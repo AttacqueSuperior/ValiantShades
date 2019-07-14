@@ -246,6 +246,10 @@ zbomb:
 	idle:
 		Facings: 32
 
+canister:	
+	idle:	
+		Length: 15
+
 parabomb:
 	idle: pbomb
 	chute-open: parach

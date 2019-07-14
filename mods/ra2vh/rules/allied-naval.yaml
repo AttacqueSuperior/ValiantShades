@@ -222,3 +222,55 @@ dlph:
 	GpsDotAS:
 		Sequence: ship
 		RequiresCondition: !hide-gpsdot
+
+carrier:
+	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 60
+		Prerequisites: garbur, ~gayard
+		Description: Aircraft carrier ship.\n  Strong vs Tanks, Structures\n  Weak vs Infantry
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Aircraft Carrier
+	Health:
+		HP: 800000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Selectable:
+		Bounds: 160,68,0,-6
+	Mobile:
+		TurnSpeed: 1
+		Speed: 60
+	RevealsShroud:
+		Range: 7c0
+	Turreted:
+		TurnSpeed: 255
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled || !loaded
+	AutoTarget:
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AircraftCarrierVoice
+	HitShape:
+	CarrierMaster:
+		Actors: hornet, hornet, hornet
+		RespawnTicks: 300
+		LoadedCondition: loaded
+	Exit@0:
+		SpawnOffset: 0,0,0
+		Facing: 0
+	Armament:
+		Weapon: HornetLauncher

@@ -520,3 +520,40 @@ pbombphusk:
 		Speed: 225
 	RenderVoxels:
 		Image: bpln
+
+hornet:
+	Inherits: ^SpawnedPlane
+	Valued:
+		Cost: 50
+	Tooltip:
+		Name: Hornet
+	Interactable:
+		Bounds: 15,12
+	Health:
+		HP: 75000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 1c512
+		Type: CenterPosition
+	Armament:
+		Weapon: HornetBomb
+		PauseOnCondition: !ammo
+	AttackAircraft:
+		FacingTolerance: 20
+		Voice: Attack
+		PauseOnCondition: disabled
+	AmmoPool:
+		Ammo: 2
+		PipCount: 2
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+		AmmoCondition: ammo
+	RenderSprites:
+	HitShape:
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	Rearmable:
+		RearmActors: carrier
+	CarrierSlave:
+		LandingDistance: 6c0

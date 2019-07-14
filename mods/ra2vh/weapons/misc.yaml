@@ -545,3 +545,11 @@ V3Launcher:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: Ground, Water
+
+HornetLauncher:
+	ReloadDelay: 15
+	Range: 18c0
+	ValidTargets: Ground, Water
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Ground, Water

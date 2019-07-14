@@ -977,6 +977,17 @@
 	GpsDotAS:
 		Sequence: plane
 
+^SpawnedPlane:
+	Inherits: ^Plane
+	-ReturnOnIdle:
+	-Selectable:
+	Interactable:
+	-DeathSounds:
+	-ActorLostNotification:
+	RejectsOrders:
+	Aircraft:
+		Repulsable: False
+
 ^Husk:
 	Inherits@1: ^Orientable
 	Inherits@2: ^VoxelLighting

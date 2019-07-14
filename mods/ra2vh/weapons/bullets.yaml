@@ -346,3 +346,35 @@ V3MissileProximityExplode:
 		ExplosionPalette: heroicra2exp
 		ImpactSounds: expnew05.wav, expnew11.wav
 		ValidTargets: Ground, Water, Air
+
+HornetBomb:
+	Inherits: ^LargeBullet
+	Report: vospatta.wav
+	Range: 3c0
+	ReloadDelay: 12
+	Projectile: BulletAS
+		Image: canister
+		Palette: player
+		Speed: 341
+	Warhead@1Dam: SpreadDamage
+		Damage: 60000
+		Spread: 384
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 80
+			Wood: 100
+			Steel: 100
+			Concrete: 80
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: hornethit
+		ExplosionPalette: rookietsexp
+		ImpactSounds: expnew14.wav
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
