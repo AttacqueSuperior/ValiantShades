@@ -80,9 +80,11 @@ cmin:
 		HarvestVoice: Harvest
 		DeliverVoice: Deliver
 	ChronoResourceDelivery:
-		WarpInSequence: warpout
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
 		WarpInSound: vchrtele.wav
 		WarpOutSound: vchrtele.wav
+		RequiresCondition: !disabled
 	Health:
 		HP: 1000000
 	Armor:
