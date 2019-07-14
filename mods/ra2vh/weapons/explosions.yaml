@@ -67,6 +67,15 @@ PlaneExplode:
 	Warhead@2Dam: SpreadDamage
 		Damage: 20000
 
+SpawnedPlaneExplosion:
+	Inherits: UnitExplodeSmall
+	-Warhead@DebrisSpawn:
+	Warhead@1Eff: CreateEffect
+		Explosions: spawnedplaneexplosion
+		ExplosionPalette: heroicra2exp
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+
 AlliedPowerPlantExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: alliedpowerplantexplosion

@@ -138,4 +138,5 @@ explosion:
 	largewarpawayf: largewarpaway
 		FlipX: true
 	hornethit: tss_brnl58
+	spawnedplaneexplosion: spwnpexp
 	

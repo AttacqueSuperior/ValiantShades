@@ -987,6 +987,10 @@
 	RejectsOrders:
 	Aircraft:
 		Repulsable: False
+	Explodes:
+		Weapon: SpawnedPlaneExplosion
+		EmptyWeapon: SpawnedPlaneExplosion
+		DeathTypes: DefaultDeath
 
 ^Husk:
 	Inherits@1: ^Orientable
