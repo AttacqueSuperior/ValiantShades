@@ -37,12 +37,14 @@ gpsdot:
 		Start: 5
 	plane:
 		Start: 6
-	techstructure:
+	missile:
 		Start: 7
-	oil:
+	techstructure:
 		Start: 8
-	hospital:
+	oil:
 		Start: 9
+	hospital:
+		Start: 10
 
 poweroff:
 	offline: poweroff

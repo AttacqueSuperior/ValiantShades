@@ -1160,6 +1160,8 @@
 	Interactable:
 		Bounds: 30,30
 	RejectsOrders:
+	GpsDotAS:
+		Sequence: missile
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
