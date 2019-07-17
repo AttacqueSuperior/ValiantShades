@@ -21,3 +21,7 @@ ProductionTypeAircraft: U
 ProductionTypeNaval: I
 	Description: Naval Tab 
 	Types: Production, Player
+
+PowerDown: X
+	Description: Toggle Powerdown
+	Types: OrderGenerator, Player

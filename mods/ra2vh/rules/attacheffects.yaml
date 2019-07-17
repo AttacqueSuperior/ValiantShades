@@ -308,3 +308,23 @@
 	GrantCondition@lowpower-disable:
 		RequiresCondition: lowpower
 		Condition: disabled
+
+^DisableOnLowPowerOrPowerDown:
+	Inherits: ^DisableOnLowPower
+	ToggleConditionOnOrder:
+		DisabledSound: EnablePower
+		EnabledSound: DisablePower
+		Condition: powerdown
+		OrderName: PowerDown
+	WithDecoration@powerdown:
+		Image: poweroff
+		Sequence: offline
+		Palette: ts-mouse
+		RequiresCondition: powerdown
+		ReferencePoint: Center
+	WithColoredOverlay@powerdown:
+		RequiresCondition: powerdown
+		Palette: lowpower
+	GrantCondition@powerdown-disable:
+		RequiresCondition: powerdown
+		Condition: lowpower
