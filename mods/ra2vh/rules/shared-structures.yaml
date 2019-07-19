@@ -477,7 +477,7 @@
 ^AirPad:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 70
@@ -485,7 +485,7 @@
 	Valued:
 		Cost: 1000
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -506,23 +506,24 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -50
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	Reservable:
 	Production:
 		Produces: Aircraft
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	ProductionBar:
 		ProductionType: Aircraft
+		RequiresCondition: !build-incomplete && !powerdown
 	PrimaryBuilding:
 		PrimaryCondition: primary
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
+		RequiresCondition: primary && !build-incomplete && !powerdown
 
 ^Tier3:
 	Inherits: ^Building
