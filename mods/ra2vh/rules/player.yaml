@@ -91,7 +91,6 @@ Player:
 	DeveloperMode:
 		CheckboxEnabled: true
 		CheckboxDisplayOrder: 5
-	GpsWatcher:
 	Shroud:
 		FogCheckboxDisplayOrder: 3
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
