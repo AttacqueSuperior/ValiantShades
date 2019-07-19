@@ -527,7 +527,7 @@
 ^Tier3:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
@@ -537,7 +537,7 @@
 	Tooltip:
 		Name: Tech Center
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Building:
 		Footprint: xx xx xx
 		Dimensions: 3,2
@@ -556,7 +556,7 @@
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -100
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 	Targetable:
