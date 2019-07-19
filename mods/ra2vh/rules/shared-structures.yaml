@@ -565,7 +565,7 @@
 ^Tier4:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 120
@@ -573,7 +573,7 @@
 	Valued:
 		Cost: 3000
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -592,7 +592,7 @@
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 	Targetable:
