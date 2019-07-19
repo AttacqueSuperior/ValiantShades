@@ -129,7 +129,9 @@ Speech:
 		Win: 022
 		GameSaved: gamesave
 		GameLoaded: gameload
-	DisablePrefixes: GameSaved, GameLoaded
+		DisablePower: gpowof
+		EnablePower: gpowon
+	DisablePrefixes: GameSaved, GameLoaded, DisablePower, EnablePower
 
 Sounds:
 	DefaultVariant: .wav

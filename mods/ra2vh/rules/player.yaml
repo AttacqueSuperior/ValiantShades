@@ -148,3 +148,6 @@ Player:
 		InitialDelay: 1000
 		Amount: 500
 	GpsASWatcher:
+	NotificationOnPowerTransition:
+		ExitLowPowerNotification: EnablePower
+		EnterLowPowerNotification: DisablePower
