@@ -141,8 +141,8 @@ Sounds:
 		CashTickUp: ucredup
 		CashTickDown: ucreddn
 		LevelUp: gupgrad1
-		DisablePower: gpowof
-		EnablePower: gpowon
+		DisablePower: gpowrdis
+		EnablePower: gpowrena
 		ChatLine: umessage
 		BuildPaletteOpen: uslide1
 		BuildPaletteClose: uslide2
