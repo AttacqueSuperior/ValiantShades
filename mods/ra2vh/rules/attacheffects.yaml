@@ -186,7 +186,7 @@
 		Amount: 2, 6
 		DeathTypes: TemporalDeath
 		Sequences: warpspark
-		Palette: temporal
+		Palette: heroicraexp
 		Duration: 66
 		Gravity: -64,-64,0, 64,64,0
 	GrantCondition@warp-disable:
