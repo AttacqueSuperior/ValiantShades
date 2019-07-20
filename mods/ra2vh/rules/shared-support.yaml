@@ -45,7 +45,7 @@
 ^AADefense:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetAir
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -75,19 +75,19 @@
 		Offset: 450,0,0
 	AttackTurreted:
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	WithRangeCircle:
 		Range: 12c0
 		Type: aadefense
 	AutoTarget:
 	Power:
 		Amount: -50
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 
 ^Tier2Defense:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
@@ -113,11 +113,11 @@
 	AttackTesla:
 		ReloadDelay: 90
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	AutoTarget:
 	WithRangeCircle:
 		Range: 8c0
 		Type: tier2defense
 	Power:
 		Amount: -75
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
