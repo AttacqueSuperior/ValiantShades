@@ -67,7 +67,7 @@ gtgcan:
 	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^2x2Shape
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50
@@ -121,4 +121,4 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown

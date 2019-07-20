@@ -75,7 +75,7 @@
 		Offset: 450,0,0
 	AttackTurreted:
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
 		Type: aadefense
@@ -113,7 +113,7 @@
 	AttackTesla:
 		ReloadDelay: 90
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown
+		RequiresCondition: !build-incomplete
 	AutoTarget:
 	WithRangeCircle:
 		Range: 8c0

@@ -314,7 +314,7 @@ gaairc:
 		CameraActor: camera
 		ArrowSequence: arrow
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
@@ -383,7 +383,7 @@ garbur:
 gaorep:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -418,10 +418,10 @@ gaorep:
 		RequiresCondition: !build-incomplete && !lowpower
 	ResourcePurifier:
 		Modifier: 25
-		RequiresCondition: !build-incomplete && !being-warped
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
@@ -429,7 +429,7 @@ gaorep:
 		Condition: resource-purify
 		Duration: 3
 	SmokeParticleEmitter@purifiersmoke:
-		RequiresCondition: resource-purify && !being-warped
+		RequiresCondition: resource-purify && !being-warped && !powerdown
 		Sequences: refinerysmoke
 		Palette: rookiera2exp
 		SpawnFrequency: 1,2
@@ -440,7 +440,7 @@ gaorep:
 gaspysat:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 70
@@ -478,7 +478,7 @@ gaspysat:
 		RequiresCondition: !disabled
 	Power:
 		Amount: -100
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	ProvidesRadar:
 		RequiresCondition: !disabled
 	SpawnSurvivors:
@@ -487,7 +487,7 @@ gaspysat:
 
 gagap:
 	Inherits: ^SupportBuilding
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -530,12 +530,12 @@ gagap:
 		RequiresCondition: !disabled
 	Power:
 		Amount: -100
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 
 gaweat:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -566,7 +566,7 @@ gaweat:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	SupportPowerChargeBar:
 	DetonateWeaponPower@WeatherStorm:
 		Icon: bolticon
@@ -579,7 +579,7 @@ gaweat:
 		DisplayRadarPing: true
 		DisplayTimerStances: Ally, Neutral, Enemy
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	RenderSprites:
 		PlayerPalette: weathercontroller
 	ActorPreviewPlaceBuildingPreview:
@@ -597,7 +597,7 @@ gaweat:
 gacsph:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
@@ -628,7 +628,7 @@ gacsph:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	WithIdleOverlay:
 		Sequence: idle-dome
 		PauseOnCondition: disabled
@@ -650,7 +650,7 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
