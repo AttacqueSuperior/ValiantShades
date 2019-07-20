@@ -347,7 +347,7 @@
 ^NavalYard:
 	Inherits: ^Building
 	Inherits@shape: ^4x4Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -359,7 +359,7 @@
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -448,29 +448,29 @@
 		ExitCell: 5,5
 	Production:
 		Produces: Ship
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
+		RequiresCondition: primary && !build-incomplete && !powerdown
 	RallyPoint:
 		Offset: 5,1
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000
-		RequiresCondition: !build-incomplete && !being-warped
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	ProductionBar:
 		ProductionType: Ship
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Power:
 		Amount: -20
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	RequiresBuildableArea:
 		Adjacent: 13
 
