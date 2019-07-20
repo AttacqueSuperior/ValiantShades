@@ -147,9 +147,6 @@ naweap:
 		Prerequisites: nahand, ~structures.soviets
 	Selectable:
 		Bounds: 196, 178, -6, -48
-	GrantConditionOnPowerState@LOWPOWER:
-		Condition: lowpower
-		ValidPowerStates: Low, Critical
 	#ProvidesPrerequisite@libya:
 	#	Prerequisite: vehicles.libya
 	#	Factions: libya
@@ -319,7 +316,7 @@ natek:
 		ClockSequence: clock
 		CircleSequence: circles
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 1250
 
 nanrct:
@@ -382,7 +379,7 @@ natech:
 naindp:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -420,10 +417,10 @@ naindp:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete && !being-warped
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
@@ -431,7 +428,7 @@ naindp:
 naclon:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
@@ -462,7 +459,7 @@ naclon:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	Exit@n1_0:
 		SpawnOffset: 0,0,0
 		ExitCell: -1, 0
@@ -504,16 +501,16 @@ naclon:
 		Prerequisites: barracks
 	Production:
 		Produces: Infantry
-		RequiresCondition: !build-incomplete && barracks && !being-warped
+		RequiresCondition: !build-incomplete && barracks && !being-warped && !powerdown
 	RallyPoint:
 		Offset: 3,3
 	ClonesProducedUnits:
 		CloneableTypes: infantry
-		RequiresCondition: !build-incomplete && !being-warped
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	AcceptsDeliveredCash:
-		RequiresCondition: !build-incomplete && !being-warped
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
@@ -521,7 +518,7 @@ naclon:
 napsis:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
@@ -558,7 +555,7 @@ napsis:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
@@ -566,7 +563,7 @@ napsis:
 nairon:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
@@ -597,7 +594,7 @@ nairon:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeInterval: 7500
@@ -611,7 +608,7 @@ nairon:
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
@@ -626,7 +623,7 @@ nairon:
 namisl:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -657,7 +654,7 @@ namisl:
 		DeathTypes: DefaultDeath
 	Power:
 		Amount: -200
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
@@ -686,9 +683,9 @@ namisl:
 		TrailInterval: 2
 		FlightDelay: 200
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	WithNukeLaunchAnimation:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
