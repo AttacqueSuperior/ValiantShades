@@ -297,7 +297,7 @@
 ^Tier2:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
@@ -323,17 +323,17 @@
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	ProvidesPrerequisite:
 		Prerequisite: radar
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	ProvidesRadar:
 		RequiresCondition: !disabled
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	DetonateWeaponPower@PsychicReveal:
 		Icon: psyreveal
 		ChargeInterval: 6000
@@ -342,7 +342,7 @@
 		OrderName: PsychicRevealInfoOrder
 		Weapon: PsychicReveal
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 
 ^NavalYard:
 	Inherits: ^Building
