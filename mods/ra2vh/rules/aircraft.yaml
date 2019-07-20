@@ -293,7 +293,8 @@ orca:
 		Image: falc
 	HitShape:
 	Aircraft:
-		FlightDynamics: MoveIntoShroud, VTOL, TurnToLand, TurnToDock, TakeOffOnCreation, TakeOffOnResupply
+		VTOL: true
+		TurnToDock: true
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -539,11 +540,12 @@ hornet:
 	Armament:
 		Weapon: HornetBomb
 		PauseOnCondition: !ammo
+	Aircraft:
+		VTOL: true
 	AttackAircraft:
 		FacingTolerance: 20
 		Voice: Attack
 		PauseOnCondition: disabled
-		FlightDynamics: MoveIntoShroud, TakeOffOnCreation, TakeOffOnResupply, VTOL
 	AmmoPool:
 		Ammo: 2
 		PipCount: 2
