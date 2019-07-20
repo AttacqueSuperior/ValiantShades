@@ -232,7 +232,7 @@
 ^WarFactory:
 	Inherits: ^Building
 	Inherits@shape: ^5x3Shape
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -242,7 +242,7 @@
 	Tooltip:
 		Name: War Factory
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Building:
 		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
@@ -266,23 +266,23 @@
 		ExitCell: 4,1
 	Production:
 		Produces: Vehicle
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
+		RequiresCondition: primary && !build-incomplete && !powerdown
 	ProductionBar:
 		ProductionType: Vehicle
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Power:
 		Amount: -25
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
