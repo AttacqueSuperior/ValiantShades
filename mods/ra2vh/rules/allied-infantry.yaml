@@ -323,6 +323,13 @@ snipe:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: Infantry, Vehicle, Water, Underwater
+		InvalidTargets: NoAutoTarget, Structure
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything
+		ValidTargets: Infantry, Vehicle, Water, Underwater
+		InvalidTargets: NoAutoTarget, Structure
 	Valued:
 		Cost: 600
 	DeliversCash:
