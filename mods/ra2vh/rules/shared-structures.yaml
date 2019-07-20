@@ -96,7 +96,7 @@
 
 ^Barracks:
 	Inherits: ^Building
-	Inherits@lowpower: ^DisableOnLowPower
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -107,9 +107,9 @@
 		Name: Barracks
 	ProvidesPrerequisite:
 		Prerequisite: barracks
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	ProvidesPrerequisite@alliedengi:
 		Prerequisite: alliedengi
 		Factions: america, germany, england, france, korea
@@ -132,23 +132,23 @@
 	RallyPoint:
 	Production:
 		Produces: Infantry
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	PrimaryBuilding:
 		PrimaryCondition: primary
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		RequiresCondition: primary && !build-incomplete
+		RequiresCondition: primary && !build-incomplete && !powerdown
 	ProductionBar:
 		ProductionType: Infantry
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !powerdown
 	Power:
 		Amount: -10
-		RequiresCondition: !being-warped
+		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
