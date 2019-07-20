@@ -139,4 +139,5 @@ explosion:
 		FlipX: true
 	hornethit: tss_brnl58
 	spawnedplaneexplosion: spwnpexp
+	chrono-target: chronotg
 	

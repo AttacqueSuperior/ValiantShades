@@ -559,3 +559,15 @@ HornetLauncher:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: Ground, Water
+
+ChronosphereAI:
+	ReloadDelay: 1
+	Projectile: InstantExplode
+	Warhead@2Eff: CreateEffect
+		Explosions: chrono-target
+		ValidTargets: Ground, Air, Water
+		ImpactSounds: schrmov.wav
+	Warhead@teleport: SpawnActor
+		Actors: bfrt.ai2, bfrt.ai2, bfrt.ai, sref, sref
+		Image: cmin
+		Sequence: warpout

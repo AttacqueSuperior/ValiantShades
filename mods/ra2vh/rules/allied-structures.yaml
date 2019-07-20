@@ -633,6 +633,9 @@ gacsph:
 		Sequence: idle-dome
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
+	GrantConditionOnBotOwner@test:
+		Condition: test-ai
+		Bots: test
 	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
@@ -650,7 +653,19 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown
+		RequiresCondition: !build-incomplete && !powerdown && !test-ai
+	DetonateWeaponPower@ChronosphereAI:
+		Weapon: ChronosphereAI
+		OrderName: ChronosphereAIInfoOrder
+		Icon: chrono
+		ChargeInterval: 7500
+		Description: Chronoshift
+		EndChargeSound: schropen.wav
+		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayRadarPing: True
+		LongDesc: Teleports a group of units across\nthe map.
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown && test-ai
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3

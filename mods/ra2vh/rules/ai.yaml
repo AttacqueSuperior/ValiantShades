@@ -75,6 +75,29 @@ Player:
 					Against: Ally
 					Types: Ground, Water
 					Attractiveness: -20
+			chronoshift:
+				OrderName: ChronosphereAIInfoOrder
+				Types: Structure
+				MinimumAttractiveness: 5
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 2
+					TargetMetric: None
+					CheckRadius: 8c0
+				Consideration@2:
+					Against: Enemy
+					Types: Defense
+					Attractiveness: -3
+					TargetMetric: None
+					CheckRadius: 8c0
+				Consideration@3:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 8c0
 			psychicreveal:
 				OrderName: PsychicRevealInfoOrder
 				Types: Ground, Water
@@ -151,6 +174,7 @@ Player:
 			atesla: 12
 			gtgcan: 5
 			gagap: 1
+			gacsph: 1
 			gaweat: 1
 			narefn: 15
 			nahand: 15
