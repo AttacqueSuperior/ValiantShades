@@ -384,6 +384,42 @@ namisl:
 		ShadowStart: 26
 	icon: msslicon
 
+napsyd:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -42
+		UseTilesetCode: false
+		-TilesetOverrides:
+	idle: ngpsyd
+		Length: 15
+		ShadowStart: 30
+	damaged-idle: ngpsyd
+		Start: 15
+		Length: 15
+		ShadowStart: 45
+	active:
+		Combine:
+			ngpsyd_f:
+				Length: 25
+				ShadowStart: 50
+			ngpsyd_h:
+				Length: 15
+				ShadowStart: 30
+	damaged-active:
+		Combine:
+			ngpsyd_f:
+				Start: 25
+				Length: 25
+				ShadowStart: 75
+			ngpsyd_h:
+				Start: 15
+				Length: 15
+				ShadowStart: 45
+	make: ngpsydmk
+		Length: 25
+		ShadowStart: 25
+	icon: xxicon
+
 nairon:
 	Inherits: ^Structure
 	Defaults:

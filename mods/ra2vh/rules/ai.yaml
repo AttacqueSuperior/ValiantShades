@@ -98,6 +98,17 @@ Player:
 					Attractiveness: -5
 					TargetMetric: None
 					CheckRadius: 8c0
+			psychicdominator:
+				OrderName: PsychicDominatorInfoOrder
+				Types: MindControl
+				MinimumAttractiveness: 3250
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: PermanentMindControl
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 1c512
 			psychicreveal:
 				OrderName: PsychicRevealInfoOrder
 				Types: Ground, Water
@@ -189,6 +200,7 @@ Player:
 			nalasr: 15
 			naflak: 12
 			tesla: 12
+			napsyd: 1
 			namisl: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai

@@ -620,6 +620,69 @@ nairon:
 	Armor@resistsupers:
 		Type: ResistSupers
 
+napsyd:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 80
+		Prerequisites: natek, ~structures.soviets
+		BuildLimit: 1
+		Description: Allows you to take control of enemy units.
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Psychic Dominator
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Selectable:
+		Bounds: 136, 100, 0, -20
+	Health:
+		HP: 750000
+	Armor:
+		Type: Concrete
+	WithSpriteBody:
+		PauseOnCondition: disabled	
+	RevealsShroud:
+		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
+	RevealOnDeath:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+	Power:
+		Amount: -200
+		RequiresCondition: !being-warped && !powerdown
+	DetonateWeaponPower@PsychicDominator:
+		Weapon: PsychicDominator
+		OrderName: PsychicDominatorInfoOrder
+		AirburstAltitude: 3c0
+		Icon: psydom
+		ChargeInterval: 7500
+		Description: Psychic Dominator
+		ActivationSequence: active
+		LongDesc: Shifts ownership of enemy mindcontrollable units.
+		# TODO: This are actually no speech notifications
+		EndChargeSound: spsyopen.wav
+		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayRadarPing: True
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
+	SupportPowerChargeBar:
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2
+	Armor@resistsupers:
+		Type: ResistSupers
+
 namisl:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape

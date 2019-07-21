@@ -571,3 +571,28 @@ ChronosphereAI:
 		Actors: bfrt.ai2, bfrt.ai2, bfrt.ai, sref, sref
 		Image: cmin
 		Sequence: warpout
+
+PsychicDominator:
+	ReloadDelay: 1
+	Projectile: InstantExplode
+	Warhead@1: FireFragment
+		UseZOffsetAsAbsoluteHeight: true
+		Weapon: PsychicDominatorRing
+		ValidTargets: Air, Ground, Water
+		Delay: 11
+	Warhead@3Eff: CreateEffect
+		Explosions: psychicdominator
+		ImpactSounds: spsydom.wav
+		ValidTargets: Air, Ground, Water
+
+PsychicDominatorRing:
+	ReloadDelay: 1
+	Projectile: InstantExplode
+	Warhead@psydom: ChangeOwnerAS
+		Range: 1c512
+		Condition: permanent-mindcontrol
+		ValidTargets: PermanentMindControl
+	Warhead@3Eff: CreateEffect
+		Explosions: psychicdominatorring
+		ExplosionPalette: heroictsexp
+		ImpactSounds: iyurat2a.wav

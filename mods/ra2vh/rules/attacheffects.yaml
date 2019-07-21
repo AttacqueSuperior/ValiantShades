@@ -206,6 +206,14 @@
 		Sequence: mindcontrol
 		Palette: effect
 		RequiresCondition: controlled
+	ExternalCondition@permanent-mindcontrol:
+		Condition: permanent-mindcontrol
+	GrantCondition@permanent-mindcontrol:
+		Condition: controlled
+		RequiresCondition: permanent-mindcontrol
+	Targetable@PermaMC:
+		TargetTypes: PermanentMindControl
+		RequiresCondition: !permanent-mindcontrol && !prevent-ground-target
 
 ^IvanBombable:
 	DelayedWeaponAttachable@ivanbomb:
