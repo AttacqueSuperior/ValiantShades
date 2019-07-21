@@ -211,3 +211,32 @@ GattlingGunE:
 	Inherits: GattlingGun
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+AKM:
+	Inherits: ^MG
+	ReloadDelay: 20
+	Range: 7c0
+	Report: iboratta.wav, iborattb.wav
+	ValidTargets: Ground
+	InvalidTargets: Structure
+	Warhead@1Dam: SpreadDamage
+		Damage: 65000
+		ValidTargets: Ground
+		InvalidTargets: Structure
+		Versus:
+			None: 200
+			Flak: 200
+			Plate: 100
+			Light: 50
+			Medium: 50
+			Heavy: 50
+			Wood: 1
+			Steel: 1
+			Concrete: 1
+			Drone: 100
+			Rocket: 100
+
+AKME:
+	Inherits: AKM
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

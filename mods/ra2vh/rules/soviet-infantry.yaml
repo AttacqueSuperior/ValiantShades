@@ -600,6 +600,74 @@ virus:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
+boris:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Buildable:
+		Queue: Infantry
+		Prerequisites: natech, ~nahand
+		BuildPaletteOrder: 20
+		BuildLimit: 1
+		Description: Soviet Commando Infantry\n  Strong vs Ground\n  Weak vs Aircraft
+	Valued:
+		Cost: 1500
+	DeliversCash:
+		Payload: 50
+		PlayerExperience: 5
+		Voice: Move
+	Tooltip:
+		Name: Boris
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 200000
+	Mobile:
+		Speed: 75
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Armament@primary:
+		Weapon: AKM
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: AKME
+		RequiresCondition: rank-elite
+	Armament@secondary:
+		Weapon: Flare
+		Name: secondary
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	VoiceAnnouncement:
+		Voice: Build
+	Voiced:
+		VoiceSet: BorisVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	AirstrikeMaster:
+		Actors: bpln, bpln
+		RespawnTicks: 300
+		InstantRepair: true
+		SlaveDisposalOnKill: KillSlaves
+		SpawnAllAtOnce: true
+		SpawnerArmamentName: secondary
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
+		RequiresCondition: !disabled
+
 yuripr:
 	Inherits: yuri
 	Buildable:

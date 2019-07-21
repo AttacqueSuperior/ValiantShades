@@ -275,6 +275,12 @@
 		G: 88
 		B: 0
 		A: 128
+	PaletteFromRGBA@boris-airstrike:
+		Name: boris-airstrike
+		R: 224
+		G: 0
+		B: 0
+		A: 128
 	TSShroudPalette@shroud:
 		Name: shroud
 	ShroudRenderer:

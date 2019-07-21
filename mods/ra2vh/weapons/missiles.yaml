@@ -340,3 +340,26 @@ WolverineTowE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+Maverick3:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vmigatta.wav
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Image: patriot
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 750000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: ra1-nuke
+		ExplosionPalette: heroicraexp
+		ImpactSounds: kaboom1.wav
+		ValidTargets: Ground, Air, Water
+	-Warhead@3EffWater:

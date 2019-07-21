@@ -635,9 +635,9 @@ tany:
 		Speed: 75
 		Locomotor: swimsuit
 	RevealsShroud:
-		Range: 6c0
+		Range: 8c0
 	RevealOnDeath:
-		Radius: 3c0
+		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Armor:
 		Type: Flak

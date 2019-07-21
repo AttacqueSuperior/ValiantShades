@@ -195,6 +195,31 @@ virus:
 		Start: 196
 	icon: vrusicon
 
+boris:
+	Inherits: ^ArmedInfantry
+	shoot:
+		Start: 169
+	prone-shoot:
+		Start: 217
+	idle2:
+		Start: 71
+		Length: 20
+	die1:
+		Start: 139
+	die2:
+		Start: 154
+	cheer:
+		Start: 297
+	paradrop:
+		Start: 292
+	secondary-fire
+		Start: 401
+		Length: 1
+	secondary-prone
+		Start: 217
+		Length: 6
+	icon: brisicon
+
 yuripr:
 	Inherits: yuri
 	paradrop: yuri

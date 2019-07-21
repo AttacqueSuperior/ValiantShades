@@ -341,6 +341,37 @@ fflashhusk:
 	RevealOnDeath:
 		Radius: 4c0
 
+bpln:
+	Inherits: beag
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Soviet MIG
+	Aircraft:
+		Speed: 394
+	-RevealsShroud:
+	Armament:
+		Weapon: Maverick3
+		PauseOnCondition: !ammo
+	Voiced:
+		VoiceSet: MigVoice
+	-AutoTarget:
+	AirstrikeSlave:
+		LandingDistance: 1c0
+	RejectsOrders:
+	SpawnActorOnDeath:
+		Actor: bplnhusk
+
+bplnhusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Soviet MIG
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 394
+	RenderVoxels:
+		Image: bpln
+
 spirit:
 	Inherits: ^Plane
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant

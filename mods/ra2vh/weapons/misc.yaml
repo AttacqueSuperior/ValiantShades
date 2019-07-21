@@ -599,3 +599,22 @@ PsychicDominatorRing:
 		Explosions: psychicdominatorring
 		ExplosionPalette: heroictsexp
 		ImpactSounds: iyurat2a.wav
+
+Flare:
+	Range: 12c0
+	ReloadDelay: 6
+	ValidTargets: Structure
+	TargetActorCenter: true
+	Projectile: LaserZap
+		Width: 36
+		Duration: 9
+		Color: FF0000
+		SecondaryBeamWidth: 144
+		SecondaryBeamColor: FF000030
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Structure
+	Warhead@overlay: GrantExternalCondition
+		Range: 32
+		Duration: 9
+		Condition: boris-airstrike
+		ValidTargets: Structure

@@ -88,6 +88,17 @@ VirusVoice:
 		Feedback: ivirfea, ivirfeb, ivirfec, ivirfed, ivirfee
 		Die: ivirdia, ivirdib, ivirdic, ivirdid, ivirdie
 
+BorisVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iborsea, iborseb, iborsec, iborsee, iborsef, iborcrb
+		Move: ibormoa, ibormob, ibormoc, ibormod, ibormoe, iborcrc
+		Attack: iborcrd, iborcre, iboratb, iboratc, iboratd, iborate
+		Airstrike: iboraib, iborata, iborcrd, iborsed
+		Feedback: iborfea, iborfeb, iborfec, iborfed
+		Build: iborcra
+		Die: ibordia, ibordib, ibordic, ibordid, ibordie
+
 SovietVehicleVoice:
 	DefaultVariant: .wav
 	Voices:
@@ -191,6 +202,15 @@ FlashFireVoice:
 		Move: vflfmoa, vflfmob, vflfmoc, vflfmod, vflfmoe, vflfmof
 		Attack: vflfata, vflfatb, vflfatc, vflfatd, vflfate, vflfatf, vflfatg
 		Die: vflfdia
+
+MigVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: silence
+		Move: vmigmoa, vmigmob
+		Attack: vmigata, vmigatb
+		Die: vmigdia, vmigdic
+		Retreat: vmigdib
 
 SovietNavalVoice:
 	DefaultVariant: .wav

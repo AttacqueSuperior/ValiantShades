@@ -177,6 +177,11 @@
 		Image: inviso
 		Sequence: null
 		RequiresCondition: !disabled
+	WithColoredOverlay@boris-airstrike:
+		Palette: boris-airstrike
+		RequiresCondition: boris-airstrike
+	ExternalCondition@boris-airstrike:
+		Condition: boris-airstrike
 
 ^SupportBuilding:
 	Inherits: ^Building
