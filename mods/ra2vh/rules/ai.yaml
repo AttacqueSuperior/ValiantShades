@@ -108,7 +108,7 @@ Player:
 					Types: PermanentMindControl
 					Attractiveness: 1
 					TargetMetric: Value
-					CheckRadius: 1c512
+					CheckRadius: 2c0
 			psychicreveal:
 				OrderName: PsychicRevealInfoOrder
 				Types: Ground, Water

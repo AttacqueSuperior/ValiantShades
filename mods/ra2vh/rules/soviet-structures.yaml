@@ -660,7 +660,7 @@ napsyd:
 	DetonateWeaponPower@PsychicDominator:
 		Weapon: PsychicDominator
 		OrderName: PsychicDominatorInfoOrder
-		AirburstAltitude: 3c0
+		AirburstAltitude: 6c0
 		Icon: psydom
 		ChargeInterval: 7500
 		Description: Psychic Dominator

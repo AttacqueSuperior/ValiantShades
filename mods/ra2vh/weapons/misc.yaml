@@ -569,8 +569,10 @@ ChronosphereAI:
 		ImpactSounds: schrmov.wav
 	Warhead@teleport: SpawnActor
 		Actors: bfrt.ai2, bfrt.ai2, bfrt.ai, sref, sref
+		Range: 5
 		Image: cmin
 		Sequence: warpout
+		ValidTargets: Air, Ground, Water
 
 PsychicDominator:
 	ReloadDelay: 1
@@ -587,9 +589,10 @@ PsychicDominator:
 
 PsychicDominatorRing:
 	ReloadDelay: 1
-	Projectile: InstantExplode
+	Projectile: InstantHit
+	Warhead@TargetValidation: SpreadDamage
 	Warhead@psydom: ChangeOwnerAS
-		Range: 1c512
+		Range: 2c384
 		Condition: permanent-mindcontrol
 		ValidTargets: PermanentMindControl
 	Warhead@3Eff: CreateEffect
