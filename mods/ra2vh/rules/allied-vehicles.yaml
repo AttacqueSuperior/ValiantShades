@@ -606,6 +606,7 @@ mgtk:
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
 		CloakTypes: mirage
+		RequiresCondition: !disabled
 
 bfrt:
 	Inherits: ^Vehicle
