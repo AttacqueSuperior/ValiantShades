@@ -604,30 +604,6 @@
 	SpawnSmokeParticleOnDeath@temporal:
 		Amount: 1, 3
 
-^WithSwimSuit:
-	WithInfantryBody:
-		RequiresCondition: !swimming && !parachute
-	WithDeathAnimation@normal:
-		RequiresCondition: !swimming && !inair
-	GrantConditionOnTerrain@Water:
-		TerrainTypes: Water
-		Condition: swimming
-	WithInfantryBody@Water:
-		IdleSequences: swim-idle1,swim-idle2
-		MoveSequence: swim-run
-		StandSequences: swim-stand
-		DefaultAttackSequence: swim-shoot
-		RequiresCondition: swimming
-	WithDeathAnimation@Water:
-		RequiresCondition: swimming
-		DeathSequence: swim-die
-		DeathTypes:
-			BulletDeath: 1
-			AltBulletDeath: 2
-	Targetable@WaterBorne:
-		TargetTypes: Underwater
-		RequiresCondition: swimming && !prevent-ground-target
-
 ^CivilianInfantry:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
