@@ -475,10 +475,7 @@
 	Selectable:
 	GrantConditionAboveAltitude:
 		Condition: inair
-		MinAltitude: 1024
-	GrantCondition@inair-disable:
-		Condition: disabled
-		RequiresCondition: inair
+		MinAltitude: 512
 	GrantCondition@preventgroundtargeting:
 		Condition: prevent-ground-target
 		RequiresCondition: inair || being-warped
@@ -628,6 +625,9 @@
 		ClosingSequence: close
 	WithInfantryBody:
 		RequiresCondition: !parachute
+	GrantCondition@parachute-disabled:
+		Condition: disabled
+		RequiresCondition: parachute
 
 ^ParachutableVehicle:
 	Parachutable:
@@ -644,6 +644,9 @@
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
+	GrantCondition@parachute-disabled:
+		Condition: disabled
+		RequiresCondition: parachute
 
 ^WithSwimSuit:
 	WithInfantryBody:
@@ -794,10 +797,7 @@
 		Bounds: 32,32
 	GrantConditionAboveAltitude:
 		Condition: inair
-		MinAltitude: 1024
-	GrantCondition@inair-disable:
-		Condition: disabled
-		RequiresCondition: inair
+		MinAltitude: 512
 	GrantCondition@preventgroundtargeting:
 		Condition: prevent-ground-target
 		RequiresCondition: inair || being-warped || invulnerability

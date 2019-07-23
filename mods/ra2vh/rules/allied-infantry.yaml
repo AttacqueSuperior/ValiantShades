@@ -777,7 +777,6 @@ jumpjet:
 		RepairActors:
 		Voice: Move
 	-TurnOnIdle:
-	-GrantCondition@inair-disable:
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk
