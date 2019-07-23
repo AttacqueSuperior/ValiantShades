@@ -156,6 +156,52 @@
 	ExternalCondition@CRATE-SPEED:
 		Condition: crate-speed
 
+^Parachutable:
+	WithSpriteBody@Parachute:
+		Name: parachute
+		Sequence: paradrop
+		RequiresCondition: parachute
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+		ParachutingCondition: parachute
+	WithParachute:
+		RequiresCondition: parachute
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
+	WithInfantryBody:
+		RequiresCondition: !parachute
+	GrantCondition@parachute-disabled:
+		Condition: disabled
+		RequiresCondition: parachute
+	WithSpriteBody@shadow:
+		RequiresCondition: inair || parachute
+
+^ParachutableVehicle:
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+		ParachutingCondition: parachute
+	WithParachute:
+		RequiresCondition: parachute
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
+	GrantCondition@parachute-disabled:
+		Condition: disabled
+		RequiresCondition: parachute
+
 ^IronCurtainable:
 	WithColoredOverlay@ironcurtain:
 		RequiresCondition: invulnerability
