@@ -18,6 +18,8 @@ TIBTRE04:
 	SeedsResource:
 		ResourceType: Gems
 		Interval: 80
+	AppearsOnMapPreview:
+		Terrain: Gems
 
 TREE01:
 	Inherits: ^Tree

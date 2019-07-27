@@ -182,6 +182,7 @@
 		RequiresCondition: boris-airstrike
 	ExternalCondition@boris-airstrike:
 		Condition: boris-airstrike
+	AppearsOnMapPreview:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -268,6 +269,7 @@
 		Duration: 39
 	Targetable@warpimmune:
 		TargetTypes: WarpImmune
+	AppearsOnMapPreview:
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -424,6 +426,7 @@
 		AreaTypes: building
 		Adjacent: 9
 	Interactable:
+	AppearsOnMapPreview:
 
 ^Fence:
 	Inherits: ^Wall
@@ -1136,6 +1139,8 @@
 	MapEditorData:
 		Categories: Resource spawn
 	Interactable:
+	AppearsOnMapPreview:
+		Terrain: Ore
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -1161,6 +1166,7 @@
 	MapEditorData:
 		Categories: Tree
 	Interactable:
+	# TODO: APPEARSONMAPPREVIEW
 
 ^StreetSign:
 	Inherits: ^Tree
