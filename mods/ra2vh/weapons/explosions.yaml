@@ -16,6 +16,7 @@ UnitExplodeSmall:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: smalltankexplosion
+		ExplosionPalette: apollo75alpha
 		ImpactSounds: expnew07.wav, expnew10.wav, expnew18.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@flames: FireFragment

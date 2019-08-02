@@ -193,6 +193,10 @@
 		Name: effect50alpha
 		BasePalette: effect
 		Alpha: 0.5
+	PaletteFromPaletteWithAlpha@apollo75alpha:
+		Name: apollo75alpha
+		BasePalette: apollo
+		Alpha: 0.75
 	PaletteFromFile@mousepal:
 		Name: mouse
 		Filename: mousepal.pal
