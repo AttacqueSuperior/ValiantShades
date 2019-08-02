@@ -314,8 +314,8 @@ V3MissileExplode:
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@1Eff: CreateEffect
-		Explosions: terrorist_explosion
-		ExplosionPalette: heroicra2exp
+		Explosions: v3missilehit
+		ExplosionPalette: heroictsexp
 		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@flames: FireFragment
