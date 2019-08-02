@@ -22,6 +22,11 @@ UnitExplodeSmall:
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 
+UnitExplodeMedium:
+	Inherits: UnitExplodeSmall
+	Warhead@1Eff: CreateEffect
+		Explosions: biggertankexplosion
+
 InfantryExplode:
 	Inherits: UnitExplode
 	Warhead@1Eff: CreateEffect

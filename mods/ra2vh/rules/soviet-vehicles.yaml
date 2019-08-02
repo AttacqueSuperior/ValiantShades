@@ -53,6 +53,9 @@ smcv:
 	-Capturable:
 	-CaptureNotification:
 	-SpeedMultiplier@hijack:
+	Explodes:
+		Weapon: UnitExplodeMedium
+		EmptyWeapon: UnitExplodeMedium
 
 harv:
 	Inherits: ^Vehicle
@@ -537,6 +540,9 @@ apoc:
 		Delay: 150
 		DamageCooldown: 150
 		HealIfBelow: 50
+	Explodes:
+		Weapon: UnitExplodeMedium
+		EmptyWeapon: UnitExplodeMedium
 
 ttnk:
 	Inherits: ^Vehicle

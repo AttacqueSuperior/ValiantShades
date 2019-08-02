@@ -54,6 +54,9 @@ amcv:
 	-Capturable:
 	-CaptureNotification:
 	-SpeedMultiplier@hijack:
+	Explodes:
+		Weapon: UnitExplodeMedium
+		EmptyWeapon: UnitExplodeMedium
 
 cmin:
 	Inherits: ^Vehicle
@@ -679,6 +682,9 @@ bfrt:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	Explodes:
+		Weapon: UnitExplodeMedium
+		EmptyWeapon: UnitExplodeMedium
 
 bfrt.ai:
 	Inherits: bfrt

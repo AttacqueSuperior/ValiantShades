@@ -93,6 +93,7 @@ explosion:
 		BlendMode: Translucent
 	tankexplosion: tankexpl
 	smalltankexplosion: tanksexp
+	biggertankexplosion: tanksexp2
 	prismtowerhit: prismthit
 	prismhit: prismhit
 	prismshrapnel: prismshr
