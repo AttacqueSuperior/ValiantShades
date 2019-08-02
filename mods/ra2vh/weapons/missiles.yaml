@@ -173,7 +173,7 @@ HoverMissile:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: small_grey_explosion
+		Explosions: medium_bang
 		ImpactSounds: gexpifva.wav
 		ValidTargets: Ground, Air
 	Warhead@4Smu: LeaveSmudge
@@ -334,6 +334,8 @@ WolverineTow:
 		RangeLimit: 15c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
 
 WolverineTowE:
 	Inherits: WolverineTow
