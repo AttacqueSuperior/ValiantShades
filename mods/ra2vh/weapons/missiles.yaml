@@ -34,12 +34,13 @@ MammothTusk:
 			Rocket: 100
 		DamageTypes: ExplosionDeath, DefaultDeath, TriggerProne
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_bang
+		Explosions: apocalypsemissilehit
+		ExplosionPalette: rookieapolloexp
 
 MammothTuskE:
 	Inherits: MammothTusk
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
 
@@ -55,7 +56,7 @@ MammothTuskAA:
 MammothTuskAAE:
 	Inherits: MammothTuskAA
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
 
