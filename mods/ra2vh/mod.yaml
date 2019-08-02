@@ -153,6 +153,7 @@ ChromeLayout:
 	ra2vh|chrome/ingame-infoobjectives.yaml
 	ra2vh|chrome/mainmenu.yaml
 	ra2vh|chrome/ingame-observer.yaml
+	ra2vh|chrome/ingame-debug.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
@@ -163,7 +164,6 @@ ChromeLayout:
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
-	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
