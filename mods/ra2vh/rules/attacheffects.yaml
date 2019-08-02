@@ -181,7 +181,7 @@
 		Condition: disabled
 		RequiresCondition: parachute
 	WithSpriteBody@shadow:
-		RequiresCondition: inair || parachute
+		RequiresCondition: parachute
 
 ^ParachutableVehicle:
 	Parachutable:

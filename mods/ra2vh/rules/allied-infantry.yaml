@@ -74,7 +74,7 @@ e1:
 		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		RequiresCondition: undeployed && !inair
+		RequiresCondition: undeployed && !parachute
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
@@ -251,7 +251,7 @@ ggi:
 		Delay: 20
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		RequiresCondition: undeployed && !inair
+		RequiresCondition: undeployed && !parachute
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
