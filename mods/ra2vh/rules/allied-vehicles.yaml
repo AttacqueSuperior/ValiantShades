@@ -674,6 +674,7 @@ bfrt:
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
 		RequiresCondition: loaded
+		PauseOnCondition: disabled
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
