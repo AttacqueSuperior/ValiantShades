@@ -5,7 +5,7 @@ v3rocket:
 	Tooltip:
 		Name: V3 Rocket
 	Health:
-		HP: 90000
+		HP: 135000
 	BallisticMissile:
 		LaunchAngle: 192
 		Speed: 112
