@@ -76,8 +76,8 @@ SpiritBomb:
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: large_twlt
-		ExplosionPalette: rookiera2exp
+		Explosions: spirithit
+		ExplosionPalette: rookieapolloexp
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
@@ -91,7 +91,7 @@ SpiritBomb:
 SpiritBombE:
 	Inherits: SpiritBomb
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
 
