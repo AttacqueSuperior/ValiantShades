@@ -1,5 +1,8 @@
 ^MindControllable:
-	mindcontrol: yuricntl
+	mindcontrol: mindanim
+		Length: *
+		Offset: 0, -24, 24
+	permanent-mindcontrol: mindanimr
 		Length: *
 		Offset: 0, -24, 24
 

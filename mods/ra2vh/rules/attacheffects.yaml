@@ -275,7 +275,7 @@
 	WithIdleOverlay@mindcontrol:
 		Sequence: mindcontrol
 		Palette: effect
-		RequiresCondition: controlled
+		RequiresCondition: controlled && !permanent-mindcontrol
 	ExternalCondition@permanent-mindcontrol:
 		Condition: permanent-mindcontrol
 	GrantCondition@permanent-mindcontrol:
@@ -284,6 +284,10 @@
 	Targetable@PermaMC:
 		TargetTypes: PermanentMindControl
 		RequiresCondition: !permanent-mindcontrol && !prevent-ground-target
+	WithIdleOverlay@permanent-mindcontrol:
+		Sequence: permanent-mindcontrol
+		Palette: effect
+		RequiresCondition: permanent-mindcontrol
 
 ^IvanBombable:
 	DelayedWeaponAttachable@ivanbomb:
