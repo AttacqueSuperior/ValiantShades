@@ -312,7 +312,7 @@ V3MissileExplode:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@1Eff: CreateEffect
 		Explosions: terrorist_explosion
 		ExplosionPalette: heroicra2exp
@@ -340,7 +340,7 @@ V3MissileProximityExplode:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@1Eff: CreateEffect
 		Explosions: large_twlt
 		ExplosionPalette: heroicra2exp
