@@ -368,7 +368,7 @@ fflash:
 	Armament:
 		Weapon: PlaneShmel
 	Voiced:
-		VoiceSet: FlashFireVoice
+		VoiceSet: SapsanVoice
 	AmmoPool:
 		Ammo: 2
 		PipCount: 2

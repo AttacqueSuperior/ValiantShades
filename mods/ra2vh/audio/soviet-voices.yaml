@@ -203,6 +203,14 @@ FlashFireVoice:
 		Attack: vflfata, vflfatb, vflfatc, vflfatd, vflfate, vflfatf, vflfatg
 		Die: vflfdia
 
+SapsanVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vsapsea, vsapseb, vsapsec, vsapsed, vsapsee, vsapsef
+		Move: vsapmoa, vsapmob, vsapmoc, vsapmod, vsapmoe
+		Attack: vsapata, vsapatb, vsapatc, vsapatd, vsapate, vsapatf, vsapatg
+		Die: vsapcra
+
 MigVoice:
 	DefaultVariant: .wav
 	Voices:
