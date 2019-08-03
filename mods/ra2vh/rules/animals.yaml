@@ -60,9 +60,14 @@ josh:
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
 			TeslaDeath: 11
-	-WithDeathAnimation@flames:
+	WithDeathAnimation@flames:
+		DeathSequencePalette: flameguy
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			IgniteDeath: 3
+		RequiresCondition: !inair
 	SpawnActorOnDeath@flames:
-		Actor: FLAMEGUY
+		Actor: flameguy
 		DeathType: FlameDeath
 	Explodes@radiation:
 		Weapon: RadiationDeath

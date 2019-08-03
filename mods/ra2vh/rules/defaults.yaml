@@ -522,6 +522,12 @@
 		DeathTypes:
 			TeslaDeath: 11
 		RequiresCondition: !inair
+	WithDeathAnimation@flames:
+		DeathSequencePalette: flameguy
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			IgniteDeath: 3
+		RequiresCondition: !inair
 	SpawnActorOnDeath@flames:
 		Actor: flameguy
 		DeathType: FlameDeath
@@ -691,11 +697,11 @@
 			ElectroDeath: 2
 			TeslaDeath: 2
 			RadiationDeath: 1
+			FlameDeath: 1
+			IgniteDeath: 1
 	-WithDeathAnimation@ra:
 	-SpawnActorOnDeath@flames:
-	WithDeathAnimation@flames:
-		DeathTypes:
-			FlameDeath: 1
+	-WithDeathAnimation@flames:
 	-Explodes@radiation:
 	-Crushable:
 	MapEditorData:

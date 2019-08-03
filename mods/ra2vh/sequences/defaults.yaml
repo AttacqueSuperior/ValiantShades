@@ -38,6 +38,14 @@
 		Start: 134
 	die2:
 		Start: 149
+	die3:
+		Combine:
+			laserguy:
+				Length: *
+			flameguy:
+				Start: 44
+				Length: 104
+		Length: *
 	die4: nukedie
 		Length: *
 		Tick: 50

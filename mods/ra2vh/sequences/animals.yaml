@@ -49,6 +49,14 @@ josh:
 		Start: 116
 		Length: 6
 		Facings: 8
+	die3:
+		Combine:
+			laserguy:
+				Length: *
+			flameguy:
+				Start: 44
+				Length: 104
+		Length: *
 	die4: nukedie
 		Length: *
 		Tick: 50
