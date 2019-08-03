@@ -117,6 +117,11 @@ mgtk:
 	Inherits@MC: ^MindControllable
 	icon: rtnkicon
 
+mnrva:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 gtgcan:
 	icon: gcanicon
 

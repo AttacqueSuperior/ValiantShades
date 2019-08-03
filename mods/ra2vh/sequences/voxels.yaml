@@ -182,6 +182,10 @@ ptruck:
 mgtk:
 	idle: rtnk
 
+mnrva:
+	idle:
+	turret: mnrvatur
+
 shad:
 	idle:
 
