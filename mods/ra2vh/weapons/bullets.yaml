@@ -85,7 +85,7 @@ MirageGun:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
-		DamageTypes: FlameDeath, DefaultDeath
+		DamageTypes: IgniteDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: mirage_tank_hit
 		ExplosionPalette: rookiera2exp
