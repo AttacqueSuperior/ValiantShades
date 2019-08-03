@@ -80,8 +80,8 @@ caairp:
 		Icon: paradrop
 		ChargeInterval: 9000
 		Description: Allied Paratroopers
-		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
-		DropItems: e1,e1,e1,e1,e1,e1
+		LongDesc: A Cargo Plane drops three GIs\nand 2 GGIs anywhere on the map.
+		DropItems: ggi,ggi,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane.allied
 		CameraActor: camera
@@ -92,8 +92,8 @@ caairp:
 		Icon: paradrop
 		ChargeInterval: 9000
 		Description: Soviet Paratroopers
-		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
-		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
+		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
+		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
 		UnitType: pdplane.soviet
 		CameraActor: camera
