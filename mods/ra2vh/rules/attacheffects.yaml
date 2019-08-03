@@ -142,13 +142,13 @@
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
 		RequiresCondition: crate-firepower
-		Modifier: 200
+		Modifier: 150
 	DamageMultiplier@CRATES:
 		RequiresCondition: crate-damage
-		Modifier: 50
+		Modifier: 75
 	SpeedMultiplier@CRATES:
 		RequiresCondition: crate-speed
-		Modifier: 170
+		Modifier: 150
 	ExternalCondition@CRATE-FIREPOWER:
 		Condition: crate-firepower
 	ExternalCondition@CRATE-DAMAGE:
