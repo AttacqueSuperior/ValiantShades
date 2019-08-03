@@ -119,6 +119,10 @@
 		Name: spiricon
 		Filename: spiricon.png
 		AllowModifiers: false
+	PaletteFromPng@sapsicon:
+		Name: sapsicon
+		Filename: sapsicon.png
+		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy
 		Filename: anim.pal

@@ -24,7 +24,8 @@ falc:
 
 fflash:
 	Inherits: ^Aircraft
-	icon: bplnicon
+	icon: sapsicon.png
+		AddExtension: false
 
 hind:
 	Inherits: ^Aircraft

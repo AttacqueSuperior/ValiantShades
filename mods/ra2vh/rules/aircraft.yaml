@@ -362,6 +362,7 @@ fflash:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~aircraft.soviets, natek
+		IconPalette: sapsicon
 	SpawnActorOnDeath:
 		Actor: fflashhusk
 	Armament:
