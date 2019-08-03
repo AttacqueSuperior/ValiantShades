@@ -125,6 +125,11 @@ mtnk:
 	Inherits@MC: ^MindControllable
 	icon: gtnkicon
 
+hammr:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: htnkicon
+
 harv:
 	Inherits: ^Vehicle
 	harvest: oregath

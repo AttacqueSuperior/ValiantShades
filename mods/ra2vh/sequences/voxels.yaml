@@ -94,6 +94,11 @@ mtnk:
 	turret: gtnktur
 	barrel: gtnkbarl
 
+hammr:
+	idle:
+	turret: hammrtur
+	barrel: hammrbarl
+
 harv:
 	idle:
 	turret: harvtur
