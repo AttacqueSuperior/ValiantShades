@@ -6,7 +6,7 @@ GrandCannonWeapon:
 	MinRange: 3c0
 	Projectile: BulletAS
 		Blockable: false
-		Speed: 682
+		Image: 200mm
 	Warhead@1Dam: SpreadDamage
 		Damage: 150000
 		Versus:
@@ -30,8 +30,6 @@ sabot:
 	Range: 5c0
 	ReloadDelay: 70
 	Report: vtadatta.wav, vtadattb.wav, vtadattc.wav
-	Projectile: BulletAS
-		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Spread: 190
 		Damage: 150000
@@ -125,7 +123,7 @@ MirageGunE:
 	Range: 5c768
 	Report: vlasatta.wav
 	Projectile: BulletAS
-		Speed: 682
+		Image: 90mm
 	Warhead@1Dam: SpreadDamage
 		Damage: 36000
 		Versus:
@@ -157,8 +155,6 @@ MirageGunE:
 	Inherits: ^LargeBullet
 	ReloadDelay: 60
 	Range: 5c768
-	Projectile: BulletAS
-		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 100000
 		Spread: 768
@@ -216,8 +212,6 @@ Hammer120mmE:
 	Inherits: 120mm
 	Report: vapoat1a.wav
 	Burst: 2
-	Projectile: BulletAS
-		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 100000
 		Versus:
@@ -244,7 +238,7 @@ Hammer120mmE:
 	Report: vdesatta.wav, vdesattb.wav
 	Projectile: BulletAS
 		Blockable: false
-		Speed: 682
+		Image: 155mm
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
 		Versus:
@@ -277,7 +271,6 @@ GrenadeDisc:
 	Projectile: BulletAS
 		Image: discgrenade
 		Palette: effect
-		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
 		Spread: 384

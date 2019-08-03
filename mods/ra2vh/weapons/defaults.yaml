@@ -51,7 +51,7 @@
 
 ^LargeBullet:
 	Projectile: BulletAS
-		Speed: 40c0
+		Speed: 682
 		Image: 120mm
 		Palette: ra
 		Shadow: true

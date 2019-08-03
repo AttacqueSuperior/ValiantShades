@@ -234,7 +234,16 @@ smokey2-slow:
 	idle: smokey2
 		Length: *
 
+90mm:
+	idle:
+
 120mm:
+	idle:
+
+155mm:
+	idle:
+
+200mm:
 	idle:
 
 discgrenade:
