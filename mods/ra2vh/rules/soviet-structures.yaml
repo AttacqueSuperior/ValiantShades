@@ -321,7 +321,7 @@ natek:
 		Description: Parabombs
 		LongDesc: Send in a bomber\nto saturate an area with bombs.
 		OrderName: ParabombsInfoOrder
-		UnitType: pbombp
+		UnitType: badger
 		SquadSize: 1
 		Icon: parabombs
 		Mission: Attack

@@ -2,6 +2,10 @@ asw:
 	Inherits: ^Aircraft
 	icon: xxicon
 
+badger:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 beag:
 	Inherits: ^Aircraft
 	icon: beagicon

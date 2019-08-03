@@ -511,13 +511,13 @@ pdplane.crate:
 	Aircraft:
 		-AirborneCondition:
 
-pbombp:
+badger:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Tooltip:
-		Name: Parabomber Plane
+		Name: Badger Bomber
 	SpawnActorOnDeath:
-		Actor: pbombphusk
+		Actor: badgerhusk
 	Armament:
 		Weapon: ParaBomb
 	AmmoPool:
@@ -538,20 +538,16 @@ pbombp:
 		ScanRadius: 6
 	-Rearmable:
 	RejectsOrders:
-	RenderSprites:
-		Image: bpln
-	RenderVoxels:
-		Image: bpln
 
-pbombphusk:
+badgerhusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Parabomber Plane
+		Name: Badger Bomber
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 225
 	RenderVoxels:
-		Image: bpln
+		Image: badger
 
 hornet:
 	Inherits: ^SpawnedPlane
