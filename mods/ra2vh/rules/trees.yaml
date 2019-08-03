@@ -17,7 +17,7 @@ TIBTRE04:
 		Terrain: Gems
 	SeedsResource:
 		ResourceType: Gems
-		Interval: 80
+		Interval: 150
 	AppearsOnMapPreview:
 		Terrain: Gems
 
