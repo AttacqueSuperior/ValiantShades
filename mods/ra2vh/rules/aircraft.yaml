@@ -311,6 +311,50 @@ orcahusk:
 	RevealOnDeath:
 		Radius: 4c0
 
+yak:
+	Inherits: beag
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Tooltip:
+		Name: Yak
+	Buildable:
+		BuildPaletteOrder: 10
+		Prerequisites: ~aircraft.soviets
+	Valued:
+		Cost: 900
+	Health:
+		HP: 125000
+	SpawnActorOnDeath:
+		Actor: yakhusk
+	Armament:
+		Weapon: ChainGun.Yak.Right
+	Armament@2:
+		Weapon: ChainGun.Yak.Left
+		PauseOnCondition: !ammo
+	Voiced:
+		VoiceSet: FlashFireVoice
+	AmmoPool:
+		Ammo: 20
+		PipCount: 2
+		ReloadDelay: 5
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+		AmmoCondition: ammo
+
+yakhusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Yak
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 225
+	RenderVoxels:
+		Image: yak
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+
 fflash:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant

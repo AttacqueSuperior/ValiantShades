@@ -49,6 +49,10 @@ spirit:
 	icon: spiricon.png
 		AddExtension: false
 
+yak:
+	Inherits: ^Aircraft
+	icon: bplnicon
+
 zep:
 	Inherits: ^Aircraft
 	icon: zepicon

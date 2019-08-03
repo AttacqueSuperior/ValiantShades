@@ -295,6 +295,7 @@ Player:
 			ttnk: 15
 			mind: 10
 			zep: 1
+			yak: 15
 			fflash: 15
 		UnitLimits:
 			dog: 4
@@ -307,6 +308,7 @@ Player:
 			harv: 6
 			mind: 3
 			zep: 2
+			yak: 4
 			fflash: 6
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai

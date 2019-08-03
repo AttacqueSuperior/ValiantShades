@@ -240,3 +240,34 @@ AKME:
 	Inherits: AKM
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+ChainGun.Yak.Right:
+	Inherits: ^MG
+	Burst: 5
+	FirstBurstTargetOffset: -512,213,0
+	FollowingBurstTargetOffset: 478,0,0
+	BurstDelays: 2
+	ReloadDelay: 25
+	Range: 6c768
+	MinRange: 2c0
+	-Report:
+	StartBurstReport: gun8.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+		Spread: 171
+		Versus:
+			None: 125
+			Flak: 100
+			Light: 70
+			Medium: 28
+			Heavy: 28
+			Wood: 37
+			Steel: 25
+			Concrete: 12
+	Warhead@2Eff: CreateEffect
+		Explosions: piffpiff
+		ExplosionPalette: rookiera2exp
+
+ChainGun.Yak.Left:
+	Inherits: ChainGun.Yak.Right
+	FirstBurstTargetOffset: -512,-213,0
