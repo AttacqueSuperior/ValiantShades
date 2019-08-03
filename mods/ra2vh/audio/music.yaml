@@ -102,6 +102,7 @@ mudremix: Mud Remix
 	Extension: wav
 ra1intro: RA1 Intro
 	Extension: wav
+	Hiddden: true
 radio2: Radio 2
 	Extension: wav
 radio2remix: Radio 2 Remix
