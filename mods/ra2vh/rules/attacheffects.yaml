@@ -410,3 +410,10 @@
 	GrantCondition@powerdown-disable:
 		RequiresCondition: powerdown
 		Condition: lowpower
+
+^AffectedByTanyaMorale:
+	FirepowerMultiplier@tanya:
+		RequiresCondition: tanyabonus
+		Modifier: 125
+	ExternalCondition@tanya:
+		Condition: tanyabonus

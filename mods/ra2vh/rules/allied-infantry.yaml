@@ -696,6 +696,14 @@ tany:
 		DamageCooldown: 150
 		HealIfBelow: 100
 		RequiresCondition: !disabled
+	ProximityExternalCondition:
+		Condition: tanyabonus
+		Range: 4c512
+		RequiresCondition: !disabled
+	WithRangeCircle:
+		Type: Tanya
+		Range: 4c512
+		RequiresCondition: !disabled
 
 jumpjet:
 	Inherits: ^Infantry

@@ -450,6 +450,7 @@
 	Inherits@5: ^CrateStatModifiers
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
+	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -721,6 +722,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
+	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -1022,6 +1024,7 @@
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
+	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
