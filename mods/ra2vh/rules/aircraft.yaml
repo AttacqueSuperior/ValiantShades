@@ -358,7 +358,7 @@ fflash:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Flashfire
+		Name: Sapsan
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~aircraft.soviets, natek
@@ -375,7 +375,7 @@ fflash:
 fflashhusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Fireflash
+		Name: Sapsan
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 225
