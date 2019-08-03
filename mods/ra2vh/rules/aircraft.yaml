@@ -336,9 +336,6 @@ yak:
 		Ammo: 20
 		PipCount: 2
 		ReloadDelay: 5
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
-		AmmoCondition: ammo
 
 yakhusk:
 	Inherits: ^PlaneHusk
@@ -358,17 +355,22 @@ yakhusk:
 fflash:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Valued:
+		Cost: 1400
 	Tooltip:
 		Name: Flashfire
 	Buildable:
-		BuildPaletteOrder: 20
-		Prerequisites: ~aircraft.soviets
+		BuildPaletteOrder: 30
+		Prerequisites: ~aircraft.soviets, natek
 	SpawnActorOnDeath:
 		Actor: fflashhusk
 	Armament:
 		Weapon: PlaneShmel
 	Voiced:
 		VoiceSet: FlashFireVoice
+	AmmoPool:
+		Ammo: 2
+		PipCount: 2
 
 fflashhusk:
 	Inherits: ^PlaneHusk
@@ -426,7 +428,7 @@ spirit:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 70
-		Prerequisites: ~aircraft.allies, garbur # ~aircraft.harrier
+		Prerequisites: ~aircraft.allies, garbur
 		Description: Bomber aircraft.\n  Strong vs Buildings\n  Weak vs Units
 		IconPalette: spiricon
 	Selectable:
