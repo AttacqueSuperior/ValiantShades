@@ -331,6 +331,20 @@ natek:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 1250
+	ParatroopersPower@tankdrop:
+		OrderName: TankDropInfoOrder
+		Icon: paradrop
+		ChargeInterval: 9000
+		Description: Tank Drop
+		LongDesc: A Cargo Plane drops 2 Hammers\nand 2 Slostins anywhere on the map.
+		DropItems: hammr,slost,hammr,slost
+		QuantizedFacings: 8
+		UnitType: pdplane.soviet
+		CameraActor: camera
+		ArrowSequence: arrow
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
+		Cost: 2000
 
 nanrct:
 	Inherits: ^Power
