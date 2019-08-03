@@ -42,9 +42,11 @@
 		Combine:
 			laserguy:
 				Length: *
+				FlipX: true
 			flameguy:
 				Start: 44
 				Length: 104
+				FlipX: true
 		Length: *
 	die4: nukedie
 		Length: *

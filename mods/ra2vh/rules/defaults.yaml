@@ -569,7 +569,7 @@
 		Voice: Attack
 	Guardable:
 	DeathSounds@normal:
-		DeathTypes: BulletDeath, AltBulletDeath
+		DeathTypes: BulletDeath, AltBulletDeath, IgniteDeath, FlameDeath
 		RequiresCondition: !inair
 	DeathSounds@zapped:
 		Voice: Zapped
@@ -681,8 +681,6 @@
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	DeathSounds@burned:
-		Voice: Die
 	DeathSounds@zapped:
 		Voice: Die
 	DeathSounds@radiation:
