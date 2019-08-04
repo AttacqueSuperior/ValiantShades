@@ -52,7 +52,7 @@ spirit:
 
 yak:
 	Inherits: ^Aircraft
-	icon: bplnicon
+	icon: yakficon
 
 zep:
 	Inherits: ^Aircraft
