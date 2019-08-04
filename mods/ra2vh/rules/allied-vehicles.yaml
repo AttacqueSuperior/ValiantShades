@@ -170,7 +170,11 @@ hmmv:
 		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
-		Weapon: CRM60
+		Weapon: HumveeGun
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: HumveeGun
+		RequiresCondition: rank-elite
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
