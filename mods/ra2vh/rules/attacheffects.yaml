@@ -180,8 +180,6 @@
 	GrantCondition@parachute-disabled:
 		Condition: disabled
 		RequiresCondition: parachute
-	WithSpriteBody@shadow:
-		RequiresCondition: parachute
 
 ^ParachutableVehicle:
 	Parachutable:

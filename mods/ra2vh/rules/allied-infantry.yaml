@@ -7,7 +7,6 @@ aengineer:
 
 e1:
 	Inherits@1: ^Infantry
-	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
@@ -129,7 +128,6 @@ e1:
 
 ggi:
 	Inherits@1: ^Infantry
-	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
@@ -391,7 +389,6 @@ spy:
 
 gren:
 	Inherits@1: ^Infantry
-	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
@@ -785,6 +782,8 @@ jumpjet:
 		RepairActors:
 		Voice: Move
 	-TurnOnIdle:
+	WithSpriteBody@shadow:
+		RequiresCondition: inair || parachute
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk

@@ -451,6 +451,7 @@
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
+	Inherits@parachutable: ^Parachutable
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -604,7 +605,7 @@
 		Name: shadow
 		Sequence: shadow
 		ForceToGround: true
-		RequiresCondition: inair
+		RequiresCondition: parachute
 	DetectCloaked@mirage:
 		Range: 3c0
 		CloakTypes: mirage
