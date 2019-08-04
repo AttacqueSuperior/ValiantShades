@@ -466,6 +466,7 @@ fv:
 			aengineer: ifv-repair
 			e1: ifv-mg
 			ggi: ifv-ggi
+			gren: ifv-gren
 			tany: ifv-hero
 			ghost: ifv-hero
 			snipe: ifv-sniper
@@ -499,7 +500,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default
@@ -582,6 +583,15 @@ fv:
 		Weapon: MissileLauncherAAE
 		RequiresCondition: rank-elite && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
+	#=== Grenadier ===
+	Armament@gren:
+		Weapon: GrenadeDisc
+		RequiresCondition: !rank-elite && ifv-gren
+		LocalOffset: 188,0,600
+	Armament@gren-elite:
+		Weapon: GrenadeDiscE
+		RequiresCondition: rank-elite && ifv-gren
+		LocalOffset: 188,0,600
 	#=== Unfinished modes ===
 	Explodes@demo:
 		Weapon: CRNuke
@@ -620,7 +630,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-flak || ifv-tesla
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-flak || ifv-tesla
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
