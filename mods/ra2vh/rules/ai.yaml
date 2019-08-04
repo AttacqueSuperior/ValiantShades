@@ -281,6 +281,7 @@ Player:
 			mtnk: 20
 			fv: 15
 			fv.ai: 5
+			fv.ai2: 5
 			sref: 10
 			mgtk: 10
 			tnkd: 15

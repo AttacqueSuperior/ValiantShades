@@ -657,6 +657,20 @@ fv.ai:
 	RenderVoxels:
 		Image: fv
 	Cargo:
+		InitialUnits: ggi
+	Selectable:
+		Class: fv
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites:  ~gaweap, gafcmd, ~testai
+
+fv.ai2:
+	Inherits: fv
+	RenderSprites:
+		Image: fv
+	RenderVoxels:
+		Image: fv
+	Cargo:
 		InitialUnits: e1
 	Selectable:
 		Class: fv
