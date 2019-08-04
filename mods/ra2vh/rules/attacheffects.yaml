@@ -200,6 +200,14 @@
 		Condition: disabled
 		RequiresCondition: parachute
 
+^AlliedParachute:
+	WithParachute:
+		Image: aparach
+
+^SovietParachute:
+	WithParachute:
+		Image: sparach
+
 ^WithSwimSuit:
 	WithInfantryBody:
 		RequiresCondition: !swimming && !parachute

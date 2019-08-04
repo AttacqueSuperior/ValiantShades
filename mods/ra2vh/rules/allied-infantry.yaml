@@ -1,5 +1,6 @@
 aengineer:
 	Inherits: engineer
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Prerequisites: ~alliedengi
 	Voiced:
@@ -11,6 +12,7 @@ e1:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -132,6 +134,7 @@ ggi:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -321,6 +324,7 @@ snipe:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry, Vehicle, Water, Underwater
 		InvalidTargets: NoAutoTarget, Structure
@@ -380,6 +384,7 @@ snipe:
 
 spy:
 	Inherits: ^Spy
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Prerequisites: gafcmd, ~gapile
 	DisguiseTooltip:
@@ -393,6 +398,7 @@ gren:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Queue: Infantry
 		Prerequisites: gafcmd, ~gapile
@@ -453,6 +459,7 @@ ghost:
 	Inherits@SWIMSUIT: ^WithSwimSuit
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -609,6 +616,7 @@ tany:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@SWIMSUIT: ^WithSwimSuit
+	Inherits@factionparachute: ^AlliedParachute
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -706,6 +714,7 @@ jumpjet:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^AlliedParachute
 	HiddenUnderFog:
 		Type: CenterPosition
 	Buildable:
@@ -831,6 +840,7 @@ cleg:
 	Inherits@MC: ^MindControllable
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Tooltip:
