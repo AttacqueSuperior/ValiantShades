@@ -451,6 +451,10 @@ naindp:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
+	CashTrickler:
+		Interval: 200
+		Amount: 20
+		RequiresCondition: !disabled
 
 naclon:
 	Inherits: ^Building

@@ -415,7 +415,7 @@ gaorep:
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !lowpower
+		RequiresCondition: !build-incomplete && !disabled
 	ResourcePurifier:
 		Modifier: 25
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown
@@ -436,6 +436,10 @@ gaorep:
 		Gravity: -48,-48,72, 48,48,72
 		Duration: 39
 		Offset: -128,0,3560
+	CashTrickler:
+		Interval: 200
+		Amount: 20
+		RequiresCondition: !disabled
 
 gaspysat:
 	Inherits: ^Building
