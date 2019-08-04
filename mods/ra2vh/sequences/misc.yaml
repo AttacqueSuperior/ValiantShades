@@ -151,12 +151,12 @@ clock:
 		BlendMode: Multiply
 
 parach:
-	open:
+	open: gparach
 		Length: 19
-	idle:
+	idle: gparach
 		Start: 19
 		Length: 20
-	close:
+	close: gparach
 		Start: 40
 		Length: 29
 
