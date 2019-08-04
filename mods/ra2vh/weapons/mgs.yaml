@@ -23,6 +23,8 @@ CRM60:
 	ReloadDelay: 15
 	Range: 6c0
 	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25000
 
 CRM60E:
 	Inherits: CRM60
