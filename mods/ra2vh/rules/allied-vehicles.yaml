@@ -629,6 +629,20 @@ fv:
 	#	ValidTargets: Infantry, Vehicle
 	#	InvalidTargets: NoAutoTarget
 
+fv.ai:
+	Inherits: fv
+	RenderSprites:
+		Image: fv
+	RenderVoxels:
+		Image: fv
+	Cargo:
+		InitialUnits: e1
+	Selectable:
+		Class: fv
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites:  ~gaweap, gafcmd, ~testai
+
 sref:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

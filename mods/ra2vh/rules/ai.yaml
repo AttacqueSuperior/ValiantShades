@@ -279,7 +279,8 @@ Player:
 			hmmv: 25
 			ltnk: 20
 			mtnk: 20
-			fv: 20
+			fv: 15
+			fv.ai: 5
 			sref: 10
 			mgtk: 10
 			tnkd: 15
