@@ -465,6 +465,7 @@ fv:
 			#=== Allied infantry ===
 			aengineer: ifv-repair
 			e1: ifv-mg
+			ggi: ifv-ggi
 			tany: ifv-hero
 			ghost: ifv-hero
 			snipe: ifv-sniper
@@ -498,7 +499,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default
@@ -561,6 +562,26 @@ fv:
 	Tooltip@hitech:
 		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
+	#=== Guardian GI ===
+	FirepowerMultiplier@ggi-deploy-buff:
+		RequiresCondition: ifv-ggi
+		Modifier: 125
+	Armament@ggi:
+		Weapon: MissileLauncher
+		RequiresCondition: !rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-elite:
+		Weapon: MissileLauncherE
+		RequiresCondition: rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-aa:
+		Weapon: MissileLauncherAA
+		RequiresCondition: !rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-aa-elite:
+		Weapon: MissileLauncherAAE
+		RequiresCondition: rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
 	Explodes@demo:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
@@ -598,7 +619,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-flak || ifv-tesla
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-flak || ifv-tesla
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
@@ -610,7 +631,7 @@ fv:
 	#=== Shared Air targeting ===
 	GrantCondition@autotargetair:
 		Condition: autotarget-air
-		RequiresCondition: ifv-default
+		RequiresCondition: ifv-default || ifv-ggi
 	AutoTargetPriority@Air:
 		RequiresCondition: autotarget-air
 		ValidTargets: Air
