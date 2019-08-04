@@ -405,7 +405,6 @@ tnkd:
 
 fv:
 	Inherits: ^Vehicle
-	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
@@ -434,40 +433,90 @@ fv:
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: IFVVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	#=== End of regular unit settings ===
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
 		PipCount: 1
 		UnloadVoice: Move
 		LoadingCondition: loading
+		LoadedCondition: loaded
 		PassengerConditions:
+			#=== Allied infantry ===
+			aengineer: ifv-repair
 			e1: ifv-mg
+			tany: ifv-hero
+			ghost: ifv-hero
+			snipe: ifv-sniper
+			cleg: ifv-chrono
+			#=== Soviet infantry ===
+			sengineer: ifv-repair
 			e2: ifv-mg
-			engineer: ifv-repair
 			flakt: ifv-flak
 			shk: ifv-tesla
 			ivan: ifv-demo
 			terror: ifv-demo
 			deso: ifv-deso
-			tany: ifv-hero
-			ghost: ifv-hero
-			snipe: ifv-sniper
-			spy: ifv-mg
-			cleg: ifv-chrono
+			#=== Misc. infantry ===
+			engineer: ifv-repair
+			#=== Animals, to disable the bonus firepower granted when manned ===
+			dog: disable-ifvbonus
+			cow: disable-ifvbonus
+			all: disable-ifvbonus
+			polarb: disable-ifvbonus
+			josh: disable-ifvbonus
+	GrantCondition@ifv-firepowerbonus:
+		RequiresCondition: loaded && !disable-ifvbonus
+		Condition: ifv-firepowerbonus
+	FirepowerMultiplier@ifv-firepowerbonus:
+		RequiresCondition: ifv-firepowerbonus
+		Modifier: 125
+	#============================
+	#=== Individual IFV modes ===
+	#============================
+	#==================== Default missile ===================
+	#=== Civilians/spies only provide the firepower bonus ===
+	GrantCondition@ifv-default:
+		Condition: ifv-default
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono
+	WithVoxelTurret@default:
+		Sequence: turret-missile
+		RequiresCondition: ifv-default
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 128,-128,1024, 128,128,1024
-		RequiresCondition: !rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
+		RequiresCondition: !rank-elite && ifv-default
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 128,-128,1024, 128,128,1024
-		RequiresCondition: rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
+		RequiresCondition: rank-elite && ifv-default
+	#=== GI/Conscript ===
+	WithVoxelTurret@mg:
+		Sequence: turret-mg
+		RequiresCondition: ifv-mg
 	Armament@mg:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
 		RequiresCondition: ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
+	#=== Engineers ===
+	WithVoxelTurret@engineer:
+		Sequence: turret-repair
+		RequiresCondition: ifv-repair
 	Armament@repair:
 		Weapon: RepairBullet
 		LocalOffset: 164,0,864
@@ -476,6 +525,22 @@ fv:
 		OutsideRangeCursor: goldwrench
 		TargetStances: Ally
 		ForceTargetStances: None
+	#===========================================
+	#==== Mixed infantry, needs more fixup =====
+	#======= Like custom turrets, etc. =========
+	#=== RA2 hitech turret is a placeholder! ===
+	#===========================================
+	GrantCondition@turret-hitech:
+		Condition: turret-hitech
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair
+	WithVoxelTurret@hitech:
+		Sequence: turret-hitech
+		RequiresCondition: turret-hitech
+	Explodes@demo:
+		Weapon: CRNuke
+		EmptyWeapon: CRNuke
+		RequiresCondition: ifv-demo
+		DeathTypes: DefaultDeath
 	Armament@sniper:
 		Weapon: AWPE
 		LocalOffset: 188,0,600
@@ -496,60 +561,48 @@ fv:
 	Armament@chrono:
 		Weapon: CRNeutronRifle
 		RequiresCondition: ifv-chrono
-	AttackTurreted:
+	#======================================================
+	#=========== AutoTargeting-related settings ===========
+	#=== Modes which lack custom turret might be broken ===
+	#======================================================
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+	AttackMove:
+		AssaultMoveCondition: assault-move
 		Voice: Attack
-		PauseOnCondition: disabled
-	AutoTargetPriority@DEFAULT:
-		RequiresCondition: !stance-attackanything && !assault-move && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero && !ifv-demo && !ifv-chrono
-	AutoTargetPriority@ATTACKANYTHING:
-		RequiresCondition: stance-attackanything || assault-move && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero && !ifv-demo && !ifv-chrono
-	AutoTargetPriority@DEFAULT_GROUND:
-		RequiresCondition: (!stance-attackanything && !assault-move) && (ifv-mg || ifv-flak || ifv-tesla || ifv-chrono)
+	#=== Shared Ground targeting ===
+	GrantCondition@autotargetground:
+		Condition: autotarget-ground
+		RequiresCondition: ifv-default || ifv-mg || ifv-flak || ifv-tesla
+	AutoTargetPriority@Ground:
+		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
 		InvalidTargets: NoAutoTarget, WaterStructure
-	AutoTargetPriority@ATTACKANYTHING_GROUND:
-		RequiresCondition: (stance-attackanything || assault-move) && (ifv-mg || ifv-flak || ifv-tesla || ifv-chrono)
+	AutoTargetPriority@GroundAssault:
+		RequiresCondition: stance-attackanything || assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Structure, Defense
 		InvalidTargets: NoAutoTarget
-	AutoTargetPriority@INFONLY:
-		RequiresCondition: ifv-sniper || ifv-hero
-		ValidTargets: Infantry
+	#=== Shared Air targeting ===
+	GrantCondition@autotargetair:
+		Condition: autotarget-air
+		RequiresCondition: ifv-default
+	AutoTargetPriority@Air:
+		RequiresCondition: autotarget-air
+		ValidTargets: Air
 		InvalidTargets: NoAutoTarget
-	AutoTargetPriority@REPAIR:
+	#=== Targeting specific to individual modes ===
+	AutoTargetPriority@Repair:
 		RequiresCondition: ifv-repair
 		ValidTargets: Repair
 		InvalidTargets: NoAutoTarget
-	AutoTargetPriority@NOBUILDING:
-		RequiresCondition: ifv-deso
-		ValidTargets: Infantry, Vehicle
-		InvalidTargets: NoAutoTarget
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderSprites:
-	RenderVoxels:
-	WithVoxelBody:
-	Explodes@demo:
-		Weapon: CRNuke
-		EmptyWeapon: CRNuke
-		RequiresCondition: ifv-demo
-		DeathTypes: DefaultDeath
-	WithVoxelTurret@default:
-		Sequence: turret-missile
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
-	WithVoxelTurret@mg:
-		Sequence: turret-mg
-		RequiresCondition: ifv-mg || ifv-sniper || ifv-flak || ifv-hero
-	WithVoxelTurret@engineer:
-		Sequence: turret-repair
-		RequiresCondition: ifv-repair
-	WithVoxelTurret@hitech:
-		Sequence: turret-hitech
-		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo || ifv-chrono
-	Voiced:
-		VoiceSet: IFVVoice
-	ProducibleWithLevel:
-		Prerequisites: warfactory.infiltrated
-	HitShape:
+	#AutoTargetPriority@INFONLY:
+	#	RequiresCondition: ifv-sniper || ifv-hero
+	#	ValidTargets: Infantry
+	#	InvalidTargets: NoAutoTarget
+	#AutoTargetPriority@Unit:
+	#	RequiresCondition: ifv-deso
+	#	ValidTargets: Infantry, Vehicle
+	#	InvalidTargets: NoAutoTarget
 
 sref:
 	Inherits: ^Vehicle
