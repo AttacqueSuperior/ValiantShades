@@ -69,6 +69,9 @@
 		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 		Chance: 50
@@ -107,6 +110,9 @@
 		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 		Chance: 50
@@ -196,6 +202,9 @@
 		Amount: 6
 		AffectsParent: true
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: SmallScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: SmallFlame
 		Chance: 50
@@ -230,8 +239,9 @@
 			Drone: 33
 			Rocket: 33
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
-	Warhead@2Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumScorch
+		Chance: 50
 	Warhead@3Eff: CreateEffect
 		Explosions: napalmhit
 		ExplosionPalette: rookieapolloexp

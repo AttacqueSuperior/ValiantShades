@@ -37,8 +37,9 @@ BlimpBomb:
 		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+		Chance: 33
 
 BlimpBombE:
 	Inherits: BlimpBomb
@@ -85,8 +86,9 @@ SpiritBomb:
 		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: MediumCrater, MediumScorch
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+		Chance: 33
 
 SpiritBombE:
 	Inherits: SpiritBomb
@@ -238,8 +240,9 @@ WeatherBolt:
 	#	Weapon: RockDebris
 	#	Amount: 0, 1
 	#	ValidTargets: Ground
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: LargeScorch
+		Chance: 33
 
 ^Debris:
 	Range: 3c512
@@ -555,8 +558,9 @@ ParaBomb:
 		ExplosionPalette: rookiewaterexp
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+		Chance: 33
 
 V3Launcher:
 	ReloadDelay: 150

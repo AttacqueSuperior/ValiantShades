@@ -89,6 +89,9 @@ MirageGun:
 		ExplosionPalette: rookiera2exp
 		ImpactSounds:
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 		Chance: 50
@@ -221,7 +224,7 @@ Hammer120mmE:
 	Warhead@2Eff: CreateEffect
 		Explosions: apoc_explosion
 		ImpactSounds: gexpapoa.wav
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
 120mmxE:
@@ -291,7 +294,7 @@ GrenadeDisc:
 		Explosions: grenadierhit
 		ExplosionPalette: rookieapolloexp
 		ImpactSounds: kaboom30.wav
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
 GrenadeDiscE:
@@ -325,6 +328,9 @@ V3MissileExplode:
 		ExplosionPalette: heroictsexp
 		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: LargeScorch, LargeCrater
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
 		Chance: 50
@@ -353,6 +359,9 @@ V3MissileProximityExplode:
 		ExplosionPalette: heroicra2exp
 		ImpactSounds: expnew05.wav, expnew11.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: LargeScorch, LargeCrater
+		Chance: 33
 
 HornetBomb:
 	Inherits: ^LargeBullet
@@ -383,5 +392,3 @@ HornetBomb:
 		Explosions: hornethit
 		ExplosionPalette: rookietsexp
 		ImpactSounds: expnew14.wav
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: MediumCrater, MediumScorch

@@ -8,6 +8,12 @@ UnitExplode:
 		Weapon: SmallDebris
 		Amount: 1,4
 		AffectsParent: true
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumCrater
+		Chance: 33
+	Warhead@Smu2: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
 		Chance: 50
@@ -35,6 +41,9 @@ InfantryExplode:
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
+	-Warhead@Smu:
+	Warhead@Smu2: LeaveSmudge
+		SmudgeType: SmallScorch
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 
@@ -140,6 +149,9 @@ IvanBomber:
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpcraa.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: LargeFlame
 		Chance: 50
@@ -184,6 +196,9 @@ C4:
 		ExplosionPalette: rookietsexp
 		ImpactSounds: icolexpa.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: LargeFlame
 		Chance: 50
@@ -267,6 +282,9 @@ TerrorBomb:
 		Explosions: terrorist_explosion
 		ValidTargets: Ground, Water, Air
 		ExplosionPalette: rookiera2exp
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 		Chance: 50
@@ -309,6 +327,9 @@ NukePayload:
 		Spread: 1c948
 		Falloff: 100, 80, 60, 40, 20, 0
 		Level: 750
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: LargeCrater
+		Chance: 50
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
 
@@ -329,7 +350,7 @@ atomic:
 		ExplosionPalette: apollo
 		Delay: 25
 		ValidTargets: Ground, Water, Air
-	Warhead@4Smu_areanuke: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		Delay: 25
 	Warhead@4Radiation: CreateTintedCells
 		Delay: 25
@@ -424,9 +445,8 @@ demobomb:
 	Warhead@10Res_areanuke3: DestroyResource
 		Size: 4
 		Delay: 15
-	Warhead@11Smu_areanuke3: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: LargeScorch
-		Size: 2
 		Delay: 15
 	Warhead@4Radiation: CreateTintedCells
 		Spread: 1c256

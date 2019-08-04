@@ -168,8 +168,9 @@ PrismShot:
 		ExplosionPalette: rookietsexp
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Water, Air
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallScorch
+		Chance: 33
 
 Comet:
 	ValidTargets: Ground, Water
@@ -208,8 +209,9 @@ Comet:
 		AimChance: 100
 		AimTargetStances: Enemy, Neutral
 		ValidTargets: Infantry, Vehicle, Ship, Tree
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallScorch
+		Chance: 33
 
 CometFragment:
 	Inherits: Comet

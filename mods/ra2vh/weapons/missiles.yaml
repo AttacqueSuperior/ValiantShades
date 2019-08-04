@@ -176,7 +176,7 @@ HoverMissile:
 		Explosions: medium_bang
 		ImpactSounds: gexpifva.wav
 		ValidTargets: Ground, Air
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
 HoverMissileE:
@@ -264,7 +264,7 @@ MissileLauncher:
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_grey_explosion
 		ImpactSounds: gexpifva.wav
-	Warhead@4Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
 MissileLauncherAA:
