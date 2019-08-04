@@ -411,8 +411,6 @@ fv:
 	Inherits@factionparachute: ^AlliedParachute
 	Valued:
 		Cost: 600
-	Tooltip:
-		Name: Infantry Fighting Vehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 130
@@ -446,6 +444,11 @@ fv:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	GrantCondition@tooltiphack:
+		Condition: tooltiphack
+	Tooltip:
+		Name: Infantry Fighting Vehicle
+		RequiresCondition: !tooltiphack
 	#=== End of regular unit settings ===
 	Cargo:
 		Types: Infantry
@@ -503,6 +506,9 @@ fv:
 		Weapon: HoverMissileE
 		LocalOffset: 128,-128,1024, 128,128,1024
 		RequiresCondition: rank-elite && ifv-default
+	Tooltip@default:
+		Name: Rocket IFV
+		RequiresCondition: ifv-default
 	#=== GI/Conscript ===
 	WithVoxelTurret@mg:
 		Sequence: turret-mg
@@ -513,6 +519,9 @@ fv:
 		RequiresCondition: ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
+	Tooltip@machinegun:
+		Name: Machinegun IFV
+		RequiresCondition: ifv-mg
 	#=== Engineers ===
 	WithVoxelTurret@engineer:
 		Sequence: turret-repair
@@ -525,6 +534,9 @@ fv:
 		OutsideRangeCursor: goldwrench
 		TargetStances: Ally
 		ForceTargetStances: None
+	Tooltip@repair:
+		Name: Repair IFV
+		RequiresCondition: ifv-repair
 	#===========================================
 	#==== Mixed infantry, needs more fixup =====
 	#======= Like custom turrets, etc. =========
@@ -535,6 +547,9 @@ fv:
 		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
+		RequiresCondition: turret-hitech
+	Tooltip@hitech:
+		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
 	Explodes@demo:
 		Weapon: CRNuke
