@@ -303,10 +303,10 @@ gaairc:
 		MoveIntoWorld: false
 		Facing: 224
 	ParatroopersPower@paratroopers:
-		OrderName: AlliedParatroopers
-		Icon: paradrop
+		OrderName: AirborneInfoOrder
+		Icon: airborne
 		ChargeInterval: 9000
-		Description: Allied Paratroopers
+		Description: Airborne
 		LongDesc: A Cargo Plane drops three GIs\nand 2 GGIs anywhere on the map.
 		DropItems: ggi,ggi,e1,e1,e1
 		QuantizedFacings: 8

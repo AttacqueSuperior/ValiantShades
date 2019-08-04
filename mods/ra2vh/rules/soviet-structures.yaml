@@ -278,10 +278,10 @@ naairc:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
 	ParatroopersPower@paratroopers:
-		OrderName: SovietParatroopers
+		OrderName: ParadropInfoOrder
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Soviet Paratroopers
+		Description: Paradrop
 		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
 		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
