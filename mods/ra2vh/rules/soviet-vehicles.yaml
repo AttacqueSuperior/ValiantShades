@@ -2,6 +2,7 @@ smcv:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
@@ -63,6 +64,7 @@ harv:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
@@ -136,6 +138,7 @@ dron:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -192,6 +195,7 @@ htk:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -261,6 +265,7 @@ drgn:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -314,6 +319,7 @@ slost:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -376,6 +382,7 @@ slost:
 htnk:
 	Inherits: ^StandardTank
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Rhino Heavy Tank
 	Buildable:
@@ -399,6 +406,7 @@ htnk:
 hammr:
 	Inherits: ^StandardTank
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Hammer Tank
 	Buildable:
@@ -425,6 +433,7 @@ v3:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -484,6 +493,7 @@ apoc:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -582,6 +592,7 @@ ttnk:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -635,6 +646,7 @@ dtruck:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -676,6 +688,7 @@ mind:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1500
 	Tooltip:

@@ -1,6 +1,7 @@
 sengineer:
 	Inherits: engineer
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Prerequisites: ~sovietengi
 	Voiced:
@@ -13,6 +14,7 @@ e2:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -70,6 +72,7 @@ flakt:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -145,6 +148,7 @@ shk:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	AttackMove:
 		AttackMoveCondition: attack-move
 	AutoTargetPriority@DEFAULT:
@@ -228,6 +232,7 @@ terror:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -313,6 +318,7 @@ deso:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -375,6 +381,7 @@ ivan:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -454,6 +461,7 @@ civan:
 agent:
 	Inherits: ^Spy
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Prerequisites: naradr, ~nahand
 	DisguiseTooltip:
@@ -467,6 +475,7 @@ yuri:
 	Inherits: ^Infantry
 	Inherits@cloning: ^Cloneable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -554,6 +563,7 @@ virus:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -611,6 +621,7 @@ boris:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@cloning: ^Cloneable
 	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: natech, ~nahand

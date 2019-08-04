@@ -3,6 +3,7 @@ shad:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Tooltip:
 		Name: Night Hawk
 	Selectable:
@@ -73,6 +74,7 @@ hind:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Hind Carryall
 	Selectable:
@@ -139,6 +141,7 @@ zep:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -211,6 +214,7 @@ zephusk:
 beag:
 	Inherits: ^Plane
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -270,7 +274,6 @@ beaghusk:
 
 orca:
 	Inherits: beag
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Tooltip:
 		Name: Harrier
 	Buildable:
@@ -313,7 +316,7 @@ orcahusk:
 
 yak:
 	Inherits: beag
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Yak
 	Buildable:
@@ -354,7 +357,7 @@ yakhusk:
 
 fflash:
 	Inherits: beag
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -390,6 +393,7 @@ fflashhusk:
 
 bpln:
 	Inherits: beag
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -422,6 +426,7 @@ bplnhusk:
 spirit:
 	Inherits: ^Plane
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -561,6 +566,7 @@ pdplane.crate:
 badger:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Badger Bomber
 	SpawnActorOnDeath:
@@ -598,6 +604,7 @@ badgerhusk:
 
 hornet:
 	Inherits: ^SpawnedPlane
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 50
 	Tooltip:

@@ -3,6 +3,7 @@ lcrf:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
@@ -49,6 +50,7 @@ dest:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
@@ -101,6 +103,7 @@ aegis:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
@@ -142,6 +145,7 @@ dlph:
 	Inherits@3: ^GainsExperience
 	Inherits@5: ^CrateStatModifiers
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
@@ -229,6 +233,7 @@ carrier:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 60

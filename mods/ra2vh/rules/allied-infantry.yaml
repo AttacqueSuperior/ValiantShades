@@ -1,6 +1,7 @@
 aengineer:
 	Inherits: engineer
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Prerequisites: ~alliedengi
 	Voiced:
@@ -13,6 +14,7 @@ e1:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -135,6 +137,7 @@ ggi:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -325,6 +328,7 @@ snipe:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry, Vehicle, Water, Underwater
 		InvalidTargets: NoAutoTarget, Structure
@@ -385,6 +389,7 @@ snipe:
 spy:
 	Inherits: ^Spy
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Prerequisites: gafcmd, ~gapile
 	DisguiseTooltip:
@@ -399,6 +404,7 @@ gren:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
 		Prerequisites: gafcmd, ~gapile
@@ -460,6 +466,7 @@ ghost:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -617,6 +624,7 @@ tany:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@SWIMSUIT: ^WithSwimSuit
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -715,6 +723,7 @@ jumpjet:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@cloning: ^Cloneable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	HiddenUnderFog:
 		Type: CenterPosition
 	Buildable:
@@ -841,6 +850,7 @@ cleg:
 	Inherits@cloning: ^Cloneable
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Tooltip:

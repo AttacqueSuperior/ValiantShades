@@ -58,6 +58,18 @@
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
+^AlliedVeteranRank:
+	WithDecoration@VETERAN:
+		Image: allied-rank
+	WithDecoration@ELITE:
+		Image: allied-rank
+
+^SovietVeteranRank:
+	WithDecoration@VETERAN:
+		Image: soviet-rank
+	WithDecoration@ELITE:
+		Image: soviet-rank
+
 ^BuildingParticles:
 	SmokeParticleEmitter@1:
 		RequiresCondition: dmg_heavy

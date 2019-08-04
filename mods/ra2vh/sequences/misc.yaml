@@ -137,6 +137,16 @@ rank:
 	elite: vpips
 		Start: 1
 
+allied-rank:
+	veteran: avpips
+	elite: avpips
+		Start: 1
+
+soviet-rank:
+	veteran: svpips
+	elite: svpips
+		Start: 1
+
 mpspawn:
 	idle:
 		Length: *

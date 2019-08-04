@@ -2,6 +2,7 @@ amcv:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
@@ -63,6 +64,7 @@ cmin:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
@@ -106,8 +108,6 @@ cmin:
 	WithHarvestOverlay:
 		LocalOffset: 121,0,0
 		Palette: effect
-	GainsExperience: # can get experience, i.e. speed
-		LevelUpImage: crate-effects
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelUnloadBody:
@@ -132,6 +132,7 @@ hmmv:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -194,6 +195,7 @@ ltnk:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -275,6 +277,7 @@ mnrva:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 650
 	Tooltip:
@@ -335,6 +338,7 @@ mnrva:
 mtnk:
 	Inherits: ^StandardTank
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Tooltip:
 		Name: Grizzly Battle Tank
 	Buildable:
@@ -362,6 +366,7 @@ tnkd:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -413,6 +418,7 @@ fv:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
 		Cost: 600
 	Buildable:
@@ -710,6 +716,7 @@ sref:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
@@ -785,6 +792,7 @@ mgtk:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
@@ -843,6 +851,7 @@ bfrt:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 100
