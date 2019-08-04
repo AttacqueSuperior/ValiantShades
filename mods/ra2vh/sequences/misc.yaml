@@ -160,6 +160,26 @@ parach:
 		Start: 40
 		Length: 29
 
+aparach:
+	open:
+		Length: 19
+	idle:
+		Start: 19
+		Length: 20
+	close:
+		Start: 40
+		Length: 29
+
+sparach:
+	open:
+		Length: 19
+	idle:
+		Start: 19
+		Length: 20
+	close:
+		Start: 40
+		Length: 29
+
 cameo-chevron:
 	idle: cameo-chevron.png
 		AddExtension: false
@@ -263,12 +283,12 @@ canister:
 
 parabomb:
 	idle: pbomb
-	chute-open: parach
+	chute-open: sparach
 		Length: 19
-	chute-idle: parach
+	chute-idle: sparach
 		Start: 19
 		Length: 20
-	chute-close: parach
+	chute-close: sparach
 		Start: 40
 		Length: 29
 
