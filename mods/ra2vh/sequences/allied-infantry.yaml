@@ -342,9 +342,11 @@ jumpjet:
 		Length: 6
 		Facings: 8
 	idle-air:
-		Start: 418
-		Length: 9
+		Start: 419
+		Length: 8
 		Tick: 100
+	paradrop:
+		Start: 418
 	shadow: infshdw
 		Start: 1
 	icon: jjeticon
