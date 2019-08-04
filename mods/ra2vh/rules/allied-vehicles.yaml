@@ -498,11 +498,11 @@ fv:
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default
-	Armament@primary:
+	Armament@default:
 		Weapon: HoverMissile
 		LocalOffset: 128,-128,1024, 128,128,1024
 		RequiresCondition: !rank-elite && ifv-default
-	Armament@elite:
+	Armament@default-elite:
 		Weapon: HoverMissileE
 		LocalOffset: 128,-128,1024, 128,128,1024
 		RequiresCondition: rank-elite && ifv-default
@@ -510,13 +510,19 @@ fv:
 		Name: Rocket IFV
 		RequiresCondition: ifv-default
 	#=== GI/Conscript ===
-	WithVoxelTurret@mg:
+	WithVoxelTurret@machinegun:
 		Sequence: turret-mg
 		RequiresCondition: ifv-mg
-	Armament@mg:
-		Weapon: CRM60
+	Armament@machinegun:
+		Weapon: CRMachineGun
 		LocalOffset: 188,32,600
-		RequiresCondition: ifv-mg
+		RequiresCondition: !rank-elite && ifv-mg
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+	Armament@machinegun-elite:
+		Weapon: CRMachineGunE
+		LocalOffset: 188,32,600
+		RequiresCondition: !rank-elite && ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Tooltip@machinegun:

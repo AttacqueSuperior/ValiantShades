@@ -50,6 +50,15 @@ paraE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+CRMachineGun:
+	Inherits: para
+	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
+
+CRMachineGunE:
+	Inherits: CRMachineGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+
 MP5:
 	Inherits: ^MG
 	ReloadDelay: 30
