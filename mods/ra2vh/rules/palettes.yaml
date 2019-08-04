@@ -99,6 +99,10 @@
 		Name: cameo-chevron
 		Filename: cameo-chevron.png
 		AllowModifiers: false
+	PaletteFromPng@scanicon:
+		Name: scanicon
+		Filename: scanicon.png
+		AllowModifiers: false
 	PaletteFromPng@fcmdicon:
 		Name: fcmdicon
 		Filename: fcmdicon.png

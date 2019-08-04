@@ -330,6 +330,21 @@ PsychicReveal:
 	Warhead@4Eff: CreateEffect
 		ImpactSounds: spsyreve.wav
 
+LandsatScan:
+	ReloadDelay: 384
+	Range: 1
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+	Warhead@2Reveal: RevealShroud
+		Duration: 75
+		Radius: 11c0
+	Warhead@3Reveal: RevealShroud
+		Duration: 38
+		Radius: 11c0
+		RevealGeneratedShroud: true
+	Warhead@4Eff: CreateEffect
+		ImpactSounds: spsyreve.wav
+
 BuildingDeathSmokeSpawner:
 	Projectile: InstantExplode
 	Range: 512

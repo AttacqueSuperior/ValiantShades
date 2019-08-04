@@ -141,6 +141,16 @@ Player:
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 7c0
+			landsatscan:
+				OrderName: LandsatScanInfoOrder
+				Types: Ground, Water
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: Ground, Water
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 7c0
 			parabombs:
 				OrderName: ParabombsInfoOrder
 				Types: Structure

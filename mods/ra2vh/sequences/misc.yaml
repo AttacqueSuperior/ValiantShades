@@ -430,6 +430,8 @@ icon:
 	psyreveal: psyricon
 	parabombs: pbombico
 	psydom: pdomicon
+	satscan: scanicon.png
+		AddExtension: false
 
 atomic:
 	up: nkmslup

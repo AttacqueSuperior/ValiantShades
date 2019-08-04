@@ -201,6 +201,15 @@ naradr:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
+	DetonateWeaponPower@PsychicReveal:
+		Icon: psyreveal
+		ChargeInterval: 6000
+		Description: Psychic Reveal
+		LongDesc: Reveals a target area.
+		OrderName: PsychicRevealInfoOrder
+		Weapon: PsychicReveal
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
 
 nayard:
 	Inherits: ^NavalYard

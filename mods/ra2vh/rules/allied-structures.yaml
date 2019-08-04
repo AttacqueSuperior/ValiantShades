@@ -229,6 +229,16 @@ gafcmd:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
+	DetonateWeaponPower@LandsatScan:
+		Icon: satscan
+		IconPalette: scanicon
+		ChargeInterval: 6000
+		Description: Landsat Scan
+		LongDesc: Reveals a target area.
+		OrderName: LandsatScanInfoOrder
+		Weapon: LandsatScan
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
 
 gayard:
 	Inherits: ^NavalYard
