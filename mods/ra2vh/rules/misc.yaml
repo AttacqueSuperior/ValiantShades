@@ -125,7 +125,7 @@ flameguy:
 	WithInfantryBody:
 		IdleSequences: run
 	Health:
-		HP: 160000
+		HP: 240000
 	SelfHealing:
 		Step: -10000
 		HealIfBelow: 101
@@ -137,3 +137,10 @@ flameguy:
 		DeathSequencePalette: flameguy
 		DeathPaletteIsPlayerPalette: false
 	HitShape:
+
+flameguy2:
+	Inherits: flameguy
+	RenderSprites:
+		Image: flameguy
+	Health:
+		HP: 120000

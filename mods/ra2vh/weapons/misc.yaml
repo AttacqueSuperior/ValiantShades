@@ -403,7 +403,7 @@ BuildingDeathFlameGuySpawner2:
 	Projectile: InstantExplode
 	Range: 512
 	Warhead@spawn: SpawnActor
-		Actors: flameguy
+		Actors: flameguy2
 		ForceGround: true
 		OwnerType: InternalName
 	Warhead@Validation: TargetDamage
