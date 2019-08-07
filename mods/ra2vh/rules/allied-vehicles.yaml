@@ -188,6 +188,22 @@ hmmv:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 
+hmmv.ai:
+	Inherits: hmmv
+	RenderSprites:
+		Image: hmmv
+	RenderVoxels:
+		Image: hmmv
+	Cargo:
+		InitialUnits: e1, ggi, e1
+	Selectable:
+		Class: hmmv
+	Buildable:
+		BuildPaletteOrder: 2000
+		Prerequisites: ~gaweap, ~testai
+	AIDeployHelper:
+		DeployChance: 75
+
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

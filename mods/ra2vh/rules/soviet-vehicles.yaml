@@ -258,6 +258,22 @@ htk:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 
+htk.ai:
+	Inherits: htk
+	RenderSprites:
+		Image: htk
+	RenderVoxels:
+		Image: htk
+	Cargo:
+		InitialUnits: e2, flakt, e2, flakt, e2
+	Selectable:
+		Class: htk
+	Buildable:
+		BuildPaletteOrder: 2000
+		Prerequisites: ~naweap, ~testai
+	AIDeployHelper:
+		DeployChance: 75
+
 drgn:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
