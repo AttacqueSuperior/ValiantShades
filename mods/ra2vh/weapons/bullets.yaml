@@ -223,7 +223,7 @@ Hammer120mmE:
 			Concrete: 70
 	Warhead@2Eff: CreateEffect
 		Explosions: apoc_explosion
-		ImpactSounds: gexpapoa.wav
+		ImpactSounds: gexpapoa.wav, gexpapob.wav, gexpapoc.wav
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
