@@ -328,7 +328,7 @@ WolverineTow:
 	Inherits: MissileLauncher
 	ReloadDelay: 15
 	Range: 7c512
-	Report: iggiat2a.wav, iggiat2b.wav
+	Report: missile6.wav
 	ValidTargets: Air, Vehicle
 	Projectile: Missile
 		RangeLimit: 15c0
