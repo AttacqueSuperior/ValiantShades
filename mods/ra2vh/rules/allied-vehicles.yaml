@@ -286,71 +286,6 @@ ltnk:
 		InvalidTargets: NoAutoTarget
 		RequiresCondition: ammo
 
-mnrva:
-	Inherits: ^Vehicle
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Inherits@MC: ^MindControllable
-	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
-	Inherits@Berserk: ^Berserkable
-	Inherits@factionparachute: ^AlliedParachute
-	Inherits@factionrankpips: ^AlliedVeteranRank
-	Valued:
-		Cost: 650
-	Tooltip:
-		Name: Minerva APC
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap, ~disabled
-		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures
-	Mobile:
-		Speed: 140
-		TurnSpeed: 6
-		Locomotor: wheeled
-		PauseOnCondition: disabled || loading
-	Health:
-		HP: 200000
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 8c0
-	RevealOnDeath:
-		Radius: 4c0
-		DeathTypes: DefaultDeath
-	Turreted:
-		TurnSpeed: 5
-	Armament@primary:
-		Weapon: 90mm
-		LocalOffset: 640,0,512
-		RequiresCondition: !rank-elite
-	Armament@elite:
-		Weapon: 90mmE
-		LocalOffset: 640,0,512
-		RequiresCondition: rank-elite
-	AttackTurreted:
-		Voice: Attack
-		PauseOnCondition: disabled
-	AutoTarget:
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	WithVoxelTurret:
-	Voiced:
-		VoiceSet: CivilianAlliedFemaleVoice
-	ProducibleWithLevel:
-		Prerequisites: warfactory.infiltrated
-	HitShape:
-	Cargo:
-		Types: Infantry
-		MaxWeight: 3
-		PipCount: 3
-		PassengerFacing: 0
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
-		UnloadVoice: Move
-		LoadingCondition: loading
-
 mtnk:
 	Inherits: ^StandardTank
 	Inherits@factionparachute: ^AlliedParachute
@@ -967,3 +902,68 @@ bfrt.ai2:
 		BuildPaletteOrder: 10000
 		Prerequisites: garbur, ~gaweap, ~testai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
+
+mnrva:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Valued:
+		Cost: 650
+	Tooltip:
+		Name: Minerva APC
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap, ~disabled
+		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures
+	Mobile:
+		Speed: 140
+		TurnSpeed: 6
+		Locomotor: wheeled
+		PauseOnCondition: disabled || loading
+	Health:
+		HP: 200000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: 90mm
+		LocalOffset: 640,0,512
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: 90mmE
+		LocalOffset: 640,0,512
+		RequiresCondition: rank-elite
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	Cargo:
+		Types: Infantry
+		MaxWeight: 3
+		PipCount: 3
+		PassengerFacing: 0
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
+		LoadingCondition: loading
