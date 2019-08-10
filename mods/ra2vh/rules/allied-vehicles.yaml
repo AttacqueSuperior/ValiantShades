@@ -428,6 +428,8 @@ fv:
 			ghost: ifv-hero
 			snipe: ifv-sniper
 			cleg: ifv-chrono
+			dione: ifv-dione
+			artemis: ifv-artemis
 			#=== Soviet infantry ===
 			sengineer: ifv-repair
 			e2: ifv-mg
@@ -457,7 +459,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default
@@ -485,7 +487,7 @@ fv:
 	Armament@machinegun-elite:
 		Weapon: CRMachineGunE
 		LocalOffset: 188,32,600
-		RequiresCondition: !rank-elite && ifv-mg
+		RequiresCondition: rank-elite && ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Tooltip@machinegun:
@@ -506,6 +508,25 @@ fv:
 	Tooltip@repair:
 		Name: Repair IFV
 		RequiresCondition: ifv-repair
+	#=== Dione ===
+	WithVoxelTurret@dione-machinegun:
+		Sequence: turret-mg
+		RequiresCondition: ifv-dione
+	Armament@dione:
+		Weapon: DioneGun
+		LocalOffset: 188,32,600
+		RequiresCondition: !rank-elite && ifv-dione
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+	Armament@dione-elite:
+		Weapon: DioneGunE
+		LocalOffset: 188,32,600
+		RequiresCondition: rank-elite && ifv-dione
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+	Tooltip@machinegun:
+		Name: Dione Machinegun IFV
+		RequiresCondition: ifv-dione
 	#===========================================
 	#==== Mixed infantry, needs more fixup =====
 	#======= Like custom turrets, etc. =========
@@ -513,7 +534,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-dione
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -548,6 +569,15 @@ fv:
 	Armament@gren-elite:
 		Weapon: GrenadeDiscE
 		RequiresCondition: rank-elite && ifv-gren
+		LocalOffset: 188,0,600
+	#=== Artemis ===
+	Armament@artemis:
+		Weapon: ArtemisMissile
+		RequiresCondition: !rank-elite && ifv-artemis
+		LocalOffset: 188,0,600
+	Armament@artemis-elite:
+		Weapon: ArtemisMissileE
+		RequiresCondition: rank-elite && ifv-artemis
 		LocalOffset: 188,0,600
 	#=== Unfinished modes ===
 	Explodes@demo:
@@ -587,7 +617,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-flak || ifv-tesla
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
