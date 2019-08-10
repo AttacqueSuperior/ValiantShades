@@ -174,7 +174,7 @@ HoverMissile:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
-		ImpactSounds: gexpifva.wav
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 		ValidTargets: Ground, Air
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
@@ -263,7 +263,7 @@ MissileLauncher:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tiny_grey_explosion
-		ImpactSounds: gexpifva.wav
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
