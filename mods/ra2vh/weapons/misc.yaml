@@ -30,7 +30,7 @@ BlimpBomb:
 	Warhead@2Eff: CreateEffect
 		Explosions: kirovtesla
 		ExplosionPalette: rookiera2exp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size1
@@ -79,7 +79,7 @@ SpiritBomb:
 	Warhead@2Eff: CreateEffect
 		Explosions: spirithit
 		ExplosionPalette: rookieapolloexp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
@@ -551,7 +551,7 @@ ParaBomb:
 	Warhead@2Eff: CreateEffect
 		Explosions: kirovtesla
 		ExplosionPalette: rookiera2exp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2

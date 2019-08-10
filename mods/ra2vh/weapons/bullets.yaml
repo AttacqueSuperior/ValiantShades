@@ -144,7 +144,7 @@ MirageGunE:
 	Warhead@2Eff: CreateEffect
 		Explosions: small_clsn
 		ExplosionPalette: rookiera2exp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 
 90mmE:

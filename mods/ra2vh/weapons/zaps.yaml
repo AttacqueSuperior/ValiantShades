@@ -166,7 +166,7 @@ PrismShot:
 	Warhead@2Eff: CreateEffect
 		Explosions: prismtowerhit
 		ExplosionPalette: rookietsexp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallScorch
@@ -201,7 +201,7 @@ Comet:
 	Warhead@2Eff: CreateEffect
 		Explosions: prismhit
 		ExplosionPalette: rookietsexp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@3Shr: FireShrapnel
 		Weapon: CometFragment

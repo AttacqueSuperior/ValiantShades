@@ -62,7 +62,7 @@
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
 		ExplosionPalette: rookiera2exp
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size4

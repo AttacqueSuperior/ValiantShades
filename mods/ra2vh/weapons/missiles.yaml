@@ -79,7 +79,7 @@ Maverick2:
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: verylarge_clsn
-		ImpactSounds: gexp14a.wav
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
