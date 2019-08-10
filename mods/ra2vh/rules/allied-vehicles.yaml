@@ -917,7 +917,7 @@ mnrva:
 		Name: Minerva APC
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 20000
 		Prerequisites: ~gaweap, ~disabled
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures
 	Mobile:
@@ -967,3 +967,19 @@ mnrva:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: loading
+
+mnrva.paradrop:
+	Inherits: mnrva
+	RenderSprites:
+		Image: mnrva
+	RenderVoxels:
+		Image: mnrva
+	Cargo:
+		InitialUnits: dione, dione, artemis
+	Selectable:
+		Class: mnrva
+	Buildable:
+		BuildPaletteOrder: 20001
+		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures\n Preloaded for Demeter Squad.
+	AIDeployHelper:
+		DeployChance: 100

@@ -189,6 +189,28 @@ Player:
 					Attractiveness: -5
 					TargetMetric: None
 					CheckRadius: 8c0
+			demetersquad:
+				OrderName: DemeterSquadInfoOrder
+				Types: Structure
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 2
+					TargetMetric: None
+					CheckRadius: 8c0
+				Consideration@2:
+					Against: Enemy
+					Types: Defense
+					Attractiveness: -3
+					TargetMetric: None
+					CheckRadius: 8c0
+				Consideration@3:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 8c0
 	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
 		BuildingQueues: Building

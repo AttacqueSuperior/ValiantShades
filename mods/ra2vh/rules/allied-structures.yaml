@@ -358,6 +358,21 @@ gatech:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
+	ParatroopersPower@demetersquad:
+		OrderName: DemeterSquadInfoOrder
+		Icon: paradrop
+		ChargeInterval: 9000
+		Description: Demeter Squad
+		LongDesc: 2 Cargo Plane drops preloaded Minervas anywhere on the map.
+		DropItems: mnrva.paradrop, mnrva.paradrop
+		SquadSize: 2
+		QuantizedFacings: 8
+		UnitType: pdplane.allied
+		CameraActor: camera
+		ArrowSequence: arrow
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
+		Cost: 2000
 
 garbur:
 	Inherits: ^Tier4
