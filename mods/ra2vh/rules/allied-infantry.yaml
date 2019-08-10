@@ -972,7 +972,7 @@ dione:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
-		VoiceSet: CivilianAlliedFemaleVoice
+		VoiceSet: RA1TanyaVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -1034,7 +1034,7 @@ artemis:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
-		VoiceSet: CivilianAlliedFemaleVoice
+		VoiceSet: RA1TanyaVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

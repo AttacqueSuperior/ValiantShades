@@ -93,6 +93,15 @@ TanyaVoice:
 		Feedback: itapfea, itapfeb, itapfec, itapfed
 		Die: itandia, itandib, itandic, itapdia, itapdib, itapdic, itapdid, itapdie
 
+RA1TanyaVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ira1tsea, ira1tseb, ira1tsec
+		Move: ira1tmoa, ira1tmob, ira1tmoc, ira1tmod
+		Attack: ira1tata, ira1tatb, ira1tatc, ira1tatd
+		SpecialAttack: ira1texa
+		Die: ira1tdia
+
 AlliedVehicleVoice:
 	DefaultVariant: .wav
 	Voices:
