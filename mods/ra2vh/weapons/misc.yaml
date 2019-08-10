@@ -35,7 +35,7 @@ BlimpBomb:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size1
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
@@ -84,7 +84,7 @@ SpiritBomb:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater
@@ -260,7 +260,7 @@ WeatherBolt:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size6
 		ExplosionPalette: donutwater
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 
 SmallDebris:
@@ -556,7 +556,7 @@ ParaBomb:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch

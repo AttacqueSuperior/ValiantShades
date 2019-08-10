@@ -84,7 +84,7 @@ Maverick2:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwala.wav
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
 		ValidTargets: Water
 
 Maverick2E:
@@ -222,7 +222,7 @@ SubTorpedo:
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size3
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
@@ -314,7 +314,7 @@ PlaneShmel:
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
-		ImpactSounds: gexpwala.wav
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
 		ValidTargets: Water
 
 PlaneShmelE:

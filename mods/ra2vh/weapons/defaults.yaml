@@ -24,7 +24,7 @@
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size5
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
@@ -67,7 +67,7 @@
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size4
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater
@@ -108,7 +108,7 @@
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size5
 		ExplosionPalette: rookiewaterexp
-		ImpactSounds: gexpwasa.wav
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
