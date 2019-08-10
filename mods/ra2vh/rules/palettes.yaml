@@ -33,6 +33,10 @@
 		BaseName: xuetallied2
 		BasePalette: xuetallied2
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PlayerColorPalette@artemis:
+		BaseName: artemis
+		BasePalette: artemis
+		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 	PlayerHighlightPalette:
 	PaletteFromFile@player:
 		Name: player
@@ -69,6 +73,10 @@
 		Name: xuetallied2
 		Filename: xuetall2.pal
 		ShadowIndex: 1
+	PaletteFromFile@artemis:
+		Name: artemis
+		Filename: artemis.pal
+		ShadowIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 	PaletteFromFile@infantry:
 		Name: infantry
 		Filename: unittem.pal

@@ -366,3 +366,43 @@ Maverick3:
 		ImpactSounds: kaboom1.wav
 		ValidTargets: Ground, Air, Water
 	-Warhead@3EffWater:
+
+ArtemisMissile:
+	Inherits: ^Missile
+	ReloadDelay: 75
+	Range: 7c0
+	Report: iggiat2a.wav, iggiat2b.wav
+	Projectile: Missile
+		Image: missile
+		TrailImage: bbblelrg
+		HorizontalRateOfTurn: 12
+		RangeLimit: 14c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 100000
+		ValidTargets: Water, Underwater, Bridge
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 65
+			Concrete: 60
+			Drone: 25
+			Rocket: 100
+		DamageTypes: BulletDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size3
+
+ArtemisMissileE:
+	Inherits: ArtemisMissile
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp

@@ -919,3 +919,74 @@ cleg:
 		InvalidTargets: NoAutoTarget
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
+
+artemis:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 110
+		Prerequisites:  ~gapile, ~disabled
+		Description: Carries a heavy missile launcher.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry, Aircraft
+	Valued:
+		Cost: 450
+	DeliversCash:
+		Payload: 225
+		PlayerExperience: 23
+		Voice: Move
+	Tooltip:
+		Name: Artemis
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 175000
+	RevealsShroud:
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: ArtemisMissile
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: ArtemisMissileE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: ArtemisMissile
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: ArtemisMissileE
+		RequiresCondition: rank-elite
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-TakeCover:
+	RenderSprites:
+		PlayerPalette: artemis
+	WithDeathAnimation@normal:
+		DeathSequencePalette: artemis
+	WithDeathAnimation@die2-explosion:
+		DeathSequencePalette: tsanim
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			AltBulletDeath: 2-explosion
