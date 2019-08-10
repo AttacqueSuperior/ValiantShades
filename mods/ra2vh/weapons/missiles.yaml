@@ -98,7 +98,7 @@ Maverick:
 	Inherits: ^Missile
 	ReloadDelay: 10
 	Range: 6c0
-	Report: vintatta.wav
+	Report: orcamis1.wav
 	ValidTargets: Berserkable
 	InvalidTargets: Air
 	Projectile: Missile
