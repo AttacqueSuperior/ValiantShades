@@ -54,10 +54,28 @@
 	die5: yuridie
 		Length: *
 		Tick: 80
-	die6: electro
+	die6:
+		Combine:
+			electro:
+				Length: 3
+			electro:
+				Length: 3
+			electro:
+				Length: 3
+			electro:
+				Length: 3
+			electro:
+				Length: *
 		Length: *
 		Tick: 80
-	die11: tselectro
+	die11:
+		Combine:
+			tselectro:
+				Length: 3
+			tselectro:
+				Length: 3
+			tselectro:
+				Length: *
 		Length: *
 		Tick: 80
 
