@@ -570,6 +570,13 @@ fv:
 		Weapon: GrenadeDiscE
 		RequiresCondition: rank-elite && ifv-gren
 		LocalOffset: 188,0,600
+	#=== Chrono Legionnaire ===
+	Armament@chrono:
+		Weapon: NeutronRifle
+		RequiresCondition: ifv-chrono
+	Armament@chrono2:
+		Weapon: NeutronRifleVisual
+		RequiresCondition: ifv-chrono
 	#=== Artemis ===
 	Armament@artemis:
 		Weapon: ArtemisMissile
@@ -602,9 +609,6 @@ fv:
 	Armament@flak:
 		Weapon: CRFlakGuyGun
 		RequiresCondition: ifv-flak
-	Armament@chrono:
-		Weapon: CRNeutronRifle
-		RequiresCondition: ifv-chrono
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
@@ -638,6 +642,10 @@ fv:
 	AutoTargetPriority@Repair:
 		RequiresCondition: ifv-repair
 		ValidTargets: Repair
+		InvalidTargets: NoAutoTarget
+	AutoTargetPriority@chrono:
+		RequiresCondition: !stance-attackanything && ifv-chrono
+		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
 	#AutoTargetPriority@INFONLY:
 	#	RequiresCondition: ifv-sniper || ifv-hero

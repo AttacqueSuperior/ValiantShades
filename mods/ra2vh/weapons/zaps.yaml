@@ -313,14 +313,6 @@ NeutronRifleVisual:
 		Explosions: chronosk
 		ValidTargets: Ground, Water
 
-CRNeutronRifle:
-	Inherits: NeutronRifle
-	Range: 6c0
-
-CRNeutronRifleVisual:
-	Inherits: NeutronRifleVisual
-	Range: 6c0
-
 VirusGun:
 	ValidTargets: Ground
 	InvalidTargets: Structure, Wall, ImmuneToRadiation
