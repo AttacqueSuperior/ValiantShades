@@ -383,6 +383,25 @@ cleg:
 		Start: 165
 	icon: clegicon
 
+dione:
+	Inherits: ^BasicInfantry
+	Inherits@MC: ^MindControllable
+	run:
+		Tick: 120
+	die1:
+		Start: 86
+	die2:
+		Start: 101
+	cheer:
+		Start: 165
+	paradrop:
+		Start: 164
+	shoot:
+		Start: 116
+		Facings: 8
+		Length: 6
+	icon: xxicon
+
 artemis:
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable

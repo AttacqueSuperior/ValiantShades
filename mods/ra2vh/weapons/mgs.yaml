@@ -282,3 +282,22 @@ ChainGun.Yak.Right:
 ChainGun.Yak.Left:
 	Inherits: ChainGun.Yak.Right
 	FirstBurstTargetOffset: -512,-213,0
+
+DioneGun:
+	Inherits: ^MG
+	Range: 6c0
+	ReloadDelay: 5
+	Report: chaingn1.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25000
+		Versus:
+			Flak: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
+
+DioneGunE:
+	Inherits: DioneGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

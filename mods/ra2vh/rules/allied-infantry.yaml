@@ -920,6 +920,65 @@ cleg:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
 
+dione:
+	Inherits@1: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~gapile, ~disabled
+		BuildPaletteOrder: 110
+		Description: Rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Valued:
+		Cost: 300
+	DeliversCash:
+		Payload: 150
+		PlayerExperience: 15
+		Voice: Move
+	Tooltip:
+		Name: Dione
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 175000
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 5c0
+	RevealOnDeath:
+		Radius: 2c512
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Armament@primary:
+		Weapon: DioneGun
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: DioneGunE
+		RequiresCondition: rank-elite
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: DioneGun
+		RequiresCondition: !rank-elite
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: DioneGunE
+		RequiresCondition: rank-elite
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-TakeCover:
+
 artemis:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
