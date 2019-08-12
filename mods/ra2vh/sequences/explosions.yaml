@@ -149,3 +149,4 @@ explosion:
 	parabombhit: tss_tumu60
 		Tick: 80
 	wolverinemissilehit: tsxgrymed1
+	artemishit: atmishit

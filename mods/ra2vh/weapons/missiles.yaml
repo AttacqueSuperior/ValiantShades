@@ -396,7 +396,7 @@ ArtemisMissile:
 			Rocket: 100
 		DamageTypes: BulletDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
+		Explosions: artemishit
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size3
