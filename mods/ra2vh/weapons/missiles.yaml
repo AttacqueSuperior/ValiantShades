@@ -335,12 +335,13 @@ WolverineTow:
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
 	Warhead@2Eff: CreateEffect
-		Explosions: small_grey_explosion
+		Explosions: wolverinemissilehit
+		ExplosionPalette: rookietsexp
 
 WolverineTowE:
 	Inherits: WolverineTow
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
+		ExplosionPalette: heroictsexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
 
