@@ -262,7 +262,7 @@ MissileLauncher:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: tiny_grey_explosion
+		Explosions: small_grey_explosion
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: SmallCrater
