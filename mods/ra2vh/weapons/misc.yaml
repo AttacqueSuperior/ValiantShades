@@ -549,8 +549,8 @@ ParaBomb:
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: kirovtesla
-		ExplosionPalette: rookiera2exp
+		Explosions: parabombhit
+		ExplosionPalette: heroictsexp
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
