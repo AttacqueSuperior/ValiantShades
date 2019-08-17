@@ -381,7 +381,6 @@ ArtemisMissile:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 100000
-		ValidTargets: Water, Underwater, Bridge
 		Versus:
 			None: 25
 			Flak: 25
