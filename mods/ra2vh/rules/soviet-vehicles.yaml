@@ -728,7 +728,7 @@ mind:
 		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Armament:
-		Weapon: MindControl
+		Weapon: MasterMindControl
 		LocalOffset: 0,0,960
 	MindController:
 		ControllingCondition: controlling
@@ -757,5 +757,17 @@ mind:
 	HitShape:
 	ExplodeWeapon@brainwaveoverload:
 		RequiresCondition: controlling > 2
+		Weapon: BrainWaveOverload
+		LocalOffset: 0,0,384
+	ExplodeWeapon@brainwaveoverload2:
+		RequiresCondition: controlling > 4
+		Weapon: BrainWaveOverload
+		LocalOffset: 0,0,384
+	ExplodeWeapon@brainwaveoverload3:
+		RequiresCondition: controlling > 8
+		Weapon: BrainWaveOverload
+		LocalOffset: 0,0,384
+	ExplodeWeapon@brainwaveoverload4:
+		RequiresCondition: controlling > 16
 		Weapon: BrainWaveOverload
 		LocalOffset: 0,0,384

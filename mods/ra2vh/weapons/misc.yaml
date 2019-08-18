@@ -124,6 +124,11 @@ SuperMindControl:
 	Inherits: MindControl
 	Range: 30c0
 
+MasterMindControl:
+	Inherits: MindControl
+	Range: 6c0
+	ReloadDelay: 10
+
 PsiWave:
 	ReloadDelay: 100
 	Range: 1c0
