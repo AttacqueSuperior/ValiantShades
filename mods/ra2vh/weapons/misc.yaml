@@ -107,6 +107,7 @@ RepairBullet:
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: -50000
+		AffectsParent: true
 		ValidTargets: Repair
 	Warhead@spark: FireShrapnel
 		Weapon: TeslaSpark
