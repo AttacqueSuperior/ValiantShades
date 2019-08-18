@@ -298,6 +298,20 @@ htk.ai:
 	AIDeployHelper:
 		DeployChance: 75
 
+htk.ai-repair:
+	Inherits: htk
+	RenderSprites:
+		Image: htk
+	RenderVoxels:
+		Image: htk
+	Cargo:
+		InitialUnits: sengineer
+	Selectable:
+		Class: htk
+	Buildable:
+		BuildPaletteOrder: 2000
+		Prerequisites: ~naweap, ~testai
+
 drgn:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
