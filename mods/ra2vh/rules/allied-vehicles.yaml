@@ -536,7 +536,7 @@ fv:
 		Sequence: turret-repair
 		RequiresCondition: ifv-repair
 	Armament@repair:
-		Weapon: RepairBullet
+		Weapon: IFVRepairBullet
 		LocalOffset: 164,0,864
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench

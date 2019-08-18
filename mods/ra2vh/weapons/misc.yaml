@@ -119,6 +119,11 @@ RepairBullet:
 		AffectsParent: true
 		ValidTargets: Ground, Water, Air
 
+IFVRepairBullet:
+	Inherits: RepairBullet
+	ReloadDelay: 50
+	Range: 4c512
+
 MindControl:
 	ReloadDelay: 200
 	Range: 7c0
