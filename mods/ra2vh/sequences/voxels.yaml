@@ -121,7 +121,7 @@ hornet:
 htk:
 	idle:
 	turret: htktur
-	barrel: htkbarl
+	turret-repair: htktur1
 
 htnk:
 	idle:

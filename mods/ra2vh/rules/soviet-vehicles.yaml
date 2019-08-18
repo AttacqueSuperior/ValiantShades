@@ -197,7 +197,7 @@ htk:
 	Inherits@factionparachute: ^SovietParachute
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
-		Cost: 500
+		Cost: 525
 	Tooltip:
 		Name: Flak Track
 	Selectable:
@@ -206,7 +206,7 @@ htk:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~naweap
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 120
 		TurnSpeed: 5
@@ -229,34 +229,58 @@ htk:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: loading
+		PassengerConditions:
+			aengineer: repairmode
+			sengineer: repairmode
+			engineer: repairmode
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !repairmode && !rank-elite
 	Armament@elite:
 		Weapon: FlakTrackGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: !repairmode && rank-elite
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !repairmode && !rank-elite
 	Armament@secondary-elite:
 		Weapon: FlakTrackAAGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: !repairmode && rank-elite
 	Turreted:
 		TurnSpeed: 15
-		Offset: -280,-3,0
+		Offset: -280,0,0
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
+		RequiresCondition: !repairmode
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: FlakTrackVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !repairmode && !stance-attackanything && !assault-move
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: !repairmode && (stance-attackanything || assault-move)
+	WithVoxelTurret@engineer:
+		Sequence: turret-repair
+		RequiresCondition: repairmode
+	Armament@repair:
+		Weapon: RepairBullet
+		LocalOffset: 164,0,864
+		RequiresCondition: repairmode
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
+	AutoTargetPriority@Repair:
+		RequiresCondition: repairmode
+		ValidTargets: Repair
+		InvalidTargets: NoAutoTarget
 
 htk.ai:
 	Inherits: htk
