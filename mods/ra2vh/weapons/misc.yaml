@@ -522,7 +522,7 @@ BrainWaveOverload:
 		AffectsParent: true
 		Spread: 1
 		Falloff: 100, 0
-		Damage: 5000
+		Damage: 15000
 		DamageTypes: BulletDeath, DefaultDeath
 	Warhead@op: FireShrapnel
 		Weapon: DamageSpark
