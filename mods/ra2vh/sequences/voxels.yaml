@@ -113,6 +113,7 @@ hind:
 hmmv:
 	idle:
 	turret: hmmvtur
+	turret-repair: hmmvtur1
 
 hornet:
 	idle:

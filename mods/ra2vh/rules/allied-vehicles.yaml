@@ -134,7 +134,7 @@ hmmv:
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
-		Cost: 400
+		Cost: 425
 	Tooltip:
 		Name: Humvee
 	Selectable:
@@ -143,7 +143,7 @@ hmmv:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~gaweap
-		Description: Infantry Transport and Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
+		Description: Infantry Transport and Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 140
 		TurnSpeed: 6
@@ -166,27 +166,51 @@ hmmv:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: loading
+		PassengerConditions:
+			aengineer: repairmode
+			sengineer: repairmode
+			engineer: repairmode
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
 	AutoTarget:
 	Armament@primary:
 		Weapon: HumveeGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !repairmode && !rank-elite
 	Armament@elite:
 		Weapon: HumveeGun
-		RequiresCondition: rank-elite
+		RequiresCondition: !repairmode && rank-elite
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
+		RequiresCondition: !repairmode
 	Voiced:
 		VoiceSet: HumveeVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !repairmode && !stance-attackanything && !assault-move
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: !repairmode && (stance-attackanything || assault-move)
+	WithVoxelTurret@engineer:
+		Sequence: turret-repair
+		RequiresCondition: repairmode
+	Armament@repair:
+		Weapon: RepairBullet
+		LocalOffset: 164,0,864
+		RequiresCondition: repairmode
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
+	AutoTargetPriority@Repair:
+		RequiresCondition: repairmode
+		ValidTargets: Repair
+		InvalidTargets: NoAutoTarget
 
 hmmv.ai:
 	Inherits: hmmv
