@@ -283,7 +283,7 @@ Player:
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -300,6 +300,7 @@ Player:
 			cmin: 5
 			hmmv: 10
 			hmmv.ai: 12
+			hmmv.ai-repair: 4
 			ltnk: 20
 			mtnk: 20
 			fv: 15
@@ -337,6 +338,7 @@ Player:
 		UnitLimits:
 			dog: 4
 			cmin: 6
+			hmmv.ai-repair: 2
 			beag: 6
 			orca: 2
 			spirit: 2

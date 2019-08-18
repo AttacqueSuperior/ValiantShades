@@ -228,6 +228,20 @@ hmmv.ai:
 	AIDeployHelper:
 		DeployChance: 75
 
+hmmv.ai-repair:
+	Inherits: hmmv
+	RenderSprites:
+		Image: hmmv
+	RenderVoxels:
+		Image: hmmv
+	Cargo:
+		InitialUnits: aengineer
+	Selectable:
+		Class: hmmv
+	Buildable:
+		BuildPaletteOrder: 2000
+		Prerequisites: ~gaweap, ~testai
+
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
