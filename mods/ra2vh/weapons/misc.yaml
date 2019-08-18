@@ -99,15 +99,25 @@ SpiritBombE:
 
 RepairBullet:
 	ReloadDelay: 80
-	Range: 1c819
+	Range: 2c512
 	Report: vifvrepa.wav
 	ValidTargets: Repair
-	Projectile: BulletAS
-		Speed: 1c682
+	Projectile: ElectricBolt
+		Colors: BBBBBB, CCCCCC, DDDDDD
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: -50000
 		ValidTargets: Repair
+	Warhead@spark: FireShrapnel
+		Weapon: TeslaSpark
+		Amount: 6
+		AffectsParent: true
+		ValidTargets: Ground, Water, Air
+	Warhead@spark2: FireShrapnel
+		Weapon: DamageSpark
+		Amount: 6
+		AffectsParent: true
+		ValidTargets: Ground, Water, Air
 
 MindControl:
 	ReloadDelay: 200
