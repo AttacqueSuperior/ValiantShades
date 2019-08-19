@@ -84,6 +84,7 @@ flata:
 fv:
 	idle:
 	turret-missile: fvtur
+	turret-boosted: fvtur-boosted
 	turret-mg: fvtur-mg
 	turret-repair: fvtur-repair
 	turret-grenadier: fvtur-grenadier

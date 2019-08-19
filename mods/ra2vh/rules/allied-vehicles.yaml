@@ -500,7 +500,10 @@ fv:
 		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis
 	WithVoxelTurret@default:
 		Sequence: turret-missile
-		RequiresCondition: ifv-default
+		RequiresCondition: ifv-default && !ifv-firepowerbonus
+	WithVoxelTurret@default-boosted:
+		Sequence: turret-boosted
+		RequiresCondition: ifv-default && ifv-firepowerbonus
 	Armament@default:
 		Weapon: HoverMissile
 		LocalOffset: 128,-128,1024, 128,128,1024
