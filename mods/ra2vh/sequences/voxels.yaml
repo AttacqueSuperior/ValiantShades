@@ -86,6 +86,7 @@ fv:
 	turret-missile: fvtur
 	turret-mg: fvtur-mg
 	turret-repair: fvtur-repair
+	turret-grenadier: fvtur-grenadier
 	turret-hitech: fvtur-hitech
 
 gtgcan:

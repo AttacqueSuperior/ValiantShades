@@ -562,9 +562,24 @@ fv:
 		RequiresCondition: rank-elite && ifv-dione
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
-	Tooltip@machinegun:
+	Tooltip@dione-machinegun:
 		Name: Dione Machinegun IFV
 		RequiresCondition: ifv-dione
+	#=== Grenadier ===
+	WithVoxelTurret@grenadier:
+		Sequence: turret-grenadier
+		RequiresCondition: ifv-gren
+	Armament@gren:
+		Weapon: GrenadeDisc
+		RequiresCondition: !rank-elite && ifv-gren
+		LocalOffset: 188,0,600
+	Armament@gren-elite:
+		Weapon: GrenadeDiscE
+		RequiresCondition: rank-elite && ifv-gren
+		LocalOffset: 188,0,600
+	Tooltip@grenadier:
+		Name: Grenadier IFV
+		RequiresCondition: ifv-gren
 	#===========================================
 	#==== Mixed infantry, needs more fixup =====
 	#======= Like custom turrets, etc. =========
@@ -572,7 +587,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-dione
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-dione && !ifv-gren
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -599,15 +614,6 @@ fv:
 		Weapon: MissileLauncherAAE
 		RequiresCondition: rank-elite && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
-	#=== Grenadier ===
-	Armament@gren:
-		Weapon: GrenadeDisc
-		RequiresCondition: !rank-elite && ifv-gren
-		LocalOffset: 188,0,600
-	Armament@gren-elite:
-		Weapon: GrenadeDiscE
-		RequiresCondition: rank-elite && ifv-gren
-		LocalOffset: 188,0,600
 	#=== Chrono Legionnaire ===
 	Armament@chrono:
 		Weapon: NeutronRifle
