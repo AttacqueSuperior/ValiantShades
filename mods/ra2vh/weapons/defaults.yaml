@@ -160,9 +160,9 @@
 			Light: 50
 			Medium: 25
 			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
+			Wood: 37
+			Steel: 25
+			Concrete: 12
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, DefaultDeath
