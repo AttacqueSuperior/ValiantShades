@@ -322,12 +322,12 @@ GameSpeeds:
 		OrderLatency: 3
 	fast:
 		Name: Fast
-		Timestep: 35
+		Timestep: 33
 		OrderLatency: 4
 	faster:
 		Name: Faster
-		Timestep: 30
-		OrderLatency: 4
+		Timestep: 25
+		OrderLatency: 6
 	fastest:
 		Name: Fastest
 		Timestep: 16
