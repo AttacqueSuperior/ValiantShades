@@ -388,15 +388,16 @@ napsyd:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -42
-		UseTilesetCode: false
-		-TilesetOverrides:
-	idle: ngpsyd
+	idle: ngpsyd_a
 		Length: 15
 		ShadowStart: 30
-	damaged-idle: ngpsyd
+	damaged-idle: ngpsyd_a
 		Start: 15
 		Length: 15
 		ShadowStart: 45
+	idle-bottom: ngpsyd
+	damaged-idle-bottom: ngpsyd
+		Start: 1
 	active:
 		Combine:
 			ngpsyd_f:
@@ -418,6 +419,9 @@ napsyd:
 	make: ngpsydmk
 		Length: 25
 		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	icon: xxicon
 
 nairon:

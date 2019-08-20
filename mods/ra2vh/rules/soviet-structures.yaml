@@ -684,7 +684,10 @@ napsyd:
 	Armor:
 		Type: Concrete
 	WithSpriteBody:
-		PauseOnCondition: disabled	
+		PauseOnCondition: disabled
+	WithIdleOverlay@bottom:
+		Sequence: idle-bottom
+		RequiresCondition: !build-incomplete
 	RevealsShroud:
 		Range: 4c0
 	RevealsShroudToIntelligenceOwner:
