@@ -549,6 +549,32 @@ fv:
 	Tooltip@repair:
 		Name: Repair IFV
 		RequiresCondition: ifv-repair
+	#=== Guardian GI ===
+	WithVoxelTurret@ggi:
+		Sequence: turret-ggi
+		RequiresCondition: ifv-ggi
+	FirepowerMultiplier@ggi-deploy-buff:
+		RequiresCondition: ifv-ggi
+		Modifier: 125
+	Armament@ggi:
+		Weapon: MissileLauncher
+		RequiresCondition: !rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-elite:
+		Weapon: MissileLauncherE
+		RequiresCondition: rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-aa:
+		Weapon: MissileLauncherAA
+		RequiresCondition: !rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Armament@ggi-aa-elite:
+		Weapon: MissileLauncherAAE
+		RequiresCondition: rank-elite && ifv-ggi
+		LocalOffset: 128,-128,1024, 128,128,1024
+	Tooltip@dione-machinegun:
+		Name: Guardian GI IFV
+		RequiresCondition: ifv-ggi
 	#=== Dione ===
 	WithVoxelTurret@dione-machinegun:
 		Sequence: turret-mg
@@ -590,33 +616,13 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-dione && !ifv-gren
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
 	Tooltip@hitech:
 		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
-	#=== Guardian GI ===
-	FirepowerMultiplier@ggi-deploy-buff:
-		RequiresCondition: ifv-ggi
-		Modifier: 125
-	Armament@ggi:
-		Weapon: MissileLauncher
-		RequiresCondition: !rank-elite && ifv-ggi
-		LocalOffset: 128,-128,1024, 128,128,1024
-	Armament@ggi-elite:
-		Weapon: MissileLauncherE
-		RequiresCondition: rank-elite && ifv-ggi
-		LocalOffset: 128,-128,1024, 128,128,1024
-	Armament@ggi-aa:
-		Weapon: MissileLauncherAA
-		RequiresCondition: !rank-elite && ifv-ggi
-		LocalOffset: 128,-128,1024, 128,128,1024
-	Armament@ggi-aa-elite:
-		Weapon: MissileLauncherAAE
-		RequiresCondition: rank-elite && ifv-ggi
-		LocalOffset: 128,-128,1024, 128,128,1024
 	#=== Chrono Legionnaire ===
 	Armament@chrono:
 		Weapon: NeutronRifle
