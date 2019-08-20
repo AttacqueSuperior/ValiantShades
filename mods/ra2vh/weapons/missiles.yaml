@@ -148,7 +148,7 @@ MedusaE:
 
 HoverMissile:
 	Inherits: ^Missile
-	ReloadDelay: 50
+	ReloadDelay: 25
 	Burst: 2
 	Range: 6c0
 	Report: vifvatta.wav
@@ -157,7 +157,7 @@ HoverMissile:
 		RangeLimit: 12c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 25000
+		Damage: 13000
 		ValidTargets: Ground, Air
 		Versus:
 			None: 100
