@@ -572,7 +572,7 @@ fv:
 		Weapon: MissileLauncherAAE
 		RequiresCondition: rank-elite && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
-	Tooltip@dione-machinegun:
+	Tooltip@ggi:
 		Name: Guardian GI IFV
 		RequiresCondition: ifv-ggi
 	#=== Dione ===
