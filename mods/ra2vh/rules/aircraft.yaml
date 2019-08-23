@@ -500,6 +500,7 @@ pdplane:
 	Tooltip:
 		Name: Cargo Plane
 	Aircraft:
+		IdleBehavior: LeaveMap
 		Repulsable: false
 		CruiseAltitude: 5600
 		TurnSpeed: 5
@@ -585,12 +586,12 @@ badger:
 		Bounds: 64, 52, 0, -6
 	-Buildable:
 	-RevealsShroud:
-	FlyAwayOnIdle:
-	-ReturnOnIdle:
 	AutoTarget:
 		ScanRadius: 6
 	-Rearmable:
 	RejectsOrders:
+	Aircraft:
+		IdleBehavior: LeaveMap
 
 badgerhusk:
 	Inherits: ^PlaneHusk

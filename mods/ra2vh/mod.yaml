@@ -191,7 +191,6 @@ ChromeLayout:
 	common|chrome/dropdowns.yaml
 	common|chrome/editor.yaml
 	common|chrome/playerprofile.yaml
-	common|chrome/dialog-hotkey.yaml
 
 Weapons:
 	ra2vh|weapons/bullets.yaml

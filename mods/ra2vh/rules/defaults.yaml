@@ -927,20 +927,19 @@
 		InitialFacing: 224
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-	ReturnOnIdle:
 	WithVoxelBody:
 	GpsDotAS:
 		Sequence: plane
 
 ^SpawnedPlane:
 	Inherits: ^Plane
-	-ReturnOnIdle:
 	-Selectable:
 	Interactable:
 	-DeathSounds:
 	-ActorLostNotification:
 	RejectsOrders:
 	Aircraft:
+		IdleBehavior: None
 		Repulsable: False
 		Speed: 273
 	Explodes:
