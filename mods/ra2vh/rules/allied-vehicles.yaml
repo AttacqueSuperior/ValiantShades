@@ -464,6 +464,7 @@ fv:
 			gren: ifv-gren
 			tany: ifv-hero
 			ghost: ifv-seal
+			ccommand: ifv-seal
 			snipe: ifv-sniper
 			cleg: ifv-chrono
 			dione: ifv-dione
