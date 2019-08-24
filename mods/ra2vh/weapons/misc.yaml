@@ -568,7 +568,7 @@ ParaBomb:
 			Concrete: 50
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, TeslaDeath, DefaultDeath
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: parabombhit
 		ExplosionPalette: heroictsexp
