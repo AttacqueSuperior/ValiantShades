@@ -167,10 +167,10 @@ zep:
 		Type: CenterPosition
 	Armament:
 		Weapon: BlimpBomb
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: BlimpBombE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled

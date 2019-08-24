@@ -44,18 +44,18 @@ e2:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: M1Carbine
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: M1CarbineE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: M1Carbine
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: M1CarbineE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -103,35 +103,35 @@ flakt:
 	Armament@primary:
 		Weapon: FlakGuyGun
 		LocalOffset: 256,0,1024
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
 		LocalOffset: 256,0,1024
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
 		LocalOffset: 256,0,1024
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
 		LocalOffset: 256,0,1024
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@primary-opentopped:
 		Name: opentopped
 		Weapon: FlakGuyGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@secondary-opentopped:
 		Name: opentopped
 		Weapon: FlakGuyAAGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@primary-elite-opentopped:
 		Name: opentopped
 		Weapon: FlakGuyGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@secondary-elite-opentopped:
 		Name: opentopped
 		Weapon: FlakGuyAAGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -191,10 +191,10 @@ shk:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: ElectricBolt
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: ElectricBoltE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@charge:
 		Name: secondary
 		Weapon: AssaultBolt
@@ -206,11 +206,11 @@ shk:
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: ElectricBolt
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: ElectricBoltE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AmmoPool:
 		PipCount: 0
 	ReloadAmmoPool:
@@ -286,12 +286,12 @@ terror:
 		Weapon: PlaceC4
 		Cursor: c4
 		OutsideRangeCursor: c4
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@sapper-elite:
 		Weapon: PlaceC4E
 		Cursor: c4
 		OutsideRangeCursor: c4
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AutoTarget:
 		AttackAnythingCondition: stance-attackanything
 		ScanRadius: 4
@@ -349,18 +349,18 @@ deso:
 		PipType: Red
 	Armament@primary:
 		Weapon: RadBeamWeapon
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: RadBeamWeaponE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: RadBeamWeapon
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: RadBeamWeaponE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -417,10 +417,10 @@ ivan:
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: PlaceIvanBomb
-	#	RequiresCondition: !rank-elite
+	#	RequiresCondition: !rank-heroic
 	# Armament@elite:
 	#	Weapon: IvanBomberE
-	#	RequiresCondition: rank-elite
+	#	RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		Cursor: bomb
@@ -592,18 +592,18 @@ virus:
 		PipType: Green
 	Armament@primary:
 		Weapon: VirusGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: VirusGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: VirusGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: VirusGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -654,10 +654,10 @@ boris:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: AKM
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: AKME
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@secondary:
 		Weapon: Flare
 		Name: secondary

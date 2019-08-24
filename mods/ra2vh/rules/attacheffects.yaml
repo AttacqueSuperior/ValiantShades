@@ -3,71 +3,112 @@
 		Conditions:
 			500: rank-veteran
 			1000: rank-elite
+			1666: rank-heroic
 		LevelUpImage: crate-effects
-	FirepowerMultiplier@VETERAN:
-		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 110
-	FirepowerMultiplier@ELITE:
+	FirepowerMultiplier@veteran:
+		RequiresCondition: rank-veteran
+		Modifier: 116
+	FirepowerMultiplier@elite:
 		RequiresCondition: rank-elite
-		Modifier: 130
-	DamageMultiplier@VETERAN:
-		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 90
-	DamageMultiplier@ELITE:
+		Modifier: 116
+	FirepowerMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 116
+	DamageMultiplier@veteran:
+		RequiresCondition: rank-veteran
+		Modifier: 88
+	DamageMultiplier@elite:
 		RequiresCondition: rank-elite
-		Modifier: 75
-	SpeedMultiplier@VETERAN:
-		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 120
-	SpeedMultiplier@ELITE:
+		Modifier: 88
+	DamageMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 88
+	SpeedMultiplier@veteran:
+		RequiresCondition: rank-veteran
+		Modifier: 116
+	SpeedMultiplier@elite:
 		RequiresCondition: rank-elite
-		Modifier: 140
-	ReloadDelayMultiplier@VETERAN:
-		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 90
-	ReloadDelayMultiplier@ELITE:
+		Modifier: 116
+	SpeedMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 116
+	ReloadDelayMultiplier@veteran:
+		RequiresCondition: rank-veteran
+		Modifier: 80
+	ReloadDelayMultiplier@elite:
 		RequiresCondition: rank-elite
-		Modifier: 75
-	ReloadAmmoDelayMultiplier@VETERAN:
-		RequiresCondition: rank-veteran && !rank-elite
-		Modifier: 90
-	ReloadAmmoDelayMultiplier@ELITE:
+		Modifier: 80
+	ReloadDelayMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 80
+	ReloadAmmoDelayMultiplier@veteran:
+		RequiresCondition: rank-veteran
+		Modifier: 80
+	ReloadAmmoDelayMultiplier@elite:
 		RequiresCondition: rank-elite
-		Modifier: 75
-	SelfHealing@ELITE:
-		Step: 2000
+		Modifier: 80
+	ReloadAmmoDelayMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 80
+	SelfHealing@elite:
+		Step: 0
+		PercentageStep: 1
 		Delay: 100
 		HealIfBelow: 100
-		DamageCooldown: 125
+		DamageCooldown: 150
+		RequiresCondition: rank-elite && !rank-heroic
+	SelfHealing@heroic:
+		Step: 0
+		PercentageStep: 1
+		Delay: 50
+		HealIfBelow: 100
+		DamageCooldown: 75
+		RequiresCondition: rank-heroic
+	GivesExperienceMultiplier@veteran:
 		RequiresCondition: rank-veteran && !rank-elite
-	InaccuracyMultiplier@ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 50
-	WithDecoration@VETERAN:
+		Modifier: 250
+	GivesExperienceMultiplier@elite:
+		RequiresCondition: rank-elite && !rank-heroic
+		Modifier: 500
+	GivesExperienceMultiplier@heroic:
+		RequiresCondition: rank-heroic
+		Modifier: 888
+	WithDecoration@veteran:
 		Image: rank
 		Sequence: veteran
 		Palette: pips
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
-	WithDecoration@ELITE:
+	WithDecoration@elite:
 		Image: rank
 		Sequence: elite
 		Palette: pips
 		ReferencePoint: Bottom, Right
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-elite && !rank-heroic
+		ZOffset: 256
+	WithDecoration@heroic:
+		Image: rank
+		Sequence: heroic
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-heroic
 		ZOffset: 256
 
 ^AlliedVeteranRank:
-	WithDecoration@VETERAN:
+	WithDecoration@veteran:
 		Image: allied-rank
-	WithDecoration@ELITE:
+	WithDecoration@elite:
+		Image: allied-rank
+	WithDecoration@heroic:
 		Image: allied-rank
 
 ^SovietVeteranRank:
-	WithDecoration@VETERAN:
+	WithDecoration@veteran:
 		Image: soviet-rank
-	WithDecoration@ELITE:
+	WithDecoration@elite:
+		Image: soviet-rank
+	WithDecoration@heroic:
 		Image: soviet-rank
 
 ^BuildingParticles:

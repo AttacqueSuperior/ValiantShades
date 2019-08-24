@@ -78,12 +78,12 @@ dest:
 		Weapon: 155mm
 		LocalOffset: 1024,0,768
 		FireDelay: 2
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 1024,0,768
 		FireDelay: 2
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled

@@ -25,9 +25,9 @@
 	Turreted:
 		TurnSpeed: 5
 	Armament@primary:
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled

@@ -176,10 +176,10 @@ hmmv:
 	AutoTarget:
 	Armament@primary:
 		Weapon: HumveeGun
-		RequiresCondition: !repairmode && !rank-elite
+		RequiresCondition: !repairmode && !rank-heroic
 	Armament@elite:
 		Weapon: HumveeGunE
-		RequiresCondition: !repairmode && rank-elite
+		RequiresCondition: !repairmode && rank-heroic
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
@@ -278,23 +278,23 @@ ltnk:
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 640,0,512
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 640,0,512
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@tow:
 		Name: secondary
 		Weapon: WolverineTow
 		LocalOffset: 320,600,512
 		PauseOnCondition: !ammo
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@tow-elite:
 		Name: secondary
 		Weapon: WolverineTowE
 		LocalOffset: 320,600,512
 		PauseOnCondition: !ammo
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AmmoPool:
 		Armaments: secondary
 		Ammo: 2
@@ -381,11 +381,11 @@ tnkd:
 	Armament@primary:
 		Weapon: sabot
 		LocalOffset: 704,0,768
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: sabotE
 		LocalOffset: 704,0,768
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -507,11 +507,11 @@ fv:
 	Armament@default:
 		Weapon: HoverMissile
 		LocalOffset: 128,-128,1024, 128,128,1024
-		RequiresCondition: !rank-elite && ifv-default
+		RequiresCondition: !rank-heroic && ifv-default
 	Armament@default-elite:
 		Weapon: HoverMissileE
 		LocalOffset: 128,-128,1024, 128,128,1024
-		RequiresCondition: rank-elite && ifv-default
+		RequiresCondition: rank-heroic && ifv-default
 	Tooltip@default:
 		Name: Rocket IFV
 		RequiresCondition: ifv-default
@@ -522,13 +522,13 @@ fv:
 	Armament@machinegun:
 		Weapon: CRMachineGun
 		LocalOffset: 188,32,600
-		RequiresCondition: !rank-elite && ifv-mg
+		RequiresCondition: !rank-heroic && ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Armament@machinegun-elite:
 		Weapon: CRMachineGunE
 		LocalOffset: 188,32,600
-		RequiresCondition: rank-elite && ifv-mg
+		RequiresCondition: rank-heroic && ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Tooltip@machinegun:
@@ -558,19 +558,19 @@ fv:
 		Modifier: 125
 	Armament@ggi:
 		Weapon: MissileLauncher
-		RequiresCondition: !rank-elite && ifv-ggi
+		RequiresCondition: !rank-heroic && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
 	Armament@ggi-elite:
 		Weapon: MissileLauncherE
-		RequiresCondition: rank-elite && ifv-ggi
+		RequiresCondition: rank-heroic && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
 	Armament@ggi-aa:
 		Weapon: MissileLauncherAA
-		RequiresCondition: !rank-elite && ifv-ggi
+		RequiresCondition: !rank-heroic && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
 	Armament@ggi-aa-elite:
 		Weapon: MissileLauncherAAE
-		RequiresCondition: rank-elite && ifv-ggi
+		RequiresCondition: rank-heroic && ifv-ggi
 		LocalOffset: 128,-128,1024, 128,128,1024
 	Tooltip@ggi:
 		Name: Guardian GI IFV
@@ -582,13 +582,13 @@ fv:
 	Armament@dione:
 		Weapon: DioneGun
 		LocalOffset: 188,32,600
-		RequiresCondition: !rank-elite && ifv-dione
+		RequiresCondition: !rank-heroic && ifv-dione
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Armament@dione-elite:
 		Weapon: DioneGunE
 		LocalOffset: 188,32,600
-		RequiresCondition: rank-elite && ifv-dione
+		RequiresCondition: rank-heroic && ifv-dione
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Tooltip@dione-machinegun:
@@ -600,11 +600,11 @@ fv:
 		RequiresCondition: ifv-gren
 	Armament@gren:
 		Weapon: GrenadeDisc
-		RequiresCondition: !rank-elite && ifv-gren
+		RequiresCondition: !rank-heroic && ifv-gren
 		LocalOffset: 188,0,600
 	Armament@gren-elite:
 		Weapon: GrenadeDiscE
-		RequiresCondition: rank-elite && ifv-gren
+		RequiresCondition: rank-heroic && ifv-gren
 		LocalOffset: 188,0,600
 	Tooltip@grenadier:
 		Name: Grenadier IFV
@@ -615,11 +615,11 @@ fv:
 		RequiresCondition: ifv-seal
 	Armament@seal:
 		Weapon: CRMP5
-		RequiresCondition: !rank-elite && ifv-seal
+		RequiresCondition: !rank-heroic && ifv-seal
 		LocalOffset: 188,0,600
 	Armament@seal-elite:
 		Weapon: CRMP5E
-		RequiresCondition: rank-elite && ifv-seal
+		RequiresCondition: rank-heroic && ifv-seal
 		LocalOffset: 188,0,600
 	Tooltip@seal:
 		Name: Heavy Machinegun IFV
@@ -645,19 +645,19 @@ fv:
 		RequiresCondition: ifv-flak
 	Armament@flak:
 		Weapon: FlakGuyGun
-		RequiresCondition: !rank-elite && ifv-flak
+		RequiresCondition: !rank-heroic && ifv-flak
 		LocalOffset: 128,0,1536
 	Armament@flak-elite:
 		Weapon: FlakGuyGunE
-		RequiresCondition: rank-elite && ifv-flak
+		RequiresCondition: rank-heroic && ifv-flak
 		LocalOffset: 128,0,1536
 	Armament@flak-aa:
 		Weapon: FlakGuyAAGun
-		RequiresCondition: !rank-elite && ifv-flak
+		RequiresCondition: !rank-heroic && ifv-flak
 		LocalOffset: 128,0,1536
 	Armament@flak-aa-elite:
 		Weapon: FlakGuyAAGun
-		RequiresCondition: rank-elite && ifv-flak
+		RequiresCondition: rank-heroic && ifv-flak
 		LocalOffset: 128,0,1536
 	Tooltip@flak:
 		Name: Flak Trooper IFV
@@ -668,11 +668,11 @@ fv:
 		RequiresCondition: ifv-tesla
 	Armament@tesla:
 		Weapon: ElectricBolt
-		RequiresCondition: !rank-elite && ifv-tesla
+		RequiresCondition: !rank-heroic && ifv-tesla
 		LocalOffset: 188,0,600
 	Armament@tesla-elite:
 		Weapon: ElectricBoltE
-		RequiresCondition: rank-elite && ifv-tesla
+		RequiresCondition: rank-heroic && ifv-tesla
 		LocalOffset: 188,0,600
 	Tooltip@tesla:
 		Name: Tesla Trooper IFV
@@ -694,11 +694,11 @@ fv:
 	#=== Artemis ===
 	Armament@artemis:
 		Weapon: ArtemisMissile
-		RequiresCondition: !rank-elite && ifv-artemis
+		RequiresCondition: !rank-heroic && ifv-artemis
 		LocalOffset: 188,0,600
 	Armament@artemis-elite:
 		Weapon: ArtemisMissileE
-		RequiresCondition: rank-elite && ifv-artemis
+		RequiresCondition: rank-heroic && ifv-artemis
 		LocalOffset: 188,0,600
 	#=== Unfinished modes ===
 	Explodes@demo:
@@ -859,11 +859,11 @@ sref:
 	Armament@primary:
 		Weapon: Comet
 		LocalOffset: 240,0,1280
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: SuperComet
 		LocalOffset: 240,0,1280
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -932,11 +932,11 @@ mgtk:
 	Armament@primary:
 		Weapon: MirageGun
 		LocalOffset: 640,0,640
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: MirageGunE
 		LocalOffset: 640,0,640
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1100,11 +1100,11 @@ mnrva:
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 640,0,512
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 640,0,512
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled

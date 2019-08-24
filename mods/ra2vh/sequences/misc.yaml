@@ -136,16 +136,22 @@ rank:
 	veteran: vpips
 	elite: vpips
 		Start: 1
+	heroic: vpips
+		Start: 2
 
 allied-rank:
 	veteran: avpips
 	elite: avpips
 		Start: 1
+	heroic: avpips
+		Start: 2
 
 soviet-rank:
 	veteran: svpips
 	elite: svpips
 		Start: 1
+	heroic: svpips
+		Start: 2
 
 mpspawn:
 	idle:

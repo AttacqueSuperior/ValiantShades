@@ -53,28 +53,28 @@ e1:
 		RequiresCondition: deployed
 	Armament@primary:
 		Weapon: M60
-		RequiresCondition: !deployed && !rank-elite
+		RequiresCondition: !deployed && !rank-heroic
 	Armament@elite:
 		Weapon: M60E
-		RequiresCondition: !deployed && rank-elite
+		RequiresCondition: !deployed && rank-heroic
 	Armament@deployed:
 		Turret: deploy
 		Name: deployed
 		Weapon: para
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: deployed && !rank-heroic
 	Armament@elite-deployed:
 		Turret: deploy
 		Name: deployed-elite
 		Weapon: paraE
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: deployed && rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: para
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: paraE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed && !parachute
@@ -104,12 +104,12 @@ e1:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed
-		RequiresCondition: !undeployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-heroic
 	WithTurretAttackAnimation@elite:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-elite
-		RequiresCondition: !undeployed && rank-elite
+		RequiresCondition: !undeployed && rank-heroic
 	RejectsOrders@deployment:
 		Reject: Move, EnterTransport, EnterTransports
 		RequiresCondition: deployed
@@ -182,71 +182,71 @@ ggi:
 	Armament@primary:
 		Weapon: MissileLauncher
 		PauseOnCondition: !ammo
-		RequiresCondition: !deployed && !rank-elite
+		RequiresCondition: !deployed && !rank-heroic
 		LocalOffset: 256,0,1024
 	Armament@elite:
 		Weapon: MissileLauncherE
 		PauseOnCondition: !ammo
-		RequiresCondition: !deployed && rank-elite
+		RequiresCondition: !deployed && rank-heroic
 		LocalOffset: 256,0,1024
 	Armament@secondary:
 		Weapon: MissileLauncherAA
 		PauseOnCondition: !ammo
-		RequiresCondition: !deployed && !rank-elite
+		RequiresCondition: !deployed && !rank-heroic
 		LocalOffset: 256,0,1024
 	Armament@elite-secondary:
 		Weapon: MissileLauncherAAE
 		PauseOnCondition: !ammo
-		RequiresCondition: !deployed && rank-elite
+		RequiresCondition: !deployed && rank-heroic
 		LocalOffset: 256,0,1024
 	Armament@deployed:
 		Turret: deploy
 		Name: deployed
 		Weapon: MissileLauncher
 		PauseOnCondition: !ammo
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: deployed && !rank-heroic
 		LocalOffset: 256,0,512
 	Armament@elite-deployed:
 		Turret: deploy
 		Name: deployed-elite
 		Weapon: MissileLauncherE
 		PauseOnCondition: !ammo
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: deployed && rank-heroic
 		LocalOffset: 256,0,512
 	Armament@deployed-secondary:
 		Turret: deploy
 		Name: deployed-secondary
 		Weapon: MissileLauncherAA
 		PauseOnCondition: !ammo
-		RequiresCondition: deployed && !rank-elite
+		RequiresCondition: deployed && !rank-heroic
 		LocalOffset: 256,0,512
 	Armament@elite-deployed-secondary:
 		Turret: deploy
 		Name: deployed-secondary-elite
 		Weapon: MissileLauncherAAE
 		PauseOnCondition: !ammo
-		RequiresCondition: deployed && rank-elite
+		RequiresCondition: deployed && rank-heroic
 		LocalOffset: 256,0,512
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: MissileLauncher
 		PauseOnCondition: !ammo
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: MissileLauncherE
 		PauseOnCondition: !ammo
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped-secondary:
 		Name: opentopped
 		Weapon: MissileLauncherAA
 		PauseOnCondition: !ammo
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped-secondary:
 		Name: opentopped
 		Weapon: MissileLauncherAAE
 		PauseOnCondition: !ammo
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AmmoPool:
 		Armaments: primary, deployed, deployed-elite, deployed-secondary, deployed-secondary-elite, opentopped
 		PipCount: 0
@@ -282,22 +282,22 @@ ggi:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed
-		RequiresCondition: !undeployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-heroic
 	WithTurretAttackAnimation@elite:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-elite
-		RequiresCondition: !undeployed && rank-elite
+		RequiresCondition: !undeployed && rank-heroic
 	WithTurretAttackAnimation@secondary:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-secondary
-		RequiresCondition: !undeployed && !rank-elite
+		RequiresCondition: !undeployed && !rank-heroic
 	WithTurretAttackAnimation@secondary-elite:
 		Turret: deploy
 		Sequence: shoot-deployed
 		Armament: deployed-secondary-elite
-		RequiresCondition: !undeployed && rank-elite
+		RequiresCondition: !undeployed && rank-heroic
 	RejectsOrders@deployment:
 		Reject: Move, EnterTransport, EnterTransports
 		RequiresCondition: deployed
@@ -364,18 +364,18 @@ snipe:
 		Type: None
 	Armament@primary:
 		Weapon: awp
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: awpe
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: awp
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: awpe
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -435,18 +435,18 @@ gren:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: GrenadeDisc
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: GrenadeDiscE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: GrenadeDisc
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: GrenadeDiscE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -499,28 +499,28 @@ ghost:
 		PipType: Red
 	Armament@primary:
 		Weapon: MP5
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: MP5E
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: MP5
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: MP5E
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@sapper:
 		Weapon: PlaceC4
 		Cursor: c4
 		OutsideRangeCursor: c4
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@sapper-elite:
 		Weapon: PlaceC4E
 		Cursor: c4
 		OutsideRangeCursor: c4
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -658,28 +658,28 @@ tany:
 		PipType: Red
 	Armament@primary:
 		Weapon: DoublePistols
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: DoublePistolsE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: DoublePistols
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: DoublePistolsE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@sapper:
 		Weapon: PlaceTanyaC4
 		Cursor: tanya-c4
 		OutsideRangeCursor: tanya-c4
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@sapper-elite:
 		Weapon: PlaceTanyaC4E
 		Cursor: tanya-c4
 		OutsideRangeCursor: tanya-c4
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -748,10 +748,10 @@ jumpjet:
 		Type: None
 	Armament@primary:
 		Weapon: 20mm
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 20mmE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -957,18 +957,18 @@ dione:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: DioneGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: DioneGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: DioneGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: DioneGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -1016,18 +1016,18 @@ artemis:
 		PipType: Red
 	Armament@primary:
 		Weapon: ArtemisMissile
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: ArtemisMissileE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: ArtemisMissile
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite-opentopped:
 		Name: opentopped
 		Weapon: ArtemisMissileE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled

@@ -93,11 +93,11 @@ harv:
 	Armament@primary:
 		Weapon: 20mmrapid
 		LocalOffset: 256,0,1024
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 20mmrapidE
 		LocalOffset: 256,0,1024
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -239,16 +239,16 @@ htk:
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
-		RequiresCondition: !repairmode && !rank-elite
+		RequiresCondition: !repairmode && !rank-heroic
 	Armament@elite:
 		Weapon: FlakTrackGunE
-		RequiresCondition: !repairmode && rank-elite
+		RequiresCondition: !repairmode && rank-heroic
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
-		RequiresCondition: !repairmode && !rank-elite
+		RequiresCondition: !repairmode && !rank-heroic
 	Armament@secondary-elite:
 		Weapon: FlakTrackAAGunE
-		RequiresCondition: !repairmode && rank-elite
+		RequiresCondition: !repairmode && rank-heroic
 	Turreted:
 		TurnSpeed: 15
 		Offset: -280,0,0
@@ -350,10 +350,10 @@ drgn:
 	AutoTarget:
 	Armament@primary:
 		Weapon: DragonFlamer
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: DragonFlamerE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
@@ -404,10 +404,10 @@ slost:
 	AutoTarget:
 	Armament@primary:
 		Weapon: GattlingGun
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: GattlingGunE
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Turreted:
 		TurnSpeed: 10
 		Offset: -160,0,0
@@ -512,11 +512,11 @@ v3:
 	Armament@primary:
 		Weapon: V3Launcher
 		LocalOffset: 640,0,384
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: V3Launcher
 		LocalOffset: 640,0,384
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled || !loaded
@@ -576,34 +576,34 @@ apoc:
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 640,100,512, 640,-100,512
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 120mmxE
 		LocalOffset: 640,100,512, 640,-100,512
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	Armament@missiles:
 		Weapon: MammothTusk
 		LocalOffset: 80,200,768, 80,-200,768
 		PauseOnCondition: !ammo
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 		Name: secondary
 	Armament@missiles-elite:
 		Weapon: MammothTuskE
 		LocalOffset: 80,200,768, 80,-200,768
 		PauseOnCondition: !ammo
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 		Name: secondary
 	Armament@antiair:
 		Weapon: MammothTuskAA
 		LocalOffset: 80,200,768, 80,-200,768
 		PauseOnCondition: !ammo
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 		Name: secondary
 	Armament@antiair-elite:
 		Weapon: MammothTuskAAE
 		LocalOffset: 80,200,768, 80,-200,768
 		PauseOnCondition: !ammo
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 		Name: secondary
 	AmmoPool:
 		Armaments: secondary
@@ -673,11 +673,11 @@ ttnk:
 	Armament@primary:
 		Weapon: TankBolt
 		LocalOffset: 280,196,640, 280,-196,640
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: TankBoltE
 		LocalOffset: 280,196,640, 280,-196,640
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
