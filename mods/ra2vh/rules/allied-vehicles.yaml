@@ -609,6 +609,21 @@ fv:
 	Tooltip@grenadier:
 		Name: Grenadier IFV
 		RequiresCondition: ifv-gren
+	#=== Chrono Legionnaire ===
+	WithVoxelTurret@chrono:
+		Sequence: turret-chrono
+		RequiresCondition: ifv-chrono
+	Armament@chrono:
+		Weapon: NeutronRifle
+		RequiresCondition: ifv-chrono
+		LocalOffset: 188,0,600
+	Armament@chrono2:
+		Weapon: NeutronRifleVisual
+		RequiresCondition: ifv-chrono
+		LocalOffset: 188,0,600
+	Tooltip@chrono:
+		Name: Chrono Legionnaire IFV
+		RequiresCondition: ifv-chrono
 	#===========================================
 	#==== Mixed infantry, needs more fixup =====
 	#======= Like custom turrets, etc. =========
@@ -616,20 +631,13 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-chrono
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
 	Tooltip@hitech:
 		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
-	#=== Chrono Legionnaire ===
-	Armament@chrono:
-		Weapon: NeutronRifle
-		RequiresCondition: ifv-chrono
-	Armament@chrono2:
-		Weapon: NeutronRifleVisual
-		RequiresCondition: ifv-chrono
 	#=== Artemis ===
 	Armament@artemis:
 		Weapon: ArtemisMissile

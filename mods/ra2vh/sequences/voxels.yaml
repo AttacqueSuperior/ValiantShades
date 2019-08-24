@@ -89,6 +89,7 @@ fv:
 	turret-ggi: fvtur-ggi
 	turret-repair: fvtur-repair
 	turret-grenadier: fvtur-grenadier
+	turret-chrono: fvtur-chrono
 	turret-hitech: fvtur-hitech
 
 gtgcan:
