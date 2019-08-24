@@ -54,3 +54,6 @@ particles:
 	v3trailer: v3trail
 		Length: *
 		BlendMode: Translucent
+	tankdestroyersmoke: tnkdhits
+		Length: *
+		Tick: 80

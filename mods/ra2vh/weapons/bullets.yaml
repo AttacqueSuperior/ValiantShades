@@ -25,14 +25,29 @@ GrandCannonWeapon:
 		Explosions: medium_explosion
 
 sabot:
-	Inherits: ^LargeBullet
 	ValidTargets: Ground, Water
 	Range: 5c0
 	ReloadDelay: 70
 	Report: vtadatta.wav, vtadattb.wav, vtadattc.wav
+	Projectile: SmokeParticleRailgun
+		LineWidth: 384
+		BeamWidth: 0
+		Duration: 1
+		HelixRadius: 0
+		HelixPitch: 384
+		QuantizationCount: 1
+		HelixSequences: tankdestroyersmoke
+		HelixPalette: rookietsexp
+		HelixDuration: 39
+		HelixGravity: -24,-24,36, 24,24,36
+		HitAnim: explosion
+		HitAnimSequence: elite_explosion
+		HitAnimPalette: rookiera2exp
 	Warhead@1Dam: SpreadDamage
-		Spread: 190
-		Damage: 150000
+		Spread: 192
+		Falloff: 100, 50, 0
+		Damage: 175000
+		ValidStances: Neutral, Enemy
 		Versus:
 			None: 2
 			Flak: 2
@@ -45,15 +60,29 @@ sabot:
 			Concrete: 2
 			Drone: 2
 			Rocket: 100
-	Warhead@2Eff: CreateEffect
-		Explosions: elite_explosion
+	Warhead@2Dam: SpreadDamage
+		Spread: 192
+		Falloff: 100, 50, 0
+		Damage: 87500
+		ValidStances: Ally
+		Versus:
+			None: 2
+			Flak: 2
+			Plate: 2
+			Light: 100
+			Medium: 40
+			Heavy: 100
+			Wood: 2
+			Steel: 2
+			Concrete: 2
+			Drone: 2
+			Rocket: 100
 
 sabotE:
 	Inherits: sabot
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
-	Warhead@3EffWater: CreateEffect
-		ExplosionPalette: heroicwaterexp
+	Projectile: SmokeParticleRailgun
+		HelixPalette: heroictsexp
+		HitAnimPalette: heroicra2exp
 
 MirageGun:
 	ReloadDelay: 70
