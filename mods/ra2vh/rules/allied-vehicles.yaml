@@ -617,7 +617,7 @@ fv:
 		Weapon: CRMP5
 		RequiresCondition: !rank-elite && ifv-seal
 		LocalOffset: 188,0,600
-	Armament@gren-elite:
+	Armament@seal-elite:
 		Weapon: CRMP5E
 		RequiresCondition: rank-elite && ifv-seal
 		LocalOffset: 188,0,600
@@ -639,6 +639,21 @@ fv:
 	Tooltip@chrono:
 		Name: Chrono Legionnaire IFV
 		RequiresCondition: ifv-chrono
+	#=== Tesla Trooper ===
+	WithVoxelTurret@tesla:
+		Sequence: turret-tesla
+		RequiresCondition: ifv-tesla
+	Armament@tesla:
+		Weapon: ElectricBolt
+		RequiresCondition: !rank-elite && ifv-tesla
+		LocalOffset: 188,0,600
+	Armament@tesla-elite:
+		Weapon: ElectricBoltE
+		RequiresCondition: rank-elite && ifv-tesla
+		LocalOffset: 188,0,600
+	Tooltip@tesla:
+		Name: Tesla Trooper IFV
+		RequiresCondition: ifv-tesla
 	#===========================================
 	#==== Mixed infantry, needs more fixup =====
 	#======= Like custom turrets, etc. =========
@@ -646,7 +661,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-tesla
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -676,9 +691,6 @@ fv:
 		Weapon: CRMP5
 		LocalOffset: 200,0,800
 		RequiresCondition: ifv-hero
-	Armament@tesla:
-		Weapon: CRElectricBolt
-		RequiresCondition: ifv-tesla
 	Armament@desolator:
 		Weapon: CRRadBeamWeapon
 		RequiresCondition: ifv-deso

@@ -18,20 +18,6 @@ ElectricBoltE:
 	Warhead@emp: GrantExternalCondition
 		Duration: 6
 
-CRElectricBolt:
-	Inherits: ElectricBolt
-	Range: 6c0
-	ReloadDelay: 45
-	Warhead@1Dam: SpreadDamage
-		Damage: 60000
-
-CRElectricBoltE:
-	Inherits: CRElectricBolt
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
-	Warhead@emp: GrantExternalCondition
-		Duration: 6
-
 AssaultBolt:
 	ReloadDelay: 70
 	Range: 2c0
