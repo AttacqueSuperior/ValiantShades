@@ -463,7 +463,7 @@ fv:
 			ggi: ifv-ggi
 			gren: ifv-gren
 			tany: ifv-hero
-			ghost: ifv-hero
+			ghost: ifv-seal
 			snipe: ifv-sniper
 			cleg: ifv-chrono
 			dione: ifv-dione
@@ -497,7 +497,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -609,6 +609,21 @@ fv:
 	Tooltip@grenadier:
 		Name: Grenadier IFV
 		RequiresCondition: ifv-gren
+	#=== Navy SEAL ===
+	WithVoxelTurret@seal:
+		Sequence: turret-hmg
+		RequiresCondition: ifv-seal
+	Armament@seal:
+		Weapon: CRMP5
+		RequiresCondition: !rank-elite && ifv-seal
+		LocalOffset: 188,0,600
+	Armament@gren-elite:
+		Weapon: CRMP5E
+		RequiresCondition: rank-elite && ifv-seal
+		LocalOffset: 188,0,600
+	Tooltip@seal:
+		Name: Heavy Machinegun IFV
+		RequiresCondition: ifv-seal
 	#=== Chrono Legionnaire ===
 	WithVoxelTurret@chrono:
 		Sequence: turret-chrono
@@ -631,7 +646,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-chrono
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -708,14 +723,15 @@ fv:
 		RequiresCondition: !stance-attackanything && ifv-chrono
 		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
-	#AutoTargetPriority@INFONLY:
-	#	RequiresCondition: ifv-sniper || ifv-hero
-	#	ValidTargets: Infantry
-	#	InvalidTargets: NoAutoTarget
-	#AutoTargetPriority@Unit:
+	AutoTargetPriority@infantry:
+		RequiresCondition: ifv-seal # || ifv-sniper || ifv-hero
+		ValidTargets: Infantry
+		InvalidTargets: NoAutoTarget
+	#AutoTargetPriority@unit:
 	#	RequiresCondition: ifv-deso
-	#	ValidTargets: Infantry, Vehicle
-	#	InvalidTargets: NoAutoTarget
+	#	ValidTargets: Ground
+	#	InvalidTargets: NoAutoTarget, Structure
+	
 
 fv.ai:
 	Inherits: fv

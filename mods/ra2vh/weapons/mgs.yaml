@@ -100,7 +100,13 @@ DoublePistolsE:
 
 CRMP5:
 	Inherits: MP5
-	ReloadDelay: 20
+	Range: 7c0
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 5
+			Steel: 5
+			Concrete: 5
+			Drone: 5
 
 CRMP5E:
 	Inherits: CRMP5
