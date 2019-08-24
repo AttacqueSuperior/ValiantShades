@@ -131,6 +131,60 @@ dog:
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
+	GrantConditionOnFaction@allied:
+		Condition: allied
+		Factions: america #, germany, england, france, korea
+	GrantConditionOnFaction@soviet:
+		Condition: soviet
+		Factions: russia #, cuba, libya, iraq
+	WithDecoration@veteran:
+		RequiresCondition: rank-veteran && !rank-elite && !allied && !soviet
+	WithDecoration@elite:
+		RequiresCondition: rank-elite && !rank-heroic && !allied && !soviet
+	WithDecoration@heroic:
+		RequiresCondition: rank-heroic && !allied && !soviet
+	WithDecoration@allied-veteran:
+		Image: allied-rank
+		Sequence: veteran
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran && !rank-elite && allied
+		ZOffset: 256
+	WithDecoration@allied-elite:
+		Image: allied-rank
+		Sequence: elite
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite && !rank-heroic && allied
+		ZOffset: 256
+	WithDecoration@allied-heroic:
+		Image: allied-rank
+		Sequence: heroic
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-heroic && allied
+		ZOffset: 256
+	WithDecoration@soviet-veteran:
+		Image: soviet-rank
+		Sequence: veteran
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran && !rank-elite && soviet
+		ZOffset: 256
+	WithDecoration@soviet-elite:
+		Image: soviet-rank
+		Sequence: elite
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite && !rank-heroic && soviet
+		ZOffset: 256
+	WithDecoration@soviet-heroic:
+		Image: soviet-rank
+		Sequence: heroic
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-heroic && soviet
+		ZOffset: 256
 
 ^Spy:
 	Inherits: ^Infantry
