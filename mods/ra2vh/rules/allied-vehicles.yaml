@@ -639,6 +639,29 @@ fv:
 	Tooltip@chrono:
 		Name: Chrono Legionnaire IFV
 		RequiresCondition: ifv-chrono
+	#=== Flak Trooper ===
+	WithVoxelTurret@flak:
+		Sequence: turret-flak
+		RequiresCondition: ifv-flak
+	Armament@flak:
+		Weapon: FlakGuyGun
+		RequiresCondition: !rank-elite && ifv-flak
+		LocalOffset: 128,0,1536
+	Armament@flak-elite:
+		Weapon: FlakGuyGunE
+		RequiresCondition: rank-elite && ifv-flak
+		LocalOffset: 128,0,1536
+	Armament@flak-aa:
+		Weapon: FlakGuyAAGun
+		RequiresCondition: !rank-elite && ifv-flak
+		LocalOffset: 128,0,1536
+	Armament@flak-aa-elite:
+		Weapon: FlakGuyAAGun
+		RequiresCondition: rank-elite && ifv-flak
+		LocalOffset: 128,0,1536
+	Tooltip@flak:
+		Name: Flak Trooper IFV
+		RequiresCondition: ifv-flak
 	#=== Tesla Trooper ===
 	WithVoxelTurret@tesla:
 		Sequence: turret-tesla
@@ -661,7 +684,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-tesla
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -694,9 +717,6 @@ fv:
 	Armament@desolator:
 		Weapon: CRRadBeamWeapon
 		RequiresCondition: ifv-deso
-	Armament@flak:
-		Weapon: CRFlakGuyGun
-		RequiresCondition: ifv-flak
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
@@ -721,7 +741,7 @@ fv:
 	#=== Shared Air targeting ===
 	GrantCondition@autotargetair:
 		Condition: autotarget-air
-		RequiresCondition: ifv-default || ifv-ggi
+		RequiresCondition: ifv-default || ifv-ggi || ifv-flak
 	AutoTargetPriority@Air:
 		RequiresCondition: autotarget-air
 		ValidTargets: Air
