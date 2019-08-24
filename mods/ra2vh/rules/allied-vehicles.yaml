@@ -211,6 +211,7 @@ hmmv:
 		RequiresCondition: repairmode
 		ValidTargets: Repair
 		InvalidTargets: NoAutoTarget
+		ValidStances: Ally
 
 hmmv.ai:
 	Inherits: hmmv
@@ -752,6 +753,7 @@ fv:
 		RequiresCondition: ifv-repair
 		ValidTargets: Repair
 		InvalidTargets: NoAutoTarget
+		ValidStances: Ally
 	AutoTargetPriority@chrono:
 		RequiresCondition: !stance-attackanything && ifv-chrono
 		ValidTargets: Temporal
