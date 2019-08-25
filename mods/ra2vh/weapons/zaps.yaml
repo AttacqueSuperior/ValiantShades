@@ -396,7 +396,7 @@ Lunarlaser:
 			Concrete: 100
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+		DamageTypes: Prone50Percent, TriggerProne, IgniteDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: cosmonauthit
 		ExplosionPalette: rookiera2exp
