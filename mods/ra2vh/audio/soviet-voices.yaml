@@ -263,3 +263,10 @@ GiantSquidVoice:
 		Move: vsqumova, vsqumovb
 		Attack: vsquat1a
 		Die: vsqudiea
+
+SovietCargoPlaneVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: silence
+		Action: silence
+		Die: vcpsdia, vcpsdib, vcpsdic

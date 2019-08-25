@@ -238,3 +238,10 @@ DolphinVoice:
 		Move: vdolmova, vdolmovb
 		Attack: vdolatca, vdolatcb, vdolatcc
 		Die: vdoldiea, vdoldieb
+
+AlliedCargoPlaneVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: silence
+		Action: silence
+		Die: vcpadia, vcpadib, vcpadic

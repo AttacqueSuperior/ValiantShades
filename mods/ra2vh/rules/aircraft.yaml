@@ -538,6 +538,8 @@ pdplane.allied:
 	Inherits: pdplane
 	SpawnActorOnDeath:
 		Actor: pdplane.allied.husk
+	Voiced:
+		VoiceSet: AlliedCargoPlaneVoice
 
 pdplane.allied.husk:
 	Inherits: pdplanehusk
@@ -548,6 +550,8 @@ pdplane.soviet:
 	Inherits: pdplane
 	SpawnActorOnDeath:
 		Actor: pdplane.soviet.husk
+	Voiced:
+		VoiceSet: SovietCargoPlaneVoice
 
 pdplane.soviet.husk:
 	Inherits: pdplanehusk
@@ -592,6 +596,8 @@ badger:
 	RejectsOrders:
 	Aircraft:
 		IdleBehavior: LeaveMap
+	Voiced:
+		VoiceSet: SovietCargoPlaneVoice
 
 badgerhusk:
 	Inherits: ^PlaneHusk
