@@ -719,16 +719,11 @@ tany:
 		RequiresCondition: !disabled
 
 jumpjet:
-	Inherits: ^Infantry
+	Inherits: ^jumpjet
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
-	Inherits@cloning: ^Cloneable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
-	HiddenUnderFog:
-		Type: CenterPosition
 	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 60
 		Prerequisites: ~gapile, gaairc
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
@@ -736,11 +731,8 @@ jumpjet:
 		Cost: 400
 	Tooltip:
 		Name: Rocketeer
-	Selectable:
-		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125000
-	-Mobile:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
@@ -756,93 +748,26 @@ jumpjet:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
-		TakeOffOnResupply: true
-		CanSlide: false
-		CanHover: true
-		VTOL: true
-		TurnToDock: false
-		CruiseAltitude: 3072
-		LandWhenIdle: false
-		InitialFacing: 20
 		TurnSpeed: 64
 		Speed: 140
-		AltitudeVelocity: 83
-		Voice: Move
-		AirborneCondition: airborne
-		IdealSeparation: 512
-	WithInfantryBody:
-		StandSequences: fly
-		MoveSequence: fly
-		DefaultAttackSequence: shoot-air
-		IdleSequences: idle-air
-	Hovers:
-		BobDistance: -64
-		InitialHeight: 64
-	-Crushable:
-	-TakeCover:
-	-WithDeathAnimation@normal:
-	-WithDeathAnimation@effect:
-	-WithDeathAnimation@ra:
-	-Explodes@explosion:
-	-Explodes@explosion-inair:
-	-Explodes@radiation:
 	Voiced:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
-	QuantizeFacingsFromSequence:
-		Sequence: stand
-	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
-		DeathType: DefaultDeath
-	Repairable:
-		RepairActors:
-		Voice: Move
-	-TurnOnIdle:
-	WithSpriteBody@shadow:
-		RequiresCondition: inair || parachute
 
 jumpjet.husk:
-	Inherits: ^HelicopterHusk
-	Inherits@1: ^SpriteActor
-	WithFacingSpriteBody:
-	-RenderVoxels:
-	-WithVoxelBody:
+	Inherits: ^jumpjet.husk
 	Tooltip:
 		Name: Rocketeer
 	Aircraft:
-		TakeOffOnResupply: true
-		CanSlide: false
-		CanHover: true
-		VTOL: true
-		TurnToDock: false
-		TurnSpeed: 10
 		Speed: 140
-	FallsToEarth:
-		Explosion: InfantryExplode
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
 	RevealOnDeath:
 		Radius: 4c0
-	ConditionManager:
-	GrantConditionAboveAltitude:
-		Condition: inair
-		MinAltitude: 640
-	WithSpriteBody@shadow:
-		Name: shadow
-		Sequence: shadow
-		ForceToGround: true
-		RequiresCondition: inair
-	SmokeParticleEmitter@crashsmoke:
-		Sequences: ra1-smoke
-		Palette: ra
-		Gravity: -24,-24,36, 24,24,36
-		Duration: 13
-	-Explodes@smokespawn:
-	-GpsDotAS:
-	-ExternalCondition@hide-gpsdot:
 
 cleg:
 	Inherits: ^Infantry

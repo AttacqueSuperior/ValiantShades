@@ -235,3 +235,93 @@ dog:
 		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+
+^jumpjet:
+	Inherits: ^Infantry
+	Inherits@cloning: ^Cloneable
+	HiddenUnderFog:
+		Type: CenterPosition
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	-Mobile:
+	Aircraft:
+		TakeOffOnResupply: true
+		CanSlide: false
+		CanHover: true
+		VTOL: true
+		TurnToDock: false
+		CruiseAltitude: 3072
+		LandWhenIdle: false
+		InitialFacing: 20
+		TurnSpeed: 64
+		Speed: 140
+		AltitudeVelocity: 83
+		Voice: Move
+		AirborneCondition: airborne
+		IdealSeparation: 512
+	WithInfantryBody:
+		StandSequences: fly
+		MoveSequence: fly
+		DefaultAttackSequence: shoot-air
+		IdleSequences: idle-air
+	Hovers:
+		BobDistance: -64
+		InitialHeight: 64
+	-Crushable:
+	-TakeCover:
+	-WithDeathAnimation@normal:
+	-WithDeathAnimation@effect:
+	-WithDeathAnimation@ra:
+	-Explodes@explosion:
+	-Explodes@explosion-inair:
+	-Explodes@radiation:
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-Passenger:
+	SpawnActorOnDeath:
+		DeathType: DefaultDeath
+	Repairable:
+		RepairActors:
+		Voice: Move
+	-TurnOnIdle:
+	WithSpriteBody@shadow:
+		RequiresCondition: inair || parachute
+
+^jumpjet.husk:
+	Inherits: ^HelicopterHusk
+	Inherits@1: ^SpriteActor
+	WithFacingSpriteBody:
+	-RenderVoxels:
+	-WithVoxelBody:
+	Aircraft:
+		TakeOffOnResupply: true
+		CanSlide: false
+		CanHover: true
+		VTOL: true
+		TurnToDock: false
+		TurnSpeed: 10
+		Speed: 140
+	FallsToEarth:
+		Explosion: InfantryExplode
+	ConditionManager:
+	GrantConditionAboveAltitude:
+		Condition: inair
+		MinAltitude: 640
+	WithSpriteBody@shadow:
+		Name: shadow
+		Sequence: shadow
+		ForceToGround: true
+		RequiresCondition: inair
+	SmokeParticleEmitter@crashsmoke:
+		Sequences: ra1-smoke
+		Palette: ra
+		Gravity: -24,-24,36, 24,24,36
+		Duration: 13
+	-Explodes@smokespawn:
+	-GpsDotAS:
+	-ExternalCondition@hide-gpsdot:
