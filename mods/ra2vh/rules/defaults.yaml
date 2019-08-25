@@ -884,6 +884,8 @@
 	Targetable@Repair:
 		RequiresCondition: damaged && !airborne
 		TargetTypes: Repair
+	Voiced:
+		VoiceSet: CargoPlaneVoice
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true

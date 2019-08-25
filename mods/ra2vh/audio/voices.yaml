@@ -11,6 +11,13 @@ PowerPlant:
 	Voices:
 		Die: bpowdiea, bpowdieb
 
+CargoPlaneVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: silence
+		Action: silence
+		Die: vcpldiea
+
 ^InfantryDeath:
 	DefaultVariant: .wav
 	Voices:
