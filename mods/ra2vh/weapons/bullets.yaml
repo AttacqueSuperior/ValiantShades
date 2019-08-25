@@ -61,9 +61,9 @@ sabot:
 			Drone: 2
 			Rocket: 100
 	Warhead@2Dam: SpreadDamage
-		Spread: 192
+		Spread: 96
 		Falloff: 100, 50, 0
-		Damage: 87500
+		Damage: 58333
 		ValidStances: Ally
 		Versus:
 			None: 2
