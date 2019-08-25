@@ -506,7 +506,7 @@ pdplane:
 		TurnSpeed: 5
 		Speed: 225
 	Health:
-		HP: 400000
+		HP: 600000
 	Armor:
 		Type: Light
 	RenderSprites:
