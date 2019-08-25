@@ -686,6 +686,57 @@ boris:
 		HealIfBelow: 100
 		RequiresCondition: !disabled
 
+cosmo:
+	Inherits: ^jumpjet
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		BuildPaletteOrder: 150
+		Prerequisites: natek, ~nahand
+		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
+	Valued:
+		Cost: 650
+	Tooltip:
+		Name: Cosmonaut
+	Health:
+		HP: 125000
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armor:
+		Type: None
+	Armament@primary:
+		Weapon: CosmonautLaser
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: CosmonautLaserE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Aircraft:
+		TurnSpeed: 64
+		Speed: 140
+	Voiced:
+		VoiceSet: CosmonautVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	SpawnActorOnDeath:
+		Actor: cosmo.husk
+
+cosmo.husk:
+	Inherits: ^jumpjet.husk
+	Tooltip:
+		Name: Cosmonaut
+	Aircraft:
+		Speed: 140
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+
 yuripr:
 	Inherits: yuri
 	Inherits@factionparachute: ^SovietParachute

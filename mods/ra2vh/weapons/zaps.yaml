@@ -344,3 +344,69 @@ CRVirusGunE:
 	Inherits: CRVirusGun
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
+
+CosmonautLaser:
+	ReloadDelay: 20
+	Range: 7c0
+	MinRange: 0c001
+	Report: ilasatta.wav
+	Projectile: InstantExplode
+	ValidTargets: Air, Ground, Water
+	Warhead@TargetValidation: SpreadDamage
+		ValidTargets: Air, Ground, Water
+	Warhead@stage2: FireShrapnel
+		Weapon: Lunarlaser
+		AimChance: 100
+		ThrowWithoutTarget: true
+		AimTargetStances: Neutral, Enemy
+		ValidTargets: Air, Ground, Water
+		AllowDirectHit: true
+		AroundTarget: true
+		Amount: 2
+
+CosmonautLaserE:
+	Inherits: CosmonautLaser
+	Warhead@stage2: FireShrapnel
+		Weapon: LunarlaserE
+
+Lunarlaser:
+	ValidTargets: Ground, Water, Air
+	ReloadDelay: 100
+	Range: 4c0
+	Projectile: KKNDLaser
+		Radius: 2
+		Duration: 6
+		InnerLightness: 160
+		OuterLightness: 80
+		Color: E6A817
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Falloff: 100, 50, 0
+		Damage: 20000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 100
+			Steel: 100
+			Concrete: 100
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: cosmonauthit
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: SmallScorch
+		Chance: 33
+
+LunarlaserE:
+	Inherits: Lunarlaser
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

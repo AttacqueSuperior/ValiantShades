@@ -324,6 +324,7 @@ Player:
 			yuri: 1
 			virus: 1
 			#boris: 1
+			cosmo: 5
 			harv: 5
 			drgn: 20
 			htk: 5
