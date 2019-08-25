@@ -275,6 +275,7 @@ dog:
 	-WithDeathAnimation@normal:
 	-WithDeathAnimation@effect:
 	-WithDeathAnimation@ra:
+	-WithDeathAnimation@flames:
 	-Explodes@explosion:
 	-Explodes@explosion-inair:
 	-Explodes@radiation:
