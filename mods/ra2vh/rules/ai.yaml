@@ -300,7 +300,7 @@ Player:
 			cmin: 5
 			hmmv: 10
 			hmmv.ai: 12
-			hmmv.ai-repair: 4
+			# hmmv.ai-repair: 4
 			ltnk: 20
 			mtnk: 20
 			fv: 15
@@ -329,7 +329,7 @@ Player:
 			drgn: 20
 			htk: 5
 			htk.ai: 10
-			htk.ai-repair: 4
+			# htk.ai-repair: 4
 			htnk: 20
 			v3: 15
 			apoc: 10
