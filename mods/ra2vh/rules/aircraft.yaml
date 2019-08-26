@@ -39,7 +39,7 @@ shad:
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
 	RenderSprites:
-	WithVoxelWalkerBody:
+	WithVoxelHelicopterBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
@@ -107,7 +107,8 @@ hind:
 	RenderSprites:
 	RenderVoxels:
 		NormalsPalette: ts-normals
-	WithVoxelBody:
+	WithVoxelHelicopterBody:
+		TickRate: 1
 	Carryall:
 		LocalOffset: 0,0,-512
 		Voice: Move
