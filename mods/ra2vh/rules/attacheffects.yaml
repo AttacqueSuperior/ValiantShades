@@ -476,3 +476,10 @@
 		Modifier: 125
 	ExternalCondition@tanya:
 		Condition: tanyabonus
+
+^BeholderRangeBonus:
+	ExternalCondition@beholder:
+		Condition: beholder
+	RangeMultiplier@beholder:
+		RequiresCondition: beholder
+		Modifier: 125

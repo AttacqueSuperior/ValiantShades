@@ -1,0 +1,43 @@
+behold:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 160
+		Prerequisites: ~disabled
+		Description: Unarmed.\nGrants bonus range to nearby allied units.
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Beholder
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	Health:
+		HP: 150000
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 75
+		TurnSpeed: 5
+		Locomotor: heavytracked
+	RevealsShroud:
+		Range: 4c0
+	RevealOnDeath:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+	RenderSprites:
+		Image: dtruck
+	RenderVoxels:
+		Image: dtruck
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: DemolitionTruckVoice
+	HitShape:
+	ProximityExternalCondition:
+		Condition: beholder
+		Range: 4c512
+	WithRangeCircle:
+		Type: Beholder
+		Range: 4c512

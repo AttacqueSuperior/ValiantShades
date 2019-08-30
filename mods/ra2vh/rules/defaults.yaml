@@ -452,6 +452,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@parachutable: ^Parachutable
+	Inherits@beholder: ^BeholderRangeBonus
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -722,6 +723,7 @@
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
+	Inherits@beholder: ^BeholderRangeBonus
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -1025,6 +1027,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
+	Inherits@beholder: ^BeholderRangeBonus
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
