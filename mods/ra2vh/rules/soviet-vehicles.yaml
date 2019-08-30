@@ -733,8 +733,6 @@ dtruck:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
-	VoiceAnnouncement:
-		Voice: Build
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
