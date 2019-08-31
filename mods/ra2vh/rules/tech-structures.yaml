@@ -57,7 +57,7 @@ caoild.rubble:
 
 caairp:
 	Inherits: ^TechBuilding
-	Inherits@shape: ^3x2Shape
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Tech Airport
 	Armor:
@@ -108,7 +108,7 @@ caairp:
 
 caairp.rubble:
 	Inherits: ^Rubble
-	Inherits@shape: ^2x2Shape
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Tech Airport Wreck
 	Building:
@@ -266,3 +266,36 @@ caoutp.rubble:
 		Palette: isosnow
 	TransformOnCapture:
 		IntoActor: caoutp
+
+caslab:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^3x3Shape
+	Tooltip:
+		Name: Tech Secret Lab
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+	WithIdleOverlay@flag:
+		Sequence: flag
+	SpawnActorOnDeath:
+		Actor: caslab.rubble
+
+caslab.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
+	Tooltip:
+		Name: Tech Secret Lab Wreck
+	Building:
+		Dimensions: 3,3
+		Footprint: === === ===
+	RenderSprites:
+		Image: caslab
+		Palette: isotem
+	TransformOnCapture:
+		IntoActor: caslab

@@ -45,7 +45,6 @@ cathosp:
 	Inherits: ^TechStructure
 	Defaults:
 		Offset: 7, -40
-	Defaults:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
@@ -63,6 +62,7 @@ cathosp:
 		UseTilesetCode: false
 		Offset: 0,0
 	rubble:
+		UseTilesetCode: false
 		Start: 2
 		ShadowStart: 5
 
@@ -98,3 +98,22 @@ caoutp:
 	damaged-idle-tower-shadow:
 		UseTilesetCode: false
 		Start: 5
+
+caslab:
+	Inherits: ^TechStructure
+	Defaults:
+		Offset: 0, -45
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	flag: caslab_f
+		Length: 16
+	rubble:
+		UseTilesetCode: false
+		Start: 3
+		ShadowStart: 7
