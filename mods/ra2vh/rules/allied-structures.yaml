@@ -376,10 +376,10 @@ gatech:
 	AirstrikePowerAS@a10:
 		ChargeInterval: 9000
 		Description: Warthog Strike
-		LongDesc: Send in an A-10 Warthog\nto saturate an area with missiles.
+		LongDesc: Send in three A-10 Warthog\nto saturate an area with missiles.
 		OrderName: WarthogStrikeInfoOrder
 		UnitType: a10
-		SquadSize: 1
+		SquadSize: 3
 		Icon: parabombs
 		Mission: Attack
 		ArrowSequence: arrow
@@ -387,7 +387,7 @@ gatech:
 		CircleSequence: circles
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
-		Cost: 1750
+		Cost: 2250
 
 garbur:
 	Inherits: ^Tier4
