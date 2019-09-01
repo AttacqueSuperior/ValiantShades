@@ -26,8 +26,6 @@ caoild:
 	RevealOnDeath:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
-	Armor:
-		Type: Steel
 	WithIdleOverlay@pump:
 		Sequence: idle-pump
 		PauseOnCondition: ownerless
@@ -58,10 +56,10 @@ caoild.rubble:
 caairp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Airport
-	Armor:
-		Type: concrete
 	Health:
 		HP: 800000
 	Building:
@@ -109,6 +107,8 @@ caairp:
 caairp.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Airport Wreck
 	Building:
@@ -140,8 +140,6 @@ cahosp:
 	RevealOnDeath:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
-	Armor:
-		Type: Concrete
 	RepairsUnits:
 		StartRepairingNotification:
 		HpPerStep: 10000
@@ -209,8 +207,6 @@ caoutp:
 		Bounds: 178, 180, 0, -38
 	Tooltip:
 		Name: Tech Outpost
-	Armor:
-		Type: Concrete
 	Health:
 		HP: 2000000
 	Building:
@@ -270,10 +266,10 @@ caoutp.rubble:
 caslab:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Secret Lab
-	Armor:
-		Type: concrete
 	Health:
 		HP: 800000
 	Building:

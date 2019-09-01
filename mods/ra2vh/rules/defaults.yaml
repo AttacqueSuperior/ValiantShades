@@ -183,6 +183,8 @@
 	ExternalCondition@boris-airstrike:
 		Condition: boris-airstrike
 	AppearsOnMapPreview:
+	Armor:
+		Type: Wood
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -214,8 +216,6 @@
 	-WithBuildingRepairDecoration:
 	Health:
 		HP: 900000
-	Armor:
-		Type: Wood
 	RevealsShroud:
 		Range: 4c0
 	RevealsShroudToIntelligenceOwner:
@@ -284,7 +284,7 @@
 	Health:
 		HP: 900000
 	Armor:
-		Type: Wood
+		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
 	RevealsShroudToIntelligenceOwner:
