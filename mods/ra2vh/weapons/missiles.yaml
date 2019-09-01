@@ -449,18 +449,18 @@ WarthogMissileStage2:
 			Heavy: 75
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: fireflashhit
-		ExplosionPalette: rookieapolloexp
+		Explosions: warthoghit
+		ExplosionPalette: rookiera2exp
 		ImpactSounds: kaboom1.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
-		Explosions: watersplash_size2
+		Explosions: watersplash_size3
 		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
 		ValidTargets: Water
 
 WarthogMissileStage2E:
 	Inherits: WarthogMissileStage2
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicapolloexp
+		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
