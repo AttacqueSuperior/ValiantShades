@@ -47,6 +47,7 @@ sabot:
 		Spread: 192
 		Falloff: 100, 50, 0
 		Damage: 175000
+		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
 		ValidStances: Neutral, Enemy
 		Versus:
 			None: 2
@@ -64,6 +65,7 @@ sabot:
 		Spread: 96
 		Falloff: 100, 50, 0
 		Damage: 58333
+		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
 		ValidStances: Ally
 		Versus:
 			None: 2
