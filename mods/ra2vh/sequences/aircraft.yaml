@@ -1,3 +1,7 @@
+a10:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 asw:
 	Inherits: ^Aircraft
 	icon: xxicon

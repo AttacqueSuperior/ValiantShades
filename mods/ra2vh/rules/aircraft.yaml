@@ -648,3 +648,42 @@ hornet:
 	CarrierSlave:
 		LandingDistance: 8c0
 		DamageTypes: DefaultDeath
+
+a10:
+	Inherits: beag
+	Tooltip:
+		Name: A-10 Warthog
+	SpawnActorOnDeath:
+		Actor: a10husk
+	Armament:
+		Weapon: WarthogMissile
+	AmmoPool:
+		Ammo: 3
+		PipCount: 3
+	AttackAircraft:
+		FacingTolerance: 128
+		PauseOnCondition: disabled
+		RequiresCondition: ammo
+	-Selectable:
+	Interactable:
+		Bounds: 64, 52, 0, -6
+	-Buildable:
+	-RevealsShroud:
+	AutoTarget:
+		ScanRadius: 6
+	-Rearmable:
+	RejectsOrders:
+	Aircraft:
+		IdleBehavior: LeaveMap
+	Voiced:
+		VoiceSet: AlliedCargoPlaneVoice
+
+a10husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: A-10 Warthog
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 225
+	RenderVoxels:
+		Image: a10

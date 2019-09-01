@@ -406,3 +406,61 @@ ArtemisMissileE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+WarthogMissile:
+	ReloadDelay: 20
+	Range: 9c0
+	MinRange: 0c001
+	Projectile: InstantExplode
+	ValidTargets: Air, Ground, Water
+	Warhead@TargetValidation: SpreadDamage
+		ValidTargets: Air, Ground, Water
+	Warhead@stage2: FireShrapnel
+		Weapon: WarthogMissileStage2
+		AimChance: 100
+		ThrowWithoutTarget: true
+		AimTargetStances: Neutral, Enemy
+		ValidTargets: Air, Ground, Water
+		AllowDirectHit: true
+		AroundTarget: true
+		Amount: 3
+
+WarthogMissileE:
+	Inherits: WarthogMissile
+	Warhead@stage2: FireShrapnel
+		Weapon: WarthogMissileStage2E
+
+WarthogMissileStage2:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 9c0
+	Report: vintatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		Image: v2
+		RangeLimit: 18c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 75000
+		ValidTargets: Ground, Water
+		Versus:
+			Light: 75
+			Medium: 50
+			Heavy: 75
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: fireflashhit
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: kaboom1.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size2
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
+		ValidTargets: Water
+
+WarthogMissileStage2E:
+	Inherits: WarthogMissileStage2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicapolloexp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp
