@@ -361,6 +361,7 @@ World:
 		Types: Gems
 		Image: twinkle
 		Palette: effect
+		Interval: 25
 
 EditorWorld:
 	Inherits: ^BaseWorld
