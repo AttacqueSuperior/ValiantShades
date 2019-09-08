@@ -135,6 +135,10 @@
 		Name: demeicon
 		Filename: demeicon.png
 		AllowModifiers: false
+	PaletteFromPng@warticon:
+		Name: warticon
+		Filename: warticon.png
+		AllowModifiers: false
 	PaletteFromPng@sapsicon:
 		Name: sapsicon
 		Filename: sapsicon.png

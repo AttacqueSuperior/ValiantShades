@@ -381,7 +381,8 @@ gatech:
 		OrderName: WarthogStrikeInfoOrder
 		UnitType: a10
 		SquadSize: 3
-		Icon: parabombs
+		Icon: warthogs
+		IconPalette: warticon
 		Mission: Attack
 		ArrowSequence: arrow
 		ClockSequence: clock

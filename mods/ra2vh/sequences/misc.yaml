@@ -455,6 +455,8 @@ icon:
 		AddExtension: false
 	demeter: demeicon.png
 		AddExtension: false
+	warthogs: warticon.png
+		AddExtension: false
 
 atomic:
 	up: nkmslup
