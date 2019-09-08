@@ -770,9 +770,10 @@ namisl:
 	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
-		Icon: abomb
+		Icon: nuke
+		IconPalette: nukeicon
 		ChargeInterval: 15000
-		Description: Nuclear Missile
+		Description: Nuclear Missile Strike
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
 		LaunchSound: snuklaun.wav

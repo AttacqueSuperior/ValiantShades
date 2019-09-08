@@ -139,6 +139,10 @@
 		Name: tnkdrico
 		Filename: tnkdrico.png
 		AllowModifiers: false
+	PaletteFromPng@nukeicon:
+		Name: nukeicon
+		Filename: nukeicon.png
+		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy
 		Filename: anim.pal

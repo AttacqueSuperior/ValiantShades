@@ -439,7 +439,8 @@ icon:
 	gps: asaticon
 	invuln: ircricon
 	chrono: chroicon
-	abomb: nukeicon
+	nuke: nukeicon.png
+		AddExtension: false
 	paradrop: paraicon
 	airborne: aparicon
 	bolticon: bolticon
