@@ -143,6 +143,10 @@
 		Name: tnkdrico
 		Filename: tnkdrico.png
 		AllowModifiers: false
+	PaletteFromPng@domiicon:
+		Name: domiicon
+		Filename: domiicon.png
+		AllowModifiers: false
 	PaletteFromPng@nukeicon:
 		Name: nukeicon
 		Filename: nukeicon.png

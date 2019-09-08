@@ -711,6 +711,7 @@ napsyd:
 		OrderName: PsychicDominatorInfoOrder
 		AirburstAltitude: 6c0
 		Icon: psydom
+		IconPalette: domiicon
 		ChargeInterval: 7500
 		Description: Psychic Dominator
 		ActivationSequence: active

@@ -446,7 +446,8 @@ icon:
 	bolticon: bolticon
 	psyreveal: psyricon
 	parabombs: pbombico
-	psydom: pdomicon
+	psydom: domiicon.png
+		AddExtension: false
 	satscan: scanicon.png
 		AddExtension: false
 	spyplane: spypicon
