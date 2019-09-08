@@ -139,6 +139,10 @@
 		Name: warticon
 		Filename: warticon.png
 		AllowModifiers: false
+	PaletteFromPng@npdomico:
+		Name: npdomico
+		Filename: npdomico.png
+		AllowModifiers: false
 	PaletteFromPng@sapsicon:
 		Name: sapsicon
 		Filename: sapsicon.png

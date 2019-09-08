@@ -422,7 +422,8 @@ napsyd:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
-	icon: xxicon
+	icon: npdomico.png
+		AddExtension: false
 
 nairon:
 	Inherits: ^Structure

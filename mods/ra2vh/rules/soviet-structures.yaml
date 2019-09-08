@@ -671,6 +671,7 @@ napsyd:
 	Inherits@shape: ^3x3Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Buildable:
+		IconPalette: npdomico
 		Queue: Support
 		BuildPaletteOrder: 80
 		Prerequisites: natek, ~structures.soviets
