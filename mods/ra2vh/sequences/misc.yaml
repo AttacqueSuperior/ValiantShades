@@ -452,6 +452,8 @@ icon:
 	spyplane: spypicon
 	tankdrop: tnkdrico.png
 		AddExtension: false
+	demeter: demeicon.png
+		AddExtension: false
 
 atomic:
 	up: nkmslup

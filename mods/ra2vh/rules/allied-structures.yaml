@@ -360,7 +360,8 @@ gatech:
 		Actors: e1, e1, e1, e1
 	ParatroopersPower@demetersquad:
 		OrderName: DemeterSquadInfoOrder
-		Icon: paradrop
+		Icon: demeter
+		IconPalette: demeicon
 		ChargeInterval: 9000
 		Description: Demeter Squad
 		LongDesc: 2 Cargo Plane drops preloaded Minervas anywhere on the map.

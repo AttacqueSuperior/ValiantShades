@@ -131,6 +131,10 @@
 		Name: spiricon
 		Filename: spiricon.png
 		AllowModifiers: false
+	PaletteFromPng@demeicon:
+		Name: demeicon
+		Filename: demeicon.png
+		AllowModifiers: false
 	PaletteFromPng@sapsicon:
 		Name: sapsicon
 		Filename: sapsicon.png
