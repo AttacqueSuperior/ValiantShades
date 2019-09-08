@@ -261,7 +261,7 @@ ggi:
 		UndeployedCondition: undeployed
 		Voice: Move
 		CanDeployOnRamps: True
-		Facing: 92
+		Facing: 96
 		RequiresCondition: !disabled
 		DeploySounds: iggidepa.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
@@ -271,7 +271,7 @@ ggi:
 		Turret: deploy
 		RealignDelay: -1
 		TurnSpeed: 50
-		InitialFacing: 92
+		InitialFacing: 96
 	WithSpriteTurret:
 		Turret: deploy
 		Sequence: deployed
