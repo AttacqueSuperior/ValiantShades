@@ -318,6 +318,8 @@ naindp:
 		Length: 13
 		ShadowStart: 39
 	make: ntindpmk
+		Length: 26
+		ShadowStart: 26
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
