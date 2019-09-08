@@ -449,6 +449,8 @@ icon:
 	satscan: scanicon.png
 		AddExtension: false
 	spyplane: spypicon
+	tankdrop: tnkdrico.png
+		AddExtension: false
 
 atomic:
 	up: nkmslup

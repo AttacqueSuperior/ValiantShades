@@ -347,7 +347,8 @@ natek:
 		Cost: 1250
 	ParatroopersPower@tankdrop:
 		OrderName: TankDropInfoOrder
-		Icon: paradrop
+		Icon: tankdrop
+		IconPalette: tnkdrico
 		ChargeInterval: 9000
 		Description: Tank Drop
 		LongDesc: A Cargo Plane drops 2 Hammers\nand 2 Slostins anywhere on the map.

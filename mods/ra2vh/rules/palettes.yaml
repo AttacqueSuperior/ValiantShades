@@ -135,6 +135,10 @@
 		Name: sapsicon
 		Filename: sapsicon.png
 		AllowModifiers: false
+	PaletteFromPng@tnkdrico:
+		Name: tnkdrico
+		Filename: tnkdrico.png
+		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy
 		Filename: anim.pal
