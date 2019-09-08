@@ -54,6 +54,10 @@ spirit:
 	icon: spiricon.png
 		AddExtension: false
 
+spypl:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 yak:
 	Inherits: ^Aircraft
 	icon: yakficon

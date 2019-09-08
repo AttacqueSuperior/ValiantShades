@@ -210,6 +210,9 @@ slost:
 spirit:
 	idle:
 
+spypl:
+	idle:
+
 sref:
 	idle:
 	turret: sreftur

@@ -658,3 +658,19 @@ Flare:
 		Duration: 9
 		Condition: boris-airstrike
 		ValidTargets: Structure
+
+SpyPlaneCamera:
+	ReloadDelay: 10
+	Range: 13c0
+	Report: vspysnap.wav
+	ValidTargets: Ground, Water, Air
+	Projectile: InstantExplode
+	Warhead@1Dam: RevealShroud
+		ValidTargets: Ground, Water, Air
+		Radius: 8c0
+		Duration: 100
+	Warhead@2Dam: RevealShroud
+		ValidTargets: Ground, Water, Air
+		Radius: 8c0
+		Duration: 50
+		RevealGeneratedShroud: true

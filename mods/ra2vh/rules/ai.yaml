@@ -227,6 +227,16 @@ Player:
 					Attractiveness: -5
 					TargetMetric: None
 					CheckRadius: 4c0
+			spyplane:
+				OrderName: SpyPlaneInfoOrder
+				Types: Ground, Water
+				IgnoreVisibility: true
+				Consideration@1:
+					Against: Enemy
+					Types: Ground, Water
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 7c0
 	BaseBuilderBotASModule@test:
 		RequiresCondition: enable-test-ai
 		BuildingQueues: Building

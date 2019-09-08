@@ -581,7 +581,7 @@ badger:
 		Weapon: ParaBomb
 	AmmoPool:
 		Ammo: 3
-		PipCount: 3
+		PipCount: 0
 	AttackAircraft:
 		FacingTolerance: 128
 		PauseOnCondition: disabled
@@ -659,7 +659,7 @@ a10:
 		Weapon: WarthogMissile
 	AmmoPool:
 		Ammo: 3
-		PipCount: 3
+		PipCount: 0
 	AttackAircraft:
 		FacingTolerance: 128
 		PauseOnCondition: disabled
@@ -687,3 +687,45 @@ a10husk:
 		Speed: 225
 	RenderVoxels:
 		Image: a10
+
+spypl:
+	Inherits: beag
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Tooltip:
+		Name: Spy Plane
+	SpawnActorOnDeath:
+		Actor: spyplhusk
+	Armament:
+		Weapon: SpyPlaneCamera
+	AmmoPool:
+		Ammo: 4
+		PipCount: 0
+	AttackAircraft:
+		FacingTolerance: 128
+		PauseOnCondition: disabled
+		RequiresCondition: ammo
+	-Selectable:
+	Interactable:
+		Bounds: 64, 52, 0, -6
+	-Buildable:
+	-RevealsShroud:
+	AutoTarget:
+		ScanRadius: 6
+	-Rearmable:
+	RejectsOrders:
+	Aircraft:
+		IdleBehavior: LeaveMap
+		Speed: 682
+	Voiced:
+		VoiceSet: SovietCargoPlaneVoice
+
+spyplhusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Spy Plane
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 450
+	RenderVoxels:
+		Image: spypl

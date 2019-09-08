@@ -448,6 +448,7 @@ icon:
 	psydom: pdomicon
 	satscan: scanicon.png
 		AddExtension: false
+	spyplane: spypicon
 
 atomic:
 	up: nkmslup
