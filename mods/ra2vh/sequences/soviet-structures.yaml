@@ -19,6 +19,7 @@ nacnst:
 	idle-normal: ngcnst
 		ZOffset: -1024
 	damaged-idle-normal: ngcnst
+		Start: 1
 		ZOffset: -1024
 	build: ngcnst_b
 		Length: 21
