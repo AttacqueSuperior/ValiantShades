@@ -719,6 +719,8 @@ spypl:
 		Speed: 682
 	Voiced:
 		VoiceSet: SovietCargoPlaneVoice
+	Health:
+		HP: 500000
 
 spyplhusk:
 	Inherits: ^PlaneHusk
