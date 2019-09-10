@@ -15,6 +15,8 @@ CargoPlaneVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: silence
+		Move: silence
+		Attack: silence
 		Action: silence
 		Die: vcpldiea
 
