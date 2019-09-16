@@ -626,8 +626,8 @@ tany:
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
+		Queue: Dummy
+		BuildAtProductionType: Dummy
 		BuildPaletteOrder: 140
 		Prerequisites: gatech, ~gapile, ~disabled
 		BuildLimit: 1
