@@ -722,6 +722,16 @@ gacsph:
 	Armor@resistsupers:
 		Type: ResistSupers
 
+gacran:
+	Inherits: ^Crane
+	Buildable:
+		Prerequisites: gaweap, gafcmd, ~structures.allies
+	Selectable:
+		Bounds: 96, 98, -4, -30
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e1, e1, e1
+
 gadept:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape

@@ -811,6 +811,20 @@ namisl:
 	Armor@resistsupers:
 		Type: ResistSupers
 
+nacran:
+	Inherits: ^Crane
+	Buildable:
+		Prerequisites: naweap, naradr, ~structures.soviets
+	Selectable:
+		Bounds: 95, 130, 0, -40
+	WithIdleOverlay@normal:
+		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: disabled
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e2, e2, e2, e2
+
 nadept:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape

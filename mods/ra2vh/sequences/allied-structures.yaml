@@ -364,6 +364,23 @@ gaorep:
 	make: gtorepmk
 	icon: gorep
 
+gacran:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -30
+	idle: ggcran
+		ShadowStart: 52
+	damaged-idle: ggcran
+		Start: 26
+		ShadowStart: 78
+	make: ggcranmk
+		Length: 10
+		ShadowStart: 10
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: fixicon
+
 gawall:
 	Inherits: ^Structure
 	Defaults:

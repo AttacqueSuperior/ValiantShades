@@ -449,6 +449,30 @@ nairon:
 	make: ntironmk
 	icon: ironicon
 
+nacran:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -30
+	idle: ngcran
+		ShadowStart: 3
+	damaged-idle: ngcran
+		Start: 2
+		ShadowStart: 4
+	idle-normal: ngcran_a
+		Length: 10
+		ShadowStart: 20
+		Tick: 180
+	damaged-idle-normal: ngcran_a
+		Start: 10
+		Length: 10
+		ShadowStart: 30
+		Tick: 180
+	make: ngcranmk
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	icon: rfixicon
+
 nawall:
 	Inherits: ^Structure
 	Defaults:
