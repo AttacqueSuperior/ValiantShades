@@ -517,8 +517,8 @@ TanyaMissileStage2:
 		DamageTypes: BulletDeath, DefaultDeath
 		ValidTargets: Ground, Water, Air
 	Warhead@2Eff: CreateEffect
-		Explosions: artemishit
-		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		Explosions: tanyahit
+		ImpactSounds: kaboom12.wav
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size3
 
