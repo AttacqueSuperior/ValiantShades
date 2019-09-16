@@ -1,6 +1,6 @@
 shad:
 	Inherits: ^Aircraft
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^AlliedVeteranRank
@@ -12,8 +12,12 @@ shad:
 		HP: 175000
 	Armor:
 		Type: Light
-	Armament:
+	Armament@primary:
 		Weapon: BlackHawkCannon
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: BlackHawkCannonE
+		RequiresCondition: rank-heroic
 	Voiced:
 		VoiceSet: NighthawkVoice
 	Buildable:
