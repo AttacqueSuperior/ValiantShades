@@ -572,7 +572,7 @@ ParaBomb:
 	Warhead@2Eff: CreateEffect
 		Explosions: parabombhit
 		ExplosionPalette: heroictsexp
-		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		ImpactSounds: expnew15.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
