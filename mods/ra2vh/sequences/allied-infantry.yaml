@@ -323,16 +323,16 @@ tanya2:
 		Length: 15
 		Facings: 8
 	fly:
-		Start: 150
+		Start: 230 #150
 		Tick: 80
-		Length: 10
+		Length: 15 #10
 		Facings: 8
 	die-air:
 		Start: 470
 		Length: 20
 		Tick: 80
 	shoot-air:
-		Start: 230
+		Start: 350
 		Tick: 80
 		Length: 15
 		Facings: 8
