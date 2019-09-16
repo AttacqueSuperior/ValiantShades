@@ -466,7 +466,7 @@ WarthogMissileStage2E:
 		ExplosionPalette: heroicwaterexp
 
 TanyaMissile:
-	Report: vintatta.wav
+	Report: misl1.wav
 	ReloadDelay: 44
 	Range: 5c512
 	MinRange: 0c001
