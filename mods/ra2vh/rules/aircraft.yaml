@@ -266,14 +266,12 @@ zephusk:
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 25
-	-FallsToEarth:
 	FallsToEarthAS:
 		Explosion: KirovExplode
-		Spins: true
 		SpinInitial: 0
-		SpinAcceleration: 1
 		SpinAccelerationDelay: 8
-		VelocityAcceleration: 2
+		VelocityAcceleration: 1
+		Velocity: 126
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition

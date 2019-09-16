@@ -973,7 +973,7 @@
 		GenericName: Destroyed Aircraft
 	Health:
 		HP: 1000
-	FallsToEarth:
+	FallsToEarthAS:
 		Velocity: 252
 	HitShape:
 	MapEditorData:
@@ -992,7 +992,7 @@
 
 ^PlaneHusk:
 	Inherits: ^Husk
-	FallsToEarth:
+	FallsToEarthAS:
 		Explosion: PlaneExplode
 		Spins: false
 		Moves: true
@@ -1010,8 +1010,13 @@
 		CanHover: true
 		VTOL: true
 		TurnToDock: false
-	FallsToEarth:
+	FallsToEarthAS:
 		Explosion: PlaneExplode
+		Spins: true
+		SpinInitial: 2
+		SpinAcceleration: 1
+		SpinAccelerationDelay: 3
+		VelocityAcceleration: 4
 	ExternalCondition@hide-gpsdot:
 		Condition: hide-gpsdot
 	GpsDotAS:

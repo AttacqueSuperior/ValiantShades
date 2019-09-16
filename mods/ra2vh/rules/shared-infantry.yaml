@@ -298,7 +298,7 @@ dog:
 	Inherits@1: ^SpriteActor
 	WithFacingSpriteBody:
 	-RenderVoxels:
-	-WithVoxelBody:
+	-WithVoxelHelicopterBody:
 	Aircraft:
 		TakeOffOnResupply: true
 		CanSlide: false
@@ -307,8 +307,10 @@ dog:
 		TurnToDock: false
 		TurnSpeed: 10
 		Speed: 140
-	FallsToEarth:
+	FallsToEarthAS:
 		Explosion: InfantryExplode
+		Spins: false
+		VelocityAcceleration: 0
 	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
