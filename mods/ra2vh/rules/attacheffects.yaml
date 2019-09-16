@@ -483,3 +483,14 @@
 	RangeMultiplier@beholder:
 		RequiresCondition: beholder
 		Modifier: 125
+
+^CraneRepair:
+	ExternalCondition@crane:
+		Condition: crane
+	SelfHealing@crane:
+		Step: 0
+		PercentageStep: 1
+		Delay: 75
+		HealIfBelow: 100
+		DamageCooldown: 150
+		RequiresCondition: crane

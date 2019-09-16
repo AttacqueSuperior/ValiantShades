@@ -121,3 +121,45 @@
 	Power:
 		Amount: -75
 		RequiresCondition: !being-warped && !powerdown
+
+^Crane:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 50
+		Description: Slowly repairs nearby vehicles.
+	Tooltip:
+		Name: Repair Crane
+	Valued:
+		Cost: 1000
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 450000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure
+	Power:
+		Amount: -50
+		RequiresCondition: !being-warped && !powerdown
+	ProximityExternalCondition:
+		Condition: crane
+		Range: 8c512
+		RequiresCondition: !disabled
+	WithRangeCircle:
+		Type: Crane
+		Range: 8c512
+		RequiresCondition: !disabled

@@ -724,6 +724,7 @@
 	Inherits@emp: ^AffectedByEMP
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
+	Inherits@crane: ^CraneRepair
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -856,6 +857,7 @@
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
+	Inherits@crane: ^CraneRepair
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -897,6 +899,8 @@
 		Duration: 50
 	DamagedByTintedCells:
 		RequiresCondition: !airborne
+	SelfHealing@crane:
+		RequiresCondition: crane && !airborne
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -1028,6 +1032,7 @@
 	Inherits@emp: ^AffectedByEMP
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
+	Inherits@crane: ^CraneRepair
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
