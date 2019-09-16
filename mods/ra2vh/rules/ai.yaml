@@ -261,6 +261,7 @@ Player:
 			garbur: 1
 			gagap: 2
 			gaspysat: 1
+			gacran: 2
 			narefn: 4
 			nahand: 3
 			naweap: 4
@@ -270,6 +271,7 @@ Player:
 			natek: 1
 			natech: 1
 			napsis: 1
+			nacran: 2
 		BuildingFractions:
 			garefn: 15
 			gapile: 15
@@ -282,6 +284,7 @@ Player:
 			gaspysat: 1
 			# AI cannot place plugs
 			# gapowrup: 5
+			gacran: 5
 			gapill: 15
 			nasam: 12
 			atesla: 12
@@ -304,6 +307,7 @@ Player:
 			tesla: 12
 			napsyd: 1
 			namisl: 1
+			nacran: 5
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
