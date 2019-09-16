@@ -629,7 +629,7 @@ tany:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 140
-		Prerequisites: gatech, ~gapile
+		Prerequisites: gatech, ~gapile, ~disabled
 		BuildLimit: 1
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Valued:
@@ -717,6 +717,67 @@ tany:
 		Type: Tanya
 		Range: 4c512
 		RequiresCondition: !disabled
+
+tanya2:
+	Inherits: ^jumpjet
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		BuildPaletteOrder: 140
+		Prerequisites: gatech, ~gapile
+		BuildLimit: 1
+		Description: Airborne commando infantry.\n  Strong vs Everything
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Tanya
+	Health:
+		HP: 125000
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armor:
+		Type: Heavy
+	Armament@primary:
+		Weapon: TanyaMissile
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: TanyaMissileE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Aircraft:
+		TurnSpeed: 64
+		Speed: 180
+	Voiced:
+		VoiceSet: TanyaVoice
+	VoiceAnnouncement:
+		Voice: Build
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	SpawnActorOnDeath:
+		Actor: tanya2.husk
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
+		RequiresCondition: !disabled
+
+tanya2.husk:
+	Inherits: ^jumpjet.husk
+	Tooltip:
+		Name: Tanya
+	Aircraft:
+		Speed: 180
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
 
 jumpjet:
 	Inherits: ^jumpjet

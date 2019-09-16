@@ -464,3 +464,67 @@ WarthogMissileStage2E:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+TanyaMissile:
+	Report: vintatta.wav
+	ReloadDelay: 44
+	Range: 5c512
+	MinRange: 0c001
+	Projectile: InstantExplode
+	ValidTargets: Air, Ground, Water
+	Warhead@TargetValidation: SpreadDamage
+		ValidTargets: Air, Ground, Water
+	Warhead@stage2: FireShrapnel
+		Weapon: TanyaMissileStage2
+		AimChance: 100
+		ThrowWithoutTarget: true
+		AimTargetStances: Neutral, Enemy
+		ValidTargets: Air, Ground, Water
+		AllowDirectHit: true
+		AroundTarget: true
+		Amount: 4
+
+TanyaMissileE:
+	Inherits: TanyaMissile
+	Warhead@stage2: FireShrapnel
+		Weapon: TanyaMissileStage2E
+
+TanyaMissileStage2:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 5c512
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Image: missile
+		TrailImage: bbblelrg
+		HorizontalRateOfTurn: 12
+		RangeLimit: 11c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 75000
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 65
+			Concrete: 60
+			Drone: 25
+			Rocket: 100
+		DamageTypes: BulletDeath, DefaultDeath
+		ValidTargets: Ground, Water, Air
+	Warhead@2Eff: CreateEffect
+		Explosions: artemishit
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size3
+
+TanyaMissileStage2E:
+	Inherits: TanyaMissileStage2
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp

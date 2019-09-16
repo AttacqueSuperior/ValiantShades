@@ -273,6 +273,85 @@ tany:
 		Start: 602
 	icon: tanyicon
 
+tanya2:
+	Inherits@IvanBomb: ^IvanBombable
+	stand:
+		Facings: 8
+		ShadowStart: 490
+	run:
+		Start: 70
+		Tick: 120
+		Length: 10
+		Facings: 8
+	idle1:
+		Start: 8
+		Length: 21
+		Tick: 80
+		ShadowStart: 498
+	idle2:
+		Start: 8
+		Length: 21
+		Tick: 80
+		ShadowStart: 498
+	prone-run:
+		Start: 70
+		Tick: 120
+		Length: 10
+		Facings: 8
+	die1:
+		Start: 470
+		Length: 20
+		Tick: 80
+	die2:
+		Start: 470
+		Length: 20
+		Tick: 80
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die6: electro
+		Length: *
+		Tick: 80
+	shoot:
+		Start: 350
+		Tick: 80
+		Length: 15
+		Facings: 8
+	prone-shoot:
+		Start: 350
+		Tick: 80
+		Length: 15
+		Facings: 8
+	fly:
+		Start: 150
+		Tick: 80
+		Length: 10
+		Facings: 8
+	die-air:
+		Start: 470
+		Length: 20
+		Tick: 80
+	shoot-air:
+		Start: 230
+		Tick: 80
+		Length: 15
+		Facings: 8
+	idle-air:
+		Facings: 8
+	paradrop:
+		Start: 113
+	shadow: infshdw
+		Start: 1
+	icon: tanyicon
+
+tanya2.husk:
+	idle: tanya2
+		Start: 470
+		Length: 8
+		Tick: 80
+	shadow: infshdw
+		Start: 1
+
 jumpjet:
 	Inherits@IvanBomb: ^IvanBombable
 	Defaults: rock
