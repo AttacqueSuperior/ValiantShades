@@ -410,3 +410,36 @@ LunarlaserE:
 	Inherits: Lunarlaser
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+FairyBolt:
+	ReloadDelay: 60
+	Range: 6c512
+	Report: itesatta.wav, itesattb.wav
+	Projectile: ElectricBolt
+		Colors: FFE48A, FFF9C7, FEFFD6
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Falloff: 100, 50, 0
+		Damage: 80000
+		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 75
+			Heavy: 75
+			Wood: 50
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: fairyhit
+		ExplosionPalette: rookiera2exp
+		ValidTargets: Ground, Air, Water
+
+FairyBoltE:
+	Inherits: FairyBolt
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

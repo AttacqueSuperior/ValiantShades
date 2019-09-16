@@ -1035,3 +1035,64 @@ artemis:
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
 			AltBulletDeath: 2-explosion
+
+fairy:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 100
+		Prerequisites: ~gapile, gatech
+		Description: Assault infantry.\n  Strong vs Ground\n  Weak vs Air
+	Valued:
+		Cost: 800
+	DeliversCash:
+		Payload: 400
+		PlayerExperience: 40
+		Voice: Move
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Tooltip:
+		Name: Fairy
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Voiced:
+		VoiceSet: RA1TanyaVoice
+	Health:
+		HP: 175000
+	RevealsShroud:
+		Range: 6c512
+	RevealOnDeath:
+		Radius: 3c256
+		DeathTypes: DefaultDeath
+	Armament@primary:
+		Weapon: FairyBolt
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: FairyBoltE
+		RequiresCondition: rank-heroic
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: FairyBolt
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: FairyBoltE
+		RequiresCondition: rank-heroic
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-TakeCover:
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	-Crushable:

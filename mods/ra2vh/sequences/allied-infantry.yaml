@@ -510,3 +510,32 @@ artemis:
 		Facings: 8
 		Length: 6
 	icon: xxicon
+
+fairy:
+	Inherits: ^BasicInfantry
+	stand:
+		Facings: 8
+	run:
+		Start: 88
+		Length: 10
+		Facings: 8
+	shoot:
+		Start: 8
+		Length: 10
+		Facings: 8
+	idle1:
+		Start: 205
+		Length: 36
+	idle2:
+		Start: 168
+		Length: 45
+	die1:
+		Start: 458
+		Length: 20
+	die2:
+		Start: 485
+		Length: 30
+	cheer:
+		Start: 426
+		Length: 32
+	icon: xxicon
