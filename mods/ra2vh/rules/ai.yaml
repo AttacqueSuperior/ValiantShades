@@ -343,6 +343,8 @@ Player:
 			tnkd: 15
 			bfrt.ai: 5
 			bfrt.ai2: 3
+			shad.ai: 3
+			shad.ai2: 3
 			beag: 15
 			orca: 1
 			spirit: 5
@@ -372,6 +374,8 @@ Player:
 			dog: 4
 			cmin: 6
 			hmmv.ai-repair: 2
+			shad.ai: 3
+			shad.ai2: 3
 			beag: 6
 			orca: 2
 			spirit: 2

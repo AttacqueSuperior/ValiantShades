@@ -20,7 +20,7 @@ shad:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
 		Prerequisites: ~gaweap, gaairc
-		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: Infantry Transport Helicopter\nUndetectable by radar.\nGets additional firepower when manned by infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1000
 	RevealsShroud:
@@ -50,10 +50,76 @@ shad:
 		MaxWeight: 5
 		PipCount: 5
 		UnloadVoice: Move
+		LoadedCondition: loaded
+		PassengerConditions:
+			#=== Animals, to disable the bonus firepower granted when manned ===
+			dog: disable-bonus
+			cow: disable-bonus
+			all: disable-bonus
+			polarb: disable-bonus
+			josh: disable-bonus
 	SpawnActorOnDeath:
 		Actor: shadhusk
 		DeathType: DefaultDeath
 	HitShape:
+	FirepowerMultiplier@loaded:
+		RequiresCondition: loaded
+		Modifier: 125
+	FirepowerMultiplier@loaded2:
+		RequiresCondition: loaded > 1
+		Modifier: 125
+	FirepowerMultiplier@loaded3:
+		RequiresCondition: loaded > 2
+		Modifier: 125
+	FirepowerMultiplier@loaded4:
+		RequiresCondition: loaded > 3
+		Modifier: 125
+	FirepowerMultiplier@loaded5:
+		RequiresCondition: loaded > 4
+		Modifier: 125
+	FirepowerMultiplier@disable-bonus:
+		RequiresCondition: disable-bonus
+		Modifier: 80
+	FirepowerMultiplier@disable-bonus2:
+		RequiresCondition: disable-bonus > 1
+		Modifier: 80
+	FirepowerMultiplier@disable-bonus3:
+		RequiresCondition: disable-bonus > 2
+		Modifier: 80
+	FirepowerMultiplier@disable-bonus4:
+		RequiresCondition: disable-bonus > 3
+		Modifier: 80
+	FirepowerMultiplier@disable-bonus5:
+		RequiresCondition: disable-bonus > 4
+		Modifier: 80
+
+shad.ai:
+	Inherits: shad
+	RenderSprites:
+		Image: shad
+	RenderVoxels:
+		Image: shad
+	Cargo:
+		InitialUnits: e1, e1, e1
+	Selectable:
+		Class: shad
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites: ~gaweap, gaairc, ~testai
+
+shad.ai2:
+	Inherits: shad
+	RenderSprites:
+		Image: shad
+	RenderVoxels:
+		Image: shad
+	Cargo:
+		InitialUnits: e1, e1, e1, e1, e1
+	Selectable:
+		Class: shad
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites: ~gaweap, gaairc, ~testai
 
 shadhusk:
 	Inherits: ^HelicopterHusk
