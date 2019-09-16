@@ -1017,6 +1017,9 @@
 	GpsDotAS:
 		Sequence: helicopter
 		RequiresCondition: !hide-gpsdot
+	-WithVoxelBody:
+	WithVoxelHelicopterBody:
+		TickRate: 1
 
 ^Ship:
 	Inherits@1: ^Orientable
