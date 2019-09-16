@@ -391,9 +391,9 @@ Lunarlaser:
 			Light: 75
 			Medium: 50
 			Heavy: 50
-			Wood: 100
-			Steel: 100
-			Concrete: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 25
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, IgniteDeath, DefaultDeath
