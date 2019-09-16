@@ -284,10 +284,24 @@ ChainGun.Yak.Right:
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
 		ExplosionPalette: rookiera2exp
+	Warhead@stage2: FireShrapnel
+		Weapon: ChainGun.Yak.Shrapnel
+		AimChance: 100
+		ThrowWithoutTarget: true
+		AimTargetStances: Neutral, Enemy
+		ValidTargets: Air, Ground, Water
+		AllowDirectHit: true
+		Amount: 2
 
 ChainGun.Yak.Left:
 	Inherits: ChainGun.Yak.Right
 	FirstBurstTargetOffset: -512,-213,0
+
+ChainGun.Yak.Shrapnel:
+	Inherits: ChainGun.Yak.Right
+	Range: 2c512
+	MinRange: 0
+	-Warhead@stage2:
 
 DioneGun:
 	Inherits: ^MG
