@@ -374,7 +374,7 @@ Player:
 			dog: 4
 			cmin: 6
 			hmmv.ai-repair: 2
-			shad.ai: 3
+			shad.ai: 1
 			shad.ai2: 3
 			beag: 6
 			orca: 2
