@@ -726,7 +726,7 @@ gadept:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
 	Buildable:
-		Queue: Building
+		Queue: Dummy
 		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
