@@ -372,7 +372,7 @@ ArtemisMissile:
 	Inherits: ^Missile
 	ReloadDelay: 75
 	Range: 7c0
-	Report: iggiat2a.wav, iggiat2b.wav
+	Report: missile1.wav
 	Projectile: Missile
 		Image: missile
 		TrailImage: bbblelrg
