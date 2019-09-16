@@ -321,6 +321,10 @@ nukesmoke:
 		Length: *
 		BlendMode: Translucent
 
+tanyasmoke:
+	idle: tanytral
+		Length: *
+
 largefire:
 	idle: fire01
 		Length: *

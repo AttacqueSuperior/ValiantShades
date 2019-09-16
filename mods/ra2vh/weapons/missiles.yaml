@@ -496,7 +496,8 @@ TanyaMissileStage2:
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Image: missile
-		TrailImage: bbblelrg
+		TrailImage: tanyasmoke
+		TrailPalette: heroictsexp
 		HorizontalRateOfTurn: 12
 		RangeLimit: 11c0
 	Warhead@1Dam: SpreadDamage
