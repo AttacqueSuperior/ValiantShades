@@ -441,7 +441,7 @@ WarthogMissileStage2:
 		RangeLimit: 18c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 75000
+		Damage: 110000
 		ValidTargets: Ground, Water
 		Versus:
 			Light: 75
