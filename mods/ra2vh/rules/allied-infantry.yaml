@@ -733,7 +733,7 @@ tanya2:
 	Tooltip:
 		Name: Tanya
 	Health:
-		HP: 125000
+		HP: 250000
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
