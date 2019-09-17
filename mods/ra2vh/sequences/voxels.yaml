@@ -251,7 +251,7 @@ sapc:
 	idle: trs
 
 dtruck:
-	idle: trucka
+	idle:
 
 trucka:
 	idle:
