@@ -996,6 +996,8 @@
 		Explosion: PlaneExplode
 		Spins: false
 		Moves: true
+		Velocity: 84
+		VelocityAcceleration: 8
 	ExternalCondition@hide-gpsdot:
 		Condition: hide-gpsdot
 	GpsDotAS:
