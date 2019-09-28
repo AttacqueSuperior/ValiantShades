@@ -160,7 +160,7 @@ hind:
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, naairc
 		Description: Vehicle Transport Helicopter\n  Unarmed.
-		IconPalette: ts-chrome
+		IconPalette: hindicon
 	Valued:
 		Cost: 1250
 	RevealsShroud:

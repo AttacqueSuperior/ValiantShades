@@ -34,7 +34,8 @@ fflash:
 hind:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
-	icon: hindicon
+	icon: hindicon.png
+		AddExtension: false
 
 hornet:
 	Inherits: ^Aircraft

@@ -143,6 +143,10 @@
 		Name: npdomico
 		Filename: npdomico.png
 		AllowModifiers: false
+	PaletteFromPng@hindicon:
+		Name: hindicon
+		Filename: hindicon.png
+		AllowModifiers: false
 	PaletteFromPng@sapsicon:
 		Name: sapsicon
 		Filename: sapsicon.png
