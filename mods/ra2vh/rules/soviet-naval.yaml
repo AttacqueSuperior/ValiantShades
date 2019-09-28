@@ -168,6 +168,12 @@ sqd:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
+	Inherits@4: ^Warpable
+	Inherits@5: ^CrateStatModifiers
+	Inherits@ivanbomb: ^IvanBombable
+	Inherits@radiation: ^DamagedByRadiation
+	Inherits@tanyamorale: ^AffectedByTanyaMorale
+	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
@@ -193,6 +199,9 @@ sqd:
 		Locomotor: naval
 		Voice: Move
 		PauseOnCondition: disabled
+	GrantCondition@preventgroundtargeting:
+		Condition: prevent-ground-target
+		RequiresCondition: being-warped
 	SelectionDecorations:
 		Palette: pips
 	Selectable:

@@ -36,7 +36,6 @@ shad:
 		PauseOnCondition: disabled
 	Aircraft:
 		CruiseAltitude: 3072
-		LandWhenIdle: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
 		TurnSpeed: 10
 		Speed: 140
@@ -168,7 +167,6 @@ hind:
 		Type: CenterPosition
 	Aircraft:
 		CruiseAltitude: 3072
-		LandWhenIdle: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
 		TurnSpeed: 10
 		Speed: 125
@@ -632,8 +630,7 @@ pdplane.crate:
 	-Targetable@Repair:
 	-DamagedByTintedCells:
 	-GrantConditionOnDamageState@damaged:
-	Aircraft:
-		-AirborneCondition:
+	-Targetable@Temporal:
 
 badger:
 	Inherits: beag

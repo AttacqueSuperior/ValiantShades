@@ -254,13 +254,11 @@ dog:
 		VTOL: true
 		TurnToDock: false
 		CruiseAltitude: 3072
-		LandWhenIdle: false
 		InitialFacing: 20
 		TurnSpeed: 64
 		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
-		AirborneCondition: airborne
 		IdealSeparation: 512
 	WithInfantryBody:
 		StandSequences: fly

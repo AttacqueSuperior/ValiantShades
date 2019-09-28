@@ -854,6 +854,8 @@
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^UnitParticles
 	Inherits@4: ^VoxelLighting
+	Inherits@5: ^IronCurtainable
+	Inherits@6: ^Warpable
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
@@ -879,9 +881,12 @@
 		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
+	GrantCondition@preventgroundtargeting:
+		Condition: prevent-ground-target
+		RequiresCondition: airborne || being-warped || invulnerability
 	Targetable@ground:
 		TargetTypes: Ground, Vehicle
-		RequiresCondition: !airborne
+		RequiresCondition: !prevent-ground-target
 	GrantConditionOnDamageState@damaged:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
@@ -897,10 +902,10 @@
 		Categories: Aircraft
 	RevealOnFire:
 		Duration: 50
-	DamagedByTintedCells:
-		RequiresCondition: !airborne
 	SelfHealing@crane:
-		RequiresCondition: crane && !airborne
+		RequiresCondition: crane && !prevent-ground-target
+	Targetable@Temporal:
+		RequiresCondition: !airborne
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -924,7 +929,6 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
-		LandWhenIdle: false
 		CanSlide: false
 		CanHover: false
 		VTOL: false
@@ -1054,6 +1058,9 @@
 	SpeedMultiplier@disabled:
 		RequiresCondition: disabled
 		Modifier: 0
+	GrantCondition@preventgroundtargeting:
+		Condition: prevent-ground-target
+		RequiresCondition: being-warped || invulnerability
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha

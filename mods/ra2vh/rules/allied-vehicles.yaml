@@ -82,8 +82,8 @@ cmin:
 		Resources: Ore, Gems
 		BaleLoadDelay: 8
 		BaleUnloadDelay: 1
-		SearchFromProcRadius: 24
-		SearchFromOrderRadius: 12
+		SearchFromProcRadius: 30
+		SearchFromHarvesterRadius: 15
 		HarvestVoice: Harvest
 		DeliverVoice: Deliver
 	ChronoResourceDelivery:

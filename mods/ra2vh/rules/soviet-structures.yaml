@@ -268,19 +268,15 @@ naairc:
 		RequiresCondition: !build-incomplete
 	Exit@1:
 		SpawnOffset: -370,370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@2:
 		SpawnOffset: 370,-370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@3:
 		SpawnOffset: 1000,370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@4:
 		SpawnOffset: 350,1000,0
-		MoveIntoWorld: false
 		Facing: 224
 	RenderSprites:
 		Image: gaairc
@@ -571,7 +567,7 @@ naclon:
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
 	AcceptsDeliveredCash:
-		RequiresCondition: !build-incomplete && !being-warped && !powerdown
+		# RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2

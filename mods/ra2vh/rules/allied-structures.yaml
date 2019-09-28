@@ -298,19 +298,15 @@ gaairc:
 		RequiresCondition: !build-incomplete
 	Exit@1:
 		SpawnOffset: -370,370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@2:
 		SpawnOffset: 370,-370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@3:
 		SpawnOffset: 1000,370,0
-		MoveIntoWorld: false
 		Facing: 224
 	Exit@4:
 		SpawnOffset: 350,1000,0
-		MoveIntoWorld: false
 		Facing: 224
 	ParatroopersPower@paratroopers:
 		OrderName: AirborneInfoOrder
