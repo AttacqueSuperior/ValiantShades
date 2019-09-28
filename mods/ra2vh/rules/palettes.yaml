@@ -322,6 +322,13 @@
 		G: 200
 		B: 255
 		A: 128
+	FlickeringPaletteEffect@temporal:
+		PaletteName: temporal
+		BaseColor: 80D0FF10
+		AmplitudeRed: 8
+		AmplitudeGreen: 13
+		AmplitudeBlue: 16
+		QuantizationCount: 48
 	PaletteFromRGBA@berserk:
 		Name: berserk
 		R: 255
