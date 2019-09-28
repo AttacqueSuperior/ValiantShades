@@ -175,8 +175,6 @@ hind:
 		AltitudeVelocity: 160
 		CruisingCondition: cruising
 	RenderSprites:
-	RenderVoxels:
-		NormalsPalette: ts-normals
 	WithVoxelHelicopterBody:
 		TickRate: 1
 	Carryall:
