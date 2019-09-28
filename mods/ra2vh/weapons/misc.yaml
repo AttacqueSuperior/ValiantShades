@@ -674,3 +674,28 @@ SpyPlaneCamera:
 		Radius: 8c0
 		Duration: 50
 		RevealGeneratedShroud: true
+
+ClusterMineSpawner:
+	Range: 1c0
+	Report: vkiratta.wav
+	Projectile: InstantExplode
+	Warhead@1Clu: FireClusterAS
+		Weapon: MineSpawner
+		Dimensions: 4,4
+		Footprint: _XX_ XXXX XXXX _XX_
+		ValidTargets: Ground, Water, Air
+
+MineSpawner:
+	Range: 5c0
+	Projectile: BulletAS
+		Image: mine
+		Sequences: fall
+		Palette: infantry
+		IsPlayerPalette: true
+		Blockable: false
+		Speed: 384
+	Warhead@1Spa: SpawnActor
+		Actors: mine
+		Range: 0
+		ForceGround: true
+		ValidTargets: Ground, Water, Air

@@ -144,3 +144,48 @@ flameguy2:
 		Image: flameguy
 	Health:
 		HP: 120000
+
+mine:
+	Inherits: ^SpriteActor
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^Warpable
+	Interactable:
+		Bounds: 24,24
+	RenderSprites:
+		PlayerPalette: infantry
+	WithSpriteBody:
+	HiddenUnderFog:
+	Mine:
+		CrushClasses: mine
+		DetonateClasses: mine
+		AvoidFriendly: false
+		BlockFriendly: false
+	Health:
+		HP: 50000
+	Armor:
+		Type: Light
+	Armor@mineimmunity:
+		Type: Mine
+	Cloak:
+		CloakSound:
+		UncloakSound:
+		Palette: infantry-cloak
+		IsPlayerPalette: true
+		CloakTypes: mirage
+		InitialDelay: 0
+	Tooltip:
+		Name: Mine
+	Targetable:
+		TargetTypes: Ground, Mine
+		RequiresCondition: !disabled
+	Immobile:
+		OccupiesSpace: true
+	HitShape:
+	MapEditorData:
+		Categories: System
+	Explodes:
+		Weapon: MineExplode
+		DeathTypes: DefaultDeath
+	WithIdleAnimation:
+		Sequences: blink1, blink2
+		Interval: 150

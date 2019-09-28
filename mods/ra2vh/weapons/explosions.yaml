@@ -91,6 +91,16 @@ SpawnedPlaneExplosion:
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 
+MineExplode:
+	Inherits: KirovExplode
+	Warhead@2Dam: SpreadDamage
+		Damage: 20000
+		Versus:
+			Mine: 0
+	Warhead@1Eff: CreateEffect
+		Explosions: mineexplosion
+		ImpactSounds: mine1.wav
+
 AlliedPowerPlantExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: alliedpowerplantexplosion

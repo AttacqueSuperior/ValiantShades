@@ -12,7 +12,7 @@
 	DebugVisualizations:
 	Locomotor@FOOT:
 		Name: foot
-		Crushes: crate
+		Crushes: crate, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		SharesCell: true
 		TerrainSpeeds:
@@ -26,7 +26,7 @@
 			Gems: 107
 	Locomotor@SWIMSUIT:
 		Name: swimsuit
-		Crushes: crate
+		Crushes: crate, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		SharesCell: true
 		TerrainSpeeds:
@@ -52,7 +52,7 @@
 			Gems: 45
 	Locomotor@WHEELED:
 		Name: wheeled
-		Crushes: crate
+		Crushes: crate, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
 			Clear: 133
@@ -66,7 +66,7 @@
 			Gems: 93
 	Locomotor@TRACKED:
 		Name: tracked
-		Crushes: crate, infantry
+		Crushes: crate, infantry, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
 			Clear: 133
@@ -80,7 +80,7 @@
 			Gems: 93
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
-		Crushes: fence, crate, infantry
+		Crushes: fence, crate, infantry, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
 			Clear: 133
@@ -94,7 +94,7 @@
 			Gems: 93
 	Locomotor@OMNICRUSHER:
 		Name: omnicrusher
-		Crushes: fence, wall, crate, infantry, vehicle
+		Crushes: fence, wall, crate, infantry, vehicle, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
 			Clear: 133
@@ -113,7 +113,7 @@
 			Water: 133
 	Locomotor@LANDINGCRAFT:
 		Name: lcraft
-		Crushes: fence, crate
+		Crushes: fence, crate, mine
 		CrushDamageTypes: DefaultDeath, CrushedDeath
 		TerrainSpeeds:
 			Clear: 133

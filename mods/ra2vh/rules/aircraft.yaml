@@ -678,6 +678,17 @@ badgerhusk:
 	RenderVoxels:
 		Image: badger
 
+badger.clustermine:
+	Inherits: badger
+	RenderSprites:
+		Image: badger
+	RenderVoxels:
+		Image: badger
+	AmmoPool:
+		Ammo: 1
+	Armament:
+		Weapon: ClusterMineSpawner
+
 hornet:
 	Inherits: ^SpawnedPlane
 	Inherits@factionrankpips: ^AlliedVeteranRank
