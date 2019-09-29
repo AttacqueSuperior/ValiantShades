@@ -140,3 +140,12 @@ SecretServiceVoice:
 		Move: isecmoa, isecmob, isecmoc, isecmod
 		Attack: isecata, isecatb, isecatc, isecatd, isecate
 		Die: isecdia, isecdib, isecdic
+
+EinsteinVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ieinsea, ieinseb, ieinsec, ieinsed, ieinsee
+		Move: ieinmoa, ieinmob, ieinmoc, ieinmod, ieinmoe
+		Attack: ieinata, ieinatb, ieinatc, ieinatd, ieinate
+		Feedback: ieinfea, ieinfeb, ieinfec, ieinfed, ieinfee
+		Die: ieindia, ieindib, ieindic, ieindid, ieindie

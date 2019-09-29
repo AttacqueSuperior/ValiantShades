@@ -102,3 +102,13 @@ pres:
 	Tooltip:
 		Name: President
 		GenericVisibility: None
+
+eins:
+	Inherits: ^CivilianInfantry
+	Tooltip:
+		Name: Albert Einstein
+		GenericVisibility: None
+	Voiced:
+		VoiceSet: EinsteinVoice
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
