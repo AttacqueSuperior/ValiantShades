@@ -132,3 +132,11 @@ CowVoice:
 		Move: gcowmova, gcowmovb
 		Feedback: gcowsela, gcowselb, gcowselc
 		Die: gcowdiea
+
+SecretServiceVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: isecsea, isecseb, isecsec, isecsed, isecsed, isecsee, isecsef
+		Move: isecmoa, isecmob, isecmoc, isecmod
+		Attack: isecata, isecatb, isecatc, isecatd, isecate
+		Die: isecdia, isecdib, isecdic
