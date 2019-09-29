@@ -49,6 +49,10 @@
 		Name: npdomico
 		Filename: npdomico.png
 		AllowModifiers: false
+	PaletteFromPng@volkicon:
+		Name: volkicon
+		Filename: volkicon.png
+		AllowModifiers: false
 	PaletteFromPng@hindicon:
 		Name: hindicon
 		Filename: hindicon.png

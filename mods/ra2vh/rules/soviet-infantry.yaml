@@ -624,7 +624,7 @@ boris:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		Prerequisites: natech, ~nahand
+		Prerequisites: natek, ~nahand
 		BuildPaletteOrder: 20
 		BuildLimit: 1
 		Description: Soviet Commando Infantry\n  Strong vs Ground\n  Weak vs Aircraft
@@ -736,6 +736,68 @@ cosmo.husk:
 		Type: CenterPosition
 	RevealOnDeath:
 		Radius: 4c0
+
+volkov:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		Prerequisites: natech, ~nahand
+		BuildPaletteOrder: 20
+		BuildLimit: 1
+		Description: Soviet Commando Infantry\n  Strong vs Ground\n  Weak vs Aircraft
+		IconPalette: volkicon
+	Valued:
+		Cost: 1500
+	DeliversCash:
+		Payload: 50
+		PlayerExperience: 5
+		Voice: Move
+	Tooltip:
+		Name: Volkov
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 250000
+	Mobile:
+		Speed: 75
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Armament@primary:
+		Weapon: VolkovRail
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: VolkovRailE
+		RequiresCondition: rank-heroic
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	VoiceAnnouncement:
+		Voice: Select # PLACEHOLDER
+	Voiced:
+		VoiceSet: RomanovVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
+		RequiresCondition: !disabled
 
 yuripr:
 	Inherits: yuri

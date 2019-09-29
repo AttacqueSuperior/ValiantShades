@@ -476,6 +476,10 @@ bomb-overlay:
 	ivanbomb: bombcurs
 		Length: 2
 
+volkovrail:
+	idle: volkrail
+		Length: *
+
 trock01:
 	Inherits: ^Rock
 
