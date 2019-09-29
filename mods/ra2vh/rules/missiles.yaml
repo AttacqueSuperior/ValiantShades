@@ -23,5 +23,7 @@ v3rocket:
 		Sequences: v3trailer
 		Palette: effect
 		SpawnFrequency: 1
-		Gravity: -40,-40,60, 40,40,60
+		Speed: 0, 40
+		Gravity: 60
+		TurnRate: 48
 		Duration: 19

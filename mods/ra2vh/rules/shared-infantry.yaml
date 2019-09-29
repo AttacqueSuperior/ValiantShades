@@ -329,7 +329,8 @@ dog:
 	SmokeParticleEmitter@crashsmoke:
 		Sequences: ra1-smoke
 		Palette: ra
-		Gravity: -24,-24,36, 24,24,36
+		Speed: 0, 24
+		Gravity: 36
 		Duration: 13
 	-Explodes@smokespawn:
 	-GpsDotAS:

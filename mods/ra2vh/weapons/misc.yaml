@@ -393,7 +393,8 @@ BuildingDeathSmokeSpawner2:
 		Sequences: toveenasmoke1
 		Palette: heroicra2exp
 		Duration: 67
-		Gravity: -32,-32,16, 32,32,32
+		Speed: 0, 32
+		Gravity: 16, 32
 		Neutral: true
 
 BuildingDeathSmoke2Spawner2:
@@ -407,7 +408,8 @@ BuildingDeathSmoke2Spawner2:
 		Sequences: toveenasmoke2
 		Palette: heroicra2exp
 		Duration: 59
-		Gravity: -32,-32,16, 32,32,32
+		Speed: 0, 32
+		Gravity: 16, 32
 		Neutral: true
 
 BuildingDeathFlameGuySpawner:
@@ -453,7 +455,8 @@ UnitDeathSmokeSpawner2:
 		Sequences: unitdeathsmoke1
 		Palette: rookiera2exp
 		Duration: 33
-		Gravity: -32,-32,16, 32,32,32
+		Speed: 0, 32
+		Gravity: 16, 32
 		Neutral: true
 
 UnitDeathSmoke2Spawner2:
@@ -467,7 +470,8 @@ UnitDeathSmoke2Spawner2:
 		Sequences: unitdeathsmoke2
 		Palette: rookiera2exp
 		Duration: 33
-		Gravity: -32,-32,16, 32,32,32
+		Speed: 0, 32
+		Gravity: 16, 32
 		Neutral: true
 
 RadiationDeath:
@@ -484,7 +488,8 @@ RadiationDeath:
 		Sequences: radparticle
 		Palette: heroictsexp
 		Duration: 191
-		Gravity: -64,-64,0, 64,64,0
+		Speed: 0, 32
+		TurnRate: 32
 		Neutral: true
 		Weapon: RadiationParticle
 	Warhead@spawn2: SpawnSmokeParticle
@@ -493,7 +498,8 @@ RadiationDeath:
 		Sequences: radparticle
 		Palette: heroictsexp
 		Duration: 191
-		Gravity: -64,-64,0, 64,64,0
+		Speed: 0, 32
+		TurnRate: 32
 		Neutral: true
 		Weapon: RadiationParticle
 

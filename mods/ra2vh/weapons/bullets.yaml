@@ -39,7 +39,9 @@ sabot:
 		HelixSequences: tankdestroyersmoke
 		HelixPalette: rookietsexp
 		HelixDuration: 39
-		HelixGravity: -24,-24,36, 24,24,36
+		HelixSpeed: 0, 24
+		HelixGravity: 36
+		HelixTurnRate: 48
 		HitAnim: explosion
 		HitAnimSequence: elite_explosion
 		HitAnimPalette: rookiera2exp

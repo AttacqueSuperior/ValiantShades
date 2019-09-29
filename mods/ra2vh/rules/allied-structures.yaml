@@ -473,7 +473,8 @@ gaorep:
 		Sequences: refinerysmoke
 		Palette: rookiera2exp
 		SpawnFrequency: 1,2
-		Gravity: -48,-48,72, 48,48,72
+		Speed: 0, 36
+		Gravity: 27, 54
 		Duration: 39
 		Offset: -128,0,3560
 	CashTrickler:

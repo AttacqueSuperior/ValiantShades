@@ -264,7 +264,8 @@
 		Sequences: largesmoke
 		Palette: tsanim
 		SpawnFrequency: 3, 10
-		Gravity: -48,-48,72, 48,48,72
+		Speed: 0, 48
+		Gravity: 72
 		Offset: -384,-384,0, 384,384,0
 		Duration: 39
 	Targetable@warpimmune:
@@ -997,7 +998,8 @@
 		Sequences: largesmoke
 		Palette: tsanim
 		SpawnFrequency: 1, 3
-		Gravity: -48,-48,72, 48,48,72
+		Speed: 0, 48
+		Gravity: 72
 		Duration: 39
 	Explodes@smokespawn:
 		Weapon: UnitDeathSmokeSpawner
