@@ -751,6 +751,10 @@ a10:
 		IdleBehavior: LeaveMap
 	Voiced:
 		VoiceSet: AlliedCargoPlaneVoice
+	Health:
+		HP: 350000
+	Armor:
+		Type: Heavy
 
 a10husk:
 	Inherits: ^PlaneHusk
