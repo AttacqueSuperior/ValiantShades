@@ -729,7 +729,7 @@ tanya2:
 		BuildLimit: 1
 		Description: Airborne commando infantry.\n  Strong vs Everything
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	Tooltip:
 		Name: Tanya
 	Health:
@@ -778,6 +778,128 @@ tanya2.husk:
 		Type: CenterPosition
 	RevealOnDeath:
 		Radius: 4c0
+
+hirano:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 150
+		Prerequisites: garbur, ~gapile
+		BuildLimit: 1
+		Description: Hero armed with dual heavy chainguns\nand a Hilbert Generator.\n  Strong vs Infantry, Vehicles\n  Weak vs Buildings
+		IconPalette: hiraicon
+	Valued:
+		Cost: 1500
+	DeliversCash:
+		Payload: 750
+		PlayerExperience: 75
+		Voice: Move
+	Tooltip:
+		Name: Hirano
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 250000
+	Mobile:
+		Speed: 75
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: HiranoGun
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: HiranoGunE
+		RequiresCondition: rank-heroic
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: HiranoGun
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: HiranoGunE
+		RequiresCondition: rank-heroic
+	Armament@primary2:
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic
+	Armament@elite2:
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic
+	Armament@opentopped2:
+		Name: opentopped
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped2:
+		Name: opentopped
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic
+	Armament@primary3:
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic
+	Armament@elite3:
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic
+	Armament@opentopped3:
+		Name: opentopped
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped3:
+		Name: opentopped
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	VoiceAnnouncement:
+		Voice: Build
+	Voiced:
+		VoiceSet: TanyaVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute && !hilbertgenerate
+	-TakeCover:
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 100
+		RequiresCondition: !disabled
+	GrantTimedConditionOnDeploy@hilberteffect:
+		DeployedCondition: hilbertgenerate
+		DeployedTicks: 25
+		CooldownTicks: 1125
+		Voice: Move # PLACEHOLDER
+		StartsFullyCharged: true
+	WithIdleOverlay@hilbert:
+		Sequence: deploy
+		RequiresCondition: hilbertgenerate
+		Palette: infantry
+		IsPlayerPalette: true
+	GrantCondition@hilbert-disable:
+		Condition: disabled
+		RequiresCondition: hilbertgenerate
+	ExplodeWeapon@hilbert:
+		RequiresCondition: hilbertgenerate
+		Weapon: HilbertEffectCreator
+	AIDeployHelper:
+		DeployTrigger: Attack
+		DeployChance: 33
+		DeployTicks: 1200
 
 jumpjet:
 	Inherits: ^jumpjet

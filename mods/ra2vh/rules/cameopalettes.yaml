@@ -29,6 +29,10 @@
 		Name: grenicon
 		Filename: grenicon.png
 		AllowModifiers: false
+	PaletteFromPng@hiraicon:
+		Name: hiraicon
+		Filename: hiraicon.png
+		AllowModifiers: false
 	PaletteFromPng@ltnkicon:
 		Name: ltnkicon
 		Filename: ltnkicon.png

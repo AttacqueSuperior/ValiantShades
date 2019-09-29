@@ -494,3 +494,19 @@
 		HealIfBelow: 100
 		DamageCooldown: 150
 		RequiresCondition: crane
+
+^AffectedByHilbertEffect:
+	ExternalCondition@hilberteffect:
+		Condition: hilberteffect
+		SourceCap: 1
+	GrantCondition@hilberteffect-disable:
+		RequiresCondition: hilberteffect
+		Condition: disabled
+	DamageMultiplier@hilberteffect:
+		RequiresCondition: hilberteffect
+		Modifier: 150
+	WithColoredOverlay@hilberteffect:
+		RequiresCondition: hilberteffect
+		Palette: hilberteffect
+	TimedConditionBar@hilberteffect:
+		Condition: hilberteffect

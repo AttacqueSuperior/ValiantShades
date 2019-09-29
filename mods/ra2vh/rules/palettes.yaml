@@ -272,6 +272,12 @@
 		G: 0
 		B: 0
 		A: 128
+	PaletteFromRGBA@hilberteffect:
+		Name: hilberteffect
+		R: 0
+		G: 255
+		B: 255
+		A: 128
 	TSShroudPalette@shroud:
 		Name: shroud
 	ShroudRenderer:

@@ -323,3 +323,49 @@ DioneGunE:
 	Inherits: DioneGun
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+HiranoGun:
+	ReloadDelay: 5
+	Range: 7c512
+	Report: vwaratta.wav, vwarattb.wav
+	Projectile: BulletAS
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 50, 0
+		Damage: 17000
+		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 25
+			Steel: 12
+			Concrete: 6
+			Drone: 100
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: piffpiff
+		ExplosionPalette: rookiera2exp
+		ValidTargets: Ground, Water, Air
+
+HiranoGunE:
+	Inherits: HiranoGun
+	Range: 9c512
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+
+HiranoInaccurateGun:
+	Inherits: HiranoGun
+	-Report:
+	Projectile: BulletAS
+		Inaccuracy: 256
+
+HiranoInaccurateGunE:
+	Inherits: HiranoGunE
+	-Report:
+	Projectile: BulletAS
+		Inaccuracy: 256

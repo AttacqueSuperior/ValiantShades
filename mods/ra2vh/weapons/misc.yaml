@@ -699,3 +699,27 @@ MineSpawner:
 		Range: 0
 		ForceGround: true
 		ValidTargets: Ground, Water, Air
+
+HilbertEffectCreator:
+	ReloadDelay: 96
+	Range: 1
+	Projectile: InstantExplode
+	Warhead@TargetValidation: SpreadDamage
+	Warhead@HilbertEffect: FireClusterAS
+		Weapon: HilbertEffect
+		Dimensions: 15, 15
+		Footprint: _______X_______ ______XXX______ _____XXXXX_____ ____XXXXXXX____ ___XXXXXXXXX___ __XXXXXXXXXXX__ _XXXXXXXXXXXXX_ XXXXXXXXXXXXXXX _XXXXXXXXXXXXX_ __XXXXXXXXXXX__ ___XXXXXXXXX___ ____XXXXXXX____ _____XXXXX_____ ______XXX______ _______X_______
+
+HilbertEffect:
+	Projectile: BulletAS
+		Speed: 128
+	Warhead@TargetValidation: SpreadDamage
+	Warhead@emp: GrantExternalCondition
+		Range: 1c448
+		Duration: 500
+		Condition: hilberteffect
+		ValidStances: Neutral, Enemy
+	Warhead@2Eff: CreateEffect
+		Explosions: hilberteffect
+		ExplosionPalette: heroictsexp
+		ValidTargets: Ground, Air, Water

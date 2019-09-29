@@ -539,3 +539,42 @@ fairy:
 		Start: 426
 		Length: 32
 	icon: xxicon
+
+hirano:
+	Inherits: ^BasicInfantry
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 8
+		Facings: 8
+	idle1:
+		Start: 182
+		Length: 17
+	idle2:
+		Start: 200
+		Length: 26
+	cheer:
+		Start: 249
+		Length: 51
+	die1:
+		Start: 227
+		Length: 7
+	die2:
+		Start: 234
+		Length: 15
+	shoot:
+		Start: 126
+		Length: 7
+		Facings: 8
+	draw-weapon:
+		Start: 72
+		Length: 9
+		Facings: 8
+	paradrop:
+		Start: 301
+	deploy:
+		Start: 302
+		Length: 25
+	icon: hiraicon.png
+		AddExtension: false

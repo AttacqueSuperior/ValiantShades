@@ -453,6 +453,7 @@
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@parachutable: ^Parachutable
 	Inherits@beholder: ^BeholderRangeBonus
+	Inherits@hilbert: ^AffectedByHilbertEffect
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -725,6 +726,7 @@
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@crane: ^CraneRepair
+	Inherits@hilbert: ^AffectedByHilbertEffect
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -860,6 +862,7 @@
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@emp: ^AffectedByEMP
 	Inherits@crane: ^CraneRepair
+	Inherits@hilbert: ^AffectedByHilbertEffect
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -1047,6 +1050,7 @@
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@crane: ^CraneRepair
+	Inherits@hilbert: ^AffectedByHilbertEffect
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
