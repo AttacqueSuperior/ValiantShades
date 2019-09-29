@@ -1,4 +1,5 @@
 ^Palettes:
+	Inherits: ^CameoPalettes
 	PaletteFromFile@terrain-temperate:
 		Name: terrain
 		Tileset: TEMPERATE
@@ -93,76 +94,6 @@
 		BasePalette: terrain
 		Name: terrainalpha
 		Alpha: 0.55
-	PaletteFromFile@chrome:
-		Name: chrome
-		Filename: cameo.pal
-		AllowModifiers: false
-		ShadowIndex: 242
-	PaletteFromFile@ts-chrome:
-		Name: ts-chrome
-		Filename: tscameo.pal
-		AllowModifiers: false
-		ShadowIndex: 242
-	PaletteFromPng@cameo-chevron:
-		Name: cameo-chevron
-		Filename: cameo-chevron.png
-		AllowModifiers: false
-	PaletteFromPng@scanicon:
-		Name: scanicon
-		Filename: scanicon.png
-		AllowModifiers: false
-	PaletteFromPng@fcmdicon:
-		Name: fcmdicon
-		Filename: fcmdicon.png
-		AllowModifiers: false
-	PaletteFromPng@rburicon:
-		Name: rburicon
-		Filename: rburicon.png
-		AllowModifiers: false
-	PaletteFromPng@grenicon:
-		Name: grenicon
-		Filename: grenicon.png
-		AllowModifiers: false
-	PaletteFromPng@ltnkicon:
-		Name: ltnkicon
-		Filename: ltnkicon.png
-		AllowModifiers: false
-	PaletteFromPng@spiricon:
-		Name: spiricon
-		Filename: spiricon.png
-		AllowModifiers: false
-	PaletteFromPng@demeicon:
-		Name: demeicon
-		Filename: demeicon.png
-		AllowModifiers: false
-	PaletteFromPng@warticon:
-		Name: warticon
-		Filename: warticon.png
-		AllowModifiers: false
-	PaletteFromPng@npdomico:
-		Name: npdomico
-		Filename: npdomico.png
-		AllowModifiers: false
-	PaletteFromPng@hindicon:
-		Name: hindicon
-		Filename: hindicon.png
-		AllowModifiers: false
-	PaletteFromPng@sapsicon:
-		Name: sapsicon
-		Filename: sapsicon.png
-		AllowModifiers: false
-	PaletteFromPng@tnkdrico:
-		Name: tnkdrico
-		Filename: tnkdrico.png
-		AllowModifiers: false
-	PaletteFromPng@domiicon:
-		Name: domiicon
-		Filename: domiicon.png
-		AllowModifiers: false
-	PaletteFromPng@nukeicon:
-		Name: nukeicon
-		Filename: nukeicon.png
-		AllowModifiers: false
 	PaletteFromFile@flameguy:
 		Name: flameguy
 		Filename: anim.pal

@@ -83,6 +83,7 @@ Rules:
 	ra2vh|rules/player.yaml
 	ra2vh|rules/world.yaml
 	ra2vh|rules/palettes.yaml
+	ra2vh|rules/cameopalettes.yaml
 	ra2vh|rules/defaults.yaml
 	ra2vh|rules/hitshapes.yaml
 	ra2vh|rules/attacheffects.yaml
