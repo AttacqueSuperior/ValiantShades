@@ -799,6 +799,82 @@ volkov:
 		HealIfBelow: 100
 		RequiresCondition: !disabled
 
+kamikaze:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 90
+		Prerequisites: ~disabled
+		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+	Valued:
+		Cost: 50
+	DeliversCash:
+		Payload: 25
+		PlayerExperience: 3
+		Voice: Move
+	Tooltip:
+		Name: Headless Kamikaze
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 75000
+	Mobile:
+		Speed: 105
+	RevealsShroud:
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Explodes@detonate:
+		Weapon: TerrorBomb
+		EmptyWeapon: TerrorBomb
+		DeathTypes: DefaultDeath
+	Explodes@manualdetonate:
+		Weapon: KamikazeBomb
+		EmptyWeapon: KamikazeBomb
+		DeathTypes: KamikazeTrigger
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 128
+		PauseOnCondition: disabled
+	Armament@PRIMARY:
+		Weapon: DemoTruckTargeting
+	GrantConditionOnAttack:
+		Condition: triggered
+	GrantConditionOnDeploy:
+		DeployedCondition: triggered
+		PauseOnCondition: disabled
+		Voice: Move
+	KillsSelf:
+		RequiresCondition: triggered
+		DamageTypes: KamikazeTrigger
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: ConscriptVoice
+	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-WithDeathAnimation@normal:
+	-WithDeathAnimation@effect:
+	-WithDeathAnimation@ra:
+	-WithDeathAnimation@flames:
+	Explodes@explosion:
+		DeathTypes: DefaultDeath
+	-Explodes@radiation:
+	-DeathSounds@normal:
+	-DeathSounds@zapped:
+	-DeathSounds@radiation:
+	-DeathSounds@psycrush:
+
 yuripr:
 	Inherits: yuri
 	Inherits@factionparachute: ^SovietParachute

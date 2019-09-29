@@ -272,7 +272,7 @@ TerrorBomb:
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 100000
+		Damage: 25000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			None: 150
@@ -298,6 +298,13 @@ TerrorBomb:
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
 		Chance: 50
+
+KamikazeBomb:
+	Inherits: TerrorBomb
+	Warhead@1Dam: SpreadDamage
+		Damage: 50000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 CRTerrorBomb:
 	Inherits: CRNuke

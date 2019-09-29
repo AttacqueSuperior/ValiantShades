@@ -344,3 +344,24 @@ volkov:
 	-prone-shoot:
 	icon: volkicon.png
 		AddExtension: false
+
+kamikaze:
+	Inherits: ^Animal
+	run:
+		Length: 8
+	idle1:
+		Start: 72
+		Length: 17
+	idle2:
+		Start: 102
+	die1:
+		Start: 86
+	die2:
+		Start: 101
+	paradrop:
+		Start: 4
+	cheer:
+		Start: 89
+		Length: 13
+	-die1:
+	-die2:
