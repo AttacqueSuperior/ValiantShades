@@ -43,8 +43,10 @@
 		Prerequisites: global-factundeploy
 	ProductionBar@Building:
 		ProductionType: Building
+		Color: B0C4DE
 	ProductionBar@Support:
 		ProductionType: Support
+		Color: B0C4DE
 	Power:
 		Amount: 50
 		RequiresCondition: !build-incomplete && !being-warped
@@ -146,6 +148,7 @@
 	ProductionBar:
 		ProductionType: Infantry
 		RequiresCondition: !build-incomplete && !powerdown
+		Color: B0C4DE
 	Power:
 		Amount: -10
 		RequiresCondition: !being-warped && !powerdown
@@ -280,6 +283,7 @@
 	ProductionBar:
 		ProductionType: Vehicle
 		RequiresCondition: !build-incomplete && !powerdown
+		Color: B0C4DE
 	Power:
 		Amount: -25
 		RequiresCondition: !being-warped && !powerdown
@@ -464,6 +468,7 @@
 	ProductionBar:
 		ProductionType: Ship
 		RequiresCondition: !build-incomplete && !powerdown
+		Color: B0C4DE
 	Power:
 		Amount: -20
 		RequiresCondition: !being-warped && !powerdown
@@ -511,6 +516,7 @@
 	ProductionBar:
 		ProductionType: Aircraft
 		RequiresCondition: !build-incomplete && !powerdown
+		Color: B0C4DE
 	PrimaryBuilding:
 		PrimaryCondition: primary
 		RequiresCondition: !being-warped && !powerdown
