@@ -737,6 +737,7 @@ dtruck:
 	GrantConditionOnDeploy:
 		DeployedCondition: triggered
 		PauseOnCondition: disabled
+		Voice: Attack
 	KillsSelf:
 		RequiresCondition: triggered
 		DamageTypes: DefaultDeath

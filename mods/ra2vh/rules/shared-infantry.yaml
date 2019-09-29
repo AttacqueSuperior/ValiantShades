@@ -294,7 +294,7 @@ dog:
 	WithSpriteBody@shadow:
 		RequiresCondition: inair || parachute
 	DeathSounds@normal:
-		DeathType: DefaultDeath
+		DeathTypes: DefaultDeath
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
