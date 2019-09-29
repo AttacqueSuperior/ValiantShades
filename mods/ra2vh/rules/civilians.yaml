@@ -112,3 +112,11 @@ eins:
 		VoiceSet: EinsteinVoice
 	WithInfantryBody:
 		IdleSequences: idle1, idle2
+
+rmnv:
+	Inherits: ^CivilianInfantry
+	Tooltip:
+		Name: Premier Romanov
+		GenericVisibility: None
+	Voiced:
+		VoiceSet: RomanovVoice

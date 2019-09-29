@@ -191,3 +191,13 @@ eins:
 	die2:
 		Start: 118
 		Length: 15
+
+rmnv:
+	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
+	liedown:
+		Start: 164
+	standup:
+		Start: 180
+	cheer:
+		Start: 196
