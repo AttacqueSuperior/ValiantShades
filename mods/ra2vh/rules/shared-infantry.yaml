@@ -290,6 +290,11 @@ dog:
 	-TurnOnIdle:
 	WithSpriteBody@shadow:
 		RequiresCondition: inair || parachute
+	DeathSounds@normal:
+		DeathType: DefaultDeath
+	-DeathSounds@zapped:
+	-DeathSounds@radiation:
+	-DeathSounds@psycrush:
 
 ^jumpjet.husk:
 	Inherits: ^HelicopterHusk
