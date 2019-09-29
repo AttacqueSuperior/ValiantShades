@@ -73,3 +73,8 @@ josh:
 		Weapon: RadiationDeath
 		EmptyWeapon: RadiationDeath
 		DeathTypes: RadiationDeath
+	SpawnActorOnDeath@kamikaze:
+		Actor: kamikaze
+		OwnerType: Killer
+		DeathType: Kamikazify
+		RequiresCondition: !inair

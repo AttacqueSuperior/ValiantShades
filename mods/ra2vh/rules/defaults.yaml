@@ -551,6 +551,11 @@
 		EmptyWeapon: RadiationDeath
 		DeathTypes: RadiationDeath
 		RequiresCondition: !inair
+	SpawnActorOnDeath@kamikaze:
+		Actor: kamikaze
+		OwnerType: Killer
+		DeathType: Kamikazify
+		RequiresCondition: !inair
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -572,7 +577,7 @@
 		Voice: Attack
 	Guardable:
 	DeathSounds@normal:
-		DeathTypes: BulletDeath, AltBulletDeath, IgniteDeath, FlameDeath
+		DeathTypes: BulletDeath, AltBulletDeath, IgniteDeath, FlameDeath, Kamikazify
 		RequiresCondition: !inair
 	DeathSounds@zapped:
 		Voice: Zapped
@@ -701,9 +706,11 @@
 			RadiationDeath: 1
 			FlameDeath: 1
 			IgniteDeath: 1
+			Kamikazify: 2
 	-WithDeathAnimation@ra:
 	-SpawnActorOnDeath@flames:
 	-WithDeathAnimation@flames:
+	-SpawnActorOnDeath@kamikaze:
 	-Explodes@radiation:
 	-Crushable:
 	MapEditorData:

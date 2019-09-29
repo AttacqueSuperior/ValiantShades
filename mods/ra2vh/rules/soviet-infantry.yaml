@@ -874,6 +874,7 @@ kamikaze:
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
+	-SpawnActorOnDeath@kamikaze:
 
 yuripr:
 	Inherits: yuri

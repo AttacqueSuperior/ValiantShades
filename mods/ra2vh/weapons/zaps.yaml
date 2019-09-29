@@ -464,7 +464,7 @@ VolkovRail:
 		Spread: 256
 		Falloff: 100, 0
 		Damage: 150000
-		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+		DamageTypes: Prone50Percent, TriggerProne, Kamikazify, DefaultDeath
 		ValidStances: Neutral, Enemy
 		Versus:
 			None: 100
@@ -482,7 +482,7 @@ VolkovRail:
 		Spread: 256
 		Falloff: 100, 0
 		Damage: 50000
-		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+		DamageTypes: Prone50Percent, TriggerProne, Kamikazify, DefaultDeath
 		ValidStances: Ally
 		Versus:
 			None: 100

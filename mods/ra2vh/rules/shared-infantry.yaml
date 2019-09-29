@@ -122,12 +122,14 @@ dog:
 			TeslaDeath: 2
 			RadiationDeath: 1
 			IgniteDeath: 1
+			Kamikazify: 2
 	-WithDeathAnimation@effect:
 	-WithDeathAnimation@ra:
 	-WithDeathAnimation@flames:
 	-Explodes@radiation:
+	-SpawnActorOnDeath@kamikaze:
 	DeathSounds@normal:
-		DeathTypes: BulletDeath, AltBulletDeath, MeltingDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath, RadiationDeath, IgniteDeath
+		DeathTypes: BulletDeath, AltBulletDeath, MeltingDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath, RadiationDeath, IgniteDeath, Kamikazify
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
@@ -277,6 +279,7 @@ dog:
 	-Explodes@explosion:
 	-Explodes@explosion-inair:
 	-Explodes@radiation:
+	-SpawnActorOnDeath@kamikaze:
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
