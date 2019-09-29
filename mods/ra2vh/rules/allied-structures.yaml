@@ -191,9 +191,11 @@ gaweap:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: being-warped
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: disabled
 	WithIdleOverlay@bib:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
