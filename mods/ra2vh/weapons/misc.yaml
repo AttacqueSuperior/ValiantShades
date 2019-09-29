@@ -723,3 +723,10 @@ HilbertEffect:
 		Explosions: hilberteffect
 		ExplosionPalette: heroictsexp
 		ValidTargets: Ground, Air, Water
+
+DemoTruckTargeting:
+	ValidTargets: DetonateAttack
+	Range: 2c0
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: DetonateAttack

@@ -726,6 +726,23 @@ dtruck:
 	RevealOnDeath:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 128
+		PauseOnCondition: disabled
+	Armament@PRIMARY:
+		Weapon: DemoTruckTargeting
+	GrantConditionOnAttack:
+		Condition: triggered
+	GrantConditionOnDeploy:
+		DeployedCondition: triggered
+		PauseOnCondition: disabled
+	KillsSelf:
+		RequiresCondition: triggered
+		DamageTypes: DefaultDeath
+	FirepowerMultiplier@triggered:
+		RequiresCondition: triggered
+		Modifier: 200
 	Explodes@demotruck:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
