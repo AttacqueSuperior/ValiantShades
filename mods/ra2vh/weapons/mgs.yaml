@@ -327,7 +327,7 @@ DioneGunE:
 HiranoGun:
 	ReloadDelay: 5
 	Range: 7c512
-	Report: vwaratta.wav, vwarattb.wav
+	Report: mgbar2.wav
 	Projectile: BulletAS
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
