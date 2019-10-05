@@ -524,9 +524,7 @@ yuri:
 		PauseOnCondition: disabled
 	TakeCover:
 	WithInfantryBody:
-		DefaultAttackSequence: shoot
-		IdleSequences: idle1,idle2
-		RequiresCondition: !deployed && !deploying
+		RequiresCondition: !parachute && !deployed && !deploying
 	WithSpriteBody@DEPLOYED:
 		Sequence: deployed
 		RequiresCondition: deployed || deploying
@@ -878,7 +876,6 @@ kamikaze:
 
 yuripr:
 	Inherits: yuri
-	Inherits@factionparachute: ^SovietParachute
 	Buildable:
 		BuildLimit: 1
 		BuildPaletteOrder: 290
