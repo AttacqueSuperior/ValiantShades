@@ -172,6 +172,13 @@ BattleFortressVoice:
 		Move: vbatmoa, vbatmob, vbatmoc, vbatmod, vbatmoe
 		Attack: vbatatb, vbatatc, vbatatd, vbatate
 
+MinervaVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmnrsea, vmnrseb, vmnrsec
+		Move: vmnrmoa, vmnrmob, vmnrmoc, vmnrmod
+		Attack: vmnrata, vmnratb, vmnratc, vmnratd
+
 HarrierVoice:
 	DefaultVariant: .wav
 	Voices:

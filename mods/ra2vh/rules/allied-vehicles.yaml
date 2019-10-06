@@ -1119,7 +1119,7 @@ mnrva:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
-		VoiceSet: CivilianAlliedFemaleVoice
+		VoiceSet: MinervaVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
