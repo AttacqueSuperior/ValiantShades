@@ -64,6 +64,7 @@ MP5:
 	ReloadDelay: 30
 	Range: 6c0
 	Report: iseaatta.wav, iseaattb.wav
+	InvalidTargets: Structure
 	Warhead@1Dam: SpreadDamage
 		Damage: 125000
 		Versus:
