@@ -1,5 +1,6 @@
 gacnst:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 3, -60
 	idle: ggcnst
@@ -21,10 +22,15 @@ gacnst:
 		Start: 20
 		Length: 20
 		Tick: 150
+	damagefire1:
+		Offset: -24,-61,1
+	damagefire2:
+		Offset: 64,-24,1
 	icon: acnsicon
 
 gapowr:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -31
 	idle: ggpowr
@@ -72,6 +78,10 @@ gapowr:
 		TilesetOverrides:
 			SNOW: GENERIC
 	make: gtpowrmk
+	damagefire1:
+		Offset: -20,2,1
+	damagefire2:
+		Offset: 3,-18,1
 	icon: powricon
 
 gapowrup:
@@ -83,6 +93,7 @@ gapowrup:
 
 gapile:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -15, -38
 	idle: ggpile
@@ -95,10 +106,15 @@ gapile:
 		Length: 16
 		ShadowStart: 48
 	make: gtpilemk
+	damagefire1:
+		Offset: 3,-28,1
+	damagefire2:
+		Offset: 27,18,1
 	icon: brrkicon
 
 garefn:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -12, -52
 	idle: ggrefn
@@ -117,10 +133,15 @@ garefn:
 	docking-overlay: ggrefnor
 		Length: 20
 		ShadowStart: 20
+	damagefire1:
+		Offset: -48,-21,1
+	damagefire2:
+		Offset: -18,-4,1
 	icon: reficon
 
 gafcmd:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -30
 	idle: ggfcmd
@@ -136,11 +157,16 @@ gafcmd:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -20,-7,1
+	damagefire2:
+		Offset: 18,5,1
 	icon: fcmdicon.png
 		AddExtension: false
 
 gaairc:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -14, -38
 	idle: ggairc
@@ -178,10 +204,15 @@ gaairc:
 		Tick: 120
 		ZOffset: -512
 	make: gtaircmk
+	damagefire1:
+		Offset: -51,-14,1
+	damagefire2:
+		Offset: -36,-31,1
 	icon: heliicon
 
 gaweap:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: -30, -60
 	idle: ggweap
@@ -228,10 +259,17 @@ gaweap:
 		Length: 5
 		ShadowStart: 6
 	make: gtweapmk
+	damagefire1:
+		Offset: -40,-70,1
+	damagefire2:
+		Offset: -3,-30,1
+	damagefire3:
+		Offset: -30,10,1
 	icon: gwepicon
 
 gayard:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: 0, -45
 	idle: ggyard
@@ -265,10 +303,17 @@ gayard:
 		Start: 18
 		Length: 18
 		ShadowStart: 54
+	damagefire1:
+		Offset: -40,-39,1
+	damagefire2:
+		Offset: -7,-52,1
+	damagefire3:
+		Offset: 32,-24,1
 	icon: ayaricon
 
 gadept:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 7, -40
 	idle: ggdept_d
@@ -294,10 +339,13 @@ gadept:
 		Length: 10
 		ShadowStart: 30
 		Tick: 180
+	damagefire1:
+		Offset: -67,-23,1
 	icon: fixicon
 
 gatech:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: -15, -40
 	idle: ggtech
@@ -310,10 +358,17 @@ gatech:
 		Length: 12
 		ShadowStart: 36
 	make: gttechmk
+	damagefire1:
+		Offset: -41,-10,1
+	damagefire2:
+		Offset: -17,-94,1
+	damagefire3:
+		Offset: 7,13,1
 	icon: techicon
 
 garbur:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: 0, -45
 	idle: ggrbur
@@ -343,11 +398,18 @@ garbur:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -27,82,1
+	damagefire2:
+		Offset: 24,70,1
+	damagefire3:
+		Offset: 5,32,1
 	icon: rburicon.png
 		AddExtension: false
 
 gaorep:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire4
 	Defaults:
 		Offset: 0, -45
 	idle: ggorep
@@ -362,10 +424,19 @@ gaorep:
 		ShadowStart: 24
 		Tick: 180
 	make: gtorepmk
+	damagefire1:
+		Offset: -20,-22,1
+	damagefire2:
+		Offset: -12,-11,1
+	damagefire3:
+		Offset: 6,-20,1
+	damagefire4:
+		Offset: -24,8,1
 	icon: gorep
 
 gacran:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -30
 	idle: ggcran
@@ -379,6 +450,10 @@ gacran:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -2,-42,1
+	damagefire2:
+		Offset: -10,8,1
 	icon: fixicon
 
 gawall:
@@ -402,6 +477,7 @@ gawall:
 
 gapill:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -15
 	idle: ggpill
@@ -433,10 +509,13 @@ gapill:
 	make: gtpillmk
 		Length: 8
 		ShadowStart: 8
+	damagefire1:
+		Offset: 5,-2,1
 	icon: pillicon
 
 nasam:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -15
 		ZOffset: -512
@@ -462,10 +541,13 @@ nasam:
 			SNOW: GENERIC
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: 1,5,1
 	icon: samicon
 
 gtgcan:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -30
 		ZOffset: -512
@@ -479,10 +561,13 @@ gtgcan:
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
+	damagefire1:
+		Offset: -1,-2,1
 	icon: gcanicon
 
 gaspysat:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -31
 	idle: ggspst
@@ -498,10 +583,15 @@ gaspysat:
 		Tick: 180
 	make: gtspstmk
 		Tick: 90
+	damagefire1:
+		Offset: 25,7,1
+	damagefire2:
+		Offset: -26,-5,1
 	icon: asaticon
 
 gagap:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0,-15
 	idle: gggap
@@ -516,10 +606,13 @@ gagap:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -5,-4,1
 	icon: gapicon
 
 gaweat:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -45
 	idle: ggweth
@@ -558,10 +651,15 @@ gaweat:
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: TEMPERATE
+	damagefire1:
+		Offset: 2,5,1
+	damagefire2:
+		Offset: 38,18,1
 	icon: wethicon
 
 gacsph:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: -15, -50
 	idle: ggcsph
@@ -572,10 +670,13 @@ gacsph:
 		Start: 1
 		ShadowStart: 3
 	make: gtcsphmk
+	damagefire1:
+		Offset: -34,-2,1
 	icon: csphicon
 
 atesla:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 1,-15
 	idle-normal: ggpris
@@ -608,3 +709,5 @@ atesla:
 			URBAN: GENERIC
 		Length: 27
 		ShadowStart: 27
+	damagefire1:
+		Offset: -1,1,1

@@ -1,5 +1,6 @@
 gacnst:
 	Inherits: ^ConYard
+	Inherits@damagefire: ^BuildingDamageFire2
 	Selectable:
 		Bounds: 220, 155, 0, -20
 	Transforms:
@@ -30,6 +31,7 @@ gacnst:
 gapowr:
 	Inherits: ^BasicPower
 	Inherits@shape: ^2x2Shape
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
 	Selectable:
@@ -117,6 +119,7 @@ gapowrup:
 gapile:
 	Inherits: ^Barracks
 	Inherits@shape: ^3x2Shape
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
 	Selectable:
@@ -152,6 +155,7 @@ gapile:
 
 garefn:
 	Inherits: ^Refinery
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
 	Selectable:
@@ -179,6 +183,7 @@ garefn:
 
 gaweap:
 	Inherits: ^WarFactory
+	Inherits@damagefire: ^BuildingDamageFire3
 	Buildable:
 		Prerequisites: gapile, ~structures.allies
 		Description: Produces vehicles.
@@ -217,6 +222,7 @@ gaweap:
 
 gafcmd:
 	Inherits: ^Tier2
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: gapile, garefn, ~structures.allies
 		IconPalette: fcmdicon
@@ -244,6 +250,7 @@ gafcmd:
 
 gayard:
 	Inherits: ^NavalYard
+	Inherits@damagefire: ^BuildingDamageFire3
 	Tooltip:
 		Name: Naval Yard
 	Buildable:
@@ -263,6 +270,7 @@ gayard:
 
 gaairc:
 	Inherits: ^AirPad
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: gafcmd, ~structures.allies #, ~!structures.america
 	Valued:
@@ -341,6 +349,7 @@ amradr:
 
 gatech:
 	Inherits: ^Tier3
+	Inherits@damagefire: ^BuildingDamageFire3
 	Buildable:
 		Prerequisites: gafcmd, gaweap, ~structures.allies
 	Selectable:
@@ -391,6 +400,7 @@ gatech:
 
 garbur:
 	Inherits: ^Tier4
+	Inherits@damagefire: ^BuildingDamageFire3
 	Buildable:
 		Prerequisites: gatech, ~structures.allies
 		IconPalette: rburicon
@@ -424,6 +434,7 @@ gaorep:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire4
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -486,6 +497,7 @@ gaspysat:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 70
@@ -533,6 +545,7 @@ gaspysat:
 gagap:
 	Inherits: ^SupportBuilding
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire1
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -581,6 +594,7 @@ gaweat:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -643,6 +657,7 @@ gacsph:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
@@ -723,6 +738,7 @@ gacsph:
 
 gacran:
 	Inherits: ^Crane
+	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: gaweap, gafcmd, ~structures.allies
 	Selectable:
@@ -734,6 +750,7 @@ gacran:
 gadept:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Queue: Dummy
 		BuildPaletteOrder: 70
