@@ -7,6 +7,7 @@ nawall:
 
 nalasr:
 	Inherits: ^BasicDefense
+	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
@@ -26,6 +27,7 @@ nalasr:
 
 naflak:
 	Inherits: ^AADefense
+	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
@@ -47,6 +49,7 @@ naflak:
 
 tesla:
 	Inherits: ^Tier2Defense
+	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Prerequisites: naradr, ~structures.soviets
 	Tooltip:

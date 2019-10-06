@@ -1,5 +1,6 @@
 nacnst:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 4, -58
 	idle: ngcnst_c
@@ -30,10 +31,13 @@ nacnst:
 		Length: 21
 		ShadowStart: 63
 		Tick: 150
+	damagefire1:
+		Offset: -65,-19,1
 	icon: scnsicon
 
 napowr:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: -15, -37
 	idle: ngpowr
@@ -48,19 +52,27 @@ napowr:
 	make: ntpowrmk
 		Length: 26
 		ShadowStart: 26
+	damagefire1:
+		Offset: -27,-7,1
 	icon: npwricon
 
 nahand:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 1, -31
 	idle: nghand
 	damaged-idle: nghand
 	make: nthandmk
+	damagefire1:
+		Offset: -8,-37,1
+	damagefire2:
+		Offset: 17,10,1
 	icon: handicon
 
 narefn:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: -13, -53
 	idle: ngrefn
@@ -81,10 +93,13 @@ narefn:
 	docking-overlay: ngrefnor
 		Length: 20
 		ShadowStart: 20
+	damagefire1:
+		Offset: 15,22,1
 	icon: nreficon
 
 naradr:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 2, -31
 	idle: ngradr
@@ -101,10 +116,13 @@ naradr:
 	make: ntradrmk
 		Length: 30
 		ShadowStart: 30
+	damagefire1:
+		Offset: -16,1,1
 	icon: nradicon
 
 naweap:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -30, -60
 	idle: ngweap
@@ -146,15 +164,16 @@ naweap:
 		Length: 13
 		ShadowStart: 13
 		Tick: 150
-	damaged-idle-lights: ngweap_a # doesn't have damage frames
-		Length: 13
-		ShadowStart: 13
-		Tick: 150
 	make: ntweapmk
+	damagefire1:
+		Offset: -62,-25,1
+	damagefire2:
+		Offset: 1,14,1
 	icon: nwepicon
 
 nayard:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: 0, -45
 	idle: ngyard
@@ -195,6 +214,12 @@ nayard:
 		Start: 18
 		Length: 18
 		ShadowStart: 54
+	damagefire1:
+		Offset: 25,-15,1
+	damagefire2:
+		Offset: -37,-18,1
+	damagefire3:
+		Offset: -57,-66,1
 	icon: yardicon
 
 nadept:
@@ -234,6 +259,7 @@ nadept:
 
 nanrct:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -12, -56
 	idle: ngnrct
@@ -250,10 +276,15 @@ nanrct:
 		Length: 11
 		Tick: 150
 	make: ntnrctmk
+	damagefire1:
+		Offset: 72,-45,1
+	damagefire2:
+		Offset: -44,11,1
 	icon: nrcticon
 
 natek:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: -15, -37
 	idle: ngtek
@@ -286,19 +317,33 @@ natek:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -41,-10,1
+	damagefire2:
+		Offset: -17,-94,1
+	damagefire3:
+		Offset: 7,13,1
 	icon: ntekicon
 
 natech:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: 0, -45
 	idle: ngtech
 	damaged-idle: ngtech
 	make: nttechmk
+	damagefire1:
+		Offset: -27,-8,1
+	damagefire2:
+		Offset: 24,-20,1
+	damagefire3:
+		Offset: 5,-58,1
 	icon: ntchicon
 
 naindp:
 	Inherits@MC: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -45
 	idle: ngindp
@@ -323,10 +368,13 @@ naindp:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -40,-4,1
 	icon: indpicon
 
 naclon:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -30
 	idle: ngclon_a
@@ -339,10 +387,13 @@ naclon:
 		ShadowStart: 33
 		Tick: 180
 	make: ntclonmk
+	damagefire1:
+		Offset: 23,-3,1
 	icon: cameo|clonicon
 
 napsis:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 1, -30
 	idle: ngpsis
@@ -359,6 +410,8 @@ napsis:
 	make: ntpsismk
 		Length: 24
 		ShadowStart: 24
+	damagefire1:
+		Offset: -23,4,1
 	icon: cameo|psisicon
 
 namisl:
@@ -389,6 +442,7 @@ namisl:
 
 napsyd:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -42
 	idle: ngpsyd_a
@@ -425,11 +479,16 @@ napsyd:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -20,-13,1
+	damagefire2:
+		Offset: 3,-33,1
 	icon: npdomico.png
 		AddExtension: false
 
 nairon:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -45
 	idle: ngiron_a
@@ -447,10 +506,13 @@ nairon:
 		Length: 12
 		ShadowStart: 36
 	make: ntironmk
+	damagefire1:
+		Offset: -2,14,1
 	icon: ironicon
 
 nacran:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -30
 	idle: ngcran
@@ -471,6 +533,8 @@ nacran:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: 0,-15,1
 	icon: rfixicon
 
 nawall:
@@ -493,6 +557,7 @@ nawall:
 
 nalasr:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -20
 	idle: nasnty
@@ -508,10 +573,13 @@ nalasr:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+	damagefire1:
+		Offset: -5,0,1
 	icon: plticon
 
 tesla:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -15
 	idle: ngtsla
@@ -535,10 +603,13 @@ tesla:
 		Tick: 100
 		ZOffset: 10
 	make: nttslamk
+	damagefire1:
+		Offset: 0,-1,1
 	icon: tslaicon
 
 naflak:
 	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -15
 	idle: ngflaktur
@@ -562,4 +633,6 @@ naflak:
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
+	damagefire1:
+		Offset: -5,-2,1
 	icon: flakicon
