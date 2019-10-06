@@ -329,6 +329,9 @@
 	WithColoredOverlay@temporal:
 		RequiresCondition: being-warped
 		Palette: temporal
+	WithColoredOverlay@temporal2:
+		RequiresCondition: being-warped
+		Palette: lowpower
 	Explodes@temporal:
 		Weapon: TemporalExplode
 		EmptyWeapon: TemporalExplode
