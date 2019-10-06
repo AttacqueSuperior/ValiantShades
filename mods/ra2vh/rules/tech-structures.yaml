@@ -39,6 +39,10 @@ caoild:
 		Sequence: oil
 	SpawnActorOnDeath:
 		Actor: caoild.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
 
 caoild.rubble:
 	Inherits: ^Rubble
@@ -103,6 +107,10 @@ caairp:
 		Sequence: flag
 	SpawnActorOnDeath:
 		Actor: caairp.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
 
 caairp.rubble:
 	Inherits: ^Rubble
@@ -152,6 +160,10 @@ cahosp:
 		Sequence: hospital
 	SpawnActorOnDeath:
 		Actor: cahosp.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
 
 cahosp.rubble:
 	Inherits: ^Rubble
@@ -246,6 +258,10 @@ caoutp:
 		LocalOffset: 500,0,900
 	SpawnActorOnDeath:
 		Actor: caoutp.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
 
 caoutp.rubble:
 	Inherits: ^Rubble
@@ -279,6 +295,10 @@ caslab:
 		Sequence: flag
 	SpawnActorOnDeath:
 		Actor: caslab.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
 
 caslab.rubble:
 	Inherits: ^Rubble

@@ -113,7 +113,7 @@
 
 ^BuildingParticles:
 	SmokeParticleEmitter@smallsmoke:
-		RequiresCondition: dmg_heavy
+		RequiresCondition: dmg_heavy && !being-warped
 		Sequences: smallsmoke
 		Palette: tsanim
 		SpawnFrequency: 3, 10
@@ -122,7 +122,7 @@
 		Offset: -384,-384,0, 384,384,0
 		Duration: 39
 	SmokeParticleEmitter@largesmoke:
-		RequiresCondition: dmg_crit
+		RequiresCondition: dmg_crit && !being-warped
 		Sequences: largesmoke
 		Palette: tsanim
 		SpawnFrequency: 3, 10
@@ -140,44 +140,44 @@
 	WithIdleOverlay@damagefire1:
 		Sequence: damagefire1
 		Palette: rookiera2exp
-		RequiresCondition: dmg_heavy && !dmg_crit
+		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
 	WithIdleOverlay@damagefire1-heavy:
 		Sequence: damagefire1
 		Palette: heroicra2exp
-		RequiresCondition: dmg_crit
+		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire2:
 	Inherits@damagefire: ^BuildingDamageFire1
 	WithIdleOverlay@damagefire2:
 		Sequence: damagefire2
 		Palette: rookiera2exp
-		RequiresCondition: dmg_heavy && !dmg_crit
+		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
 	WithIdleOverlay@damagefire2-heavy:
 		Sequence: damagefire2
 		Palette: heroicra2exp
-		RequiresCondition: dmg_crit
+		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire3:
 	Inherits@damagefire: ^BuildingDamageFire2
 	WithIdleOverlay@damagefire3:
 		Sequence: damagefire3
 		Palette: rookiera2exp
-		RequiresCondition: dmg_heavy && !dmg_crit
+		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
 	WithIdleOverlay@damagefire3-heavy:
 		Sequence: damagefire3
 		Palette: heroicra2exp
-		RequiresCondition: dmg_crit
+		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire4:
 	Inherits@damagefire: ^BuildingDamageFire3
 	WithIdleOverlay@damagefire4:
 		Sequence: damagefire4
 		Palette: rookiera2exp
-		RequiresCondition: dmg_heavy && !dmg_crit
+		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
 	WithIdleOverlay@damagefire4-heavy:
 		Sequence: damagefire4
 		Palette: heroicra2exp
-		RequiresCondition: dmg_crit
+		RequiresCondition: dmg_crit && !being-warped
 
 ^LargeBuildingDeathEffects:
 	Explodes@deathsmokes:
