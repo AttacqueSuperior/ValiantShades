@@ -841,7 +841,7 @@ kamikaze:
 		EmptyWeapon: KamikazeBomb
 		DeathTypes: KamikazeTrigger
 	AttackFrontal:
-		Voice: Attack
+		Voice: Move
 		FacingTolerance: 128
 		PauseOnCondition: disabled
 	Armament@PRIMARY:
@@ -857,7 +857,7 @@ kamikaze:
 		DamageTypes: KamikazeTrigger
 	WithInfantryBody:
 	Voiced:
-		VoiceSet: ConscriptVoice
+		VoiceSet: KamikazeVoice
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -873,6 +873,10 @@ kamikaze:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
 	-SpawnActorOnDeath@kamikaze:
+	Guard:
+		Voice: Move
+	AttackMove:
+		Voice: Move
 
 yuripr:
 	Inherits: yuri

@@ -99,6 +99,13 @@ BorisVoice:
 		Build: iborcra
 		Die: ibordia, ibordib, ibordic, ibordid, ibordie
 
+KamikazeVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ikamsea, ikamseb, ikamsec, ikamsed
+		Move: ikammoa, ikammob, ikammoc, ikammod, ikammoe, ikamomof, ikammog
+		Die: ikamdia, ikamdib, ikamdic
+
 CosmonautVoice:
 	Inherits: ^InfantryDeath
 	Voices:
