@@ -1,3 +1,26 @@
+^BuildingDamageFire1:
+	damagefire1: fire02
+		UseTilesetCode: false
+		Length: *
+		
+^BuildingDamageFire2:
+	Inherits@damagefire: ^BuildingDamageFire1
+	damagefire2: fire03
+		UseTilesetCode: false
+		Length: *
+
+^BuildingDamageFire3:
+	Inherits@damagefire: ^BuildingDamageFire2
+	damagefire3: fire02
+		UseTilesetCode: false
+		Length: *
+
+^BuildingDamageFire4:
+	Inherits@damagefire: ^BuildingDamageFire3
+	damagefire4: fire03
+		UseTilesetCode: false
+		Length: *
+
 ^MindControllable:
 	mindcontrol: mindanim
 		Length: *
