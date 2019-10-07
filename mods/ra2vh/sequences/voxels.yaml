@@ -1,6 +1,9 @@
 a10:
 	idle:
 
+ambu:
+	idle:
+
 amcv:
 	idle: mcv
 
@@ -14,6 +17,9 @@ asw:
 #	idle:
 
 badger:
+	idle:
+
+bcab:
 	idle:
 
 beag:
@@ -34,9 +40,15 @@ car:
 carrier:
 	idle:
 
+cblc:
+	idle:
+
 cdest:
 	idle:
 #Needs without weapon image cdestwo
+
+civp:
+	idle:
 
 cona:
 	idle:
@@ -54,12 +66,18 @@ cargoplane:
 cruise:
 	idle:
 
+ddbx:
+	idle:
+
 dest:
 	idle:
 #Needs without weapon image destwo
 
 #dmisl: #Dreadnought Missile needs voxel projectiles
 #	idle:
+
+doly:
+	idle:
 
 dred:
 	idle:
@@ -82,6 +100,9 @@ naflak:
 	turret: flaktur
 
 flata:
+	idle:
+
+ftrk:
 	idle:
 
 fv:
@@ -142,6 +163,9 @@ howi:
 	idle: hwtz
 
 hyd:
+	idle:
+
+jeep:
 	idle:
 
 lcrf:
@@ -281,6 +305,9 @@ wini:
 	idle:
 
 yak:
+	idle:
+
+ycab:
 	idle:
 
 zep:

@@ -98,3 +98,45 @@ taxi:
 		Name: Taxi
 	RenderVoxels:
 		NormalsPalette: ts-normals
+
+ycab:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Yellow Cab
+
+ddbx:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Double Decker Bus
+
+bcab:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Black Cab
+
+jeep:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Jeep
+
+doly:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Camera Dolly
+
+cblc:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Cable Car
+
+ftrk:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Fire Truck
+
+ambu:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Ambulance
+
+# civp: TO-DO - never moves, so should be aircraft instead
