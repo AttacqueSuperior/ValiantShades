@@ -172,6 +172,15 @@
 		Name: apollo75alpha
 		BasePalette: apollo
 		Alpha: 0.75
+	PaletteFromPaletteWithAlpha@weakfire:
+		Name: weakfire
+		BasePalette: effect
+		Alpha: 0.6
+		AllowModifiers: false
+	PaletteFromFile@strongfire:
+		Name: strongfire
+		Filename: anim.pal
+		AllowModifiers: false
 	PaletteFromFile@mousepal:
 		Name: mouse
 		Filename: mousepal.pal
