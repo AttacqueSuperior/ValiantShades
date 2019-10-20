@@ -120,3 +120,8 @@ rmnv:
 		GenericVisibility: None
 	Voiced:
 		VoiceSet: RomanovVoice
+
+#52=CLNT
+#53=ARND
+#54=STLN
+#57=MUMY

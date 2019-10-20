@@ -79,3 +79,7 @@ josh:
 		OwnerType: Killer
 		DeathType: Kamikazify
 		RequiresCondition: !inair
+
+#55=CAML
+#60=DNOA
+#61=DNOB
