@@ -250,7 +250,7 @@ Player:
 		PowerTypes: gapowr, napowr, nanrct
 		BarracksTypes: gapile, nahand
 		VehiclesFactoryTypes: gaweap, naweap
-		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, amradr, naairc
+		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, naairc
 		BuildingLimits:
 			garefn: 4
 			gapile: 3

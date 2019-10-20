@@ -336,17 +336,6 @@ gaairc:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1
 
-amradr:
-	Inherits: gaairc
-	Tooltip:
-		Name: American Airforce Command Headquarters
-	Buildable:
-		Prerequisites: garefn, ~disabled
-	WithSpriteBody:
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		Image: gaairc
-
 gatech:
 	Inherits: ^Tier3
 	Inherits@damagefire: ^BuildingDamageFire3

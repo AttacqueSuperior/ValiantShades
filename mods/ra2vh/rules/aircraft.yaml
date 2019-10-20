@@ -320,7 +320,7 @@ beag:
 		DeathType: DefaultDeath
 	HitShape:
 	Rearmable:
-		RearmActors: gaairc, amradr, naairc
+		RearmActors: gaairc, naairc
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -534,7 +534,7 @@ spirit:
 		DeathType: DefaultDeath
 	HitShape:
 	Rearmable:
-		RearmActors: gaairc, amradr, naairc
+		RearmActors: gaairc, naairc
 	Aircraft:
 		TurnSpeed: 18
 		Speed: 226
