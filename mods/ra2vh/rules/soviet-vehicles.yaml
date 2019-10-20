@@ -826,3 +826,7 @@ mind:
 		RequiresCondition: controlling > 16
 		Weapon: BrainWaveOverload
 		LocalOffset: 0,0,384
+	Explodes@mastermind:
+		Weapon: MasterMindExplode
+		EmptyWeapon: MasterMindExplode
+		DeathTypes: DefaultDeath

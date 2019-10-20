@@ -493,3 +493,10 @@ LargeTemporalExplode:
 	Inherits: TemporalExplode
 	Warhead@1Eff: CreateEffect
 		Explosions: largewarpaway, largewarpawayf
+
+MasterMindExplode:
+	Warhead@1Eff: CreateEffect
+		Explosions: mindwave
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: igenexpa.wav
+		ValidTargets: Ground, Water, Air

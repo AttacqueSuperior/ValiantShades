@@ -157,3 +157,5 @@ explosion:
 	mineexplosion: mineexp
 	volkovhit: volkrailhit
 	hilberteffect: hilbert
+	mindwave: mindwave
+		Tick: 80
