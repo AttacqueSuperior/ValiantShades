@@ -33,7 +33,7 @@ behold:
 		Image: dtruck
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: DemolitionTruckVoice
+		VoiceSet: BeholderVoice
 	HitShape:
 	ProximityExternalCondition:
 		Condition: beholder
