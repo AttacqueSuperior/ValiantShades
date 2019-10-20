@@ -1067,6 +1067,65 @@ bfrt.ai2:
 		Prerequisites: garbur, ~gaweap, ~testai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
+mgg:
+	Inherits: ^Vehicle
+	# Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^AlliedParachute
+	# Inherits@factionrankpips: ^AlliedVeteranRank
+	Valued:
+		Cost: 1250
+	Tooltip:
+		Name: Mobile Gap Generator
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 95
+		Prerequisites: ~gaweap, gatech
+		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nUnarmed.
+	Mobile:
+		Speed: 90
+		TurnSpeed: 5
+		Locomotor: wheeled
+	Health:
+		HP: 250000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 6c512
+	RevealOnDeath:
+		Radius: 3c256
+		DeathTypes: DefaultDeath
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelAnimatedBody:
+		Sequence: gap
+		PauseOnCondition: disabled
+		TickRate: 3
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+	# ProducibleWithLevel:
+	#	Prerequisites: warfactory.infiltrated
+	HitShape:
+	CreatesShroud:
+		Range: 5c0
+		RequiresCondition: !disabled
+	RenderShroudCircle:
+	ProximityExternalCondition:
+		Range: 5c0
+		AffectsParent: true
+		Condition: hide-gpsdot
+		RequiresCondition: !disabled
+	ProximityExternalCondition@mindcontrol:
+		Range: 5c0
+		AffectsParent: true
+		Condition: prevent-mindcontrol
+		RequiresCondition: !disabled
+
 mnrva:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
