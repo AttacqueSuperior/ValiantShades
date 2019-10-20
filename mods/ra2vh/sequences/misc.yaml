@@ -376,12 +376,6 @@ wake:
 		ZRamp: 1
 		Offset: 0, 0, 1
 
-shroud:
-	shroud:
-		Length: *
-	fog: fog
-		Length: *
-
 smallscorches:
 	Defaults:
 		UseTilesetExtension: true

@@ -1,3 +1,9 @@
+shroud:
+	shroud:
+		Length: *
+	fog: fog
+		Length: *
+
 resources:
 	Defaults:
 		UseTilesetExtension: true
