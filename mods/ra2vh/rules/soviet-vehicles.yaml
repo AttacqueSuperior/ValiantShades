@@ -882,7 +882,7 @@ bura:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
-		VoiceSet: TeslaTankVoice
+		VoiceSet: BuratinoVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
