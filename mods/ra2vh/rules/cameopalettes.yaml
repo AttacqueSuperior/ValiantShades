@@ -77,3 +77,7 @@
 		Name: nukeicon
 		Filename: nukeicon.png
 		AllowModifiers: false
+	PaletteFromPng@buraicon:
+		Name: buraicon
+		Filename: buraicon.png
+		AllowModifiers: false

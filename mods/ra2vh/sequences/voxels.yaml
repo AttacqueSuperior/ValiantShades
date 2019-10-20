@@ -31,6 +31,10 @@ bfrt:
 bpln:
 	idle:
 
+bura:
+	idle:
+	turret: buratur
+
 bus:
 	idle:
 

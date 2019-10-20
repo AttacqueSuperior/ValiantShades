@@ -13,6 +13,12 @@ bfrt:
 	Inherits@MC: ^MindControllable
 	icon: bfrticon
 
+bura:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: buraicon.png
+		AddExtension: false
+
 bus:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

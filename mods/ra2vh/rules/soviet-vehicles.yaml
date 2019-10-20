@@ -830,3 +830,59 @@ mind:
 		Weapon: MasterMindExplode
 		EmptyWeapon: MasterMindExplode
 		DeathTypes: DefaultDeath
+
+bura:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 1600
+	Tooltip:
+		Name: Buratino
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 120
+		Prerequisites: ~naweap, natech
+		Description: Heavy artillery firing thermobaric missiles.\n  Strong vs Structures, Infantry\n  Weak vs Vehicles
+		IconPalette: buraicon
+	Mobile:
+		Speed: 60
+		Locomotor: heavytracked
+	Health:
+		HP: 300000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: BuratinoMissile
+		LocalOffset: 280,196,640, 280,-196,640
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: BuratinoMissileE
+		LocalOffset: 280,196,640, 280,-196,640
+		RequiresCondition: rank-heroic
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: TeslaTankVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
