@@ -479,7 +479,7 @@ hammr:
 	WithVoxelTurret:
 	WithVoxelBarrel:
 	Voiced:
-		VoiceSet: SovietVehicleVoice
+		VoiceSet: HammerTankVoice
 
 v3:
 	Inherits: ^Vehicle

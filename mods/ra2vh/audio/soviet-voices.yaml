@@ -216,6 +216,13 @@ BeholderVoice:
 		Move: vbehmoa, vbehmob, vbehmoc, vbehmod, vbehmoe, vbehmof
 		Attack: vbehmoa, vbehmof
 
+HammerTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhamsea, vhamseb, vhamsec, vhamsed, vhamsee, vhamsef
+		Move: vhammoa, vhammob, vhammoc, vhammod, vhammoe
+		Attack: vhamata, vhamatb, vhamatc, vhamatd, vhamate, vhamatf
+
 HindVoice:
 	DefaultVariant: .wav
 	Voices:
