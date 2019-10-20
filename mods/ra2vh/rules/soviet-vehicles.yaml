@@ -362,7 +362,7 @@ drgn:
 	WithVoxelTurret:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: GattlingTankVoice
+		VoiceSet: DragonTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:

@@ -136,6 +136,13 @@ WarMinerVoice:
 		Attack: vwarata, vwaratb, vwaratc, vwaratd, vwarate
 		Harvest: vwarhaa, vwarhab, vwarhac, vwarhad
 
+DragonTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vdrasea, vdraseb, vdrasec, vdrased, vdrasee, vdrasef, vdraseg
+		Move: vdramoa, vdramob, vdramoc, vdramod, vdramoe, vdramof
+		Attack: vdraata, vdraatb, vdraatc, vdraatd, vdraate, vdraatf
+
 GattlingTankVoice:
 	DefaultVariant: .wav
 	Voices:
