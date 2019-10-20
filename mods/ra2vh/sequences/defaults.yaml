@@ -78,6 +78,9 @@
 				Length: *
 		Length: *
 		Tick: 80
+	die12: kamimake
+		Length: *
+		Tick: 80
 
 ^ProneInfantry:
 	liedown:

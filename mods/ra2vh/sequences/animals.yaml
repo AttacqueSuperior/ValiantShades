@@ -71,3 +71,6 @@ josh:
 	die11: tselectro
 		Length: *
 		Tick: 80
+	die12: kamimake
+		Length: *
+		Tick: 80

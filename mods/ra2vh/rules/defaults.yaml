@@ -520,6 +520,7 @@
 			MeltingDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
+			Kamikazify: 12
 		RequiresCondition: !inair
 	WithDeathAnimation@ra:
 		DeathSequencePalette: ra
