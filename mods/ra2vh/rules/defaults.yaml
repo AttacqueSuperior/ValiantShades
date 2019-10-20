@@ -315,6 +315,7 @@
 	-Warpable:
 	-Targetable@Temporal:
 	-WithColoredOverlay@temporal:
+	-WithColoredOverlay@temporal2:
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	-GrantCondition@warp-disable:
