@@ -543,7 +543,7 @@ gagap:
 		Queue: Support
 		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
-		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
+		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nRequires power to operate.
 	Selectable:
 		Bounds: 50, 114, 0, -38
 	Building:
@@ -574,6 +574,11 @@ gagap:
 		Range: 10c0
 		AffectsParent: true
 		Condition: hide-gpsdot
+		RequiresCondition: !disabled
+	ProximityExternalCondition@mindcontrol:
+		Range: 10c0
+		AffectsParent: true
+		Condition: prevent-mindcontrol
 		RequiresCondition: !disabled
 	Power:
 		Amount: -100

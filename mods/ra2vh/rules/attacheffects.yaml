@@ -348,14 +348,17 @@
 		RequiresCondition: being-warped
 
 ^MindControllable:
+	ExternalCondition@prevent-mindcontrol:
+		Condition: prevent-mindcontrol
 	MindControllable:
 		Condition: controlled
+		PauseOnCondition: prevent-mindcontrol
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
 	Targetable@MC:
 		TargetTypes: MindControl
-		RequiresCondition: !controlled && !prevent-ground-target
+		RequiresCondition: !controlled && !prevent-ground-target && !prevent-mindcontrol
 	WithIdleOverlay@mindcontrol:
 		Sequence: mindcontrol
 		Palette: effect
