@@ -28,9 +28,7 @@ behold:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
 	RenderSprites:
-		Image: dtruck
 	RenderVoxels:
-		Image: dtruck
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: BeholderVoice

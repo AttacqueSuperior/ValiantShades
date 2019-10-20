@@ -8,6 +8,11 @@ aegis:
 	Inherits@MC: ^MindControllable
 	icon: agisicon
 
+behold:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 bfrt:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
