@@ -139,6 +139,9 @@ dron:
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionparachute: ^SovietParachute
 	Inherits@factionrankpips: ^SovietVeteranRank
+	WithColoredOverlay@temporal2:
+		RequiresCondition: being-warped
+		Palette: lowpower
 	Valued:
 		Cost: 500
 	Tooltip:

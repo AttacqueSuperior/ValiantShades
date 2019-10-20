@@ -737,6 +737,7 @@
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
+	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -873,6 +874,7 @@
 	Inherits@emp: ^AffectedByEMP
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
+	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -1062,6 +1064,7 @@
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
+	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
