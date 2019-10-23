@@ -299,6 +299,53 @@ caslab:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
+	GrantConditionIfOwnerIsNeutral:
+		Condition: ownerless
+	ProductionParadrop:
+		Produces: SecretLab
+		RequiresCondition: !disabled
+		ActorType: pdplane.crate
+		ReadyAudio: ReinforcementsArrived
+		ChuteSound: sparadra.wav
+	GrantRandomConditionOnProduction:
+		Conditions: beholder, buratino, prismtank
+	PeriodicProducer@Beholder:
+		Type: SecretLab
+		Actors: behold
+		ChargeDuration: 2250
+		ShowSelectionBar: true
+		RequiresCondition: beholder && !ownerless
+		PauseOnCondition: disabled
+	Exit:
+	WithTextDecoration@Beholder:
+		Text: BEHOLDER
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: beholder
+	PeriodicProducer@Buratino:
+		Type: SecretLab
+		Actors: bura
+		ChargeDuration: 2400
+		ShowSelectionBar: true
+		RequiresCondition: buratino && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@Buratino:
+		Text: BURATINO
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: buratino
+	PeriodicProducer@PrismTank:
+		Type: SecretLab
+		Actors: sref
+		ChargeDuration: 1800
+		ShowSelectionBar: true
+		RequiresCondition: prismtank && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@PrismTank:
+		Text: PRISM TANK
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: prismtank
 
 caslab.rubble:
 	Inherits: ^Rubble
