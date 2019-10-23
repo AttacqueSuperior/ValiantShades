@@ -434,15 +434,67 @@ FairyBolt:
 			Concrete: 25
 			Drone: 100
 			Rocket: 100
+	Warhead@fsw: FireShrapnel
+		AimChance: 100
+		ThrowWithoutTarget: false
+		Weapon: FairyBoltShrapnel
+		ValidTargets: Infantry, Vehicle, Ship, Structure
+		ValidStances: Neutral, Enemy
+		AimTargetStances: Neutral, Enemy
+		TargetSearchRadius: 512
 	Warhead@2Eff: CreateEffect
 		Explosions: fairyhit
 		ExplosionPalette: rookiera2exp
 		ValidTargets: Ground, Air, Water
 
+FairyBoltShrapnel:
+	Inherits: FairyBolt
+	Range: 3c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 60000
+	Warhead@fsw: FireShrapnel
+		Weapon: FairyBoltShrapnel2
+
+FairyBoltShrapnel2:
+	Inherits: FairyBoltShrapnel
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+	Warhead@fsw: FireShrapnel
+		Weapon: FairyBoltShrapnel3
+
+FairyBoltShrapnel3:
+	Inherits: FairyBoltShrapnel2
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+	-Warhead@fsw:
+
 FairyBoltE:
 	Inherits: FairyBolt
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+	Warhead@fsw: FireShrapnel
+		Weapon: FairyBoltShrapnelE
+
+FairyBoltShrapnelE:
+	Inherits: FairyBoltE
+	Range: 3c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 60000
+	Warhead@fsw: FireShrapnel
+		Weapon: FairyBoltShrapnel2E
+
+FairyBoltShrapnel2E:
+	Inherits: FairyBoltShrapnelE
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+	Warhead@fsw: FireShrapnel
+		Weapon: FairyBoltShrapnel3E
+
+FairyBoltShrapnel3E:
+	Inherits: FairyBoltShrapnel2E
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+	-Warhead@fsw:
 
 VolkovRail:
 	ReloadDelay: 120
