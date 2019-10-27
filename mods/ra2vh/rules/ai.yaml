@@ -345,8 +345,10 @@ Player:
 			tnkd: 15
 			bfrt.ai: 5
 			bfrt.ai2: 3
+			mgg: 1
 			shad.ai: 3
 			shad.ai2: 3
+			thor: 1
 			beag: 15
 			orca: 1
 			spirit: 5
@@ -370,6 +372,7 @@ Player:
 			apoc: 10
 			ttnk: 15
 			mind: 10
+			bura: 10
 			zep: 1
 			yak: 15
 			fflash: 15
@@ -377,8 +380,10 @@ Player:
 			dog: 4
 			cmin: 6
 			hmmv.ai-repair: 2
+			mgg: 1
 			shad.ai: 1
 			shad.ai2: 3
+			thor: 2
 			beag: 6
 			orca: 2
 			spirit: 2
