@@ -273,6 +273,9 @@ suvw:
 taxi:
 	idle:
 
+thor:
+	idle:
+
 #tire: # TODO: unused debris
 #	idle:
 

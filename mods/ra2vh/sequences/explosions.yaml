@@ -160,3 +160,6 @@ explosion:
 	mindwave: mindwave
 		Tick: 80
 	buratinohit: buratexp
+	thorbolthit: thorbhit
+	thorbolthitf: thorbhit
+		FlipX: true

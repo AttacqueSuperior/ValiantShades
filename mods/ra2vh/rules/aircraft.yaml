@@ -276,6 +276,85 @@ zephusk:
 	RenderVoxels:
 		Image: zep
 
+thor:
+	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Thor Platform
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 90
+		Prerequisites: ~gaweap, gaairc, garbur
+	Selectable:
+		Bounds: 100,60,0,-10
+	Aircraft:
+		CruiseAltitude: 5600
+		TurnSpeed: 2
+		Speed: 25
+		Voice: Move
+		AirborneCondition: airborne
+	Health:
+		HP: 1500000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: ThorLightning
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: ThorLightningE
+		RequiresCondition: rank-heroic
+	Armament@2:
+		Weapon: ThorLaser
+		RequiresCondition: !rank-heroic
+	Armament@elite2:
+		Weapon: ThorLaserE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Hovers:
+		BobDistance: -24
+		InitialHeight: 24
+	Voiced:
+		VoiceSet: KirovVoice
+	SpawnActorOnDeath:
+		Actor: thorhusk
+		DeathType: DefaultDeath
+	HitShape:
+
+thorhusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Thor Platform
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 25
+	FallsToEarthAS:
+		Explosion: KirovExplode
+		SpinInitial: 0
+		SpinAcceleration: 0
+		SpinAccelerationDelay: 0
+		VelocityAcceleration: 1
+		Velocity: 126
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+	RenderVoxels:
+		Image: thor
+
 beag:
 	Inherits: ^Plane
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant

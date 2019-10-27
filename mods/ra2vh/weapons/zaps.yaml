@@ -441,7 +441,6 @@ FairyBolt:
 		ValidTargets: Infantry, Vehicle, Ship, Structure
 		ValidStances: Neutral, Enemy
 		AimTargetStances: Neutral, Enemy
-		TargetSearchRadius: 512
 	Warhead@2Eff: CreateEffect
 		Explosions: fairyhit
 		ExplosionPalette: rookiera2exp
@@ -554,3 +553,104 @@ VolkovRailE:
 	Projectile: SpriteRailgun
 		HelixAnimPalette: heroictsexp
 		HitAnimPalette: heroictsexp
+
+ThorLightning:
+	ReloadDelay: 133
+	Range: 8c0
+	Projectile: AthenaProjectile
+		Altitude: 25c0
+	Warhead@TargetValidation: SpreadDamage
+	Warhead@AthenaCannon: FireFragment
+		ValidTargets: Air
+		Weapon: ThorLightningHit
+		UseZOffsetAsAbsoluteHeight: true
+
+ThorLightningE:
+	Inherits: ThorLightning
+	Warhead@AthenaCannon: FireFragment
+		Weapon: ThorLightningHitE
+
+ThorLightningHit:
+	Range: 1
+	Projectile: KKNDLaser
+		Color: FFFFFF
+		InnerLightness: 192
+		OuterLightness: 64
+		SegmentLength: 1c512
+		Distortion: 1024
+		Duration: 8
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Falloff: 100, 50, 0
+		Damage: 133000
+		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath, DefaultDeath
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 75
+			Heavy: 75
+			Wood: 50
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: thorbolthit, thorbolthitf
+		ExplosionPalette: rookietsexp
+		ImpactSounds: thorlexp.wav
+		ValidTargets: Ground, Air, Water
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumScorch
+		Chance: 33
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
+
+ThorLightningHitE:
+	Inherits: ThorLightningHit
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp 
+
+ThorLaser:
+	ValidTargets: Air
+	ReloadDelay: 100
+	Range: 8c0
+	Projectile: KKNDLaser
+		Radius: 2
+		Duration: 6
+		InnerLightness: 160
+		OuterLightness: 80
+		Color: FF0000
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Falloff: 100, 50, 0
+		Damage: 75000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 50
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, IgniteDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: cosmonauthit
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: SmallScorch
+		Chance: 33
+
+ThorLaserE:
+	Inherits: ThorLaser
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

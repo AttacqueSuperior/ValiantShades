@@ -300,7 +300,7 @@
 		Duration: 50
 		ShowSelectionBar: false
 	GrantConditionOnProduction@zeppelins:
-		Actors: zep
+		Actors: zep, thor
 		Condition: roof-open
 		Duration: 100
 		ShowSelectionBar: false

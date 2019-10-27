@@ -59,6 +59,10 @@ spypl:
 	Inherits: ^Aircraft
 	icon: xxicon
 
+thor:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 yak:
 	Inherits: ^Aircraft
 	icon: yakficon
