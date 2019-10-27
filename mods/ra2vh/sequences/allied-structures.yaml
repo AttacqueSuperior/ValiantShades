@@ -168,46 +168,57 @@ gaairc:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Offset: -14, -38
-	idle: ggairc
+		Offset: 15, -37
+	idle: gaairf
 		ShadowStart: -1
 		Length: 1
-	damaged-idle: ggairc
-		Length: 2
-	idle-top: gaairc_c
+		ZOffset: -512
+	damaged-idle: gaairf
+		ShadowStart: -1
+		Start: 1
+		ZOffset: -512
+	idle-dish: gaairf_c
 		Length: 16
 		ShadowStart: 16
 		Tick: 320
-	idle-bottom: ggaircbb
+	idle-bottom: ggairfbb
 		Length: 1
+		ShadowStart: 2
 		ZOffset: -512
-	damage-idle-bottom: ggaircbb
+	damage-idle-bottom: ggairfbb
 		Start: 1
+		ShadowStart: 3
 		Length: 1
 		ZOffset: -512
-	idle-dish: ggairc_a
+	idle-lamp: ggairf_a
 		Length: 4
 		Tick: 120
-		ZOffset: -512
-	damaged-idle-dish: ggairc_a
-		Start: 5
+		TilesetOverrides:
+			SNOW: GENERIC
+	damaged-idle-lamp: ggairf_a
 		Length: 4
 		Tick: 120
-		ZOffset: -512
-	idle-mid: ggairc_b
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-mid: ggairf_b
 		Length: 6
 		Tick: 120
-		ZOffset: -512
-	damage-idle-mid: ggairc_b
-		Start: 7
+		ZOffset: -256
+	damage-idle-mid: ggairf_b
+		Start: 6
 		Length: 6
 		Tick: 120
-		ZOffset: -512
-	make: gtaircmk
+		ZOffset: -256
+	make: ggairfmk
+		Length: 22
+		ShadowStart: 22
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	damagefire1:
-		Offset: -51,-14,1
+		Offset: -21,-14,1
 	damagefire2:
-		Offset: -36,-31,1
+		Offset: -6,-31,1
 	icon: heliicon
 
 gaweap:
