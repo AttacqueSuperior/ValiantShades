@@ -119,6 +119,7 @@ dog:
 			MeltingDeath: 1
 			PsychicDeath: 1
 			ElectroDeath: 2
+			SmashDeath: 2
 			TeslaDeath: 2
 			RadiationDeath: 1
 			IgniteDeath: 1
@@ -129,7 +130,7 @@ dog:
 	-Explodes@radiation:
 	-SpawnActorOnDeath@kamikaze:
 	DeathSounds@normal:
-		DeathTypes: BulletDeath, AltBulletDeath, MeltingDeath, PsychicDeath, ElectroDeath, FlameDeath, TeslaDeath, RadiationDeath, IgniteDeath, Kamikazify
+		DeathTypes: DefaultDeath
 	-DeathSounds@zapped:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:

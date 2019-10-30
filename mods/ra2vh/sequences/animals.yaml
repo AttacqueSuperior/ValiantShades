@@ -79,6 +79,9 @@ josh:
 				Length: *
 		Length: *
 		Tick: 80
+	die10: brutdie
+		Length: *
+		Tick: 80
 	die11:
 		Combine:
 			tselectro:

@@ -153,7 +153,7 @@ IvanBomber:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
-		DamageTypes: PsychicDeath, Prone100Percent, DefaultDeath
+		DamageTypes: SmashDeath, Prone100Percent, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: ivan_explosion
 		ExplosionPalette: rookiera2exp
@@ -200,7 +200,7 @@ C4:
 		Spread: 64
 		Falloff: 100, 50, 0
 		Damage: 444000
-		DamageTypes: DefaultDeath, BulletDeath, Prone100Percent
+		DamageTypes: DefaultDeath, SmashDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
 		Explosions: c4_explosion
 		ExplosionPalette: rookietsexp
@@ -287,7 +287,7 @@ TerrorBomb:
 			Drone: 100
 			Rocket: 100
 		AffectsParent: true
-		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, DefaultDeath
+		DamageTypes: Prone70Percent, TriggerProne, SmashDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: terrorist_explosion
 		ValidTargets: Ground, Water, Air

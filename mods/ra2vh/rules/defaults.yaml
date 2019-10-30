@@ -521,6 +521,7 @@
 			MeltingDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
+			SmashDeath: 10
 			Kamikazify: 12
 		RequiresCondition: !inair
 	WithDeathAnimation@ra:
@@ -592,7 +593,7 @@
 		RequiresCondition: !inair
 	DeathSounds@psycrush:
 		Voice: PsyCrush
-		DeathTypes: PsychicDeath
+		DeathTypes: PsychicDeath, SmashDeath
 		RequiresCondition: !inair
 	MustBeDestroyed:
 	Voiced:
@@ -692,12 +693,11 @@
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	DeathSounds@zapped:
-		Voice: Die
-	DeathSounds@radiation:
-		Voice: Die
-	DeathSounds@psycrush:
-		Voice: Die
+	DeathSounds@normal:
+		DeathTypes: DefaultDeath
+	-DeathSounds@zapped:
+	-DeathSounds@radiation:
+	-DeathSounds@psycrush:
 	-TakeCover:
 	WithDeathAnimation@effect:
 		DeathSequencePalette: player
@@ -705,6 +705,7 @@
 		DeathTypes:
 			MeltingDeath: 1
 			ElectroDeath: 2
+			SmashDeath: 2
 			TeslaDeath: 2
 			RadiationDeath: 1
 			FlameDeath: 1

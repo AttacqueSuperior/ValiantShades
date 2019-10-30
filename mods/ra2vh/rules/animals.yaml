@@ -55,6 +55,7 @@ josh:
 			MeltingDeath: 4
 			PsychicDeath: 5
 			ElectroDeath: 6
+			SmashDeath: 10
 			Kamikazify: 12
 	WithDeathAnimation@ra:
 		DeathSequencePalette: ra
