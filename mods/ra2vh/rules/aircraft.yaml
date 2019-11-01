@@ -785,6 +785,7 @@ hornet:
 		PauseOnCondition: !ammo
 	Aircraft:
 		VTOL: true
+	RenderSprites:
 	AttackAircraft:
 		FacingTolerance: 20
 		Voice: Attack
@@ -795,10 +796,7 @@ hornet:
 		PipType: Ammo
 		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
-	RenderSprites:
 	HitShape:
-	RenderVoxels:
-		NormalsPalette: ts-normals
 	CarrierSlave:
 		LandingDistance: 8c0
 		DamageTypes: DefaultDeath

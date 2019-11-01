@@ -974,6 +974,8 @@
 		Weapon: SpawnedPlaneExplosion
 		EmptyWeapon: SpawnedPlaneExplosion
 		DeathTypes: DefaultDeath
+	Rearmable:
+		RearmActors: dummy
 
 ^Husk:
 	Inherits@1: ^Orientable
