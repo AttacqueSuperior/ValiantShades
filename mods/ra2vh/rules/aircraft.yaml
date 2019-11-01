@@ -541,7 +541,7 @@ bpln:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Soviet MIG
+		Name: Soviet MiG
 	Aircraft:
 		Speed: 394
 	-RevealsShroud:
@@ -561,7 +561,7 @@ bpln:
 bplnhusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Soviet MIG
+		Name: Soviet MiG
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 394
