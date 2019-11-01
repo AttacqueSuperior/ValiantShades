@@ -675,7 +675,7 @@ boris:
 		InstantRepair: true
 		SlaveDisposalOnKill: KillSlaves
 		SpawnAllAtOnce: true
-		SpawnerArmamentName: secondary
+		ArmamentNames: secondary
 	SelfHealing:
 		PercentageStep: 1
 		Step: 0
