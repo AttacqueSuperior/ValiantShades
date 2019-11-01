@@ -556,6 +556,7 @@ bpln:
 	RejectsOrders:
 	SpawnActorOnDeath:
 		Actor: bplnhusk
+	-Buildable:
 
 bplnhusk:
 	Inherits: ^PlaneHusk
