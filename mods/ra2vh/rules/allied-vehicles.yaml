@@ -896,6 +896,20 @@ fv.ai4:
 		BuildPaletteOrder: 10000
 		Prerequisites:  ~gaweap, gafcmd, garbur, ~testai
 
+fv.ai5:
+	Inherits: fv
+	RenderSprites:
+		Image: fv
+	RenderVoxels:
+		Image: fv
+	Cargo:
+		InitialUnits: fairy
+	Selectable:
+		Class: fv
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites:  ~gaweap, gafcmd, garbur, ~testai
+
 sref:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

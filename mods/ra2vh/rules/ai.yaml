@@ -340,6 +340,7 @@ Player:
 			fv.ai2: 5
 			fv.ai3: 5
 			fv.ai4: 5
+			fv.ai5: 5
 			sref: 10
 			mgtk: 10
 			tnkd: 15
