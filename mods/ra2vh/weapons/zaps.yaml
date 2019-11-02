@@ -414,7 +414,7 @@ LunarlaserE:
 FairyBolt:
 	ReloadDelay: 60
 	Range: 6c512
-	Report: itesatta.wav, itesattb.wav
+	Report: ifaiatta.wav
 	Projectile: ElectricBolt
 		Colors: FFE48A, FFF9C7, FEFFD6
 	Warhead@1Dam: SpreadDamage
