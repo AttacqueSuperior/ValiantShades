@@ -863,7 +863,7 @@ hirano:
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
-		VoiceSet: TanyaVoice
+		VoiceSet: HiranoVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -883,7 +883,7 @@ hirano:
 		DeployedCondition: hilbertgenerate
 		DeployedTicks: 25
 		CooldownTicks: 1125
-		Voice: Move # PLACEHOLDER
+		Voice: Deploy
 		StartsFullyCharged: true
 	WithIdleOverlay@hilbert:
 		Sequence: deploy

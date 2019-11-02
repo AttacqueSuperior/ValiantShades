@@ -93,6 +93,17 @@ TanyaVoice:
 		Feedback: itapfea, itapfeb, itapfec, itapfed
 		Die: itandia, itandib, itandic, itapdia, itapdib, itapdic, itapdid, itapdie
 
+HiranoVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Build: ihircra
+		Select: ihirsea, ihirseb, ihirsec, ihirsed, ihirsee, ihirsef
+		Move: ihirmoa, ihirmob, ihirmoc, ihirmod, ihirmoe, ihirmof, ihirmog, ihirmoh
+		Attack: ihirata, ihiratb, ihiratc, ihiratd, ihirate, ihiratf, ihiratg, ihirath
+		Deploy: ihirdea, ihirdeb, ihirdec, ihirath
+		Feedback: ihirfea, ihirfeb, ihirfec, ihirfed, ihirfee
+		Die: ihirdia, ihirdib, ihirdic, ihirdid, ihirdie, ihirdif
+
 RA1TanyaVoice:
 	Inherits: ^InfantryDeath
 	Voices:
