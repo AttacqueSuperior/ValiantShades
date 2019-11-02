@@ -408,7 +408,7 @@ ArtemisMissileE:
 		ExplosionPalette: heroicwaterexp
 
 WarthogMissile:
-	ReloadDelay: 20
+	ReloadDelay: 12
 	Range: 9c0
 	MinRange: 0c001
 	Projectile: InstantExplode
