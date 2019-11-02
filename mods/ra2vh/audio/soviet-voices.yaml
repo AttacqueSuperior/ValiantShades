@@ -100,6 +100,16 @@ BorisVoice:
 		Build: iborcra
 		Die: ibordia, ibordib, ibordic, ibordid, ibordie
 
+VolkovVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Build: ivolcra
+		Select: ivolsea, ivolseb, ivolsec, ivolsed, ivolsee, ivolsef, ivolseg
+		Move: ivolmoa, ivolmob, ivolmoc, ivolmod, ivolmoe, ivolmof, ivolmog
+		Attack: ivolata, ivolatb, ivolatc, ivolatd, ivolate, ivolatf, ivolatg, ivolath, ivolati
+		Feedback: ivolfea, ivolfeb, ivolfec, ivolfed
+		Die: ivoldia, ivoldib, ivoldic, ivoldid, ivoldie, ivoldif
+
 KamikazeVoice:
 	Inherits: ^InfantryDeath
 	Voices:

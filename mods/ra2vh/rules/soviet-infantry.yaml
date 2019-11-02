@@ -803,9 +803,9 @@ volkov:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	VoiceAnnouncement:
-		Voice: Select # PLACEHOLDER
+		Voice: Build
 	Voiced:
-		VoiceSet: RomanovVoice
+		VoiceSet: VolkovVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
