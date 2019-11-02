@@ -316,6 +316,15 @@ PlaneShmel:
 		Explosions: watersplash_size2
 		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
 		ValidTargets: Water
+	Warhead@spawn: SpawnSmokeParticle
+		Delay: 2
+		ValidTargets: Ground, Air, Water
+		Sequences: flame
+		Palette: heroicra2exp
+		Duration: 179
+		Speed: 18, 36
+		TurnRate: 32
+		Weapon: FlameParticle
 
 PlaneShmelE:
 	Inherits: PlaneShmel
