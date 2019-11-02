@@ -467,13 +467,15 @@ fv:
 			e1: ifv-mg
 			ggi: ifv-ggi
 			gren: ifv-gren
-			tany: ifv-hero
+			tany: ifv-seal
 			ghost: ifv-seal
 			ccommand: ifv-seal
 			snipe: ifv-sniper
 			cleg: ifv-chrono
+			hirano: ifv-hero
 			dione: ifv-dione
 			artemis: ifv-artemis
+			fairy: ifv-tesla
 			#=== Soviet infantry ===
 			sengineer: ifv-repair
 			e2: ifv-mg
@@ -482,6 +484,11 @@ fv:
 			ivan: ifv-demo
 			terror: ifv-demo
 			deso: ifv-deso
+			#yuri
+			virus: ifv-sniper
+			boris: ifv-hero
+			volkov: ifv-hero
+			kamikaze: ifv-demo
 			#=== Misc. infantry ===
 			engineer: ifv-repair
 			#=== Animals, to disable the bonus firepower granted when manned ===
