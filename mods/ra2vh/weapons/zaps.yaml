@@ -642,7 +642,7 @@ ThorLaser:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, IgniteDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: cosmonauthit
+		Explosions: thorairhit
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 		ValidTargets: Ground, Water, Air

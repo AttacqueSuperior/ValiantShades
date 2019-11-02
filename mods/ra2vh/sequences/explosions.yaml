@@ -163,3 +163,4 @@ explosion:
 	thorbolthit: thorbhit
 	thorbolthitf: thorbhit
 		FlipX: true
+	thorairhit: thorahit
