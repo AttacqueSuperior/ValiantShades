@@ -14,6 +14,7 @@ dog:
 	icon: dogicon
 
 sqd:
+	Inherits@IvanBomb: ^IvanBombable
 	stand:
 		Start: 160
 		Facings: -8

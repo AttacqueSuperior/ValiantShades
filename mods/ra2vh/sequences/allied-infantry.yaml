@@ -27,6 +27,7 @@ adog:
 	icon: adogicon
 
 dlph:
+	Inherits@IvanBomb: ^IvanBombable
 	stand:
 		Start: 48
 		Facings: -8
