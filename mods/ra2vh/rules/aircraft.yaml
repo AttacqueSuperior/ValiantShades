@@ -557,6 +557,8 @@ bpln:
 	SpawnActorOnDeath:
 		Actor: bplnhusk
 	-Buildable:
+	Rearmable:
+		RearmActors: dummy
 
 bplnhusk:
 	Inherits: ^PlaneHusk
