@@ -165,6 +165,16 @@ IvanBomber:
 	Warhead@flames: FireFragment
 		Weapon: LargeFlame
 		Chance: 50
+	Warhead@spawn: SpawnSmokeParticle
+		Count: 4
+		Delay: 2
+		ValidTargets: Ground, Air, Water
+		Sequences: flame
+		Palette: heroicra2exp
+		Duration: 179
+		Speed: 0, 24
+		TurnRate: 32
+		Weapon: FlameParticle
 
 IvanBomberE:
 	Inherits: IvanBomber
