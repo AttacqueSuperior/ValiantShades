@@ -193,6 +193,13 @@ BattleFortressVoice:
 		Move: vbatmoa, vbatmob, vbatmoc, vbatmod, vbatmoe
 		Attack: vbatatb, vbatatc, vbatatd, vbatate
 
+MobileGapGeneratorVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmggsea, vmggseb, vmggsec, vmggsed, vmggsee, vmggsef
+		Move: vmggmoa, vmggmob, vmggmoc, vmggmod, vmggmoe, vmggmof
+		Attack: vmggmoa, vmggmob, vmggmoc, vmggmod, vmggmoe, vmggmof
+
 MinervaVoice:
 	DefaultVariant: .wav
 	Voices:

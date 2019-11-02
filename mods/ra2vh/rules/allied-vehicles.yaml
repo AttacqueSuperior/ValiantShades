@@ -1193,7 +1193,7 @@ mgg:
 		PauseOnCondition: disabled
 		TickRate: 3
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: MobileGapGeneratorVoice
 	# ProducibleWithLevel:
 	#	Prerequisites: warfactory.infiltrated
 	HitShape:
