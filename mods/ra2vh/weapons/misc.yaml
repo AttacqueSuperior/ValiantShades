@@ -744,3 +744,26 @@ DemoTruckTargeting:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: DetonateAttack
+
+FlameParticle:
+	ReloadDelay: 2
+	ValidTargets: Ground, Water
+	Projectile: InstantExplode
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Ground, Water
+		Spread: 768
+		Falloff: 100, 0
+		Damage: 2500
+		DamageTypes: FlameDeath, DefaultDeath
+		Versus:
+			None: 100
+			Flak: 75
+			Plate: 50
+			Light: 75
+			Medium: 50
+			Heavy: 33
+			Wood: 100
+			Steel: 75
+			Concrete: 50
+			Drone: 50
+			Rocket: 75

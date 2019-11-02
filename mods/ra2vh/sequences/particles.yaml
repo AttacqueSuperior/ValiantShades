@@ -9,8 +9,6 @@ particles:
 		Length: *
 		Tick: 80
 		BlendMode: Translucent
-	fire: fire03
-		Length: *
 	damagespark: dmgspark
 		Length: *
 		Tick: 100
@@ -57,3 +55,6 @@ particles:
 	tankdestroyersmoke: tnkdhits
 		Length: *
 		Tick: 80
+	flame: fire01
+		Length: *
+		Tick: 60
