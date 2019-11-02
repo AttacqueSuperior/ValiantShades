@@ -238,7 +238,7 @@ terror:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
 		Prerequisites: natech, ~nahand #, ~infantry.cuba
-		Description: Demolition infantry, able to attach C4\nto enemy buildings. Can hijack enemy vehicles.\nStealthed when stopped.\n  Strong vs Vehicles, Buildings\n  Weak vs Aircraft
+		Description: Demolition infantry, able to attach napalm bombs\nto enemy buildings. Can hijack enemy vehicles.\nStealthed when stopped.\n  Strong vs Vehicles, Buildings\n  Weak vs Aircraft
 	Valued:
 		Cost: 500
 	DeliversCash:
