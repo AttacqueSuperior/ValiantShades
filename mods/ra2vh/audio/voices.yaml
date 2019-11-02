@@ -71,6 +71,13 @@ CarVoice:
 		Action: gcarsela
 		Attack: gcarsela
 
+CamelVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gcamsela, gcamselb, gcamselc
+		Move: gcammova, gcammovb
+		Die: gcamdiea
+
 ChimpanzeeVoice:
 	DefaultVariant: .wav
 	Voices:

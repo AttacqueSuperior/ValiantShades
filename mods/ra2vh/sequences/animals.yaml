@@ -95,3 +95,8 @@ josh:
 	die12: kamimake
 		Length: *
 		Tick: 80
+
+caml:
+	Inherits: ^Animal
+	run:
+		Tick: 120

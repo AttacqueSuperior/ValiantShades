@@ -81,6 +81,23 @@ josh:
 		DeathType: Kamikazify
 		RequiresCondition: !inair
 
-#55=CAML
+caml:
+	Inherits: ^Animal
+	Tooltip:
+		Name: Camel
+	Health:
+		HP: 150000
+	RevealsShroud:
+		Range: 4c0
+	RevealOnDeath:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+	Voiced:
+		VoiceSet: CamelVoice
+	-Guard:
+	-AttackFrontal:
+	WithInfantryBody:
+		-DefaultAttackSequence:
+
 #60=DNOA
 #61=DNOB
