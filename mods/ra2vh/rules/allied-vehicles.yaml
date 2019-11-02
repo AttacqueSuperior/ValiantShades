@@ -484,7 +484,7 @@ fv:
 			ivan: ifv-demo
 			terror: ifv-demo
 			deso: ifv-deso
-			#yuri
+			yuri: ifv-yuri
 			virus: ifv-sniper
 			boris: ifv-hero
 			volkov: ifv-volkov
@@ -510,7 +510,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -720,6 +720,27 @@ fv:
 	Tooltip@tesla:
 		Name: Tesla Trooper IFV
 		RequiresCondition: ifv-tesla
+	#=== Psi-Corps Trooper ===
+	WithVoxelTurret@yuri:
+		Sequence: turret-yuri
+		RequiresCondition: ifv-yuri
+	Armament@yuri:
+		Weapon: MindControl
+		RequiresCondition: ifv-yuri
+		LocalOffset: 188,0,600
+	MindController:
+		ControllingCondition: controlling
+		Sounds: iyurat1a.wav
+		RequiresCondition: !disabled && ifv-yuri
+	WithMindControlArc:
+		UsePlayerColor: true
+		Offset: 0,0,960
+		QuantizedSegments: 32
+		Width: 63
+		Angle: 120
+	Tooltip@yuri:
+		Name: Psi-Corps Trooper IFV
+		RequiresCondition: ifv-yuri
 	#=== Volkov ===
 	WithVoxelTurret@volkov:
 		Sequence: turret-volkov
@@ -742,7 +763,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -809,6 +830,9 @@ fv:
 		RequiresCondition: ifv-seal # || ifv-sniper || ifv-hero
 		ValidTargets: Infantry
 		InvalidTargets: NoAutoTarget
+	AutoTargetPriority@yuri:
+		ValidTargets: MindControl
+		RequiresCondition: !controlling && ifv-yuri
 	#AutoTargetPriority@unit:
 	#	RequiresCondition: ifv-deso
 	#	ValidTargets: Ground
