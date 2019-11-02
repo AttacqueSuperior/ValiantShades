@@ -553,6 +553,7 @@ bpln:
 	-AutoTarget:
 	AirstrikeSlave:
 		LandingDistance: 1c0
+		DamageTypes: DefaultDeath
 	RejectsOrders:
 	SpawnActorOnDeath:
 		Actor: bplnhusk
