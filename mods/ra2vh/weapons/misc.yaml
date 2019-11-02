@@ -606,6 +606,14 @@ HornetLauncher:
 	Warhead@1Dam: TargetDamage
 		ValidTargets: Ground, Water
 
+DredLauncher:
+	ReloadDelay: 15
+	Range: 18c0
+	ValidTargets: Ground, Water
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Ground, Water
+
 ChronosphereAI:
 	ReloadDelay: 1
 	Projectile: InstantExplode

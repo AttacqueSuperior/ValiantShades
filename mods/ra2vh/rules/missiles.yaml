@@ -27,3 +27,33 @@ v3rocket:
 		Gravity: 60
 		TurnRate: 48
 		Duration: 19
+
+dmisl:
+	Inherits: ^BallisticMissile
+	Valued:
+		Cost: 10
+	Tooltip:
+		Name: Dreadnaught Missile
+	Health:
+		HP: 62000
+	BallisticMissile:
+		LaunchAngle: 192
+		Speed: 112
+		DamageTypes: TriggerMissile
+	MissileSpawnerSlave:
+	SpawnedExplodes:
+		Weapon: V3MissileExplode
+		EmptyWeapon: V3MissileExplode
+		DeathTypes: TriggerMissile
+	SpawnedExplodes@killed:
+		Weapon: V3MissileProximityExplode
+		EmptyWeapon: V3MissileProximityExplode
+		DeathTypes: DefaultDeath
+	SmokeParticleEmitter@trailer:
+		Sequences: v3trailer
+		Palette: effect
+		SpawnFrequency: 1
+		Speed: 0, 40
+		Gravity: 60
+		TurnRate: 48
+		Duration: 19

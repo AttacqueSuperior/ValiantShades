@@ -80,15 +80,15 @@ dest:
 	idle:
 #Needs without weapon image destwo
 
-#dmisl: #Dreadnought Missile needs voxel projectiles
-#	idle:
+dmisl:
+	idle:
 
 doly:
 	idle:
 
 dred:
 	idle:
-#Needs without weapon image dredwo
+	idle-empty: dredwo
 
 drgn:
 	idle: drgn

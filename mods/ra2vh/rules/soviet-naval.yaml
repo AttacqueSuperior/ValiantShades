@@ -262,3 +262,58 @@ sqd:
 	GpsDotAS:
 		Sequence: ship
 		RequiresCondition: !hide-gpsdot
+
+dred:
+	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 60
+		Prerequisites: natech, ~nayard
+		Description: Soviet dreadnought ship.\n  Strong vs Tanks, Structures, Infantry\n  Weak vs Aircraft
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Dreadnought
+	Health:
+		HP: 800000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Selectable:
+		Bounds: 112,76,0,-6
+	Mobile:
+		TurnSpeed: 1
+		Speed: 60
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	WithVoxelBody@loaded:
+		RequiresCondition: loaded
+	WithVoxelBody@empty:
+		Sequence: idle-empty
+		RequiresCondition: !loaded
+	RenderSprites:
+	Voiced:
+		VoiceSet: SovietNavalVoice
+	HitShape:
+	MissileSpawnerMaster:
+		Actors: dmisl, dmisl
+		LoadedCondition: loaded
+	Exit@0:
+		SpawnOffset: 0,0,0
+		Facing: 0
+	Repairable:
+		Voice: Attack
+		RepairActors: gayard, nayard
+	Armament:
+		Weapon: DredLauncher
