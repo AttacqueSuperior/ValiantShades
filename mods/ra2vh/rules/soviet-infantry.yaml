@@ -283,14 +283,10 @@ terror:
 		UncloakOn: Attack, Damage, Move
 		CloakTypes: mirage
 	Armament@sapper:
-		Weapon: PlaceC4
-		Cursor: c4
-		OutsideRangeCursor: c4
+		Weapon: PlaceTerrorBomb
 		RequiresCondition: !rank-heroic
 	Armament@sapper-elite:
-		Weapon: PlaceC4E
-		Cursor: c4
-		OutsideRangeCursor: c4
+		Weapon: PlaceTerrorBombE
 		RequiresCondition: rank-heroic
 	AutoTarget:
 		AttackAnythingCondition: stance-attackanything

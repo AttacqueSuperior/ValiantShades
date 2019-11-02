@@ -702,7 +702,7 @@ FlameParticle:
 		ValidTargets: Ground, Water
 		Spread: 768
 		Falloff: 100, 0
-		Damage: 2500
+		Damage: 1000
 		DamageTypes: FlameDeath, DefaultDeath
 		Versus:
 			None: 100

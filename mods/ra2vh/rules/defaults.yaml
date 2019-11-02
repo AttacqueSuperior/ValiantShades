@@ -79,6 +79,7 @@
 	Inherits@shape: ^1x1Shape
 	Inherits@c4: ^C4Plantable
 	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@terrorbomb: ^TerrorBombPlantable
 	Inherits@emp: ^AffectedByEMP
 	Inherits@temporal: ^Warpable
 	-DrawLineToTarget:

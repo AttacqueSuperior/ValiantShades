@@ -414,6 +414,18 @@
 		Palette: mouse
 		RequiresCondition: tanyac4
 
+^TerrorBombPlantable:
+	DelayedWeaponAttachable@terrorbomb:
+		Type: terrorbomb
+		Condition: terrorbomb
+	Targetable@terrorbomb:
+		TargetTypes: TerrorBombAttached
+		RequiresCondition: terrorbomb
+	WithIdleOverlay@terrorbomb:
+		Sequence: c4
+		Palette: ts-mouse
+		RequiresCondition: terrorbomb
+
 ^DamagedByRadiation:
 	DamagedByTintedCells:
 		Damage: 200

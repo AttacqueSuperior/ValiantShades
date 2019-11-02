@@ -254,6 +254,47 @@ TanyaC4E:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+PlaceTerrorBomb:
+	Range: 1c849
+	Projectile: InstantHit
+	Report: icolseta.wav
+	ValidTargets: C4
+	InvalidTargets: TerrorBombAttached
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: NapalmTerrorBomb
+		Type: terrorbomb
+		TriggerTime: 50
+		DeathTypes: DefaultDeath
+		Range: 1
+	Warhead@TargetValidator: SpreadDamage
+
+PlaceTerrorBombE:
+	Inherits: PlaceTerrorBomb
+	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
+		Weapon: NapalmTerrorBombE
+
+NapalmTerrorBomb:
+	Projectile: InstantHit
+	Warhead@TargetValidator: SpreadDamage
+	Warhead@2Eff: CreateEffect
+		ImpactSounds: icolexpa.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@spawn: SpawnSmokeParticle
+		Count: 12
+		Delay: 2
+		ValidTargets: Ground, Air, Water
+		Sequences: flame
+		Palette: heroicra2exp
+		Duration: 359
+		Speed: 18, 36
+		TurnRate: 32
+		Weapon: FlameParticle
+
+NapalmTerrorBombE:
+	Inherits: NapalmTerrorBomb
+	Warhead@spawn: SpawnSmokeParticle
+		Count: 18
+
 CRNuke:
 	Inherits: IvanDeath
 	Warhead@1Dam: SpreadDamage
