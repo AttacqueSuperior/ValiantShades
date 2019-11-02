@@ -104,6 +104,16 @@ HiranoVoice:
 		Feedback: ihirfea, ihirfeb, ihirfec, ihirfed, ihirfee
 		Die: ihirdia, ihirdib, ihirdic, ihirdid, ihirdie, ihirdif
 
+FairyVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ifaisea, ifaiseb, ifaisec, ifaised, ifaisee
+		Move: ifaimoa, ifaimob, ifaimoc, ifaimod, ifaimoe
+		Attack: ifaiata, ifaiatb, ifaiatc, ifaiatd, ifaiate, ifaiatf, ifaiatg
+		Deploy: ifaidea, ifaideb, ifaidec, ifaiatg
+		Feedback: ifaifea, ifaifeb, ifaifec
+		Die: ifaidia, ifaidib, ifaidic, ifaidid, ifaidie, ifaidif
+
 RA1TanyaVoice:
 	Inherits: ^InfantryDeath
 	Voices:

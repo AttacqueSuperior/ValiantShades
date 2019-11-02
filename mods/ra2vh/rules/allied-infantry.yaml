@@ -1186,7 +1186,7 @@ fairy:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Voiced:
-		VoiceSet: RA1TanyaVoice
+		VoiceSet: FairyVoice
 	Health:
 		HP: 175000
 	RevealsShroud:
