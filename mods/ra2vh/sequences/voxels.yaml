@@ -122,6 +122,7 @@ fv:
 	turret-grenadier: fvtur-grenadier
 	turret-hmg: fvtur-hmg
 	turret-chrono: fvtur-chrono
+	turret-fairy: fvtur-fairy
 	turret-flak: fvtur-flak
 	turret-tesla: fvtur-tesla
 	turret-hitech: fvtur-hitech

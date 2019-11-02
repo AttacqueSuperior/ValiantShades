@@ -475,7 +475,7 @@ fv:
 			hirano: ifv-hero
 			dione: ifv-dione
 			artemis: ifv-artemis
-			fairy: ifv-tesla
+			fairy: ifv-fairy
 			#=== Soviet infantry ===
 			sengineer: ifv-repair
 			e2: ifv-mg
@@ -510,7 +510,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -652,6 +652,21 @@ fv:
 	Tooltip@chrono:
 		Name: Chrono Legionnaire IFV
 		RequiresCondition: ifv-chrono
+	#=== Fairy ===
+	WithVoxelTurret@fairy:
+		Sequence: turret-fairy
+		RequiresCondition: ifv-fairy
+	Armament@fairy:
+		Weapon: FairyBolt
+		RequiresCondition: !rank-heroic && ifv-fairy
+		LocalOffset: 188,0,600
+	Armament@fairy-elite:
+		Weapon: FairyBoltE
+		RequiresCondition: rank-heroic && ifv-fairy
+		LocalOffset: 188,0,600
+	Tooltip@fairy:
+		Name: Fairy IFV
+		RequiresCondition: ifv-fairy
 	#=== Flak Trooper ===
 	WithVoxelTurret@flak:
 		Sequence: turret-flak
@@ -697,7 +712,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
