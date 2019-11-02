@@ -61,6 +61,7 @@ shad:
 			all: disable-bonus
 			polarb: disable-bonus
 			josh: disable-bonus
+			camel: disable-bonus
 	SpawnActorOnDeath:
 		Actor: shadhusk
 		DeathType: DefaultDeath

@@ -498,6 +498,7 @@ fv:
 			all: disable-ifvbonus
 			polarb: disable-ifvbonus
 			josh: disable-ifvbonus
+			camel: disable-ifvbonus
 	GrantCondition@ifv-firepowerbonus:
 		RequiresCondition: loaded && !disable-ifvbonus
 		Condition: ifv-firepowerbonus
