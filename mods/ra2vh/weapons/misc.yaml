@@ -373,21 +373,6 @@ BuildingDeathSmokeSpawner:
 	Projectile: InstantExplode
 	Range: 512
 	Warhead@Validation: TargetDamage
-	Warhead@1: FireFragment
-		ValidTargets: Ground, Air, Water
-		Weapon: BuildingDeathSmokeSpawner2
-		Chance: 66
-	Warhead@2: FireFragment
-		ValidTargets: Ground, Air, Water
-		Weapon: BuildingDeathSmoke2Spawner2
-		Chance: 66
-
-BuildingDeathSmokeSpawner2:
-	ReloadDelay: 1
-	ValidTargets: Ground, Air, Water
-	Projectile: InstantExplode
-	Range: 512
-	Warhead@Validation: TargetDamage
 	Warhead@spawn: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: toveenasmoke1
@@ -396,14 +381,8 @@ BuildingDeathSmokeSpawner2:
 		Speed: 0, 32
 		Gravity: 16, 32
 		Neutral: true
-
-BuildingDeathSmoke2Spawner2:
-	ReloadDelay: 1
-	ValidTargets: Ground, Air, Water
-	Projectile: InstantExplode
-	Range: 512
-	Warhead@Validation: TargetDamage
-	Warhead@spawn: SpawnSmokeParticle
+		Count: 1, 2
+	Warhead@spawn2: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: toveenasmoke2
 		Palette: heroicra2exp
@@ -411,6 +390,7 @@ BuildingDeathSmoke2Spawner2:
 		Speed: 0, 32
 		Gravity: 16, 32
 		Neutral: true
+		Count: 0, 2	
 
 BuildingDeathFlameGuySpawner:
 	Projectile: InstantExplode
@@ -435,21 +415,6 @@ UnitDeathSmokeSpawner:
 	Projectile: InstantExplode
 	Range: 512
 	Warhead@Validation: TargetDamage
-	Warhead@1: FireFragment
-		ValidTargets: Ground, Air, Water
-		Weapon: UnitDeathSmokeSpawner2
-		Chance: 33
-	Warhead@2: FireFragment
-		ValidTargets: Ground, Air, Water
-		Weapon: UnitDeathSmoke2Spawner2
-		Chance: 66
-
-UnitDeathSmokeSpawner2:
-	ReloadDelay: 1
-	ValidTargets: Ground, Air, Water
-	Projectile: InstantExplode
-	Range: 512
-	Warhead@Validation: TargetDamage
 	Warhead@spawn: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: unitdeathsmoke1
@@ -458,14 +423,7 @@ UnitDeathSmokeSpawner2:
 		Speed: 0, 32
 		Gravity: 16, 32
 		Neutral: true
-
-UnitDeathSmoke2Spawner2:
-	ReloadDelay: 1
-	ValidTargets: Ground, Air, Water
-	Projectile: InstantExplode
-	Range: 512
-	Warhead@Validation: TargetDamage
-	Warhead@spawn: SpawnSmokeParticle
+	Warhead@spawn2: SpawnSmokeParticle
 		ValidTargets: Ground, Air, Water
 		Sequences: unitdeathsmoke2
 		Palette: rookiera2exp
@@ -492,16 +450,7 @@ RadiationDeath:
 		TurnRate: 32
 		Neutral: true
 		Weapon: RadiationParticle
-	Warhead@spawn2: SpawnSmokeParticle
-		Delay: 26
-		ValidTargets: Ground, Air, Water
-		Sequences: radparticle
-		Palette: heroictsexp
-		Duration: 191
-		Speed: 0, 32
-		TurnRate: 32
-		Neutral: true
-		Weapon: RadiationParticle
+		Count: 2
 
 RadiationParticle:
 	ReloadDelay: 2
