@@ -799,7 +799,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
