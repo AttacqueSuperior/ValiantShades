@@ -54,7 +54,7 @@ explosion:
 	bombcurs: bombcurs
 		Tick: 300
 	ivan_explosion: crivexp
-	ivan_explosionE: crivexp2
+	ivan_explosionE: crivexp3
 	tesla_impact: tstimpct
 	iron_fx: ironfx
 	chronosk: chronosk
