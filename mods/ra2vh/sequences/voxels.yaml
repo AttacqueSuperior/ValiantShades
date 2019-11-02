@@ -125,6 +125,7 @@ fv:
 	turret-fairy: fvtur-fairy
 	turret-flak: fvtur-flak
 	turret-tesla: fvtur-tesla
+	turret-volkov: fvtur-volkov
 	turret-hitech: fvtur-hitech
 
 gtgcan:
