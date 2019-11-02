@@ -622,7 +622,7 @@ ChronosphereAI:
 		ValidTargets: Ground, Air, Water
 		ImpactSounds: schrmov.wav
 	Warhead@teleport: SpawnActor
-		Actors: bfrt.ai2, bfrt.ai2, bfrt.ai, sref, sref
+		Actors: bfrt.ai2, bfrt.ai2, bfrt.ai, sref, sref, mgg
 		Range: 5
 		Image: cmin
 		Sequence: warpout
