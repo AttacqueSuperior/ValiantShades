@@ -155,7 +155,7 @@ IvanBomber:
 			Rocket: 100
 		DamageTypes: SmashDeath, Prone100Percent, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: ivan_explosion
+		Explosions: ivan_explosionE
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: gexpcraa.wav
 		ValidTargets: Ground, Water, Air
@@ -182,7 +182,17 @@ IvanBomberE:
 		ExplosionPalette: heroicra2exp
 
 IvanDeath:
-	Inherits: IvanBomber
+	Inherits: IvanBomberE
+
+TerrorDeath:
+	Inherits: IvanBomberE
+	Warhead@1Dam: SpreadDamage
+		Damage: 100000
+	Warhead@2Eff: CreateEffect
+		Explosions: ivan_explosion
+	Warhead@spawn: SpawnSmokeParticle
+		Count: 12
+		Duration: 269
 
 PlaceC4:
 	Range: 1c849

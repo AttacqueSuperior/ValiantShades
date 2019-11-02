@@ -263,8 +263,8 @@ terror:
 	Passenger:
 		PipType: Red
 	Explodes:
-		Weapon: TerrorBomb
-		EmptyWeapon: TerrorBomb
+		Weapon: TerrorDeath
+		EmptyWeapon: TerrorDeath
 		DeathTypes: DefaultDeath
 	AttackFrontal:
 		Voice: Attack
