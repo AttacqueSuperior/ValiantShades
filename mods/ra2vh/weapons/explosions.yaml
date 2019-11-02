@@ -166,13 +166,13 @@ IvanBomber:
 		Weapon: LargeFlame
 		Chance: 50
 	Warhead@spawn: SpawnSmokeParticle
-		Count: 4
+		Count: 6
 		Delay: 2
 		ValidTargets: Ground, Air, Water
 		Sequences: flame
 		Palette: heroicra2exp
 		Duration: 179
-		Speed: 0, 24
+		Speed: 18, 36
 		TurnRate: 32
 		Weapon: FlameParticle
 
@@ -285,7 +285,7 @@ NapalmTerrorBomb:
 		ValidTargets: Ground, Air, Water
 		Sequences: flame
 		Palette: heroicra2exp
-		Duration: 359
+		Duration: 269
 		Speed: 18, 36
 		TurnRate: 32
 		Weapon: FlameParticle

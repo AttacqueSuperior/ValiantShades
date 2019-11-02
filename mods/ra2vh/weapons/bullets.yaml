@@ -481,9 +481,10 @@ BuratinoMissile:
 		Sequences: flame
 		Palette: heroicra2exp
 		Duration: 179
-		Speed: 0, 24
+		Speed: 18, 36
 		TurnRate: 32
 		Weapon: FlameParticle
+		Count: 2
 
 BuratinoMissileE:
 	Inherits: BuratinoMissile
