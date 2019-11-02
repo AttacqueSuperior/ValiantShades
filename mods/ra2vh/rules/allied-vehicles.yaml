@@ -48,6 +48,7 @@ amcv:
 	HitShape:
 	-Guard:
 	PlayerCashTricklerBar:
+	-DamagedByTintedCells:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
 	Armor@resistsupers:

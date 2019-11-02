@@ -363,17 +363,38 @@ deso:
 		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
-		PauseOnCondition: disabled
+		PauseOnCondition: disabled || deployed
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute && undeployed
 	Voiced:
 		VoiceSet: DesolatorVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	-DamagedByTintedCells:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
+	ExplodeWeapon:
+		Weapon: RadEruptionWeapon
+		RequiresCondition: deployed && !disabled
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		CanDeployOnRamps: True
+		Facing: 92
+		Voice: Deploy
+		PauseOnCondition: disabled
+	WithSpriteBody@DEPLOYED:
+		Sequence: deployed
+		RequiresCondition: !undeployed
+		Name: deployed
+	WithMakeAnimation:
+		Sequence: deploy
+		BodyNames: deployed
+	Mobile:
+		PauseOnCondition: !undeployed || disabled
 
 ivan:
 	Inherits: ^Infantry
