@@ -232,6 +232,14 @@ NighthawkVoice:
 		Attack: vblhata, vblhatb, vblhatc, vblhatd
 		Die: vblhdia, vblhdib, vblhdic
 
+ThorPlatformVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vthosea, vthoseb, vthosec, vthosed, vthosee, vthosef, vthoseg
+		Move: vthomoa, vthomob, vthomoc, vthomod, vthomoe, vthomof, vthomog
+		Attack: vthoata, vthoatb, vthoatc, vthoatd, vthoate, vthoatf, vthoatg
+		Die: vthofea, vthofeb, vthofec
+
 AlliedNavalVoice:
 	DefaultVariant: .wav
 	Voices:

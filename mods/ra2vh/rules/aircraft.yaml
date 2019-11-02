@@ -327,7 +327,7 @@ thor:
 		BobDistance: -24
 		InitialHeight: 24
 	Voiced:
-		VoiceSet: KirovVoice
+		VoiceSet: ThorPlatformVoice
 	SpawnActorOnDeath:
 		Actor: thorhusk
 		DeathType: DefaultDeath
