@@ -118,6 +118,7 @@ fv:
 	turret-boosted: fvtur-boosted
 	turret-mg: fvtur-mg
 	turret-ggi: fvtur-ggi
+	turret-artemis: fvtur-artemis
 	turret-repair: fvtur-repair
 	turret-grenadier: fvtur-grenadier
 	turret-hmg: fvtur-hmg

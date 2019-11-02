@@ -607,6 +607,21 @@ fv:
 	Tooltip@dione-machinegun:
 		Name: Dione Machinegun IFV
 		RequiresCondition: ifv-dione
+	#=== Artemis ===
+	WithVoxelTurret@artemis:
+		Sequence: turret-artemis
+		RequiresCondition: ifv-artemis
+	Armament@artemis:
+		Weapon: ArtemisMissile
+		RequiresCondition: !rank-heroic && ifv-artemis
+		LocalOffset: 188,0,600
+	Armament@artemis-elite:
+		Weapon: ArtemisMissileE
+		RequiresCondition: rank-heroic && ifv-artemis
+		LocalOffset: 188,0,600
+	Tooltip@artemis:
+		Name: Artemis IFV
+		RequiresCondition: ifv-artemis
 	#=== Grenadier ===
 	WithVoxelTurret@grenadier:
 		Sequence: turret-grenadier
@@ -727,22 +742,13 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
 	Tooltip@hitech:
 		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
-	#=== Artemis ===
-	Armament@artemis:
-		Weapon: ArtemisMissile
-		RequiresCondition: !rank-heroic && ifv-artemis
-		LocalOffset: 188,0,600
-	Armament@artemis-elite:
-		Weapon: ArtemisMissileE
-		RequiresCondition: rank-heroic && ifv-artemis
-		LocalOffset: 188,0,600
 	#=== Unfinished modes ===
 	Explodes@demo:
 		Weapon: CRNuke
