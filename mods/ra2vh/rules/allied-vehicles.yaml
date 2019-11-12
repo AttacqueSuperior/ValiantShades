@@ -350,9 +350,10 @@ mtnk:
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
-	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	Turreted:
+		Offset: 256,0,0
 
 tnkd:
 	Inherits: ^Vehicle

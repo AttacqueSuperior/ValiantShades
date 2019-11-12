@@ -137,7 +137,6 @@ gtgcan:
 mtnk:
 	idle: gtnk
 	turret: gtnktur
-	barrel: gtnkbarl
 
 hammr:
 	idle:
