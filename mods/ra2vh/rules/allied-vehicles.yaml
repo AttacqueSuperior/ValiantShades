@@ -487,7 +487,7 @@ fv:
 			terror: ifv-demo
 			deso: ifv-deso
 			yuri: ifv-yuri
-			virus: ifv-sniper
+			virus: ifv-virus
 			boris: ifv-hero
 			volkov: ifv-volkov
 			kamikaze: ifv-demo
@@ -513,7 +513,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -655,6 +655,21 @@ fv:
 	Tooltip@seal:
 		Name: Heavy Machinegun IFV
 		RequiresCondition: ifv-seal
+	#=== Sniper ===
+	WithVoxelTurret@sniper:
+		Sequence: turret-sniper
+		RequiresCondition: ifv-sniper
+	Armament@sniper:
+		Weapon: AWP
+		RequiresCondition: !rank-heroic && ifv-sniper
+		LocalOffset: 188,0,600
+	Armament@sniper-elite:
+		Weapon: AWPE
+		RequiresCondition: rank-heroic && ifv-sniper
+		LocalOffset: 188,0,600
+	Tooltip@sniper:
+		Name: Sniper IFV
+		RequiresCondition: ifv-sniper
 	#=== Chrono Legionnaire ===
 	WithVoxelTurret@chrono:
 		Sequence: turret-chrono
@@ -744,6 +759,21 @@ fv:
 	Tooltip@yuri:
 		Name: Psi-Corps Trooper IFV
 		RequiresCondition: ifv-yuri
+	#=== Virus ===
+	WithVoxelTurret@virus:
+		Sequence: turret-virus
+		RequiresCondition: ifv-virus
+	Armament@virus:
+		Weapon: VirusGun
+		RequiresCondition: !rank-heroic && ifv-virus
+		LocalOffset: 188,0,600
+	Armament@virus-elite:
+		Weapon: VirusGunE
+		RequiresCondition: rank-heroic && ifv-virus
+		LocalOffset: 188,0,600
+	Tooltip@tesla:
+		Name: Virus IFV
+		RequiresCondition: ifv-virus
 	#=== Volkov ===
 	WithVoxelTurret@volkov:
 		Sequence: turret-volkov
@@ -766,7 +796,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -779,10 +809,6 @@ fv:
 		EmptyWeapon: CRNuke
 		RequiresCondition: ifv-demo
 		DeathTypes: DefaultDeath
-	Armament@sniper:
-		Weapon: AWPE
-		LocalOffset: 188,0,600
-		RequiresCondition: ifv-sniper
 	Armament@hero:
 		Weapon: CRMP5
 		LocalOffset: 200,0,800

@@ -336,15 +336,6 @@ VirusGunE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
 
-CRVirusGun:
-	Inherits: VirusGun
-	ReloadDelay: 85
-
-CRVirusGunE:
-	Inherits: CRVirusGun
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroictsexp
-
 CosmonautLaser:
 	ReloadDelay: 20
 	Range: 7c0

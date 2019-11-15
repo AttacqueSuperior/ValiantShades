@@ -114,7 +114,7 @@ CRMP5E:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 	
-awp:
+AWP:
 	ReloadDelay: 100
 	Range: 14c0
 	Report: isniatta.wav
@@ -146,7 +146,7 @@ awp:
 		ValidTargets: Ground, Water, Air
 
 AWPE:
-	Inherits: awp
+	Inherits: AWP
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 

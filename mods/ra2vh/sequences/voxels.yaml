@@ -122,11 +122,13 @@ fv:
 	turret-repair: fvtur-repair
 	turret-grenadier: fvtur-grenadier
 	turret-hmg: fvtur-hmg
+	turret-sniper: fvtur-sniper
 	turret-chrono: fvtur-chrono
 	turret-fairy: fvtur-fairy
 	turret-flak: fvtur-flak
 	turret-tesla: fvtur-tesla
 	turret-yuri: fvtur-yuri
+	turret-virus: fvtur-virus
 	turret-volkov: fvtur-volkov
 	turret-hitech: fvtur-hitech
 
