@@ -738,6 +738,21 @@ fv:
 	Tooltip@tesla:
 		Name: Tesla Trooper IFV
 		RequiresCondition: ifv-tesla
+	#=== Desolator ===
+	WithVoxelTurret@deso:
+		Sequence: turret-deso
+		RequiresCondition: ifv-deso
+	Armament@deso:
+		Weapon: RadBeamWeapon
+		RequiresCondition: !rank-heroic && ifv-deso
+		LocalOffset: 188,0,600
+	Armament@deso-elite:
+		Weapon: RadBeamWeaponE
+		RequiresCondition: rank-heroic && ifv-deso
+		LocalOffset: 188,0,600
+	Tooltip@deso:
+		Name: Desolator IFV
+		RequiresCondition: ifv-deso
 	#=== Psi-Corps Trooper ===
 	WithVoxelTurret@yuri:
 		Sequence: turret-yuri
@@ -796,7 +811,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus && !ifv-deso
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -813,9 +828,6 @@ fv:
 		Weapon: CRMP5
 		LocalOffset: 200,0,800
 		RequiresCondition: ifv-hero
-	Armament@desolator:
-		Weapon: CRRadBeamWeapon
-		RequiresCondition: ifv-deso
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
@@ -862,11 +874,10 @@ fv:
 	AutoTargetPriority@yuri:
 		ValidTargets: MindControl
 		RequiresCondition: !controlling && ifv-yuri
-	#AutoTargetPriority@unit:
-	#	RequiresCondition: ifv-deso
-	#	ValidTargets: Ground
-	#	InvalidTargets: NoAutoTarget, Structure
-	
+	AutoTargetPriority@deso:
+		RequiresCondition: ifv-deso
+		ValidTargets: Ground
+		InvalidTargets: Structure, Wall, ImmuneToRadiation
 
 fv.ai:
 	Inherits: fv

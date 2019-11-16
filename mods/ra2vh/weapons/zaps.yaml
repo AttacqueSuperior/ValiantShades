@@ -260,18 +260,6 @@ RadBeamWeaponE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
 
-CRRadBeamWeapon:
-	Inherits: RadBeamWeapon
-	Range: 7c0
-	ReloadDelay: 30
-	Warhead@1Dam: SpreadDamage
-		Damage: 175000
-
-CRRadBeamWeaponE:
-	Inherits: RadBeamWeapon
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroictsexp
-
 NeutronRifle:
 	ValidTargets: Temporal
 	ReloadDelay: 1
