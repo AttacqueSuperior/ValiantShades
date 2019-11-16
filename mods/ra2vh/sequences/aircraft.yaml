@@ -6,6 +6,10 @@ asw:
 	Inherits: ^Aircraft
 	icon: xxicon
 
+aurora:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 badger:
 	Inherits: ^Aircraft
 	icon: xxicon

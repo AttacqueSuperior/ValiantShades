@@ -891,3 +891,38 @@ spyplhusk:
 		Speed: 450
 	RenderVoxels:
 		Image: spypl
+
+aurora:
+	Inherits: beag
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Aurora
+	Aircraft:
+		Speed: 394
+	-RevealsShroud:
+	Armament:
+		Weapon: SpiritBomb
+		PauseOnCondition: !ammo
+	Voiced:
+		VoiceSet: AlliedCargoPlaneVoice
+	-AutoTarget:
+	AirstrikeSlave:
+		LandingDistance: 1c0
+		DamageTypes: DefaultDeath
+	RejectsOrders:
+	SpawnActorOnDeath:
+		Actor: aurorahusk
+	-Buildable:
+	Rearmable:
+		RearmActors: dummy
+
+aurorahusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Aurora
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 394
+	RenderVoxels:
+		Image: aurora
