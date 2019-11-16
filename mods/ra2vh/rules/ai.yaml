@@ -374,6 +374,7 @@ Player:
 			ttnk: 15
 			mind: 10
 			bura: 10
+			empr: 1
 			zep: 1
 			yak: 15
 			fflash: 15
