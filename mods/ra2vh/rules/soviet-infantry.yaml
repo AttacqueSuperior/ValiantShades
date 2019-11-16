@@ -646,8 +646,8 @@ boris:
 	Valued:
 		Cost: 1500
 	DeliversCash:
-		Payload: 50
-		PlayerExperience: 5
+		Payload: 750
+		PlayerExperience: 75
 		Voice: Move
 	Tooltip:
 		Name: Boris
