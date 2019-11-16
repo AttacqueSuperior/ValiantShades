@@ -727,3 +727,18 @@ EmpressSelfCurtain:
 		ExplosionPalette: heroicra2exp
 		ImpactSounds: ironcur9.wav
 		ValidTargets: Ground, Air, Water
+
+MarksmanFlare:
+	Range: 7c0
+	ReloadDelay: 6
+	TargetActorCenter: true
+	Projectile: LaserZap
+		Width: 36
+		Duration: 9
+		Color: FF2000
+		SecondaryBeamWidth: 144
+		SecondaryBeamColor: FF200030
+	Warhead@1Dam: SpreadDamage
+	Warhead@airstrike: SendAirstrike
+		UnitType: aurora
+		RandomizeAircraftFacing: true

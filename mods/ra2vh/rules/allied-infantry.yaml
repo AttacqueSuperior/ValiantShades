@@ -1029,6 +1029,63 @@ cleg:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
 
+marks:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Buildable:
+		Queue: Infantry
+		Prerequisites: gatech, ~gapile
+		BuildPaletteOrder: 200
+		Description: Allied infantry capable of pinpointing targets\nfor airstrikes. Unarmed otherwise.\n  Strong vs Ground\n  Weak vs Aircraft
+	Valued:
+		Cost: 800
+	DeliversCash:
+		Payload: 400
+		PlayerExperience: 40
+		Voice: Move
+	Tooltip:
+		Name: Marksman
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 200000
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled || !ammo
+	Armament:
+		Weapon: MarksmanFlare
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: TDCommandoVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Cloak:
+		InitialDelay: 15
+		CloakDelay: 15
+		Palette: infantry-cloak
+		IsPlayerPalette: true
+		UncloakOn: Damage
+		CloakTypes: mirage
+		RequiresCondition: !disabled
+	AmmoPool:
+		Ammo: 1
+		AmmoCondition: ammo
+	ReloadAmmoPool:
+		Delay: 350
+
 dione:
 	Inherits@1: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

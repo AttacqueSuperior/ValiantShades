@@ -899,17 +899,14 @@ aurora:
 	Tooltip:
 		Name: Aurora
 	Aircraft:
-		Speed: 394
+		IdleBehavior: LeaveMap
+		Speed: 446
 	-RevealsShroud:
 	Armament:
 		Weapon: SpiritBomb
 		PauseOnCondition: !ammo
 	Voiced:
 		VoiceSet: AlliedCargoPlaneVoice
-	-AutoTarget:
-	AirstrikeSlave:
-		LandingDistance: 1c0
-		DamageTypes: DefaultDeath
 	RejectsOrders:
 	SpawnActorOnDeath:
 		Actor: aurorahusk
@@ -923,6 +920,6 @@ aurorahusk:
 		Name: Aurora
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 394
+		Speed: 446
 	RenderVoxels:
 		Image: aurora

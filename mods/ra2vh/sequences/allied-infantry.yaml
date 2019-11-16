@@ -579,3 +579,19 @@ hirano:
 		Length: 25
 	icon: hiraicon.png
 		AddExtension: false
+
+marks:
+	Inherits: seal
+	-swim-stand:
+	-swim-idle1:
+	-swim-idle2:
+	-swim-run:
+	-swim-die1:
+	-swim-die2:
+	-swim-shoot:
+	cheer:
+		Start: 340
+	-swim-cheer:
+	paradrop:
+		Start: 348
+	icon: ccomicon

@@ -123,6 +123,15 @@ RA1TanyaVoice:
 		SpecialAttack: ira1texa
 		Die: ira1tdia
 
+TDCommandoVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: itdcomsea, itdcomseb, itdcomsec
+		Move: itdcommoa, itdcommob, itdcommoc
+		Attack: itdcomata, itdcomatb, itdcomatc, itdcomatd, itdcomate
+		Feedback: itdcomfea, itdcomfeb
+		Die: itdcomdia
+
 AlliedVehicleVoice:
 	DefaultVariant: .wav
 	Voices:
