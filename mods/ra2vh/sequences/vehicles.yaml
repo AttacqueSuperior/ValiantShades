@@ -108,6 +108,11 @@ dron:
 		Facings: 32
 	icon: dronicon
 
+empr:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 euroc:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

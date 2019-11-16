@@ -492,3 +492,59 @@ BuratinoMissileE:
 		ExplosionPalette: heroicapolloexp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+EmpressMissile:
+	ReloadDelay: 55
+	Burst: 2
+	Range: 7c512
+	Report: missile7.wav
+	Projectile: BulletAS
+		Speed: 250
+		Image: v2
+		Palette: ra
+		TrailImage: smokey2
+		TrailInterval: 1
+		ContrailLength: 8
+		ContrailWidth: 36
+		Shadow: true
+		LaunchAngle: 148
+	Warhead@1Dam: SpreadDamage
+		Spread: 384
+		Falloff: 100, 50, 0
+		Damage: 85000
+		Versus:
+			None: 75
+			Flak: 75
+			Plate: 60
+			Light: 95
+			Medium: 60
+			Heavy: 60
+			Wood: 100
+			Steel: 85
+			Concrete: 70
+			Drone: 30
+			Rocket: 50
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: empresshit
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: kaboom15.wav
+		InvalidTargets: Water
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size3
+		ExplosionPalette: rookiewaterexp
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+	Warhead@flames: FireFragment
+		Weapon: LargeFlame
+		Chance: 50
+
+EmpressMissileE:
+	Inherits: EmpressMissile
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicapolloexp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp

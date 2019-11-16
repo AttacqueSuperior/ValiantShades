@@ -890,3 +890,71 @@ bura:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+
+empr:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 2200
+	Tooltip:
+		Name: Empress Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 160
+		Prerequisites: ~naweap, natech
+		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground 
+	Mobile:
+		Speed: 75
+		Locomotor: heavytracked
+	Health:
+		HP: 450000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: EmpressMissile
+		LocalOffset: 280,196,640, 280,-196,640
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: EmpressMissileE
+		LocalOffset: 280,196,640, 280,-196,640
+		RequiresCondition: rank-heroic
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: EmpressVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	GrantPeriodicConditionOnEvent@selfcurtain:
+		PauseOnCondition: temporal
+		CooldownDuration: 900
+		ActiveDuration: 300
+		Condition: selfcurtain
+		StartsCharged: true
+		ShowSelectionBar: true
+	GrantCondition@selfcurtain:
+		Condition: invulnerability
+		RequiresCondition: selfcurtain
+	ExplodeWeapon@selfcurtain:
+		RequiresCondition: selfcurtain
+		Weapon: EmpressSelfCurtain

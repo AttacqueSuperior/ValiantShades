@@ -91,8 +91,12 @@ dred:
 	idle-empty: dredwo
 
 drgn:
-	idle: drgn
+	idle:
 	turret: drgntur
+
+empr:
+	idle:
+	turret: emprtur
 
 euroc:
 	idle:

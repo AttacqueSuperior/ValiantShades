@@ -220,6 +220,13 @@ BuratinoVoice:
 		Move: vburmoa, vburmob, vburmoc, vburmod, vburmoe
 		Attack: vburata, vburatb, vburatc, vburatd, vburate, vburatf
 
+EmpressVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vemprsea, vemprseb, vemprsec, vemprsed, vemprsee, vemprsef
+		Move: vemprmoa, vemprmob, vemprmoc, vemprmod, vemprmoe, vemprmof, vemprmog
+		Attack: vemprata, vempratb, vempratc, vempratd, vemprate, vempratf
+
 BeholderVoice:
 	DefaultVariant: .wav
 	Voices:

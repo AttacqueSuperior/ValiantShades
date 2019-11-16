@@ -716,3 +716,14 @@ FlameParticle:
 			Concrete: 50
 			Drone: 50
 			Rocket: 75
+
+EmpressSelfCurtain:
+	ReloadDelay: 1200
+	Range: 1
+	Projectile: InstantExplode
+	Warhead@TargetValidation: SpreadDamage
+	Warhead@2Eff: CreateEffect
+		Explosions: empressironcurtain
+		ExplosionPalette: heroicra2exp
+		ImpactSounds: ironcur9.wav
+		ValidTargets: Ground, Air, Water
