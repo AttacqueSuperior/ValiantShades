@@ -903,7 +903,7 @@ aurora:
 		Speed: 446
 	-RevealsShroud:
 	Armament:
-		Weapon: SpiritBomb
+		Weapon: AuroraBomb
 		PauseOnCondition: !ammo
 	Voiced:
 		VoiceSet: AlliedCargoPlaneVoice
