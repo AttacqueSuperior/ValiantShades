@@ -260,7 +260,7 @@ Player:
 			gaairc: 2
 			gatech: 1
 			garbur: 1
-			gagap: 2
+			gagap: 3
 			gaspysat: 1
 			gacran: 2
 			narefn: 4
@@ -348,7 +348,7 @@ Player:
 			tnkd: 15
 			bfrt.ai: 5
 			bfrt.ai2: 3
-			mgg: 1
+			# mgg: 1
 			shad.ai: 3
 			shad.ai2: 3
 			thor: 1
