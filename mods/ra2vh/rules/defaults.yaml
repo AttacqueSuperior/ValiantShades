@@ -774,7 +774,7 @@
 		RequiresCondition: damaged && !prevent-ground-target
 		TargetTypes: Repair
 	Targetable@Temporal:
-		RequiresCondition: !inair
+		RequiresCondition: !inair && !invulnerability
 	Repairable:
 		Voice: Move
 		RepairActors: gadept, nadept, caoutp
@@ -922,7 +922,7 @@
 	SelfHealing@crane:
 		RequiresCondition: crane && !prevent-ground-target
 	Targetable@Temporal:
-		RequiresCondition: !airborne
+		RequiresCondition: !airborne && !invulnerability
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -1101,6 +1101,8 @@
 	Targetable@Repair:
 		RequiresCondition: damaged
 		TargetTypes: Repair
+	Targetable@Temporal:
+		RequiresCondition: !invulnerability
 	Repairable:
 		Voice: Move
 		RepairActors: gayard, nayard
