@@ -28,6 +28,9 @@
 	permanent-mindcontrol: mindanimr
 		Length: *
 		Offset: 0, -24, 24
+	charm: mindanims
+		Length: *
+		Offset: 0, -24, 24
 
 ^IvanBombable:
 	ivanbomb: bombcurs

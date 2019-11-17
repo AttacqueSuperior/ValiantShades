@@ -362,7 +362,7 @@
 	WithIdleOverlay@mindcontrol:
 		Sequence: mindcontrol
 		Palette: effect
-		RequiresCondition: controlled && !permanent-mindcontrol
+		RequiresCondition: controlled && !permanent-mindcontrol && !charmed
 	ExternalCondition@permanent-mindcontrol:
 		Condition: permanent-mindcontrol
 	GrantCondition@permanent-mindcontrol:
@@ -375,6 +375,19 @@
 		Sequence: permanent-mindcontrol
 		Palette: effect
 		RequiresCondition: permanent-mindcontrol
+	TemporaryOwnerManagerAS:
+		Condition: charmed
+		BarColor: FF00C0
+	GrantCondition@charmed:
+		Condition: controlled
+		RequiresCondition: charmed
+	Targetable@Charmable:
+		TargetTypes: Charmable
+		RequiresCondition: !charmed && !permanent-mindcontrol && !prevent-ground-target
+	WithIdleOverlay@charm:
+		Sequence: charm
+		Palette: tsanim
+		RequiresCondition: charmed
 
 ^IvanBombable:
 	DelayedWeaponAttachable@ivanbomb:
