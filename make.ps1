@@ -178,7 +178,7 @@ function CheckForUtility
 
 function CheckForDotnet
 {
-	if ((Get-Command "dotnet" -ErrorAction SilentlyContinue) -eq $null) 
+	if ((Get-Command "dotnet" -ErrorAction SilentlyContinue) -eq $null)
 	{
 		Write-Host "The 'dotnet' tool is required to compile OpenRA. Please install the .NET Core SDK or Visual Studio and try again. https://dotnet.microsoft.com/download" -ForegroundColor Red
 		return 1
@@ -294,7 +294,13 @@ if ($command -eq "all" -or $command -eq "clean")
 {
 	$templateDir = $pwd.Path
 	$versionFile = $env:ENGINE_DIRECTORY + "/VERSION"
-	if ((Test-Path $versionFile) -and [System.IO.File]::OpenText($versionFile).ReadLine() -eq $env:ENGINE_VERSION)
+	$currentEngine = ""
+	if (Test-Path $versionFile)
+	{
+		$currentEngine = [System.IO.File]::OpenText($versionFile).ReadLine()
+	}
+
+	if ($currentEngine -ne "" -and $currentEngine -eq $env:ENGINE_VERSION)
 	{
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd $command"
@@ -313,7 +319,7 @@ if ($command -eq "all" -or $command -eq "clean")
 
 		if (Test-Path $env:ENGINE_DIRECTORY)
 		{
-			if ((Test-Path $versionFile) -and [System.IO.File]::OpenText($versionFile).ReadLine() -ne "")
+			if ($currentEngine -ne "")
 			{
 				echo "Deleting engine version $currentEngine."
 			}
