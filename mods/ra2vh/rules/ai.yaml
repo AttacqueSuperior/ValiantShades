@@ -237,7 +237,7 @@ Player:
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 7c0
-	BaseBuilderBotASModule@test:
+	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		BuildingQueues: Building
 		DefenseQueues: Support
@@ -251,6 +251,7 @@ Player:
 		BarracksTypes: gapile, nahand
 		VehiclesFactoryTypes: gaweap, naweap
 		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, naairc
+		PlaceDefenseTowardsEnemyChance: 5
 		BuildingLimits:
 			garefn: 4
 			gapile: 3
