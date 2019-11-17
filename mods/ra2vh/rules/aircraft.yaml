@@ -913,6 +913,9 @@ aurora:
 	-Buildable:
 	Rearmable:
 		RearmActors: dummy
+	SpeedMultiplier@aurora:
+		RequiresCondition: ammo
+		Modifier: 150
 
 aurorahusk:
 	Inherits: ^PlaneHusk
