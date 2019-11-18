@@ -516,8 +516,6 @@ gaspysat:
 	Power:
 		Amount: -100
 		RequiresCondition: !being-warped && !powerdown
-	ProvidesRadar:
-		RequiresCondition: !disabled
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1
