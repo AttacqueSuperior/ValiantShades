@@ -567,9 +567,9 @@ ThorLightningHit:
 			None: 100
 			Flak: 100
 			Plate: 100
-			Light: 100
-			Medium: 75
-			Heavy: 75
+			Light: 200
+			Medium: 150
+			Heavy: 150
 			Wood: 50
 			Steel: 50
 			Concrete: 25
