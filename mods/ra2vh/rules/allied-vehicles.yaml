@@ -1192,6 +1192,21 @@ bfrt.ai2:
 		Prerequisites: garbur, ~gaweap, ~testai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
+bfrt.ai3:
+	Inherits: bfrt
+	RenderSprites:
+		Image: bfrt
+	RenderVoxels:
+		Image: bfrt
+	Cargo:
+		InitialUnits: marks, fairy, fairy, ggi, ggi
+	Selectable:
+		Class: bfrt
+	Buildable:
+		BuildPaletteOrder: 10000
+		Prerequisites: garbur, ~gaweap, ~testai
+		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
+
 mgg:
 	Inherits: ^Vehicle
 	# Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

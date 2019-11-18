@@ -348,6 +348,7 @@ Player:
 			tnkd: 15
 			bfrt.ai: 5
 			bfrt.ai2: 3
+			bfrt.ai3: 1
 			# mgg: 1
 			shad.ai: 3
 			shad.ai2: 3
