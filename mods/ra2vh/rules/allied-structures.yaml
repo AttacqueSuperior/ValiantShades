@@ -574,6 +574,9 @@ gagap:
 	Power:
 		Amount: -100
 		RequiresCondition: !being-warped && !powerdown
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e1
 
 gaweat:
 	Inherits: ^Building
