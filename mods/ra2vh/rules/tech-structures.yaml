@@ -213,6 +213,7 @@ caoutp:
 	Inherits: ^TechBuilding
 	Inherits@2: ^VoxelLighting
 	Inherits@shape: ^4x3Shape
+	Inherits@experience: ^GainsExperience
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Selectable:

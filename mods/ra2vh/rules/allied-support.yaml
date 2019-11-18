@@ -8,6 +8,7 @@ gawall:
 gapill:
 	Inherits: ^BasicDefense
 	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Prerequisites: barracks, ~structures.allies
 	Tooltip:
@@ -27,6 +28,7 @@ gapill:
 nasam:
 	Inherits: ^AADefense
 	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Prerequisites: barracks, ~structures.allies
 	Tooltip:
@@ -46,6 +48,7 @@ nasam:
 atesla:
 	Inherits: ^Tier2Defense
 	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Prerequisites: radar, ~structures.allies
 	Tooltip:
@@ -72,6 +75,7 @@ gtgcan:
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50

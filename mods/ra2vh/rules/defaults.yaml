@@ -189,6 +189,7 @@
 
 ^SupportBuilding:
 	Inherits: ^Building
+	Inherits@2: ^GainsExperience
 	-Capturable:
 	-CaptureNotification:
 	-ShakeOnDeath:
