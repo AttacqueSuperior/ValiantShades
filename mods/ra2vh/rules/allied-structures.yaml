@@ -523,7 +523,7 @@ gaspysat:
 		Actors: e1, e1
 
 gagap:
-	Inherits: ^SupportBuilding
+	Inherits: ^Building
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Inherits@damagefire: ^BuildingDamageFire1
 	Valued:
