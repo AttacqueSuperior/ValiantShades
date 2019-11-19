@@ -209,6 +209,13 @@ MobileGapGeneratorVoice:
 		Move: vmggmoa, vmggmob, vmggmoc, vmggmod, vmggmoe, vmggmof
 		Attack: vmggmoa, vmggmob, vmggmoc, vmggmod, vmggmoe, vmggmof
 
+SuccubusVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vsuccsea, vsuccseb, vsuccsec, vsuccsed, vsuccsee, vsuccsef, vsuccseg
+		Move: vsuccmoa, vsuccmob, vsuccmoc, vsuccmod, vsuccmoe, vsuccmof
+		Attack: vsuccata, vsuccatb, vsuccatc, vsuccatd, vsuccate, vsuccatf, vsuccatg, vsuccath
+
 MinervaVoice:
 	DefaultVariant: .wav
 	Voices:

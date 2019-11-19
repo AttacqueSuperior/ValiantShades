@@ -1266,6 +1266,59 @@ mgg:
 		Condition: prevent-mindcontrol
 		RequiresCondition: !disabled
 
+succ:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Valued:
+		Cost: 650
+	Tooltip:
+		Name: Succubus
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 120
+		Prerequisites: garbur, ~gaweap
+		Description: Can temporarily take ownership of enemy units.\n Strong vs mindcontrollable units.
+	Mobile:
+		Speed: 75
+		Locomotor: heavytracked
+	Health:
+		HP: 250000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: SuccubusCharm
+		LocalOffset: 640,0,512
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: SuccubusCharm
+		LocalOffset: 640,0,512
+		RequiresCondition: rank-heroic
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: SuccubusVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+
 mnrva:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

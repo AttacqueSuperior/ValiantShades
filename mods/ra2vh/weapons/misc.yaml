@@ -791,3 +791,23 @@ AuroraBombE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+SuccubusCharm:
+	ReloadDelay: 240
+	Report: bgraatta.wav
+	Range: 6c0
+	ValidTargets: Charmable
+	Projectile: BulletAS
+		Speed: 512
+		Image: succubusball
+		Palette: tsanim
+		LaunchAngle: 47
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+	Warhead@2ChangeOwner: ChangeOwnerAS
+		Duration: 240
+		ChangeOwnerValidStances: Neutral, Enemy
+		ChangeOwnerValidTargets: Charmable
+	Warhead@2Eff: CreateEffect
+		Explosions: succubihit
+		ExplosionPalette: rookietsexp

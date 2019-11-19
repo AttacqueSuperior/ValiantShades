@@ -350,6 +350,7 @@ Player:
 			bfrt.ai2: 3
 			bfrt.ai3: 1
 			# mgg: 1
+			succ: 3
 			shad.ai: 3
 			shad.ai2: 3
 			thor: 1

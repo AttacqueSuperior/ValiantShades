@@ -277,6 +277,10 @@ sub:
 subt: #Sub Torpedo needs voxel projectiles
 	idle:
 
+succ:
+	idle:
+	turret: succtur
+
 suvb:
 	idle:
 

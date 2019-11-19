@@ -474,6 +474,10 @@ volkovrail:
 	idle: volkrail
 		Length: *
 
+succubusball:
+	idle: succproj
+		Length: *
+
 trock01:
 	Inherits: ^Rock
 
