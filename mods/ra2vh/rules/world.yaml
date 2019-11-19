@@ -64,6 +64,21 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+	Locomotor@DRONE:
+		Name: drone
+		SharesCell: true
+		Crushes: crate, mine
+		CrushDamageTypes: DefaultDeath, CrushedDeath
+		TerrainSpeeds:
+			Clear: 133
+			Rough: 133
+			Rail: 67
+			Road: 146
+			Bridge: 146
+			DirtRoad: 146
+			Beach: 133
+			Ore: 93
+			Gems: 93
 	Locomotor@TRACKED:
 		Name: tracked
 		Crushes: crate, infantry, mine

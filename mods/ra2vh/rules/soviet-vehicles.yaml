@@ -155,6 +155,7 @@ dron:
 	Mobile:
 		Speed: 150
 		TurnSpeed: 15
+		Locomotor: drone
 	Health:
 		HP: 100000
 	Armor:
