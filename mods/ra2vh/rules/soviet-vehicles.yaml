@@ -946,7 +946,7 @@ empr:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantPeriodicConditionOnEvent@selfcurtain:
-		PauseOnCondition: temporal
+		PauseOnCondition: being-warped
 		CooldownDuration: 900
 		ActiveDuration: 300
 		Condition: selfcurtain
