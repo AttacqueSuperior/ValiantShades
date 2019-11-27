@@ -556,7 +556,7 @@ ThorLightningHit:
 		InnerLightness: 192
 		OuterLightness: 64
 		SegmentLength: 1c512
-		Distortion: 1024
+		Distortion: 768
 		Duration: 8
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
