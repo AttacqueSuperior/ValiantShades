@@ -418,7 +418,7 @@ ArtemisMissileE:
 
 WarthogMissile:
 	ReloadDelay: 12
-	Range: 9c0
+	Range: 11c0
 	MinRange: 0c001
 	Projectile: InstantExplode
 	ValidTargets: Air, Ground, Water
@@ -442,7 +442,7 @@ WarthogMissileE:
 WarthogMissileStage2:
 	Inherits: ^Missile
 	ReloadDelay: 10
-	Range: 9c0
+	Range: 11c0
 	Report: vintatta.wav
 	ValidTargets: Ground, Water
 	Projectile: Missile
