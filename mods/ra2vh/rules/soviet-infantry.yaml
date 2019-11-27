@@ -449,6 +449,10 @@ ivan:
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	AutoTarget:
+		ScanRadius: 5
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: IvanBombable
 
 civan:
 	Inherits: ivan

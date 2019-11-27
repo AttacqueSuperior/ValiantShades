@@ -119,7 +119,7 @@ PlaceIvanBomb:
 	Range: 1c849
 	Projectile: InstantHit
 	Report: icraatta.wav
-	InvalidTargets: IvanBombed
+	ValidTargets: IvanBombable
 	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
 		Weapon: IvanBomber
 		Type: ivanbomb

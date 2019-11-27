@@ -82,6 +82,8 @@
 	Inherits@terrorbomb: ^TerrorBombPlantable
 	Inherits@emp: ^AffectedByEMP
 	Inherits@temporal: ^Warpable
+	Targetable@ivanbombable:
+		RequiresCondition: !ivanbomb && !being-warped
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -282,6 +284,8 @@
 	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
 	-GrantCondition@makeanim-disable:
+	Targetable@ivanbombable:
+		RequiresCondition: !ivanbomb
 	OwnerLostAction:
 		Action: ChangeOwner
 	Health:

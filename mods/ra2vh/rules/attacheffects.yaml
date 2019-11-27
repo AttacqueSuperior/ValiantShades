@@ -390,6 +390,9 @@
 		RequiresCondition: charmed
 
 ^IvanBombable:
+	Targetable@ivanbombable:
+		TargetTypes: IvanBombable
+		RequiresCondition: !ivanbomb && !prevent-ground-target
 	DelayedWeaponAttachable@ivanbomb:
 		Type: ivanbomb
 		Condition: ivanbomb
