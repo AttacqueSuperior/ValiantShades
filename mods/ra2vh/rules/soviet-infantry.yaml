@@ -459,10 +459,11 @@ ivan:
 
 civan:
 	Inherits: ivan
-	Buildable:
-		BuildPaletteOrder: 180
-		Prerequisites: ~nahand, ~allies.tech.infiltrated
-		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
+	#Buildable:
+	#	BuildPaletteOrder: 180
+	#	Prerequisites: ~nahand, ~allies.tech.infiltrated
+	#	Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
+	-Buildable:
 	Tooltip:
 		Name: Chrono Ivan
 	Valued:
