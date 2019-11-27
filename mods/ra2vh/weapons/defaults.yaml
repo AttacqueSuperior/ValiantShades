@@ -44,10 +44,16 @@
 	Projectile: InstantHit
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
+		Delay: 1
+		Spread: 192
 		ValidTargets: Air
 		DamageTypes: BulletDeath, DefaultDeath
 		Versus:
 			Flak: 80
+	Warhead@2Eff: CreateEffect
+		Delay: 1
+	Warhead@3EffWater: CreateEffect
+		Delay: 1
 
 ^LargeBullet:
 	Projectile: BulletAS
