@@ -171,7 +171,7 @@ hind:
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
 		TurnSpeed: 10
 		Speed: 125
-		AltitudeVelocity: 160
+		AltitudeVelocity: 120
 		CruisingCondition: cruising
 	RenderSprites:
 	WithVoxelHelicopterBody:
@@ -442,6 +442,7 @@ orca:
 	Aircraft:
 		VTOL: true
 		TurnToDock: true
+		AltitudeVelocity: 180
 
 orcahusk:
 	Inherits: ^PlaneHusk
