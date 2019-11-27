@@ -911,7 +911,7 @@ fv:
 		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@infantry:
-		RequiresCondition: ifv-seal # || ifv-sniper || ifv-hero
+		RequiresCondition: ifv-seal || ifv-sniper # || ifv-hero
 		ValidTargets: Infantry
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@yuri:
