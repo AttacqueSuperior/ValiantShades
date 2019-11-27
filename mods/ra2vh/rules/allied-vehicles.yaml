@@ -794,6 +794,34 @@ fv:
 	Tooltip@yuri:
 		Name: Psi-Corps Trooper IFV
 		RequiresCondition: ifv-yuri
+	#=== Demolition (Terrorist + Kamikaze) ===
+	WithVoxelTurret@demo:
+		Sequence: turret-demo
+		RequiresCondition: ifv-demo
+	Armament@demo:
+		Weapon: DemoTruckTargeting
+		RequiresCondition: ifv-demo
+	GrantConditionOnAttack@demo:
+		Condition: triggered
+	KillsSelf@demo:
+		RequiresCondition: triggered && ifv-demo
+		DamageTypes: DefaultDeath
+	FirepowerMultiplier@demo:
+		RequiresCondition: triggered
+		Modifier: 200
+	Explodes@demo:
+		RequiresCondition: !rank-heroic && ifv-demo
+		Weapon: CRNuke
+		EmptyWeapon: CRNuke
+		DeathTypes: DefaultDeath
+	Explodes@demo-elite:
+		RequiresCondition: rank-heroic && ifv-demo
+		Weapon: CRNukeE
+		EmptyWeapon: CRNukeE
+		DeathTypes: DefaultDeath
+	Tooltip@demo:
+		Name: Demolition IFV
+		RequiresCondition: ifv-demo
 	#=== Virus ===
 	WithVoxelTurret@virus:
 		Sequence: turret-virus
@@ -839,11 +867,6 @@ fv:
 		Name: High-Tech IFV
 		RequiresCondition: turret-hitech
 	#=== Unfinished modes ===
-	Explodes@demo:
-		Weapon: CRNuke
-		EmptyWeapon: CRNuke
-		RequiresCondition: ifv-demo
-		DeathTypes: DefaultDeath
 	Armament@hero:
 		Weapon: CRMP5
 		LocalOffset: 200,0,800
@@ -860,7 +883,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense

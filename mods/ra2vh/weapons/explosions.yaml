@@ -310,26 +310,6 @@ NapalmTerrorBombE:
 	Warhead@spawn: SpawnSmokeParticle
 		Count: 18
 
-CRNuke:
-	Inherits: IvanDeath
-	Warhead@1Dam: SpreadDamage
-		Spread: 426
-		Damage: 200000
-		Versus:
-			Light: 90
-			Medium: 50
-			Heavy: 50
-			Wood: 60
-			Steel: 150
-	Warhead@2Eff: CreateEffect
-		Explosions: ivan_explosionE
-		ExplosionPalette: rookiera2exp
-
-CRNukeE:
-	Inherits: CRNuke
-	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroicra2exp
-
 TerrorBomb:
 	ReloadDelay: 20
 	Range: 4c0
@@ -372,10 +352,25 @@ KamikazeBomb:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
-CRTerrorBomb:
+CRNuke:
+	Inherits: KamikazeBomb
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: rookiera2exp
+	Warhead@spawn: SpawnSmokeParticle
+		Count: 8
+		Delay: 1
+		ValidTargets: Ground, Air, Water
+		Sequences: flame
+		Palette: heroicra2exp
+		Duration: 269
+		Speed: 18, 36
+		TurnRate: 32
+		Weapon: FlameParticle
+
+CRNukeE:
 	Inherits: CRNuke
-	Warhead@1Dam: SpreadDamage
-		Damage: 425000
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
