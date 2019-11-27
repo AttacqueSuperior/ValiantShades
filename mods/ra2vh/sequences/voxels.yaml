@@ -136,6 +136,7 @@ fv:
 	turret-flak: fvtur-flak
 	turret-tesla: fvtur-tesla
 	turret-deso: fvtur-deso
+	turret-ivan: fvtur-ivan
 	turret-yuri: fvtur-yuri
 	turret-virus: fvtur-virus
 	turret-volkov: fvtur-volkov

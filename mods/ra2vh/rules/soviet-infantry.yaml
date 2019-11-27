@@ -434,10 +434,10 @@ ivan:
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: PlaceIvanBomb
-	#	RequiresCondition: !rank-heroic
-	# Armament@elite:
-	#	Weapon: IvanBomberE
-	#	RequiresCondition: rank-heroic
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: PlaceIvanBombE
+		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
 		Cursor: bomb

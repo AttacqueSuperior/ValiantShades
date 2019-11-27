@@ -477,7 +477,7 @@ fv:
 			e2: ifv-mg
 			flakt: ifv-flak
 			shk: ifv-tesla
-			ivan: ifv-demo
+			ivan: ifv-ivan
 			terror: ifv-demo
 			deso: ifv-deso
 			yuri: ifv-yuri
@@ -507,7 +507,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus && !ifv-marksman
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus && !ifv-marksman && !ifv-ivan
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -758,6 +758,21 @@ fv:
 	Tooltip@deso:
 		Name: Desolator IFV
 		RequiresCondition: ifv-deso
+	#=== Crazy Ivan ===
+	WithVoxelTurret@ivan:
+		Sequence: turret-ivan
+		RequiresCondition: ifv-ivan
+	Armament@ivan:
+		Weapon: PlaceIvanBomb
+		RequiresCondition: !rank-heroic && ifv-ivan
+		LocalOffset: 188,0,600
+	Armament@ivan-elite:
+		Weapon: PlaceIvanBombE
+		RequiresCondition: rank-heroic && ifv-ivan
+		LocalOffset: 188,0,600
+	Tooltip@ivan:
+		Name: Crazy Ivan IFV
+		RequiresCondition: ifv-ivan
 	#=== Psi-Corps Trooper ===
 	WithVoxelTurret@yuri:
 		Sequence: turret-yuri
@@ -816,7 +831,7 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus && !ifv-deso && !ifv-marksman
+		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus && !ifv-deso && !ifv-marksman && !ifv-ivan
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -883,6 +898,9 @@ fv:
 		RequiresCondition: ifv-deso
 		ValidTargets: Ground
 		InvalidTargets: Structure, Wall, ImmuneToRadiation
+	AutoTargetPriority@ivan:
+		RequiresCondition: ifv-ivan
+		ValidTargets: IvanBombable
 
 fv.ai:
 	Inherits: fv
