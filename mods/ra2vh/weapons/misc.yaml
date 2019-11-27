@@ -266,22 +266,22 @@ WeatherBolt:
 		Chance: 33
 
 ^Debris:
-	Range: 3c512
+	Range: 2c768
 	Projectile: BulletAS
-		Speed: 125, 166
-		LaunchAngle: 70, 190
+		Speed: 100, 133
+		LaunchAngle: 105, 224
 		Image: debris
 	Warhead@Validation: TargetDamage
 	Warhead@2Eff: CreateEffect
 		Explosions: debrishit
 		ExplosionPalette: tsanim
-		ImpactSounds: gexp07a.wav
+		# ImpactSounds: gexp07a.wav
 		InvalidTargets: Water
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size6
 		ExplosionPalette: donutwater
-		ImpactSounds: gexpwasa.wav, gexpwasb.wav
+		# ImpactSounds: gexpwasa.wav, gexpwasb.wav
 		ValidTargets: Water
 
 SmallDebris:
@@ -293,6 +293,22 @@ LargeDebris:
 	Inherits: ^Debris
 	Projectile: BulletAS
 		Sequences: large1, large2, large3, large4, large5, large6, large7, large8, large9, large10
+	Warhead@2Eff: CreateEffect
+		Explosions: largedebrishit
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size5
+
+TSSmallDebris:
+	Inherits: ^Debris
+	Projectile: BulletAS
+		Sequences: ts-small1, ts-small2, ts-small3, ts-small4, ts-small5, ts-small6, ts-small7, ts-small8, ts-small9, ts-small10
+		Palette: tsanim
+
+TSLargeDebris:
+	Inherits: ^Debris
+	Projectile: BulletAS
+		Sequences: ts-large1, ts-large2, ts-large3, ts-large4, ts-large5, ts-large6, ts-large7, ts-large8, ts-large9, ts-large10
+		Palette: tsanim
 	Warhead@2Eff: CreateEffect
 		Explosions: largedebrishit
 	Warhead@3EffWater: CreateEffect

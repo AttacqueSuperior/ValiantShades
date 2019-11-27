@@ -6,8 +6,19 @@ UnitExplode:
 		ValidTargets: Ground, Water, Air
 	Warhead@DebrisSpawn: FireShrapnel
 		Weapon: SmallDebris
-		Amount: 1,4
+		Amount: 2,6
 		AffectsParent: true
+		ValidTargets: Ground, Water, Air
+	Warhead@DebrisSpawn2: FireShrapnel
+		Weapon: TSSmallDebris
+		Amount: 2,6
+		AffectsParent: true
+		ValidTargets: Ground, Water, Air
+	Warhead@DebrisSpawn3: FireShrapnel
+		Weapon: TSLargeDebris
+		Amount: 1,3
+		AffectsParent: true
+		ValidTargets: Ground, Water, Air
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater
 		Chance: 33
@@ -41,6 +52,8 @@ InfantryExplode:
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 	-Warhead@DebrisSpawn:
+	-Warhead@DebrisSpawn2:
+	-Warhead@DebrisSpawn3:
 	-Warhead@Smu:
 	Warhead@Smu2: LeaveSmudge
 		SmudgeType: SmallScorch
@@ -67,7 +80,7 @@ BuildingExplode:
 ShipExplode:
 	Inherits: UnitExplode
 	Warhead@DebrisSpawn: FireShrapnel
-		Amount: 2,5
+		Amount: 3,9
 
 KirovExplode:
 	Inherits: UnitExplode
@@ -85,11 +98,23 @@ PlaneExplode:
 SpawnedPlaneExplosion:
 	Inherits: UnitExplodeSmall
 	-Warhead@DebrisSpawn:
+	Warhead@DebrisSpawn2: FireShrapnel
+		Amount: 1,3
+	Warhead@DebrisSpawn3: FireShrapnel
+		Amount: 0,2
 	Warhead@1Eff: CreateEffect
 		Explosions: spawnedplaneexplosion
 		ExplosionPalette: heroicra2exp
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
+
+AircraftCrashing:
+	Inherits: UnitExplode
+	-Warhead@1Eff:
+	-Warhead@DebrisSpawn:
+	-Warhead@Smu:
+	-Warhead@Smu2:
+	-Warhead@flames:
 
 MineExplode:
 	Inherits: KirovExplode

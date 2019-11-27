@@ -928,6 +928,10 @@
 		RequiresCondition: crane && !prevent-ground-target
 	Targetable@Temporal:
 		RequiresCondition: !airborne && !invulnerability
+	Explodes:
+		Weapon: AircraftCrashing
+		EmptyWeapon: AircraftCrashing
+		DeathTypes: DefaultDeath
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -979,7 +983,6 @@
 	Explodes:
 		Weapon: SpawnedPlaneExplosion
 		EmptyWeapon: SpawnedPlaneExplosion
-		DeathTypes: DefaultDeath
 	Rearmable:
 		RearmActors: dummy
 

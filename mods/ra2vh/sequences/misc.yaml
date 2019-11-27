@@ -131,6 +131,26 @@ debris:
 	rock3: dbri-wm3
 	# was unused in vRA2
 	flyingbody: dbrs10sm
+	ts-small1: tsdbris1sm
+	ts-small2: tsdbris2sm
+	ts-small3: tsdbris3sm
+	ts-small4: tsdbris4sm
+	ts-small5: tsdbris5sm
+	ts-small6: tsdbris6sm
+	ts-small7: tsdbris7sm
+	ts-small8: tsdbris8sm
+	ts-small9: tsdbris9sm
+	ts-small10: tsdbrs10sm
+	ts-large1: tsdbris1lg
+	ts-large2: tsdbris2lg
+	ts-large3: tsdbris3lg
+	ts-large4: tsdbris4lg
+	ts-large5: tsdbris5lg
+	ts-large6: tsdbris6lg
+	ts-large7: tsdbris7lg
+	ts-large8: tsdbris8lg
+	ts-large9: tsdbris9lg
+	ts-large10: tsdbrs10lg
 
 rank:
 	veteran: vpips
