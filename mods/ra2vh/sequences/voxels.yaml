@@ -131,6 +131,7 @@ fv:
 	turret-hmg: fvtur-hmg
 	turret-sniper: fvtur-sniper
 	turret-chrono: fvtur-chrono
+	turret-marksman: fvtur-marksman
 	turret-fairy: fvtur-fairy
 	turret-flak: fvtur-flak
 	turret-tesla: fvtur-tesla

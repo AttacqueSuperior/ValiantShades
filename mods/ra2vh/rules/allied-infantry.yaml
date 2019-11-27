@@ -1084,7 +1084,7 @@ marks:
 		Ammo: 1
 		AmmoCondition: ammo
 	ReloadAmmoPool:
-		Delay: 350
+		Delay: 450
 
 dione:
 	Inherits@1: ^Infantry

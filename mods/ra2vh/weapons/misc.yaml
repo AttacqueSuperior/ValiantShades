@@ -743,6 +743,11 @@ MarksmanFlare:
 		UnitType: aurora
 		RandomizeAircraftFacing: true
 
+# AmmoPool pips can't be hidden with conditions
+MarksmanIFVFlare:
+	Inherits: MarksmanFlare
+	ReloadDelay: 450
+
 AuroraBomb:
 	ReloadDelay: 50
 	Range: 1c512
