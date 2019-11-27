@@ -242,7 +242,6 @@ zep:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -320,7 +319,6 @@ thor:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -358,6 +356,7 @@ thorhusk:
 
 beag:
 	Inherits: ^Plane
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
@@ -393,7 +392,6 @@ beag:
 		PipType: Ammo
 		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
-	AutoTarget:
 	RenderSprites:
 	SpawnActorOnDeath:
 		Actor: beaghusk
@@ -419,6 +417,7 @@ beaghusk:
 
 orca:
 	Inherits: beag
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
 		Name: Harrier
 	Buildable:
@@ -461,6 +460,7 @@ orcahusk:
 
 yak:
 	Inherits: beag
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Tooltip:
 		Name: Yak
@@ -502,6 +502,7 @@ yakhusk:
 
 fflash:
 	Inherits: beag
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1400
@@ -539,6 +540,10 @@ fflashhusk:
 bpln:
 	Inherits: beag
 	Inherits@factionrankpips: ^SovietVeteranRank
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	-AttackMove:
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -551,7 +556,6 @@ bpln:
 		PauseOnCondition: !ammo
 	Voiced:
 		VoiceSet: MigVoice
-	-AutoTarget:
 	AirstrikeSlave:
 		LandingDistance: 1c0
 		DamageTypes: DefaultDeath
@@ -574,6 +578,7 @@ bplnhusk:
 
 spirit:
 	Inherits: ^Plane
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Valued:
@@ -610,7 +615,6 @@ spirit:
 		PipType: Ammo
 		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
-	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	SpawnActorOnDeath:
@@ -720,6 +724,10 @@ badger:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^SovietVeteranRank
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	-AttackMove:
 	Tooltip:
 		Name: Badger Bomber
 	SpawnActorOnDeath:
@@ -738,8 +746,6 @@ badger:
 		Bounds: 64, 52, 0, -6
 	-Buildable:
 	-RevealsShroud:
-	AutoTarget:
-		ScanRadius: 6
 	-Rearmable:
 	RejectsOrders:
 	Aircraft:
@@ -807,6 +813,10 @@ hornet:
 
 a10:
 	Inherits: beag
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	-AttackMove:
 	Tooltip:
 		Name: A-10 Warthog
 	SpawnActorOnDeath:
@@ -825,8 +835,6 @@ a10:
 		Bounds: 64, 52, 0, -6
 	-Buildable:
 	-RevealsShroud:
-	AutoTarget:
-		ScanRadius: 6
 	-Rearmable:
 	RejectsOrders:
 	Aircraft:
@@ -852,6 +860,10 @@ spypl:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^SovietVeteranRank
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	-AttackMove:
 	Tooltip:
 		Name: Spy Plane
 	SpawnActorOnDeath:
@@ -870,8 +882,6 @@ spypl:
 		Bounds: 64, 52, 0, -6
 	-Buildable:
 	-RevealsShroud:
-	AutoTarget:
-		ScanRadius: 6
 	-Rearmable:
 	RejectsOrders:
 	Aircraft:

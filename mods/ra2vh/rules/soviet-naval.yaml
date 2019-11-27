@@ -103,8 +103,6 @@ sub:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
-		InitialStance: ReturnFire
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0
@@ -213,7 +211,6 @@ sqd:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -296,7 +293,6 @@ dred:
 		Speed: 60
 	AttackFrontal:
 		Voice: Attack
-	AutoTarget:
 	WithVoxelBody@loaded:
 		RequiresCondition: loaded
 	WithVoxelBody@empty:

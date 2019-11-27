@@ -178,7 +178,6 @@ hmmv:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	Armament@primary:
 		Weapon: HumveeGun
 		RequiresCondition: !repairmode && !rank-heroic
@@ -250,7 +249,7 @@ hmmv.ai-repair:
 
 ltnk:
 	Inherits: ^Vehicle
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
@@ -312,7 +311,6 @@ ltnk:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -325,10 +323,6 @@ ltnk:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
-	AutoTargetPriority@air:
-		ValidTargets: Air
-		InvalidTargets: NoAutoTarget
-		RequiresCondition: ammo
 
 mtnk:
 	Inherits: ^StandardTank
@@ -396,7 +390,6 @@ tnkd:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -995,7 +988,6 @@ sref:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	GrantConditionOnAttack@turretcharge1:
@@ -1306,7 +1298,6 @@ succ:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -1363,7 +1354,6 @@ mnrva:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6

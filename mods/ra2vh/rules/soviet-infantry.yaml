@@ -453,6 +453,9 @@ ivan:
 		ScanRadius: 5
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: IvanBombable
+	AttackMove:
+		# AssaultMoveCondition: assault-move
+		Voice: Attack
 
 civan:
 	Inherits: ivan
@@ -574,6 +577,8 @@ yuri:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: MindControl
 		RequiresCondition: !controlling
+	AttackMove:
+		Voice: Attack
 
 virus:
 	Inherits: ^Infantry

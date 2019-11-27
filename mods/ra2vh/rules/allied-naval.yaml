@@ -132,7 +132,6 @@ aegis:
 		PauseOnCondition: disabled
 	AttackFrontal:
 		Voice: Attack
-	AutoTarget:
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -272,7 +271,6 @@ carrier:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled || !loaded
-	AutoTarget:
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:

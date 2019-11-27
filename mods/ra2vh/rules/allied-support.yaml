@@ -122,7 +122,6 @@ gtgcan:
 		RequiresCondition: !build-incomplete
 	WithVoxelBarrel:
 		RequiresCondition: !build-incomplete
-	AutoTarget:
 	WithMuzzleOverlay:
 	WithRangeCircle:
 		Range: 15c0

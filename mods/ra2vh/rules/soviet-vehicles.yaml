@@ -102,7 +102,6 @@ harv:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	Turreted:
 		TurnSpeed: 10
 		Offset: 92,0,0
@@ -241,7 +240,6 @@ htk:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
 		RequiresCondition: !repairmode && !rank-heroic
@@ -353,7 +351,6 @@ drgn:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	Armament@primary:
 		Weapon: DragonFlamer
 		RequiresCondition: !rank-heroic
@@ -407,7 +404,6 @@ slost:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	Armament@primary:
 		Weapon: GattlingGun
 		RequiresCondition: !rank-heroic
@@ -526,7 +522,6 @@ v3:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled || !loaded
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -622,7 +617,6 @@ apoc:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -687,7 +681,6 @@ ttnk:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -879,7 +872,6 @@ bura:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -934,7 +926,6 @@ empr:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6

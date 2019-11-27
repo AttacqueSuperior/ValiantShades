@@ -35,7 +35,6 @@
 	WithRangeCircle:
 		Range: 6c0
 		Type: pillbox
-	AutoTarget:
 	AttackTurreted:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
@@ -79,7 +78,6 @@
 	WithRangeCircle:
 		Range: 12c0
 		Type: aadefense
-	AutoTarget:
 	Power:
 		Amount: -50
 		RequiresCondition: !being-warped && !powerdown
@@ -114,7 +112,6 @@
 		ReloadDelay: 90
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	AutoTarget:
 	WithRangeCircle:
 		Range: 8c0
 		Type: tier2defense

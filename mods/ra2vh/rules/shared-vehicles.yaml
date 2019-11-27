@@ -31,7 +31,6 @@
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
-	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	ProducibleWithLevel:
