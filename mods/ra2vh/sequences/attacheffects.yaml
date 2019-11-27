@@ -33,9 +33,10 @@
 		Offset: 0, -24, 24
 
 ^IvanBombable:
-	ivanbomb: bombcurs
+	ivanbomb: mouse
 		UseTilesetCode: false
-		Length: 2
+		Start: 204
+		Length: 5
 		Offset: 0, 0, 24
 
 ^C4Plantable:
