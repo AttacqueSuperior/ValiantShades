@@ -37,7 +37,7 @@
 		UseTilesetCode: false
 		Start: 204
 		Length: 5
-		Offset: 0, 0, 24
+		Offset: 0, -21, 24
 
 ^C4Plantable:
 	c4: ts-mouse
