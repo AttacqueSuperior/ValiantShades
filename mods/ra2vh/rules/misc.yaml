@@ -189,3 +189,6 @@ mine:
 	WithIdleAnimation:
 		Sequences: blink1, blink2
 		Interval: 150
+
+dummy:
+	AlwaysVisible:
