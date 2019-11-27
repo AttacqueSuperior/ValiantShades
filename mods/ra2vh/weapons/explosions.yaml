@@ -116,16 +116,21 @@ SovietPowerPlantExplode:
 		ValidTargets: Ground, Water, Air
 
 PlaceIvanBomb:
-	Range: 1c849
-	Projectile: InstantHit
+	ReloadDelay: 50
+	Range: 3c0
 	Report: icraatta.wav
 	ValidTargets: IvanBombable
+	Projectile: BulletAS
+		Speed: 682
+		Image: ivanbomb
+		Palette: mouse
+		LaunchAngle: 31
 	Warhead@AttachDelayedWeapon: AttachDelayedWeapon
 		Weapon: IvanBomber
 		Type: ivanbomb
 		TriggerTime: 100
 		DeathTypes: DefaultDeath
-		Range: 1
+		Range: 128
 	Warhead@TargetValidator: SpreadDamage
 
 PlaceIvanBombE:
@@ -134,7 +139,6 @@ PlaceIvanBombE:
 		Weapon: IvanBomberE
 
 IvanBomber:
-	ReloadDelay: 50
 	Range: 1c849
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage

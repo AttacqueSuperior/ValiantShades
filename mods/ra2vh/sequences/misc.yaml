@@ -461,14 +461,9 @@ atomic:
 	down: nkmsldn
 		Offset: 0, 144
 
-bombcurs:
-	idle:
+ivanbomb:
+	idle: ivanproj
 		Length: *
-		Tick: 300
-
-bomb-overlay:
-	ivanbomb: bombcurs
-		Length: 2
 
 volkovrail:
 	idle: volkrail
