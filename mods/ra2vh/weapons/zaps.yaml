@@ -476,7 +476,7 @@ FairyBoltShrapnel3E:
 
 VolkovRail:
 	ReloadDelay: 120
-	Range: 6c0
+	Range: 7c512
 	Report: railuse5.wav
 	Projectile: SpriteRailgun
 		HelixAnimPalette: rookietsexp
