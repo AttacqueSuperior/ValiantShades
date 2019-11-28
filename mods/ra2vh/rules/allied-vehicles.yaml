@@ -505,9 +505,18 @@ fv:
 	#============================
 	#==================== Default missile ===================
 	#=== Civilians/spies only provide the firepower bonus ===
+	GrantCondition@ifv-sharedmodes:
+		Condition: ifv-sharedmodes
+		RequiresCondition: ifv-mg || ifv-repair
+	GrantCondition@ifv-alliedmodes:
+		Condition: ifv-alliedmodes
+		RequiresCondition: ifv-sniper || ifv-chrono || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-seal || ifv-fairy || ifv-marksman || ifv-hirano
+	GrantCondition@ifv-sovietmodes:
+		Condition: ifv-sovietmodes
+		RequiresCondition: ifv-flak || ifv-tesla || ifv-demo || ifv-deso || ifv-volkov || ifv-yuri || ifv-virus || ifv-ivan || ifv-boris
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus && !ifv-marksman && !ifv-ivan && !ifv-hirano && !ifv-boris
+		RequiresCondition: !ifv-sharedmodes && !ifv-alliedmodes && !ifv-sovietmodes
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
