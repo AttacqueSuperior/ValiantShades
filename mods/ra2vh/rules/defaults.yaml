@@ -82,6 +82,8 @@
 	Inherits@terrorbomb: ^TerrorBombPlantable
 	Inherits@emp: ^AffectedByEMP
 	Inherits@temporal: ^Warpable
+	Targetable@Temporal2:
+		TargetTypes: ImmuneToPrison
 	Targetable@ivanbombable:
 		RequiresCondition: !ivanbomb && !being-warped
 	-DrawLineToTarget:

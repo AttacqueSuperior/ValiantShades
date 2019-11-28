@@ -698,3 +698,23 @@ AeroblazeLaserE:
 	Inherits: AeroblazeLaser
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
+
+ChronoPrison:
+	Range: 11c0
+	ReloadDelay: 450
+	Report: chrpfir.wav
+	TargetActorCenter: true
+	ValidTargets: Temporal
+	InvalidTargets: ImmuneToPrison
+	Projectile: SpriteRailgun
+		HelixAnim: chronobolt
+		HelixPitch: 400
+		Duration: 0
+		HelixRadius: 0
+		QuantizationCount: 1
+	Warhead@1Dam: HealthPercentageDamage
+		Spread: 384
+		Damage: 100
+		ValidTargets: Temporal
+		InvalidTargets: ImmuneToPrison
+		DamageTypes: TemporalDeath

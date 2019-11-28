@@ -561,3 +561,8 @@ mine:
 		Length: 4
 	fall:
 		Start: 9
+
+chronobolt:
+	idle: chronosk
+		Length: *
+		Offset: 0,23

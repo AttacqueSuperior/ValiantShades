@@ -61,6 +61,10 @@ cdest:
 	idle:
 #Needs without weapon image cdestwo
 
+chrp:
+	idle:
+	turret: chrptur
+
 civp:
 	idle:
 

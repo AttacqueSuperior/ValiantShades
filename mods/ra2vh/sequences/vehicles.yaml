@@ -44,6 +44,10 @@ carrier:
 	Inherits@MC: ^MindControllable
 	icon: carricon
 
+chrp:
+	Inherits: ^Vehicle
+	icon: xxicon
+
 cdest:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

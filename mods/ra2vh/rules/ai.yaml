@@ -350,6 +350,7 @@ Player:
 			bfrt.ai2: 3
 			bfrt.ai3: 1
 			aero: 3
+			chrp: 3
 			# mgg: 1
 			succ: 3
 			shad.ai: 3
@@ -392,6 +393,7 @@ Player:
 			shad.ai: 1
 			shad.ai2: 3
 			aero: 2
+			chrp: 3
 			thor: 2
 			beag: 6
 			orca: 2
