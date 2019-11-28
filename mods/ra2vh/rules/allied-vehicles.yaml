@@ -954,7 +954,7 @@ fv:
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 	AutoTargetPriority@chrono:
-		RequiresCondition: !stance-attackanything && ifv-chrono
+		RequiresCondition: ifv-chrono
 		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@infantry:
