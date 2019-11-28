@@ -73,7 +73,6 @@
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
-	Inherits@3: ^IronCurtainable
 	Inherits@4: ^BuildingParticles
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@shape: ^1x1Shape
