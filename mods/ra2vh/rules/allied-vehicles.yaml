@@ -1355,7 +1355,7 @@ chrp:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
-		VoiceSet: ApocalypseVoice
+		VoiceSet: ChronoPrisonVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:

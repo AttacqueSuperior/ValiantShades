@@ -209,6 +209,13 @@ AeroblazeVoice:
 		Move: vaeromoa, vaeromob, vaeromoc, vaeromod, vaeromoe
 		Attack: vaeromoa, vaeromob, vaeromoc, vaeromod, vaeromoe
 
+ChronoPrisonVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vchrpsea, vchrpseb, vchrpsec, vchrpsed
+		Move: vchrpmoa, vchrpmob, vchrpmoc, vchrpmod, vchrpmoe
+		Attack: vchrpmoa, vchrpmob, vchrpmoc, vchrpmod
+
 MobileGapGeneratorVoice:
 	DefaultVariant: .wav
 	Voices:
