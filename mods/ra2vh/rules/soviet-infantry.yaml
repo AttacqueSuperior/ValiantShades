@@ -907,11 +907,12 @@ kamikaze:
 
 yuripr:
 	Inherits: yuri
-	Buildable:
-		BuildLimit: 1
-		BuildPaletteOrder: 290
-		Prerequisites: ~nahand, ~soviets.tech.infiltrated
-		Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
+	#Buildable:
+	#	BuildLimit: 1
+	#	BuildPaletteOrder: 290
+	#	Prerequisites: ~nahand, ~soviets.tech.infiltrated
+	#	Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
+	-Buildable:
 	Tooltip:
 		Name: Yuri Prime
 	Valued:
