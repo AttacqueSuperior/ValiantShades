@@ -467,7 +467,7 @@ fv:
 			ccommand: ifv-seal
 			snipe: ifv-sniper
 			cleg: ifv-chrono
-			hirano: ifv-hero
+			hirano: ifv-hirano
 			dione: ifv-dione
 			artemis: ifv-artemis
 			marks: ifv-marksman
@@ -859,14 +859,36 @@ fv:
 	#===========================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: !ifv-default && !ifv-mg && !ifv-repair && !ifv-ggi && !ifv-dione && !ifv-artemis && !ifv-gren && !ifv-seal && !ifv-chrono && !ifv-flak && !ifv-tesla && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-sniper && !ifv-virus && !ifv-deso && !ifv-marksman && !ifv-ivan
+		RequiresCondition: ifv-hero || ifv-hirano
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
-	Tooltip@hitech:
-		Name: High-Tech IFV
-		RequiresCondition: turret-hitech
+	#Tooltip@hitech:
+	#	Name: High-Tech IFV
+	#	RequiresCondition: turret-hitech
 	#=== Unfinished modes ===
+	#=== Hirano ===
+	Armament@hirano:
+		Weapon: HiranoGun
+		RequiresCondition: !rank-heroic && ifv-hirano
+	Armament@hirano-elite:
+		Weapon: HiranoGunE
+		RequiresCondition: rank-heroic && ifv-hirano
+	Armament@hirano-primary2:
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic && ifv-hirano
+	Armament@hirano-elite2:
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic && ifv-hirano
+	Armament@hirano-primary3:
+		Weapon: HiranoInaccurateGun
+		RequiresCondition: !rank-heroic && ifv-hirano
+	Armament@hirano-elite3:
+		Weapon: HiranoInaccurateGunE
+		RequiresCondition: rank-heroic && ifv-hirano
+	Tooltip@hirano:
+		Name: Hirano IFV
+		RequiresCondition: ifv-hirano
 	Armament@hero:
 		Weapon: CRMP5
 		LocalOffset: 200,0,800
@@ -883,7 +905,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
