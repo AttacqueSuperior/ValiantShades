@@ -660,7 +660,7 @@ nairon:
 		RequiresCondition: !being-warped && !powerdown
 	DetonateWeaponPower@IronCurtain:
 		Icon: invuln
-		ChargeInterval: 7500
+		ChargeInterval: 3750
 		Description: Invulnerability
 		LongDesc: Makes a group of vehicles invulnerable\nfor 30 seconds.
 		TargetCircleRange: 2c0
