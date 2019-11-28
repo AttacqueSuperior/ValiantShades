@@ -581,6 +581,7 @@ naclon:
 		Sequence: active
 		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
+		Name: body-active
 
 napsis:
 	Inherits: ^Building
@@ -695,6 +696,7 @@ nairon:
 		Sequence: active
 		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
+		Name: body-active
 
 napsyd:
 	Inherits: ^Building
