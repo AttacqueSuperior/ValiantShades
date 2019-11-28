@@ -137,6 +137,14 @@ flameguy:
 		DeathSequencePalette: flameguy
 		DeathPaletteIsPlayerPalette: false
 	HitShape:
+	SmokeParticleEmitter@smoke:
+		Sequences: ra1-smoke
+		Palette: ra
+		Offset: 0,0,1024
+		Speed: 24
+		Gravity: 48
+		Duration: 13
+		SpawnFrequency: 2
 
 flameguy2:
 	Inherits: flameguy
