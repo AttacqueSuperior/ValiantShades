@@ -307,6 +307,7 @@ GrenadeDisc:
 	Projectile: BulletAS
 		Image: discgrenade
 		Palette: effect
+		BounceCount: 2
 	Warhead@1Dam: SpreadDamage
 		Damage: 60000
 		Spread: 384
