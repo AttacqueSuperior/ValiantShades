@@ -663,6 +663,7 @@ AeroblazeLaser:
 	Burst: 2
 	ReloadDelay: 52
 	Range: 13c512
+	Report: vaerofir.wav
 	Projectile: KKNDLaser
 		Radius: 3
 		Duration: 6
