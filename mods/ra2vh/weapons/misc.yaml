@@ -815,7 +815,7 @@ AuroraBombE:
 
 SuccubusCharm:
 	ReloadDelay: 240
-	Report: bgraatta.wav
+	Report: sonic1.wav
 	Range: 6c0
 	ValidTargets: Charmable
 	Projectile: BulletAS
