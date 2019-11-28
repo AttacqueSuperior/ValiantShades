@@ -682,7 +682,13 @@ nairon:
 	Armor@resistsupers:
 		Type: ResistSupers
 	ProvidesPrerequisite@default:
-		RequiresCondition: !build-incomplete && !powerdown
+		RequiresCondition: !build-incomplete && !lowpower
+	WithSpriteBody:
+		RequiresCondition: !build-incomplete && lowpower
+	WithSpriteBody@active:
+		Sequence: active
+		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: being-warped
 
 napsyd:
 	Inherits: ^Building

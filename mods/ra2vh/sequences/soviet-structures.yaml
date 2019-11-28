@@ -491,13 +491,15 @@ nairon:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -45
-	idle: ngiron_a
+	active: ngiron_a
 		Length: 11
 		ShadowStart: 22
-	damaged-idle: ngiron_a
+		Tick: 120
+	damaged-active: ngiron_a
 		Start: 11
 		Length: 11
 		ShadowStart: 33
+		Tick: 120
 	active: ngiron_h
 		Length: 12
 		ShadowStart: 24
