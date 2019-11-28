@@ -634,7 +634,7 @@ nairon:
 		BuildLimit: 1
 		Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Valued:
-		Cost: 2500
+		Cost: 2000
 	Tooltip:
 		Name: Iron Curtain Device
 	Building:
@@ -658,18 +658,17 @@ nairon:
 	Power:
 		Amount: -200
 		RequiresCondition: !being-warped && !powerdown
-	GrantExternalConditionPower@IRONCURTAIN:
+	DetonateWeaponPower@IronCurtain:
 		Icon: invuln
 		ChargeInterval: 7500
 		Description: Invulnerability
-		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
-		Duration: 500
-		# TODO: This are actually no speech notifications
+		LongDesc: Makes a group of vehicles invulnerable\nfor 30 seconds.
+		TargetCircleRange: 2c0
+		OrderName: IronCurtainInfoOrder
+		Weapon: IronCurtainPower
 		EndChargeSound: siroread.wav
-		OnFireSound: siroon.wav
+		DisplayRadarPing: true
 		DisplayTimerStances: Ally, Neutral, Enemy
-		DisplayRadarPing: True
-		Condition: invulnerability
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:

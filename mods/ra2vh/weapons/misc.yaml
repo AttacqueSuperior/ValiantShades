@@ -832,3 +832,18 @@ SuccubusCharm:
 	Warhead@2Eff: CreateEffect
 		Explosions: succubihit
 		ExplosionPalette: rookietsexp
+
+IronCurtainPower:
+	Projectile: InstantExplode
+	ReloadDelay: 1
+	Range: 1
+	Warhead@1Dam: SpreadDamage
+	Warhead@2Eff: CreateEffect
+		Explosions: ironcurtain
+		ImpactSounds: siroon.wav
+		ValidTargets: Ground, Air, Water
+	Warhead@emp: GrantExternalCondition
+		Range: 2c0
+		Duration: 750
+		Condition: invulnerability
+		ValidStances: Ally
