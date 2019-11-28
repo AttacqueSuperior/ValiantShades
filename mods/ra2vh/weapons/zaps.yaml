@@ -656,3 +656,43 @@ RadiationUmbrella:
 		Color: 00FF00
 	ValidTargets: Ground, Air, Water
 	Warhead@TargetValidation: SpreadDamage
+
+AeroblazeLaser:
+	ValidTargets: Air
+	Burst: 2
+	ReloadDelay: 52
+	Range: 13c512
+	Projectile: KKNDLaser
+		Radius: 3
+		Duration: 6
+		InnerLightness: 160
+		OuterLightness: 80
+		Color: FF0000
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Falloff: 100, 50, 0
+		Damage: 120000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 3
+			Steel: 3
+			Concrete: 3
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, IgniteDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: thorairhit
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		ValidTargets: Ground, Water, Air
+
+AeroblazeLaserE:
+	Inherits: AeroblazeLaser
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp

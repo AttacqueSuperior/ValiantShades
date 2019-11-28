@@ -10,6 +10,10 @@ amcv:
 aegis:
 	idle:
 
+aero:
+	idle:
+	turret: aerotur
+
 asw:
 	idle:
 

@@ -314,7 +314,7 @@ Player:
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair, htk.ai-repair
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair, htk.ai-repair, aero
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -349,6 +349,7 @@ Player:
 			bfrt.ai: 5
 			bfrt.ai2: 3
 			bfrt.ai3: 1
+			aero: 3
 			# mgg: 1
 			succ: 3
 			shad.ai: 3
@@ -389,6 +390,7 @@ Player:
 			mgg: 1
 			shad.ai: 1
 			shad.ai2: 3
+			aero: 2
 			thor: 2
 			beag: 6
 			orca: 2
