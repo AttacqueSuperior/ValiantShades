@@ -596,6 +596,7 @@ ThorLaser:
 	ValidTargets: Air
 	ReloadDelay: 100
 	Range: 8c0
+	Report: lastur1.wav
 	Projectile: KKNDLaser
 		Radius: 2
 		Duration: 6
