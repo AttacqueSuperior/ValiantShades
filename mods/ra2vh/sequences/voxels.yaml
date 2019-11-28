@@ -147,6 +147,10 @@ fv:
 	turret-volkov: fvtur-volkov
 	turret-hitech: fvtur-hitech
 
+gaunt:
+	idle:
+	turret: gaunttur
+
 gtgcan:
 	turret: gtgcantur
 	barrel: gtgcanbarl

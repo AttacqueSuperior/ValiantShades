@@ -379,6 +379,7 @@ Player:
 			ttnk: 15
 			mind: 10
 			bura: 10
+			gaunt: 3
 			empr: 1
 			zep: 1
 			yak: 15
@@ -400,6 +401,7 @@ Player:
 			harv: 6
 			htk.ai-repair: 2
 			mind: 3
+			gaunt: 2
 			zep: 2
 			yak: 4
 			fflash: 6

@@ -133,6 +133,11 @@ fv:
 	Inherits@MC: ^MindControllable
 	icon: fvicon
 
+gaunt:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 mgg:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

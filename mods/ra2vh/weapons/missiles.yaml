@@ -538,3 +538,54 @@ TanyaMissileStage2E:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+GauntletMissile:
+	Inherits: ^Missile
+	Report: samshot1.wav
+	ReloadDelay: 80
+	Range: 13c512
+	ValidTargets: Air
+	Projectile: Missile
+		Image: patriot
+		MinimumLaunchSpeed: 225
+		MaximumLaunchSpeed: 450
+		Speed: 864
+		Acceleration: 15
+		CruiseAltitude: 6c0
+		MinimumLaunchAngle: 224
+		MaximumLaunchAngle: 255
+		Arm: 3
+		HomingActivationDelay: 3
+		TrailImage: tanyasmoke
+		TrailPalette: heroictsexp
+		RangeLimit: 23c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 265000
+		Versus:
+			None: 75
+			Flak: 75
+			Plate: 75
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 5
+			Steel: 5
+			Concrete: 5
+			Drone: 25
+			Rocket: 100
+		DamageTypes: BulletDeath, DefaultDeath
+		ValidTargets: Ground, Water, Air
+	Warhead@2Eff: CreateEffect
+		Explosions: gauntlethit
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: kaboom12.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size3
+
+GauntletMissileE:
+	Inherits: GauntletMissile
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp
