@@ -482,7 +482,7 @@ fv:
 			deso: ifv-deso
 			yuri: ifv-yuri
 			virus: ifv-virus
-			boris: ifv-hero
+			boris: ifv-boris
 			volkov: ifv-volkov
 			kamikaze: ifv-demo
 			#=== Misc. infantry ===
@@ -507,7 +507,7 @@ fv:
 	#=== Civilians/spies only provide the firepower bonus ===
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-hero && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus && !ifv-marksman && !ifv-ivan
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-flak && !ifv-tesla && !ifv-demo && !ifv-deso && !ifv-sniper && !ifv-chrono && !ifv-ggi && !ifv-gren && !ifv-dione && !ifv-artemis && !ifv-seal && !ifv-fairy && !ifv-volkov && !ifv-yuri && !ifv-virus && !ifv-marksman && !ifv-ivan && !ifv-hirano && !ifv-boris
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -852,21 +852,19 @@ fv:
 	Tooltip@volkov:
 		Name: Volkov IFV
 		RequiresCondition: ifv-volkov
-	#===========================================
-	#==== Mixed infantry, needs more fixup =====
-	#======= Like custom turrets, etc. =========
-	#=== RA2 hitech turret is a placeholder! ===
-	#===========================================
+	#==============================================
+	#==== Mixed infantry, needs custom turrets ====
+	#===== RA2 hitech turret is a placeholder! ====
+	#==============================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: ifv-hero || ifv-hirano
+		RequiresCondition: ifv-hirano || ifv-boris
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
 	#Tooltip@hitech:
 	#	Name: High-Tech IFV
 	#	RequiresCondition: turret-hitech
-	#=== Unfinished modes ===
 	#=== Hirano ===
 	Armament@hirano:
 		Weapon: HiranoGun
@@ -889,10 +887,28 @@ fv:
 	Tooltip@hirano:
 		Name: Hirano IFV
 		RequiresCondition: ifv-hirano
-	Armament@hero:
-		Weapon: CRMP5
-		LocalOffset: 200,0,800
-		RequiresCondition: ifv-hero
+	#=== Boris ===
+	Armament@boris-primary:
+		Weapon: AKM
+		RequiresCondition: !rank-heroic && ifv-boris
+	Armament@boris-elite:
+		Weapon: AKME
+		RequiresCondition: rank-heroic && ifv-boris
+	Armament@boris-secondary:
+		Weapon: Flare
+		Name: boris
+		RequiresCondition: ifv-boris
+	AirstrikeMaster:
+		Actors: bpln, bpln
+		RespawnTicks: 300
+		InstantRepair: true
+		SlaveDisposalOnKill: KillSlaves
+		SpawnAllAtOnce: true
+		ArmamentNames: boris
+		RequiresCondition: ifv-boris
+	Tooltip@boris:
+		Name: Boris IFV
+		RequiresCondition: ifv-boris
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
@@ -905,7 +921,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano || ifv-boris
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
@@ -933,7 +949,7 @@ fv:
 		ValidTargets: Temporal
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@infantry:
-		RequiresCondition: ifv-seal || ifv-sniper # || ifv-hero
+		RequiresCondition: ifv-seal || ifv-sniper
 		ValidTargets: Infantry
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@yuri:

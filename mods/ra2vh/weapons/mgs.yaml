@@ -115,7 +115,7 @@ CRMP5E:
 	Inherits: CRMP5
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
-	
+
 AWP:
 	ReloadDelay: 100
 	Range: 14c0
