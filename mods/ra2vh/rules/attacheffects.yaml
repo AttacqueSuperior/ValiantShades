@@ -313,10 +313,26 @@
 	DamageMultiplier@ironcurtain:
 		RequiresCondition: invulnerability
 		Modifier: 0
-	TimedConditionBar:
+	TimedConditionBar@ironcurtain:
 		Condition: invulnerability
-	ExternalCondition@INVULNERABILITY:
+	ExternalCondition@ironcurtain:
 		Condition: invulnerability
+	# AI activation setup
+	GrantConditionOnBotOwner@ironcurtain:
+		Condition: test-ai
+		Bots: test
+	GrantConditionOnPrerequisite@nairon:
+		Condition: nairon
+		Prerequisites: nairon
+	HordeBonus@ironcurtain:
+		Condition: ai-invulnerability
+		Minimum: 1
+		MaximumVerticalOffset: 1536
+		RequiresCondition: test-ai && nairon
+	GrantHordeBonus@ironcurtain:
+	AISupportPowerTargeterHelper@ironcurtain:
+		OrderName: IronCurtainInfoOrder
+		RequiresCondition: ai-invulnerability
 
 ^Warpable:
 	Warpable:

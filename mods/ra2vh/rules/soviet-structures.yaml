@@ -681,6 +681,8 @@ nairon:
 		Actors: e2, e2, e2, e2, e2, e2, e2
 	Armor@resistsupers:
 		Type: ResistSupers
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete && !powerdown
 
 napsyd:
 	Inherits: ^Building
