@@ -575,6 +575,12 @@ naclon:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
+	WithSpriteBody:
+		RequiresCondition: !build-incomplete && lowpower
+	WithSpriteBody@active:
+		Sequence: active
+		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: being-warped
 
 napsis:
 	Inherits: ^Building

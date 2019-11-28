@@ -377,11 +377,11 @@ naclon:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -30
-	idle: ngclon_a
+	active: ngclon_a
 		Length: 11
 		ShadowStart: 22
 		Tick: 180
-	damaged-idle: ngclon_a
+	damaged-active: ngclon_a
 		Start: 11
 		Length: 11
 		ShadowStart: 33
