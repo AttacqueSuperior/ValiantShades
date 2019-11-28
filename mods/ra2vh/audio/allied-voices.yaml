@@ -202,6 +202,13 @@ BattleFortressVoice:
 		Move: vbatmoa, vbatmob, vbatmoc, vbatmod, vbatmoe
 		Attack: vbatatb, vbatatc, vbatatd, vbatate
 
+AeroblazeVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vaerosea, vaeroseb, vaerosec, vaerosed, vaerosee
+		Move: vaeromoa, vaeromob, vaeromoc, vaeromod, vaeromoe
+		Attack: vaeromoa, vaeromob, vaeromoc, vaeromod, vaeromoe
+
 MobileGapGeneratorVoice:
 	DefaultVariant: .wav
 	Voices:

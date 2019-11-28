@@ -1303,7 +1303,7 @@ aero:
 	WithVoxelTurret:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: PrismTankVoice
+		VoiceSet: AeroblazeVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
