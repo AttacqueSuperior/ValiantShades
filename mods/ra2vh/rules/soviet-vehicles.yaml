@@ -935,7 +935,7 @@ gaunt:
 	WithVoxelTurret:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: EmpressVoice
+		VoiceSet: GauntletVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
