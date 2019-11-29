@@ -211,14 +211,23 @@ boris:
 		Start: 154
 	cheer:
 		Start: 297
-	paradrop:
-		Start: 292
-	secondary-fire
+	paradrop: borisfix
+	flare:
 		Start: 401
-		Length: 1
-	secondary-prone
-		Start: 217
-		Length: 6
+		Tick: 480
+		Facings: 8
+	prone-flare:
+		Start: 401
+		Tick: 480
+		Facings: 8
+	prone-stand:
+		Frames: 91, 97, 103, 109, 105, 121, 127, 133
+	prone-run:
+		Start: 91
+	liedown:
+		Start: 265
+	standup:
+		Start: 281
 	icon: brisicon
 
 cosmo:

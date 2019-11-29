@@ -691,6 +691,8 @@ boris:
 		Name: secondary
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		AttackSequences:
+			secondary: flare
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
