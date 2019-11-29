@@ -459,6 +459,9 @@ atomic:
 		Delay: 25
 	Warhead@flames: FireFragment
 		Delay: 25
+	Warhead@triggerforceshield: AISupportPowerTrigger
+		OrderName: ForceShieldInfoOrder
+		Delay: 20
 
 demobomb:
 	Inherits: NukePayload

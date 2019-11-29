@@ -207,6 +207,9 @@ WeatherStormInit:
 	Warhead@4: CreateEffect
 		ImpactSounds: sweaintr.wav
 		ValidTargets: Ground, Air, Water
+	Warhead@triggerforceshield: AISupportPowerTrigger
+		OrderName: ForceShieldInfoOrder
+		Delay: 23
 
 WeatherCloudDirectInit:
 	Projectile: InstantHit
