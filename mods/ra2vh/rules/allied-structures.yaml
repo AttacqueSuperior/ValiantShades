@@ -797,7 +797,7 @@ gadrop:
 		OverridePalette: placexuetallied1
 	WithIdleOverlay@dock:
 		Sequence: idle-dock
-		RequiresCondition: !build-incomplete && !powerdown
+		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
 	WithIdleOverlay@bib:
 		Sequence: bib
