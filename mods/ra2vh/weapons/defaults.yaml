@@ -183,7 +183,6 @@
 ^TeslaZap:
 	Range: 3c0
 	ReloadDelay: 60
-	Report: itesatta.wav
 	Projectile: TeslaZap
 		Palette: ra
 	Warhead@1Dam: SpreadDamage
