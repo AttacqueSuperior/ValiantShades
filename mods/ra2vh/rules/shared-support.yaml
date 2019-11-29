@@ -119,6 +119,47 @@
 		Amount: -75
 		RequiresCondition: !being-warped && !powerdown
 
+^GrandCannon:
+	Inherits: ^SupportBuilding
+	Inherits@shape: ^2x2Shape
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 50
+		Description: Automated, long ranged anti-ground defense.
+	Valued:
+		Cost: 2000
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 600000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 10c0
+	RevealOnDeath:
+		Radius: 5c0
+		DeathTypes: DefaultDeath
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		TurnSpeed: 3
+		InitialFacing: 224
+		PreviewFacing: 224
+		Offset: 400,0,0
+	AttackTurreted:
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete
+	BodyOrientation:
+		QuantizedFacings: 32
+	WithRangeCircle:
+		Range: 15c0
+	Power:
+		Amount: -100
+		RequiresCondition: !being-warped && !powerdown
+
 ^Crane:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape

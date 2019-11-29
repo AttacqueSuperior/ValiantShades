@@ -69,45 +69,14 @@ atesla:
 		PauseOnCondition: disabled
 
 gtgcan:
-	Inherits: ^SupportBuilding
+	Inherits: ^GrandCannon
 	Inherits@2: ^VoxelLighting
-	Inherits@shape: ^2x2Shape
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Inherits@damagefire: ^BuildingDamageFire1
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 50
 		Prerequisites: gatech, ~structures.allies #, ~structures.france
-		Description: Automated, long ranged anti-ground defense.
-	Valued:
-		Cost: 2000
 	Tooltip:
 		Name: Grand Cannon
-	Building:
-		Footprint: xx xx
-		Dimensions: 2, 2
-	Health:
-		HP: 600000
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 10c0
-	RevealOnDeath:
-		Radius: 5c0
-		DeathTypes: DefaultDeath
-	Selectable:
-		Bounds: 46, 62, 0, -20
-	Turreted:
-		TurnSpeed: 3
-		InitialFacing: 224
-		PreviewFacing: 224
-		Offset: 400,0,0
-	AttackTurreted:
-		Voice: Attack
-		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: GrandCannonWeapon
 		Recoil: 127
@@ -124,8 +93,4 @@ gtgcan:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	WithRangeCircle:
-		Range: 15c0
 		Type: grandcannon
-	Power:
-		Amount: -100
-		RequiresCondition: !being-warped && !powerdown
