@@ -503,6 +503,48 @@ gadrop:
 		Offset: -30,10,1
 	icon: xxicon
 
+gaspir:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
+	Defaults:
+		Offset: 0, -45
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		ShadowStart: 3
+	idle-ball: ggspir_a
+		UseTilesetCode: false
+		Length: *
+		Tick: 80
+	damaged-idle-ball: ggspir_ad
+		UseTilesetCode: false
+		Length: *
+		Tick: 80
+	idle-lines: ggspir_b
+		UseTilesetCode: false
+		Length: *
+		Tick: 80
+	damaged-idle-lines: inviso
+		UseTilesetCode: false
+		ShadowStart: -1
+	idle-blink: ggspir_c
+		Length: *
+		Tick: 80
+	damaged-idle-blink: ggspir_cd
+		Length: *
+		Tick: 80
+	make: ggspirmk
+		Length: 28
+		ShadowStart: 28
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	damagefire1:
+		Offset: -20,-13,1
+	damagefire2:
+		Offset: 3,-33,1
+	icon: xxicon
+
 gawall:
 	Inherits: ^Structure
 	Defaults:

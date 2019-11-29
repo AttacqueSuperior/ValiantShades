@@ -800,6 +800,82 @@ gadrop:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
 
+gaspir:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire2
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 80
+		Prerequisites: gatech, ~structures.allies
+		BuildLimit: 1
+		Description: Grants invulnerability to buildings.
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Shield Spire
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Selectable:
+		Bounds: 136, 100, 0, -20
+	Health:
+		HP: 750000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
+	RevealOnDeath:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+	Power:
+		Amount: -200
+		RequiresCondition: !being-warped && !powerdown
+	DetonateWeaponPower@ForceShield:
+		Icon: forceshield
+		ChargeInterval: 3750
+		Description: Force Shield
+		LongDesc: Makes a group of structures invulnerable\nfor 15 seconds.
+		TargetCircleRange: 6c0
+		OrderName: ForceShieldInfoOrder
+		Weapon: ForceShieldPower
+		EndChargeSound: siroread.wav
+		DisplayRadarPing: true
+		DisplayTimerStances: Ally, Neutral, Enemy
+		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
+	SupportPowerChargeBar:
+	RevealsShroud@revealhimself:
+		ValidStances: Neutral, Enemy
+		MaxHeightDelta: 3
+		Range: 2c768
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e1, e1, e1, e1
+	Armor@resistsupers:
+		Type: ResistSupers
+	RenderSprites:
+		PlayerPalette: xuetallied1
+	ActorPreviewPlaceBuildingPreview:
+		OverridePalette: placexuetallied1
+	WithIdleOverlay@ball:
+		Sequence: idle-ball
+		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: being-warped
+	WithIdleOverlay@lines:
+		Sequence: idle-lines
+		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: being-warped
+	WithIdleOverlay@blink:
+		Sequence: idle-blink
+		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: being-warped
+
 gadept:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape

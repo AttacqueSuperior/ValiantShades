@@ -61,19 +61,6 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy
-	DetonateWeaponPower@ForceShield:
-		Icon: forceshield
-		ChargeInterval: 3750
-		Description: Force Shield
-		LongDesc: Makes a group of structures invulnerable\nfor 15 seconds.
-		TargetCircleRange: 6c0
-		OrderName: ForceShieldInfoOrder
-		Weapon: ForceShieldPower
-		EndChargeSound: siroread.wav
-		DisplayRadarPing: true
-		DisplayTimerStances: Ally, Neutral, Enemy
-		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete # && !powerdown
 
 ^Power:
 	Inherits: ^Building
