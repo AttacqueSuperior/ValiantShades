@@ -660,3 +660,27 @@ naflak:
 	damagefire1:
 		Offset: -5,-2,1
 	icon: flakicon
+
+nasntl:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
+	Defaults:
+		Offset: 0, -30
+		UseTilesetCode: false
+	idle: ngsntl
+		ShadowStart: 2
+	damaged-idle: ngsntl
+		ShadowStart: 3
+	make: ngsntlmk
+		Length: 14
+		ShadowStart: 14
+	turret: ngsntltur
+		Facings: 32
+		ShadowStart: 32
+	muzzle: gcmuzzle
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
+	damagefire1:
+		Offset: -1,-2,3
+	icon: sntlicon

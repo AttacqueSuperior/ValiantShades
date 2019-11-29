@@ -80,3 +80,21 @@ tesla:
 		SourceCap: 1
 	GrantConditionOnPowerState@lowpower:
 		RequiresCondition: charged < 2
+
+nasntl:
+	Inherits: ^GrandCannon
+	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Prerequisites: natek, ~structures.soviets
+	Tooltip:
+		Name: Sentinel Cannon
+	Armament:
+		Weapon: GrandCannonWeapon
+		MuzzleSequence: muzzle
+		LocalOffset: 1792,0,1280
+	WithSpriteTurret:
+		RequiresCondition: !build-incomplete
+	WithMuzzleOverlay:
+	WithRangeCircle:
+		Type: sentinel
