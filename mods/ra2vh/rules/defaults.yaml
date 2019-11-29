@@ -189,6 +189,7 @@
 	AppearsOnMapPreview:
 	Armor:
 		Type: Wood
+	CommandBarBlacklist:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -276,6 +277,7 @@
 	Targetable@warpimmune:
 		TargetTypes: WarpImmune
 	AppearsOnMapPreview:
+	CommandBarBlacklist:
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -1185,6 +1187,7 @@
 	RejectsOrders:
 	GpsDotAS:
 		Sequence: missile
+	CommandBarBlacklist:
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
