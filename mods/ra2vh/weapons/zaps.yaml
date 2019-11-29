@@ -718,3 +718,21 @@ ChronoPrison:
 		ValidTargets: Temporal
 		InvalidTargets: ImmuneToPrison
 		DamageTypes: TemporalDeath
+
+CyborgShrapnel:
+	Inherits: ^TeslaZap
+	Report: itesat2a.wav, itesat2b.wav
+	Warhead@emp: GrantExternalCondition
+		Range: 64
+		Duration: 3
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
+
+CyborgShrapnelE:
+	Inherits: CyborgShrapnel
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@emp: GrantExternalCondition
+		Duration: 6

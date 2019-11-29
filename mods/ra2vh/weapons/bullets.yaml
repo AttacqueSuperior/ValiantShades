@@ -582,6 +582,11 @@ CyborgGun:
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
 		ValidStances: Neutral, Enemy
+	Warhead@3Shr: FireShrapnel
+		Weapon: CyborgShrapnel
+		Amount: 3
+		AimChance: 100
+		AimTargetStances: Enemy, Neutral
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
@@ -591,5 +596,7 @@ CyborgGunE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+	Warhead@3Shr: FireShrapnel
+		Weapon: CyborgShrapnelE
 	Warhead@emp: GrantExternalCondition
 		Duration: 110
