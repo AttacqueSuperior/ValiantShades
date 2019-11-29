@@ -17,6 +17,7 @@ e1:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 10
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -140,6 +141,7 @@ ggi:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 25
 		Description: Anti-tank infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
@@ -346,6 +348,7 @@ snipe:
 		Name: Sniper
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 180
 		Prerequisites: garbur, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -407,6 +410,7 @@ gren:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: gafcmd, ~gapile
 		BuildPaletteOrder: 90
 		Description: Assault infantry with handgrenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
@@ -1038,6 +1042,7 @@ marks:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: gatech, ~gapile
 		BuildPaletteOrder: 200
 		Description: Allied infantry capable of pinpointing targets\nfor airstrikes. Unarmed otherwise.\n  Strong vs Ground\n  Weak vs Aircraft
@@ -1097,6 +1102,7 @@ dione:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: ~gapile, ~disabled
 		BuildPaletteOrder: 110
 		Description: Rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft

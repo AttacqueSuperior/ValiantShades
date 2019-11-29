@@ -5,6 +5,7 @@ engineer:
 	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: ~barracks, ~!alliedengi, ~!sovietengi
 		BuildPaletteOrder: 30
 		Description: Captures enemy structures.\n  Unarmed
@@ -56,6 +57,7 @@ dog:
 	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
+		BuildAtProductionType: Infantry
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 40
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
