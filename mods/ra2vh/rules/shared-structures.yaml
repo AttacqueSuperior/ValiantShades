@@ -56,6 +56,11 @@
 		PauseOnCondition: build-incomplete || being-warped
 	Armor@resistsupers:
 		Type: ResistSupers
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy
 	DetonateWeaponPower@ForceShield:
 		Icon: forceshield
 		ChargeInterval: 3750
