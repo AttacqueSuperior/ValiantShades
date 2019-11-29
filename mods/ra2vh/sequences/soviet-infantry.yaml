@@ -232,6 +232,7 @@ boris:
 
 cosmo:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@Thor:^AffectedByThor
 	Defaults: lunr
 	stand:
 		Facings: 8

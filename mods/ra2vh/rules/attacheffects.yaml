@@ -589,3 +589,14 @@
 	ProductionTimeMultiplier@dropship:
 		Multiplier: 125
 		Prerequisites: gadrop
+
+^AffectedByThor:
+	ExternalCondition@thorarmor:
+		Condition: thorarmor
+	DamageMultiplier@thorarmor:
+		RequiresCondition: thorarmor
+		Modifier: 66
+	WithIdleOverlay@thor:
+		Sequence: thor-overlay
+		Palette: heroicraexp
+		RequiresCondition: thorarmor

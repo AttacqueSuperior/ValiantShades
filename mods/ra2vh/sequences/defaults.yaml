@@ -1,5 +1,6 @@
 ^Animal:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@Thor:^AffectedByThor
 	stand:
 		Facings: 8
 	run:
@@ -223,11 +224,13 @@
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
+	Inherits@Thor:^AffectedByThor
 
 ^Aircraft:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
+	Inherits@Thor:^AffectedByThor
 
 ^Flag:
 	Inherits@IvanBomb: ^IvanBombable

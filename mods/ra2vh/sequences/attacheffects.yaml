@@ -58,3 +58,9 @@
 		UseTilesetCode: false
 		Length: *
 		Offset: 0, 0, 24
+
+^AffectedByThor:
+	thor-overlay: thorarmor
+		UseTilesetCode: false
+		Length: *
+		Offset: 0, 0, 24

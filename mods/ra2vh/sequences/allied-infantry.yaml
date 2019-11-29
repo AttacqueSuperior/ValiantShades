@@ -276,6 +276,7 @@ tany:
 
 tanya2:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@Thor:^AffectedByThor
 	stand:
 		Facings: 8
 		ShadowStart: 490
@@ -355,6 +356,7 @@ tanya2.husk:
 
 jumpjet:
 	Inherits@IvanBomb: ^IvanBombable
+	Inherits@Thor:^AffectedByThor
 	Defaults: rock
 	stand:
 		Facings: 8
