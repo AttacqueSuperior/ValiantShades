@@ -9,6 +9,7 @@ explosion:
 	watersplash_size4: donutwater4
 	watersplash_size5: donutwater5
 	watersplash_size6: donutwater6
+	watersplash_debris: tswake2
 	piff: piff
 	piffpiff: piffpiff
 	small_explosion: explosml
