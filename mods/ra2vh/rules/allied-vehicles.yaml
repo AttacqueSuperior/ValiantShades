@@ -1444,6 +1444,8 @@ chrp:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+	ReloadArmamentsBar:
+		Color: 404040
 
 mgg:
 	Inherits: ^Vehicle
