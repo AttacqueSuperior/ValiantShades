@@ -377,6 +377,17 @@ naclon:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -30
+	idle: inviso
+		UseTilesetCode: false
+		ShadowStart: -1
+	damaged-idle: inviso
+		UseTilesetCode: false
+		ShadowStart: -1
+	inactive:
+		ShadowStart: 3
+	damaged-inactive:
+		Start: 1
+		ShadowStart: 4
 	active: ngclon_a
 		Length: 11
 		ShadowStart: 22
@@ -491,6 +502,17 @@ nairon:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -45
+	idle: inviso
+		UseTilesetCode: false
+		ShadowStart: -1
+	damaged-idle: inviso
+		UseTilesetCode: false
+		ShadowStart: -1
+	inactive:
+		ShadowStart: 3
+	damaged-inactive:
+		Start: 1
+		ShadowStart: 4
 	active: ngiron_a
 		Length: 11
 		ShadowStart: 22

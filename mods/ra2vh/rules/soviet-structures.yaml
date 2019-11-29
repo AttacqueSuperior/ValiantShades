@@ -575,13 +575,13 @@ naclon:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2
-	WithSpriteBody:
+	WithIdleOverlay@inactive:
+		Sequence: inactive
 		RequiresCondition: !build-incomplete && lowpower
-	WithSpriteBody@active:
+	WithIdleOverlay@active:
 		Sequence: active
 		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
-		Name: body-active
 
 napsis:
 	Inherits: ^Building
@@ -690,13 +690,13 @@ nairon:
 		Type: ResistSupers
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !lowpower
-	WithSpriteBody:
+	WithIdleOverlay@inactive:
+		Sequence: inactive
 		RequiresCondition: !build-incomplete && lowpower
-	WithSpriteBody@active:
+	WithIdleOverlay@active:
 		Sequence: active
 		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
-		Name: body-active
 
 napsyd:
 	Inherits: ^Building
