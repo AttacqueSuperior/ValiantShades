@@ -937,3 +937,56 @@ aurorahusk:
 		Speed: 446
 	RenderVoxels:
 		Image: aurora
+
+wolfk:
+	Inherits: ^NeutralAircraft
+	Valued:
+		Cost: 2000
+	-Selectable:
+	Interactable:
+		Bounds: 100,80
+	RejectsOrders:
+	Tooltip:
+		Name: Wolfkrone Dropship
+	Aircraft:
+		IdleBehavior: LeaveMap
+		Repulsable: false
+		CruiseAltitude: 5600
+		TurnSpeed: 5
+		Speed: 250
+		VTOL: true
+		TurnToDock: true
+		AltitudeVelocity: 180
+	Health:
+		HP: 600000
+	Armor:
+		Type: Light
+	RenderSprites:
+		Image: pdplane
+	WithVoxelBody:
+	Cargo:
+		MaxWeight: 10
+	SpawnActorOnDeath:
+		Actor: wolfkhusk
+		DeathType: DefaultDeath
+	HitShape:
+	GpsDotAS:
+		Sequence: plane
+	-Targetable@airborne:
+	-Targetable@ground:
+	-Targetable@Repair:
+	-DamagedByTintedCells:
+	-GrantConditionOnDamageState@damaged:
+	-Targetable@Temporal:
+	Voiced:
+		VoiceSet: AlliedCargoPlaneVoice
+
+wolfkhusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Wolfkrone Dropship
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 166
+	RenderVoxels:
+		Image: wolfk

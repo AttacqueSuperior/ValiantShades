@@ -769,13 +769,15 @@ gadrop:
 	RallyPoint:
 		Offset: 5,1
 	Exit@1:
-		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
 	GrantConditionOnPrerequisite@warfactory:
 		Condition: warfactory
 		Prerequisites: warfactory
-	Production:
+	ProductionAirdrop:
 		Produces: Vehicle
+		ActorType: wolfk
+		Facing: 32
+		ReadyAudio: ReinforcementsArrived
 		RequiresCondition: !build-incomplete && warfactory && !being-warped && !powerdown
 	Power:
 		Amount: -200
