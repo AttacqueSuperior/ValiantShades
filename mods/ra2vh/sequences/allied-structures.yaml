@@ -516,10 +516,12 @@ gaspir:
 		UseTilesetCode: false
 		Length: *
 		Tick: 80
+		BlendMode: Screen
 	damaged-idle-ball: ggspir_ad
 		UseTilesetCode: false
 		Length: *
 		Tick: 80
+		BlendMode: Screen
 	idle-lines: ggspir_b
 		UseTilesetCode: false
 		Length: *
