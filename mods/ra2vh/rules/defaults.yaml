@@ -81,6 +81,7 @@
 	Inherits@terrorbomb: ^TerrorBombPlantable
 	Inherits@emp: ^AffectedByEMP
 	Inherits@temporal: ^Warpable
+	Inherits@forceshield: ^AffectedByForceShield
 	Targetable@Temporal2:
 		TargetTypes: ImmuneToPrison
 	Targetable@ivanbombable:

@@ -600,3 +600,15 @@
 		Sequence: thor-overlay
 		Palette: heroicraexp
 		RequiresCondition: thorarmor
+
+^AffectedByForceShield:
+	WithColoredOverlay@forceshield:
+		RequiresCondition: forceshield
+		Palette: forceshield
+	DamageMultiplier@forceshield:
+		RequiresCondition: forceshield
+		Modifier: 0
+	TimedConditionBar@forceshield:
+		Condition: forceshield
+	ExternalCondition@forceshield:
+		Condition: forceshield

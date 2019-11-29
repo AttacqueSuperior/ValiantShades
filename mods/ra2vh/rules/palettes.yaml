@@ -232,6 +232,17 @@
 		BaseColor: 40000080
 		AmplitudeRed: 48
 		QuantizationCount: 24
+	PaletteFromRGBA@forceshield:
+		Name: forceshield
+		R: 0
+		G: 0
+		B: 128
+		A: 128
+	FlickeringPaletteEffect@forceshield:
+		PaletteName: forceshield
+		BaseColor: 00005080
+		AmplitudeBlue: 36
+		QuantizationCount: 36
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255
