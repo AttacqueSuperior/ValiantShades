@@ -376,3 +376,35 @@ kamikaze:
 		Length: 13
 	-die1:
 	-die2:
+
+cyborg:
+	Inherits: ^ArmedInfantry
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 8
+		Facings: 8
+		Tick: 120
+	idle1:
+		Start: 87
+	idle2:
+		Start: 72
+	die1:
+		Start: 102
+	die2:
+		Start: 117
+	shoot:
+		Start: 132
+		Length: 8
+	paradrop:
+		Start: 196
+	cheer:
+		Start: 197
+	-standup:
+	-liedown:
+	-prone-stand:
+	-prone-run:
+	-prone-shoot:
+	icon: cyboicon.png
+		AddExtension: false

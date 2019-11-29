@@ -910,6 +910,67 @@ kamikaze:
 	AttackMove:
 		Voice: Move
 
+cyborg:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Barracks
+		BuildPaletteOrder: 180
+		Prerequisites: natek, ~nahand
+		Description: Mechanical infantry with EMP grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
+		IconPalette: cyboicon
+	Valued:
+		Cost: 850
+	DeliversCash:
+		Payload: 425
+		PlayerExperience: 43
+		Voice: Move
+	Tooltip:
+		Name: Cyborg
+	Armor:
+		Type: Plate
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 150000
+	RevealsShroud:
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	-Crushable:
+	Passenger:
+		PipType: Green
+	Armament@primary:
+		Weapon: CyborgGun
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: CyborgGunE
+		RequiresCondition: rank-heroic
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: CyborgGun
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: CyborgGunE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: CyborgVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
 yuripr:
 	Inherits: yuri
 	#Buildable:

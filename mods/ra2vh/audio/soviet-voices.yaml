@@ -126,6 +126,14 @@ CosmonautVoice:
 		Feedback: ilasfea, ilasfeb, ilasfec, ilasfed
 		Die: ilasdia, ilasdib, ilasdic, ilasdid, ilasdie
 
+CyborgVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ikamsea, ikamseb, ikamsec, ikamsed
+		Move: ikammoa, ikammob, ikammoc, ikammod, ikammoe, ikamomof, ikammog
+		Attack: ikammoa, ikammob, ikammoc, ikammod, ikammoe, ikamomof, ikammog
+		Die: ikamdia, ikamdib, ikamdic
+
 SovietVehicleVoice:
 	DefaultVariant: .wav
 	Voices:

@@ -57,6 +57,10 @@
 		Name: volkicon
 		Filename: volkicon.png
 		AllowModifiers: false
+	PaletteFromPng@cyboicon:
+		Name: cyboicon
+		Filename: cyboicon.png
+		AllowModifiers: false
 	PaletteFromPng@hindicon:
 		Name: hindicon
 		Filename: hindicon.png
