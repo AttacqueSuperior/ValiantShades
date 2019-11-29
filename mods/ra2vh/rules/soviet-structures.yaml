@@ -561,12 +561,13 @@ naclon:
 		Condition: barracks
 		Prerequisites: barracks
 	Production:
-		Produces: Infantry
+		Produces: Clone
 		RequiresCondition: !build-incomplete && barracks && !being-warped && !powerdown
 	RallyPoint:
 		Offset: 3,3
-	ClonesProducedUnits:
+	ClonesProducedUnitsAS:
 		CloneableTypes: infantry
+		ProductionType: Clone
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown

@@ -17,7 +17,7 @@ e1:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 10
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -141,7 +141,7 @@ ggi:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 25
 		Description: Anti-tank infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
@@ -348,7 +348,7 @@ snipe:
 		Name: Sniper
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 180
 		Prerequisites: garbur, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -410,7 +410,7 @@ gren:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: gafcmd, ~gapile
 		BuildPaletteOrder: 90
 		Description: Assault infantry with handgrenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
@@ -473,7 +473,7 @@ ghost:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 100
 		Prerequisites: gatech, ~gapile
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
@@ -791,7 +791,7 @@ hirano:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 150
 		Prerequisites: garbur, ~gapile
 		BuildLimit: 1
@@ -970,7 +970,7 @@ cleg:
 		Name: Chrono Legionnaire
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 150
 		Prerequisites: ~gapile, garbur
 		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
@@ -1042,7 +1042,7 @@ marks:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: gatech, ~gapile
 		BuildPaletteOrder: 200
 		Description: Allied infantry capable of pinpointing targets\nfor airstrikes. Unarmed otherwise.\n  Strong vs Ground\n  Weak vs Aircraft
@@ -1102,7 +1102,7 @@ dione:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~gapile, ~disabled
 		BuildPaletteOrder: 110
 		Description: Rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -1162,7 +1162,7 @@ artemis:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 110
 		Prerequisites:  ~gapile, ~disabled
 		Description: Carries a heavy missile launcher.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry, Aircraft
@@ -1231,7 +1231,7 @@ fairy:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 100
 		Prerequisites: ~gapile, gatech
 		Description: Assault infantry.\n  Strong vs Ground\n  Weak vs Air

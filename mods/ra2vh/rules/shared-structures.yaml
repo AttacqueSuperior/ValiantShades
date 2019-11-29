@@ -133,7 +133,7 @@
 		DeathTypes: DefaultDeath
 	RallyPoint:
 	Production:
-		Produces: Infantry
+		Produces: Infantry, Barracks
 		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	PrimaryBuilding:

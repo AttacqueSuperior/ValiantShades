@@ -5,7 +5,7 @@ engineer:
 	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~barracks, ~!alliedengi, ~!sovietengi
 		BuildPaletteOrder: 30
 		Description: Captures enemy structures.\n  Unarmed
@@ -57,7 +57,7 @@ dog:
 	Inherits@cloning: ^Cloneable
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 40
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -197,7 +197,7 @@ dog:
 	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 130
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
@@ -248,7 +248,7 @@ dog:
 		Type: CenterPosition
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	-Mobile:

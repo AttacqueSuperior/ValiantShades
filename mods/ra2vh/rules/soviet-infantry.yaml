@@ -17,7 +17,7 @@ e2:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~nahand
 		BuildPaletteOrder: 20
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -76,7 +76,7 @@ flakt:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: ~nahand
 		BuildPaletteOrder: 50
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
@@ -162,7 +162,7 @@ shk:
 		ValidTargets: TeslaBoost
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: naradr, ~nahand
 		BuildPaletteOrder: 150
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
@@ -237,7 +237,7 @@ terror:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 120
 		Prerequisites: natech, ~nahand #, ~infantry.cuba
 		Description: Demolition infantry, able to attach napalm bombs\nto enemy buildings. Can hijack enemy vehicles.\nStealthed when stopped.\n  Strong vs Vehicles, Buildings\n  Weak vs Aircraft
@@ -319,7 +319,7 @@ deso:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 120
 		Prerequisites: natek, ~nahand #, ~infantry.iraq
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
@@ -403,7 +403,7 @@ ivan:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 110
 		Prerequisites: naradr, ~nahand
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
@@ -505,7 +505,7 @@ yuri:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 160
 		Prerequisites: natech, ~nahand
 		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
@@ -593,7 +593,7 @@ virus:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 150
 		Prerequisites: natech, ~nahand #, ~infantry.iraq
 		Description: Poisonous sniper.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
@@ -651,7 +651,7 @@ boris:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: natek, ~nahand
 		BuildPaletteOrder: 20
 		BuildLimit: 1
@@ -773,7 +773,7 @@ volkov:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		Prerequisites: natech, ~nahand
 		BuildPaletteOrder: 20
 		BuildLimit: 1
@@ -835,7 +835,7 @@ kamikaze:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Infantry
-		BuildAtProductionType: Infantry
+		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 90
 		Prerequisites: ~disabled
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
