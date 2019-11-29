@@ -410,11 +410,11 @@ garbur:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	damagefire1:
-		Offset: -27,82,1
+		Offset: -27,-8,1
 	damagefire2:
-		Offset: 24,70,1
+		Offset: 24,-20,1
 	damagefire3:
-		Offset: 5,32,1
+		Offset: 5,-58,1
 	icon: rburicon.png
 		AddExtension: false
 
