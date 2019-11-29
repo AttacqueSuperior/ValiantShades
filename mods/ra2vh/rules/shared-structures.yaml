@@ -531,6 +531,9 @@
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary && !build-incomplete && !powerdown
+	Exit@1:
+		ExitCell: 1,1
+		Facing: 224
 
 ^Tier3:
 	Inherits: ^Building

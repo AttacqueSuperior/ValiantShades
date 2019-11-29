@@ -274,9 +274,6 @@ naairc:
 		Sequence: idle-dish
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	Exit@1:
-		SpawnOffset: -370,370,0
-		Facing: 224
 	RenderSprites:
 		Image: gaairc
 	WithTextDecoration@placeholder:
