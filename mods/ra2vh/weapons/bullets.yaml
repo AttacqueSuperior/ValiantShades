@@ -589,6 +589,8 @@ CyborgGun:
 		AimTargetStances: Enemy, Neutral
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+	Warhead@XEff: CreateEffect
+		ImpactSounds: itesatta.wav
 
 CyborgGunE:
 	Inherits: CyborgGun

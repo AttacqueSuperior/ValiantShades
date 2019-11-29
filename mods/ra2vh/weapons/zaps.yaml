@@ -721,7 +721,6 @@ ChronoPrison:
 
 CyborgShrapnel:
 	Inherits: ^TeslaZap
-	Report: itesat2a.wav, itesat2b.wav
 	Warhead@emp: GrantExternalCondition
 		Range: 64
 		Duration: 3
