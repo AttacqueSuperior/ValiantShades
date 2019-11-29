@@ -244,7 +244,7 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ra2vh|uibits/loadscreen.png
-	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
+	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters..., Adjusting faction themes..., Pushing boundaries beyond imagination..., Embracing legacy scenes..., Suppressing the red resurrection..., Reactivating Volkov..., Preparing for the final war...
 
 ServerTraits:
 	LobbyCommands
