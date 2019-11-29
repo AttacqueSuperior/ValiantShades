@@ -774,7 +774,7 @@ gadrop:
 		Condition: warfactory
 		Prerequisites: warfactory
 	ProductionAirdrop:
-		Produces: Vehicle
+		Produces: DropshipBay
 		ActorType: wolfk
 		Facing: 32
 		ReadyAudio: ReinforcementsArrived
@@ -787,8 +787,9 @@ gadrop:
 		Actors: e1, e1, e1
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
-	ClonesProducedUnits:
+	ClonesProducedUnitsAS:
 		CloneableTypes: vehicle
+		ProductionType: DropshipBay
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	RenderSprites:
 		PlayerPalette: xuetallied1

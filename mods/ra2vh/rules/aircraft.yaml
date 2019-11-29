@@ -22,6 +22,7 @@ shad:
 		VoiceSet: NighthawkVoice
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 90
 		Prerequisites: ~gaweap, gaairc
 		Description: Infantry Transport Helicopter\nUndetectable by radar.\nGets additional firepower when manned by infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -157,6 +158,7 @@ hind:
 		VoiceSet: HindVoice
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, naairc
 		Description: Vehicle Transport Helicopter\n  Unarmed.
@@ -216,6 +218,7 @@ zep:
 		Name: Kirov Airship
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 90
 		Prerequisites: ~naweap, naairc, natech
 	Selectable:
@@ -287,6 +290,7 @@ thor:
 		Name: Thor Platform
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 90
 		Prerequisites: ~gaweap, gaairc, garbur
 	Selectable:

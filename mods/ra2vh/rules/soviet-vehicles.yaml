@@ -5,6 +5,7 @@ smcv:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 80
 		Prerequisites: naradr, ~naweap
 		Description: Deploys into a Construction Yard.
@@ -69,6 +70,7 @@ harv:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 10
 		Prerequisites: ~naweap, refinery
 		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
@@ -150,6 +152,7 @@ dron:
 		Name: Terror Drone
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 40
 		Prerequisites: ~naweap
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
@@ -211,6 +214,7 @@ htk:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 30
 		Prerequisites: ~naweap
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
@@ -336,6 +340,7 @@ drgn:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
@@ -390,6 +395,7 @@ slost:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap, ~disabled
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
@@ -502,6 +508,7 @@ v3:
 		Name: V3 Launcher
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 60
 		Prerequisites: naradr, ~naweap
 		Description: Ballistic missile launcher\n  Strong vs Building, Infantry\n  Weak vs Vehicle, Aircraft
@@ -561,6 +568,7 @@ apoc:
 		Name: Apocalypse Tank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 70
 		Prerequisites: ~naweap, natech
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
@@ -659,6 +667,7 @@ ttnk:
 		Name: Tesla Tank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, natek #, ~vehicles.russia
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
@@ -709,6 +718,7 @@ dtruck:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 60
 		Prerequisites: ~naweap, naradr #, ~vehicles.libya
 		Description: Demolition Truck, actively armed with nuclear explosives.
@@ -771,6 +781,7 @@ mind:
 		Name: Mastermind
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 70
 		Prerequisites: ~naweap, natech
 		Description: Heavy vehicle capable of mind controlling enemy units.\n  Strong vs Ground Unis\n  Weak vs Aircraft
@@ -850,6 +861,7 @@ bura:
 		Name: Buratino
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 120
 		Prerequisites: ~naweap, natech
 		Description: Heavy artillery firing thermobaric missiles.\n  Strong vs Structures, Infantry\n  Weak vs Vehicles
@@ -901,6 +913,7 @@ gaunt:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, natech
 		Description: Heavy anti-air weapon,\narmed with heavy missiles.\n  Strong vs Aircraft
@@ -963,6 +976,7 @@ empr:
 		Name: Empress Tank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
 		Prerequisites: ~naweap, natech
 		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground 

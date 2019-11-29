@@ -5,6 +5,7 @@ amcv:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 80
 		Prerequisites: gafcmd, ~gaweap
 		Description: Deploys into a Construction Yard.
@@ -69,6 +70,7 @@ cmin:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 10
 		Prerequisites: ~gaweap, refinery
 		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
@@ -148,6 +150,7 @@ hmmv:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 30
 		Prerequisites: ~gaweap
 		Description: Infantry Transport and Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Infantry\n  Weak vs Vehicles
@@ -264,6 +267,7 @@ ltnk:
 		Name: Wolverine Light Tank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
 		Description: Have a limited amount of missiles for attacking\narmor and air. Also armed with a cannon.\n  Strong vs Vehicles, Ships, Aircraft\n  Weak vs Infantry, Structures
@@ -367,6 +371,7 @@ tnkd:
 		Name: Tank Destroyer
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 40
 		Prerequisites: ~gaweap, gafcmd #, ~vehicles.germany
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
@@ -417,6 +422,7 @@ fv:
 		Cost: 600
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 130
 		Prerequisites: ~gaweap, gafcmd
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
@@ -1057,6 +1063,7 @@ sref:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 50
 		Prerequisites: gatech, ~gaweap
 		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
@@ -1132,6 +1139,7 @@ mgtk:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~gaweap
 		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
@@ -1191,6 +1199,7 @@ bfrt:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 100
 		Prerequisites: garbur, ~gaweap
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.
@@ -1314,6 +1323,7 @@ aero:
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 50
 		Prerequisites: garbur, ~gaweap
 		Description: Heavy anti-air weapon,\narmed with dual laser beams.\n  Strong vs Aircraft
@@ -1374,6 +1384,7 @@ chrp:
 		Name: Chrono Prison
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 70
 		Prerequisites: garbur, ~gaweap
 		Description: Heavy vehicle armed with a heavy temporal cannon.\nCannot target structures.\nImmune to mindcontrol and berserk.\n  Strong vs Vehicles, Infantry\n  Weak vs Structures
@@ -1435,6 +1446,7 @@ mgg:
 		Name: Mobile Gap Generator
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 95
 		Prerequisites: ~gaweap, gatech
 		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nUnarmed.
@@ -1492,6 +1504,7 @@ succ:
 		Name: Succubus
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 120
 		Prerequisites: garbur, ~gaweap
 		Description: Can temporarily take ownership of enemy units.\n Strong vs mindcontrollable units.
@@ -1547,6 +1560,7 @@ mnrva:
 		Name: Minerva APC
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 20000
 		Prerequisites: ~gaweap, ~disabled
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures

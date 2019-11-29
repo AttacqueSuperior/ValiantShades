@@ -5,6 +5,7 @@ behold:
 	Inherits@Berserk: ^Berserkable
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
 		Prerequisites: ~disabled
 		Description: Unarmed.\nGrants bonus range to nearby allied units.

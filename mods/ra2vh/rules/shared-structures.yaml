@@ -273,7 +273,7 @@
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
 	Production:
-		Produces: Vehicle
+		Produces: Vehicle, WarFactory
 		RequiresCondition: !build-incomplete && !powerdown
 		PauseOnCondition: being-warped
 	PrimaryBuilding:

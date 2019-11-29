@@ -9,6 +9,7 @@
 		Cost: 950
 	Buildable:
 		Queue: Vehicle
+		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 75
 	Mobile:
 		Speed: 90
