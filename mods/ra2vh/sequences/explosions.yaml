@@ -173,3 +173,5 @@ explosion:
 	gauntlethit: gaunthit
 	ironcurtain: ironblst
 	cyborghit: cyborghit
+	forceshield: forcshld
+		BlendMode: Translucent

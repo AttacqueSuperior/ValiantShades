@@ -475,6 +475,7 @@ icon:
 		AddExtension: false
 	warthogs: warticon.png
 		AddExtension: false
+	forceshield: forcicon
 
 atomic:
 	up: nkmslup
