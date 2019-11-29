@@ -637,7 +637,7 @@ nairon:
 		BuildPaletteOrder: 80
 		Prerequisites: natek, ~structures.soviets
 		BuildLimit: 1
-		Description: Grants invulnerability to armored units.\nFries fleshy units.
+		Description: Grants invulnerability to armored units.
 	Valued:
 		Cost: 2000
 	Tooltip:
