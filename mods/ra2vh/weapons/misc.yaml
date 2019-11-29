@@ -613,7 +613,7 @@ PsychicDominatorRing:
 	Warhead@psydom: ChangeOwnerAS
 		Range: 2c384
 		Condition: permanent-mindcontrol
-		ValidTargets: PermanentMindControl
+		ChangeOwnerValidTargets: PermanentMindControl
 	Warhead@3Eff: CreateEffect
 		Explosions: psychicdominatorring
 		ExplosionPalette: heroictsexp
