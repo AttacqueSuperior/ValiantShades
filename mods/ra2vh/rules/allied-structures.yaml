@@ -733,6 +733,73 @@ gacran:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
 
+gadrop:
+	Inherits: ^Building
+	Inherits@shape: ^5x3Shape
+	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
+	Inherits@damagefire: ^BuildingDamageFire3
+	Selectable:
+		Bounds: 212, 158, -7, -28
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Description: Provides an additional copy of\nall Tier 1 and Tier 2 vehicles (sans MCVs).
+		BuildLimit: 1
+		Prerequisites: garbur, gaweap, ~structures.allies
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Dropship Bay
+	Building:
+		Footprint: xx=== xx=== xx===
+		Dimensions: 5,3
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 5c0
+	RevealOnDeath:
+		Radius: 2c512
+		DeathTypes: DefaultDeath
+	RallyPoint:
+		Offset: 5,1
+	Exit@1:
+		SpawnOffset: -384,-384,0
+		ExitCell: 4,1
+	GrantConditionOnPrerequisite@warfactory:
+		Condition: warfactory
+		Prerequisites: warfactory
+	Production:
+		Produces: Vehicle
+		RequiresCondition: !build-incomplete && warfactory && !being-warped && !powerdown
+	Power:
+		Amount: -200
+		RequiresCondition: !being-warped && !powerdown
+	SpawnSurvivors:
+		DeathTypes: DefaultDeath
+		Actors: e1, e1, e1
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete && !powerdown
+	ClonesProducedUnits:
+		CloneableTypes: vehicle
+		RequiresCondition: !build-incomplete && !being-warped && !powerdown
+	RenderSprites:
+		PlayerPalette: xuetallied1
+	ActorPreviewPlaceBuildingPreview:
+		OverridePalette: placexuetallied1
+	WithIdleOverlay@dock:
+		Sequence: idle-dock
+		RequiresCondition: !build-incomplete && !powerdown
+		PauseOnCondition: being-warped
+	WithIdleOverlay@bib:
+		Sequence: bib
+		RequiresCondition: !build-incomplete
+
 gadept:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape

@@ -582,3 +582,10 @@
 		Palette: hilberteffect
 	TimedConditionBar@hilberteffect:
 		Condition: hilberteffect
+
+^DeliverableViaDropship:
+	Cloneable:
+		Types: vehicle
+	ProductionTimeMultiplier@dropship:
+		Multiplier: 125
+		Prerequisites: gadrop

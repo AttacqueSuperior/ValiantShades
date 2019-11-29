@@ -64,6 +64,7 @@ amcv:
 cmin:
 	Inherits: ^Vehicle
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
@@ -135,6 +136,7 @@ hmmv:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
@@ -252,6 +254,7 @@ ltnk:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
@@ -354,6 +357,7 @@ tnkd:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
@@ -405,6 +409,7 @@ fv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
@@ -1532,6 +1537,7 @@ mnrva:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank

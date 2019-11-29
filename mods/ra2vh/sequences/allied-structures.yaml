@@ -467,6 +467,42 @@ gacran:
 		Offset: -10,8,1
 	icon: fixicon
 
+gadrop:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire3
+	Defaults:
+		Offset: -30, -60
+	idle:
+		ShadowStart: 2
+		ZOffset: -1024
+	damaged-idle:
+		ShadowStart: 3
+		ZOffset: -1024
+	bib: ggdropbb
+		ShadowStart: 2
+		ZOffset: -1024
+	damaged-bib: ggdropbb
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -1024
+	idle-dock: ggdrop_a
+		Length: *
+	damaged-idle-dock: ggdrop_ad
+		Length: *
+	make: ggdropmk
+		Length: 30
+		ShadowStart: 30
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	damagefire1:
+		Offset: -70,-40,1
+	damagefire2:
+		Offset: -3,-30,1
+	damagefire3:
+		Offset: -30,10,1
+	icon: xxicon
+
 gawall:
 	Inherits: ^Structure
 	Defaults:

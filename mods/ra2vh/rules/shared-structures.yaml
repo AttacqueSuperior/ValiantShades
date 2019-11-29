@@ -246,6 +246,9 @@
 		Cost: 2000
 	Tooltip:
 		Name: War Factory
+	ProvidesPrerequisite:
+		Prerequisite: warfactory
+		RequiresCondition: !build-incomplete && !powerdown
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
 	Building:

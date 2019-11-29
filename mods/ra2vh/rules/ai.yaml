@@ -286,6 +286,7 @@ Player:
 			# AI cannot place plugs
 			# gapowrup: 5
 			gacran: 5
+			gadrop: 5
 			gapill: 15
 			nasam: 12
 			atesla: 12
