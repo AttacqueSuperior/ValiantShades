@@ -56,11 +56,14 @@
 		PauseOnCondition: build-incomplete || being-warped
 	Armor@resistsupers:
 		Type: ResistSupers
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
 	AISupportPowerTargeterHelper@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
-		RequiresCondition: dmg_heavy
+		RequiresCondition: dmg_heavy && check-forceshield
 
 ^Power:
 	Inherits: ^Building
@@ -353,6 +356,14 @@
 	Power:
 		Amount: -50
 		RequiresCondition: !being-warped && !powerdown
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy && check-forceshield
 
 ^NavalYard:
 	Inherits: ^Building
@@ -584,7 +595,14 @@
 		Modifier: 15
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown && botowned
 		ShowTicks: false
-
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy && check-forceshield
 ^Tier4:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
@@ -627,6 +645,14 @@
 		Modifier: 30
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown && botowned
 		ShowTicks: false
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy && check-forceshield
 
 power:
 	AlwaysVisible:

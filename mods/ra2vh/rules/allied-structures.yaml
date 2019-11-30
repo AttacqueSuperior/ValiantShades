@@ -469,6 +469,14 @@ gaorep:
 		Interval: 200
 		Amount: 20
 		RequiresCondition: !disabled
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy && check-forceshield
 
 gaspysat:
 	Inherits: ^Building
@@ -875,6 +883,8 @@ gaspir:
 		Sequence: idle-blink
 		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: being-warped
+	ProvidesPrerequisite@default:
+		RequiresCondition: !build-incomplete && !powerdown
 
 gadept:
 	Inherits: ^Building

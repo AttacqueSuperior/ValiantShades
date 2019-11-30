@@ -209,7 +209,7 @@ WeatherStormInit:
 		ValidTargets: Ground, Air, Water
 	Warhead@triggerforceshield: AISupportPowerTrigger
 		OrderName: ForceShieldInfoOrder
-		Delay: 23
+		Delay: 18
 
 WeatherCloudDirectInit:
 	Projectile: InstantHit

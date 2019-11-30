@@ -481,6 +481,14 @@ naindp:
 		Interval: 200
 		Amount: 20
 		RequiresCondition: !disabled
+	GrantConditionOnPrerequisite@forceshield:
+		Condition: check-forceshield
+		Prerequisites: gaspir
+	AISupportPowerTargeterHelper@forceshield:
+		OrderName: ForceShieldInfoOrder
+		ActivationChance: 50
+		DamageTypes: DefaultDeath
+		RequiresCondition: dmg_heavy && check-forceshield
 
 naclon:
 	Inherits: ^Building

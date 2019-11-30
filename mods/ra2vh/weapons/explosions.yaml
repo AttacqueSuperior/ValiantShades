@@ -461,7 +461,7 @@ atomic:
 		Delay: 25
 	Warhead@triggerforceshield: AISupportPowerTrigger
 		OrderName: ForceShieldInfoOrder
-		Delay: 20
+		Delay: 15
 
 demobomb:
 	Inherits: NukePayload
