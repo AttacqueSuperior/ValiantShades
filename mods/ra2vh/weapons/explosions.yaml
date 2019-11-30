@@ -381,6 +381,8 @@ CRNuke:
 	Inherits: KamikazeBomb
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: rookiera2exp
+	Warhead@1Dam: SpreadDamage
+		Damage: 100000
 	Warhead@spawn: SpawnSmokeParticle
 		Count: 8
 		Delay: 1
