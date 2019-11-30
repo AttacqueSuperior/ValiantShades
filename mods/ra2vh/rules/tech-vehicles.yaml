@@ -1,3 +1,24 @@
+lasher:
+	Inherits: ^StandardTank
+	Tooltip:
+		Name: Lasher Tank
+	Buildable:
+		Prerequisites: ~disabled
+		Description: Tech Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+	Armament@primary:
+		Weapon: 105mm
+		LocalOffset: 640,0,512
+	Armament@elite:
+		Weapon: 105mmE
+		LocalOffset: 640,0,512
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: LasherTankVoice
+
 behold:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

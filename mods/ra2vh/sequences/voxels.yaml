@@ -203,6 +203,10 @@ hyd:
 jeep:
 	idle:
 
+lasher:
+	idle: ltnk
+	turret: ltnktur
+
 lcrf:
 	idle:
 

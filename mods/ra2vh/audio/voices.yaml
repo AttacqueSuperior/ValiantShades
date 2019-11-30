@@ -165,3 +165,10 @@ RomanovVoice:
 		Attack: iromata, iromatb, iromatc, iromatd, iromate
 		Feedback: iromfea, iromfeb, iromfec, iromfed, iromfee
 		Die: iromdia, iromdib, iromdic, iromdid, iromdie
+
+LasherTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vlassed, vlassef, vlasmod
+		Move: vlasmoa, vlasmoc, vlasatd
+		Attack: vlasata, vlasatc, vlasate, vlasatg 
