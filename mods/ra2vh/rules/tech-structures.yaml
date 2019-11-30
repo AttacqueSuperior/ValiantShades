@@ -103,6 +103,7 @@ caairp:
 		CameraActor: camera
 		Prerequisites: ~techparadrops.allies
 		ArrowSequence: arrow
+		AllowMultiple: true
 	ParatroopersPower@Soviets:
 		OrderName: ParadropInfoOrder
 		Icon: paradrop
@@ -115,6 +116,7 @@ caairp:
 		CameraActor: camera
 		Prerequisites: ~techparadrops.soviets
 		ArrowSequence: arrow
+		AllowMultiple: true
 	SupportPowerChargeBar:
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
