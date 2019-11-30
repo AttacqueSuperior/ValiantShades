@@ -554,8 +554,8 @@ GauntletMissile:
 		CruiseAltitude: 6c0
 		MinimumLaunchAngle: 224
 		MaximumLaunchAngle: 255
-		Arm: 3
-		HomingActivationDelay: 3
+		Arm: 5
+		HomingActivationDelay: 5
 		TrailImage: tanyasmoke
 		TrailPalette: heroictsexp
 		RangeLimit: 23c0
