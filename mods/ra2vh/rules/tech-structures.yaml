@@ -143,6 +143,18 @@ caairp:
 		BaselineSpawn: true
 	Exit@1:
 		ExitCell: 2,1
+	RallyPoint:
+		Offset: 3,1
+	GrantConditionIfOwnerIsNeutral:
+		Condition: ownerless
+	CaptureManager:
+		BeingCapturedCondition: being-captured
+	PeriodicProducer:
+		RequiresCondition: !ownerless && !being-captured
+		ResetTraitOnEnable: true
+		Type: TechAirport
+		Actors: lasher
+		ShowSelectionBar: true
 
 caairp.rubble:
 	Inherits: ^Rubble
