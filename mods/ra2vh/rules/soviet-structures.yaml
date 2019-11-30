@@ -426,6 +426,9 @@ naindp:
 		Prerequisites: natek, ~structures.soviets
 		BuildLimit: 1
 		Description: Decreases all vehicles' cost by 25%.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Selectable:
 		Bounds: 152, 164, 0, -50
 	Valued:
@@ -488,6 +491,9 @@ naclon:
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Clones most trained infantry.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -587,6 +593,9 @@ napsis:
 		Prerequisites: natech, ~structures.soviets
 		Description: Detects enemy units and buildings.
 		BuildLimit: 1
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -633,6 +642,9 @@ nairon:
 		Prerequisites: natek, ~structures.soviets
 		BuildLimit: 1
 		Description: Grants invulnerability to armored units.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -703,6 +715,9 @@ napsyd:
 		Prerequisites: natek, ~structures.soviets
 		BuildLimit: 1
 		Description: Allows you to take control of enemy units.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -770,6 +785,9 @@ namisl:
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 5000
 	Tooltip:

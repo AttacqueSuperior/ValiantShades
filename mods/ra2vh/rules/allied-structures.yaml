@@ -405,6 +405,9 @@ gaorep:
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
@@ -476,6 +479,9 @@ gaspysat:
 		Prerequisites: garbur, ~structures.allies
 		Description: Reveals the shroud around all enemy structures.
 		BuildLimit: 1
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
@@ -579,6 +585,9 @@ gaweat:
 		Prerequisites: garbur, ~structures.allies
 		BuildLimit: 1
 		Description: Play God with deadly weather!
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
@@ -642,6 +651,9 @@ gacsph:
 		Prerequisites: gatech, ~structures.allies
 		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Selectable:
 		Bounds: 176, 110, -5, -14
 	Valued:
@@ -738,6 +750,9 @@ gadrop:
 		Description: Provides an additional copy of\nall Tier 1 and Tier 2 vehicles (sans MCVs).
 		BuildLimit: 1
 		Prerequisites: garbur, gaweap, ~structures.allies
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -806,6 +821,9 @@ gaspir:
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Grants invulnerability to buildings.
+	-CaptureManager:
+	-Capturable:
+	-CaptureNotification:
 	Valued:
 		Cost: 2000
 	Tooltip:

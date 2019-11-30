@@ -113,9 +113,11 @@
 	FrozenUnderFog:
 	GivesBuildableArea:
 		AreaTypes: building
+	CaptureManager:
 	Capturable:
 		Types: building
 		RequiresCondition: !build-incomplete && !being-warped
+	CaptureNotification:
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 	Voiced:
@@ -144,7 +146,6 @@
 	EngineerRepairable:
 	MustBeDestroyed:
 		RequiredForShortGame: true
-	CaptureNotification:
 	ShakeOnDeath:
 	Sellable:
 		SellSounds: uselbuil.wav
@@ -170,7 +171,6 @@
 		ReferencePoint: Center
 		Palette: mouse
 		RequiresCondition: !build-incomplete && !being-warped
-	CaptureManager:
 	ExternalCondition@hide-gpsdot:
 		Condition: hide-gpsdot
 	GpsDotAS:
@@ -193,6 +193,7 @@
 ^SupportBuilding:
 	Inherits: ^Building
 	Inherits@2: ^GainsExperience
+	-CaptureManager:
 	-Capturable:
 	-CaptureNotification:
 	-ShakeOnDeath:
@@ -209,6 +210,7 @@
 	Inherits: ^Building
 	-OwnerLostAction:
 	-GivesBuildableArea:
+	-CaptureManager:
 	-Capturable:
 	-MustBeDestroyed:
 	-GivesExperience:
