@@ -93,7 +93,7 @@ caairp:
 		ResetOnOwnerChange: true
 	ParatroopersPower@Allies:
 		OrderName: AirborneInfoOrder
-		Icon: paradrop
+		Icon: airborne
 		ChargeInterval: 9000
 		Description: Airborne
 		LongDesc: A Cargo Plane drops three GIs\nand 2 GGIs anywhere on the map.
