@@ -33,9 +33,14 @@ caoild:
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 1000,0,0
+	GrantPeriodicCondition@initialcash:
+		CooldownDuration: 1
+		ActiveDuration: 2000000000
+		Condition: alreadycaptured
+		RequiresCondition: !ownerless
 	GivesCashOnCapture:
 		Amount: 1000
-		#TO-DO - Wire this to an explicit CaptureType.
+		RequiresCondition: !alreadycaptured
 	GpsDotAS:
 		Sequence: oil
 	SpawnActorOnDeath:
@@ -56,6 +61,7 @@ caoild:
 		RequiresCondition: dmg_heavy && !dmg_crit
 	WithIdleOverlay@damagefire3-heavy:
 		RequiresCondition: dmg_crit
+	UpdatesDerrickCount:
 
 caoild.rubble:
 	Inherits: ^Rubble
