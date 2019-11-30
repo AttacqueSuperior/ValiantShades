@@ -146,8 +146,6 @@
 		RequiredForShortGame: true
 	CaptureNotification:
 	ShakeOnDeath:
-	ProximityCaptor:
-		Types: Building
 	Sellable:
 		SellSounds: uselbuil.wav
 		RequiresCondition: !build-incomplete && !being-warped
@@ -583,8 +581,6 @@
 		CargoType: Infantry
 	HiddenUnderFog:
 	ActorLostNotification:
-	ProximityCaptor:
-		Types: Infantry
 	Crushable:
 		CrushSound: igensqua.wav
 		WarnProbability: 0
@@ -667,8 +663,6 @@
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
-	ProximityCaptor:
-		Types: CivilianInfantry
 	ScaredyCat:
 	-MustBeDestroyed:
 	-TakeCover:
@@ -799,8 +793,6 @@
 	HiddenUnderFog:
 	WithTextControlGroupDecoration:
 	ActorLostNotification:
-	ProximityCaptor:
-		Types: Vehicle
 	Guard:
 		Voice: Attack
 	Guardable:
@@ -1124,8 +1116,6 @@
 		RepairActors: gayard, nayard
 	HiddenUnderFog:
 	ActorLostNotification:
-	ProximityCaptor:
-		Types: Ship
 	Guard:
 		Voice: Attack
 	Guardable:
