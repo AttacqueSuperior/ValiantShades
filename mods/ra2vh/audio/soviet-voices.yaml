@@ -50,7 +50,7 @@ DesolatorVoice:
 		Move: idesmoa, idesmob, idesmoc, idesmod, idesmoe
 		Attack: idesata, idesatb, idesatc, idesatd, idesate, idesatf
 		Deploy: idesatb, idesatd, idesatf
-		Die: idesdia, idesdib, idesdic
+		Die: idesdia, idesdib
 
 TerroristVoice:
 	Inherits: ^InfantryDeath
@@ -78,7 +78,7 @@ YuriVoice:
 		Select: iyursea, iyurseb, iyursec, iyursed, iyursee
 		Move: iyurmoa, iyurmob, iyurmoc, iyurmod
 		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate
-		Die: iyurdia, iyurdib, iyurdic
+		Die: iclodib, iclodic, iclodid, iclodie
 
 VirusVoice:
 	Inherits: ^InfantryDeath
