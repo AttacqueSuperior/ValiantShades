@@ -1,5 +1,6 @@
 caoild:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
 		Offset: 0, -30
 	idle-pump: caoild_a
@@ -11,9 +12,16 @@ caoild:
 		ShadowStart: 96
 	flag: caoild_f
 		Offset: 0, -9
+	damagefire1:
+		Offset: -2,4,1
+	damagefire2:
+		Offset: 7,-51,1
+	damagefire3:
+		Offset: 29,-20,1
 
 caairp:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 7, -40
 	idle-overlay: caairp_a
@@ -25,9 +33,14 @@ caairp:
 		Tick: 400
 	flag: caairp_f
 		ZOffset: 128
+	damagefire1:
+		Offset: -3,-40,1
+	damagefire2:
+		Offset: -65,-13,1
 
 cahosp:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire4
 	Defaults:
 		Offset: -30, -75
 	idle-overlay: cahosp_a
@@ -40,6 +53,14 @@ cahosp:
 	flag: cahosp_f
 		ZOffset: 128
 		Offset: 0,0
+	damagefire1:
+		Offset: 40,-25,1
+	damagefire2:
+		Offset: 64,8,1
+	damagefire3:
+		Offset: 12,-84,1
+	damagefire4:
+		Offset: 46,-86,1
 
 cathosp:
 	Inherits: ^TechStructure
@@ -65,9 +86,14 @@ cathosp:
 		UseTilesetCode: false
 		Start: 2
 		ShadowStart: 5
+	damagefire1:
+		Offset: -2,-11,1
+	damagefire2:
+		Offset: 29,-35,1
 
 caoutp:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: -15, -50
 	idle-tower:
@@ -98,9 +124,14 @@ caoutp:
 	damaged-idle-tower-shadow:
 		UseTilesetCode: false
 		Start: 5
+	damagefire1:
+		Offset: -47,-53,1
+	damagefire2:
+		Offset: -58,-24,1
 
 caslab:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0, -45
 		TilesetOverrides:
@@ -117,3 +148,5 @@ caslab:
 		UseTilesetCode: false
 		Start: 3
 		ShadowStart: 7
+	damagefire1:
+		Offset: 17,-75,1

@@ -1,6 +1,7 @@
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
+	Inherits@damagefire: ^BuildingDamageFire3
 	Selectable:
 		Bounds: 96, 104, -2, -26
 	Building:
@@ -43,6 +44,18 @@ caoild:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire3:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire3-heavy:
+		RequiresCondition: dmg_crit
 
 caoild.rubble:
 	Inherits: ^Rubble
@@ -60,6 +73,7 @@ caoild.rubble:
 caairp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
@@ -111,6 +125,14 @@ caairp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
 
 caairp.rubble:
 	Inherits: ^Rubble
@@ -130,6 +152,7 @@ caairp.rubble:
 cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^6x4Shape
+	Inherits@damagefire: ^BuildingDamageFire4
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Building:
@@ -164,6 +187,22 @@ cahosp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire3:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire3-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire4:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire4-heavy:
+		RequiresCondition: dmg_crit
 
 cahosp.rubble:
 	Inherits: ^Rubble
@@ -183,6 +222,7 @@ cahosp.rubble:
 cathosp:
 	Inherits: cahosp
 	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Building:
@@ -192,6 +232,18 @@ cathosp:
 		Name: Tech Hospice
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
 
 cathosp.rubble:
 	Inherits: ^Rubble
@@ -215,6 +267,7 @@ caoutp:
 	Inherits@shape: ^4x3Shape
 	Inherits@experience: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAll
+	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Selectable:
@@ -263,6 +316,14 @@ caoutp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
 
 caoutp.rubble:
 	Inherits: ^Rubble
@@ -283,6 +344,7 @@ caoutp.rubble:
 caslab:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire1
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
@@ -299,6 +361,10 @@ caslab:
 	SmokeParticleEmitter@smallsmoke:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
