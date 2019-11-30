@@ -96,8 +96,8 @@ caairp:
 		Icon: airborne
 		ChargeInterval: 9000
 		Description: Airborne
-		LongDesc: A Cargo Plane drops three GIs\nand 2 GGIs anywhere on the map.
-		DropItems: ggi,ggi,e1,e1,e1
+		LongDesc: A Cargo Plane drops four GIs\nand 2 GGIs anywhere on the map.
+		DropItems: ggi,ggi,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane.allied
 		CameraActor: camera
