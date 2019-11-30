@@ -18,6 +18,8 @@ lasher:
 	WithVoxelTurret:
 	Voiced:
 		VoiceSet: LasherTankVoice
+	-Cloneable:
+	-ProductionTimeMultiplier@dropship:
 
 behold:
 	Inherits: ^Vehicle
