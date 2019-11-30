@@ -165,6 +165,36 @@
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	# AI setup
+	ProvidesPrerequisite@aideploy:
+		Prerequisite: primarybarracks
+		RequiresCondition: primary
+	GrantConditionOnPrerequisite@aideploy:
+		Condition: aihasprimarybarracks
+		Prerequisites: primarybarracks, testai
+	GrantConditionOnPrerequisite@aideploy-allied:
+		Condition: alliedengi
+		Prerequisites: alliedengi
+	GrantConditionOnPrerequisite@aideploy-soviet:
+		Condition: sovietengi
+		Prerequisites: sovietengi
+	AIDeployHelper:
+		RequiresCondition: !aihasprimarybarracks
+		DeployChance: 100
+		DeployTicks: 15
+		DeployTrigger: Periodically
+	PeriodicProducer@alliedengineer:
+		RequiresCondition: aihasprimarybarracks && alliedengi
+		ResetTraitOnEnable: true
+		Type: Barracks
+		Actors: aengineer
+		ChargeDuration: 1200
+	PeriodicProducer@sovietengineer:
+		RequiresCondition: aihasprimarybarracks && sovietengi
+		ResetTraitOnEnable: true
+		Type: Barracks
+		Actors: sengineer
+		ChargeDuration: 1200
 
 ^Refinery:
 	Inherits: ^Building

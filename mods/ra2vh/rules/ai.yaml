@@ -318,7 +318,7 @@ Player:
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair, htk.ai-repair, aero, gaunt
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair, htk.ai-repair, aero, gaunt, engineer, aengineer, sengineer
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -431,3 +431,8 @@ Player:
 		Plug: gapowrup
 		Pluggables: gapowr
 		Interval: 350
+	CaptureManagerBotASModule:
+		RequiresCondition: enable-test-ai
+		CapturingActorTypes: engineer, aengineer, sengineer
+		CheckCaptureTargetsForVisibility: false
+		PriorityCapturableActorTypes: caoild, caoild.rubble, caairp, caairp.rubble, cahosp, cahosp.rubble, cathosp, cathosp, caoutp, caoutp.rubble, caslab, caslab.rubble
