@@ -241,6 +241,9 @@ pdplane.soviet:
 pdplane.crate:
 	idle: cratplne
 
+pdplane.caairp:
+	idle: airpplne
+
 pick:
 	idle:
 

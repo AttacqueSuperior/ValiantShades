@@ -731,6 +731,27 @@ pdplane.crate:
 	-GrantConditionOnDamageState@damaged:
 	-Targetable@Temporal:
 
+pdplane.caairp:
+	Inherits: pdplane
+	-Targetable@airborne:
+	-Targetable@ground:
+	-Targetable@Repair:
+	-DamagedByTintedCells:
+	-GrantConditionOnDamageState@damaged:
+	-Targetable@Temporal:
+	SpawnActorOnDeath:
+		Actor: pdplane.caairp.husk
+
+pdplane.caairp.husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Cargo Plane
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 150
+	RenderVoxels:
+		Image: pdplane.caairp
+
 badger:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
