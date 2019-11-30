@@ -62,6 +62,10 @@ caoild:
 	WithIdleOverlay@damagefire3-heavy:
 		RequiresCondition: dmg_crit
 	UpdatesDerrickCount:
+	Explodes@derrick:
+		Weapon: OilDerrickExplosion
+		EmptyWeapon: OilDerrickExplosion
+		DeathTypes: DefaultDeath
 
 caoild.rubble:
 	Inherits: ^Rubble

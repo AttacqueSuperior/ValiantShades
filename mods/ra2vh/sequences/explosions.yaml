@@ -175,3 +175,5 @@ explosion:
 	cyborghit: cyborghit
 	forceshield: forcshld
 		BlendMode: Translucent
+	oilderrickexplosion1: brrlexp1
+	oilderrickexplosion2: brrlexp2

@@ -399,6 +399,15 @@ CRNukeE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
+OilDerrickExplosion:
+	Inherits: CRNuke
+	Warhead@1Dam: SpreadDamage
+		Falloff: 1000, 1000, 1000, 368, 135, 50, 18, 7, 0
+		Spread: 768
+	Warhead@2Eff: CreateEffect
+		Explosions: oilderrickexplosion1, oilderrickexplosion2
+		ExplosionPalette: effect
+
 NukePayload:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
