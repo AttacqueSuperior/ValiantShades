@@ -411,9 +411,9 @@ OilDerrickExplosion:
 NukePayload:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
-		Spread: 1c384
+		Spread: 1c128
 		Falloff: 100, 75, 50, 25, 12, 6, 3, 0
-		Damage: 600000
+		Damage: 850000
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 100
@@ -430,17 +430,16 @@ NukePayload:
 			ResistSupers: 25
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
-	Warhead@2Res_impact: DestroyResource
-		Size: 10
 	Warhead@3Eff_impact: CreateEffect
 		Explosions: nuke_explosion
 		ExplosionPalette: rookieapolloexp
 		ImpactSounds: snukexpl.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@4Radiation: CreateTintedCells
-		Spread: 1c948
-		Falloff: 100, 80, 60, 40, 20, 0
+		Spread: 2c512
+		Falloff: 100, 75, 50, 25, 0
 		Level: 750
+		MaxLevel: 2500
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: LargeCrater
 		Chance: 50
@@ -454,10 +453,7 @@ atomic:
 		ImpactSounds: snukintr.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
-		Damage: 1600000
-		DamageTypes: RadiationDeath, DefaultDeath
-		Delay: 25
-	Warhead@2Res_impact: DestroyResource
+		Damage: 2500000
 		Delay: 25
 	Warhead@3Eff_impact: CreateEffect
 		Explosions: donut_nuke_explosion
