@@ -324,8 +324,6 @@ gatech:
 		Sequence: idle-lights
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !lowpower
-	InfiltrateForSupportPower:
-		Proxy: allies.tech.infiltrated
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
@@ -361,6 +359,9 @@ gatech:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 2250
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: gatech.infiltrated
 
 garbur:
 	Inherits: ^Tier4
@@ -388,11 +389,12 @@ garbur:
 		Sequence: idle-top
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	InfiltrateForSupportPower:
-		Proxy: allies.tech.infiltrated
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1, e1
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: garbur.infiltrated
 
 gaorep:
 	Inherits: ^Building

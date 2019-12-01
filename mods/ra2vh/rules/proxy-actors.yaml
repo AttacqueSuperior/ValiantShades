@@ -6,10 +6,38 @@ warfactory.infiltrated:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
-allies.tech.infiltrated:
+gatech.infiltrated:
 	AlwaysVisible:
+	Interactable:
 	ProvidesPrerequisite:
+	Tooltip:
+		Name: Infiltrated Battle Lab
+	Buildable:
+		Description: Infiltrated Battle Lab
 
-soviets.tech.infiltrated:
+garbur.infiltrated:
 	AlwaysVisible:
+	Interactable:
 	ProvidesPrerequisite:
+	Tooltip:
+		Name: Infiltrated Research Bureau
+	Buildable:
+		Description: Infiltrated Research Bureau
+
+natek.infiltrated:
+	AlwaysVisible:
+	Interactable:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: Infiltrated Tech Center
+	Buildable:
+		Description: Infiltrated Tech Center
+
+natech.infiltrated:
+	AlwaysVisible:
+	Interactable:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: Infiltrated Palace
+	Buildable:
+		Description: Infiltrated Palace

@@ -305,8 +305,6 @@ natek:
 		Sequence: idle-body-lights
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	InfiltrateForSupportPower:
-		Proxy: soviets.tech.infiltrated
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
@@ -355,6 +353,9 @@ natek:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 1000
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: natek.infiltrated
 
 nanrct:
 	Inherits: ^Power
@@ -409,11 +410,12 @@ natech:
 		Prerequisites: natek, ~structures.soviets
 	Selectable:
 		Bounds: 152, 164, 0, -50
-	InfiltrateForSupportPower:
-		Proxy: soviets.tech.infiltrated
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: natech.infiltrated
 
 naindp:
 	Inherits: ^Building
