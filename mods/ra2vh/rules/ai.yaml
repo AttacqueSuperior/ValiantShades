@@ -387,6 +387,7 @@ Player:
 			bura: 10
 			gaunt: 3
 			empr: 1
+			topol: 1
 			zep: 1
 			yak: 15
 			fflash: 15
@@ -409,6 +410,7 @@ Player:
 			htk.ai-repair: 2
 			mind: 3
 			gaunt: 2
+			topol: 2
 			zep: 2
 			yak: 4
 			fflash: 6
