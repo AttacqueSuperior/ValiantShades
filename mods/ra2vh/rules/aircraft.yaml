@@ -293,7 +293,7 @@ thor:
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 90
 		Description: Heavy gunship armed with thunderstrikes\nand an anti-air laser.\nProvides additional protection\nto units under it.\n  Strong vs Units\n  Weak vs Buildings
-		Prerequisites: ~gaweap, gaairc, garbur
+		Prerequisites: ~gaweap, gaairc, garbur, garbur.infiltrated
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:

@@ -723,7 +723,7 @@ cosmo:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		BuildPaletteOrder: 150
-		Prerequisites: natek, ~nahand
+		Prerequisites: natek, naairc, ~nahand, gatech.infiltrated
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
 		Cost: 650
@@ -920,7 +920,7 @@ cyborg:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 180
-		Prerequisites: natek, ~nahand
+		Prerequisites: natek, ~nahand, natek.infiltrated
 		Description: Mechanical infantry with EMP grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 		IconPalette: cyboicon
 	Valued:

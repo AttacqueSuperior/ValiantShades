@@ -1043,7 +1043,7 @@ marks:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		Prerequisites: gatech, ~gapile
+		Prerequisites: gatech, ~gapile, gatech.infiltrated
 		BuildPaletteOrder: 200
 		Description: Allied infantry capable of pinpointing targets\nfor airstrikes. Unarmed otherwise.\n  Strong vs Ground\n  Weak vs Aircraft
 	Valued:
@@ -1233,7 +1233,7 @@ fairy:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 100
-		Prerequisites: ~gapile, gatech
+		Prerequisites: ~gapile, gatech, natek.infiltrated
 		Description: Assault infantry.\n  Strong vs Ground\n  Weak vs Air
 	Valued:
 		Cost: 800

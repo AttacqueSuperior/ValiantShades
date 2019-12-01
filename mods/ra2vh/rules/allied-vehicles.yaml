@@ -1521,7 +1521,7 @@ succ:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 120
-		Prerequisites: garbur, ~gaweap
+		Prerequisites: garbur, ~gaweap, natech.infiltrated
 		Description: Can temporarily take ownership of enemy units.\n Strong vs mindcontrollable units.
 	Mobile:
 		Speed: 75

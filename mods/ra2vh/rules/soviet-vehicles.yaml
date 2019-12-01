@@ -978,7 +978,7 @@ empr:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
-		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, natech, garbur.infiltrated
 		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground 
 	Mobile:
 		Speed: 75
@@ -1046,7 +1046,7 @@ topol:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
-		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, natech, natech.infiltrated
 		Description: ICBM launcher.\nStrong vs. Ground
 	Mobile:
 		Speed: 30
