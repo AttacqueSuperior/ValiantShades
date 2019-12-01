@@ -347,8 +347,8 @@
 	KillsSelf:
 		RemoveInstead: true
 	SequencePlaceBuildingPreview:
-		Sequence: place
-		SequencePalette: placebuilding
+		# Sequence: place
+		# SequencePalette: placebuilding
 		Palette: placefootprint
 	RenderSprites:
 
