@@ -207,6 +207,10 @@
 		Name: gemdrill
 		Color: 8470FF
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PaletteFromFile@tibdawn:
+		Name: tibdawn
+		Filename: tibdawn.pal
+		ShadowIndex: 4
 	PaletteFromRGBA@shadow:
 		Name: shadow
 		R: 0
