@@ -354,8 +354,14 @@ natek:
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 1000
 	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
 		Proxy: natek.infiltrated
+
+natek.ai.cheatplug:
+	Inherits: ^BuildingPlug
+	Tooltip:
+		Name: AI Cheatplug
+	Plug:
+		Type: natek.ai.cheatplug
 
 nanrct:
 	Inherits: ^Power
@@ -414,8 +420,14 @@ natech:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
 		Proxy: natech.infiltrated
+
+natech.ai.cheatplug:
+	Inherits: ^BuildingPlug
+	Tooltip:
+		Name: AI Cheatplug
+	Plug:
+		Type: natech.ai.cheatplug
 
 naindp:
 	Inherits: ^Building

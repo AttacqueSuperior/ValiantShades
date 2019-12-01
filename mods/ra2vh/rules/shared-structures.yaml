@@ -595,6 +595,9 @@
 		Name: Tech Center
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
+	ProvidesPrerequisite@tier:
+		RequiresCondition: !build-incomplete && !powerdown
+		Prerequisite: tier3
 	Building:
 		Footprint: xx xx xx
 		Dimensions: 3,2
@@ -626,6 +629,28 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy && check-forceshield
+	GrantConditionOnBotOwner@test:
+		Condition: test-ai
+		Bots: test
+	Pluggable@1:
+		Offset: 0,0
+		Conditions:
+			gatech.ai.cheatplug: gatech.ai.cheatplug
+		Requirements:
+			gatech.ai.cheatplug: !build-incomplete && !gatech.ai.cheatplug && !being-warped
+	Pluggable@2:
+		Offset: 0,1
+		Conditions:
+			natek.ai.cheatplug: natek.ai.cheatplug
+		Requirements:
+			natek.ai.cheatplug: !build-incomplete && !natek.ai.cheatplug && !being-warped
+	ProvidesPrerequisite@ai-allied-stolentech:
+		Prerequisite: gatech.infiltrated
+		RequiresCondition: !build-incomplete && !being-warped && test-ai && gatech.ai.cheatplug
+	ProvidesPrerequisite@ai-soviet-stolentech:
+		Prerequisite: natek.infiltrated
+		RequiresCondition: !build-incomplete && !being-warped && test-ai && natek.ai.cheatplug
+
 ^Tier4:
 	Inherits: ^Building
 	Inherits@shape: ^3x3Shape
@@ -638,6 +663,9 @@
 		Cost: 3000
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
+	ProvidesPrerequisite@tier:
+		RequiresCondition: !build-incomplete && !powerdown
+		Prerequisite: tier4
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -669,6 +697,27 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy && check-forceshield
+	GrantConditionOnBotOwner@test:
+		Condition: test-ai
+		Bots: test
+	Pluggable@1:
+		Offset: 0,0
+		Conditions:
+			garbur.ai.cheatplug: garbur.ai.cheatplug
+		Requirements:
+			garbur.ai.cheatplug: !build-incomplete && !garbur.ai.cheatplug && !being-warped
+	Pluggable@2:
+		Offset: 0,1
+		Conditions:
+			natech.ai.cheatplug: natech.ai.cheatplug
+		Requirements:
+			natech.ai.cheatplug: !build-incomplete && !natech.ai.cheatplug && !being-warped
+	ProvidesPrerequisite@ai-allied-stolentech:
+		Prerequisite: garbur.infiltrated
+		RequiresCondition: !build-incomplete && !being-warped && test-ai && garbur.ai.cheatplug
+	ProvidesPrerequisite@ai-soviet-stolentech:
+		Prerequisite: natech.infiltrated
+		RequiresCondition: !build-incomplete && !being-warped && test-ai && natech.ai.cheatplug
 
 power:
 	AlwaysVisible:

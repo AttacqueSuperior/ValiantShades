@@ -360,8 +360,14 @@ gatech:
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 2250
 	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
 		Proxy: gatech.infiltrated
+
+gatech.ai.cheatplug:
+	Inherits: ^BuildingPlug
+	Tooltip:
+		Name: AI Cheatplug
+	Plug:
+		Type: gatech.ai.cheatplug
 
 garbur:
 	Inherits: ^Tier4
@@ -393,8 +399,14 @@ garbur:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1, e1, e1
 	InfiltrateForSupportPower:
-		Types: SpyInfiltrate
 		Proxy: garbur.infiltrated
+
+garbur.ai.cheatplug:
+	Inherits: ^BuildingPlug
+	Tooltip:
+		Name: AI Cheatplug
+	Plug:
+		Type: garbur.ai.cheatplug
 
 gaorep:
 	Inherits: ^Building

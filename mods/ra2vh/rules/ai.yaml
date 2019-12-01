@@ -438,3 +438,35 @@ Player:
 		CapturingActorTypes: engineer, aengineer, sengineer
 		CheckCaptureTargetsForVisibility: false
 		PriorityCapturableActorTypes: caoild, caoild.rubble, caairp, caairp.rubble, cahosp, cahosp.rubble, cathosp, cathosp, caoutp, caoutp.rubble, caslab, caslab.rubble
+	GrantConditionOnPrerequisite@allow-allied-tier3:
+		Condition: allow-allied-tier3-plug
+		Prerequisites: tier3, !gatech.infiltrated
+	PlugSpawnerBotModule@allow-allied-tier3:
+		RequiresCondition: enable-test-ai && allow-allied-tier3-plug
+		Plug: gatech.ai.cheatplug
+		Pluggables: gatech, natek
+		Interval: 5000
+	GrantConditionOnPrerequisite@allow-soviet-tier3:
+		Condition: allow-soviet-tier3-plug
+		Prerequisites: tier3, !natek.infiltrated
+	PlugSpawnerBotModule@allow-soviet-tier3:
+		RequiresCondition: enable-test-ai && allow-soviet-tier3-plug
+		Plug: natek.ai.cheatplug
+		Pluggables: gatech, natek
+		Interval: 5000
+	GrantConditionOnPrerequisite@allow-allied-tier4:
+		Condition: allow-allied-tier4-plug
+		Prerequisites: tier4, !garbur.infiltrated
+	PlugSpawnerBotModule@allow-allied-tier4:
+		RequiresCondition: enable-test-ai && allow-allied-tier4-plug
+		Plug: garbur.ai.cheatplug
+		Pluggables: garbur, natech
+		Interval: 7500
+	GrantConditionOnPrerequisite@allow-soviet-tier4:
+		Condition: allow-soviet-tier4-plug
+		Prerequisites: tier4, !natech.infiltrated
+	PlugSpawnerBotModule@allow-soviet-tier4:
+		RequiresCondition: enable-test-ai && allow-soviet-tier4-plug
+		Plug: natech.ai.cheatplug
+		Pluggables: garbur, natech
+		Interval: 7500
