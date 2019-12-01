@@ -587,7 +587,7 @@
 	Cloneable:
 		Types: vehicle
 	ProductionTimeMultiplier@dropship:
-		Multiplier: 125
+		Multiplier: 150
 		Prerequisites: gadrop
 
 ^AffectedByThor:
