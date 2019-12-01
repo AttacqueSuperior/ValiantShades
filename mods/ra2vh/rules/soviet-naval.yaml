@@ -170,6 +170,7 @@ sqd:
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^SovietVeteranRank
+	Inherits@hospital: ^HospitalHeal
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40

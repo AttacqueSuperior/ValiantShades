@@ -612,3 +612,23 @@
 		Condition: forceshield
 	ExternalCondition@forceshield:
 		Condition: forceshield
+
+^HospitalHeal:
+	SelfHealing@hospital:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: hospital
+	WithDecoration@hospital:
+		Image: pips
+		Sequence: medic
+		Palette: pips
+		ReferencePoint: Top, Right
+		RequiresCondition: hospital
+		ZOffset: 256
+		ValidStances: Ally
+	GrantConditionOnPrerequisite@hospital:
+		Condition: hospital
+		Prerequisites: hospital

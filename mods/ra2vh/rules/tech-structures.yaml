@@ -203,11 +203,11 @@ cahosp:
 	RevealOnDeath:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
-	RepairsUnits:
-		StartRepairingNotification:
-		HpPerStep: 10000
 	RallyPoint:
+	GrantConditionIfOwnerIsNeutral:
+		Condition: ownerless
 	WithIdleOverlay:
+		PauseOnCondition: ownerless
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 0,-500,2520
@@ -235,6 +235,9 @@ cahosp:
 		RequiresCondition: dmg_heavy && !dmg_crit
 	WithIdleOverlay@damagefire4-heavy:
 		RequiresCondition: dmg_crit
+	ProvidesPrerequisite@hospital:
+		Prerequisite: hospital
+		RequiresCondition: !ownerless
 
 cahosp.rubble:
 	Inherits: ^Rubble

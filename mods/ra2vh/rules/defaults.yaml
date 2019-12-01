@@ -467,6 +467,7 @@
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
+	Inherits@hospital: ^HospitalHeal
 	Health:
 	OwnerLostAction:
 		Action: Kill

@@ -150,6 +150,7 @@ dlph:
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^AlliedVeteranRank
+	Inherits@hospital: ^HospitalHeal
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
