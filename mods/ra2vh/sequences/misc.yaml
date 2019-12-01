@@ -383,6 +383,14 @@ fireball:
 		Length: *
 		Tick: 80
 
+meteor:
+	Defaults:
+		Length: *
+	large: metlarge
+	small: metsmall
+	large-trailer: metltral
+	small-trailer: metstral
+
 moveflsh:
 	idle: ring
 		Length: *

@@ -866,3 +866,74 @@ ForceShieldPower:
 		Condition: forceshield
 		ValidStances: Ally
 		AffectsParent: true
+
+MeteorSpawner:
+	ReloadDelay: 1
+	Projectile: InstantExplode
+	Warhead@large: FireShrapnel
+		Weapon: MeteorLarge
+		Amount: 1
+		ValidTargets: Air
+	Warhead@small: FireShrapnel
+		Weapon: MeteorSmall
+		Amount: 2
+		Delay: 2
+		ValidTargets: Air
+
+^Meteor:
+	ReloadDelay: 60
+	Range: 9c0
+	Projectile: BulletAS
+		Speed: 512, 1024
+		LaunchAngle: 896, 1023
+		Image: meteor
+		Shadow: true
+		Palette: tsanim
+		TrailImage: meteor
+		TrailPalette: heroictsexp
+	Warhead@1Dam: HealthPercentageDamage
+		Spread: 1c256
+		Damage: 8
+		DamageTypes: RadiationDeath, DefaultDeath
+	Warhead@2Dam: HealthPercentageDamage
+		Spread: 2c512
+		Damage: 8
+		DamageTypes: RadiationDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
+		ImpactSounds: gexp07a.wav
+		InvalidTargets: Water
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size3
+		ExplosionPalette: heroicwaterexp
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+MeteorLarge:
+	Inherits: ^Meteor
+	Projectile: BulletAS
+		Sequences: large
+		TrailSequences: large-trailer
+	Warhead@2Dam: HealthPercentageDamage
+		Spread: 3c768
+		Damage: 8
+		DamageTypes: RadiationDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: largemeteorexp		
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size2
+	Warhead@Res: CreateResource
+		AddsResourceType: Tiberium
+		Size: 1
+
+MeteorSmall:
+	Inherits: ^Meteor
+	Projectile: BulletAS
+		Sequences: small
+		TrailSequences: small-trailer
+	Warhead@2Eff: CreateEffect
+		Explosions: smallmeteorexp
+	Warhead@Res: CreateResource
+		AddsResourceType: Tiberium
+		Size: 0

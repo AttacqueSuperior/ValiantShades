@@ -177,3 +177,5 @@ explosion:
 		BlendMode: Translucent
 	oilderrickexplosion1: brrlexp1
 	oilderrickexplosion2: brrlexp2
+	largemeteorexp: lmeteorhit
+	smallmeteorexp: smeteorhit
