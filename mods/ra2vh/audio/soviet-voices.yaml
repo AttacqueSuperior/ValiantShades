@@ -242,6 +242,13 @@ EmpressVoice:
 		Move: vemprmoa, vemprmob, vemprmoc, vemprmod, vemprmoe, vemprmof, vemprmog
 		Attack: vemprata, vempratb, vempratc, vempratd, vemprate, vempratf
 
+TopolMVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vtoplsea, vtoplseb, vtoplsec, vtoplsed, vtoplsee, vtoplsef
+		Move: vtoplmoa, vtoplmob, vtoplmoc, vtoplmod, vtoplmoe, vtoplmof
+		Attack: vtoplata, vtoplatb, vtoplatc, vtoplatd, vtoplate, vtoplatf, vtoplatg
+
 BeholderVoice:
 	DefaultVariant: .wav
 	Voices:
