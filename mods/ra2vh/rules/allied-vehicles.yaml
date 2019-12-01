@@ -1065,7 +1065,7 @@ fv.ai5:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, garbur, ~testai
+		Prerequisites:  ~gaweap, gafcmd, ~gatech, ~testai, ~gatech.infiltrated
 
 sref:
 	Inherits: ^Vehicle
@@ -1324,7 +1324,7 @@ bfrt.ai3:
 		Class: bfrt
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: garbur, ~gaweap, ~testai
+		Prerequisites: garbur, ~gaweap, ~testai, ~gatech.infiltrated, ~natek.infiltrated
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
 aero:
