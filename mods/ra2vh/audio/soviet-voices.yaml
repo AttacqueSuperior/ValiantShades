@@ -129,10 +129,10 @@ CosmonautVoice:
 CyborgVoice:
 	Inherits: ^InfantryDeath
 	Voices:
-		Select: ikamsea, ikamseb, ikamsec, ikamsed
-		Move: ikammoa, ikammob, ikammoc, ikammod, ikammoe, ikamomof, ikammog
-		Attack: ikammoa, ikammob, ikammoc, ikammod, ikammoe, ikamomof, ikammog
-		Die: ikamdia, ikamdib, ikamdic
+		Select: icybsea, icybseb, icybsec
+		Move: icybmoa, icybmob, icybmoc, icybata
+		Attack: icybata, icybatb, icybatc, icybatd
+		Die: icybdia, icybdib, icybdic
 
 SovietVehicleVoice:
 	DefaultVariant: .wav
