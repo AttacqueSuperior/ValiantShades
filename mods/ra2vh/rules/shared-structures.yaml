@@ -618,13 +618,6 @@
 		Types: SpyInfiltrate
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	GrantConditionOnBotOwner@test:
-		Condition: botowned
-		Bots: test
-	ResourcePurifier:
-		Modifier: 15
-		RequiresCondition: !build-incomplete && !being-warped && !powerdown && botowned
-		ShowTicks: false
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
@@ -668,13 +661,6 @@
 		Types: SpyInfiltrate
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	GrantConditionOnBotOwner@test:
-		Condition: botowned
-		Bots: test
-	ResourcePurifier:
-		Modifier: 30
-		RequiresCondition: !build-incomplete && !being-warped && !powerdown && botowned
-		ShowTicks: false
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
