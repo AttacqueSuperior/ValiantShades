@@ -23,7 +23,7 @@ shad:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 80
 		Prerequisites: ~gaweap, gaairc
 		Description: Infantry Transport Helicopter\nUndetectable by radar.\nGets additional firepower when manned by infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
@@ -291,7 +291,7 @@ thor:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 150
 		Description: Heavy gunship armed with thunderstrikes\nand an anti-air laser.\nProvides additional protection\nto units under it.\n  Strong vs Units\n  Weak vs Buildings
 		Prerequisites: ~gaweap, gaairc, garbur, garbur.infiltrated
 	Selectable:

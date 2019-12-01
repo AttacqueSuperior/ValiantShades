@@ -6,7 +6,7 @@ amcv:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 60
 		Prerequisites: gafcmd, ~gaweap
 		Description: Deploys into a Construction Yard.
 	Valued:
@@ -151,7 +151,7 @@ hmmv:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
 		Description: Infantry Transport and Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
@@ -268,7 +268,7 @@ ltnk:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: ~gaweap
 		Description: Have a limited amount of missiles for attacking\narmor and air. Also armed with a cannon.\n  Strong vs Vehicles, Ships, Aircraft\n  Weak vs Infantry, Structures
 		IconPalette: ltnkicon
@@ -340,6 +340,7 @@ mtnk:
 	Buildable:
 		Prerequisites: ~gaweap, gafcmd
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+		BuildPaletteOrder: 40
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 640,0,512
@@ -372,7 +373,7 @@ tnkd:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 70
 		Prerequisites: ~gaweap, gafcmd #, ~vehicles.germany
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
@@ -423,7 +424,7 @@ fv:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 130
+		BuildPaletteOrder: 50
 		Prerequisites: ~gaweap, gafcmd
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
@@ -1077,7 +1078,7 @@ sref:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 100
 		Prerequisites: gatech, ~gaweap
 		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
@@ -1153,7 +1154,7 @@ mgtk:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 90
 		Prerequisites: gatech, ~gaweap
 		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
@@ -1213,7 +1214,7 @@ bfrt:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 110
 		Prerequisites: garbur, ~gaweap
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.
 	Valued:
@@ -1337,7 +1338,7 @@ aero:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 130
 		Prerequisites: garbur, ~gaweap
 		Description: Heavy anti-air weapon,\narmed with dual laser beams.\n  Strong vs Aircraft
 	Valued:
@@ -1398,7 +1399,7 @@ chrp:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 120
 		Prerequisites: garbur, ~gaweap
 		Description: Heavy vehicle armed with a heavy temporal cannon.\nCannot target structures.\nImmune to mindcontrol and berserk.\n  Strong vs Vehicles, Infantry\n  Weak vs Structures
 	Mobile:
@@ -1462,7 +1463,7 @@ mgg:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 95
+		BuildPaletteOrder: 140
 		Prerequisites: ~gaweap, gatech
 		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nUnarmed.
 	Mobile:
@@ -1520,7 +1521,7 @@ succ:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 160
 		Prerequisites: garbur, ~gaweap, natech.infiltrated
 		Description: Can temporarily take ownership of enemy units.\n Strong vs mindcontrollable units.
 	Mobile:
