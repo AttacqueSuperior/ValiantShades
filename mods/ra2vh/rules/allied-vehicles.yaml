@@ -1489,8 +1489,8 @@ mgg:
 		TickRate: 3
 	Voiced:
 		VoiceSet: MobileGapGeneratorVoice
-	# ProducibleWithLevel:
-	#	Prerequisites: warfactory.infiltrated
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	CreatesShroud:
 		Range: 5c0
