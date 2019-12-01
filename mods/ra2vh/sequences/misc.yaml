@@ -391,6 +391,10 @@ meteor:
 	large-trailer: metltral
 	small-trailer: metstral
 
+topolm:
+	up: topolup
+	down: topoldown
+
 moveflsh:
 	idle: ring
 		Length: *

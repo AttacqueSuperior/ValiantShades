@@ -297,6 +297,11 @@ tnkd:
 	Inherits@MC: ^MindControllable
 	icon: tnkdicon
 
+topol:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 tractor:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

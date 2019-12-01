@@ -1029,3 +1029,224 @@ empr:
 	ExplodeWeapon@selfcurtain:
 		RequiresCondition: selfcurtain
 		Weapon: EmpressSelfCurtain
+
+topol:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Topol-M Launcher
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 160
+		Prerequisites: ~naweap, natech
+		Description: ICBM launcher.\nStrong vs. Ground
+	Mobile:
+		Speed: 30
+		TurnSpeed: 1
+		Locomotor: heavytracked
+		PauseOnCondition: disabled || raise
+	-Crushable:
+	Health:
+		HP: 225000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	Armament@primary:
+		Weapon: TopolRaise
+		PauseOnCondition: !loaded
+	Armament@secondary:
+		Weapon: TopolMissile
+		Name: secondary
+		RequiresCondition: loaded && raise > 23
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+		FacingTolerance: 127
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: ChronoPrisonVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	SelfHealing:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		DamageCooldown: 150
+		HealIfBelow: 50
+	Explodes:
+		Weapon: UnitExplodeMedium
+		EmptyWeapon: UnitExplodeMedium
+	Explodes@topol:
+		Type: CenterPosition
+		Weapon: TopolMissile
+		EmptyWeapon: TopolMissile
+		DeathTypes: DefaultDeath
+		RequiresCondition: loaded
+	ReloadAmmoPoolAS:
+		Delay: 1750
+	AmmoPool:
+		Armaments: secondary
+		InitialAmmo: 0
+		AmmoCondition: loaded
+	GrantConditionOnAttack:
+		Condition: raise
+		MaximumInstances: 25
+		RevokeDelay: 15
+	ExplodeWeapon@klaxon1:
+		RequiresCondition: loaded && raise == 4
+		Weapon: TopolKlaxon
+	ExplodeWeapon@klaxon2:
+		RequiresCondition: loaded && raise == 8
+		Weapon: TopolKlaxon
+	ExplodeWeapon@klaxon3:
+		RequiresCondition: loaded && raise == 12
+		Weapon: TopolKlaxon
+	ExplodeWeapon@klaxon4:
+		RequiresCondition: loaded && raise == 16
+		Weapon: TopolKlaxon
+	ExplodeWeapon@klaxon5:
+		RequiresCondition: loaded && raise == 20
+		Weapon: TopolKlaxon
+	WithVoxelBody@tube0:
+		RequiresCondition: !raise
+		Sequence: tube0
+	WithVoxelBody@tube1:
+		RequiresCondition: raise == 1
+		Sequence: tube1
+	WithVoxelBody@tube2:
+		RequiresCondition: raise == 2
+		Sequence: tube2
+	WithVoxelBody@tube3:
+		RequiresCondition: raise == 3
+		Sequence: tube3
+	WithVoxelBody@tube4:
+		RequiresCondition: raise == 4
+		Sequence: tube4
+	WithVoxelBody@tube5:
+		RequiresCondition: raise == 5
+		Sequence: tube5
+	WithVoxelBody@tube6:
+		RequiresCondition: raise == 6
+		Sequence: tube6
+	WithVoxelBody@tube7:
+		RequiresCondition: raise == 7
+		Sequence: tube7
+	WithVoxelBody@tube8:
+		RequiresCondition: raise == 8
+		Sequence: tube8
+	WithVoxelBody@tube9:
+		RequiresCondition: raise == 9
+		Sequence: tube9
+	WithVoxelBody@tube10:
+		RequiresCondition: raise == 10
+		Sequence: tube10
+	WithVoxelBody@tube11:
+		RequiresCondition: raise == 11
+		Sequence: tube11
+	WithVoxelBody@tube12:
+		RequiresCondition: raise == 12
+		Sequence: tube12
+	WithVoxelBody@tube13:
+		RequiresCondition: raise == 13
+		Sequence: tube13
+	WithVoxelBody@tube14:
+		RequiresCondition: raise == 14
+		Sequence: tube14
+	WithVoxelBody@tube15:
+		RequiresCondition: raise == 15
+		Sequence: tube15
+	WithVoxelBody@tube16:
+		RequiresCondition: raise == 16
+		Sequence: tube16
+	WithVoxelBody@tube17:
+		RequiresCondition: raise == 17
+		Sequence: tube17
+	WithVoxelBody@tube18:
+		RequiresCondition: raise == 18
+		Sequence: tube18
+	WithVoxelBody@tube19:
+		RequiresCondition: raise == 19
+		Sequence: tube19
+	WithVoxelBody@tube20:
+		RequiresCondition: raise > 19
+		Sequence: tube20
+	WithVoxelBody@cap0:
+		RequiresCondition: loaded && !raise
+		Sequence: cap0
+	WithVoxelBody@cap1:
+		RequiresCondition: loaded && raise == 1
+		Sequence: cap1
+	WithVoxelBody@cap2:
+		RequiresCondition: loaded && raise == 2
+		Sequence: cap2
+	WithVoxelBody@cap3:
+		RequiresCondition: loaded && raise == 3
+		Sequence: cap3
+	WithVoxelBody@cap4:
+		RequiresCondition: loaded && raise == 4
+		Sequence: cap4
+	WithVoxelBody@cap5:
+		RequiresCondition: loaded && raise == 5
+		Sequence: cap5
+	WithVoxelBody@cap6:
+		RequiresCondition: loaded && raise == 6
+		Sequence: cap6
+	WithVoxelBody@cap7:
+		RequiresCondition: loaded && raise == 7
+		Sequence: cap7
+	WithVoxelBody@cap8:
+		RequiresCondition: loaded && raise == 8
+		Sequence: cap8
+	WithVoxelBody@cap9:
+		RequiresCondition: loaded && raise == 9
+		Sequence: cap9
+	WithVoxelBody@cap10:
+		RequiresCondition: loaded && raise == 10
+		Sequence: cap10
+	WithVoxelBody@cap11:
+		RequiresCondition: loaded && raise == 11
+		Sequence: cap11
+	WithVoxelBody@cap12:
+		RequiresCondition: loaded && raise == 12
+		Sequence: cap12
+	WithVoxelBody@cap13:
+		RequiresCondition: loaded && raise == 13
+		Sequence: cap13
+	WithVoxelBody@cap14:
+		RequiresCondition: loaded && raise == 14
+		Sequence: cap14
+	WithVoxelBody@cap15:
+		RequiresCondition: loaded && raise == 15
+		Sequence: cap15
+	WithVoxelBody@cap16:
+		RequiresCondition: loaded && raise == 16
+		Sequence: cap16
+	WithVoxelBody@cap17:
+		RequiresCondition: loaded && raise == 17
+		Sequence: cap17
+	WithVoxelBody@cap18:
+		RequiresCondition: loaded && raise == 18
+		Sequence: cap18
+	WithVoxelBody@cap19:
+		RequiresCondition: loaded && raise == 19
+		Sequence: cap19
+	WithVoxelBody@cap20:
+		RequiresCondition: loaded && raise > 19
+		Sequence: cap20

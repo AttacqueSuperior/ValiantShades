@@ -321,6 +321,51 @@ thor:
 tnkd:
 	idle:
 
+topol:
+	idle:
+	tube0: topoltur00
+	tube1: topoltur01
+	tube2: topoltur02
+	tube3: topoltur03
+	tube4: topoltur04
+	tube5: topoltur05
+	tube6: topoltur06
+	tube7: topoltur07
+	tube8: topoltur08
+	tube9: topoltur09
+	tube10: topoltur10
+	tube11: topoltur11
+	tube12: topoltur12
+	tube13: topoltur13
+	tube14: topoltur14
+	tube15: topoltur15
+	tube16: topoltur16
+	tube17: topoltur17
+	tube18: topoltur18
+	tube19: topoltur19
+	tube20: topoltur20
+	cap0: topolbarl00
+	cap1: topolbarl01
+	cap2: topolbarl02
+	cap3: topolbarl03
+	cap4: topolbarl04
+	cap5: topolbarl05
+	cap6: topolbarl06
+	cap7: topolbarl07
+	cap8: topolbarl08
+	cap9: topolbarl09
+	cap10: topolbarl10
+	cap11: topolbarl11
+	cap12: topolbarl12
+	cap13: topolbarl13
+	cap14: topolbarl14
+	cap15: topolbarl15
+	cap16: topolbarl16
+	cap17: topolbarl17
+	cap18: topolbarl18
+	cap19: topolbarl19
+	cap20: topolbarl20
+
 tractor:
 	idle:
 

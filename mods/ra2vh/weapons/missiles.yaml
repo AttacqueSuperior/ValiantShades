@@ -589,3 +589,67 @@ GauntletMissileE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+TopolRaise:
+	Range: 32c512
+	ReloadDelay: 12
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+
+TopolMissile:
+	Range: 32c512
+	ReloadDelay: 60
+	Report: icbm1.wav
+	Projectile: NukeLaunch
+		MissileWeapon: TopolMissile
+		MissileImage: topolm
+		MissilePalette: player
+		IsPlayerPalette: true
+		FlightDelay: 250
+		TrailImage: nukesmoke
+		TrailPalette: rookieapolloexp
+		TrailSequences: idle
+		TrailDelay: 0
+		TrailInterval: 2
+	Warhead@1Dam_impact: SpreadDamage
+		Spread: 1c128
+		Falloff: 100, 75, 50, 25, 12, 6, 3, 0
+		Damage: 850000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 200
+			Medium: 100
+			Heavy: 100
+			Wood: 100
+			Steel: 100
+			Concrete: 80
+			Drone: 100
+			Rocket: 100
+			ResistSupers: 25
+		AffectsParent: true
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
+	Warhead@3Eff_impact: CreateEffect
+		Explosions: nuke_explosion
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: snukexpl.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@4Radiation: CreateTintedCells
+		Spread: 2c512
+		Falloff: 100, 75, 50, 25, 0
+		Level: 500
+		MaxLevel: 2500
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: LargeCrater
+		Chance: 50
+	Warhead@flames: FireFragment
+		Weapon: HugeFlame
+
+TopolKlaxon:
+	ReloadDelay: 15000
+	Projectile: InstantExplode
+	Warhead@1Dam: TargetDamage
+	Warhead@2Eff: CreateEffect
+		ImpactSounds: klax1.wav
