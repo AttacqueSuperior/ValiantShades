@@ -37,7 +37,7 @@ shad:
 		PauseOnCondition: disabled
 	Aircraft:
 		CruiseAltitude: 3072
-		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
 		TurnSpeed: 10
 		Speed: 140
 		AltitudeVelocity: 120
@@ -170,7 +170,7 @@ hind:
 		Type: CenterPosition
 	Aircraft:
 		CruiseAltitude: 3072
-		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
 		TurnSpeed: 10
 		Speed: 125
 		AltitudeVelocity: 120

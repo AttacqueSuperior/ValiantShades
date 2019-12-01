@@ -44,3 +44,7 @@ resources:
 	gem10: gem10
 	gem11: gem11
 	gem12: gem12
+	tdtib01: tdtib01
+		UseTilesetExtension: false
+		ShadowStart: -1
+		Offset: 0, 0

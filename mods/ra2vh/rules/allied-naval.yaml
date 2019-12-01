@@ -34,7 +34,7 @@ lcrf:
 		MaxWeight: 12
 		PipCount: 12
 		PassengerFacing: 96
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
 		LoadingCondition: loading
 	WithVoxelBody:

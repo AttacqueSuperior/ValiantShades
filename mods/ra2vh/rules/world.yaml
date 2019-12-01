@@ -22,8 +22,9 @@
 			Road: 133
 			Bridge: 133
 			DirtRoad: 133
-			Ore: 120
+			Ore: 107
 			Gems: 107
+			Tiberium: 107
 	Locomotor@SWIMSUIT:
 		Name: swimsuit
 		Crushes: crate, mine
@@ -36,8 +37,9 @@
 			Road: 133
 			Bridge: 133
 			DirtRoad: 133
-			Ore: 120
+			Ore: 107
 			Gems: 107
+			Tiberium: 107
 			Water: 93
 	Locomotor@FLAMEGUY:
 		Name: flameguy
@@ -50,6 +52,7 @@
 			Rough: 40
 			Ore: 45
 			Gems: 45
+			Tiberium: 45
 	Locomotor@WHEELED:
 		Name: wheeled
 		Crushes: crate, mine
@@ -64,6 +67,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 	Locomotor@DRONE:
 		Name: drone
 		SharesCell: true
@@ -79,6 +83,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 	Locomotor@TRACKED:
 		Name: tracked
 		Crushes: crate, infantry, mine
@@ -93,6 +98,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
 		Crushes: fence, crate, infantry, mine
@@ -107,6 +113,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 	Locomotor@OMNICRUSHER:
 		Name: omnicrusher
 		Crushes: fence, wall, crate, infantry, vehicle, mine
@@ -121,6 +128,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 	Locomotor@NAVAL:
 		Name: naval
 		Crushes: crate
@@ -140,6 +148,7 @@
 			Beach: 133
 			Ore: 93
 			Gems: 93
+			Tiberium: 93
 			Water: 133
 	ShroudRenderer:
 		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
@@ -230,6 +239,18 @@
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
+	ResourceType@Tiberium:
+		ResourceType: 3
+		Palette: tibdawn
+		Sequences: tdtib01
+		MaxDensity: 12
+		ValuePerUnit: 75
+		Type: Tiberium
+		Name: Valuable Tiberium - ($75/bale)
+		PipColor: Green
+		AllowedTerrainTypes: Clear, Rough, Road
+		AllowUnderActors: false
+		TerrainType: Tiberium
 	CliffBackImpassabilityLayer:
 
 World:

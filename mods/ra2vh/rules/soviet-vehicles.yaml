@@ -83,7 +83,7 @@ harv:
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
-		Resources: Ore, Gems
+		Resources: Ore, Gems, Tiberium
 		BaleLoadDelay: 8
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 30
@@ -237,7 +237,7 @@ htk:
 		MaxWeight: 5
 		PipCount: 5
 		PassengerFacing: 0
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
 		LoadingCondition: loading
 		PassengerConditions:

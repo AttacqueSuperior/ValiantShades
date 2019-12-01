@@ -59,6 +59,11 @@ Terrain:
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
 		Color: 8470FF
 		TargetTypes: Ground
+	TerrainType@Tiberium:
+		Type: Tiberium
+		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
+		Color: 00FF00
+		TargetTypes: Ground
 
 Templates:
 	Template@0:
