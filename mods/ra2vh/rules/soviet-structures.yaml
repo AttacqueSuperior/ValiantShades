@@ -187,6 +187,8 @@ naweap:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2
+	PeriodicProducer@repairvehicle:
+		Actors: htk.ai-repair
 
 naradr:
 	Inherits: ^Tier2

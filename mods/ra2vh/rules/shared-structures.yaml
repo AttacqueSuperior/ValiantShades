@@ -345,6 +345,23 @@
 		Condition: roof-open
 		Duration: 100
 		ShowSelectionBar: false
+	# AI setup
+	ProvidesPrerequisite@aideploy:
+		Prerequisite: primarywarfactory
+		RequiresCondition: primary
+	GrantConditionOnPrerequisite@aideploy:
+		Condition: aihasprimarywarfactory
+		Prerequisites: primarywarfactory, testai
+	AIDeployHelper:
+		RequiresCondition: !aihasprimarywarfactory
+		DeployChance: 100
+		DeployTicks: 15
+		DeployTrigger: Periodically
+	PeriodicProducer@repairvehicle:
+		RequiresCondition: aihasprimarywarfactory
+		ResetTraitOnEnable: true
+		Type: WarFactory
+		ChargeDuration: 2500
 
 ^Tier2:
 	Inherits: ^Building

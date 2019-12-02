@@ -219,6 +219,8 @@ gaweap:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1, e1
+	PeriodicProducer@repairvehicle:
+		Actors: hmmv.ai-repair
 
 gafcmd:
 	Inherits: ^Tier2

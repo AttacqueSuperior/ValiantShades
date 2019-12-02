@@ -318,7 +318,7 @@ Player:
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, hmmv.ai-repair, htk.ai-repair, aero, gaunt, engineer, aengineer, sengineer
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, aero, gaunt, engineer, aengineer, sengineer
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
