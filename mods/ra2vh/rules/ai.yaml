@@ -253,21 +253,21 @@ Player:
 		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, naairc
 		PlaceDefenseTowardsEnemyChance: 5
 		BuildingLimits:
-			garefn: 4
-			gapile: 3
-			gaweap: 4
+			garefn: 5
+			gapile: 4
+			gaweap: 5
 			gafcmd: 1
-			gaairc: 2
+			gaairc: 3
 			gatech: 1
 			garbur: 1
 			gagap: 3
 			gaspysat: 1
 			gacran: 2
-			narefn: 4
-			nahand: 3
-			naweap: 4
+			narefn: 5
+			nahand: 4
+			naweap: 5
 			naradr: 1
-			naairc: 2
+			naairc: 3
 			nanrct: 1
 			natek: 1
 			natech: 1
@@ -393,7 +393,7 @@ Player:
 			fflash: 15
 		UnitLimits:
 			dog: 4
-			cmin: 6
+			cmin: 9
 			hmmv.ai-repair: 2
 			mgg: 1
 			shad.ai: 1
@@ -401,19 +401,15 @@ Player:
 			aero: 2
 			chrp: 3
 			thor: 2
-			beag: 6
-			orca: 2
-			spirit: 2
+			orca: 3
 			ivan: 5
 			yuri: 4
-			harv: 6
+			harv: 9
 			htk.ai-repair: 2
 			mind: 3
 			gaunt: 2
 			topol: 2
 			zep: 2
-			yak: 4
-			fflash: 6
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		McvTypes: amcv, smcv
