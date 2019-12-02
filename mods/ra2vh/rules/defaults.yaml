@@ -114,6 +114,8 @@
 	GivesBuildableArea:
 		AreaTypes: building
 	CaptureManager:
+	CapturableProgressBlink:
+	CapturableProgressBar:
 	Capturable:
 		Types: building
 		RequiresCondition: !build-incomplete && !being-warped
@@ -195,6 +197,8 @@
 	Inherits@2: ^GainsExperience
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	-ShakeOnDeath:
 	-GivesBuildableArea:
@@ -212,6 +216,8 @@
 	-GivesBuildableArea:
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-MustBeDestroyed:
 	-GivesExperience:
 	-CaptureNotification:
@@ -258,6 +264,7 @@
 	Interactable:
 	CaptureManager:
 	CapturableProgressBlink:
+	CapturableProgressBar:
 	Capturable:
 		Types: rubble
 		ValidStances: Ally, Neutral, Enemy

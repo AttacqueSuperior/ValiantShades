@@ -228,7 +228,7 @@ gaweap:
 		RequiresCondition: aihasprimarywarfactory && gatech
 		ResetTraitOnEnable: true
 		Type: WarFactory
-		ChargeDuration: 3750
+		ChargeDuration: 8888
 		Actors: mgg
 
 gafcmd:
@@ -432,6 +432,8 @@ gaorep:
 		Description: Refines all forms of income by 25%.
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Selectable:
 		Bounds: 134, 102, -10, -21
@@ -506,6 +508,8 @@ gaspysat:
 		BuildLimit: 1
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Selectable:
 		Bounds: 96, 98, -4, -30
@@ -612,6 +616,8 @@ gaweat:
 		Description: Play God with deadly weather!
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Selectable:
 		Bounds: 116, 106, -2, -26
@@ -678,6 +684,8 @@ gacsph:
 		BuildLimit: 1
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Selectable:
 		Bounds: 176, 110, -5, -14
@@ -777,6 +785,8 @@ gadrop:
 		Prerequisites: garbur, gaweap, ~structures.allies
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Valued:
 		Cost: 2500
@@ -848,6 +858,8 @@ gaspir:
 		Description: Grants invulnerability to buildings.
 	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
 	-CaptureNotification:
 	Valued:
 		Cost: 2000

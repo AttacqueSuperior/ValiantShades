@@ -188,13 +188,13 @@
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: aengineer
-		ChargeDuration: 1200
+		ChargeDuration: 1600
 	PeriodicProducer@sovietengineer:
 		RequiresCondition: aihasprimarybarracks && sovietengi
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: sengineer
-		ChargeDuration: 1200
+		ChargeDuration: 1600
 
 ^Refinery:
 	Inherits: ^Building
@@ -361,7 +361,7 @@
 		RequiresCondition: aihasprimarywarfactory
 		ResetTraitOnEnable: true
 		Type: WarFactory
-		ChargeDuration: 2500
+		ChargeDuration: 3750
 
 ^Tier2:
 	Inherits: ^Building

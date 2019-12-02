@@ -503,7 +503,11 @@ gagate_a:
 	Armor:
 		Type: Wood
 	-Building:
+	-CaptureManager:
 	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
+	-CaptureNotification:	
 	-GivesBuildableArea:
 	-MustBeDestroyed:
 	-WithSpriteBody:

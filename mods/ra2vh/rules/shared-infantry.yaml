@@ -28,8 +28,13 @@ engineer:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
 	Captures:
-		CaptureTypes: building, rubble
+		CaptureTypes: building
 		RequiresCondition: !disabled
+		CaptureDelay: 15
+	Captures@rebuilding-from-rubble:
+		CaptureTypes: rubble
+		RequiresCondition: !disabled
+		CaptureDelay: 166
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
