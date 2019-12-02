@@ -338,21 +338,21 @@ natek:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 		Cost: 2000
-	AirstrikePowerAS@clustermines:
-		ChargeInterval: 8000
-		Description: Cluster Mines
-		LongDesc: Send in a bomber\nto deploy a minefield.
-		OrderName: ClusterMinesInfoOrder
-		UnitType: badger.clustermine
-		SquadSize: 1
-		Icon: parabombs
-		Mission: Attack
-		ArrowSequence: arrow
-		ClockSequence: clock
-		CircleSequence: circles
-		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown
-		Cost: 1000
+	#AirstrikePowerAS@clustermines:
+	#	ChargeInterval: 8000
+	#	Description: Cluster Mines
+	#	LongDesc: Send in a bomber\nto deploy a minefield.
+	#	OrderName: ClusterMinesInfoOrder
+	#	UnitType: badger.clustermine
+	#	SquadSize: 1
+	#	Icon: parabombs
+	#	Mission: Attack
+	#	ArrowSequence: arrow
+	#	ClockSequence: clock
+	#	CircleSequence: circles
+	#	PauseOnCondition: disabled
+	#	RequiresCondition: !build-incomplete && !powerdown
+	#	Cost: 1000
 	InfiltrateForSupportPower:
 		Proxy: natek.infiltrated
 
