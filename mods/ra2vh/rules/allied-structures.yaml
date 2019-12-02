@@ -221,6 +221,15 @@ gaweap:
 		Actors: e1, e1, e1, e1
 	PeriodicProducer@repairvehicle:
 		Actors: hmmv.ai-repair
+	GrantConditionOnPrerequisite@gatech:
+		Condition: gatech
+		Prerequisites: gatech
+	PeriodicProducer@mobilegapgen:
+		RequiresCondition: aihasprimarywarfactory && gatech
+		ResetTraitOnEnable: true
+		Type: WarFactory
+		ChargeDuration: 3750
+		Actors: mgg
 
 gafcmd:
 	Inherits: ^Tier2
