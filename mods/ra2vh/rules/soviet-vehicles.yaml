@@ -1101,6 +1101,7 @@ topol:
 		RequiresCondition: loaded
 	ReloadAmmoPoolAS:
 		Delay: 1750
+		Color: C0C0C0
 	AmmoPool:
 		Armaments: secondary
 		InitialAmmo: 0
