@@ -251,6 +251,8 @@ hmmv.ai-repair:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~gaweap, ~testai
+	-Cloneable:
+	-ProductionTimeMultiplier@dropship:
 
 ltnk:
 	Inherits: ^Vehicle

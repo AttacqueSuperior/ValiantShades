@@ -322,6 +322,8 @@ htk.ai-repair:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~naweap, ~testai
+	-Cloneable:
+	-ProductionTimeMultiplier@dropship:
 
 drgn:
 	Inherits: ^Vehicle
