@@ -1100,7 +1100,7 @@ topol:
 		DeathTypes: DefaultDeath
 		RequiresCondition: loaded
 	ReloadAmmoPoolAS:
-		Delay: 1750
+		Delay: 3500
 		Color: C0C0C0
 	AmmoPool:
 		Armaments: secondary
