@@ -1110,20 +1110,26 @@ topol:
 		Condition: raise
 		MaximumInstances: 25
 		RevokeDelay: 15
+	GrantConditionOnAttack@2:
+		Condition: klaxoncheck
+		RevokeDelay: 5
 	ExplodeWeapon@klaxon1:
-		RequiresCondition: loaded && raise == 4
+		RequiresCondition: loaded && raise == 2 && klaxoncheck
 		Weapon: TopolKlaxon
 	ExplodeWeapon@klaxon2:
-		RequiresCondition: loaded && raise == 8
+		RequiresCondition: loaded && raise == 6 && klaxoncheck
 		Weapon: TopolKlaxon
 	ExplodeWeapon@klaxon3:
-		RequiresCondition: loaded && raise == 12
+		RequiresCondition: loaded && raise == 10 && klaxoncheck
 		Weapon: TopolKlaxon
 	ExplodeWeapon@klaxon4:
-		RequiresCondition: loaded && raise == 16
+		RequiresCondition: loaded && raise == 14 && klaxoncheck
 		Weapon: TopolKlaxon
 	ExplodeWeapon@klaxon5:
-		RequiresCondition: loaded && raise == 20
+		RequiresCondition: loaded && raise == 18 && klaxoncheck
+		Weapon: TopolKlaxon
+	ExplodeWeapon@klaxon6:
+		RequiresCondition: loaded && raise == 22 && klaxoncheck
 		Weapon: TopolKlaxon
 	WithVoxelBody@tube0:
 		RequiresCondition: !raise
