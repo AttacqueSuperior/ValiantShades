@@ -434,8 +434,9 @@ BuratinoMissile:
 	Report: missile7.wav
 	Projectile: BulletAS
 		Speed: 250
-		Image: v2
-		Palette: ra
+		Image: mislbura
+		Palette: player
+		IsPlayerPalette: true
 		TrailImage: smokey2
 		TrailInterval: 1
 		ContrailLength: 8
