@@ -333,6 +333,10 @@ mislsam:
 	idle:
 		Facings: 32
 
+misl:
+	idle:
+		Facings: 32
+
 canister:	
 	idle:	
 		Length: 15
