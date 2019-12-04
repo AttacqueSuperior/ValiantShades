@@ -1404,6 +1404,7 @@ chrp:
 		BuildPaletteOrder: 120
 		Prerequisites: garbur, ~gaweap
 		Description: Heavy vehicle armed with a heavy temporal cannon.\nCannot target structures.\nImmune to mindcontrol and berserk.\n  Strong vs Vehicles, Infantry\n  Weak vs Structures
+		IconPalette: chrpicon
 	Mobile:
 		Speed: 60
 		TurnSpeed: 2

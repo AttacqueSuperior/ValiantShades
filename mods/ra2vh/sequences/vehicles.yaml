@@ -46,7 +46,8 @@ carrier:
 
 chrp:
 	Inherits: ^Vehicle
-	icon: xxicon
+	icon: chrpicon.png
+		AddExtension: false
 
 cdest:
 	Inherits: ^Vehicle

@@ -41,6 +41,10 @@
 		Name: ltnkicon
 		Filename: ltnkicon.png
 		AllowModifiers: false
+	PaletteFromPng@chrpicon:
+		Name: chrpicon
+		Filename: chrpicon.png
+		AllowModifiers: false
 	PaletteFromPng@spiricon:
 		Name: spiricon
 		Filename: spiricon.png
