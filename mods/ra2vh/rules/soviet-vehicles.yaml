@@ -1052,6 +1052,7 @@ topol:
 		BuildPaletteOrder: 160
 		Prerequisites: ~naweap, natech, natech.infiltrated
 		Description: ICBM launcher.\nStrong vs. Ground
+		IconPalette: toplicon
 	Mobile:
 		Speed: 30
 		TurnSpeed: 1

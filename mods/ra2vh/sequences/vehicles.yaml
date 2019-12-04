@@ -304,7 +304,8 @@ tnkd:
 topol:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: toplicon.png
+		AddExtension: false
 
 tractor:
 	Inherits: ^Vehicle

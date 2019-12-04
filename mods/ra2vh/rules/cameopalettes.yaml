@@ -81,6 +81,10 @@
 		Name: empricon
 		Filename: empricon.png
 		AllowModifiers: false
+	PaletteFromPng@toplicon:
+		Name: toplicon
+		Filename: toplicon.png
+		AllowModifiers: false
 	PaletteFromPng@hindicon:
 		Name: hindicon
 		Filename: hindicon.png
