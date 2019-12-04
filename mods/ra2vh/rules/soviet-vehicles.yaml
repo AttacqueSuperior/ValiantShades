@@ -981,7 +981,8 @@ empr:
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
 		Prerequisites: ~naweap, natech, garbur.infiltrated
-		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground 
+		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground
+		IconPalette: empricon
 	Mobile:
 		Speed: 75
 		Locomotor: heavytracked

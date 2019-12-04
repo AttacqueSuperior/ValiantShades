@@ -121,7 +121,8 @@ dron:
 empr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: empricon.png
+		AddExtension: false
 
 euroc:
 	Inherits: ^Vehicle
