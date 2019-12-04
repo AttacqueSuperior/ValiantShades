@@ -446,7 +446,8 @@ WarthogMissileStage2:
 	Report: vintatta.wav
 	ValidTargets: Ground, Water
 	Projectile: Missile
-		Image: v2
+		Image: misla10
+		Palette: player
 		RangeLimit: 18c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 128

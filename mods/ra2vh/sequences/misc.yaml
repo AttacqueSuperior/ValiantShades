@@ -317,6 +317,10 @@ subt:
 	idle:
 		Facings: 32
 
+misla10:
+	idle:
+		Facings: 32
+
 mislbura:
 	idle:
 		Facings: 32
