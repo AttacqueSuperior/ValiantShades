@@ -53,6 +53,10 @@
 		Name: spiricon
 		Filename: spiricon.png
 		AllowModifiers: false
+	PaletteFromPng@thoricon:
+		Name: thoricon
+		Filename: thoricon.png
+		AllowModifiers: false
 	PaletteFromPng@demeicon:
 		Name: demeicon
 		Filename: demeicon.png

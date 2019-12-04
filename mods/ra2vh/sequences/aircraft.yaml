@@ -65,7 +65,8 @@ spypl:
 
 thor:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon: thoricon.png
+		AddExtension: false
 
 yak:
 	Inherits: ^Aircraft
