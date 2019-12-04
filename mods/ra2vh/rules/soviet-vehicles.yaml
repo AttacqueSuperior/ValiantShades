@@ -919,6 +919,7 @@ gaunt:
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, natech
 		Description: Heavy anti-air weapon,\narmed with heavy missiles.\n  Strong vs Aircraft
+		IconPalette: gaunicon
 	Valued:
 		Cost: 1500
 	Tooltip:

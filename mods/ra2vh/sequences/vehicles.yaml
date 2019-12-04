@@ -142,7 +142,8 @@ fv:
 gaunt:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: gaunicon.png
+		AddExtension: false
 
 mgg:
 	Inherits: ^Vehicle

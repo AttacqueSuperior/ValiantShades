@@ -69,6 +69,10 @@
 		Name: cyboicon
 		Filename: cyboicon.png
 		AllowModifiers: false
+	PaletteFromPng@gaunicon:
+		Name: gaunicon
+		Filename: gaunicon.png
+		AllowModifiers: false
 	PaletteFromPng@empricon:
 		Name: empricon
 		Filename: empricon.png
