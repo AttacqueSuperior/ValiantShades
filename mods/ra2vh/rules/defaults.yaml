@@ -191,6 +191,17 @@
 	Armor:
 		Type: Wood
 	CommandBarBlacklist:
+	RevealsShroud:
+		Range: 1c0
+		MoveRecalculationThreshold: 0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 1c0
+		MoveRecalculationThreshold: 0
+	RevealOnDeath:
+		Radius: 512
+		DeathTypes: DefaultDeath
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -232,12 +243,9 @@
 	RevealsShroud:
 		Range: 4c0
 	RevealsShroudToIntelligenceOwner:
-		Types: SpySat
-		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
 		Radius: 2c0
-		DeathTypes: DefaultDeath
 	Tooltip:
 		Name: Civilian Building
 	MapEditorData:
@@ -306,12 +314,9 @@
 	RevealsShroud:
 		Range: 4c0
 	RevealsShroudToIntelligenceOwner:
-		Types: SpySat
-		RevealGeneratedShroud: False
 		Range: 4c0
 	RevealOnDeath:
 		Radius: 2c0
-		DeathTypes: DefaultDeath
 	CaptureNotification:
 		Notification: TechBuildingCaptured
 		LoseNotification: TechBuildingLost
@@ -376,10 +381,7 @@
 		Type: Steel
 	RevealsShroud:
 		Range: 5c0
-		RequiresCondition: !disabled
 	RevealsShroudToIntelligenceOwner:
-		Types: SpySat
-		RevealGeneratedShroud: False
 		Range: 5c0
 	RevealOnDeath:
 		Radius: 2c512
@@ -486,6 +488,7 @@
 		Type: None
 	RevealsShroud:
 		Range: 4c0
+		MoveRecalculationThreshold: 0 #PLACEHOLDER
 	RevealOnDeath:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
@@ -843,6 +846,9 @@
 	SpeedMultiplier@hijack:
 		Modifier: 0
 		RequiresCondition: being-captured
+	RevealsShroud:
+		Range: 0
+		MoveRecalculationThreshold: 0 #PLACEHOLDER
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -864,6 +870,7 @@
 		Type: Light
 	RevealsShroud:
 		Range: 5c0
+		MoveRecalculationThreshold: 0 #PLACEHOLDER
 	RevealOnDeath:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
@@ -941,6 +948,10 @@
 		Weapon: AircraftCrashing
 		EmptyWeapon: AircraftCrashing
 		DeathTypes: DefaultDeath
+	RevealsShroud:
+		Range: 0
+		MoveRecalculationThreshold: 0 #PLACEHOLDER
+		Type: CenterPosition
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -1156,6 +1167,9 @@
 	GpsDotAS:
 		Sequence: ship
 		RequiresCondition: !hide-gpsdot
+	RevealsShroud:
+		Range: 0
+		MoveRecalculationThreshold: 0 #PLACEHOLDER
 
 ^BallisticMissile:
 	Inherits@1: ^Orientable
