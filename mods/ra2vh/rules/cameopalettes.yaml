@@ -45,6 +45,10 @@
 		Name: chrpicon
 		Filename: chrpicon.png
 		AllowModifiers: false
+	PaletteFromPng@succicon:
+		Name: succicon
+		Filename: succicon.png
+		AllowModifiers: false
 	PaletteFromPng@spiricon:
 		Name: spiricon
 		Filename: spiricon.png

@@ -1527,6 +1527,7 @@ succ:
 		BuildPaletteOrder: 160
 		Prerequisites: garbur, ~gaweap, natech.infiltrated
 		Description: Can temporarily take ownership of enemy units.\n Strong vs mindcontrollable units.
+		IconPalette: succicon
 	Mobile:
 		Speed: 75
 		Locomotor: heavytracked

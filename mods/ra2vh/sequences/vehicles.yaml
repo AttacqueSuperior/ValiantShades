@@ -278,7 +278,8 @@ sub:
 
 succ:
 	Inherits: ^Vehicle
-	icon: xxicon
+	icon: succicon.png
+		AddExtension: false
 
 suvb:
 	Inherits: ^Vehicle
