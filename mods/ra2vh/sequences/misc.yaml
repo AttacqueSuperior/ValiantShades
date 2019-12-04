@@ -329,6 +329,10 @@ mislgaun:
 	idle:
 		Facings: 32
 
+mislsam:
+	idle:
+		Facings: 32
+
 canister:	
 	idle:	
 		Length: 15

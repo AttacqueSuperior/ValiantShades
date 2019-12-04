@@ -505,7 +505,8 @@ TanyaMissileStage2:
 	Range: 5c512
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
-		Image: missile
+		Image: mislsam
+		Palette: player
 		TrailImage: tanyasmoke
 		TrailPalette: heroictsexp
 		HorizontalRateOfTurn: 12
