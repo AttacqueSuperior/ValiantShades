@@ -313,6 +313,10 @@ zbomb:
 	idle:
 		Facings: 32
 
+subt:
+	idle:
+		Facings: 32
+
 canister:	
 	idle:	
 		Length: 15

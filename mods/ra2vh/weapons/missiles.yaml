@@ -194,7 +194,7 @@ SubTorpedo:
 	Burst: 1
 	BurstDelays: 20
 	Projectile: Missile
-		Image: missile
+		Image: subt
 		Speed: 102
 		TrailImage: bbblelrg
 		HorizontalRateOfTurn: 12
