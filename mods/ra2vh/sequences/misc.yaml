@@ -325,6 +325,10 @@ mislbura:
 	idle:
 		Facings: 32
 
+mislgaun:
+	idle:
+		Facings: 32
+
 canister:	
 	idle:	
 		Length: 15

@@ -547,7 +547,9 @@ GauntletMissile:
 	Range: 13c512
 	ValidTargets: Air
 	Projectile: Missile
-		Image: patriot
+		Image: mislgaun
+		Palette: player
+		IsPlayerPalette: true
 		MinimumLaunchSpeed: 225
 		MaximumLaunchSpeed: 450
 		Speed: 864
