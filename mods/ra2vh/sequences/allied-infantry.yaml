@@ -541,7 +541,8 @@ fairy:
 	cheer:
 		Start: 426
 		Length: 32
-	icon: xxicon
+	icon: fairicon.png
+		AddExtension: false
 
 hirano:
 	Inherits: ^BasicInfantry

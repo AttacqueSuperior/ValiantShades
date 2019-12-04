@@ -1235,6 +1235,7 @@ fairy:
 		BuildPaletteOrder: 100
 		Prerequisites: ~gapile, gatech, natek.infiltrated
 		Description: Assault infantry.\n  Strong vs Ground\n  Weak vs Air
+		IconPalette: fairicon
 	Valued:
 		Cost: 800
 	DeliversCash:

@@ -33,6 +33,10 @@
 		Name: hiraicon
 		Filename: hiraicon.png
 		AllowModifiers: false
+	PaletteFromPng@fairicon:
+		Name: fairicon
+		Filename: fairicon.png
+		AllowModifiers: false
 	PaletteFromPng@ltnkicon:
 		Name: ltnkicon
 		Filename: ltnkicon.png
