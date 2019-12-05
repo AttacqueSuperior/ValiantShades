@@ -642,3 +642,9 @@
 	GrantConditionOnPrerequisite@hospital:
 		Condition: hospital
 		Prerequisites: hospital
+
+^DummyDisable:
+	WithDecoration@disabled:
+		Image: inviso
+		Sequence: null
+		RequiresCondition: disabled

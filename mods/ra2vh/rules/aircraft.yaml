@@ -146,6 +146,7 @@ hind:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@factionrankpips: ^SovietVeteranRank
+	Inherits@dummydisabling: ^DummyDisable
 	Tooltip:
 		Name: Hind Carryall
 	Selectable:
@@ -656,6 +657,7 @@ spirithusk:
 
 pdplane:
 	Inherits: ^NeutralAircraft
+	Inherits@dummydisabling: ^DummyDisable
 	Valued:
 		Cost: 2000
 	-Selectable:
@@ -972,6 +974,7 @@ aurorahusk:
 
 wolfk:
 	Inherits: ^NeutralAircraft
+	Inherits@dummydisabling: ^DummyDisable
 	Valued:
 		Cost: 2000
 	-Selectable:
