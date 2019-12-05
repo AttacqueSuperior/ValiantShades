@@ -28,6 +28,60 @@ Players:
 		Faction: Random
 
 Actors:
+	Actor0: graionbb
+		Location: 90,0
+		Owner: Neutral
+	Actor7: graionbb
+		Location: 90,4
+		Owner: Neutral
+	Actor8: graionbb
+		Location: 90,-4
+		Owner: Neutral
+	Actor1: graionbb
+		Location: 94,4
+		Owner: Neutral
+	Actor2: graionbb
+		Location: 94,0
+		Owner: Neutral
+	Actor3: graionbb
+		Location: 94,-4
+		Owner: Neutral
+	Actor4: graionbb
+		Location: 98,0
+		Owner: Neutral
+	Actor5: graionbb
+		Location: 98,4
+		Owner: Neutral
+	Actor6: graionbb
+		Location: 98,-4
+		Owner: Neutral
+	Actor9: graionbb
+		Owner: Neutral
+		Location: 90,-35
+	Actor10: graionbb
+		Owner: Neutral
+		Location: 90,-31
+	Actor11: graionbb
+		Owner: Neutral
+		Location: 90,-27
+	Actor12: graionbb
+		Owner: Neutral
+		Location: 97,-27
+	Actor13: graionbb
+		Owner: Neutral
+		Location: 96,-31
+	Actor14: graionbb
+		Owner: Neutral
+		Location: 96,-35
+	Actor15: graionbb
+		Owner: Neutral
+		Location: 84,-31
+	Actor16: graionbb
+		Owner: Neutral
+		Location: 84,-34
+	Actor17: graionbb
+		Owner: Neutral
+		Location: 84,-27
 
 Rules:
 	World:
