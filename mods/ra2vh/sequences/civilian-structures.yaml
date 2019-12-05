@@ -1067,3 +1067,17 @@ city05:
 		Offset: 0,-60
 	idle:
 		ShadowStart: 2
+
+graionbb:
+	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
+	Defaults:
+		Offset: 30,-30
+		Tick: 80
+	idle:
+		Length: 63
+	damaged-idle:
+		Start: 63
+		Length: 63

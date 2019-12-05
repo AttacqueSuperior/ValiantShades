@@ -347,3 +347,7 @@
 		BaseName: placexuetallied2
 		BasePalette: xuetallied2
 		Alpha: 0.55
+	PaletteFromFile@graionbb:
+		Name: graionbb
+		Filename: graionbb.pal
+		ShadowIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 226

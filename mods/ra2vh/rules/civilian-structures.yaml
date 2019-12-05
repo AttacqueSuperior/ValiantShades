@@ -2135,3 +2135,18 @@ cabunk02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+
+graionbb:
+	Inherits: ^CivBuilding
+	Inherits@hitshape: ^1x3Shape
+	Valued:
+		Cost: 250
+	Tooltip:
+		Name: Dancing Graion Billboard
+	Building:
+		Footprint: xxx
+		Dimensions: 1,3
+	Health:
+		HP: 250000
+	RenderSprites:
+		Palette: graionbb
