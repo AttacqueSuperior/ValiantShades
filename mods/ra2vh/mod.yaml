@@ -244,7 +244,7 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ra2vh|uibits/loadscreen.png
-	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters..., Adjusting faction themes..., Pushing boundaries beyond imagination..., Embracing legacy scenes..., Suppressing the red resurrection..., Reactivating Volkov..., Preparing for the final war..., Researching the phantom project..., Surviving the robot storm..., Restoring PsiCorps to the Soviets..., Averting the mental omega..., Controlling weather storms..., Launching nuclear missiles..., Starting wars between colonies...
+	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters..., Adjusting faction themes..., Pushing boundaries beyond imagination..., Embracing legacy scenes..., Suppressing the red resurrection..., Reactivating Volkov..., Preparing for the final war..., Researching the phantom project..., Surviving the robot storm..., Restoring PsiCorps to the Soviets..., Controlling weather storms..., Launching nuclear missiles..., Starting wars between colonies..., Deja Vu - I've seen this loading line before...
 
 ServerTraits:
 	LobbyCommands
