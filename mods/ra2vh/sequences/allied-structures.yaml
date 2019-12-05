@@ -501,7 +501,8 @@ gadrop:
 		Offset: -3,-30,1
 	damagefire3:
 		Offset: -30,10,1
-	icon: xxicon
+	icon: drpbicon.png
+		AddExtension: false
 
 gaspir:
 	Inherits: ^Structure
@@ -545,7 +546,8 @@ gaspir:
 		Offset: -20,-13,1
 	damagefire2:
 		Offset: 3,-33,1
-	icon: xxicon
+	icon: shldicon.png
+		AddExtension: false
 
 gawall:
 	Inherits: ^Structure

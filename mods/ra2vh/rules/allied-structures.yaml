@@ -783,6 +783,7 @@ gadrop:
 		Description: Provides an additional copy of\nall Tier 1 and Tier 2 vehicles (sans MCVs).
 		BuildLimit: 1
 		Prerequisites: garbur, gaweap, ~structures.allies
+		IconPalette: drpbicon
 	-CaptureManager:
 	-Capturable:
 	-CapturableProgressBlink:
@@ -856,6 +857,7 @@ gaspir:
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Grants invulnerability to buildings.
+		IconPalette: shldicon
 	-CaptureManager:
 	-Capturable:
 	-CapturableProgressBlink:

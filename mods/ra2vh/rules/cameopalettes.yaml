@@ -25,6 +25,14 @@
 		Name: rburicon
 		Filename: rburicon.png
 		AllowModifiers: false
+	PaletteFromPng@drpbicon:
+		Name: drpbicon
+		Filename: drpbicon.png
+		AllowModifiers: false
+	PaletteFromPng@shldicon:
+		Name: shldicon
+		Filename: shldicon.png
+		AllowModifiers: false
 	PaletteFromPng@grenicon:
 		Name: grenicon
 		Filename: grenicon.png
