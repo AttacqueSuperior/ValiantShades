@@ -56,6 +56,24 @@ engineer:
 		Range: 6c0
 		AffectsParent: true
 		RequiresCondition: !disabled
+	AttackFrontal:
+		Voice: Action
+		PauseOnCondition: disabled
+	Armament@defuse:
+		Weapon: DefuseKit
+		LocalOffset: 164,0,864
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
+	AutoTargetPriority@defuse:
+		ValidTargets: C4Attached, IvanBombed
+		InvalidTargets: NoAutoTarget
+		ValidStances: Ally
+	AutoTarget:
+		ScanRadius: 4
+	AttackMove:
+		Voice: Action
 
 dog:
 	Inherits: ^Infantry

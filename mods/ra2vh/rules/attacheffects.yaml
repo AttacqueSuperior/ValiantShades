@@ -421,6 +421,11 @@
 		Sequence: ivanbomb
 		Palette: mouse
 		RequiresCondition: bombdetector && ivanbomb
+	ExternalCondition@detachable:
+		Condition: detach
+	WithColoredOverlay@detach:
+		Palette: moveflash
+		RequiresCondition: detach
 
 ^C4Plantable:
 	DelayedWeaponAttachable@C4:
@@ -433,6 +438,11 @@
 		Sequence: c4
 		Palette: ts-mouse
 		RequiresCondition: c4
+	ExternalCondition@detachable:
+		Condition: detach
+	WithColoredOverlay@detach:
+		Palette: moveflash
+		RequiresCondition: detach
 
 ^TanyaC4Plantable:
 	DelayedWeaponAttachable@TanyaC4:

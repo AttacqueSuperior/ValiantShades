@@ -287,9 +287,17 @@ htk:
 		OutsideRangeCursor: goldwrench
 		TargetStances: Ally
 		ForceTargetStances: None
+	Armament@defuse:
+		Weapon: DefuseKit
+		LocalOffset: 164,0,864
+		RequiresCondition: repairmode
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
-		ValidTargets: Repair
+		ValidTargets: Repair, C4Attached, IvanBombed
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 

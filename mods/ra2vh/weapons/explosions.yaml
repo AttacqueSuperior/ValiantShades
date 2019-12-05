@@ -595,3 +595,30 @@ MasterMindExplode:
 		ExplosionPalette: heroicra2exp
 		ImpactSounds: igenexpa.wav
 		ValidTargets: Ground, Water, Air
+
+DefuseKit:
+	ReloadDelay: 50
+	Range: 2c0
+	Report: gdefuse.wav
+	ValidTargets: IvanBombed, C4Attached
+	Projectile: LaserZap
+		Width: 48
+		Duration: 4
+		Color: FFFFFF80
+	Warhead@emp: GrantExternalCondition
+		Range: 128
+		Duration: 3
+		Condition: detach
+		ValidTargets: IvanBombed, C4Attached
+		ValidStances: Ally
+	Warhead@DetachDelayedWeapon: DetachDelayedWeapon
+		Types: ivanbomb, c4
+		Range: 128
+		ValidStances: Ally
+		ValidTargets: IvanBombed, C4Attached
+	Warhead@TargetValidator: SpreadDamage
+		ValidTargets: IvanBombed, C4Attached
+
+IFVDefuseKit:
+	Inherits: DefuseKit
+	Range: 4c512

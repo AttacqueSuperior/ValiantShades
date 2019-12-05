@@ -216,9 +216,17 @@ hmmv:
 		OutsideRangeCursor: goldwrench
 		TargetStances: Ally
 		ForceTargetStances: None
+	Armament@defuse:
+		Weapon: DefuseKit
+		LocalOffset: 164,0,864
+		RequiresCondition: repairmode
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
-		ValidTargets: Repair
+		ValidTargets: Repair, C4Attached, IvanBombed
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 
@@ -574,6 +582,14 @@ fv:
 		RequiresCondition: ifv-repair
 	Armament@repair:
 		Weapon: IFVRepairBullet
+		LocalOffset: 164,0,864
+		RequiresCondition: ifv-repair
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
+	Armament@defuse:
+		Weapon: IFVDefuseKit
 		LocalOffset: 164,0,864
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench
@@ -977,7 +993,7 @@ fv:
 	#=== Targeting specific to individual modes ===
 	AutoTargetPriority@Repair:
 		RequiresCondition: ifv-repair
-		ValidTargets: Repair
+		ValidTargets: Repair, C4Attached, IvanBombed
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 	AutoTargetPriority@chrono:
