@@ -85,10 +85,7 @@ gapowr:
 	icon: powricon
 
 gapowrup:
-	place: ggpowr_b
-		Length: 8
-		ShadowStart: 16
-		Tick: 150
+	place: null
 	icon: gpowuico
 
 gapile:
