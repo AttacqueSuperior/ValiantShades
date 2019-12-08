@@ -151,3 +151,4 @@ Player:
 	NotificationOnPowerTransition:
 		ExitLowPowerNotification: EnablePower
 		EnterLowPowerNotification: DisablePower
+	PlayerRadarTerrain:	
