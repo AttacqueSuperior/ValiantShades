@@ -639,9 +639,9 @@ cahse07:
 		Offset: 15,-37
 
 cawt01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
@@ -958,9 +958,9 @@ capars14:
 		Offset: -15,-52
 
 cats01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-30
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -968,6 +968,7 @@ cats01:
 		ShadowStart: 4
 
 cagard01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
 		UseTilesetCode: true
@@ -1015,57 +1016,102 @@ galite:
 	icon: liteicon
 
 cacity01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-60
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 0
 		ShadowStart: 3
 
 cacity02:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: -15,-67
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 0
 		ShadowStart: 3
 
 cacity03:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-45
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 0
 		ShadowStart: 3
 
 cacity04:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-60
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 0
 		ShadowStart: 3
 
 city01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-45
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 0
 		ShadowStart: 2
 
 city02:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: -15,-52
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 0
 		ShadowStart: 2
 
 city03:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-45
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 0
 		ShadowStart: 2
 
 city04:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-60
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 0
 		ShadowStart: 2
 
 city05:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-60
+		UseTilesetCode: false
 	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 0
 		ShadowStart: 2
 
 graionbb:
