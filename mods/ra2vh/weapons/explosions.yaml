@@ -168,7 +168,7 @@ IvanBomber:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
-		Damage: 400000
+		Damage: 150000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			None: 100
