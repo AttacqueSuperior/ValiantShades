@@ -893,11 +893,11 @@ MeteorSpawner:
 		TrailPalette: heroictsexp
 	Warhead@1Dam: HealthPercentageDamage
 		Spread: 1c256
-		Damage: 8
+		Damage: 4
 		DamageTypes: RadiationDeath, DefaultDeath
 	Warhead@2Dam: HealthPercentageDamage
 		Spread: 2c512
-		Damage: 8
+		Damage: 4
 		DamageTypes: RadiationDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
@@ -917,7 +917,7 @@ MeteorLarge:
 		TrailSequences: large-trailer
 	Warhead@2Dam: HealthPercentageDamage
 		Spread: 3c768
-		Damage: 8
+		Damage: 4
 		DamageTypes: RadiationDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: largemeteorexp		
