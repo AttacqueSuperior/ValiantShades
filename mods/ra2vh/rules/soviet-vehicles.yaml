@@ -314,7 +314,7 @@ htk.ai:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~naweap, ~testai
-	AIDeployHelper:
+	AIDeployNotifier:
 		DeployChance: 75
 
 htk.ai-repair:

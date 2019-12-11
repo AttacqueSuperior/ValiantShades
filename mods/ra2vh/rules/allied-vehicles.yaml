@@ -243,7 +243,7 @@ hmmv.ai:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~gaweap, ~testai
-	AIDeployHelper:
+	AIDeployNotifier:
 		DeployChance: 75
 
 hmmv.ai-repair:
@@ -1660,5 +1660,5 @@ mnrva.paradrop:
 	Buildable:
 		BuildPaletteOrder: 20001
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures\n Preloaded for Demeter Squad.
-	AIDeployHelper:
+	AIDeployNotifier:
 		DeployChance: 100

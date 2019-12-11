@@ -489,7 +489,7 @@ gaorep:
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
-	AISupportPowerTargeterHelper@forceshield:
+	AISupportPowerExplicitNotifier@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath

@@ -466,3 +466,7 @@ Player:
 		Plug: natech.ai.cheatplug
 		Pluggables: garbur, natech
 		Interval: 7500
+	DeployBotModule@test:
+		RequiresCondition: enable-test-ai
+	SupportPowerExplicitTargetBotModule@test:
+		RequiresCondition: enable-test-ai

@@ -59,7 +59,7 @@
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
-	AISupportPowerTargeterHelper@forceshield:
+	AISupportPowerExplicitNotifier@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
@@ -178,7 +178,7 @@
 	GrantConditionOnPrerequisite@aideploy-soviet:
 		Condition: sovietengi
 		Prerequisites: sovietengi
-	AIDeployHelper:
+	AIDeployNotifier:
 		RequiresCondition: !aihasprimarybarracks
 		DeployChance: 100
 		DeployTicks: 15
@@ -352,7 +352,7 @@
 	GrantConditionOnPrerequisite@aideploy:
 		Condition: aihasprimarywarfactory
 		Prerequisites: primarywarfactory, testai
-	AIDeployHelper:
+	AIDeployNotifier:
 		RequiresCondition: !aihasprimarywarfactory
 		DeployChance: 100
 		DeployTicks: 15
@@ -406,7 +406,7 @@
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
-	AISupportPowerTargeterHelper@forceshield:
+	AISupportPowerExplicitNotifier@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
@@ -641,7 +641,7 @@
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
-	AISupportPowerTargeterHelper@forceshield:
+	AISupportPowerExplicitNotifier@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
@@ -709,7 +709,7 @@
 	GrantConditionOnPrerequisite@forceshield:
 		Condition: check-forceshield
 		Prerequisites: gaspir
-	AISupportPowerTargeterHelper@forceshield:
+	AISupportPowerExplicitNotifier@forceshield:
 		OrderName: ForceShieldInfoOrder
 		ActivationChance: 50
 		DamageTypes: DefaultDeath

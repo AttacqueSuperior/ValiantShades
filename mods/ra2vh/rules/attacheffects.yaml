@@ -330,7 +330,7 @@
 		MaximumVerticalOffset: 1536
 		RequiresCondition: test-ai && nairon
 	GrantHordeBonus@ironcurtain:
-	AISupportPowerTargeterHelper@ironcurtain:
+	AISupportPowerExplicitNotifier@ironcurtain:
 		OrderName: IronCurtainInfoOrder
 		RequiresCondition: ai-invulnerability
 
