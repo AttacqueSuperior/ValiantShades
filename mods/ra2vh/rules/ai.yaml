@@ -470,3 +470,8 @@ Player:
 		RequiresCondition: enable-test-ai
 	SupportPowerExplicitTargetBotModule@test:
 		RequiresCondition: enable-test-ai
+	BevManagerBotModule@mgg:
+		RequiresCondition: enable-test-ai
+		BevTypes: mgg
+		ConstructionYardTypes: gacnst, nacnst
+		MaxBaseRadius: 12
