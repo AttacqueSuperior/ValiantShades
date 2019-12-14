@@ -149,6 +149,7 @@ fv:
 	turret-demo: fvtur-demo
 	turret-virus: fvtur-virus
 	turret-volkov: fvtur-volkov
+	turret-cyborg: fvtur-cyborg
 	turret-hitech: fvtur-hitech
 
 gaunt:

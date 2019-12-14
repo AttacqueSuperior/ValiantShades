@@ -892,6 +892,21 @@ fv:
 	Tooltip@volkov:
 		Name: Volkov IFV
 		RequiresCondition: ifv-volkov
+	#=== Cyborg ===
+	WithVoxelTurret@cyborg:
+		Sequence: turret-cyborg
+		RequiresCondition: ifv-cyborg
+	Armament@cyborg:
+		Weapon: CyborgGun
+		RequiresCondition: !rank-heroic && ifv-cyborg
+		LocalOffset: 188,0,600
+	Armament@cyborg-elite:
+		Weapon: CyborgGunE
+		RequiresCondition: rank-heroic && ifv-cyborg
+		LocalOffset: 188,0,600
+	Tooltip@cyborg:
+		Name: Cyborg IFV
+		RequiresCondition: ifv-cyborg
 	#==============================================
 	#==== Mixed infantry, needs custom turrets ====
 	#===== RA2 hitech turret is a placeholder! ====
@@ -949,18 +964,6 @@ fv:
 	Tooltip@boris:
 		Name: Boris IFV
 		RequiresCondition: ifv-boris
-	#=== Cyborg ===
-	Armament@cyborg:
-		Weapon: CyborgGun
-		RequiresCondition: !rank-heroic && ifv-cyborg
-		LocalOffset: 188,0,600
-	Armament@cyborg-elite:
-		Weapon: CyborgGunE
-		RequiresCondition: rank-heroic && ifv-cyborg
-		LocalOffset: 188,0,600
-	Tooltip@cyborg:
-		Name: Cyborg IFV
-		RequiresCondition: ifv-cyborg
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
