@@ -583,7 +583,7 @@ naclon:
 		RequiresCondition: !build-incomplete && barracks && !being-warped && !powerdown
 	RallyPoint:
 		Offset: 3,3
-	ClonesProducedUnitsAS:
+	ClonesProducedUnits:
 		CloneableTypes: infantry
 		ProductionType: Clone
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown

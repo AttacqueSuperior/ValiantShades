@@ -830,7 +830,7 @@ gadrop:
 		Actors: e1, e1, e1
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
-	ClonesProducedUnitsAS:
+	ClonesProducedUnits:
 		CloneableTypes: vehicle
 		ProductionType: DropshipBay
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown
