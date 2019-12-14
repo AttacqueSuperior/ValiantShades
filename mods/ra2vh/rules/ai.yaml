@@ -254,8 +254,8 @@ Player:
 		PlaceDefenseTowardsEnemyChance: 5
 		BuildingLimits:
 			garefn: 5
-			gapile: 4
-			gaweap: 5
+			gapile: 5
+			gaweap: 6
 			gafcmd: 1
 			gaairc: 3
 			gatech: 1
@@ -264,8 +264,8 @@ Player:
 			gaspysat: 1
 			gacran: 2
 			narefn: 5
-			nahand: 4
-			naweap: 5
+			nahand: 5
+			naweap: 6
 			naradr: 1
 			naairc: 3
 			nanrct: 1
