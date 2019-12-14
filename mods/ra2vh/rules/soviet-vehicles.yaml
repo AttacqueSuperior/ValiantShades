@@ -261,7 +261,7 @@ htk:
 		RequiresCondition: !repairmode && rank-heroic
 	Turreted:
 		TurnSpeed: 15
-		Offset: -280,0,0
+		Offset: -380,0,0
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
