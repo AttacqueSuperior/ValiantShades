@@ -245,9 +245,9 @@
 		Palette: tibdawn
 		Sequences: tdtib01
 		MaxDensity: 12
-		ValuePerUnit: 75
+		ValuePerUnit: 37
 		Type: Tiberium
-		Name: Valuable Tiberium - ($75/bale)
+		Name: Valuable Tiberium - ($37/bale)
 		PipColor: Green
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
