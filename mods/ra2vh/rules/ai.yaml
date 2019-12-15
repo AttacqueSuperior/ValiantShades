@@ -415,6 +415,7 @@ Player:
 		McvTypes: amcv, smcv
 		ConstructionYardTypes: gacnst, nacnst
 		McvFactoryTypes: gaweap, naweap
+		MinimumConstructionYardCount: 2
 	HarvesterBotModule:
 		HarvesterTypes: cmin, harv
 		RefineryTypes: garefn, narefn
