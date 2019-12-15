@@ -565,7 +565,6 @@ nawall:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15
-		-TilesetOverrides:
 	idle: ntwall
 		Length: 16
 		ShadowStart: 48

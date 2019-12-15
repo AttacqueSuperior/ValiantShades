@@ -550,7 +550,6 @@ gawall:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15
-		-TilesetOverrides:
 	-make:
 	idle: gtwall
 		Length: 16
