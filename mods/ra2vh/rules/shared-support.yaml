@@ -4,6 +4,8 @@
 		Queue: Support
 		BuildPaletteOrder: 10
 		Description: Light wall.\nCrushable by heavy vehicles.
+	CustomSellValue:
+		Value: 0
 
 ^BasicDefense:
 	Inherits: ^SupportBuilding
