@@ -112,9 +112,9 @@ cawash17:
 		Offset: -30,-75
 
 cawash18:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-30
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 	idle-water: cawsh18a
