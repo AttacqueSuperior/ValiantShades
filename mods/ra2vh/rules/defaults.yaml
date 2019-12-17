@@ -220,6 +220,8 @@
 		Sequence: defense
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
+	MustBeDestroyed:
+		RequiredForShortGame: false
 
 ^CivBuilding:
 	Inherits: ^Building
@@ -250,6 +252,8 @@
 		Name: Civilian Building
 	MapEditorData:
 		Categories: Civilian building
+	MustBeDestroyed:
+		RequiredForShortGame: false
 
 ^Rubble:
 	Inherits@1: ^SpriteActor
@@ -349,6 +353,8 @@
 		-RequiresCondition:
 	Targetable:
 		-RequiresCondition:
+	MustBeDestroyed:
+		RequiredForShortGame: false
 
 ^BuildingPlug:
 	Interactable:
