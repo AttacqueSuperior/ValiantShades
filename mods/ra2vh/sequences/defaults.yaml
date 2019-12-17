@@ -262,6 +262,10 @@
 		UseTilesetCode: false
 
 ^Pole:
+	Inherits@IvanBomb: ^IvanBombable
+	Inherits@c4: ^C4Plantable
+	Inherits@tanyac4: ^TanyaC4Plantable
+	Inherits@emp: ^AffectedByEMP
 	Defaults:
 		UseTilesetExtension: true
 	idle:

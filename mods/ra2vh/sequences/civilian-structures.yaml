@@ -465,35 +465,46 @@ camiam08:
 	Defaults:
 		Offset: -30,-30
 
+#FIXME
+# STREET STUFF LACKS NONARTIC ART - might be included in newurban only, urban only has 01 and 05 WTF
+
 castrt01:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
 
 castrt02:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
 
 castrt03:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
 
 castrt04:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
 
 castrt05:
+	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
 
