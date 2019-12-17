@@ -32,7 +32,7 @@ e2:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125000
+		HP: 50000
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -91,7 +91,7 @@ flakt:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 100000
+		HP: 50000
 	Passenger:
 		PipType: Green
 	RevealsShroud:

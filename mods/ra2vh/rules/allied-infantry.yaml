@@ -32,7 +32,7 @@ e1:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125000
+		HP: 65000
 	Mobile:
 		PauseOnCondition: !undeployed || disabled
 	Passenger:
@@ -156,7 +156,7 @@ ggi:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 100000
+		HP: 75000
 	Mobile:
 		PauseOnCondition: !undeployed || disabled
 	Passenger:
