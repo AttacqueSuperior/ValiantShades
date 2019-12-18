@@ -257,7 +257,6 @@ cahosp.rubble:
 cathosp:
 	Inherits: cahosp
 	Inherits@shape: ^3x3Shape
-	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Building:
@@ -267,18 +266,10 @@ cathosp:
 		Name: Tech Hospice
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
-	SmokeParticleEmitter@smallsmoke:
-		RequiresCondition: dmg_heavy
-	SmokeParticleEmitter@largesmoke:
-		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
-		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
-		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
-		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
-		RequiresCondition: dmg_crit
+	-WithIdleOverlay@damagefire3:
+	-WithIdleOverlay@damagefire3-heavy:
+	-WithIdleOverlay@damagefire4:
+	-WithIdleOverlay@damagefire4-heavy:
 
 cathosp.rubble:
 	Inherits: ^Rubble

@@ -64,6 +64,7 @@ cahosp:
 
 cathosp:
 	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 7, -40
 		TilesetOverrides:
