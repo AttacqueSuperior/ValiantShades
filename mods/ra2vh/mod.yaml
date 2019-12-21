@@ -291,9 +291,9 @@ Fonts:
 
 SupportsMapsFrom: ra2vh, ra2
 
-SoundFormats: Aud, Wav
+SoundFormats: Wav, Aud
 
-SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+SpriteFormats: ShpTS, TmpTS, PngSheet, ShpTD
 
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:
