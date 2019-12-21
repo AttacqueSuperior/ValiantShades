@@ -335,7 +335,6 @@ Player:
 			cleg: 2
 			marks: 5
 			fairy: 5
-			cmin: 5
 			hmmv: 10
 			hmmv.ai: 12
 			# hmmv.ai-repair: 4
@@ -374,7 +373,6 @@ Player:
 			volkov: 1
 			cosmo: 5
 			cyborg: 5
-			harv: 5
 			drgn: 20
 			htk: 5
 			htk.ai: 10
@@ -393,7 +391,6 @@ Player:
 			fflash: 15
 		UnitLimits:
 			dog: 4
-			cmin: 9
 			hmmv.ai-repair: 2
 			mgg: 1
 			shad.ai: 1
@@ -404,7 +401,6 @@ Player:
 			orca: 3
 			ivan: 5
 			yuri: 4
-			harv: 9
 			htk.ai-repair: 2
 			mind: 3
 			gaunt: 2
@@ -416,10 +412,19 @@ Player:
 		ConstructionYardTypes: gacnst, nacnst
 		McvFactoryTypes: gaweap, naweap
 		MinimumConstructionYardCount: 2
-	HarvesterBotModule:
+	GrantConditionOnPrerequisite@harvester-tierify:
+		Condition: harvester-high
+		Prerequisites: tier3
+	HarvesterBotModuleAS@lowtier:
 		HarvesterTypes: cmin, harv
+		HarvestersPerRefinery: 2
 		RefineryTypes: garefn, narefn
-		RequiresCondition: enable-test-ai
+		RequiresCondition: enable-test-ai && !harvester-high
+	HarvesterBotModuleAS@hightier:
+		HarvesterTypes: cmin, harv
+		HarvestersPerRefinery: 3
+		RefineryTypes: garefn, narefn
+		RequiresCondition: enable-test-ai && harvester-high
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
 	GrantConditionOnPrerequisite@powerplants:
