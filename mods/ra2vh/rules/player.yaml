@@ -144,8 +144,8 @@ Player:
 		Sequence: idle
 		Palette: cameo-chevron
 	PlayerCashTrickler:
-		Interval: 2000
-		InitialDelay: 1000
+		Interval: 5000
+		InitialDelay: 2500
 		Amount: 500
 	GpsASWatcher:
 	NotificationOnPowerTransition:

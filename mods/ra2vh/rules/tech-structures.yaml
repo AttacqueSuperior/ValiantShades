@@ -11,7 +11,7 @@ caoild:
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	CashTrickler:
-		Interval: 100
+		Interval: 150
 		Amount: 20
 		RequiresCondition: !ownerless
 	Tooltip:
