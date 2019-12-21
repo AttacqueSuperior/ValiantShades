@@ -351,11 +351,11 @@ ModContent:
 			Sources: ra2, origin, tfd
 		expansion: Expansion Files
 			TestFiles: ^Content/ra2/ra2md.mix, ^Content/ra2/langmd.mix
-			Sources: ra2yr, origin-yr
+			Sources: ra2yr, origin-yr, tfd
 			Required: true
 		expansion-music: Expansion Music
 			TestFiles: ^Content/ra2/thememd.mix
-			Sources: ra2yr, origin-yr
+			Sources: ra2yr, origin-yr, tfd
 	Sources:
 		ra2vh|installer/ra2.yaml
 		ra2vh|installer/ra2yr.yaml
