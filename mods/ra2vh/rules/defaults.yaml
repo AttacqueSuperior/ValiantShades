@@ -482,6 +482,7 @@
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
+	Inherits@terrordrone: ^AffectedByTerrorDrone
 	Inherits@hospital: ^HospitalHeal
 	Health:
 	OwnerLostAction:
@@ -763,6 +764,7 @@
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
+	Inherits@terrordrone: ^AffectedByTerrorDrone
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
@@ -903,6 +905,7 @@
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
+	Inherits@terrordrone: ^AffectedByTerrorDrone
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
@@ -1103,6 +1106,7 @@
 	Inherits@crane: ^CraneRepair
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
+	Inherits@terrordrone: ^AffectedByTerrorDrone
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill

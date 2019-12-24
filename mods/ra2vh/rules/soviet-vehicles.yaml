@@ -146,6 +146,12 @@ dron:
 	WithColoredOverlay@temporal2:
 		RequiresCondition: being-warped
 		Palette: lowpower
+	-Targetable@droneparasiteable:
+	-Targetable@validforterrordrone:
+	-Targetable@terrordroned:
+	-Infectable:
+	-SpeedMultiplier@droneparasiteable:
+	-ExplodeWeapon@droneparasiteable:
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -158,7 +164,7 @@ dron:
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
 		Speed: 150
-		TurnSpeed: 15
+		TurnSpeed: 255
 		Locomotor: drone
 	Health:
 		HP: 100000
@@ -176,12 +182,21 @@ dron:
 	-RenderVoxels:
 	WithInfantryBody:
 		StandSequences: stand
-		DefaultAttackSequence: shoot
+		DefaultAttackSequence: jump
+		RequiresCondition: !jousting
+	WithFacingSpriteBody:
+		Sequence: shoot
+		RequiresCondition: jousting
 	Armament:
 		Weapon: DroneJump
-	AttackLeapAS:
+	AttackInfect:
 		Voice: Attack
 		PauseOnCondition: disabled
+		Damage: 25000
+		DamageInterval: 60
+		DamageTypes: DefaultDeath, BulletDeath, DroneSurvive
+		SurviveHostDamageTypes: DroneSurvive
+		JoustRange: 1c768
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
@@ -297,7 +312,7 @@ htk:
 		ForceTargetStances: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
-		ValidTargets: Repair, C4Attached, IvanBombed
+		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 

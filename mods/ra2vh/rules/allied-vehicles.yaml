@@ -226,7 +226,7 @@ hmmv:
 		ForceTargetStances: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
-		ValidTargets: Repair, C4Attached, IvanBombed
+		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 
@@ -996,7 +996,7 @@ fv:
 	#=== Targeting specific to individual modes ===
 	AutoTargetPriority@Repair:
 		RequiresCondition: ifv-repair
-		ValidTargets: Repair, C4Attached, IvanBombed
+		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
 	AutoTargetPriority@chrono:

@@ -24,14 +24,16 @@ DogJaw:
 		DamageTypes: AltBulletDeath, DefaultDeath
 
 DroneJump:
-	ValidTargets: Infantry
+	ValidTargets: DroneParasiteable
 	ReloadDelay: 10
 	Range: 3c0
 	Report: vteratta.wav
+	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
-		Spread: 213
-		Damage: 100000
-		ValidTargets: Infantry
+		Spread: 64
+		Falloff: 100, 0
+		Damage: 10000000
+		ValidTargets: ValidForTerrorDrone
 		Versus:
 			None: 100
 			Flak: 100
@@ -44,7 +46,7 @@ DroneJump:
 			Concrete: 0
 			Drone: 0
 			Rocket: 0
-		DamageTypes: AltBulletDeath, DefaultDeath
+		DamageTypes: AltBulletDeath, DefaultDeath, DroneSurvive
 
 AlligatorBite:
 	ReloadDelay: 30

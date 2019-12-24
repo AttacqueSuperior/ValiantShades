@@ -572,9 +572,17 @@
 	SelfHealing@crane:
 		Step: 0
 		PercentageStep: 1
+		DamageTypes: DropTerrorDrone
 		Delay: 75
 		HealIfBelow: 100
 		DamageCooldown: 150
+		RequiresCondition: crane
+	SelfHealing@crane2:
+		Step: 1
+		DamageTypes: DropTerrorDrone
+		Delay: 75
+		HealIfBelow: 100
+		DamageCooldown: 0
 		RequiresCondition: crane
 
 ^AffectedByHilbertEffect:
@@ -622,6 +630,30 @@
 		Condition: forceshield
 	ExternalCondition@forceshield:
 		Condition: forceshield
+
+^AffectedByTerrorDrone:
+	Targetable@droneparasiteable:
+		TargetTypes: DroneParasiteable
+		RequiresCondition: !prevent-ground-target && !infected
+	Targetable@validforterrordrone:
+		TargetTypes: ValidForTerrorDrone
+		RequiresCondition: !prevent-ground-target
+	Targetable@terrordroned:
+		TargetTypes: TerrorDroned
+		RequiresCondition: !prevent-ground-target && infected
+	Infectable:
+		RequiresCondition: !disabled
+		RemoveInfectorDamageTypes: DropTerrorDrone
+		KillInfectorDamageTypes: KillTerrorDrone
+		BeingInfectedCondition: being-infected
+		InfectedCondition: infected
+	SpeedMultiplier@droneparasiteable:
+		Modifier: 0
+		RequiresCondition: being-infected
+	ExplodeWeapon@droneparasiteable:
+		RequiresCondition: infected
+		Weapon: DroneSparkSpawner
+		LocalOffset: 0,0,384
 
 ^HospitalHeal:
 	SelfHealing@hospital:

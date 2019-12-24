@@ -377,6 +377,7 @@ Player:
 			htk: 5
 			htk.ai: 10
 			# htk.ai-repair: 4
+			dron: 5
 			htnk: 20
 			v3: 15
 			apoc: 10

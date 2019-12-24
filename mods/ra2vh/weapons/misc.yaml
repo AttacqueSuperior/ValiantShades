@@ -101,14 +101,15 @@ RepairBullet:
 	ReloadDelay: 80
 	Range: 2c512
 	Report: vifvrepa.wav
-	ValidTargets: Repair
+	ValidTargets: Repair, TerrorDroned
 	Projectile: ElectricBolt
 		Colors: BBBBBB, CCCCCC, DDDDDD
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: -50000
 		AffectsParent: true
-		ValidTargets: Repair
+		ValidTargets: Repair, TerrorDroned
+		DamageTypes: KillTerrorDrone
 	Warhead@spark: FireShrapnel
 		Weapon: TeslaSpark
 		Amount: 6
@@ -166,6 +167,16 @@ DamageSparkSpawner:
 	Warhead@op: FireShrapnel
 		Weapon: DamageSpark
 		Amount: 6
+		AffectsParent: true
+
+DroneSparkSpawner:
+	ReloadDelay: 60
+	Range: 1
+	Projectile: InstantExplode
+	Warhead@TargetValidation: SpreadDamage
+	Warhead@op: FireShrapnel
+		Weapon: DamageSpark
+		Amount: 18
 		AffectsParent: true
 
 ^Spark:
