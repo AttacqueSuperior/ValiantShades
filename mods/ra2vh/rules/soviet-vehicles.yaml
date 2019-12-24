@@ -200,7 +200,9 @@ dron:
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
-		ValidTargets: Infantry
+		ValidTargets: DroneParasiteable
+	AttackMove:
+		Voice: Attack
 	Voiced:
 		VoiceSet: TerrorDroneVoice
 	HitShape:
