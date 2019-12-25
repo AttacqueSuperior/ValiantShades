@@ -1123,7 +1123,7 @@ sref:
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 10
-		Offset: -30,0,85
+		Offset: 140,0,0
 	Armament@primary:
 		Weapon: Comet
 		LocalOffset: 240,0,1280
@@ -1139,13 +1139,16 @@ sref:
 	RenderVoxels:
 	GrantConditionOnAttack@turretcharge1:
 		Condition: turretcharge
-		RevokeDelay: 5
+		RevokeDelay: 4
 	GrantConditionOnAttack@turretcharge2:
 		Condition: turretcharge
-		RevokeDelay: 10
+		RevokeDelay: 8
 	GrantConditionOnAttack@turretcharge3:
 		Condition: turretcharge
-		RevokeDelay: 15
+		RevokeDelay: 12
+	GrantConditionOnAttack@turretcharge4:
+		Condition: turretcharge
+		RevokeDelay: 16
 	WithVoxelTurret:
 		RequiresCondition: !turretcharge
 	WithVoxelTurret@stage1:
@@ -1157,6 +1160,9 @@ sref:
 	WithVoxelTurret@stage3:
 		RequiresCondition: turretcharge == 3
 		Sequence: turret-stage3
+	WithVoxelTurret@stage4:
+		RequiresCondition: turretcharge == 4
+		Sequence: turret-stage4
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: PrismTankVoice
