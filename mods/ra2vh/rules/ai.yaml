@@ -448,7 +448,7 @@ Player:
 		RequiresCondition: enable-test-ai
 		CapturingActorTypes: engineer, aengineer, sengineer
 		CheckCaptureTargetsForVisibility: false
-		PriorityCapturableActorTypes: caoild, caoild.rubble, caairp, caairp.rubble, cahosp, cahosp.rubble, cathosp, cathosp, caoutp, caoutp.rubble, caslab, caslab.rubble
+		PriorityCapturableActorTypes: caoild, caoild.rubble, caairp, caairp.rubble, cahosp, cahosp.rubble, cathosp, cathosp.rubble, caoutp, caoutp.rubble, caslab, caslab.rubble
 	GrantConditionOnPrerequisite@allow-allied-tier3:
 		Condition: allow-allied-tier3-plug
 		Prerequisites: tier3, !gatech.infiltrated
