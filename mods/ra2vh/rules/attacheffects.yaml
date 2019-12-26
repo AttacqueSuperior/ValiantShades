@@ -675,6 +675,25 @@
 		Condition: hospital
 		Prerequisites: hospital
 
+^AffectedByPropaganda:
+	ExternalCondition@propaganda:
+		Condition: propaganda
+	SelfHealing@propaganda:
+		Step: 0
+		PercentageStep: 1
+		Delay: 125
+		HealIfBelow: 100
+		DamageCooldown: 0
+		RequiresCondition: propaganda
+	WithDecoration@propaganda:
+		Image: pips
+		Sequence: medic
+		Palette: pips
+		ReferencePoint: Bottom, Left
+		RequiresCondition: propaganda
+		ZOffset: 256
+		ValidStances: Ally
+
 ^DummyDisable:
 	WithDecoration@disabled:
 		Image: inviso

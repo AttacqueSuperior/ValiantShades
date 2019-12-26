@@ -148,6 +148,7 @@ dlph:
 	Inherits@radiation: ^DamagedByRadiation
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
+	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Inherits@hospital: ^HospitalHeal

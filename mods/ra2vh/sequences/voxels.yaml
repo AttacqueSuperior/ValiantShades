@@ -231,6 +231,10 @@ apoc:
 mind:
 	idle:
 
+ovrl:
+	idle: ovrl
+	turret: ovrltur
+
 caoutp:
 	turret: outp
 

@@ -169,6 +169,7 @@ sqd:
 	Inherits@tanyamorale: ^AffectedByTanyaMorale
 	Inherits@beholder: ^BeholderRangeBonus
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Inherits@hospital: ^HospitalHeal
 	Buildable:

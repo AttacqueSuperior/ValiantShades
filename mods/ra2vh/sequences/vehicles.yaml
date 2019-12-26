@@ -231,6 +231,11 @@ apoc:
 	Inherits@MC: ^MindControllable
 	icon: mtnkicon
 
+ovrl:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 pick:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

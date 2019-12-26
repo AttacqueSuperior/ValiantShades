@@ -171,4 +171,11 @@ LasherTankVoice:
 	Voices:
 		Select: vlassed, vlassef, vlasmod
 		Move: vlasmoa, vlasmoc, vlasatd
-		Attack: vlasata, vlasatc, vlasate, vlasatg 
+		Attack: vlasata, vlasatc, vlasate, vlasatg
+
+OverlordVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vovesea, voveseb, vovesec, vovesed, vovesee, vovesef, voveseg, vovecra
+		Move: vovemoa, vovemob, vovemoc, vovemod, vovemoe, vovemof, vovemog
+		Attack: voveata, voveatb, voveatc, voveatd, voveate, voveatf, voveatg, vovecrb

@@ -483,6 +483,7 @@
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
 	Inherits@terrordrone: ^AffectedByTerrorDrone
+	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@hospital: ^HospitalHeal
 	Health:
 	OwnerLostAction:
@@ -765,6 +766,7 @@
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
 	Inherits@terrordrone: ^AffectedByTerrorDrone
+	Inherits@propaganda: ^AffectedByPropaganda
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
@@ -906,6 +908,7 @@
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
 	Inherits@terrordrone: ^AffectedByTerrorDrone
+	Inherits@propaganda: ^AffectedByPropaganda
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
@@ -1107,6 +1110,7 @@
 	Inherits@hilbert: ^AffectedByHilbertEffect
 	Inherits@thor: ^AffectedByThor
 	Inherits@terrordrone: ^AffectedByTerrorDrone
+	Inherits@propaganda: ^AffectedByPropaganda
 	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
