@@ -222,7 +222,7 @@ cameo-chevron:
 
 pips:
 	medic:
-		Start: 6
+		Start: 13
 	groups: pipsra #TODO: backfall to RA asset
 		Start: 8
 		Length: 10
