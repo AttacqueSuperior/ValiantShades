@@ -23,6 +23,10 @@ GrandCannonWeapon:
 			Rocket: 100
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_explosion
+		ImpactSounds: gexp15a.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size2
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
 
 sabot:
 	ValidTargets: Ground, Water
