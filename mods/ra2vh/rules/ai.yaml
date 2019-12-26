@@ -416,16 +416,24 @@ Player:
 	GrantConditionOnPrerequisite@harvester-tierify:
 		Condition: harvester-high
 		Prerequisites: tier3
+	GrantConditionOnPrerequisite@harvester-tierify2:
+		Condition: harvester-high
+		Prerequisites: tier4
 	HarvesterBotModuleAS@lowtier:
 		HarvesterTypes: cmin, harv
 		HarvestersPerRefinery: 2
 		RefineryTypes: garefn, narefn
 		RequiresCondition: enable-test-ai && !harvester-high
-	HarvesterBotModuleAS@hightier:
+	HarvesterBotModuleAS@midtier:
 		HarvesterTypes: cmin, harv
 		HarvestersPerRefinery: 3
 		RefineryTypes: garefn, narefn
-		RequiresCondition: enable-test-ai && harvester-high
+		RequiresCondition: enable-test-ai && harvester-high == 1
+	HarvesterBotModuleAS@hightier:
+		HarvesterTypes: cmin, harv
+		HarvestersPerRefinery: 4
+		RefineryTypes: garefn, narefn
+		RequiresCondition: enable-test-ai && harvester-high > 1
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
 	GrantConditionOnPrerequisite@powerplants:
