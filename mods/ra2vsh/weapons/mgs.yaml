@@ -275,12 +275,13 @@ ChainGun.Yak.Right:
 	-Report:
 	StartBurstReport: gun8.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 40000
+		Damage: 20000
 		Spread: 171
 		Versus:
 			None: 125
 			Flak: 100
-			Light: 70
+			Plate: 100
+			Light: 45
 			Medium: 28
 			Heavy: 28
 			Wood: 37
