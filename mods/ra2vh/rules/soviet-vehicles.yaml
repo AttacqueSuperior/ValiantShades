@@ -213,6 +213,9 @@ dron:
 	-Capturable:
 	-CaptureNotification:
 	-SpeedMultiplier@hijack:
+	HitShape:
+		Type: Circle
+			Radius: 128
 
 htk:
 	Inherits: ^Vehicle
