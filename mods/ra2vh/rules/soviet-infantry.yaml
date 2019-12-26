@@ -828,6 +828,7 @@ volkov:
 		DamageCooldown: 150
 		HealIfBelow: 100
 		RequiresCondition: !disabled
+	-TakeCover:
 
 kamikaze:
 	Inherits: ^Infantry
@@ -971,6 +972,7 @@ cyborg:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	-TakeCover:
 
 yuripr:
 	Inherits: yuri
