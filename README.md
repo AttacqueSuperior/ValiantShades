@@ -1,4 +1,4 @@
-# Red Alert 2 - Valiant Hearts mod for OpenRA
+# Red Alert 2 - Valiant Shades mod for OpenRA
 
 [![Build Status](https://travis-ci.com/AttacqueSuperior/ValiantHearts.svg?branch=master)](https://travis-ci.com/AttacqueSuperior/ValiantHearts)
 
