@@ -628,9 +628,6 @@
 		VoiceSet: GIVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	Repairable:
-		RepairActors: cahosp
-		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
 	MapEditorData:
