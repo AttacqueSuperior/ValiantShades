@@ -590,6 +590,11 @@
 		OwnerType: Killer
 		DeathType: Kamikazify
 		RequiresCondition: !inair
+	SpawnActorOnDeath@brute:
+		Actor: brute
+		OwnerType: Killer
+		DeathType: BruteMutation
+		RequiresCondition: !inair
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -738,6 +743,7 @@
 	-SpawnActorOnDeath@flames:
 	-WithDeathAnimation@flames:
 	-SpawnActorOnDeath@kamikaze:
+	-SpawnActorOnDeath@brute:
 	-Explodes@radiation:
 	-Crushable:
 	MapEditorData:

@@ -905,6 +905,7 @@ kamikaze:
 	-DeathSounds@radiation:
 	-DeathSounds@psycrush:
 	-SpawnActorOnDeath@kamikaze:
+	-SpawnActorOnDeath@brute:
 	Guard:
 		Voice: Move
 	AttackMove:

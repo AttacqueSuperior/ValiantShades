@@ -154,6 +154,7 @@ dog:
 	-WithDeathAnimation@flames:
 	-Explodes@radiation:
 	-SpawnActorOnDeath@kamikaze:
+	-SpawnActorOnDeath@brute:
 	DeathSounds@normal:
 		DeathTypes: DefaultDeath
 	-DeathSounds@zapped:
@@ -306,6 +307,7 @@ dog:
 	-Explodes@explosion-inair:
 	-Explodes@radiation:
 	-SpawnActorOnDeath@kamikaze:
+	-SpawnActorOnDeath@brute:
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

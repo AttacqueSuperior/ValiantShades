@@ -80,6 +80,11 @@ josh:
 		OwnerType: Killer
 		DeathType: Kamikazify
 		RequiresCondition: !inair
+	SpawnActorOnDeath@brute:
+		Actor: brute
+		OwnerType: Killer
+		DeathType: BruteMutation
+		RequiresCondition: !inair
 
 caml:
 	Inherits: ^Animal
