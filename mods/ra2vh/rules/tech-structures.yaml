@@ -400,8 +400,9 @@ caslab:
 		ActorType: pdplane.crate
 		ReadyAudio: ReinforcementsArrived
 		ChuteSound: sparadra.wav
+	Exit:
 	GrantRandomConditionOnProduction:
-		Conditions: beholder, buratino, prismtank
+		Conditions: beholder, overlord, buratino, prismtank
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -409,12 +410,23 @@ caslab:
 		ShowSelectionBar: true
 		RequiresCondition: beholder && !ownerless
 		PauseOnCondition: disabled
-	Exit:
 	WithTextDecoration@Beholder:
 		Text: BEHOLDER
 		ReferencePoint: Center
 		ZOffset: -512
 		RequiresCondition: beholder
+	PeriodicProducer@Overlord:
+		Type: SecretLab
+		Actors: ovrl
+		ChargeDuration: 2625
+		ShowSelectionBar: true
+		RequiresCondition: overlord && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@Overlord:
+		Text: OVERLORD TANK
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: overlord
 	PeriodicProducer@Buratino:
 		Type: SecretLab
 		Actors: bura
