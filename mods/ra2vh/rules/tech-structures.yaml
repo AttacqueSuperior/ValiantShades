@@ -402,7 +402,7 @@ caslab:
 		ChuteSound: sparadra.wav
 	Exit:
 	GrantRandomConditionOnProduction:
-		Conditions: beholder, overlord, buratino, prismtank
+		Conditions: beholder, overlord, malfestor, buratino, prismtank
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -427,6 +427,18 @@ caslab:
 		ReferencePoint: Center
 		ZOffset: -512
 		RequiresCondition: overlord
+	PeriodicProducer@Malfestor:
+		Type: SecretLab
+		Actors: malf
+		ChargeDuration: 2400
+		ShowSelectionBar: true
+		RequiresCondition: malfestor && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@Malfestor:
+		Text: MALFESTOR
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: malfestor
 	PeriodicProducer@Buratino:
 		Type: SecretLab
 		Actors: bura
