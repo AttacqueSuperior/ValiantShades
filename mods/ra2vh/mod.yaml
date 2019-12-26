@@ -90,6 +90,7 @@ Rules:
 	ra2vh|rules/shared-infantry.yaml
 	ra2vh|rules/allied-infantry.yaml
 	ra2vh|rules/soviet-infantry.yaml
+	ra2vh|rules/tech-infantry.yaml
 	ra2vh|rules/civilians.yaml
 	ra2vh|rules/bridges.yaml
 	ra2vh|rules/animals.yaml
@@ -128,6 +129,7 @@ Sequences:
 	ra2vh|sequences/civilian-structures.yaml
 	ra2vh|sequences/soviet-infantry.yaml
 	ra2vh|sequences/soviet-structures.yaml
+	ra2vh|sequences/tech-infantry.yaml
 	ra2vh|sequences/tech-structures.yaml
 	ra2vh|sequences/trees.yaml
 	ra2vh|sequences/vehicles.yaml

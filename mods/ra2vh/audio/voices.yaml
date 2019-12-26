@@ -166,6 +166,15 @@ RomanovVoice:
 		Feedback: iromfea, iromfeb, iromfec, iromfed, iromfee
 		Die: iromdia, iromdib, iromdic, iromdid, iromdie
 
+BruteVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ibrusea, ibruseb, ibrusec, ibrused, ibrusee
+		Move: ibrumoa, ibrumob, ibrumoc, ibrumod, ibrumoe
+		Attack: ibruata, ibruatb, ibruatc, ibruatd, ibruate
+		Feedback: ibrufea, ibrufeb, ibrufec, ibrufed, ibrufee
+		Die: ibrudia, ibrudib, ibrudic, ibrudid, ibrudie
+
 LasherTankVoice:
 	DefaultVariant: .wav
 	Voices:

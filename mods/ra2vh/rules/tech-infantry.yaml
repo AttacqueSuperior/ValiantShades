@@ -1,0 +1,64 @@
+brute:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Barracks
+		BuildPaletteOrder: 180
+		Prerequisites: ~disabled
+		Description: Powerful infantry with heavy punches.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
+	Valued:
+		Cost: 500
+	DeliversCash:
+		Payload: 250
+		PlayerExperience: 25
+		Voice: Move
+	Tooltip:
+		Name: Brute
+	Armor:
+		Type: Plate
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 200000
+	Mobile:
+		Speed: 120
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	-Crushable:
+	-TakeCover:
+	Passenger:
+		PipType: Green
+	Armament@primary:
+		Weapon: BrutePunch
+		PauseOnCondition: !ammo
+	Armament@secondary:
+		Weapon: BruteSmash
+		Name: secondary
+		PauseOnCondition: !ammo
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: BruteGarrisonedPunch
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		AttackSequences:
+			secondary: smash
+	Voiced:
+		VoiceSet: BruteVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	AmmoPool:
+		Armaments: primary, secondary
+		PipCount: 0
+		AmmoCondition: ammo
+	ReloadAmmoPool:
+		Delay: 20
