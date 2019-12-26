@@ -198,6 +198,7 @@ for the project:
   > Cyborg IFV turret
   > Prism Tank retexture
   > Overlord Tank texture
+  > Malfestor weapon animation
 
 * Hassan_2030
   > Hammer Tank artwork
@@ -206,6 +207,7 @@ for the project:
 
 * Hecthor Doomhammer
   > Dragon Tank voiceover
+  > Malfestor voiceover
 
 * HG_SCIPCION
   > Patriot SAM artwork
@@ -317,6 +319,9 @@ for the project:
   > Psychic Dominator snow frames
   > Allied Airfield snow frames base
 
+* Orac
+  > Malfestor artwork
+
 * Orsolya Lukoczki
   > Empress Tank voiceover
 
@@ -328,6 +333,9 @@ for the project:
 
 * SaneDisruption
   > Humvee body
+
+* Seóras
+  > Malfestor voiceover post-processing
 
 * Shepherd Moons
   > Topol-M missile artwork

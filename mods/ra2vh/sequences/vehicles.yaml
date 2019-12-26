@@ -226,6 +226,11 @@ ltnk:
 	icon: ltnkicon.png
 		AddExtension: false
 
+malf:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 apoc:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

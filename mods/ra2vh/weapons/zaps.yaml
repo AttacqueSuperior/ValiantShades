@@ -735,3 +735,45 @@ CyborgShrapnelE:
 		ExplosionPalette: heroicra2exp
 	Warhead@emp: GrantExternalCondition
 		Duration: 6
+
+MalfestorBeam:
+	ReloadDelay: 64
+	Range: 8c512
+	Report: ifaiatta.wav
+	Projectile: ElectricBolt
+		Colors: FF00FF, 800080, C000C0, 600060, 960096
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Falloff: 100, 50, 0
+		Damage: 135000
+		DamageTypes: Prone50Percent, TriggerProne, BruteMutation, DefaultDeath
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 75
+			Light: 75
+			Medium: 60
+			Heavy: 60
+			Wood: 50
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: malfestorhit
+		ExplosionPalette: rookietsexp
+		ValidTargets: Ground, Air, Water
+	Warhead@emp: GrantExternalCondition
+		Range: 96
+		Duration: 15
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
+
+MalfestorBeamE:
+	Inherits: MalfestorBeam
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
+	Warhead@emp: GrantExternalCondition
+		Duration: 30

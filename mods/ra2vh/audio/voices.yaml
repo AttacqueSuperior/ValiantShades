@@ -188,3 +188,10 @@ OverlordVoice:
 		Select: vovesea, voveseb, vovesec, vovesed, vovesee, vovesef, voveseg, vovecra
 		Move: vovemoa, vovemob, vovemoc, vovemod, vovemoe, vovemof, vovemog
 		Attack: voveata, voveatb, voveatc, voveatd, voveate, voveatf, voveatg, vovecrb
+
+MalfestorVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmalfsea, vmalfseb, vmalfsec, vmalfsed, vmalfsee, vmalfsef
+		Move: vmalfmoa, vmalfmob, vmalfmoc, vmalfmod, vmalfmoe, vmalfmof
+		Attack: vmalfata, vmalfatb, vmalfatc, vmalfatd, vmalfate, vmalfatsa, vmalfatsb, vmalfatsc, vmalfatsd, vmalfatse

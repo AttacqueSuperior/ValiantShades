@@ -179,3 +179,4 @@ explosion:
 	oilderrickexplosion2: brrlexp2
 	largemeteorexp: lmeteorhit
 	smallmeteorexp: smeteorhit
+	malfestorhit: malfhit

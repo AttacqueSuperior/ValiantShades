@@ -219,6 +219,10 @@ ltnk:
 	turret: ltnk2tur
 	barrel: ltnk2barlt
 
+malf:
+	idle: malf
+	turret: malftur
+
 mgg:
 	idle: mgg
 	gap: mggtur
