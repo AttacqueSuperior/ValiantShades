@@ -228,7 +228,7 @@ gaweap:
 		RequiresCondition: aihasprimarywarfactory && gatech
 		ResetTraitOnEnable: true
 		Type: WarFactory
-		ChargeDuration: 8888
+		ChargeDuration: 12500
 		Actors: mgg
 
 gafcmd:
