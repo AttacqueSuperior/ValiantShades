@@ -108,6 +108,7 @@ RepairBullet:
 		Spread: 213
 		Damage: -50000
 		AffectsParent: true
+		ValidStances: Ally
 		ValidTargets: Repair, TerrorDroned
 		DamageTypes: KillTerrorDrone
 	Warhead@spark: FireShrapnel
