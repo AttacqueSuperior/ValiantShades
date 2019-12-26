@@ -28,7 +28,7 @@ explosion:
 	# tiny_tumu: s_tumu22 - small_clsn with fewer frames
 	small_tumu: s_tumu30
 	# medium_tumu: s_tumu42 - large_clsn with fewer frames
-	# large_tumu: s_tumu60 - too many debris frames
+	large_tumu: s_tumu60
 	tiny_clsn: s_clsn16
 	small_clsn: s_clsn22
 	medium_clsn: s_clsn30

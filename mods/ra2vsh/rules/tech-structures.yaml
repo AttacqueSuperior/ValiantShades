@@ -402,7 +402,7 @@ caslab:
 		ChuteSound: sparadra.wav
 	Exit:
 	GrantRandomConditionOnProduction:
-		Conditions: beholder, overlord, malfestor, buratino, prismtank
+		Conditions: beholder, overlord, malfestor, howitzer
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -439,30 +439,18 @@ caslab:
 		ReferencePoint: Center
 		ZOffset: -512
 		RequiresCondition: malfestor
-	PeriodicProducer@Buratino:
+	PeriodicProducer@Howitzer:
 		Type: SecretLab
-		Actors: bura
-		ChargeDuration: 2400
+		Actors: howi
+		ChargeDuration: 1650
 		ShowSelectionBar: true
-		RequiresCondition: buratino && !ownerless
+		RequiresCondition: howitzer && !ownerless
 		PauseOnCondition: disabled
-	WithTextDecoration@Buratino:
-		Text: BURATINO
+	WithTextDecoration@Howitzer:
+		Text: HOWITZER
 		ReferencePoint: Center
 		ZOffset: -512
-		RequiresCondition: buratino
-	PeriodicProducer@PrismTank:
-		Type: SecretLab
-		Actors: sref
-		ChargeDuration: 1800
-		ShowSelectionBar: true
-		RequiresCondition: prismtank && !ownerless
-		PauseOnCondition: disabled
-	WithTextDecoration@PrismTank:
-		Text: PRISM TANK
-		ReferencePoint: Center
-		ZOffset: -512
-		RequiresCondition: prismtank
+		RequiresCondition: howitzer
 
 caslab.rubble:
 	Inherits: ^Rubble

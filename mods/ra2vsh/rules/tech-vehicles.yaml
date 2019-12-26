@@ -188,3 +188,56 @@ malf:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+
+howi:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
+	Inherits@Berserk: ^Berserkable
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Howitzer
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 70
+		Prerequisites: ~disabled
+		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+	Mobile:
+		Speed: 75
+		TurnSpeed: 5
+		Locomotor: heavytracked
+	Health:
+		HP: 200000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Armament@primary:
+		Weapon: HowitzerGun
+		LocalOffset: 704,0,768
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: HowitzerGunE
+		LocalOffset: 704,0,768
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
