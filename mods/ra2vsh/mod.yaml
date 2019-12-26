@@ -1,16 +1,16 @@
 Metadata:
-	Title: Red Alert 2 - Valiant Hearts
+	Title: Red Alert 2 - Valiant Shades
 	Version: {DEV_VERSION}
-	Author: Valiant Hearts Team
-	Website: https://github.com/AttacqueSuperior/ValiantHearts
-	WebIcon32: https://raw.githubusercontent.com/AttacqueSuperior/ValiantHearts/master/mods/ra2vh/icon.png
+	Author: Valiant Shades Team
+	Website: https://github.com/AttacqueSuperior/ValiantShades
+	WebIcon32: https://raw.githubusercontent.com/AttacqueSuperior/ValiantShades/master/mods/ra2vsh/icon.png
 
 PackageFormats: Mix, AudioBag
 
 Packages:
 	~^Content/ra2
 	.
-	$ra2vh: ra2vh
+	$ra2vsh: ra2vsh
 	./mods/common: common
 	./mods/as: as
 	~ra2.mix
@@ -60,92 +60,92 @@ Packages:
 	~ubn.mix
 	~urbann.mix
 	~audio.bag
-	ra2vh|bits
-	ra2vh|bits/audio
-	ra2vh|bits/audio/eva
-	ra2vh|bits/audio/voices
-	ra2vh|bits/cameos
-	ra2vh|bits/aircraft
-	ra2vh|bits/infantry
-	ra2vh|bits/vehicles
-	ra2vh|bits/structures
-	ra2vh|bits/animations
-	ra2vh|bits/projectiles
-	ra2vh|uibits
+	ra2vsh|bits
+	ra2vsh|bits/audio
+	ra2vsh|bits/audio/eva
+	ra2vsh|bits/audio/voices
+	ra2vsh|bits/cameos
+	ra2vsh|bits/aircraft
+	ra2vsh|bits/infantry
+	ra2vsh|bits/vehicles
+	ra2vsh|bits/structures
+	ra2vsh|bits/animations
+	ra2vsh|bits/projectiles
+	ra2vsh|uibits
 
 MapFolders:
-	ra2vh|maps: System
-	~^maps/ra2vh/{DEV_VERSION}: User
+	ra2vsh|maps: System
+	~^maps/ra2vsh/{DEV_VERSION}: User
 
 Rules:
-	ra2vh|rules/proxy-actors.yaml
-	ra2vh|rules/misc.yaml
-	ra2vh|rules/ai.yaml
-	ra2vh|rules/player.yaml
-	ra2vh|rules/world.yaml
-	ra2vh|rules/palettes.yaml
-	ra2vh|rules/cameopalettes.yaml
-	ra2vh|rules/defaults.yaml
-	ra2vh|rules/hitshapes.yaml
-	ra2vh|rules/attacheffects.yaml
-	ra2vh|rules/shared-infantry.yaml
-	ra2vh|rules/allied-infantry.yaml
-	ra2vh|rules/soviet-infantry.yaml
-	ra2vh|rules/tech-infantry.yaml
-	ra2vh|rules/civilians.yaml
-	ra2vh|rules/bridges.yaml
-	ra2vh|rules/animals.yaml
-	ra2vh|rules/shared-structures.yaml
-	ra2vh|rules/allied-structures.yaml
-	ra2vh|rules/soviet-structures.yaml
-	ra2vh|rules/civilian-structures.yaml
-	ra2vh|rules/shared-support.yaml
-	ra2vh|rules/allied-support.yaml
-	ra2vh|rules/soviet-support.yaml
-	ra2vh|rules/tech-structures.yaml
-	ra2vh|rules/shared-vehicles.yaml
-	ra2vh|rules/allied-vehicles.yaml
-	ra2vh|rules/soviet-vehicles.yaml
-	ra2vh|rules/tech-vehicles.yaml
-	ra2vh|rules/civilian-vehicles.yaml
-	ra2vh|rules/allied-naval.yaml
-	ra2vh|rules/soviet-naval.yaml
-	ra2vh|rules/aircraft.yaml
-	ra2vh|rules/missiles.yaml
-	ra2vh|rules/civilian-props.yaml
-	ra2vh|rules/trees.yaml
-	ra2vh|rules/civilian-naval.yaml
+	ra2vsh|rules/proxy-actors.yaml
+	ra2vsh|rules/misc.yaml
+	ra2vsh|rules/ai.yaml
+	ra2vsh|rules/player.yaml
+	ra2vsh|rules/world.yaml
+	ra2vsh|rules/palettes.yaml
+	ra2vsh|rules/cameopalettes.yaml
+	ra2vsh|rules/defaults.yaml
+	ra2vsh|rules/hitshapes.yaml
+	ra2vsh|rules/attacheffects.yaml
+	ra2vsh|rules/shared-infantry.yaml
+	ra2vsh|rules/allied-infantry.yaml
+	ra2vsh|rules/soviet-infantry.yaml
+	ra2vsh|rules/tech-infantry.yaml
+	ra2vsh|rules/civilians.yaml
+	ra2vsh|rules/bridges.yaml
+	ra2vsh|rules/animals.yaml
+	ra2vsh|rules/shared-structures.yaml
+	ra2vsh|rules/allied-structures.yaml
+	ra2vsh|rules/soviet-structures.yaml
+	ra2vsh|rules/civilian-structures.yaml
+	ra2vsh|rules/shared-support.yaml
+	ra2vsh|rules/allied-support.yaml
+	ra2vsh|rules/soviet-support.yaml
+	ra2vsh|rules/tech-structures.yaml
+	ra2vsh|rules/shared-vehicles.yaml
+	ra2vsh|rules/allied-vehicles.yaml
+	ra2vsh|rules/soviet-vehicles.yaml
+	ra2vsh|rules/tech-vehicles.yaml
+	ra2vsh|rules/civilian-vehicles.yaml
+	ra2vsh|rules/allied-naval.yaml
+	ra2vsh|rules/soviet-naval.yaml
+	ra2vsh|rules/aircraft.yaml
+	ra2vsh|rules/missiles.yaml
+	ra2vsh|rules/civilian-props.yaml
+	ra2vsh|rules/trees.yaml
+	ra2vsh|rules/civilian-naval.yaml
 
 Sequences:
-	ra2vh|sequences/resources.yaml
-	ra2vh|sequences/defaults.yaml
-	ra2vh|sequences/attacheffects.yaml
-	ra2vh|sequences/aircraft.yaml
-	ra2vh|sequences/allied-infantry.yaml
-	ra2vh|sequences/allied-structures.yaml
-	ra2vh|sequences/animals.yaml
-	ra2vh|sequences/bridges.yaml
-	ra2vh|sequences/civilians.yaml
-	ra2vh|sequences/civilian-props.yaml
-	ra2vh|sequences/civilian-structures.yaml
-	ra2vh|sequences/soviet-infantry.yaml
-	ra2vh|sequences/soviet-structures.yaml
-	ra2vh|sequences/tech-infantry.yaml
-	ra2vh|sequences/tech-structures.yaml
-	ra2vh|sequences/trees.yaml
-	ra2vh|sequences/vehicles.yaml
-	ra2vh|sequences/explosions.yaml
-	ra2vh|sequences/particles.yaml
-	ra2vh|sequences/misc.yaml
+	ra2vsh|sequences/resources.yaml
+	ra2vsh|sequences/defaults.yaml
+	ra2vsh|sequences/attacheffects.yaml
+	ra2vsh|sequences/aircraft.yaml
+	ra2vsh|sequences/allied-infantry.yaml
+	ra2vsh|sequences/allied-structures.yaml
+	ra2vsh|sequences/animals.yaml
+	ra2vsh|sequences/bridges.yaml
+	ra2vsh|sequences/civilians.yaml
+	ra2vsh|sequences/civilian-props.yaml
+	ra2vsh|sequences/civilian-structures.yaml
+	ra2vsh|sequences/soviet-infantry.yaml
+	ra2vsh|sequences/soviet-structures.yaml
+	ra2vsh|sequences/tech-infantry.yaml
+	ra2vsh|sequences/tech-structures.yaml
+	ra2vsh|sequences/trees.yaml
+	ra2vsh|sequences/vehicles.yaml
+	ra2vsh|sequences/explosions.yaml
+	ra2vsh|sequences/particles.yaml
+	ra2vsh|sequences/misc.yaml
 
 ModelSequences:
-	ra2vh|sequences/voxels.yaml
+	ra2vsh|sequences/voxels.yaml
 
 Cursors:
-	ra2vh|cursors.yaml
+	ra2vsh|cursors.yaml
 
 Chrome:
-	ra2vh|chrome.yaml
+	ra2vsh|chrome.yaml
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
@@ -153,12 +153,12 @@ Assemblies:
 	as|OpenRA.Mods.AS.dll
 
 ChromeLayout:
-	ra2vh|chrome/assetbrowser.yaml
-	ra2vh|chrome/ingame-player.yaml
-	ra2vh|chrome/ingame-infoobjectives.yaml
-	ra2vh|chrome/mainmenu.yaml
-	ra2vh|chrome/ingame-observer.yaml
-	ra2vh|chrome/ingame-debug.yaml
+	ra2vsh|chrome/assetbrowser.yaml
+	ra2vsh|chrome/ingame-player.yaml
+	ra2vsh|chrome/ingame-infoobjectives.yaml
+	ra2vsh|chrome/mainmenu.yaml
+	ra2vsh|chrome/ingame-observer.yaml
+	ra2vsh|chrome/ingame-debug.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
@@ -198,28 +198,28 @@ ChromeLayout:
 	common|chrome/playerprofile.yaml
 
 Weapons:
-	ra2vh|weapons/bullets.yaml
-	ra2vh|weapons/defaults.yaml
-	ra2vh|weapons/explosions.yaml
-	ra2vh|weapons/flaks.yaml
-	ra2vh|weapons/melee.yaml
-	ra2vh|weapons/mgs.yaml
-	ra2vh|weapons/misc.yaml
-	ra2vh|weapons/missiles.yaml
-	ra2vh|weapons/zaps.yaml
+	ra2vsh|weapons/bullets.yaml
+	ra2vsh|weapons/defaults.yaml
+	ra2vsh|weapons/explosions.yaml
+	ra2vsh|weapons/flaks.yaml
+	ra2vsh|weapons/melee.yaml
+	ra2vsh|weapons/mgs.yaml
+	ra2vsh|weapons/misc.yaml
+	ra2vsh|weapons/missiles.yaml
+	ra2vsh|weapons/zaps.yaml
 
 Voices:
-	ra2vh|audio/voices.yaml
-	ra2vh|audio/allied-voices.yaml
-	ra2vh|audio/soviet-voices.yaml
+	ra2vsh|audio/voices.yaml
+	ra2vsh|audio/allied-voices.yaml
+	ra2vsh|audio/soviet-voices.yaml
 
 Notifications:
-	ra2vh|audio/notifications.yaml
+	ra2vsh|audio/notifications.yaml
 
 TileSets:
-	ra2vh|tilesets/temperat.yaml
-	ra2vh|tilesets/snow.yaml
-	ra2vh|tilesets/urban.yaml
+	ra2vsh|tilesets/temperat.yaml
+	ra2vsh|tilesets/snow.yaml
+	ra2vsh|tilesets/urban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
@@ -229,13 +229,13 @@ MapGrid:
 	MaximumTerrainHeight: 16
 
 Missions:
-	ra2vh|missions.yaml
+	ra2vsh|missions.yaml
 
 Music:
-	ra2vh|audio/music.yaml
+	ra2vsh|audio/music.yaml
 
 Translations:
-	ra2vh|languages/english.yaml
+	ra2vsh|languages/english.yaml
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -243,10 +243,10 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
-	ra2vh|hotkeys.yaml
+	ra2vsh|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: ra2vh|uibits/loadscreen.png
+	Image: ra2vsh|uibits/loadscreen.png
 	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters..., Adjusting faction themes..., Pushing boundaries beyond imagination..., Embracing legacy scenes..., Suppressing the red resurrection..., Reactivating Volkov..., Preparing for the final war..., Researching the phantom project..., Surviving the robot storm..., Restoring PsiCorps to the Soviets..., Controlling weather storms..., Launching nuclear missiles..., Starting wars between colonies..., Deja Vu - I've seen this loading line before...
 
 ServerTraits:
@@ -256,7 +256,7 @@ ServerTraits:
 
 ChromeMetrics:
 	common|metrics.yaml
-	ra2vh|metrics.yaml
+	ra2vsh|metrics.yaml
 
 Fonts:
 	Regular:
@@ -292,7 +292,7 @@ Fonts:
 		Size: 10
 		Ascender: 8
 
-SupportsMapsFrom: ra2vh, ra2
+SupportsMapsFrom: ra2vsh, ra2
 
 SoundFormats: Wav, Aud
 
@@ -342,7 +342,7 @@ GameSpeeds:
 		OrderLatency: 9
 
 ModContent:
-	InstallPromptMessage: Red Alert 2 - Valiant Hearts requires artwork and audio from the original games.
+	InstallPromptMessage: Red Alert 2 - Valiant Shades requires artwork and audio from the original games.
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
 		base: Base Game Files
@@ -360,15 +360,15 @@ ModContent:
 			TestFiles: ^Content/ra2/thememd.mix
 			Sources: ra2yr, origin-yr, tfd
 	Sources:
-		ra2vh|installer/ra2.yaml
-		ra2vh|installer/ra2yr.yaml
-		ra2vh|installer/origin.yaml
-		ra2vh|installer/origin-yr.yaml
-		ra2vh|installer/firstdecade.yaml
+		ra2vsh|installer/ra2.yaml
+		ra2vsh|installer/ra2yr.yaml
+		ra2vsh|installer/origin.yaml
+		ra2vsh|installer/origin-yr.yaml
+		ra2vsh|installer/firstdecade.yaml
 
 ColorValidator:
 	TeamColorPresets: ffc9ca, f50606, 98331f, f57606, f7bb06, f861a4, da06f3, ddb8ff, 06f739, cef7b2, 200738, 280df6, 2f86f2, 76d2f8, 34ba93, 000000
 
 ModCredits:
-	ModTabTitle: Valiant Hearts
-	ModCreditsFile: ra2vh|AUTHORS.RA2VH
+	ModTabTitle: Valiant Shades
+	ModCreditsFile: ra2vsh|AUTHORS.RA2VSH
