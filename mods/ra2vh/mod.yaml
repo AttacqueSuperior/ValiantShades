@@ -1,8 +1,9 @@
 Metadata:
 	Title: Red Alert 2 - Valiant Hearts
-	Description: The Soviet Union is back!\nThis time to conquer the United States...
 	Version: {DEV_VERSION}
 	Author: Valiant Hearts Team
+	Website: https://github.com/AttacqueSuperior/ValiantHearts
+	WebIcon32: https://raw.githubusercontent.com/AttacqueSuperior/ValiantHearts/master/mods/ra2vh/icon.png
 
 PackageFormats: Mix, AudioBag
 
