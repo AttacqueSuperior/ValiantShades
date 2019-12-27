@@ -145,7 +145,7 @@ caairp:
 		RequiresCondition: dmg_heavy && !dmg_crit
 	WithIdleOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
-	ProductionAirdrop:
+	ProductionAirdropAS:
 		Produces: TechAirport
 		ActorType: pdplane.caairp
 		Facing: 224

@@ -816,7 +816,7 @@ gadrop:
 	GrantConditionOnPrerequisite@warfactory:
 		Condition: warfactory
 		Prerequisites: warfactory
-	ProductionAirdrop:
+	ProductionAirdropAS:
 		Produces: DropshipBay
 		ActorType: wolfk
 		Facing: 32
