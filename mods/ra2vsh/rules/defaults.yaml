@@ -967,6 +967,12 @@
 		Range: 0
 		MoveRecalculationThreshold: 0 #PLACEHOLDER
 		Type: CenterPosition
+	# remove AI ironcurtainability from airplanes, does not worth for the perf it would take
+	-GrantConditionOnBotOwner@ironcurtain:
+	-GrantConditionOnPrerequisite@nairon:
+	-HordeBonus@ironcurtain:
+	-GrantHordeBonus@ironcurtain:
+	-AISupportPowerExplicitNotifier@ironcurtain:
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
