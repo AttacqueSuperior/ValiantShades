@@ -241,3 +241,17 @@ howi:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	GrantConditionOnAttack:
+		Condition: gattling
+		RequiredShotsPerInstance: 3
+		MaximumInstances: 3
+		RevokeDelay: 90
+	ReloadDelayMultiplier@gattling:
+		RequiresCondition: gattling
+		Modifier: 83
+	ReloadDelayMultiplier@gattling-stage2:
+		RequiresCondition: gattling == 2
+		Modifier: 83
+	ReloadDelayMultiplier@gattling-stage3:
+		RequiresCondition: gattling > 2
+		Modifier: 83
