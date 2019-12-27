@@ -160,26 +160,6 @@ PsiWave:
 	Warhead@2Eff: CreateEffect
 		Explosions: psi_wave
 
-DamageSparkSpawner:
-	ReloadDelay: 384
-	Range: 1
-	Projectile: InstantExplode
-	Warhead@TargetValidation: SpreadDamage
-	Warhead@op: FireShrapnel
-		Weapon: DamageSpark
-		Amount: 6
-		AffectsParent: true
-
-DroneSparkSpawner:
-	ReloadDelay: 60
-	Range: 1
-	Projectile: InstantExplode
-	Warhead@TargetValidation: SpreadDamage
-	Warhead@op: FireShrapnel
-		Weapon: DamageSpark
-		Amount: 18
-		AffectsParent: true
-
 ^Spark:
 	Range: 1c512
 	MinRange: 640

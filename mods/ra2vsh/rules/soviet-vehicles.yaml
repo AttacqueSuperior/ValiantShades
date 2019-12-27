@@ -151,7 +151,7 @@ dron:
 	-Targetable@terrordroned:
 	-Infectable:
 	-SpeedMultiplier@droneparasiteable:
-	-ExplodeWeapon@droneparasiteable:
+	-SpawnsShrapnel@droneparasiteable:
 	Valued:
 		Cost: 500
 	Tooltip:

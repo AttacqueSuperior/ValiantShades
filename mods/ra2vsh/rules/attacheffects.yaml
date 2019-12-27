@@ -209,10 +209,12 @@
 
 ^VehicleParticles:
 	Inherits: ^UnitParticles
-	ExplodeWeapon@damagesparks:
+	SpawnsShrapnel@damagesparks:
 		RequiresCondition: dmg_heavy
-		Weapon: DamageSparkSpawner
 		LocalOffset: 0,0,384
+		Weapon: DamageSpark
+		Amount: 6
+		Delay: 192, 384
 
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
@@ -650,10 +652,12 @@
 	SpeedMultiplier@droneparasiteable:
 		Modifier: 0
 		RequiresCondition: being-infected
-	ExplodeWeapon@droneparasiteable:
+	SpawnsShrapnel@droneparasiteable:
 		RequiresCondition: infected
-		Weapon: DroneSparkSpawner
 		LocalOffset: 0,0,384
+		Weapon: DamageSpark
+		Amount: 18
+		Delay: 60
 
 ^HospitalHeal:
 	SelfHealing@hospital:
