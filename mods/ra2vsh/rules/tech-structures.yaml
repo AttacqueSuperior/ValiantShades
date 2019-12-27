@@ -150,7 +150,6 @@ caairp:
 		ActorType: pdplane.caairp
 		Facing: 224
 		ReadyAudio: ReinforcementsArrived
-		BaselineSpawn: true
 	Exit@1:
 		ExitCell: 2,1
 	RallyPoint:
