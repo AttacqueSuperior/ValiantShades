@@ -146,6 +146,11 @@ dron:
 	WithColoredOverlay@temporal2:
 		RequiresCondition: being-warped
 		Palette: lowpower
+	Explodes@temporal:
+		Weapon: SmallTemporalExplode
+		EmptyWeapon: SmallTemporalExplode
+	SpawnSmokeParticleOnDeath@temporal:
+		Amount: 2, 4
 	-Targetable@droneparasiteable:
 	-Targetable@validforterrordrone:
 	-Targetable@terrordroned:
