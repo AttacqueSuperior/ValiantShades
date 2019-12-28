@@ -93,14 +93,6 @@ caairp:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
-	ProvidesPrerequisite@Allies:
-		Prerequisite: techparadrops.allies
-		Factions: america, germany, england, france, korea
-		ResetOnOwnerChange: true
-	ProvidesPrerequisite@Soviets:
-		Prerequisite: techparadrops.soviets
-		Factions: cuba, libya, iraq, russia
-		ResetOnOwnerChange: true
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
@@ -140,7 +132,7 @@ caairp:
 	ParatroopersPower:
 		OrderName: TechParadropInfoOrder
 		Cost: 1000
-		Icon: airborne #TODO
+		Icon: paradrop #TODO
 		ChargeInterval: 9000
 		Description: Tech Paradrop
 		LongDesc: A Cargo Plane drops six Initiates anywhere on the map.
