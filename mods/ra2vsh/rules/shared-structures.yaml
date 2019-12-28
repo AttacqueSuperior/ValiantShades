@@ -597,6 +597,14 @@
 	Exit@1:
 		ExitCell: 1,1
 		Facing: 224
+	ParatroopersPower:
+		ChargeInterval: 9000
+		Cost: 750
+		QuantizedFacings: 8
+		CameraActor: camera
+		ArrowSequence: arrow
+		RequiresCondition: !build-incomplete && !powerdown
+		PauseOnCondition: lowpower
 
 ^Tier3:
 	Inherits: ^Building

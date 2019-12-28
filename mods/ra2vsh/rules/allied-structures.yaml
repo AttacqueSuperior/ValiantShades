@@ -321,6 +321,13 @@ gaairc:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1
+	ParatroopersPower:
+		OrderName: AirborneInfoOrder
+		Icon: airborne
+		Description: Airborne
+		LongDesc: A Cargo Plane drops four GIs\nand 2 GGIs anywhere on the map.
+		DropItems: ggi,ggi,e1,e1,e1,e1
+		UnitType: pdplane.allied
 
 gatech:
 	Inherits: ^Tier3
