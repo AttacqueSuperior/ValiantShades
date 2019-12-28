@@ -64,12 +64,15 @@ BearVoice:
 		Die: gbeadiea, gbeadieb
 
 CarVoice:
-	DefaultVariant: .wav
+	Variants:
+		Random: .girl.wav, .guy.wav
+		america: .girl.wav, .guy.wav
+		russia: .girl.wav, .guy.wav
 	Voices:
-		Select: gcarsela
-		Move: gcarsela
-		Action: gcarsela
-		Attack: gcarsela
+		Select: vcarsea
+		Move: vcarmoa
+		Action: vcarmoa
+		Attack: vcarmoa
 
 CamelVoice:
 	DefaultVariant: .wav
