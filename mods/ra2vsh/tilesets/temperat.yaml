@@ -52,12 +52,12 @@ Terrain:
 	TerrainType@Ore:
 		Type: Ore
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
-		Color: 948060
+		Color: FFD700
 		TargetTypes: Ground
 	TerrainType@Gems:
 		Type: Gems
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
-		Color: 8470FF
+		Color: C000FF
 		TargetTypes: Ground
 	TerrainType@Tiberium:
 		Type: Tiberium
