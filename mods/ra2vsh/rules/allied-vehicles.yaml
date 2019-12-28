@@ -510,6 +510,7 @@ fv:
 			cyborg: ifv-cyborg
 			#=== Misc. infantry ===
 			engineer: ifv-repair
+			brute: ifv-brute
 			#=== Animals, to disable the bonus firepower granted when manned ===
 			dog: disable-ifvbonus
 			cow: disable-ifvbonus
@@ -537,9 +538,12 @@ fv:
 	GrantCondition@ifv-sovietmodes:
 		Condition: ifv-sovietmodes
 		RequiresCondition: ifv-flak || ifv-tesla || ifv-demo || ifv-deso || ifv-volkov || ifv-yuri || ifv-virus || ifv-ivan || ifv-boris || ifv-cyborg
+	GrantCondition@ifv-techmodes:
+		Condition: ifv-techmodes
+		RequiresCondition: ifv-brute
 	GrantCondition@ifv-default:
 		Condition: ifv-default
-		RequiresCondition: !ifv-sharedmodes && !ifv-alliedmodes && !ifv-sovietmodes
+		RequiresCondition: !ifv-sharedmodes && !ifv-alliedmodes && !ifv-sovietmodes && !ifv-techmodes
 	WithVoxelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: ifv-default && !ifv-firepowerbonus
@@ -964,6 +968,13 @@ fv:
 	Tooltip@boris:
 		Name: Boris IFV
 		RequiresCondition: ifv-boris
+	#=== Brute ===
+	Armament@brute:
+		Weapon: BruteGarrisonedPunch
+		RequiresCondition: ifv-brute
+	Tooltip@brute:
+		Name: Brute IFV
+		RequiresCondition: ifv-brute
 	#======================================================
 	#=========== AutoTargeting-related settings ===========
 	#=== Modes which lack custom turret might be broken ===
@@ -976,7 +987,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano || ifv-boris || ifv-cyborg
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano || ifv-boris || ifv-cyborg || ifv-brute
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
