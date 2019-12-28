@@ -510,6 +510,7 @@ fv:
 			cyborg: ifv-cyborg
 			#=== Misc. infantry ===
 			engineer: ifv-repair
+			init: ifv-initiate
 			brute: ifv-brute
 			#=== Animals, to disable the bonus firepower granted when manned ===
 			dog: disable-ifvbonus
@@ -540,7 +541,7 @@ fv:
 		RequiresCondition: ifv-flak || ifv-tesla || ifv-demo || ifv-deso || ifv-volkov || ifv-yuri || ifv-virus || ifv-ivan || ifv-boris || ifv-cyborg
 	GrantCondition@ifv-techmodes:
 		Condition: ifv-techmodes
-		RequiresCondition: ifv-brute
+		RequiresCondition: ifv-brute || ifv-initiate
 	GrantCondition@ifv-default:
 		Condition: ifv-default
 		RequiresCondition: !ifv-sharedmodes && !ifv-alliedmodes && !ifv-sovietmodes && !ifv-techmodes
@@ -917,7 +918,7 @@ fv:
 	#==============================================
 	GrantCondition@turret-hitech:
 		Condition: turret-hitech
-		RequiresCondition: ifv-hirano || ifv-boris
+		RequiresCondition: ifv-hirano || ifv-boris || ifv-brute || ifv-initiate
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: turret-hitech
@@ -968,6 +969,18 @@ fv:
 	Tooltip@boris:
 		Name: Boris IFV
 		RequiresCondition: ifv-boris
+	#=== Initiate ===
+	Armament@initiate:
+		Weapon: PsychicJab
+		RequiresCondition: !rank-heroic && ifv-initiate
+		LocalOffset: 188,0,600
+	Armament@initiate-elite:
+		Weapon: PsychicJabE
+		RequiresCondition: rank-heroic && ifv-initiate
+		LocalOffset: 188,0,600
+	Tooltip@initiate:
+		Name: Initiate IFV
+		RequiresCondition: ifv-initiate
 	#=== Brute ===
 	Armament@brute:
 		Weapon: BruteGarrisonedPunch
@@ -987,7 +1000,7 @@ fv:
 	#=== Shared Ground targeting ===
 	GrantCondition@autotargetground:
 		Condition: autotarget-ground
-		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano || ifv-boris || ifv-cyborg || ifv-brute
+		RequiresCondition: ifv-default || ifv-mg || ifv-ggi || ifv-gren || ifv-dione || ifv-artemis || ifv-flak || ifv-tesla || ifv-fairy || ifv-volkov || ifv-marksman || ifv-demo || ifv-hirano || ifv-boris || ifv-cyborg || ifv-brute || ifv-initiate
 	AutoTargetPriority@Ground:
 		RequiresCondition: !stance-attackanything && !assault-move && autotarget-ground
 		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
