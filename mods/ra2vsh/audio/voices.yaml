@@ -204,3 +204,10 @@ MalfestorVoice:
 		Select: vmalfsea, vmalfseb, vmalfsec, vmalfsed, vmalfsee, vmalfsef
 		Move: vmalfmoa, vmalfmob, vmalfmoc, vmalfmod, vmalfmoe, vmalfmof
 		Attack: vmalfata, vmalfatb, vmalfatc, vmalfatd, vmalfate, vmalfatsa, vmalfatsb, vmalfatsc, vmalfatsd, vmalfatse
+
+HowitzerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vhwtzsea, vhwtzseb, vhwtzsec, vhwtzsed
+		Move: vhwtzmoa, vhwtzmob, vhwtzmoc
+		Attack: vhwtzmob, vhwtzmoc

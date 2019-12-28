@@ -237,7 +237,7 @@ howi:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: HowitzerVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
