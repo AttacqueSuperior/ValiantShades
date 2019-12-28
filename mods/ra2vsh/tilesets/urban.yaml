@@ -29,7 +29,7 @@ Terrain:
 		TargetTypes: Ground
 	TerrainType@Impassable:
 		Type: Impassable
-		Color: 745537
+		Color: 150F0A
 		TargetTypes: Ground, ScorchImmune
 	TerrainType@Water:
 		Type: Water
