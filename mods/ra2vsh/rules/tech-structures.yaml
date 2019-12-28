@@ -101,33 +101,6 @@ caairp:
 		Prerequisite: techparadrops.soviets
 		Factions: cuba, libya, iraq, russia
 		ResetOnOwnerChange: true
-	ParatroopersPower@Allies:
-		OrderName: AirborneInfoOrder
-		Icon: airborne
-		ChargeInterval: 9000
-		Description: Airborne
-		LongDesc: A Cargo Plane drops four GIs\nand 2 GGIs anywhere on the map.
-		DropItems: ggi,ggi,e1,e1,e1,e1
-		QuantizedFacings: 8
-		UnitType: pdplane.allied
-		CameraActor: camera
-		Prerequisites: ~techparadrops.allies
-		ArrowSequence: arrow
-		AllowMultiple: true
-	ParatroopersPower@Soviets:
-		OrderName: ParadropInfoOrder
-		Icon: paradrop
-		ChargeInterval: 9000
-		Description: Paradrop
-		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
-		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
-		QuantizedFacings: 8
-		UnitType: pdplane.soviet
-		CameraActor: camera
-		Prerequisites: ~techparadrops.soviets
-		ArrowSequence: arrow
-		AllowMultiple: true
-	SupportPowerChargeBar:
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
@@ -164,6 +137,21 @@ caairp:
 		Type: TechAirport
 		Actors: lasher
 		ShowSelectionBar: true
+	ParatroopersPower:
+		OrderName: TechParadropInfoOrder
+		Cost: 1000
+		Icon: airborne #TODO
+		ChargeInterval: 9000
+		Description: Tech Paradrop
+		LongDesc: A Cargo Plane drops six Initiates anywhere on the map.
+		DropItems: init,init,init,init,init,init
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: camera
+		ArrowSequence: arrow
+		AllowMultiple: true
+		RequiresCondition: !ownerless
+	SupportPowerChargeBar:
 
 caairp.rubble:
 	Inherits: ^Rubble
