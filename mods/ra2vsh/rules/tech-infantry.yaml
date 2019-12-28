@@ -1,3 +1,60 @@
+init:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@cloning: ^Cloneable
+	Inherits@Berserk: ^Berserkable
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Barracks
+		Prerequisites: ~disabled
+		BuildPaletteOrder: 20
+		Description: Infantry armed with pyrokinetics.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Valued:
+		Cost: 100
+	DeliversCash:
+		Payload: 50
+		PlayerExperience: 3
+		Voice: Move
+	Tooltip:
+		Name: Initiate
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100000
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Armament@primary:
+		Weapon: PsychicJab
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: PsychicJabE
+		RequiresCondition: rank-heroic
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: PsychicJab
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: PsychicJabE
+		RequiresCondition: rank-heroic
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: InitiateVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
 brute:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

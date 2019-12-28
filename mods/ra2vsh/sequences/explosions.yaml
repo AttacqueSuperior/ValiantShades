@@ -180,3 +180,4 @@ explosion:
 	largemeteorexp: lmeteorhit
 	smallmeteorexp: smeteorhit
 	malfestorhit: malfhit
+	initfire: initfire

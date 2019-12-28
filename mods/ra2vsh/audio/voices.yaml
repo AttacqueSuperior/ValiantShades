@@ -166,6 +166,15 @@ RomanovVoice:
 		Feedback: iromfea, iromfeb, iromfec, iromfed, iromfee
 		Die: iromdia, iromdib, iromdic, iromdid, iromdie
 
+InitiateVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iiniseb, iinisec
+		Move: iinimoa, iinimod, iinimoe
+		Attack: iiniata, iiniatb, iiniatc, iiniatd, iiniate, iiniatf
+		Feedback: iinifeb, iinifec, iinifee
+		Die: iinidia, iinidib, iinidic, iinidid, iinidie
+
 BruteVoice:
 	Inherits: ^InfantryDeath
 	Voices:
