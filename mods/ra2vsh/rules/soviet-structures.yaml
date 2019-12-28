@@ -23,13 +23,6 @@ nacnst:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: sengineer, e2, e2, e2, e2, e2, e2
-	ParatroopersPower:
-		OrderName: ParadropInfoOrder
-		Icon: paradrop
-		Description: Paradrop
-		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
-		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
-		UnitType: pdplane.soviet
 
 napowr:
 	Inherits: ^BasicPower
@@ -292,6 +285,13 @@ naairc:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
+	ParatroopersPower:
+		OrderName: ParadropInfoOrder
+		Icon: paradrop
+		Description: Paradrop
+		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
+		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
+		UnitType: pdplane.soviet
 
 natek:
 	Inherits: ^Tier3
