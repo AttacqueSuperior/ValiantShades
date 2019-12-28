@@ -65,9 +65,9 @@ BearVoice:
 
 CarVoice:
 	Variants:
-		Random: .girl.wav, .guy.wav
-		america: .girl.wav, .guy.wav
-		russia: .girl.wav, .guy.wav
+		Random: .girl.wav, .guy.wav, .guy2.wav, .guy3.wav, .guy4.wav
+		america: .girl.wav, .guy.wav, .guy2.wav, .guy3.wav, .guy4.wav
+		russia: .girl.wav, .guy.wav, .guy2.wav, .guy3.wav, .guy4.wav
 	Voices:
 		Select: vcarsea
 		Move: vcarmoa
