@@ -1253,7 +1253,7 @@
 	AppearsOnMapPreview:
 		Terrain: Ore
 
-^Tree:
+^Doodad:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	WithSpriteBody:
@@ -1262,8 +1262,6 @@
 		Footprint: x
 		Dimensions: 1, 1
 	AppearsOnRadar:
-	Tooltip:
-		Name: Tree
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
@@ -1274,46 +1272,49 @@
 	HitShape:
 	Armor:
 		Type: Wood
+	AppearsOnMapPreview:
+	MapEditorData:
+		Categories: Decoration
+	Interactable:
+
+^Tree:
+	Inherits: ^Doodad
+	Tooltip:
+		Name: Tree
 	MapEditorData:
 		Categories: Tree
-	Interactable:
-	# TODO: APPEARSONMAPPREVIEW
+	RadarColorFromTerrain:
+		Terrain: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree	
 
 ^StreetSign:
-	Inherits: ^Tree
+	Inherits: ^Doodad
 	Tooltip:
 		Name: Street Sign
-	MapEditorData:
-		Categories: Decoration
 
 ^TrafficLight:
-	Inherits: ^Tree
+	Inherits: ^Doodad
 	Tooltip:
 		Name: Traffic Light
-	MapEditorData:
-		Categories: Decoration
 
 ^StreetLight:
-	Inherits: ^Tree
+	Inherits: ^Doodad
 	Tooltip:
 		Name: Street Light
 	Armor:
 		Type: steel
 	Health:
 		HP: 50000
-	MapEditorData:
-		Categories: Decoration
 
 ^TelephonePole:
-	Inherits: ^Tree
+	Inherits: ^Doodad
 	Tooltip:
 		Name: Utility Pole
 	Health:
 		HP: 20000
 	Armor:
 		Type: Concrete
-	MapEditorData:
-		Categories: Decoration
 
 ^Rock:
 	Inherits@1: ^SpriteActor
@@ -1333,6 +1334,10 @@
 	MapEditorData:
 		Categories: Rock
 	Interactable:
+	RadarColorFromTerrain:
+		Terrain: Rock
+	AppearsOnMapPreview:
+		Terrain: Rock
 
 ^Crate:
 	Inherits@1: ^SpriteActor

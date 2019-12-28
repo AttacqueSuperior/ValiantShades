@@ -64,6 +64,14 @@ Terrain:
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
 		Color: 00FF00
 		TargetTypes: Ground
+	TerrainType@Tree:
+		Type: Tree
+		Color: 1C2024
+		TargetTypes: Ground
+	TerrainType@Rock:
+		Type: Rock
+		TargetTypes: Ground
+		Color: 22221E
 
 Templates:
 	Template@0:
