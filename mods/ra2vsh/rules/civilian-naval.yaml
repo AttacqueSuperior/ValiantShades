@@ -24,7 +24,8 @@ tug:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
-	-Voiced:
+	Voiced:
+		VoiceSet: CarVoice
 	HitShape:
 
 cruise:
@@ -51,7 +52,8 @@ cruise:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
-	-Voiced:
+	Voiced:
+		VoiceSet: CarVoice
 	HitShape:
 
 cdest:
@@ -61,4 +63,5 @@ cdest:
 		Name: Coast Guard Boat
 	Armor:
 		Type: Light
-	-Voiced:
+	Voiced:
+		VoiceSet: CarVoice
