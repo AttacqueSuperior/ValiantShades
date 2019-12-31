@@ -110,7 +110,7 @@ shad.ai:
 		Class: shad
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: ~gaweap, gaairc, ~testai
+		Prerequisites: ~gaweap, gaairc, ~cheater-ai
 
 shad.ai2:
 	Inherits: shad
@@ -124,7 +124,7 @@ shad.ai2:
 		Class: shad
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: ~gaweap, gaairc, ~testai
+		Prerequisites: ~gaweap, gaairc, ~cheater-ai
 
 shadhusk:
 	Inherits: ^HelicopterHusk

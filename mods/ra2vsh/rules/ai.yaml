@@ -1,15 +1,24 @@
 Player:
-	ModularBot@testai:
-		Name: Test AI
-		Type: test
-	GrantConditionOnBotOwner@test:
-		Condition: enable-test-ai
-		Bots: test
-	ProvidesPrerequisite@test:
-		Prerequisite: testai
-		RequiresCondition: enable-test-ai
-	SupportPowerBotASModule@test:
-		RequiresCondition: enable-test-ai
+	ModularBot@normal-ai:
+		Name: Normal AI
+		Type: normal
+	ModularBot@brutal-ai:
+		Name: Brutal AI
+		Type: brutal
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	GrantConditionOnBotOwner@normal:
+		Condition: enable-normal-ai
+		Bots: normal
+	GrantConditionOnBotOwner@brutal:
+		Condition: enable-brutal-ai
+		Bots: brutal
+	ProvidesPrerequisite@normal:
+		Prerequisite: cheater-ai
+		RequiresCondition: brutal
+	SupportPowerBotASModule@normal:
+		RequiresCondition: enable-ai
 		Decisions:
 			airborne:
 				OrderName: AirborneInfoOrder
@@ -259,8 +268,90 @@ Player:
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 7c0
-	BaseBuilderBotModule@test:
-		RequiresCondition: enable-test-ai
+	BaseBuilderBotModule@normal:
+		RequiresCondition: enable-normal-ai
+		BuildingQueues: Building
+		DefenseQueues: Support
+		MinimumExcessPower: 50
+		MaximumExcessPower: 150
+		ExcessPowerIncrement: 40
+		ExcessPowerIncreaseThreshold: 4
+		ConstructionYardTypes: gacnst, nacnst
+		RefineryTypes: garefn, narefn
+		PowerTypes: gapowr, napowr, nanrct
+		BarracksTypes: gapile, nahand
+		VehiclesFactoryTypes: gaweap, naweap
+		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, naairc
+		PlaceDefenseTowardsEnemyChance: 5
+		BuildingLimits:
+			garefn: 2
+			gapile: 2
+			gaweap: 2
+			gafcmd: 1
+			gaairc: 2
+			gatech: 1
+			garbur: 1
+			gagap: 1
+			gaspysat: 1
+			gacran: 1
+			narefn: 2
+			nahand: 2
+			naweap: 2
+			naradr: 1
+			naairc: 2
+			nanrct: 1
+			natek: 1
+			natech: 1
+			napsis: 1
+			nacran: 1
+			gapill: 3
+			nasam: 2
+			atesla: 2
+			gtgcan: 1
+			nalasr: 3
+			naflak: 2
+			tesla: 2
+			nasntl: 1
+		BuildingFractions:
+			garefn: 15
+			gapile: 15
+			gaweap: 30
+			gafcmd: 15
+			gaairc: 15
+			gatech: 1
+			garbur: 1
+			gaorep: 1
+			gaspysat: 1
+			gacran: 5
+			gadrop: 5
+			gapill: 15
+			nasam: 12
+			atesla: 12
+			gtgcan: 5
+			gagap: 1
+			gaspir: 1
+			gacsph: 1
+			gaweat: 1
+			narefn: 15
+			nahand: 15
+			naweap: 30
+			naradr: 15
+			naairc: 15
+			natek: 1
+			natech: 1
+			naindp: 1
+			naclon: 1
+			napsis: 1
+			nalasr: 15
+			naflak: 12
+			tesla: 12
+			nasntl: 5
+			nairon: 1
+			napsyd: 1
+			namisl: 1
+			nacran: 5
+	BaseBuilderBotModule@brutal:
+		RequiresCondition: enable-brutal-ai
 		BuildingQueues: Building
 		DefenseQueues: Support
 		MinimumExcessPower: 50
@@ -335,15 +426,15 @@ Player:
 			napsyd: 1
 			namisl: 1
 			nacran: 5
-	SquadManagerBotModule@test:
-		RequiresCondition: enable-test-ai
+	SquadManagerBotModule@normal:
+		RequiresCondition: enable-ai
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, aero, gaunt, engineer, aengineer, sengineer
 		ConstructionYardTypes: gacnst, nacnst
-	UnitBuilderBotModule@test:
-		RequiresCondition: enable-test-ai
+	UnitBuilderBotModule@normal:
+		RequiresCondition: enable-ai
 		UnitsToBuild:
 			dog: 1
 			e1: 90
@@ -429,8 +520,13 @@ Player:
 			gaunt: 2
 			topol: 2
 			zep: 2
-	McvManagerBotModule@test:
-		RequiresCondition: enable-test-ai
+	McvManagerBotModule@normal:
+		RequiresCondition: enable-normal-ai
+		McvTypes: amcv, smcv
+		ConstructionYardTypes: gacnst, nacnst
+		McvFactoryTypes: gaweap, naweap
+	McvManagerBotModule@brutal:
+		RequiresCondition: enable-brutal-ai
 		McvTypes: amcv, smcv
 		ConstructionYardTypes: gacnst, nacnst
 		McvFactoryTypes: gaweap, naweap
@@ -445,29 +541,34 @@ Player:
 		HarvesterTypes: cmin, harv
 		HarvestersPerRefinery: 2
 		RefineryTypes: garefn, narefn
-		RequiresCondition: enable-test-ai && !harvester-high
+		RequiresCondition: enable-normal-ai || enable-brutal-ai && !harvester-high
 	HarvesterBotModuleAS@midtier:
 		HarvesterTypes: cmin, harv
 		HarvestersPerRefinery: 3
 		RefineryTypes: garefn, narefn
-		RequiresCondition: enable-test-ai && harvester-high == 1
+		RequiresCondition: enable-brutal-ai && harvester-high == 1
 	HarvesterBotModuleAS@hightier:
 		HarvesterTypes: cmin, harv
 		HarvestersPerRefinery: 4
 		RefineryTypes: garefn, narefn
-		RequiresCondition: enable-test-ai && harvester-high > 1
+		RequiresCondition: enable-brutal-ai && harvester-high > 1
 	BuildingRepairBotModule:
-		RequiresCondition: enable-test-ai
+		RequiresCondition: enable-ai
 	GrantConditionOnPrerequisite@powerplants:
 		Condition: allow-powerplug
 		Prerequisites: unupgraded-gapowr, gatech, ~structures.allies
-	PlugSpawnerBotModule:
-		RequiresCondition: enable-test-ai && allow-powerplug
+	PlugSpawnerBotModule@normal:
+		RequiresCondition: enable-normal-ai && allow-powerplug
+		Plug: gapowrup
+		Pluggables: gapowr
+		Interval: 875
+	PlugSpawnerBotModule@brutal:
+		RequiresCondition: enable-brutal-ai && allow-powerplug
 		Plug: gapowrup
 		Pluggables: gapowr
 		Interval: 350
 	CaptureManagerBotASModule:
-		RequiresCondition: enable-test-ai
+		RequiresCondition: enable-ai
 		CapturingActorTypes: engineer, aengineer, sengineer
 		CheckCaptureTargetsForVisibility: false
 		PriorityCapturableActorTypes: caoild, caoild.rubble, caairp, caairp.rubble, cahosp, cahosp.rubble, cathosp, cathosp.rubble, caoutp, caoutp.rubble, caslab, caslab.rubble
@@ -475,7 +576,7 @@ Player:
 		Condition: allow-allied-tier3-plug
 		Prerequisites: tier3, !gatech.infiltrated
 	PlugSpawnerBotModule@allow-allied-tier3:
-		RequiresCondition: enable-test-ai && allow-allied-tier3-plug
+		RequiresCondition: enable-brutal-ai && allow-allied-tier3-plug
 		Plug: gatech.ai.cheatplug
 		Pluggables: gatech, natek
 		Interval: 5000
@@ -483,7 +584,7 @@ Player:
 		Condition: allow-soviet-tier3-plug
 		Prerequisites: tier3, !natek.infiltrated
 	PlugSpawnerBotModule@allow-soviet-tier3:
-		RequiresCondition: enable-test-ai && allow-soviet-tier3-plug
+		RequiresCondition: enable-brutal-ai && allow-soviet-tier3-plug
 		Plug: natek.ai.cheatplug
 		Pluggables: gatech, natek
 		Interval: 5000
@@ -491,7 +592,7 @@ Player:
 		Condition: allow-allied-tier4-plug
 		Prerequisites: tier4, !garbur.infiltrated
 	PlugSpawnerBotModule@allow-allied-tier4:
-		RequiresCondition: enable-test-ai && allow-allied-tier4-plug
+		RequiresCondition: enable-brutal-ai && allow-allied-tier4-plug
 		Plug: garbur.ai.cheatplug
 		Pluggables: garbur, natech
 		Interval: 7500
@@ -499,16 +600,16 @@ Player:
 		Condition: allow-soviet-tier4-plug
 		Prerequisites: tier4, !natech.infiltrated
 	PlugSpawnerBotModule@allow-soviet-tier4:
-		RequiresCondition: enable-test-ai && allow-soviet-tier4-plug
+		RequiresCondition: enable-brutal-ai && allow-soviet-tier4-plug
 		Plug: natech.ai.cheatplug
 		Pluggables: garbur, natech
 		Interval: 7500
-	DeployBotModule@test:
-		RequiresCondition: enable-test-ai
-	SupportPowerExplicitTargetBotModule@test:
-		RequiresCondition: enable-test-ai
+	DeployBotModule@normal:
+		RequiresCondition: enable-ai
+	SupportPowerExplicitTargetBotModule@normal:
+		RequiresCondition: enable-ai
 	BevManagerBotModule@mgg:
-		RequiresCondition: enable-test-ai
+		RequiresCondition: enable-ai
 		BevTypes: mgg
 		ConstructionYardTypes: gacnst, nacnst
 		MaxBaseRadius: 12

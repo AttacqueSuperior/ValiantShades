@@ -338,7 +338,7 @@ htk.ai:
 		Class: htk
 	Buildable:
 		BuildPaletteOrder: 2000
-		Prerequisites: ~naweap, ~testai
+		Prerequisites: ~naweap, ~cheater-ai
 	AIDeployNotifier:
 		DeployChance: 75
 
@@ -354,7 +354,7 @@ htk.ai-repair:
 		Class: htk
 	Buildable:
 		BuildPaletteOrder: 2000
-		Prerequisites: ~naweap, ~testai
+		Prerequisites: ~naweap, ~cheater-ai
 	-Cloneable:
 	-ProductionTimeMultiplier@dropship:
 

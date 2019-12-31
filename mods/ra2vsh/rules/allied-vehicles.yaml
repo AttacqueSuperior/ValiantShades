@@ -242,7 +242,7 @@ hmmv.ai:
 		Class: hmmv
 	Buildable:
 		BuildPaletteOrder: 2000
-		Prerequisites: ~gaweap, ~testai
+		Prerequisites: ~gaweap, ~cheater-ai
 	AIDeployNotifier:
 		DeployChance: 75
 
@@ -258,7 +258,7 @@ hmmv.ai-repair:
 		Class: hmmv
 	Buildable:
 		BuildPaletteOrder: 2000
-		Prerequisites: ~gaweap, ~testai
+		Prerequisites: ~gaweap, ~cheater-ai
 	-Cloneable:
 	-ProductionTimeMultiplier@dropship:
 
@@ -1054,7 +1054,7 @@ fv.ai:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~testai
+		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai2:
 	Inherits: fv
@@ -1068,7 +1068,7 @@ fv.ai2:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~testai
+		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai3:
 	Inherits: fv
@@ -1082,7 +1082,7 @@ fv.ai3:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~testai
+		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai4:
 	Inherits: fv
@@ -1096,7 +1096,7 @@ fv.ai4:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, garbur, ~testai
+		Prerequisites:  ~gaweap, gafcmd, garbur, ~cheater-ai
 
 fv.ai5:
 	Inherits: fv
@@ -1110,7 +1110,7 @@ fv.ai5:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~gatech, ~testai, ~gatech.infiltrated
+		Prerequisites:  ~gaweap, gafcmd, ~gatech, ~cheater-ai, ~gatech.infiltrated
 
 sref:
 	Inherits: ^Vehicle
@@ -1348,7 +1348,7 @@ bfrt.ai:
 		Class: bfrt
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: garbur, ~gaweap, ~testai
+		Prerequisites: garbur, ~gaweap, ~cheater-ai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
 bfrt.ai2:
@@ -1363,7 +1363,7 @@ bfrt.ai2:
 		Class: bfrt
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: garbur, ~gaweap, ~testai
+		Prerequisites: garbur, ~gaweap, ~cheater-ai
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
 bfrt.ai3:
@@ -1378,7 +1378,7 @@ bfrt.ai3:
 		Class: bfrt
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites: garbur, ~gaweap, ~testai, ~gatech.infiltrated, ~natek.infiltrated
+		Prerequisites: garbur, ~gaweap, ~cheater-ai, ~gatech.infiltrated, ~natek.infiltrated
 		Description: Large vehicle with 5 fireports for infantry in to fire.\nCan crush enemy vehicles.\n AI clone - preloaded.
 
 aero:
