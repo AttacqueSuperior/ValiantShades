@@ -16,7 +16,7 @@ Player:
 		Bots: brutal
 	ProvidesPrerequisite@normal:
 		Prerequisite: cheater-ai
-		RequiresCondition: brutal
+		RequiresCondition: enable-brutal-ai
 	SupportPowerBotASModule@normal:
 		RequiresCondition: enable-ai
 		Decisions:
