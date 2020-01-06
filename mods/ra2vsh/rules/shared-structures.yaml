@@ -654,9 +654,9 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy && check-forceshield
-	GrantConditionOnBotOwner@test:
-		Condition: test-ai
-		Bots: test
+	GrantConditionOnBotOwner@brutal:
+		Condition: brutal-ai
+		Bots: brutal
 	Pluggable@1:
 		Offset: 0,0
 		Conditions:
@@ -671,10 +671,10 @@
 			natek.ai.cheatplug: !build-incomplete && !natek.ai.cheatplug && !being-warped
 	ProvidesPrerequisite@ai-allied-stolentech:
 		Prerequisite: gatech.infiltrated
-		RequiresCondition: !build-incomplete && !being-warped && test-ai && gatech.ai.cheatplug
+		RequiresCondition: !build-incomplete && !being-warped && brutal-ai && gatech.ai.cheatplug
 	ProvidesPrerequisite@ai-soviet-stolentech:
 		Prerequisite: natek.infiltrated
-		RequiresCondition: !build-incomplete && !being-warped && test-ai && natek.ai.cheatplug
+		RequiresCondition: !build-incomplete && !being-warped && brutal-ai && natek.ai.cheatplug
 
 ^Tier4:
 	Inherits: ^Building
@@ -722,9 +722,9 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy && check-forceshield
-	GrantConditionOnBotOwner@test:
-		Condition: test-ai
-		Bots: test
+	GrantConditionOnBotOwner@brutal:
+		Condition: brutal-ai
+		Bots: brutal
 	Pluggable@1:
 		Offset: 0,0
 		Conditions:
@@ -739,10 +739,10 @@
 			natech.ai.cheatplug: !build-incomplete && !natech.ai.cheatplug && !being-warped
 	ProvidesPrerequisite@ai-allied-stolentech:
 		Prerequisite: garbur.infiltrated
-		RequiresCondition: !build-incomplete && !being-warped && test-ai && garbur.ai.cheatplug
+		RequiresCondition: !build-incomplete && !being-warped && brutal-ai && garbur.ai.cheatplug
 	ProvidesPrerequisite@ai-soviet-stolentech:
 		Prerequisite: natech.infiltrated
-		RequiresCondition: !build-incomplete && !being-warped && test-ai && natech.ai.cheatplug
+		RequiresCondition: !build-incomplete && !being-warped && brutal-ai && natech.ai.cheatplug
 
 power:
 	AlwaysVisible:
