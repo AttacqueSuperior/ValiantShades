@@ -1,3 +1,15 @@
+# The following definitions appear to be panels, but could not be converted to the new PanelRegion format.
+#      You may wish to define PanelRegion/PanelSides manually to reduce duplication:
+#       * sidebar-button-observer (chrome.yaml)
+#       * sidebar-button-observer-pressed (chrome.yaml)
+#       * sidebar-button-observer-highlighted (chrome.yaml)
+#       * sidebar-button-observer-highlighted-pressed (chrome.yaml)
+#       * observer-scrollpanel-button-disabled (chrome.yaml)
+#       * observer-scrollheader-selected (chrome.yaml)
+#       * dialog (chrome.yaml)
+#       * dialog4 (chrome.yaml)
+#       * dialog5 (chrome.yaml)
+
 # -----------------------------------------------------------------------------------
 # Allies
 # -----------------------------------------------------------------------------------
