@@ -496,7 +496,6 @@
 		Type: None
 	RevealsShroud:
 		Range: 4c0
-		MoveRecalculationThreshold: 0 #PLACEHOLDER
 	RevealOnDeath:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
@@ -859,9 +858,6 @@
 	SpeedMultiplier@hijack:
 		Modifier: 0
 		RequiresCondition: being-captured
-	RevealsShroud:
-		Range: 0
-		MoveRecalculationThreshold: 0 #PLACEHOLDER
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -883,7 +879,6 @@
 		Type: Light
 	RevealsShroud:
 		Range: 5c0
-		MoveRecalculationThreshold: 0 #PLACEHOLDER
 	RevealOnDeath:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
@@ -963,10 +958,6 @@
 		Weapon: AircraftCrashing
 		EmptyWeapon: AircraftCrashing
 		DeathTypes: DefaultDeath
-	RevealsShroud:
-		Range: 0
-		MoveRecalculationThreshold: 0 #PLACEHOLDER
-		Type: CenterPosition
 	# remove AI ironcurtainability from airplanes, does not worth for the perf it would take
 	-GrantConditionOnBotOwner@ironcurtain:
 	-GrantConditionOnPrerequisite@nairon:
@@ -1190,9 +1181,6 @@
 	GpsDotAS:
 		Sequence: ship
 		RequiresCondition: !hide-gpsdot
-	RevealsShroud:
-		Range: 0
-		MoveRecalculationThreshold: 0 #PLACEHOLDER
 
 ^BallisticMissile:
 	Inherits@1: ^Orientable
