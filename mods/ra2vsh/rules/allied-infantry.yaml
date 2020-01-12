@@ -1164,7 +1164,7 @@ artemis:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 110
-		Prerequisites:  ~gapile, ~disabled
+		Prerequisites: ~gapile, ~disabled
 		Description: Carries a heavy missile launcher.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 450

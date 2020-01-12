@@ -1054,7 +1054,7 @@ fv.ai:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
+		Prerequisites: ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai2:
 	Inherits: fv
@@ -1068,7 +1068,7 @@ fv.ai2:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
+		Prerequisites: ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai3:
 	Inherits: fv
@@ -1082,7 +1082,7 @@ fv.ai3:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~cheater-ai
+		Prerequisites: ~gaweap, gafcmd, ~cheater-ai
 
 fv.ai4:
 	Inherits: fv
@@ -1096,7 +1096,7 @@ fv.ai4:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, garbur, ~cheater-ai
+		Prerequisites: ~gaweap, gafcmd, garbur, ~cheater-ai
 
 fv.ai5:
 	Inherits: fv
@@ -1110,7 +1110,7 @@ fv.ai5:
 		Class: fv
 	Buildable:
 		BuildPaletteOrder: 10000
-		Prerequisites:  ~gaweap, gafcmd, ~gatech, ~cheater-ai, ~gatech.infiltrated
+		Prerequisites: ~gaweap, gafcmd, ~gatech, ~cheater-ai, ~gatech.infiltrated
 
 sref:
 	Inherits: ^Vehicle

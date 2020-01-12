@@ -558,7 +558,7 @@ CyborgGun:
 	Inherits: ^LargeBullet
 	Report: 120mmf.wav
 	Range: 6c0
-	ReloadDelay:85
+	ReloadDelay: 85
 	Warhead@1Dam: SpreadDamage
 		Damage: 90000
 		Spread: 384

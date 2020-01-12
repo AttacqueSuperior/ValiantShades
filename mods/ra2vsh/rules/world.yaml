@@ -215,7 +215,7 @@
 		Name: Russia
 		InternalName: russia
 		Side: Soviets
-		Description: Russia is leading the Soviet\nUnion's political agenda on the globe.#\nSpecial Vehicle: Tesla Tank
+		Description: Russia is leading the Soviet\nUnion's political agenda on the globe. #\nSpecial Vehicle: Tesla Tank
 	ResourceType@Ore:
 		ResourceType: 1
 		Palette: resource

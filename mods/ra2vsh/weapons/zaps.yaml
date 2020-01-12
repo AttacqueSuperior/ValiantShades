@@ -590,7 +590,7 @@ ThorLightningHit:
 ThorLightningHitE:
 	Inherits: ThorLightningHit
 	Warhead@2Eff: CreateEffect
-		ExplosionPalette: heroictsexp 
+		ExplosionPalette: heroictsexp
 
 ThorLaser:
 	ValidTargets: Air

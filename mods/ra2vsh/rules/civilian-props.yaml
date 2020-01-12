@@ -507,7 +507,7 @@ gagate_a:
 	-Capturable:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
-	-CaptureNotification:	
+	-CaptureNotification:
 	-GivesBuildableArea:
 	-MustBeDestroyed:
 	-WithSpriteBody:

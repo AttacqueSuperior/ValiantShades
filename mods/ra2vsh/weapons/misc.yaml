@@ -401,7 +401,7 @@ BuildingDeathSmokeSpawner:
 		Speed: 0, 32
 		Gravity: 16, 32
 		Neutral: true
-		Count: 0, 2	
+		Count: 0, 2
 
 BuildingDeathFlameGuySpawner:
 	Projectile: InstantExplode
@@ -912,7 +912,7 @@ MeteorLarge:
 		Damage: 4
 		DamageTypes: RadiationDeath, DefaultDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: largemeteorexp		
+		Explosions: largemeteorexp
 	Warhead@3EffWater: CreateEffect
 		Explosions: watersplash_size2
 	Warhead@Res: CreateResource
