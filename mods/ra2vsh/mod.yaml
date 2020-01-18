@@ -311,6 +311,9 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 
 ModelSequenceFormat: VoxelModelSequence
 
+AssetBrowser:
+	SupportedExtensions: .shp, .png, .tem, .sno, .urb, .sha
+
 GameSpeeds:
 	slowest:
 		Name: Slowest

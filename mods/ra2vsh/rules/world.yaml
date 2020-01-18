@@ -297,6 +297,8 @@ World:
 		SmokeType: inviso
 		SmokeSequence: null
 	ResourceLayer:
+	ResourceRenderer:
+		RenderTypes: Ore, Gems, Tiberium
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
