@@ -486,6 +486,8 @@ yak:
 		HP: 125000
 	SpawnActorOnDeath:
 		Actor: yakhusk
+	AttackAircraft:
+		AttackType: Strafe
 	Armament:
 		Weapon: ChainGun.Yak.Right
 	Armament@2:
