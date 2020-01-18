@@ -202,6 +202,12 @@ WeatherStormInit:
 	Warhead@triggerforceshield: AISupportPowerTrigger
 		OrderName: ForceShieldInfoOrder
 		Delay: 18
+	Warhead@stormradar: GrantExternalConditionToPlayer
+		ValidTargets: Ground, Air, Water
+		ValidStances: Neutral, Enemy
+		Condition: radar-stormed
+		Range: 0
+		Duration: 350
 
 WeatherCloudDirectInit:
 	Projectile: InstantHit

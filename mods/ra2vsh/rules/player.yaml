@@ -152,3 +152,8 @@ Player:
 		ExitLowPowerNotification: EnablePower
 		EnterLowPowerNotification: DisablePower
 	PlayerRadarTerrain:
+	ExternalCondition@radarstormed:
+		Condition: radar-stormed
+	ProvidesPrerequisite@radarstormed:
+		Prerequisite: radar-stormed
+		RequiresCondition: radar-stormed

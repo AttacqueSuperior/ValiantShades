@@ -396,8 +396,11 @@
 	ProvidesPrerequisite:
 		Prerequisite: radar
 		RequiresCondition: !build-incomplete && !powerdown
+	GrantConditionOnPrerequisite@radar-stormed:
+		Condition: radar-stormed
+		Prerequisites: radar-stormed
 	ProvidesRadar:
-		RequiresCondition: !disabled
+		RequiresCondition: !disabled && !radar-stormed
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 	Power:
