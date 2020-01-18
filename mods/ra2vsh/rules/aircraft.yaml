@@ -755,6 +755,23 @@ pdplane.caairp.husk:
 	RenderVoxels:
 		Image: pdplane.caairp
 
+civp:
+	Inherits: pdplane
+	Aircraft:
+		IdleBehavior: Land
+	SpawnActorOnDeath:
+		Actor: civp.husk
+	WithVoxelBody:
+		RequiresCondition: airborne
+	WithVoxelBody@landed:
+		Sequence: landed
+		RequiresCondition: !airborne
+
+civp.husk:
+	Inherits: pdplanehusk
+	RenderVoxels:
+		Image: civp
+
 badger:
 	Inherits: beag
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant

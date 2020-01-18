@@ -67,6 +67,7 @@ chrp:
 
 civp:
 	idle:
+	landed: civp-landed
 
 cona:
 	idle:
