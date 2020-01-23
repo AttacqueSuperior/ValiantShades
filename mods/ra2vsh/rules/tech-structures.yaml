@@ -290,6 +290,7 @@ caoutp:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000
+		RepairDamageType: KillTerrorDrone
 	WithIdleOverlay@tower:
 		Sequence: idle-tower
 	WithIdleOverlay@tower-shadow:
