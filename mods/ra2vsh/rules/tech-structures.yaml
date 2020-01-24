@@ -214,9 +214,54 @@ cahosp:
 		RequiresCondition: dmg_heavy && !dmg_crit
 	WithIdleOverlay@damagefire4-heavy:
 		RequiresCondition: dmg_crit
-	ProvidesPrerequisite@hospital:
-		Prerequisite: hospital
+	GrantExternalConditionToOwner@hospital:
+		Condition: hospital
 		RequiresCondition: !ownerless
+	GrantConditionOnPrerequisite@hospital:
+		Condition: hospital
+		Prerequisites: hospital
+	GrantConditionOnPrerequisite@hospital2:
+		Condition: hospital
+		Prerequisites: hospital2
+	GrantConditionOnPrerequisite@hospital3:
+		Condition: hospital
+		Prerequisites: hospital3
+	GrantConditionOnPrerequisite@hospital4:
+		Condition: hospital
+		Prerequisites: hospital4
+	GrantConditionOnPrerequisite@hospital5:
+		Condition: hospital
+		Prerequisites: hospital5
+	WithTextDecoration@hospital:
+		RequiresSelection: true
+		Text: COUNT: 1
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: hospital == 1
+	WithTextDecoration@hospital2:
+		RequiresSelection: true
+		Text: COUNT: 2
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: hospital == 2
+	WithTextDecoration@hospital3:
+		RequiresSelection: true
+		Text: COUNT: 3
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: hospital == 3
+	WithTextDecoration@hospital4:
+		RequiresSelection: true
+		Text: COUNT: 4
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: hospital == 4
+	WithTextDecoration@hospital5:
+		RequiresSelection: true
+		Text: COUNT: 4+
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: hospital > 4
 
 cahosp.rubble:
 	Inherits: ^Rubble

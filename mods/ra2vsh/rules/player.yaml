@@ -157,3 +157,20 @@ Player:
 	ProvidesPrerequisite@radarstormed:
 		Prerequisite: radar-stormed
 		RequiresCondition: radar-stormed
+	ExternalCondition@hospital:
+		Condition: hospital
+	ProvidesPrerequisite@hospital:
+		Prerequisite: hospital
+		RequiresCondition: hospital
+	ProvidesPrerequisite@hospital2:
+		Prerequisite: hospital2
+		RequiresCondition: hospital > 1
+	ProvidesPrerequisite@hospital3:
+		Prerequisite: hospital3
+		RequiresCondition: hospital > 2
+	ProvidesPrerequisite@hospital4:
+		Prerequisite: hospital4
+		RequiresCondition: hospital > 3
+	ProvidesPrerequisite@hospital5:
+		Prerequisite: hospital5
+		RequiresCondition: hospital > 4

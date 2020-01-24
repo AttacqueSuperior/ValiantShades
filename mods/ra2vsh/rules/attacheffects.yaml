@@ -667,6 +667,34 @@
 		HealIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital
+	SelfHealing@hospital2:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: hospital2
+	SelfHealing@hospital3:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: hospital3
+	SelfHealing@hospital4:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: hospital4
+	SelfHealing@hospital5:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: hospital5
 	WithDecoration@hospital:
 		Image: pips
 		Sequence: medic
@@ -678,6 +706,18 @@
 	GrantConditionOnPrerequisite@hospital:
 		Condition: hospital
 		Prerequisites: hospital
+	GrantConditionOnPrerequisite@hospital2:
+		Condition: hospital
+		Prerequisites: hospital2
+	GrantConditionOnPrerequisite@hospital3:
+		Condition: hospital
+		Prerequisites: hospital3
+	GrantConditionOnPrerequisite@hospital4:
+		Condition: hospital
+		Prerequisites: hospital4
+	GrantConditionOnPrerequisite@hospital5:
+		Condition: hospital
+		Prerequisites: hospital5
 
 ^AffectedByPropaganda:
 	ExternalCondition@propaganda:
