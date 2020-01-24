@@ -429,3 +429,4 @@ EditorWorld:
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
+	EditorCursorLayer:
