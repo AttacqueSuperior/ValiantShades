@@ -445,6 +445,10 @@ NukePayload:
 		Chance: 50
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
+	Warhead@Shake: ScreenShakerAS
+		Duration: 20
+		Intensity: 8
+		Multiplier: 1,1
 
 atomic:
 	Inherits: NukePayload
