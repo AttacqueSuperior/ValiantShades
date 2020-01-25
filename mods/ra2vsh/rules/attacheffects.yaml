@@ -673,28 +673,28 @@
 		Delay: 150
 		HealIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: hospital2
+		RequiresCondition: hospital > 1
 	SelfHealing@hospital3:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		HealIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: hospital3
+		RequiresCondition: hospital > 2
 	SelfHealing@hospital4:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		HealIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: hospital4
+		RequiresCondition: hospital > 3
 	SelfHealing@hospital5:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		HealIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: hospital5
+		RequiresCondition: hospital > 4
 	WithDecoration@hospital:
 		Image: pips
 		Sequence: medic
