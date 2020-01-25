@@ -198,7 +198,7 @@ dron:
 		Voice: Attack
 		PauseOnCondition: disabled
 		Damage: 25000
-		DamageInterval: 60
+		DamageInterval: 20
 		DamageTypes: DefaultDeath, BulletDeath, DroneSurvive
 		SurviveHostDamageTypes: DroneSurvive
 		JoustRange: 1c768

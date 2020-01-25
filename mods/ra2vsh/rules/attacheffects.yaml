@@ -657,7 +657,7 @@
 		LocalOffset: 0,0,384
 		Weapon: DamageSpark
 		Amount: 18
-		Delay: 60
+		Delay: 20
 
 ^HospitalHeal:
 	SelfHealing@hospital:
