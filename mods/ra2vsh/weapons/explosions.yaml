@@ -457,7 +457,8 @@ atomic:
 		ImpactSounds: snukintr.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
-		Damage: 2500000
+		Damage: 3750000
+		Spread: 1c512
 		Delay: 25
 	Warhead@3Eff_impact: CreateEffect
 		Explosions: donut_nuke_explosion
