@@ -600,12 +600,14 @@ GauntletMissileE:
 TopolRaise:
 	Range: 32c512
 	ReloadDelay: 12
+	TargetActorCenter: true
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 
 TopolMissile:
 	Range: 32c512
 	ReloadDelay: 60
+	TargetActorCenter: true
 	Report: icbm1.wav
 	Projectile: NukeLaunch
 		MissileWeapon: TopolMissile
