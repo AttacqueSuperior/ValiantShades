@@ -66,6 +66,12 @@ caoild:
 		Weapon: OilDerrickExplosion
 		EmptyWeapon: OilDerrickExplosion
 		DeathTypes: DefaultDeath
+	TooltipDescription@ally:
+		Description: Provides additional funds.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to receive additional funds.
+		ValidStances: Neutral, Enemy
 
 caoild.rubble:
 	Inherits: ^Rubble
@@ -79,6 +85,8 @@ caoild.rubble:
 		Image: caoild
 	TransformOnCapture:
 		IntoActor: caoild
+	TooltipDescription:
+		Description: Rebuild this wreck to receive additional funds.
 
 caairp:
 	Inherits: ^TechBuilding
@@ -144,6 +152,12 @@ caairp:
 		AllowMultiple: true
 		RequiresCondition: !ownerless
 	SupportPowerChargeBar:
+	TooltipDescription@ally:
+		Description: Provides paratroopers and additional reinforcements.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to receive paratroopers and additional reinforcements.
+		ValidStances: Neutral, Enemy
 
 caairp.rubble:
 	Inherits: ^Rubble
@@ -159,6 +173,8 @@ caairp.rubble:
 		Image: caairp
 	TransformOnCapture:
 		IntoActor: caairp
+	TooltipDescription:
+		Description: Rebuild this wreck to receive paratroopers and additional reinforcements.
 
 cahosp:
 	Inherits: ^TechBuilding
@@ -261,6 +277,12 @@ cahosp:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: hospital > 4
+	TooltipDescription@ally:
+		Description: Provides infantry with self-healing.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to enable self-healing for infantry.
+		ValidStances: Neutral, Enemy
 
 cahosp.rubble:
 	Inherits: ^Rubble
@@ -276,6 +298,8 @@ cahosp.rubble:
 		Image: cahosp
 	TransformOnCapture:
 		IntoActor: cahosp
+	TooltipDescription:
+		Description: Rebuild this wreck to enable self-healing for infantry.
 
 cathosp:
 	Inherits: cahosp
@@ -309,6 +333,8 @@ cathosp.rubble:
 		Palette: isotem
 	TransformOnCapture:
 		IntoActor: cathosp
+	TooltipDescription:
+		Description: Rebuild this wreck to enable self-healing for infantry.
 
 caoutp:
 	Inherits: ^TechBuilding
@@ -374,6 +400,12 @@ caoutp:
 		RequiresCondition: dmg_heavy && !dmg_crit
 	WithIdleOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
+	TooltipDescription@ally:
+		Description: Provides and defends buildable area. Can repair vehicles for a cost.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to gain and defend this buildable area.
+		ValidStances: Neutral, Enemy
 
 caoutp.rubble:
 	Inherits: ^Rubble
@@ -390,6 +422,8 @@ caoutp.rubble:
 		Palette: isosnow
 	TransformOnCapture:
 		IntoActor: caoutp
+	TooltipDescription:
+		Description: Rebuild this wreck to gain and defend this buildable area.
 
 caslab:
 	Inherits: ^TechBuilding
@@ -475,6 +509,12 @@ caslab:
 		ReferencePoint: Center
 		ZOffset: -512
 		RequiresCondition: howitzer
+	TooltipDescription@ally:
+		Description: Periodically provides hidden units.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to periodically receive hidden units.
+		ValidStances: Neutral, Enemy
 
 caslab.rubble:
 	Inherits: ^Rubble
@@ -491,6 +531,8 @@ caslab.rubble:
 		Palette: isotem
 	TransformOnCapture:
 		IntoActor: caslab
+	TooltipDescription:
+		Description: Rebuild this wreck to periodically receive hidden units.
 
 camach:
 	Inherits: ^TechBuilding
@@ -582,6 +624,12 @@ camach:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: machineshop > 4
+	TooltipDescription@ally:
+		Description: Provides mechanical units with self-healing.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to enable self-healing for mechanical units.
+		ValidStances: Neutral, Enemy
 
 camach.rubble:
 	Inherits: ^Rubble
@@ -598,3 +646,5 @@ camach.rubble:
 		Palette: isotem
 	TransformOnCapture:
 		IntoActor: camach
+	TooltipDescription:
+		Description: Rebuild this wreck to enable self-healing for mechanical units.
