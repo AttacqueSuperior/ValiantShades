@@ -182,7 +182,6 @@ cahosp:
 	RevealOnDeath:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
-	RallyPoint:
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	WithIdleOverlay:
