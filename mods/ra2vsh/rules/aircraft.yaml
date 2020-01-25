@@ -246,6 +246,7 @@ zep:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 128
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -326,6 +327,7 @@ thor:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 32
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
