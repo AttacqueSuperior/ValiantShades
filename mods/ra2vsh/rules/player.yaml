@@ -174,3 +174,20 @@ Player:
 	ProvidesPrerequisite@hospital5:
 		Prerequisite: hospital5
 		RequiresCondition: hospital > 4
+	ExternalCondition@machineshop:
+		Condition: machineshop
+	ProvidesPrerequisite@machineshop:
+		Prerequisite: machineshop
+		RequiresCondition: machineshop
+	ProvidesPrerequisite@machineshop2:
+		Prerequisite: machineshop2
+		RequiresCondition: machineshop > 1
+	ProvidesPrerequisite@machineshop3:
+		Prerequisite: machineshop3
+		RequiresCondition: machineshop > 2
+	ProvidesPrerequisite@machineshop4:
+		Prerequisite: machineshop4
+		RequiresCondition: machineshop > 3
+	ProvidesPrerequisite@machineshop5:
+		Prerequisite: machineshop5
+		RequiresCondition: machineshop > 4

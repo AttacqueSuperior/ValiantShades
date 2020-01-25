@@ -151,3 +151,26 @@ caslab:
 		ShadowStart: 7
 	damagefire1:
 		Offset: 17,-75,1
+
+camach:
+	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire1
+	Defaults:
+		Offset: 0, -45
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		ShadowStart: 5
+	flag: camach_f
+		Length: 16
+	rubble:
+		UseTilesetCode: false
+		Start: 3
+		ShadowStart: 7
+	damagefire1:
+		Offset: -2,-11,1
+	damagefire2:
+		Offset: 29,-35,1

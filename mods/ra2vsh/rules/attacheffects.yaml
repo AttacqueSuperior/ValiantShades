@@ -719,6 +719,66 @@
 		Condition: hospital
 		Prerequisites: hospital5
 
+^MachineShopRepair:
+	SelfHealing@machineshop:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: machineshop
+	SelfHealing@machineshop2:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: machineshop > 1
+	SelfHealing@machineshop3:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: machineshop > 2
+	SelfHealing@machineshop4:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: machineshop > 3
+	SelfHealing@machineshop5:
+		PercentageStep: 1
+		Step: 0
+		Delay: 150
+		HealIfBelow: 100
+		DamageCooldown: 125
+		RequiresCondition: machineshop > 4
+	WithDecoration@machineshop:
+		Image: pips
+		Sequence: repair
+		Palette: pips
+		ReferencePoint: Top, Right
+		RequiresCondition: machineshop
+		ZOffset: 256
+		ValidStances: Ally
+	GrantConditionOnPrerequisite@machineshop:
+		Condition: machineshop
+		Prerequisites: machineshop
+	GrantConditionOnPrerequisite@machineshop2:
+		Condition: machineshop
+		Prerequisites: machineshop2
+	GrantConditionOnPrerequisite@machineshop3:
+		Condition: machineshop
+		Prerequisites: machineshop3
+	GrantConditionOnPrerequisite@machineshop4:
+		Condition: machineshop
+		Prerequisites: machineshop4
+	GrantConditionOnPrerequisite@machineshop5:
+		Condition: machineshop
+		Prerequisites: machineshop5
+
 ^AffectedByPropaganda:
 	ExternalCondition@propaganda:
 		Condition: propaganda

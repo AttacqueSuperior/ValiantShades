@@ -491,3 +491,108 @@ caslab.rubble:
 		Palette: isotem
 	TransformOnCapture:
 		IntoActor: caslab
+
+camach:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire2
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
+	Selectable:
+		Bounds: 160, 140, -5, -30
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Tooltip:
+		Name: Tech Machine Shop
+	Health:
+		HP: 800000
+	RevealsShroud:
+		Range: 6c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	WithIdleOverlay@flag:
+		Sequence: flag
+	SpawnActorOnDeath:
+		Actor: camach.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire2:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire2-heavy:
+		RequiresCondition: dmg_crit
+	GrantExternalConditionToOwner@machineshop:
+		Condition: machineshop
+		RequiresCondition: !ownerless
+	GrantConditionOnPrerequisite@machineshop:
+		Condition: machineshop
+		Prerequisites: machineshop
+	GrantConditionOnPrerequisite@machineshop2:
+		Condition: machineshop
+		Prerequisites: machineshop2
+	GrantConditionOnPrerequisite@machineshop3:
+		Condition: machineshop
+		Prerequisites: machineshop3
+	GrantConditionOnPrerequisite@machineshop4:
+		Condition: machineshop
+		Prerequisites: machineshop4
+	GrantConditionOnPrerequisite@machineshop5:
+		Condition: machineshop
+		Prerequisites: machineshop5
+	WithTextDecoration@machineshop:
+		RequiresSelection: true
+		Text: COUNT: 1
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: machineshop == 1
+	WithTextDecoration@machineshop2:
+		RequiresSelection: true
+		Text: COUNT: 2
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: machineshop == 2
+	WithTextDecoration@machineshop3:
+		RequiresSelection: true
+		Text: COUNT: 3
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: machineshop == 3
+	WithTextDecoration@machineshop4:
+		RequiresSelection: true
+		Text: COUNT: 4
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: machineshop == 4
+	WithTextDecoration@machineshop5:
+		RequiresSelection: true
+		Text: COUNT: 4+
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: machineshop > 4
+
+camach.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
+	Tooltip:
+		Name: Tech Machine Shop Wreck
+	Building:
+		Dimensions: 3,3
+		Footprint: === === ===
+	RenderSprites:
+		Image: camach
+		Palette: isotem
+	TransformOnCapture:
+		IntoActor: camach

@@ -256,6 +256,8 @@ pips:
 		Length: *
 		Tick: 300
 		Offset: 6, -2
+	repair:
+		Start: 20
 
 discus:
 	idle:
