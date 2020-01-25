@@ -17,3 +17,4 @@ Metrics:
 	ClickSound: ClickSound
 	ChatMessageColor: FFFFFF
 	SystemMessageColor: FFFF00
+	ButtonTextContrastRadius: 2
