@@ -766,6 +766,26 @@ pdplane.caairp.husk:
 	RenderVoxels:
 		Image: pdplane.caairp
 
+pdplane.secretlab:
+	Inherits: pdplane
+	-Targetable@airborne:
+	-Targetable@ground:
+	-Targetable@Repair:
+	-DamagedByTintedCells:
+	-GrantConditionOnDamageState@damaged:
+	-Targetable@Temporal:
+	RenderVoxels:
+		Image: pdplane.crate
+		Scale: 14.625
+	SpawnActorOnDeath:
+		Actor: pdplane.secretlab.husk
+
+pdplane.secretlab.husk:
+	Inherits: pdplanehusk
+	RenderVoxels:
+		Image: pdplane.crate
+		Scale: 14.625
+
 civp:
 	Inherits: pdplane
 	Aircraft:

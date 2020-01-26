@@ -455,7 +455,7 @@ caslab:
 	ProductionParadropAS:
 		Produces: SecretLab
 		RequiresCondition: !disabled
-		ActorType: pdplane.crate
+		ActorType: pdplane.secretlab
 		ReadyAudio: ReinforcementsArrived
 		ChuteSound: sparadra.wav
 	Exit:
