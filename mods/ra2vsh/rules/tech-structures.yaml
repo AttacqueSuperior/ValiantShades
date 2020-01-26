@@ -459,7 +459,7 @@ caslab:
 		ReadyAudio: ReinforcementsArrived
 		ChuteSound: sparadra.wav
 	Exit:
-	GrantRandomConditionOnProduction:
+	GrantRandomConditionOnDelivery:
 		Conditions: beholder, overlord, malfestor, howitzer
 	PeriodicProducer@Beholder:
 		Type: SecretLab
