@@ -676,6 +676,7 @@ pdplane:
 		CruiseAltitude: 5600
 		TurnSpeed: 5
 		Speed: 225
+		MaximumPitch: 56
 	Health:
 		HP: 600000
 	Armor:
