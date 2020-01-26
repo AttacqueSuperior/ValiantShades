@@ -737,6 +737,13 @@ pdplane.crate:
 	-DamagedByTintedCells:
 	-GrantConditionOnDamageState@damaged:
 	-Targetable@Temporal:
+	SpawnActorOnDeath:
+		Actor: pdplane.crate.husk
+
+pdplane.crate.husk:
+	Inherits: pdplanehusk
+	RenderVoxels:
+		Image: pdplane.crate
 
 pdplane.caairp:
 	Inherits: pdplane
