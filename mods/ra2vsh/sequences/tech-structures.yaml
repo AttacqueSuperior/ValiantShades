@@ -83,7 +83,7 @@ cathosp:
 		ZOffset: 128
 		UseTilesetCode: false
 		Offset: -35, -16
-	rubble:
+	rubble: cgthosp
 		UseTilesetCode: false
 		Start: 2
 		ShadowStart: 5
@@ -145,7 +145,7 @@ caslab:
 		ShadowStart: 5
 	flag: caslab_f
 		Length: 16
-	rubble:
+	rubble: cgslab
 		UseTilesetCode: false
 		Start: 3
 		ShadowStart: 7
@@ -166,7 +166,7 @@ camach:
 		ShadowStart: 5
 	flag: camach_f
 		Length: 16
-	rubble:
+	rubble: cgmach
 		UseTilesetCode: false
 		Start: 3
 		ShadowStart: 7
