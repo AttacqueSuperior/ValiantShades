@@ -82,7 +82,7 @@ cathosp:
 	flag: cahosp_f
 		ZOffset: 128
 		UseTilesetCode: false
-		Offset: 0,0
+		Offset: -35, -16
 	rubble:
 		UseTilesetCode: false
 		Start: 2
