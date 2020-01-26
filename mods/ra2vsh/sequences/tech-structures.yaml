@@ -154,7 +154,7 @@ caslab:
 
 camach:
 	Inherits: ^TechStructure
-	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -45
 		TilesetOverrides:
