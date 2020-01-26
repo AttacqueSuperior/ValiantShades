@@ -119,3 +119,6 @@ brute:
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 20
+	AutoTarget:
+		InitialStance: AttackAnything
+		ScanRadius: 3
