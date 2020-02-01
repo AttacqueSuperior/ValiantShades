@@ -464,7 +464,7 @@ caslab:
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
-		ChargeDuration: 2250
+		ChargeDuration: 3000
 		ShowSelectionBar: true
 		RequiresCondition: beholder && !ownerless
 		PauseOnCondition: disabled
@@ -476,7 +476,7 @@ caslab:
 	PeriodicProducer@Overlord:
 		Type: SecretLab
 		Actors: ovrl
-		ChargeDuration: 2625
+		ChargeDuration: 3500
 		ShowSelectionBar: true
 		RequiresCondition: overlord && !ownerless
 		PauseOnCondition: disabled
@@ -488,7 +488,7 @@ caslab:
 	PeriodicProducer@Malfestor:
 		Type: SecretLab
 		Actors: malf
-		ChargeDuration: 2400
+		ChargeDuration: 3200
 		ShowSelectionBar: true
 		RequiresCondition: malfestor && !ownerless
 		PauseOnCondition: disabled
@@ -500,7 +500,7 @@ caslab:
 	PeriodicProducer@Howitzer:
 		Type: SecretLab
 		Actors: howi
-		ChargeDuration: 1650
+		ChargeDuration: 2200
 		ShowSelectionBar: true
 		RequiresCondition: howitzer && !ownerless
 		PauseOnCondition: disabled
