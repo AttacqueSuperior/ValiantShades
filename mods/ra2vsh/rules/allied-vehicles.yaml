@@ -1475,11 +1475,16 @@ chrp:
 		TurnSpeed: 4
 		Offset: -310,0,0
 	Armament@primary:
-		Weapon: ChronoPrison
+		Weapon: ChronoPrisonVehicle
 		# LocalOffset: 640,0,512
+		ReloadingCondition: reloading
+	Armament@primary2:
+		Weapon: ChronoPrisonInfantry
+		# LocalOffset: 640,0,512
+		ReloadingCondition: reloading
 	AttackTurreted:
 		Voice: Attack
-		PauseOnCondition: disabled
+		PauseOnCondition: disabled || reloading
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6

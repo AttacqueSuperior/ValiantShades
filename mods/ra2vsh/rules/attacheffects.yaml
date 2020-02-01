@@ -365,6 +365,16 @@
 		Condition: disabled
 		RequiresCondition: being-warped
 
+^WarpableInfantry:
+	Inherits: ^Warpable
+	Targetable@Temporal:
+		TargetTypes: Temporal, TemporalInfantry
+
+^WarpableUnit:
+	Inherits: ^Warpable
+	Targetable@Temporal:
+		TargetTypes: Temporal, TemporalUnit
+
 ^MindControllable:
 	ExternalCondition@prevent-mindcontrol:
 		Condition: prevent-mindcontrol

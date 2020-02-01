@@ -699,12 +699,10 @@ AeroblazeLaserE:
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicra2exp
 
-ChronoPrison:
+^ChronoPrison:
 	Range: 11c0
-	ReloadDelay: 450
 	Report: chrpfir.wav
 	TargetActorCenter: true
-	ValidTargets: Temporal
 	InvalidTargets: ImmuneToPrison
 	Projectile: SpriteRailgun
 		HelixAnim: chronobolt
@@ -715,9 +713,22 @@ ChronoPrison:
 	Warhead@1Dam: HealthPercentageDamage
 		Spread: 384
 		Damage: 100
-		ValidTargets: Temporal
 		InvalidTargets: ImmuneToPrison
 		DamageTypes: TemporalDeath
+
+ChronoPrisonInfantry:
+	Inherits: ^ChronoPrison
+	ReloadDelay: 150
+	ValidTargets: TemporalInfantry
+	Warhead@1Dam: HealthPercentageDamage
+		ValidTargets: TemporalInfantry
+
+ChronoPrisonVehicle:
+	Inherits: ^ChronoPrison
+	ReloadDelay: 450
+	ValidTargets: TemporalUnit
+	Warhead@1Dam: HealthPercentageDamage
+		ValidTargets: TemporalUnit
 
 CyborgShrapnel:
 	Inherits: ^TeslaZap
