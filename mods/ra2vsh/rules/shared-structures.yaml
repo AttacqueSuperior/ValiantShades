@@ -214,7 +214,7 @@
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
-		Footprint: xxx= xxx= xxx=
+		Footprint: xxx+ xxx+ xxx+
 		Dimensions: 4,3
 	Health:
 		HP: 1000000
@@ -290,7 +290,7 @@
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete && !powerdown
 	Building:
-		Footprint: xxxx= xxxx= xxxx=
+		Footprint: xxxx+ xxxx+ xxxx+
 		Dimensions: 5,3
 	Health:
 		HP: 1000000

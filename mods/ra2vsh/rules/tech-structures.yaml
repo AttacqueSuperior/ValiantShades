@@ -80,7 +80,7 @@ caoild.rubble:
 		Name: Tech Oil Derrick Wreck
 	Building:
 		Dimensions: 2,2
-		Footprint: == ==
+		Footprint: ++ ++
 	RenderSprites:
 		Image: caoild
 	TransformOnCapture:
@@ -168,7 +168,7 @@ caairp.rubble:
 		Name: Tech Airport Wreck
 	Building:
 		Dimensions: 3,3
-		Footprint: === === ===
+		Footprint: +++ +++ +++
 	RenderSprites:
 		Image: caairp
 	TransformOnCapture:
@@ -293,7 +293,7 @@ cahosp.rubble:
 		Name: Tech Hospital Wreck
 	Building:
 		Dimensions: 6,4
-		Footprint: ==== ==== ==== ==== ==== ====
+		Footprint: ++++ ++++ ++++ ++++ ++++ ++++
 	RenderSprites:
 		Image: cahosp
 	TransformOnCapture:
@@ -327,7 +327,7 @@ cathosp.rubble:
 		Name: Tech Hospice Wreck
 	Building:
 		Dimensions: 3,3
-		Footprint: === === ===
+		Footprint: +++ +++ +++
 	RenderSprites:
 		Image: cathosp
 		Palette: isotem
@@ -353,7 +353,7 @@ caoutp:
 		HP: 2000000
 	Building:
 		Dimensions: 4,3
-		Footprint: xx== xx== xx==
+		Footprint: xx++ xx++ xx++
 	Reservable:
 	RallyPoint:
 	RepairsUnits:
@@ -416,7 +416,7 @@ caoutp.rubble:
 		Name: Tech Outpost Wreck
 	Building:
 		Dimensions: 4,3
-		Footprint: ==== ==== ====
+		Footprint: ++++ ++++ ++++
 	RenderSprites:
 		Image: caoutp
 		Palette: isosnow
@@ -537,7 +537,7 @@ caslab.rubble:
 		Name: Tech Secret Lab Wreck
 	Building:
 		Dimensions: 3,3
-		Footprint: === === ===
+		Footprint: +++ +++ +++
 	RenderSprites:
 		Image: caslab
 		Palette: isotem
@@ -652,7 +652,7 @@ camach.rubble:
 		Name: Tech Machine Shop Wreck
 	Building:
 		Dimensions: 3,3
-		Footprint: === === ===
+		Footprint: +++ +++ +++
 	RenderSprites:
 		Image: camach
 		Palette: isotem

@@ -801,7 +801,7 @@ gadrop:
 	Tooltip:
 		Name: Dropship Bay
 	Building:
-		Footprint: xx=== xx=== xx===
+		Footprint: xx+++ xx+++ xx+++
 		Dimensions: 5,3
 	Health:
 		HP: 1000000
@@ -955,7 +955,7 @@ gadept:
 	ProvidesPrerequisite@default:
 		RequiresCondition: !build-incomplete
 	Building:
-		Footprint: x== x== x==
+		Footprint: x++ x++ x++
 		Dimensions: 3,3
 	Health:
 		HP: 1200000
