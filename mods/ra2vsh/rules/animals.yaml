@@ -13,7 +13,7 @@ cow:
 		VoiceSet: CowVoice
 	AmbientSound:
 		SoundFiles: gcowsela.wav, gcowselb.wav, gcowselc.wav
-		Interval: 200, 750
+		Interval: 375, 7500
 		Delay: 5, 150
 	-Guard:
 	-AttackFrontal:
