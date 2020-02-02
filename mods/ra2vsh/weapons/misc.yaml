@@ -769,7 +769,7 @@ AuroraBomb:
 	ReloadDelay: 50
 	Range: 1c512
 	MinRange: 0c001
-	Report: vkiratta.wav
+	Report: vauroatta.wav
 	Projectile: BulletAS
 		Speed: 300
 		Image: spiritbomb
