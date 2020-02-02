@@ -47,4 +47,6 @@ brute:
 		Start: 284
 	cheer:
 		Start: 276
+	mutate: gendeath
+		Length: 60
 	icon: bruticon

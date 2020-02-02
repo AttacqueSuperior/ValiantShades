@@ -104,6 +104,7 @@ brute:
 		Voice: Attack
 		PauseOnCondition: disabled
 	WithInfantryBody:
+		RequiresCondition: !parachute && !mutation
 		DefaultAttackSequence: shoot
 		AttackSequences:
 			secondary: smash
@@ -122,3 +123,19 @@ brute:
 	AutoTarget:
 		InitialStance: AttackAnything
 		ScanRadius: 3
+	GrantPeriodicCondition@mutation:
+		Condition: mutation
+		ActiveDuration: 60
+		CooldownDuration: 10000000
+		StartsGranted: true
+	GrantCondition@mutation-disabled:
+		Condition: disabled
+		RequiresCondition: mutation
+	WithSpriteBody@mutation:
+		Name: mutation
+		Sequence: mutate
+		RequiresCondition: mutation
+	AmbientSound@mutation:
+		SoundFiles: sgenon.wav
+		Interval: 10000000
+		RequiresCondition: mutation
