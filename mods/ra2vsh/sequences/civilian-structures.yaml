@@ -1138,3 +1138,13 @@ graionbb:
 	damaged-idle:
 		Start: 63
 		Length: 63
+
+caegyp02:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-60
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC

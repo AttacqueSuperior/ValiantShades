@@ -2150,3 +2150,18 @@ graionbb:
 		HP: 250000
 	RenderSprites:
 		Palette: graionbb
+
+caegyp02:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
+	Tooltip:
+		Name: Pyramid
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
