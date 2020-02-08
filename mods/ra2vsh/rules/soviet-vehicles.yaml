@@ -221,6 +221,12 @@ dron:
 	HitShape:
 		Type: Circle
 			Radius: 128
+	GrantConditionOnTerrain@sink:
+		TerrainTypes: Water
+		Condition: sink
+	KillsSelf@sink:
+		RequiresCondition: sink
+		DamageTypes: DefaultDeath
 
 htk:
 	Inherits: ^Vehicle
