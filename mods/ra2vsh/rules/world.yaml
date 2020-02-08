@@ -333,7 +333,7 @@ World:
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 224
-		SupportActors: dog,e1,e1,e1,mtnk,engineer
+		SupportActors: dog,e1,e1,ggi,ggi,hmmv,aengineer
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -343,7 +343,7 @@ World:
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 224
-		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
+		SupportActors: dog,e1,e1,ggi,ggi,hmmv,hmmv,ltnk,aengineer
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -369,7 +369,7 @@ World:
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 224
-		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
+		SupportActors: dog,e2,e2,e2,flakt,flakt,flakt,htk,sengineer
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -379,7 +379,7 @@ World:
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 224
-		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
+		SupportActors: dog,e2,e2,e2,flakt,flakt,flakt,htk,htk,drgn,sengineer
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
