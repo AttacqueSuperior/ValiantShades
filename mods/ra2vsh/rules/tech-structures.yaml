@@ -460,7 +460,7 @@ caslab:
 		ChuteSound: sparadra.wav
 	Exit:
 	GrantRandomConditionOnDelivery:
-		Conditions: beholder, overlord, malfestor, howitzer
+		Conditions: beholder, overlord, malfestor, howitzer, mammoth
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -509,6 +509,18 @@ caslab:
 		ReferencePoint: Center
 		ZOffset: -512
 		RequiresCondition: howitzer && !ownerless
+	PeriodicProducer@Mammoth:
+		Type: SecretLab
+		Actors: 4tnk
+		ChargeDuration: 3500
+		ShowSelectionBar: true
+		RequiresCondition: mammoth && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@Mammoth:
+		Text: MAMMOTH TANK
+		ReferencePoint: Center
+		ZOffset: -512
+		RequiresCondition: mammoth && !ownerless
 	TooltipDescription@ally:
 		Description: Periodically provides hidden units.
 		ValidStances: Ally
