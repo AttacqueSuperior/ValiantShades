@@ -258,6 +258,7 @@ pips:
 		Offset: 6, -2
 	repair:
 		Start: 20
+	pip-overlord: pip-overlord
 
 discus:
 	idle:

@@ -801,7 +801,7 @@
 		RequiresCondition: propaganda
 	WithDecoration@propaganda:
 		Image: pips
-		Sequence: medic
+		Sequence: pip-overlord
 		Palette: pips
 		ReferencePoint: Bottom, Left
 		RequiresCondition: propaganda
