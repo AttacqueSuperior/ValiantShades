@@ -306,16 +306,20 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 		TEMPERATE: .tem
 		SNOW: .sno
 		URBAN: .urb
+		DESERT: .des
+		NEWURBAN: .ubn
 	TilesetCodes:
 		GENERIC: g
 		SNOW: a
 		TEMPERATE: t
 		URBAN: u
+		DESERT: d
+		NEWURBAN: n
 
 ModelSequenceFormat: VoxelModelSequence
 
 AssetBrowser:
-	SupportedExtensions: .shp, .png, .tem, .sno, .urb, .sha
+	SupportedExtensions: .shp, .png, .tem, .sno, .urb, .sha, .des, .ubn
 
 GameSpeeds:
 	slowest:
