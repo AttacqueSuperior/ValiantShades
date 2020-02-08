@@ -173,6 +173,8 @@
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 3
 	make:
@@ -181,6 +183,8 @@
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: URBAN
+			DESERT: DESERT
+			NEWURBAN: NEWURBAN
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
@@ -294,6 +298,8 @@
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 11
 	active:

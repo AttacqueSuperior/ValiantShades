@@ -127,9 +127,15 @@ caeuro05:
 
 capark01:
 	Inherits: ^Prop
+	Defaults:
+		TilesetOverrides:
+			NEWURBAN: TEMPERATE
 
 capark02:
 	Inherits: ^Prop
+	Defaults:
+		TilesetOverrides:
+			NEWURBAN: TEMPERATE
 
 capark03:
 	Inherits: ^Prop

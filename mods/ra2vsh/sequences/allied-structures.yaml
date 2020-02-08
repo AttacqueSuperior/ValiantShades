@@ -154,6 +154,8 @@ gafcmd:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -20,-7,1
 	damagefire2:
@@ -212,6 +214,8 @@ gaairc:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -21,-14,1
 	damagefire2:
@@ -406,6 +410,8 @@ garbur:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -27,-8,1
 	damagefire2:
@@ -458,6 +464,8 @@ gacran:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -2,-42,1
 	damagefire2:
@@ -492,6 +500,8 @@ gadrop:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -70,-40,1
 	damagefire2:
@@ -539,6 +549,8 @@ gaspir:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -20,-13,1
 	damagefire2:
@@ -630,6 +642,8 @@ nasam:
 			SNOW: GENERIC
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: 1,5,1
 	icon: samicon
@@ -695,6 +709,8 @@ gagap:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -5,-4,1
 	icon: gapicon
@@ -714,12 +730,16 @@ gaweat:
 				TilesetOverrides:
 					TEMPERATE: GENERIC
 					URBAN: GENERIC
+					DESERT: GENERIC
+					NEWURBAN: GENERIC
 			ggweth_h:
 				Length: 12
 				UseTilesetCode: true
 				TilesetOverrides:
 					TEMPERATE: GENERIC
 					URBAN: GENERIC
+					DESERT: GENERIC
+					NEWURBAN: GENERIC
 	damaged-active:
 		Combine:
 			ggweth_f:
@@ -729,6 +749,8 @@ gaweat:
 				TilesetOverrides:
 					TEMPERATE: GENERIC
 					URBAN: GENERIC
+					DESERT: GENERIC
+					NEWURBAN: GENERIC
 			ggweth_h:
 				Start: 12
 				Length: 12
@@ -736,10 +758,14 @@ gaweat:
 				TilesetOverrides:
 					TEMPERATE: GENERIC
 					URBAN: GENERIC
+					DESERT: GENERIC
+					NEWURBAN: GENERIC
 	make: gtwethmk
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: TEMPERATE
+			DESERT: TEMPERATE
+			NEWURBAN: TEMPERATE
 	damagefire1:
 		Offset: 2,5,1
 	damagefire2:
@@ -796,6 +822,8 @@ atesla:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 		Length: 27
 		ShadowStart: 27
 	damagefire1:

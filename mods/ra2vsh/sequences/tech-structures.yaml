@@ -70,6 +70,8 @@ cathosp:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -138,6 +140,8 @@ caslab:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -160,6 +164,8 @@ camach:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 4
 	damaged-idle:

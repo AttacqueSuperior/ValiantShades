@@ -317,6 +317,8 @@ natek:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -41,-10,1
 	damagefire2:
@@ -368,6 +370,8 @@ naindp:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -40,-4,1
 	icon: indpicon
@@ -398,6 +402,9 @@ naclon:
 		ShadowStart: 33
 		Tick: 180
 	make: ntclonmk
+		TilesetOverrides:
+			DESERT: TEMPERATE
+			NEWURBAN: TEMPERATE
 	damagefire1:
 		Offset: 23,-3,1
 	icon: cameo|clonicon
@@ -421,6 +428,9 @@ napsis:
 	make: ntpsismk
 		Length: 24
 		ShadowStart: 24
+		TilesetOverrides:
+			DESERT: TEMPERATE
+			NEWURBAN: TEMPERATE
 	damagefire1:
 		Offset: -23,4,1
 	icon: cameo|psisicon
@@ -490,6 +500,8 @@ napsyd:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -20,-13,1
 	damagefire2:
@@ -557,6 +569,8 @@ nacran:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: 0,-15,1
 	icon: rfixicon
@@ -596,6 +610,8 @@ nalasr:
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	damagefire1:
 		Offset: -5,0,1
 	icon: plticon
@@ -652,6 +668,8 @@ naflak:
 			SNOW: GENERIC
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
 	muzzle: flak
 		Length: *
 		Offset: 0,0
