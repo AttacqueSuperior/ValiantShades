@@ -227,6 +227,9 @@ dron:
 	KillsSelf@sink:
 		RequiresCondition: sink
 		DamageTypes: DefaultDeath
+	DamageMultiplier@jousting:
+		RequiresCondition: jousting
+		Modifier: 50
 
 htk:
 	Inherits: ^Vehicle
