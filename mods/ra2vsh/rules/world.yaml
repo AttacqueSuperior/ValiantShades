@@ -421,6 +421,15 @@ World:
 		Density: 1, 2
 		Altitude: 12c0
 		RequiresCondition: meteorstorm
+	TimeLimitManager:
+		TimeLimitWarnings:
+			1: OneMinuteRemaining
+			2: TwoMinutesRemaining
+			3: ThreeMinutesRemaining
+			4: FourMinutesRemaining
+			5: FiveMinutesRemaining
+			10: TenMinutesRemaining
+			20: TwentyMinutesRemaining
 
 EditorWorld:
 	Inherits: ^BaseWorld
