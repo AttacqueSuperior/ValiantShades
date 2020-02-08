@@ -64,6 +64,7 @@ Packages:
 	ra2vsh|bits/tx-snow.zip
 	ra2vsh|bits/tx-temperate.zip
 	ra2vsh|bits/tx-urban.zip
+	ra2vsh|bits/tx-newurban.zip
 	ra2vsh|bits/desert.zip
 	ra2vsh|bits/audio
 	ra2vsh|bits/audio/eva
@@ -225,6 +226,7 @@ TileSets:
 	ra2vsh|tilesets/snow.yaml
 	ra2vsh|tilesets/urban.yaml
 	ra2vsh|tilesets/desert.yaml
+	ra2vsh|tilesets/newurban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
