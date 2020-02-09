@@ -18,6 +18,11 @@ aero:
 	Inherits@MC: ^MindControllable
 	icon: aeroicon
 
+ambu:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 behold:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
@@ -135,6 +140,11 @@ euroc:
 	icon: xxicon
 
 flata:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
+ftrk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
