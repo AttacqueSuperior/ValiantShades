@@ -164,6 +164,7 @@ ChromeLayout:
 	ra2vsh|chrome/mainmenu.yaml
 	ra2vsh|chrome/ingame-observer.yaml
 	ra2vsh|chrome/ingame-debug.yaml
+	common|chrome/mainmenu-prompts.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
