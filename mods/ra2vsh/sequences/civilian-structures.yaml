@@ -1148,3 +1148,22 @@ caegyp02:
 			URBAN: GENERIC
 			DESERT: GENERIC
 			NEWURBAN: GENERIC
+
+capad:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-45
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		ShadowStart: 3
+	idle-lamp: capad_a
+		Length: 12
+		Tick: 200
+		TilesetOverrides:
+			SNOW: GENERIC

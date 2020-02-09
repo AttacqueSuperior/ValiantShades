@@ -2163,3 +2163,20 @@ caegyp02:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+
+capad:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: Civilian Helipad
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 250000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+	WithIdleOverlay@lamp:
+		Sequence: idle-lamp
