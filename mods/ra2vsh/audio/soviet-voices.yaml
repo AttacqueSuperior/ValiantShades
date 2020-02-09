@@ -78,7 +78,7 @@ YuriVoice:
 		Select: iyursea, iyurseb, iyursec, iyursed, iyursee
 		Move: iyurmoa, iyurmob, iyurmoc, iyurmod
 		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate
-		Die: iclodib, iclodic, iclodid, iclodie
+		Die: iyupdia, iyupdib, iyupdic, iyupdid
 
 VirusVoice:
 	Inherits: ^InfantryDeath
