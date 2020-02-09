@@ -660,3 +660,18 @@ camach.rubble:
 		IntoActor: camach
 	TooltipDescription:
 		Description: Rebuild this wreck to enable self-healing for mechanical units.
+
+catech01:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
+	Tooltip:
+		Name: Communications Center
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 400000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx

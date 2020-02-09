@@ -792,11 +792,6 @@ cachig06:
 		Offset: 0,-30
 		UseTilesetCode: false
 
-catech01:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0,-45
-
 catexs01:
 	Inherits: ^CivStructure
 	Defaults:

@@ -180,3 +180,8 @@ camach:
 		Offset: -2,-11,1
 	damagefire2:
 		Offset: 29,-35,1
+
+catech01:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-45
