@@ -75,9 +75,9 @@ AgentVoice:
 YuriVoice:
 	Inherits: ^InfantryDeath
 	Voices:
-		Select: iyursea, iyurseb, iyursec, iyursed, iyursee
-		Move: iyurmoa, iyurmob, iyurmoc, iyurmod
-		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate
+		Select: iyursea, iyurseb, iyursec, iyursed, iyursee, iyupsea
+		Move: iyurmoa, iyurmob, iyurmoc, iyurmod, iyupmod, iyupmof
+		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate, iyupata, iyupatb, iyupatd
 		Die: iyupdia, iyupdib, iyupdic, iyupdid
 
 VirusVoice:
