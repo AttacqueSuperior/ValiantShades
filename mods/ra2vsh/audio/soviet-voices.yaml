@@ -75,6 +75,14 @@ AgentVoice:
 YuriVoice:
 	Inherits: ^InfantryDeath
 	Voices:
+		Select: iclosea, icloseb, iclosec, iclosed, iclosee
+		Move: iclomoa, iclomob, iclomoc, iclomod, iclomee
+		Attack: icloata, icloatb, icloatc, icloatd, icloate
+		Die: iclodib, iclodic, iclodid, iclodie
+
+YuriPrimeVoice:
+	Inherits: ^InfantryDeath
+	Voices:
 		Select: iyursea, iyurseb, iyursec, iyursed, iyursee, iyupsea
 		Move: iyurmoa, iyurmob, iyurmoc, iyurmod, iyupmod, iyupmof
 		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate, iyupata, iyupatb, iyupatd
