@@ -2155,13 +2155,11 @@ caegyp02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Pyramid
-	Armor:
-		Type: Concrete
+		Name: Small Pyramid
 	RevealsShroud:
 		Range: 6c0
 	Health:
-		HP: 500000
+		HP: 1000000
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
