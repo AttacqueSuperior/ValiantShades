@@ -93,3 +93,51 @@ tree27:
 
 tree28:
 	Inherits: ^Tree
+
+tree29:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree30:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree31:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree32:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree33:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree34:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree35:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
+
+tree36:
+	Inherits: ^Tree
+	Defaults:
+		TilesetOverrides:
+			SNOW: TEMPERATE
