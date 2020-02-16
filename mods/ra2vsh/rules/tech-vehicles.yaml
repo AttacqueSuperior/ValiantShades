@@ -338,7 +338,7 @@ howi:
 	WithVoxelBody:
 	WithVoxelTurret:
 	Voiced:
-		VoiceSet: ApocalypseVoice
+		VoiceSet: MammothTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:

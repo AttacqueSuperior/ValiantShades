@@ -214,3 +214,10 @@ HowitzerVoice:
 		Select: vhwtzsea, vhwtzseb, vhwtzsec, vhwtzsed
 		Move: vhwtzmoa, vhwtzmob, vhwtzmoc
 		Attack: vhwtzmob, vhwtzmoc
+
+MammothTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmammsea, vmammseb, vmammsec, vmammsed
+		Move: vmammmoa, vmammmob
+		Attack: vmammmob, vmammmob
