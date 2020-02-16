@@ -750,7 +750,7 @@ CyborgShrapnelE:
 MalfestorBeam:
 	ReloadDelay: 64
 	Range: 8c512
-	Report: ifaiatta.wav
+	Report: corefir1.wav
 	Projectile: ElectricBolt
 		Colors: FF00FF, 800080, C000C0, 600060, 960096
 	Warhead@1Dam: SpreadDamage
