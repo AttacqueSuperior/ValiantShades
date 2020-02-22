@@ -1677,6 +1677,7 @@ mnrva:
 		DeathTypes: DefaultDeath
 	Turreted:
 		TurnSpeed: 5
+		Offset: -180,0,0
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 640,0,512
