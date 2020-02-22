@@ -121,6 +121,10 @@
 		Name: buraicon
 		Filename: buraicon.png
 		AllowModifiers: false
+	PaletteFromPng@kamiicon:
+		Name: kamiicon
+		Filename: kamiicon.png
+		AllowModifiers: false
 	PaletteFromPng@htn2icon:
 		Name: htn2icon
 		Filename: htn2icon.png

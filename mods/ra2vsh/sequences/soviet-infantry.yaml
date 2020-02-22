@@ -376,6 +376,8 @@ kamikaze:
 		Length: 13
 	-die1:
 	-die2:
+	icon: kamiicon.png
+		AddExtension: false
 
 cyborg:
 	Inherits: ^ArmedInfantry
