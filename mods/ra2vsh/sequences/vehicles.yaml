@@ -214,7 +214,7 @@ htnk:
 howi:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: howiicon
 
 hyd:
 	Inherits: ^Vehicle
