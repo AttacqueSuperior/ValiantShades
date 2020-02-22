@@ -126,7 +126,7 @@ caairp:
 	Exit@1:
 		ExitCell: 2,1
 	RallyPoint:
-		Offset: 3,1
+		Path: 3,1
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	CaptureManager:

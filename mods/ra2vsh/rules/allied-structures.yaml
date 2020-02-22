@@ -132,7 +132,7 @@ gapile:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	RallyPoint:
-		Offset: 2,3
+		Path: 2,3
 	Exit@0_n1:
 		SpawnOffset: 170,-810,0
 		ExitCell: 0, -1
@@ -817,7 +817,7 @@ gadrop:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 	Exit@1:
 		ExitCell: 4,1
 	GrantConditionOnPrerequisite@warfactory:

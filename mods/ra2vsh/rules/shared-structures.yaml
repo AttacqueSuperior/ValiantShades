@@ -306,7 +306,7 @@
 		Radius: 2c0
 		DeathTypes: DefaultDeath
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 	Exit@1:
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
@@ -531,7 +531,7 @@
 		ZOffset: 256
 		RequiresCondition: primary && !build-incomplete && !powerdown
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000

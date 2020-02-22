@@ -112,7 +112,7 @@ nahand:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2
@@ -589,7 +589,7 @@ naclon:
 		Produces: Clone
 		RequiresCondition: !build-incomplete && barracks && !being-warped && !powerdown
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 		ProductionType: Clone
