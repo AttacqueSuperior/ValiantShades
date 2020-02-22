@@ -527,6 +527,7 @@ hammr:
 	Buildable:
 		Prerequisites: ~naweap, ~disabled
 		Description: Airborne Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+		IconPalette: htn2icon
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,100,384

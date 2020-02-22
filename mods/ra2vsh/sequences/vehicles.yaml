@@ -187,7 +187,8 @@ mtnk:
 hammr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: htnkicon
+	icon: htn2icon.png
+		AddExtension: false
 
 harv:
 	Inherits: ^Vehicle
