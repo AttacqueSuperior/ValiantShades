@@ -272,6 +272,7 @@ howi:
 		BuildPaletteOrder: 70
 		Prerequisites: ~disabled
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+		IconPalette: 4tnkicon
 	Mobile:
 		Speed: 60
 		TurnSpeed: 5

@@ -121,3 +121,7 @@
 		Name: buraicon
 		Filename: buraicon.png
 		AllowModifiers: false
+	PaletteFromPng@4tnkicon:
+		Name: 4tnkicon
+		Filename: 4tnkicon.png
+		AllowModifiers: false

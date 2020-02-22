@@ -1,7 +1,8 @@
 4tnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: 4tnkicon.png
+		AddExtension: false
 
 amcv:
 	Inherits: ^Vehicle
