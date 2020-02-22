@@ -108,6 +108,8 @@ shad.ai:
 		InitialUnits: e1, e1, e1
 	Selectable:
 		Class: shad
+	UpdatesPlayerStatistics:
+		OverrideActor: shad
 	Buildable:
 		BuildPaletteOrder: 10000
 		Prerequisites: ~gaweap, gaairc, ~cheater-ai
@@ -122,6 +124,8 @@ shad.ai2:
 		InitialUnits: e1, e1, e1, e1, e1
 	Selectable:
 		Class: shad
+	UpdatesPlayerStatistics:
+		OverrideActor: shad
 	Buildable:
 		BuildPaletteOrder: 10000
 		Prerequisites: ~gaweap, gaairc, ~cheater-ai

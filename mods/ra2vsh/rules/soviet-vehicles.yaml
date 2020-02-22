@@ -345,6 +345,8 @@ htk.ai:
 		InitialUnits: e2, flakt, e2, flakt, e2
 	Selectable:
 		Class: htk
+	UpdatesPlayerStatistics:
+		OverrideActor: htk
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~naweap, ~cheater-ai
@@ -361,6 +363,8 @@ htk.ai-repair:
 		InitialUnits: sengineer
 	Selectable:
 		Class: htk
+	UpdatesPlayerStatistics:
+		OverrideActor: htk
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~naweap, ~cheater-ai
