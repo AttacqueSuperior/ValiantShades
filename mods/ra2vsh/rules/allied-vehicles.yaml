@@ -1661,6 +1661,7 @@ mnrva:
 		BuildPaletteOrder: 20000
 		Prerequisites: ~gaweap, ~disabled
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures
+		IconPalette: mnrvicon
 	Mobile:
 		Speed: 140
 		TurnSpeed: 6

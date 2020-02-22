@@ -174,7 +174,8 @@ mgtk:
 mnrva:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: mnrvicon.png
+		AddExtension: false
 
 gtgcan:
 	icon: gcanicon
