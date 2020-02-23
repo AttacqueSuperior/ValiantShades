@@ -1166,6 +1166,7 @@ artemis:
 		BuildPaletteOrder: 110
 		Prerequisites: ~gapile, ~disabled
 		Description: Carries a heavy missile launcher.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry, Aircraft
+		IconPalette: arteicon
 	Valued:
 		Cost: 450
 	DeliversCash:

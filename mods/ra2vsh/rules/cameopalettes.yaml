@@ -69,6 +69,10 @@
 		Name: demeicon
 		Filename: demeicon.png
 		AllowModifiers: false
+	PaletteFromPng@arteicon:
+		Name: arteicon
+		Filename: arteicon.png
+		AllowModifiers: false
 	PaletteFromPng@mnrvicon:
 		Name: mnrvicon
 		Filename: mnrvicon.png

@@ -512,7 +512,8 @@ artemis:
 		Start: 72
 		Facings: 8
 		Length: 6
-	icon: xxicon
+	icon: arteicon.png
+		AddExtension: false
 
 fairy:
 	Inherits: ^BasicInfantry
