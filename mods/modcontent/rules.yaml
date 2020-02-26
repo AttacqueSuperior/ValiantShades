@@ -1,5 +1,0 @@
-World:
-	PaletteFromPng:
-		Name: cursor
-		Filename: cursor.png
-		CursorPalette: true
