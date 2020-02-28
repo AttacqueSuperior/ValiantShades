@@ -41,7 +41,7 @@ fi
 
 PACKAGING_DIR=$(python -c "import os; print(os.path.dirname(os.path.realpath('$0')))")
 TEMPLATE_ROOT="${PACKAGING_DIR}/../../"
-ARTWORK_DIR="${PACKAGING_DIR}/../artwork/"
+ARTWORK_DIR="${PACKAGING_DIR}/../artwork"
 
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
