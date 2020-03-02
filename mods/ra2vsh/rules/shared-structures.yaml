@@ -158,7 +158,7 @@
 		RequiresCondition: !build-incomplete && !powerdown
 		Color: B0C4DE
 	Power:
-		Amount: -10
+		Amount: -25
 		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
@@ -328,7 +328,7 @@
 		RequiresCondition: !build-incomplete && !powerdown
 		Color: B0C4DE
 	Power:
-		Amount: -25
+		Amount: -75
 		RequiresCondition: !being-warped && !powerdown
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
@@ -541,7 +541,7 @@
 		RequiresCondition: !build-incomplete && !powerdown
 		Color: B0C4DE
 	Power:
-		Amount: -20
+		Amount: -50
 		RequiresCondition: !being-warped && !powerdown
 	RequiresBuildableArea:
 		Adjacent: 13
