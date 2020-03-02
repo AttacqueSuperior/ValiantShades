@@ -84,8 +84,8 @@ cmin:
 	Harvester:
 		Capacity: 10
 		Resources: Ore, Gems, Tiberium
-		BaleLoadDelay: 24
-		BaleUnloadDelay: 2
+		BaleLoadDelay: 36
+		BaleUnloadDelay: 3
 		SearchFromProcRadius: 30
 		SearchFromHarvesterRadius: 15
 		HarvestVoice: Harvest
