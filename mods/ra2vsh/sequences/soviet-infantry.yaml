@@ -8,9 +8,6 @@ sengineer:
 
 dog:
 	Inherits: adog
-	shoot: dogp
-		Length: 1
-		Facings: 64
 	icon: dogicon
 
 sqd:
