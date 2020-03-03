@@ -73,10 +73,9 @@ sub:
 	RevealOnDeath:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
-	-Targetable:
 	Targetable:
-		TargetTypes: Ground, Water, Repair
-		RequiresCondition: !underwater && !being-warped
+		TargetTypes: Ground, Water
+		RequiresCondition: !underwater && !being-warped && !invulnerability
 	Cloak:
 		CloakTypes: Underwater
 		InitialDelay: 50
@@ -109,7 +108,7 @@ sub:
 	Voiced:
 		VoiceSet: TyphoonVoice
 	Targetable@underwater:
-		TargetTypes: Underwater, Repair
+		TargetTypes: Underwater
 		RequiresCondition: underwater
 	HitShape:
 
