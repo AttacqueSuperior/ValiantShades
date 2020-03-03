@@ -170,6 +170,7 @@ dlph:
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
+		PauseOnCondition: disabled
 	GrantCondition@preventgroundtargeting:
 		Condition: prevent-ground-target
 		RequiresCondition: being-warped
@@ -200,7 +201,7 @@ dlph:
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		RequiresCondition: underwater
+		RequiresCondition: !underwater && !being-warped
 	Targetable@underwater:
 		TargetTypes: Underwater
 		RequiresCondition: underwater

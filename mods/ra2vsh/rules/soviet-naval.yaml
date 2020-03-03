@@ -76,7 +76,7 @@ sub:
 	-Targetable:
 	Targetable:
 		TargetTypes: Ground, Water, Repair
-		RequiresCondition: underwater
+		RequiresCondition: !underwater && !being-warped
 	Cloak:
 		CloakTypes: Underwater
 		InitialDelay: 50
@@ -225,7 +225,7 @@ sqd:
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		RequiresCondition: underwater
+		RequiresCondition: !underwater && !being-warped
 	Targetable@underwater:
 		TargetTypes: Underwater
 		RequiresCondition: underwater
