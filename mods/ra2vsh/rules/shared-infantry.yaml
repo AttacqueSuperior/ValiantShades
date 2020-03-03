@@ -115,6 +115,8 @@ dog:
 		ScanRadius: 6
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry
+	AttackMove:
+		Voice: Attack
 	RenderSprites:
 		Image: adog
 		FactionImages:
