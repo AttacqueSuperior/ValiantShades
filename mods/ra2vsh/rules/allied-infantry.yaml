@@ -84,6 +84,7 @@ e1:
 		UndeployedCondition: undeployed
 		Voice: Move
 		CanDeployOnRamps: True
+		SmartDeploy: True
 		Facing: 128
 		RequiresCondition: !disabled
 		DeploySounds: igidepa.wav, igidepb.wav
@@ -263,6 +264,7 @@ ggi:
 		UndeployedCondition: undeployed
 		Voice: Move
 		CanDeployOnRamps: True
+		SmartDeploy: True
 		Facing: 96
 		RequiresCondition: !disabled
 		DeploySounds: iggidepa.wav

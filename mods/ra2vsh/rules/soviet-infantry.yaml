@@ -381,6 +381,7 @@ deso:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: True
+		SmartDeploy: True
 		Facing: 92
 		Voice: Deploy
 		PauseOnCondition: disabled
