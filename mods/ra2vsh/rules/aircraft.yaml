@@ -417,6 +417,8 @@ beag:
 	HitShape:
 	Rearmable:
 		RearmActors: gaairc, naairc
+	AutoTarget:
+		ScanOnIdle: false
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -647,6 +649,8 @@ spirit:
 	Aircraft:
 		TurnSpeed: 18
 		Speed: 226
+	AutoTarget:
+		ScanOnIdle: false
 
 spirithusk:
 	Inherits: ^PlaneHusk
