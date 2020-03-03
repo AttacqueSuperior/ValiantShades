@@ -1,19 +1,13 @@
 overlay:
 	Defaults: place
 		Offset: 0, -15
-	build-valid-temperate:
-	build-valid-snow:
-	build-valid-urban:
+	build-valid:
 	build-invalid:
 		Start: 1
 	target-select:
 	target-invalid:
 		Start: 1
-	target-valid-snow:
-		Start: 2
-	target-valid-temperate:
-		Start: 2
-	target-valid-urban:
+	target-valid:
 		Start: 2
 
 editor-overlay:
