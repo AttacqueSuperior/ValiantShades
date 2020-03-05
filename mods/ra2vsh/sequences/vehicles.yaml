@@ -19,16 +19,6 @@ aero:
 	Inherits@MC: ^MindControllable
 	icon: aeroicon
 
-ambu:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-bcab:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
 behold:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
@@ -44,11 +34,6 @@ bura:
 	Inherits@MC: ^MindControllable
 	icon: buraicon.png
 		AddExtension: false
-
-bus:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
 
 car:
 	Inherits: ^Vehicle
@@ -66,16 +51,6 @@ chrp:
 		AddExtension: false
 
 cdest:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-cona:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-cop:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
@@ -139,21 +114,6 @@ empr:
 	Inherits@MC: ^MindControllable
 	icon: empricon.png
 		AddExtension: false
-
-euroc:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-flata:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-ftrk:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
 
 fv:
 	Inherits: ^Vehicle
@@ -238,11 +198,6 @@ lcrf:
 	Inherits@MC: ^MindControllable
 	icon: landicon
 
-limo:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
@@ -264,17 +219,7 @@ ovrl:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
-pick:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
 propa:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-ptruck:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon
@@ -299,11 +244,6 @@ sref:
 	Inherits@MC: ^MindControllable
 	icon: sreficon
 
-stang:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
 sub:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
@@ -313,21 +253,6 @@ succ:
 	Inherits: ^Vehicle
 	icon: succicon.png
 		AddExtension: false
-
-suvb:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-suvw:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-taxi:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
 
 tnkd:
 	Inherits: ^Vehicle
@@ -339,11 +264,6 @@ topol:
 	Inherits@MC: ^MindControllable
 	icon: toplicon.png
 		AddExtension: false
-
-tractor:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
 
 sapc:
 	Inherits: ^Vehicle
@@ -358,16 +278,6 @@ dtruck:
 mind:
 	Inherits: ^Vehicle
 	icon: mindicon
-
-trucka:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-truckb:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
 
 ttnk:
 	Inherits: ^Vehicle
@@ -385,11 +295,6 @@ v3:
 	icon: v3icon
 
 vlad:
-	Inherits: ^Vehicle
-	Inherits@MC: ^MindControllable
-	icon: xxicon
-
-wini:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	icon: xxicon

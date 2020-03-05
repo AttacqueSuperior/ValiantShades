@@ -867,6 +867,7 @@
 	OwnerLostAction:
 		Action: ChangeOwner
 	RenderSprites:
+		Image: car
 	Tooltip:
 		GenericName: Civilian Vehicle
 	Valued:
