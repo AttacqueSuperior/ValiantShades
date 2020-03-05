@@ -24,6 +24,11 @@ ambu:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
+bcab:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: xxicon
+
 behold:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
