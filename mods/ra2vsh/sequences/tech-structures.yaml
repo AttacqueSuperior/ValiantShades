@@ -181,7 +181,33 @@ camach:
 	damagefire2:
 		Offset: 29,-35,1
 
+capowr:
+	Inherits: ^TechStructure
+	Inherits@damagefire: ^BuildingDamageFire1
+	Defaults:
+		Offset: 0, -30
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		ShadowStart: 5
+	flag: capowr_a
+		Length: 16
+	rubble: cgpowr
+		UseTilesetCode: false
+		Start: 3
+		ShadowStart: 7
+	damagefire1:
+		Offset: -3,-25,1
+
 catech01:
 	Inherits: ^CivStructure
+	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
 		Offset: 0,-45
+	damagefire1:
+		Offset: -2,-25,1

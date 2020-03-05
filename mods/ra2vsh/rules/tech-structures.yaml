@@ -661,11 +661,76 @@ camach.rubble:
 	TooltipDescription:
 		Description: Rebuild this wreck to enable self-healing for mechanical units.
 
-catech01:
-	Inherits: ^CivBuilding
-	Inherits@shape: ^3x3Shape
+capowr:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^2x2Shape
+	Inherits@damagefire: ^BuildingDamageFire1
+	Selectable:
+		Bounds: 96, 104, -2, -26
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	EngineerRepairable:
+	GrantConditionIfOwnerIsNeutral:
+		Condition: ownerless
+	Power:
+		Amount: 400
+		RequiresCondition: !ownerless
 	Tooltip:
-		Name: Communications Center
+		Name: Tech Power Plant
+	Health:
+		HP: 800000
+	RevealsShroud:
+		Range: 4c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 4c0
+	RevealOnDeath:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+	WithIdleOverlay@flag:
+		Sequence: flag
+		Offset: 1000,0,0
+	SpawnActorOnDeath:
+		Actor: capowr.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+	TooltipDescription@ally:
+		Description: Provides additional power.
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: Capture to receive additional power.
+		ValidStances: Neutral, Enemy
+
+capowr.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Tech Power Plant Wreck
+	Building:
+		Dimensions: 2,2
+		Footprint: ++ ++
+	RenderSprites:
+		Image: capowr
+		Palette: isotem
+	TransformOnCapture:
+		IntoActor: capowr
+	TooltipDescription:
+		Description: Rebuild this wreck to receive additional power.
+
+catech01:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^3x3Shape
+	Inherits@damagefire: ^BuildingDamageFire1
+	Tooltip:
+		Name: Tech Communications Center
 	Armor:
 		Type: Steel
 	RevealsShroud:
