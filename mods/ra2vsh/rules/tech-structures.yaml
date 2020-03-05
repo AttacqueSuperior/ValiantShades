@@ -729,6 +729,8 @@ catech01:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x3Shape
 	Inherits@damagefire: ^BuildingDamageFire1
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Communications Center
 	Armor:
@@ -740,3 +742,28 @@ catech01:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catech01.rubble
+	SmokeParticleEmitter@smallsmoke:
+		RequiresCondition: dmg_heavy
+	SmokeParticleEmitter@largesmoke:
+		RequiresCondition: dmg_crit
+	WithIdleOverlay@damagefire1:
+		RequiresCondition: dmg_heavy && !dmg_crit
+	WithIdleOverlay@damagefire1-heavy:
+		RequiresCondition: dmg_crit
+
+catech01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
+	-Explodes@temporal:
+	-SpawnSmokeParticleOnDeath@temporal:
+	Tooltip:
+		Name: Tech Communications Center Wreck
+	Building:
+		Dimensions: 3,3
+		Footprint: +++ +++ +++
+	RenderSprites:
+		Image: catech01
+	TransformOnCapture:
+		IntoActor: catech01
