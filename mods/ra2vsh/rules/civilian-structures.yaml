@@ -2149,6 +2149,15 @@ caegyp02:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
 
+casydn02:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
+	Tooltip:
+		Name: McRoo Burger
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
 capad:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape

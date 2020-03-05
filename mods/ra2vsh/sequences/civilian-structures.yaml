@@ -1144,6 +1144,21 @@ caegyp02:
 			DESERT: GENERIC
 			NEWURBAN: GENERIC
 
+casydn02:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-45
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
 capad:
 	Inherits: ^CivStructure
 	Defaults:

@@ -260,6 +260,15 @@ capark03:
 	MapEditorData:
 		Categories: Decoration
 
+capark04:
+	Inherits: capark01
+
+capark05:
+	Inherits: capark01
+
+capark06:
+	Inherits: capark01
+
 castrt01:
 	Inherits: ^CivBuilding
 	Tooltip:
