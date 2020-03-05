@@ -269,6 +269,20 @@ capark05:
 capark06:
 	Inherits: capark01
 
+casin03e:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Construction Sign
+	RevealsShroud:
+		Range: 2c0
+	Health:
+		HP: 5000
+	MapEditorData:
+		Categories: Decoration
+
+casin03s:
+	Inherits: casin03e
+
 castrt01:
 	Inherits: ^CivBuilding
 	Tooltip:
