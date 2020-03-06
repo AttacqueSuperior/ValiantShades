@@ -100,7 +100,7 @@ caairp:
 		HP: 800000
 	Building:
 		Dimensions: 3,3
-		Footprint: xxx xxx +++
+		Footprint: xx+ xx+ xx+
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
