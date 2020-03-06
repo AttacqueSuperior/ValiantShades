@@ -195,6 +195,41 @@ casin03s:
 	idle:
 		ShadowStart: 1
 
+caurb01:
+	Inherits: ^Prop
+	Defaults:
+		Offset: 0, -15
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	idle:
+		ShadowStart: 1
+
+caurb02:
+	Inherits: ^Prop
+	Defaults:
+		Offset: 0, -15
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	idle:
+		ShadowStart: 1
+
+caurb03:
+	Inherits: ^Prop
+	Defaults:
+		Offset: 0, -15
+		TilesetOverrides:
+			TEMPERATE: URBAN
+			DESERT: URBAN
+			NEWURBAN: URBAN
+	idle:
+		ShadowStart: 1
+
 ammo01:
 	Inherits: ^Prop
 	idle:
