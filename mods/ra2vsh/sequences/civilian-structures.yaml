@@ -672,6 +672,16 @@ cabunk02:
 	Defaults:
 		Offset: 0,-30
 
+cabunk03:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-30
+
+cabunk04:
+	Inherits: ^CivStructure
+	Defaults:
+		Offset: 0,-30
+
 carus01:
 	Inherits: ^CivStructure
 	Defaults: cgrus01

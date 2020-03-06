@@ -2121,6 +2121,36 @@ cabunk02:
 		Dimensions: 2,2
 		Footprint: xx xx
 
+cabunk03:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Concrete Bunker
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 2000000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cabunk04:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Concrete Bunker
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 2000000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
 graionbb:
 	Inherits: ^CivBuilding
 	Inherits@hitshape: ^1x3Shape
