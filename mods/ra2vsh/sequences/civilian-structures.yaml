@@ -692,13 +692,11 @@ carus02a:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: false
 
 carus02b:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: false
 
 carus02c:
 	Inherits: ^CivStructure
