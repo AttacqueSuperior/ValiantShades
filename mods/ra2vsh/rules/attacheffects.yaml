@@ -5,6 +5,7 @@
 			1000: rank-elite
 			1666: rank-heroic
 		LevelUpImage: crate-effects
+		LevelUpNotification: LevelUp
 	FirepowerMultiplier@veteran:
 		RequiresCondition: rank-veteran
 		Modifier: 116
