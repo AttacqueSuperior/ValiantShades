@@ -253,6 +253,7 @@
 		AllowUnderActors: false
 		TerrainType: Tiberium
 	CliffBackImpassabilityLayer:
+	ExitsDebugOverlayManager:
 
 World:
 	Inherits: ^BaseWorld
