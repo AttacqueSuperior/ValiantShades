@@ -141,3 +141,7 @@
 		Name: 4tnkicon
 		Filename: 4tnkicon.png
 		AllowModifiers: false
+	PaletteFromPng@ovrlicon:
+		Name: ovrlicon
+		Filename: ovrlicon.png
+		AllowModifiers: false

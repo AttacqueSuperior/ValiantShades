@@ -217,7 +217,8 @@ apoc:
 ovrl:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon: ovrlicon.png
+		AddExtension: false
 
 propa:
 	Inherits: ^Vehicle

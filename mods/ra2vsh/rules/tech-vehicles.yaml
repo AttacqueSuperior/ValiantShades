@@ -81,6 +81,7 @@ ovrl:
 		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Advanced Battle Tank with Double Barrel\nand Propaganda Aura.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry
+		IconPalette: ovrlicon
 	Mobile:
 		Speed: 60
 		TurnSpeed: 5
