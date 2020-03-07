@@ -151,6 +151,18 @@ Player:
 					Attractiveness: -5
 					TargetMetric: None
 					CheckRadius: 8c0
+				Consideration@4:
+					Against: Enemy
+					Types: PowerPlant
+					Attractiveness: 2
+					TargetMetric: None
+					CheckRadius: 5c0
+				Consideration@5:
+					Against: Enemy
+					Types: NukePowerPlant
+					Attractiveness: 10
+					TargetMetric: None
+					CheckRadius: 5c0
 			psychicdominator:
 				OrderName: PsychicDominatorInfoOrder
 				Types: MindControl

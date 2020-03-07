@@ -85,6 +85,8 @@
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	Targetable@PowerPlant:
+		TargetTypes: PowerPlant
 
 ^BasicPower:
 	Inherits: ^Power

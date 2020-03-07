@@ -415,6 +415,8 @@ nanrct:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2
+	Targetable@PowerPlant:
+		TargetTypes: NukePowerPlant
 
 natech:
 	Inherits: ^Tier4
