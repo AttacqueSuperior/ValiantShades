@@ -121,6 +121,7 @@ cawash18:
 		Length: 10
 		ShadowStart: 10
 		Tick: 80
+	autobounds: cawsh18a
 
 cawash19:
 	Inherits: ^CivStructure

@@ -371,7 +371,7 @@ cawash18:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: White House Fountain
+		Name: Fountain
 	Armor:
 		Type: Concrete
 	RevealsShroud:
