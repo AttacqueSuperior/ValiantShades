@@ -126,6 +126,12 @@
 		VoiceSet: Structure
 	DeathSounds:
 		DeathTypes: DefaultDeath
+	ExternalCondition@autobounds:
+		Condition: autobounds
+	WithSpriteBody@autobounds:
+		RequiresCondition: autobounds
+		Sequence: autobounds
+		Name: autobounds
 	WithSpriteBody:
 	Explodes:
 		Type: Footprint

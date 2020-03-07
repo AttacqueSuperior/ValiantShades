@@ -1141,6 +1141,7 @@ graionbb:
 	damaged-idle:
 		Start: 63
 		Length: 63
+	autobounds:
 
 caegyp02:
 	Inherits: ^CivStructure

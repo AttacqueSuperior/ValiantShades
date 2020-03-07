@@ -234,6 +234,8 @@ ammo01:
 	Inherits: ^Prop
 	idle:
 		UseTilesetCode: false
+	autobounds:
+		UseTilesetCode: false
 
 cabhut:
 	Inherits: ^Prop

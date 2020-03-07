@@ -191,6 +191,7 @@
 	icon:
 		Offset: 0,0
 		UseTilesetCode: false
+	autobounds:
 
 ^TechStructure:
 	Inherits@IvanBomb: ^IvanBombable
@@ -210,6 +211,7 @@
 		Start: 3
 		ShadowStart: 7
 		ZOffset: -3c0
+	autobounds:
 
 ^CivStructure:
 	Inherits@IvanBomb: ^IvanBombable
@@ -223,6 +225,7 @@
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	autobounds:
 
 ^Vehicle:
 	Inherits@IvanBomb: ^IvanBombable
@@ -249,6 +252,7 @@
 	damaged-idle: causfgl
 		Start: 1
 		ShadowStart: 5
+	autobounds: causfgl
 
 ^Wall:
 	Defaults:
@@ -274,6 +278,7 @@
 		UseTilesetExtension: true
 	idle:
 		ShadowStart: 1
+	autobounds:
 
 ^Prop:
 	Inherits@IvanBomb: ^IvanBombable
@@ -284,12 +289,15 @@
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
+	autobounds:
 
 ^Rock:
-	idle:
-		ShadowStart: 1
+	Defaults:
 		Offset: 0, -15
 		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+	autobounds:
 
 ^Drill:
 	Defaults: cgdrill
@@ -307,8 +315,11 @@
 		Length: 10
 		ShadowStart: 12
 		Tick: 160
+	autobounds:
 
 ^Tree:
 	idle:
 		ShadowStart: 1
+		UseTilesetExtension: true
+	autobounds:
 		UseTilesetExtension: true

@@ -690,6 +690,7 @@ gaspysat:
 		Offset: 25,7,1
 	damagefire2:
 		Offset: -26,-5,1
+	autobounds: ggspst
 	icon: asaticon
 
 gagap:
@@ -770,6 +771,7 @@ gaweat:
 		Offset: 2,5,1
 	damagefire2:
 		Offset: 38,18,1
+	autobounds: ggweth
 	icon: wethicon
 
 gacsph:
@@ -826,5 +828,6 @@ atesla:
 			NEWURBAN: GENERIC
 		Length: 27
 		ShadowStart: 27
+	autobounds: ggpris
 	damagefire1:
 		Offset: -1,1,1
