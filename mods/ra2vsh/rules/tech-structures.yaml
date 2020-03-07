@@ -437,7 +437,7 @@ caslab:
 		HP: 800000
 	Building:
 		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Footprint: +x+ xxx +x+
 	WithIdleOverlay@flag:
 		Sequence: flag
 	SpawnActorOnDeath:
@@ -458,7 +458,17 @@ caslab:
 		ActorType: pdplane.secretlab
 		ReadyAudio: ReinforcementsArrived
 		ChuteSound: sparadra.wav
-	Exit:
+	Exit@0:
+		ExitCell: 0,0
+	Exit@1:
+		ExitCell: 0,2
+		Priority: 2
+	Exit@2:
+		ExitCell: 2,0
+		Priority: 2
+	Exit@3:
+		ExitCell: 2,2
+		Priority: 3
 	GrantRandomConditionOnDelivery:
 		Conditions: beholder, overlord, malfestor, howitzer, mammoth
 	PeriodicProducer@Beholder:
