@@ -20,6 +20,14 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 
+^AutoBounds:
+	ExternalCondition@autobounds:
+		Condition: autobounds
+	WithSpriteBody@autobounds:
+		RequiresCondition: autobounds
+		Sequence: autobounds
+		Name: autobounds
+
 ^AutoTargetGround:
 	AutoTarget:
 		AttackAnythingCondition: stance-attackanything
@@ -73,6 +81,7 @@
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
+	Inherits@3: ^AutoBounds
 	Inherits@4: ^BuildingParticles
 	Inherits@ivanbomb: ^IvanBombable
 	Inherits@shape: ^1x1Shape
@@ -126,12 +135,6 @@
 		VoiceSet: Structure
 	DeathSounds:
 		DeathTypes: DefaultDeath
-	ExternalCondition@autobounds:
-		Condition: autobounds
-	WithSpriteBody@autobounds:
-		RequiresCondition: autobounds
-		Sequence: autobounds
-		Name: autobounds
 	WithSpriteBody:
 	Explodes:
 		Type: Footprint
@@ -1254,6 +1257,7 @@
 ^Doodad:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
+	Inherits@3: ^AutoBounds
 	WithSpriteBody:
 	FrozenUnderFog:
 	Building:
