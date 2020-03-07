@@ -123,6 +123,7 @@ caairp:
 		ActorType: pdplane.caairp
 		Facing: 224
 		ReadyAudio: ReinforcementsArrived
+	ExitsDebugOverlay:
 	Exit@1:
 		ExitCell: 2,1
 	RallyPoint:
@@ -458,6 +459,7 @@ caslab:
 		ActorType: pdplane.secretlab
 		ReadyAudio: ReinforcementsArrived
 		ChuteSound: sparadra.wav
+	ExitsDebugOverlay:
 	Exit@0:
 		ExitCell: 0,0
 	Exit@1:

@@ -818,6 +818,7 @@ gadrop:
 		DeathTypes: DefaultDeath
 	RallyPoint:
 		Path: 5,1
+	ExitsDebugOverlay:
 	Exit@1:
 		ExitCell: 4,1
 	GrantConditionOnPrerequisite@warfactory:

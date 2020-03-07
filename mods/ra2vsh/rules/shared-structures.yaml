@@ -142,6 +142,7 @@
 		Radius: 2c512
 		DeathTypes: DefaultDeath
 	RallyPoint:
+	ExitsDebugOverlay:
 	Production:
 		Produces: Infantry, Barracks
 		RequiresCondition: !build-incomplete && !powerdown
@@ -312,6 +313,7 @@
 		DeathTypes: DefaultDeath
 	RallyPoint:
 		Path: 5,1
+	ExitsDebugOverlay:
 	Exit@1:
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
@@ -457,6 +459,7 @@
 	RevealOnDeath:
 		Radius: 5c0
 		DeathTypes: DefaultDeath
+	ExitsDebugOverlay:
 	# X -2 column
 	Exit@n2_n2:
 		ExitCell: -2,-2
@@ -605,6 +608,7 @@
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary && !build-incomplete && !powerdown
+	ExitsDebugOverlay:
 	Exit@1:
 		ExitCell: 1,1
 		Facing: 224
