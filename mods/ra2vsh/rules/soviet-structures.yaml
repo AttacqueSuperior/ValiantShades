@@ -789,13 +789,14 @@ napsyd:
 		IconPalette: domiicon
 		ChargeInterval: 7500
 		Description: Psychic Dominator
-		ActivationSequence: active
 		LongDesc: Shifts ownership of enemy mindcontrollable units.
 		# TODO: This are actually no speech notifications
 		EndChargeSound: spsyopen.wav
 		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete && !powerdown
+	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
 	RevealsShroud@revealhimself:
