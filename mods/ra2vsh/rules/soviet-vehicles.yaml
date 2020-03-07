@@ -6,7 +6,7 @@ smcv:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 195
 		Prerequisites: naradr, ~naweap
 		Description: Deploys into a Construction Yard.
 	Valued:
@@ -444,7 +444,7 @@ slost:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 500
 		Prerequisites: ~naweap, ~disabled
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
@@ -528,6 +528,7 @@ hammr:
 		Prerequisites: ~naweap, ~disabled
 		Description: Airborne Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 		IconPalette: htn2icon
+		BuildPaletteOrder: 500
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,100,384
@@ -558,7 +559,7 @@ v3:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 130
 		Prerequisites: naradr, ~naweap
 		Description: Ballistic missile launcher\n  Strong vs Building, Infantry\n  Weak vs Vehicle, Aircraft
 	Mobile:
@@ -618,7 +619,7 @@ apoc:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 300
 		Prerequisites: ~naweap, natech
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
@@ -717,7 +718,7 @@ ttnk:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 200
 		Prerequisites: ~naweap, natek #, ~vehicles.russia
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
@@ -768,7 +769,7 @@ dtruck:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 160
 		Prerequisites: ~naweap, naradr #, ~vehicles.libya
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
@@ -831,7 +832,7 @@ mind:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 370
 		Prerequisites: ~naweap, natech
 		Description: Heavy vehicle capable of mind controlling enemy units.\n  Strong vs Ground Unis\n  Weak vs Aircraft
 	Mobile:
@@ -911,7 +912,7 @@ bura:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 350
 		Prerequisites: ~naweap, natech
 		Description: Heavy artillery firing thermobaric missiles.\n  Strong vs Structures, Infantry\n  Weak vs Vehicles
 		IconPalette: buraicon
@@ -963,7 +964,7 @@ gaunt:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 320
 		Prerequisites: ~naweap, natech
 		Description: Heavy anti-air weapon,\narmed with heavy missiles.\n  Strong vs Aircraft
 		IconPalette: gaunicon
@@ -1027,7 +1028,7 @@ empr:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 160
+		BuildPaletteOrder: 400
 		Prerequisites: ~naweap, natech, garbur.infiltrated
 		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground
 		IconPalette: empricon
@@ -1096,7 +1097,7 @@ topol:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 160
+		BuildPaletteOrder: 450
 		Prerequisites: ~naweap, natech, natech.infiltrated
 		Description: ICBM launcher.\nStrong vs. Ground
 		IconPalette: toplicon

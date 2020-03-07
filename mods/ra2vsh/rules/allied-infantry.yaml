@@ -19,7 +19,7 @@ e1:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: ~gapile
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 15
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
@@ -351,7 +351,7 @@ snipe:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 180
+		BuildPaletteOrder: 320
 		Prerequisites: garbur, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
@@ -414,7 +414,7 @@ gren:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: gafcmd, ~gapile
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 100
 		Description: Assault infantry with handgrenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 		IconPalette: grenicon
 	Valued:
@@ -476,7 +476,7 @@ ghost:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 200
 		Prerequisites: gatech, ~gapile
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
@@ -635,7 +635,7 @@ tany:
 	Buildable:
 		Queue: Dummy
 		BuildAtProductionType: Dummy
-		BuildPaletteOrder: 140
+		BuildPaletteOrder: 395
 		Prerequisites: gatech, ~gapile, ~disabled
 		BuildLimit: 1
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
@@ -731,7 +731,7 @@ tanya2:
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
-		BuildPaletteOrder: 140
+		BuildPaletteOrder: 295
 		Prerequisites: gatech, ~gapile
 		BuildLimit: 1
 		Description: Airborne commando infantry.\n  Strong vs Everything
@@ -794,7 +794,7 @@ hirano:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 395
 		Prerequisites: garbur, ~gapile
 		BuildLimit: 1
 		Description: Hero armed with dual heavy chainguns\nand a Hilbert Generator.\n  Strong vs Infantry, Vehicles\n  Weak vs Buildings
@@ -914,7 +914,7 @@ jumpjet:
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Buildable:
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 190
 		Prerequisites: ~gapile, gaairc
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
@@ -973,7 +973,7 @@ cleg:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 350
 		Prerequisites: ~gapile, garbur
 		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	ProducibleWithLevel:
@@ -1046,7 +1046,7 @@ marks:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: gatech, ~gapile, gatech.infiltrated
-		BuildPaletteOrder: 200
+		BuildPaletteOrder: 400
 		Description: Allied infantry capable of pinpointing targets\nfor airstrikes. Unarmed otherwise.\n  Strong vs Ground\n  Weak vs Aircraft
 	Valued:
 		Cost: 800
@@ -1106,7 +1106,7 @@ dione:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: ~gapile, ~disabled
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 500
 		Description: Rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 300
@@ -1165,7 +1165,7 @@ artemis:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 500
 		Prerequisites: ~gapile, ~disabled
 		Description: Carries a heavy missile launcher.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry, Aircraft
 		IconPalette: arteicon
@@ -1235,7 +1235,7 @@ fairy:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 450
 		Prerequisites: ~gapile, gatech, natek.infiltrated
 		Description: Assault infantry.\n  Strong vs Ground\n  Weak vs Air
 		IconPalette: fairicon

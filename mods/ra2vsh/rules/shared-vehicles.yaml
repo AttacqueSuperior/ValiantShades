@@ -10,7 +10,7 @@
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 75
+		BuildPaletteOrder: 100
 	Mobile:
 		Speed: 90
 		TurnSpeed: 5

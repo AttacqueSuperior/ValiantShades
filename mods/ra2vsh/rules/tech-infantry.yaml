@@ -8,7 +8,7 @@ init:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: ~disabled
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 500
 		Description: Infantry armed with pyrokinetics.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
@@ -62,7 +62,7 @@ brute:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 180
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Powerful infantry with heavy punches.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 	Valued:

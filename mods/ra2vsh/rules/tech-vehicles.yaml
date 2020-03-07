@@ -5,6 +5,7 @@ lasher:
 	Buildable:
 		Prerequisites: ~disabled
 		Description: Tech Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+		BuildPaletteOrder: 500
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 640,0,512
@@ -29,7 +30,7 @@ behold:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 160
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Unarmed.\nGrants bonus range to nearby allied units.
 	Valued:
@@ -77,7 +78,7 @@ ovrl:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Advanced Battle Tank with Double Barrel\nand Propaganda Aura.\n  Strong vs Vehicles, Structures\n  Weak vs Infantry
 	Mobile:
@@ -143,7 +144,7 @@ malf:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Transforms infantry into Brutes.\nStuns vehicles.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
@@ -203,7 +204,7 @@ howi:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Mobile:
@@ -269,7 +270,7 @@ howi:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 		IconPalette: 4tnkicon

@@ -19,7 +19,7 @@ e2:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: ~nahand
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 10
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 50
@@ -78,7 +78,7 @@ flakt:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: ~nahand
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 15
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 100
@@ -238,7 +238,7 @@ terror:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 320
 		Prerequisites: natech, ~nahand #, ~infantry.cuba
 		Description: Demolition infantry, able to attach napalm bombs\nto enemy buildings. Can hijack enemy vehicles.\nStealthed when stopped.\n  Strong vs Vehicles, Buildings\n  Weak vs Aircraft
 	Valued:
@@ -320,7 +320,7 @@ deso:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 220
 		Prerequisites: natek, ~nahand #, ~infantry.iraq
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -405,7 +405,7 @@ ivan:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 160
 		Prerequisites: naradr, ~nahand
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
@@ -507,7 +507,7 @@ yuri:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 160
+		BuildPaletteOrder: 350
 		Prerequisites: natech, ~nahand
 		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
 	Valued:
@@ -595,7 +595,7 @@ virus:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 360
 		Prerequisites: natech, ~nahand #, ~infantry.iraq
 		Description: Poisonous sniper.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -654,7 +654,7 @@ boris:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: natek, ~nahand
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 295
 		BuildLimit: 1
 		Description: Soviet Commando Infantry\n  Strong vs Ground\n  Weak vs Aircraft
 	Valued:
@@ -723,7 +723,7 @@ cosmo:
 	Inherits@factionparachute: ^SovietParachute
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 400
 		Prerequisites: natek, naairc, ~nahand, gatech.infiltrated
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
@@ -778,7 +778,7 @@ volkov:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 		Prerequisites: natech, ~nahand
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 395
 		BuildLimit: 1
 		Description: Soviet Commando Infantry\n  Strong vs Ground\n  Weak vs Aircraft
 		IconPalette: volkicon
@@ -840,7 +840,7 @@ kamikaze:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 		IconPalette: kamiicon
@@ -923,7 +923,7 @@ cyborg:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
-		BuildPaletteOrder: 180
+		BuildPaletteOrder: 450
 		Prerequisites: natek, ~nahand, natek.infiltrated
 		Description: Mechanical infantry with EMP grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 		IconPalette: cyboicon

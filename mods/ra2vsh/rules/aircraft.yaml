@@ -23,7 +23,7 @@ shad:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 199
 		Prerequisites: ~gaweap, gaairc
 		Description: Infantry Transport Helicopter\nUndetectable by radar.\nGets additional firepower when manned by infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
@@ -164,7 +164,7 @@ hind:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 199
 		Prerequisites: ~naweap, naairc
 		Description: Vehicle Transport Helicopter\n  Unarmed.
 		IconPalette: hindicon
@@ -224,7 +224,7 @@ zep:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 390
 		Prerequisites: ~naweap, naairc, natech
 	Selectable:
 		Bounds: 100,60,0,-10
@@ -297,7 +297,7 @@ thor:
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 400
 		Description: Heavy gunship armed with thunderstrikes\nand an anti-air laser.\nProvides additional protection\nto units under it.\n  Strong vs Units\n  Weak vs Buildings
 		Prerequisites: ~gaweap, gaairc, garbur, garbur.infiltrated
 		IconPalette: thoricon
@@ -383,7 +383,7 @@ beag:
 		Name: Black Eagle
 	Buildable:
 		Queue: Aircraft
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 110
 		Prerequisites: ~aircraft.allies
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Selectable:
@@ -441,7 +441,7 @@ orca:
 	Tooltip:
 		Name: Harrier
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 250
 		Prerequisites: ~aircraft.allies, gatech
 		Description: Fighter armed with drug-disspating missile.\nAffected units go berserk and attack\neverything around them.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 	Valued:
@@ -486,7 +486,7 @@ yak:
 	Tooltip:
 		Name: Yak
 	Buildable:
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 100
 		Prerequisites: ~aircraft.soviets
 	Valued:
 		Cost: 900
@@ -532,7 +532,7 @@ fflash:
 	Tooltip:
 		Name: Sapsan
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 200
 		Prerequisites: ~aircraft.soviets, natek
 		IconPalette: sapsicon
 	SpawnActorOnDeath:
@@ -610,7 +610,7 @@ spirit:
 		Name: Spirit
 	Buildable:
 		Queue: Aircraft
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 300
 		Prerequisites: ~aircraft.allies, garbur
 		Description: Bomber aircraft.\n  Strong vs Buildings\n  Weak vs Units
 		IconPalette: spiricon
