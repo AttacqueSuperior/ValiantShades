@@ -820,7 +820,7 @@ gadrop:
 		Path: 5,1
 	ExitsDebugOverlay:
 	Exit@1:
-		ExitCell: 4,1
+		ExitCell: 3,1
 	GrantConditionOnPrerequisite@warfactory:
 		Condition: warfactory
 		Prerequisites: warfactory
