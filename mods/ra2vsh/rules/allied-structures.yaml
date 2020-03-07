@@ -225,7 +225,7 @@ gaweap:
 		Condition: gatech
 		Prerequisites: gatech
 	PeriodicProducer@mobilegapgen:
-		RequiresCondition: aihasprimarywarfactory && gatech
+		RequiresCondition: aihasprimarywarfactory && gatech && cheater-ai
 		ResetTraitOnEnable: true
 		Type: WarFactory
 		ChargeDuration: 12500

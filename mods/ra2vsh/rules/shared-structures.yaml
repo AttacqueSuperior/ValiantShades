@@ -171,7 +171,10 @@
 		RequiresCondition: primary
 	GrantConditionOnPrerequisite@aideploy:
 		Condition: aihasprimarybarracks
-		Prerequisites: primarybarracks, cheater-ai
+		Prerequisites: primarybarracks
+	GrantConditionOnPrerequisite@cheater-ai:
+		Condition: cheater-ai
+		Prerequisites: cheater-ai
 	GrantConditionOnPrerequisite@aideploy-allied:
 		Condition: alliedengi
 		Prerequisites: alliedengi
@@ -184,13 +187,13 @@
 		DeployTicks: 15
 		DeployTrigger: Periodically
 	PeriodicProducer@alliedengineer:
-		RequiresCondition: aihasprimarybarracks && alliedengi
+		RequiresCondition: aihasprimarybarracks && alliedengi && cheater-ai
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: aengineer
 		ChargeDuration: 2400
 	PeriodicProducer@sovietengineer:
-		RequiresCondition: aihasprimarybarracks && sovietengi
+		RequiresCondition: aihasprimarybarracks && sovietengi && cheater-ai
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: sengineer
@@ -351,14 +354,17 @@
 		RequiresCondition: primary
 	GrantConditionOnPrerequisite@aideploy:
 		Condition: aihasprimarywarfactory
-		Prerequisites: primarywarfactory, cheater-ai
+		Prerequisites: primarywarfactory
+	GrantConditionOnPrerequisite@cheater-ai:
+		Condition: cheater-ai
+		Prerequisites: cheater-ai
 	AIDeployNotifier:
 		RequiresCondition: !aihasprimarywarfactory
 		DeployChance: 100
 		DeployTicks: 15
 		DeployTrigger: Periodically
 	PeriodicProducer@repairvehicle:
-		RequiresCondition: aihasprimarywarfactory
+		RequiresCondition: aihasprimarywarfactory && cheater-ai
 		ResetTraitOnEnable: true
 		Type: WarFactory
 		ChargeDuration: 6500
