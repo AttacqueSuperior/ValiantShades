@@ -453,7 +453,7 @@ caslab:
 		RequiresCondition: dmg_crit
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
-	ProductionParadropAS:
+	ProductionParadrop:
 		Produces: SecretLab
 		RequiresCondition: !disabled
 		ActorType: pdplane.secretlab
