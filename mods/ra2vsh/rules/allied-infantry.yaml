@@ -927,7 +927,7 @@ jumpjet:
 		Range: 8c0
 		Type: CenterPosition
 	Armor:
-		Type: None
+		Type: Light
 	Armament@primary:
 		Weapon: 20mm
 		RequiresCondition: !rank-heroic
