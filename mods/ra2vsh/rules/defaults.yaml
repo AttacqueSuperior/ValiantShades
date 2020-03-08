@@ -844,7 +844,10 @@
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
-	Chronoshiftable:
+	ChronoshiftableWithSpriteEffect:
+		Image: cmin
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
 	MapEditorData:
@@ -1182,7 +1185,10 @@
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: SovietNavalVoice
-	Chronoshiftable:
+	ChronoshiftableWithSpriteEffect:
+		Image: cmin
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
 	MapEditorData:
