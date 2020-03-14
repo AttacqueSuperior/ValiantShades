@@ -940,7 +940,7 @@ bura:
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
-		PauseOnCondition: disabled
+		PauseOnCondition: disabled || moving
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -952,6 +952,9 @@ bura:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	GrantConditionOnMovement:
+		Condition: moving
+		ValidMovementTypes: Horizontal, Turn
 
 gaunt:
 	Inherits: ^Vehicle
