@@ -508,24 +508,6 @@ VolkovRail:
 			Concrete: 25
 			Drone: 100
 			Rocket: 100
-	Warhead@2Dam: SpreadDamage
-		Spread: 256
-		Falloff: 100, 0
-		Damage: 50000
-		DamageTypes: Prone50Percent, TriggerProne, Kamikazify, DefaultDeath
-		ValidStances: Ally
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 75
-			Heavy: 75
-			Wood: 50
-			Steel: 50
-			Concrete: 25
-			Drone: 100
-			Rocket: 100
 
 VolkovRailE:
 	Inherits: VolkovRail
