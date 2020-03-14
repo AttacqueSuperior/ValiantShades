@@ -236,7 +236,6 @@ howi:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:
-		NormalsPalette: ts-normals
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: HowitzerVoice
