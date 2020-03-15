@@ -586,14 +586,7 @@
 		Step: 0
 		PercentageStep: 1
 		DamageTypes: DropTerrorDrone
-		Delay: 75
-		HealIfBelow: 100
-		DamageCooldown: 150
-		RequiresCondition: crane
-	SelfHealing@crane2:
-		Step: 1
-		DamageTypes: DropTerrorDrone
-		Delay: 75
+		Delay: 25
 		HealIfBelow: 100
 		DamageCooldown: 0
 		RequiresCondition: crane
