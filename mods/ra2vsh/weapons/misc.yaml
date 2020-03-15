@@ -1,6 +1,6 @@
 BlimpBomb:
-	ReloadDelay: 50
-	Range: 1c512
+	ReloadDelay: 25
+	Range: 2c0
 	MinRange: 0c001
 	Report: vkiratta.wav
 	Projectile: GravityBomb
@@ -12,7 +12,7 @@ BlimpBomb:
 	Warhead@1Dam: SpreadDamage
 		Spread: 960
 		Falloff: 100, 66, 33, 0
-		Damage: 250000
+		Damage: 125000
 		ValidTargets: Ground, Water
 		Versus:
 			None: 100

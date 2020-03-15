@@ -263,6 +263,30 @@ zep:
 		Actor: zephusk
 		DeathType: DefaultDeath
 	HitShape:
+	GrantConditionOnAttack:
+		Condition: closing-in
+		ArmamentNames: primary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 6
+		RevokeDelay: 30
+	RangeMultiplier@closing-in:
+		RequiresCondition: closing-in
+		Modifier: 66
+	RangeMultiplier@closing-in2:
+		RequiresCondition: closing-in > 1
+		Modifier: 66
+	RangeMultiplier@closing-in3:
+		RequiresCondition: closing-in > 2
+		Modifier: 66
+	RangeMultiplier@closing-in4:
+		RequiresCondition: closing-in > 3
+		Modifier: 66
+	RangeMultiplier@closing-in5:
+		RequiresCondition: closing-in > 4
+		Modifier: 66
+	RangeMultiplier@closing-in6:
+		RequiresCondition: closing-in > 5
+		Modifier: 66
 
 zephusk:
 	Inherits: ^HelicopterHusk
