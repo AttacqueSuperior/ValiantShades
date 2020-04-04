@@ -36,7 +36,7 @@ Player:
 		Type: Infantry
 		LowPowerModifier: 200
 		SpeedUp: true
-		BuildTimeSpeedReduction: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
+		BuildingCountBuildTimeMultipliers: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
 		ReadyAudio: UnitReady
 		QueuedAudio: Training
 		OnHoldAudio: OnHold
@@ -48,7 +48,7 @@ Player:
 		Type: Vehicle
 		LowPowerModifier: 200
 		SpeedUp: true
-		BuildTimeSpeedReduction: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
+		BuildingCountBuildTimeMultipliers: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
@@ -60,7 +60,7 @@ Player:
 		Type: Aircraft
 		LowPowerModifier: 200
 		SpeedUp: true
-		BuildTimeSpeedReduction: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
+		BuildingCountBuildTimeMultipliers: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
@@ -72,7 +72,7 @@ Player:
 		Type: Ship
 		LowPowerModifier: 200
 		SpeedUp: true
-		BuildTimeSpeedReduction: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
+		BuildingCountBuildTimeMultipliers: 100, 83, 66, 50, 42, 33, 25, 20, 16, 12
 		ReadyAudio: UnitReady
 		QueuedAudio: Building
 		OnHoldAudio: OnHold

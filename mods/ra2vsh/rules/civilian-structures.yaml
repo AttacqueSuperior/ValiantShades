@@ -287,16 +287,24 @@ cawsh12:
 		TurnSpeed: 255
 	BodyOrientation:
 		QuantizedFacings: 8
-	Cargo:
-		Types: Infantry
-		MaxWeight: 5
-		PipCount: 5
-	AttackGarrisoned:
-		Voice: Attack
-		Armaments: M1Carbine
-		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
-		PortYaws: 0, 176, 341, 512, 682, 853
-		PortCones: 86, 86, 86, 86, 86, 86
+#	Cargo:
+#		Types: Infantry
+#		MaxWeight: 5
+#	AttackGarrisoned:
+#		Voice: Attack
+#		Armaments: M1Carbine
+#		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
+#		PortYaws: 0, 176, 341, 512, 682, 853
+#		PortCones: 86, 86, 86, 86, 86, 86
+#	WithCargoPipsDecoration:
+#		Palette: pips
+#		Position: BottomLeft
+#		RequiresSelection: true
+#		CustomPipSequences:
+#			blue: pip-blue
+#			yellow: pip-yellow
+#			green: pip-green
+#			red: pip-red
 
 cawash13:
 	Inherits: ^CivBuilding

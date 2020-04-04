@@ -23,7 +23,7 @@ init:
 	Health:
 		HP: 100000
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 7c0
 	RevealOnDeath:
@@ -89,7 +89,7 @@ brute:
 	-Crushable:
 	-TakeCover:
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	Armament@primary:
 		Weapon: BrutePunch
 		PauseOnCondition: !ammo
@@ -116,7 +116,6 @@ brute:
 		Sequence: stand
 	AmmoPool:
 		Armaments: primary, secondary
-		PipCount: 0
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 20

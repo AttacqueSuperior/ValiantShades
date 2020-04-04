@@ -52,7 +52,6 @@ shad:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 		UnloadVoice: Move
 		LoadedCondition: loaded
 		PassengerConditions:
@@ -97,6 +96,15 @@ shad:
 	FirepowerMultiplier@disable-bonus5:
 		RequiresCondition: disable-bonus > 4
 		Modifier: 80
+	WithCargoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 shad.ai:
 	Inherits: shad
@@ -430,9 +438,6 @@ beag:
 		VoiceSet: BlackEagleVoice
 	AmmoPool:
 		Ammo: 1
-		PipCount: 1
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
 	RenderSprites:
 	SpawnActorOnDeath:
@@ -443,6 +448,12 @@ beag:
 		RearmActors: gaairc, naairc
 	AutoTarget:
 		ScanOnIdle: false
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		FullSequence: pip-ammo
+		EmptySequence: pip-ammoempty
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -529,8 +540,12 @@ yak:
 		VoiceSet: FlashFireVoice
 	AmmoPool:
 		Ammo: 20
-		PipCount: 2
 		ReloadDelay: 5
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 2
 
 yakhusk:
 	Inherits: ^PlaneHusk
@@ -567,7 +582,10 @@ fflash:
 		VoiceSet: SapsanVoice
 	AmmoPool:
 		Ammo: 2
-		PipCount: 2
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 fflashhusk:
 	Inherits: ^PlaneHusk
@@ -658,9 +676,6 @@ spirit:
 		VoiceSet: SpiritVoice
 	AmmoPool:
 		Ammo: 2
-		PipCount: 2
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
 	RenderSprites:
 	RenderVoxels:
@@ -675,6 +690,12 @@ spirit:
 		Speed: 226
 	AutoTarget:
 		ScanOnIdle: false
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		FullSequence: pip-ammo
+		EmptySequence: pip-ammoempty
 
 spirithusk:
 	Inherits: ^PlaneHusk
@@ -852,7 +873,6 @@ badger:
 		Weapon: ParaBomb
 	AmmoPool:
 		Ammo: 3
-		PipCount: 0
 	AttackAircraft:
 		FacingTolerance: 128
 		PauseOnCondition: disabled
@@ -868,6 +888,7 @@ badger:
 		IdleBehavior: LeaveMap
 	Voiced:
 		VoiceSet: SovietCargoPlaneVoice
+	-WithAmmoPipsDecoration:
 
 badgerhusk:
 	Inherits: ^PlaneHusk
@@ -889,6 +910,10 @@ badger.clustermine:
 		Ammo: 1
 	Armament:
 		Weapon: ClusterMineSpawner
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 hornet:
 	Inherits: ^SpawnedPlane
@@ -918,14 +943,17 @@ hornet:
 		PauseOnCondition: disabled
 	AmmoPool:
 		Ammo: 2
-		PipCount: 2
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
 	HitShape:
 	CarrierSlave:
 		LandingDistance: 8c0
 		DamageTypes: DefaultDeath
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		FullSequence: pip-ammo
+		EmptySequence: pip-ammoempty
 
 a10:
 	Inherits: beag
@@ -941,7 +969,6 @@ a10:
 		Weapon: WarthogMissile
 	AmmoPool:
 		Ammo: 3
-		PipCount: 0
 	AttackAircraft:
 		FacingTolerance: 128
 		PauseOnCondition: disabled
@@ -961,6 +988,7 @@ a10:
 		HP: 350000
 	Armor:
 		Type: Heavy
+	-WithAmmoPipsDecoration:
 
 a10husk:
 	Inherits: ^PlaneHusk
@@ -988,7 +1016,6 @@ spypl:
 		Weapon: SpyPlaneCamera
 	AmmoPool:
 		Ammo: 4
-		PipCount: 0
 	AttackAircraft:
 		FacingTolerance: 128
 		PauseOnCondition: disabled
@@ -1007,6 +1034,7 @@ spypl:
 		VoiceSet: SovietCargoPlaneVoice
 	Health:
 		HP: 500000
+	-WithAmmoPipsDecoration:
 
 spyplhusk:
 	Inherits: ^PlaneHusk

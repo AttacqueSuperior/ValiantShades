@@ -36,7 +36,7 @@ e1:
 	Mobile:
 		PauseOnCondition: !undeployed || disabled
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -161,7 +161,7 @@ ggi:
 	Mobile:
 		PauseOnCondition: !undeployed || disabled
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 6c0
 	RevealOnDeath:
@@ -252,7 +252,6 @@ ggi:
 		RequiresCondition: rank-heroic
 	AmmoPool:
 		Armaments: primary, deployed, deployed-elite, deployed-secondary, deployed-secondary-elite, opentopped
-		PipCount: 0
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 20
@@ -359,7 +358,7 @@ snipe:
 	Health:
 		HP: 125000
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
@@ -430,7 +429,7 @@ gren:
 	Health:
 		HP: 125000
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -502,7 +501,7 @@ ghost:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: MP5
 		RequiresCondition: !rank-heroic
@@ -610,6 +609,8 @@ ptroop:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
 		RequiresCondition: !disabled
+	WithMindControllerPipsDecoration:
+		Palette: pips
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
@@ -662,7 +663,7 @@ tany:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: DoublePistols
 		RequiresCondition: !rank-heroic
@@ -821,7 +822,7 @@ hirano:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: HiranoGun
 		RequiresCondition: !rank-heroic
@@ -992,7 +993,7 @@ cleg:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	-Crushable:
 	-TakeCover:
 	PortableChrono:
@@ -1061,7 +1062,7 @@ marks:
 	Health:
 		HP: 200000
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
@@ -1093,6 +1094,10 @@ marks:
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 450
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 dione:
 	Inherits@1: ^Infantry
@@ -1121,7 +1126,7 @@ dione:
 	Health:
 		HP: 175000
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -1189,7 +1194,7 @@ artemis:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: ArtemisMissile
 		RequiresCondition: !rank-heroic
@@ -1248,7 +1253,7 @@ fairy:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Tooltip:
 		Name: Fairy
 	Selectable:

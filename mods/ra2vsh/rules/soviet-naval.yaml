@@ -32,7 +32,6 @@ sapc:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
@@ -43,6 +42,15 @@ sapc:
 		VoiceSet: SovietAmphibiousTransportVoice
 	HitShape:
 	-Guard:
+	WithCargoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 sub:
 	Inherits: ^Ship
@@ -198,7 +206,6 @@ sqd:
 		Condition: prevent-ground-target
 		RequiresCondition: being-warped
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 80, 30
 	Voiced:
@@ -310,3 +317,7 @@ dred:
 		RepairActors: gayard, nayard
 	Armament:
 		Weapon: DredLauncher
+	WithSpawnerMasterPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true

@@ -23,7 +23,7 @@ engineer:
 	Health:
 		HP: 75000
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 	EngineerRepair:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
@@ -99,7 +99,7 @@ dog:
 	Mobile:
 		Speed: 140
 	Passenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	RevealsShroud:
 		Range: 7c0
 	RevealOnDeath:
@@ -178,44 +178,38 @@ dog:
 		Image: allied-rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite && allied
-		ZOffset: 256
 	WithDecoration@allied-elite:
 		Image: allied-rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite && !rank-heroic && allied
-		ZOffset: 256
 	WithDecoration@allied-heroic:
 		Image: allied-rank
 		Sequence: heroic
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-heroic && allied
-		ZOffset: 256
 	WithDecoration@soviet-veteran:
 		Image: soviet-rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite && soviet
-		ZOffset: 256
 	WithDecoration@soviet-elite:
 		Image: soviet-rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite && !rank-heroic && soviet
-		ZOffset: 256
 	WithDecoration@soviet-heroic:
 		Image: soviet-rank
 		Sequence: heroic
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-heroic && soviet
-		ZOffset: 256
 
 ^Spy:
 	Inherits: ^Infantry
@@ -244,7 +238,7 @@ dog:
 		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Passenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	Disguise:
 		DisguisedCondition: disguise
 	Infiltrates:
@@ -257,8 +251,7 @@ dog:
 		Image: pips
 		Sequence: pip-disguise
 		Palette: pips
-		ReferencePoint: Top, Right
-		ZOffset: 256
+		Position: TopRight
 		RequiresCondition: disguise
 	Guard:
 		Voice: Action

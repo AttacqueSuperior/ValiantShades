@@ -34,7 +34,7 @@ e2:
 	Health:
 		HP: 50000
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -93,7 +93,7 @@ flakt:
 	Health:
 		HP: 50000
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -187,7 +187,7 @@ shk:
 		Type: Plate
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -214,7 +214,6 @@ shk:
 		Weapon: ElectricBoltE
 		RequiresCondition: rank-heroic
 	AmmoPool:
-		PipCount: 0
 	ReloadAmmoPool:
 		Delay: 70
 	WithInfantryBody:
@@ -263,7 +262,7 @@ terror:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: TerrorDeath
 		EmptyWeapon: TerrorDeath
@@ -344,7 +343,7 @@ deso:
 		Type: Plate
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-heroic
@@ -430,7 +429,7 @@ ivan:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
@@ -534,7 +533,7 @@ yuri:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	ExplodeWeapon:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128
@@ -583,6 +582,10 @@ yuri:
 		RequiresCondition: !controlling
 	AttackMove:
 		Voice: Attack
+	WithMindControllerPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 virus:
 	Inherits: ^Infantry
@@ -617,7 +620,7 @@ virus:
 		DeathTypes: DefaultDeath
 	-Crushable:
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	Armament@primary:
 		Weapon: VirusGun
 		RequiresCondition: !rank-heroic
@@ -672,7 +675,7 @@ boris:
 	Mobile:
 		Speed: 75
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
@@ -716,6 +719,10 @@ boris:
 		DamageCooldown: 150
 		HealIfBelow: 100
 		RequiresCondition: !disabled
+	WithSpawnerMasterPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 cosmo:
 	Inherits: ^jumpjet
@@ -797,7 +804,7 @@ volkov:
 	Mobile:
 		Speed: 75
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 8c0
 	RevealOnDeath:
@@ -866,7 +873,7 @@ kamikaze:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes@detonate:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
@@ -948,7 +955,7 @@ cyborg:
 		DeathTypes: DefaultDeath
 	-Crushable:
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	Armament@primary:
 		Weapon: CyborgGun
 		RequiresCondition: !rank-heroic

@@ -78,23 +78,20 @@
 		Image: rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite
-		ZOffset: 256
 	WithDecoration@elite:
 		Image: rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite && !rank-heroic
-		ZOffset: 256
 	WithDecoration@heroic:
 		Image: rank
 		Sequence: heroic
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-heroic
-		ZOffset: 256
 
 ^AlliedVeteranRank:
 	WithDecoration@veteran:
@@ -557,7 +554,7 @@
 		Sequence: offline
 		Palette: ts-mouse
 		RequiresCondition: powerdown
-		ReferencePoint: Center
+		Position: Center
 	WithColoredOverlay@powerdown:
 		RequiresCondition: powerdown
 		Palette: lowpower
@@ -703,9 +700,8 @@
 		Image: pips
 		Sequence: medic
 		Palette: pips
-		ReferencePoint: Top, Right
+		Position: TopRight
 		RequiresCondition: hospital
-		ZOffset: 256
 		ValidStances: Ally
 	GrantConditionOnPrerequisite@hospital:
 		Condition: hospital
@@ -763,9 +759,8 @@
 		Image: pips
 		Sequence: repair
 		Palette: pips
-		ReferencePoint: Top, Right
+		Position: TopRight
 		RequiresCondition: machineshop
-		ZOffset: 256
 		ValidStances: Ally
 	GrantConditionOnPrerequisite@machineshop:
 		Condition: machineshop
@@ -797,9 +792,8 @@
 		Image: pips
 		Sequence: pip-overlord
 		Palette: pips
-		ReferencePoint: Bottom, Left
+		Position: BottomLeft
 		RequiresCondition: propaganda
-		ZOffset: 256
 		ValidStances: Ally
 
 ^DummyDisable:

@@ -280,8 +280,7 @@ naairc:
 		Image: gaairc
 	WithTextDecoration@placeholder:
 		Text: PLACEHOLDER
-		ReferencePoint: Center
-		ZOffset: 256
+		Position: Center
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2

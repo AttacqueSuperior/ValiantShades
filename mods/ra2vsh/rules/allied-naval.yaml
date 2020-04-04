@@ -32,7 +32,6 @@ lcrf:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
@@ -43,6 +42,15 @@ lcrf:
 		VoiceSet: AlliedAmphibiousTransportVoice
 	HitShape:
 	-Guard:
+	WithCargoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 dest:
 	Inherits: ^Ship
@@ -175,7 +183,6 @@ dlph:
 		Condition: prevent-ground-target
 		RequiresCondition: being-warped
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 40, 40
 	Voiced:
@@ -288,3 +295,7 @@ carrier:
 		Facing: 0
 	Armament:
 		Weapon: HornetLauncher
+	WithSpawnerMasterPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true

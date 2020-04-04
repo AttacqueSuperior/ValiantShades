@@ -224,7 +224,6 @@
 		ValuePerUnit: 50
 		Type: Ore
 		Name: Valuable Ore - ($50/bale)
-		PipColor: Yellow
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Ore
@@ -236,7 +235,6 @@
 		ValuePerUnit: 100
 		Type: Gems
 		Name: Valuable Gems - ($100/bale)
-		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
@@ -248,7 +246,6 @@
 		ValuePerUnit: 37
 		Type: Tiberium
 		Name: Valuable Tiberium - ($37/bale)
-		PipColor: Green
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Tiberium

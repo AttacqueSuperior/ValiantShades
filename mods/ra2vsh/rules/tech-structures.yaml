@@ -251,32 +251,27 @@ cahosp:
 	WithTextDecoration@hospital:
 		RequiresSelection: true
 		Text: COUNT: 1
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: hospital == 1
 	WithTextDecoration@hospital2:
 		RequiresSelection: true
 		Text: COUNT: 2
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: hospital == 2
 	WithTextDecoration@hospital3:
 		RequiresSelection: true
 		Text: COUNT: 3
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: hospital == 3
 	WithTextDecoration@hospital4:
 		RequiresSelection: true
 		Text: COUNT: 4
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: hospital == 4
 	WithTextDecoration@hospital5:
 		RequiresSelection: true
 		Text: COUNT: 4+
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: hospital > 4
 	TooltipDescription@ally:
 		Description: Provides infantry with self-healing.
@@ -361,7 +356,7 @@ caoutp:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000
-		RepairDamageType: KillTerrorDrone
+		RepairDamageTypes: KillTerrorDrone
 	WithIdleOverlay@tower:
 		Sequence: idle-tower
 	WithIdleOverlay@tower-shadow:
@@ -482,8 +477,7 @@ caslab:
 		PauseOnCondition: disabled
 	WithTextDecoration@Beholder:
 		Text: BEHOLDER
-		ReferencePoint: Center
-		ZOffset: -512
+		Position: Center
 		RequiresCondition: beholder && !ownerless
 	PeriodicProducer@Overlord:
 		Type: SecretLab
@@ -494,8 +488,7 @@ caslab:
 		PauseOnCondition: disabled
 	WithTextDecoration@Overlord:
 		Text: OVERLORD TANK
-		ReferencePoint: Center
-		ZOffset: -512
+		Position: Center
 		RequiresCondition: overlord && !ownerless
 	PeriodicProducer@Malfestor:
 		Type: SecretLab
@@ -506,8 +499,7 @@ caslab:
 		PauseOnCondition: disabled
 	WithTextDecoration@Malfestor:
 		Text: MALFESTOR
-		ReferencePoint: Center
-		ZOffset: -512
+		Position: Center
 		RequiresCondition: malfestor && !ownerless
 	PeriodicProducer@Howitzer:
 		Type: SecretLab
@@ -518,8 +510,7 @@ caslab:
 		PauseOnCondition: disabled
 	WithTextDecoration@Howitzer:
 		Text: HOWITZER
-		ReferencePoint: Center
-		ZOffset: -512
+		Position: Center
 		RequiresCondition: howitzer && !ownerless
 	PeriodicProducer@Mammoth:
 		Type: SecretLab
@@ -530,8 +521,7 @@ caslab:
 		PauseOnCondition: disabled
 	WithTextDecoration@Mammoth:
 		Text: MAMMOTH TANK
-		ReferencePoint: Center
-		ZOffset: -512
+		Position: Center
 		RequiresCondition: mammoth && !ownerless
 	TooltipDescription@ally:
 		Description: Periodically provides hidden units.
@@ -621,32 +611,27 @@ camach:
 	WithTextDecoration@machineshop:
 		RequiresSelection: true
 		Text: COUNT: 1
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: machineshop == 1
 	WithTextDecoration@machineshop2:
 		RequiresSelection: true
 		Text: COUNT: 2
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: machineshop == 2
 	WithTextDecoration@machineshop3:
 		RequiresSelection: true
 		Text: COUNT: 3
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: machineshop == 3
 	WithTextDecoration@machineshop4:
 		RequiresSelection: true
 		Text: COUNT: 4
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: machineshop == 4
 	WithTextDecoration@machineshop5:
 		RequiresSelection: true
 		Text: COUNT: 4+
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: machineshop > 4
 	TooltipDescription@ally:
 		Description: Provides mechanical units with self-healing.

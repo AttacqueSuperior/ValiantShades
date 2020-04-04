@@ -136,6 +136,15 @@ harv:
 		Delay: 150
 		DamageCooldown: 150
 		HealIfBelow: 100
+	WithHarvesterPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 10
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
+			Tiberium: pip-green
 
 dron:
 	Inherits: ^Vehicle
@@ -269,7 +278,6 @@ htk:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
@@ -334,6 +342,15 @@ htk:
 		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
 		ValidStances: Ally
+	WithCargoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 htk.ai:
 	Inherits: htk
@@ -603,6 +620,10 @@ v3:
 		Actors: v3rocket
 		RespawnTicks: 150
 		LoadedCondition: loaded
+	WithSpawnerMasterPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 apoc:
 	Inherits: ^Vehicle
@@ -673,7 +694,6 @@ apoc:
 	AmmoPool:
 		Armaments: secondary
 		Ammo: 2
-		PipCount: 0
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 20
@@ -896,6 +916,10 @@ mind:
 		Weapon: MasterMindExplode
 		EmptyWeapon: MasterMindExplode
 		DeathTypes: DefaultDeath
+	WithMindControllerPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
 
 bura:
 	Inherits: ^Vehicle
@@ -1313,3 +1337,7 @@ topol:
 	WithVoxelBody@cap20:
 		RequiresCondition: loaded && raise > 19
 		Sequence: cap20
+	WithAmmoPipsDecoration:
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
