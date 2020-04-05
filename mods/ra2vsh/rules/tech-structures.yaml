@@ -49,17 +49,17 @@ caoild:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
+	WithIdleDecorationOverlay@damagefire2:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
+	WithIdleDecorationOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire3:
+	WithIdleDecorationOverlay@damagefire3:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire3-heavy:
+	WithIdleDecorationOverlay@damagefire3-heavy:
 		RequiresCondition: dmg_crit
 	UpdatesDerrickCount:
 	Explodes@derrick:
@@ -110,13 +110,13 @@ caairp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
+	WithIdleDecorationOverlay@damagefire2:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
+	WithIdleDecorationOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
 	ProductionAirdropAS:
 		Produces: TechAirport
@@ -214,21 +214,21 @@ cahosp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
+	WithIdleDecorationOverlay@damagefire2:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
+	WithIdleDecorationOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire3:
+	WithIdleDecorationOverlay@damagefire3:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire3-heavy:
+	WithIdleDecorationOverlay@damagefire3-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire4:
+	WithIdleDecorationOverlay@damagefire4:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire4-heavy:
+	WithIdleDecorationOverlay@damagefire4-heavy:
 		RequiresCondition: dmg_crit
 	GrantExternalConditionToOwner@hospital:
 		Condition: hospital
@@ -309,10 +309,10 @@ cathosp:
 		Name: Tech Hospice
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
-	-WithIdleOverlay@damagefire3:
-	-WithIdleOverlay@damagefire3-heavy:
-	-WithIdleOverlay@damagefire4:
-	-WithIdleOverlay@damagefire4-heavy:
+	-WithIdleDecorationOverlay@damagefire3:
+	-WithIdleDecorationOverlay@damagefire3-heavy:
+	-WithIdleDecorationOverlay@damagefire4:
+	-WithIdleDecorationOverlay@damagefire4-heavy:
 
 cathosp.rubble:
 	Inherits: ^Rubble
@@ -388,13 +388,13 @@ caoutp:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
+	WithIdleDecorationOverlay@damagefire2:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
+	WithIdleDecorationOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
 	TooltipDescription@ally:
 		Description: Provides and defends buildable area. Can repair vehicles for a cost.
@@ -442,9 +442,9 @@ caslab:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
@@ -580,13 +580,13 @@ camach:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire2:
+	WithIdleDecorationOverlay@damagefire2:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire2-heavy:
+	WithIdleDecorationOverlay@damagefire2-heavy:
 		RequiresCondition: dmg_crit
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
@@ -695,9 +695,9 @@ capowr:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
 	TooltipDescription@ally:
 		Description: Provides additional power.
@@ -745,9 +745,9 @@ catech01:
 		RequiresCondition: dmg_heavy
 	SmokeParticleEmitter@largesmoke:
 		RequiresCondition: dmg_crit
-	WithIdleOverlay@damagefire1:
+	WithIdleDecorationOverlay@damagefire1:
 		RequiresCondition: dmg_heavy && !dmg_crit
-	WithIdleOverlay@damagefire1-heavy:
+	WithIdleDecorationOverlay@damagefire1-heavy:
 		RequiresCondition: dmg_crit
 
 catech01.rubble:
