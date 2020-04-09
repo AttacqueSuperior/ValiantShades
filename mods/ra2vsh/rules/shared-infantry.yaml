@@ -74,6 +74,8 @@ engineer:
 		ScanRadius: 4
 	AttackMove:
 		Voice: Action
+	GrantExternalConditionToOwner@disable-ai-engineers:
+		Condition: disable-ai-engineers
 
 dog:
 	Inherits: ^Infantry

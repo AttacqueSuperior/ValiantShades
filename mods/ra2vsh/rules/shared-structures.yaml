@@ -188,14 +188,17 @@
 		DeployChance: 100
 		DeployTicks: 15
 		DeployTrigger: Periodically
+	GrantConditionOnPrerequisite@disable-ai-engineers:
+		Condition: disable-ai-engineers
+		Prerequisites: disable-ai-engineers
 	PeriodicProducer@alliedengineer:
-		RequiresCondition: aihasprimarybarracks && alliedengi && cheater-ai
+		RequiresCondition: aihasprimarybarracks && alliedengi && cheater-ai && !disable-ai-engineers
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: aengineer
 		ChargeDuration: 2400
 	PeriodicProducer@sovietengineer:
-		RequiresCondition: aihasprimarybarracks && sovietengi && cheater-ai
+		RequiresCondition: aihasprimarybarracks && sovietengi && cheater-ai && !disable-ai-engineers
 		ResetTraitOnEnable: true
 		Type: Barracks
 		Actors: sengineer
