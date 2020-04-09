@@ -505,6 +505,7 @@ Player:
 			dron: 5
 			htnk: 20
 			v3: 15
+			dtruck: 10
 			apoc: 10
 			ttnk: 15
 			mind: 10
@@ -528,6 +529,7 @@ Player:
 			ivan: 5
 			yuri: 4
 			htk.ai-repair: 2
+			dtruck: 2
 			mind: 3
 			gaunt: 2
 			topol: 2
