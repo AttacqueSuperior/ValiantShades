@@ -475,98 +475,26 @@ atomic:
 		OrderName: ForceShieldInfoOrder
 
 demobomb:
-	Inherits: NukePayload
-	Warhead@1Dam_impact: SpreadDamage
-		Damage: 150000
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
+	Warhead@1Dam: SpreadDamage
+		Spread: 512
+		Falloff: 100, 87, 75, 66, 50, 37, 25, 12, 0
+		Damage: 500000
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
 		Versus:
-			Light: 100
+			Light: 75
 			Medium: 50
 			Heavy: 50
-			Wood: 80
-			Steel: 150
-			Concrete: 10
-			ResistSupers: 100
-	Warhead@2Res_impact: DestroyResource
-		Size: 1
+			Steel: 75
+			Concrete: 30
 	Warhead@3Eff_impact: CreateEffect
 		Explosions: demotruck_explosion
 		ExplosionPalette: rookiera2exp
 		ImpactSounds: vdemdiea.wav
-	Warhead@4Dam_areanuke1: SpreadDamage
-		Spread: 2c0
-		Damage: 60000
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Delay: 5
-		ValidTargets: Ground, Water, Air
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 50
-			Heavy: 50
-			Wood: 80
-			Steel: 150
-			Concrete: 10
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
-	Warhead@5Res_areanuke1: DestroyResource
-		Size: 2
-		Delay: 5
-	Warhead@6Eff_areanuke1: CreateEffect
-		Delay: 5
-		ValidTargets: Ground, Water, Air
-	Warhead@7Dam_areanuke2: SpreadDamage
-		Spread: 3c0
-		Damage: 60000
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Delay: 10
-		ValidTargets: Ground, Water, Air
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 50
-			Heavy: 50
-			Wood: 80
-			Steel: 150
-			Concrete: 10
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
-	Warhead@8Res_areanuke2: DestroyResource
-		Size: 3
-		Delay: 10
-	Warhead@9Dam_areanuke3: SpreadDamage
-		Spread: 4c0
-		Damage: 60000
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Delay: 15
-		ValidTargets: Ground, Water, Air
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 50
-			Heavy: 50
-			Wood: 80
-			Steel: 150
-			Concrete: 10
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath, DefaultDeath
-	Warhead@10Res_areanuke3: DestroyResource
-		Size: 4
-		Delay: 15
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: LargeScorch
-		Delay: 15
+		Delay: 1
 	Warhead@4Radiation: CreateTintedCells
-		Spread: 1c256
+		Spread: 1c0
 		Level: 325
 
 Demolish:

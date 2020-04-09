@@ -791,7 +791,7 @@ dtruck:
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 160
 		Prerequisites: ~naweap, naradr #, ~vehicles.libya
-		Description: Demolition Truck, actively armed with nuclear explosives.
+		Description: A truck actively armed with nuclear explosives.
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -811,6 +811,11 @@ dtruck:
 	RevealOnDeath:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
+		RequiresCondition: !triggered
+	RevealOnDeath@successfuldetonation:
+		Radius: 2c0
+		DeathTypes: DefaultDeath
+		RequiresCondition: triggered
 	AttackFrontal:
 		Voice: Attack
 		FacingTolerance: 128
