@@ -84,8 +84,8 @@ harv:
 	Harvester:
 		Capacity: 20
 		Resources: Ore, Gems, Tiberium
-		BaleLoadDelay: 36
-		BaleUnloadDelay: 3
+		BaleLoadDelay: 18
+		BaleUnloadDelay: 1
 		SearchFromProcRadius: 30
 		SearchFromHarvesterRadius: 15
 		HarvestVoice: Harvest
