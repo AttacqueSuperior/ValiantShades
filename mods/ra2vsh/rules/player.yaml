@@ -44,6 +44,7 @@ Player:
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
 		DisplayOrder: 2
+		BuildDurationModifier: 66
 	ClassicParallelProductionQueue@Vehicle:
 		Type: Vehicle
 		LowPowerModifier: 200
@@ -56,6 +57,7 @@ Player:
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
 		DisplayOrder: 3
+		BuildDurationModifier: 66
 	ClassicParallelProductionQueue@Aircraft:
 		Type: Aircraft
 		LowPowerModifier: 200
@@ -68,6 +70,7 @@ Player:
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
 		DisplayOrder: 4
+		BuildDurationModifier: 66
 	ClassicParallelProductionQueue@Ship:
 		Type: Ship
 		LowPowerModifier: 200
@@ -80,6 +83,7 @@ Player:
 		BlockedAudio: NoBuild
 		LimitedAudio: NoBuild
 		DisplayOrder: 5
+		BuildDurationModifier: 66
 	PlaceBuilding:
 	SupportPowerManager:
 	ScriptTriggers:
