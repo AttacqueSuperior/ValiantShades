@@ -20,6 +20,7 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		DisplayOrder: 0
+		BuildDurationModifier: 50
 	ClassicProductionQueue@Support:
 		Type: Support
 		LowPowerModifier: 200
@@ -32,6 +33,7 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		DisplayOrder: 1
+		BuildDurationModifier: 50
 	ClassicParallelProductionQueue@Infantry:
 		Type: Infantry
 		LowPowerModifier: 200
