@@ -104,19 +104,19 @@ flakt:
 		PauseOnCondition: disabled
 	Armament@primary:
 		Weapon: FlakGuyGun
-		LocalOffset: 256,0,1024
+		LocalOffset: 256,0,1536
 		RequiresCondition: !rank-heroic
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
-		LocalOffset: 256,0,1024
+		LocalOffset: 256,0,1536
 		RequiresCondition: !rank-heroic
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
-		LocalOffset: 256,0,1024
+		LocalOffset: 256,0,1536
 		RequiresCondition: rank-heroic
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
-		LocalOffset: 256,0,1024
+		LocalOffset: 256,0,1536
 		RequiresCondition: rank-heroic
 	Armament@primary-opentopped:
 		Name: opentopped
@@ -194,9 +194,11 @@ shk:
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@elite:
 		Weapon: ElectricBoltE
 		RequiresCondition: rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@charge:
 		Name: secondary
 		Weapon: AssaultBolt
@@ -347,9 +349,11 @@ deso:
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@elite:
 		Weapon: RadBeamWeaponE
 		RequiresCondition: rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: RadBeamWeapon
