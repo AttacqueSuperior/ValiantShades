@@ -28,6 +28,10 @@ UnitExplode:
 	Warhead@flames: FireFragment
 		Weapon: HugeFlame
 		Chance: 50
+	Warhead@destroyresource: DestroyResourceAS
+		ResourceTypes: Ore, Gems, Tiberium
+		Size: 2
+		Density: 1
 
 UnitExplodeSmall:
 	Inherits: UnitExplode
@@ -38,6 +42,8 @@ UnitExplodeSmall:
 		ValidTargets: Ground, Water, Air
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
+	Warhead@destroyresource: DestroyResourceAS
+		Size: 1
 
 UnitExplodeMedium:
 	Inherits: UnitExplodeSmall
@@ -59,6 +65,7 @@ InfantryExplode:
 		SmudgeType: SmallScorch
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
+	-Warhead@destroyresource:
 
 V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
@@ -107,6 +114,7 @@ SpawnedPlaneExplosion:
 		ExplosionPalette: heroicra2exp
 	Warhead@flames: FireFragment
 		Weapon: MediumFlame
+	-Warhead@destroyresource:
 
 AircraftCrashing:
 	Inherits: UnitExplode
@@ -115,6 +123,7 @@ AircraftCrashing:
 	-Warhead@Smu:
 	-Warhead@Smu2:
 	-Warhead@flames:
+	-Warhead@destroyresource:
 
 MineExplode:
 	Inherits: KirovExplode
