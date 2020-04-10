@@ -199,11 +199,10 @@
 		Duration: 39
 	GrantConditionOnDamageState@dmg_heavy:
 		Condition: dmg_heavy
-	GrantPeriodicCondition@enable_unitsmoke:
+	GrantTimedCondition@enable_unitsmoke:
 		Condition: enable_unitsmoke
-		CooldownDuration: 10000000
-		StartsGranted: true
 		RequiresCondition: dmg_heavy
+		Duration: 100
 
 ^VehicleParticles:
 	Inherits: ^UnitParticles

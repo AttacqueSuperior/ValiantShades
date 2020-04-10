@@ -122,11 +122,9 @@ brute:
 	AutoTarget:
 		InitialStance: AttackAnything
 		ScanRadius: 3
-	GrantPeriodicCondition@mutation:
+	GrantTimedCondition@mutation:
 		Condition: mutation
-		ActiveDuration: 60
-		CooldownDuration: 10000000
-		StartsGranted: true
+		Duration: 60
 	GrantCondition@mutation-disabled:
 		Condition: disabled
 		RequiresCondition: mutation
