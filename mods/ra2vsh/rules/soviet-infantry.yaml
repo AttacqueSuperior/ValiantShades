@@ -697,6 +697,7 @@ boris:
 	Armament@secondary:
 		Weapon: Flare
 		Name: secondary
+		LocalOffset: 256,0,768
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		AttackSequences:
@@ -751,9 +752,11 @@ cosmo:
 	Armament@primary:
 		Weapon: CosmonautLaser
 		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,768
 	Armament@elite:
 		Weapon: CosmonautLaserE
 		RequiresCondition: rank-heroic
+		LocalOffset: 256,0,768
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -820,9 +823,11 @@ volkov:
 	Armament@primary:
 		Weapon: VolkovRail
 		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,768
 	Armament@elite:
 		Weapon: VolkovRailE
 		RequiresCondition: rank-heroic
+		LocalOffset: 256,0,768
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	VoiceAnnouncement:
@@ -963,9 +968,11 @@ cyborg:
 	Armament@primary:
 		Weapon: CyborgGun
 		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,768
 	Armament@elite:
 		Weapon: CyborgGunE
 		RequiresCondition: rank-heroic
+		LocalOffset: 256,0,768
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: CyborgGun

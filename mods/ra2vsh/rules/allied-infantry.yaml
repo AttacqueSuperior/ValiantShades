@@ -369,9 +369,11 @@ snipe:
 	Armament@primary:
 		Weapon: awp
 		RequiresCondition: !rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@elite:
 		Weapon: awpe
 		RequiresCondition: rank-heroic
+		LocalOffset: 320,128,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: awp
@@ -441,9 +443,11 @@ gren:
 	Armament@primary:
 		Weapon: GrenadeDisc
 		RequiresCondition: !rank-heroic
+		LocalOffset: 320,0,1024
 	Armament@elite:
 		Weapon: GrenadeDiscE
 		RequiresCondition: rank-heroic
+		LocalOffset: 320,0,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: GrenadeDisc
@@ -750,9 +754,11 @@ tanya2:
 	Armament@primary:
 		Weapon: TanyaMissile
 		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,768
 	Armament@elite:
 		Weapon: TanyaMissileE
 		RequiresCondition: rank-heroic
+		LocalOffset: 256,0,768
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1007,11 +1013,13 @@ cleg:
 		VoiceSet: ChronoLegionnaireVoice
 	Armament:
 		Weapon: NeutronRifle
+		LocalOffset: 320,128,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: NeutronRifle
 	Armament@2:
 		Weapon: NeutronRifleVisual
+		LocalOffset: 320,128,1024
 	Armament@opentopped2:
 		Name: opentopped
 		Weapon: NeutronRifleVisual
@@ -1198,9 +1206,11 @@ artemis:
 	Armament@primary:
 		Weapon: ArtemisMissile
 		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,1024
 	Armament@elite:
 		Weapon: ArtemisMissileE
 		RequiresCondition: rank-heroic
+		LocalOffset:256,0,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: ArtemisMissile
@@ -1270,9 +1280,11 @@ fairy:
 	Armament@primary:
 		Weapon: FairyBolt
 		RequiresCondition: !rank-heroic
+		LocalOffset: 0,0,1536
 	Armament@elite:
 		Weapon: FairyBoltE
 		RequiresCondition: rank-heroic
+		LocalOffset: 0,0,1536
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: FairyBolt
