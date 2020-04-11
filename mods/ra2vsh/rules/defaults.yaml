@@ -1003,6 +1003,7 @@
 		VTOL: false
 		TurnToDock: true
 		TurnSpeed: 27
+		IdleTurnSpeed: 1
 		Speed: 341
 		MaximumPitch: 168
 		InitialFacing: 224
@@ -1011,6 +1012,11 @@
 	WithVoxelBody:
 	GpsDotAS:
 		Sequence: plane
+	GrantConditionWhileIdling:
+		Condition: idling
+	SpeedMultiplier@idling:
+		RequiresCondition: idling
+		Modifier: 40
 
 ^SpawnedPlane:
 	Inherits: ^Plane
