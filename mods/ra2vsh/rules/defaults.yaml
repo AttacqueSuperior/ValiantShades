@@ -230,6 +230,9 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:
 		RequiredForShortGame: false
+	Targetable@aitargeting:
+		TargetTypes: ActiveDefense
+		RequiresCondition: !disabled
 
 ^CivBuilding:
 	Inherits: ^Building
