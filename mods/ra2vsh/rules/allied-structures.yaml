@@ -723,9 +723,9 @@ gacsph:
 		Sequence: idle-dome
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	GrantConditionOnBotOwner@test:
-		Condition: test-ai
-		Bots: test
+	GrantConditionOnBotOwner@shared:
+		Condition: aiowner
+		Bots: normal, brutal
 	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
@@ -743,7 +743,7 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown && !test-ai
+		RequiresCondition: !build-incomplete && !powerdown && !aiowner
 	DetonateWeaponPower@ChronosphereAI:
 		Weapon: ChronosphereAI
 		OrderName: ChronosphereAIInfoOrder
@@ -755,7 +755,7 @@ gacsph:
 		DisplayRadarPing: True
 		LongDesc: Teleports a group of units across\nthe map.
 		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete && !powerdown && test-ai
+		RequiresCondition: !build-incomplete && !powerdown && aiowner
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy
 		MaxHeightDelta: 3
