@@ -22,6 +22,8 @@ gapill:
 		TurnSpeed: 255
 	BodyOrientation:
 		QuantizedFacings: 8
+	IsometricSelectable:
+		DecorationHeight: 15
 
 nasam:
 	Inherits: ^AADefense
@@ -32,7 +34,7 @@ nasam:
 	Tooltip:
 		Name: Patriot Missile System
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 45
 	Turreted:
 		Offset: 0,0,0
 	Armament:
@@ -52,7 +54,7 @@ atesla:
 	Tooltip:
 		Name: Prism Tower
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	WithTeslaChargeAnimation:
 	Armament:
 		Weapon: PrismShot
@@ -88,3 +90,5 @@ gtgcan:
 	WithMuzzleOverlay:
 	WithRangeCircle:
 		Type: grandcannon
+	IsometricSelectable:
+		DecorationHeight: 45

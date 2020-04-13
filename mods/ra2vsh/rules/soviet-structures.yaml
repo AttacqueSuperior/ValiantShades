@@ -2,7 +2,7 @@ nacnst:
 	Inherits: ^ConYard
 	Inherits@damagefire: ^BuildingDamageFire1
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
@@ -41,7 +41,7 @@ napowr:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 45
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		PauseOnCondition: disabled
@@ -74,7 +74,7 @@ nahand:
 		Footprint: xx xx
 		Dimensions: 2,2
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 135
 	Exit@n1_0:
 		SpawnOffset: 0,0,0
 		ExitCell: -1, 0
@@ -123,7 +123,7 @@ narefn:
 	Buildable:
 		Prerequisites: ~structures.soviets
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	FreeActor:
 		Actor: harv
 	WithDockedOverlay:
@@ -151,7 +151,7 @@ naweap:
 	Buildable:
 		Prerequisites: nahand, ~structures.soviets
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 105
 	#ProvidesPrerequisite@libya:
 	#	Prerequisite: vehicles.libya
 	#	Factions: libya
@@ -201,7 +201,7 @@ naradr:
 	Tooltip:
 		Name: Radar Tower
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: disabled
@@ -230,7 +230,7 @@ nayard:
 	Tooltip:
 		Name: Naval Yard
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 150
 	Buildable:
 		Prerequisites: nahand, ~structures.soviets
 	WithIdleOverlay@crane:
@@ -261,7 +261,7 @@ naairc:
 		Prerequisite: aircraft.soviets
 		RequiresCondition: !build-incomplete
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 105
 	WithIdleOverlay@lamp:
 		Sequence: idle-lamp
 		PauseOnCondition: disabled
@@ -300,7 +300,7 @@ natek:
 	Buildable:
 		Prerequisites: naweap, naradr, ~structures.soviets
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 180
 	Tooltip:
 		Name: Tech Center
 	WithIdleOverlay@lights:
@@ -388,7 +388,7 @@ nanrct:
 		Footprint: xxxx xxxx xxxx _xx_
 		Dimensions: 4,4
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Health:
 		HP: 1000000
 	Armor:
@@ -427,7 +427,7 @@ natech:
 	Buildable:
 		Prerequisites: natek, ~structures.soviets
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 120
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
@@ -458,7 +458,7 @@ naindp:
 	-CapturableProgressBar:
 	-CaptureNotification:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 120
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -532,7 +532,7 @@ naclon:
 		Footprint: xx xx
 		Dimensions: 2, 2
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 105
 	Health:
 		HP: 1000000
 	Armor:
@@ -637,7 +637,7 @@ napsis:
 		Footprint: xx xx
 		Dimensions: 2,2
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 120
 	Health:
 		HP: 750000
 	Armor:
@@ -688,7 +688,7 @@ nairon:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Health:
 		HP: 750000
 	Armor:
@@ -763,7 +763,7 @@ napsyd:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Health:
 		HP: 750000
 	Armor:
@@ -836,7 +836,7 @@ namisl:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Health:
 		HP: 1000000
 	Armor:
@@ -901,7 +901,7 @@ nacran:
 	Buildable:
 		Prerequisites: naweap, naradr, ~structures.soviets
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		RequiresCondition: !build-incomplete
@@ -919,7 +919,7 @@ nadept:
 		Prerequisites: naweap, ~structures.soviets
 		Description: Repairs vehicles and removes Terror Drones (for a price).
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Valued:
 		Cost: 800
 	Tooltip:

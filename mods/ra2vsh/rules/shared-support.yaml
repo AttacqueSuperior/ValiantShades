@@ -142,8 +142,6 @@
 	RevealOnDeath:
 		Radius: 5c0
 		DeathTypes: DefaultDeath
-	IsometricSelectable:
-		DecorationHeight: 64
 	Turreted:
 		TurnSpeed: 3
 		InitialFacing: 224

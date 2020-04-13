@@ -3,7 +3,7 @@ caoild:
 	Inherits@shape: ^2x2Shape
 	Inherits@damagefire: ^BuildingDamageFire3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -97,7 +97,7 @@ caairp:
 	Tooltip:
 		Name: Tech Airport
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 120
 	Health:
 		HP: 800000
 	Building:
@@ -191,7 +191,7 @@ cahosp:
 	Tooltip:
 		Name: Tech Hospital
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 105
 	Health:
 		HP: 800000
 	RevealsShroud:
@@ -312,7 +312,7 @@ cathosp:
 	Tooltip:
 		Name: Tech Hospice
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
 	-WithIdleDecorationOverlay@damagefire3:
@@ -350,7 +350,7 @@ caoutp:
 	Tooltip:
 		Name: Tech Outpost
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Health:
 		HP: 2000000
 	Building:
@@ -436,7 +436,7 @@ caslab:
 	Tooltip:
 		Name: Tech Secret Lab
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Health:
 		HP: 800000
 	Building:
@@ -563,7 +563,7 @@ camach:
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -671,7 +671,7 @@ capowr:
 	Inherits@shape: ^2x2Shape
 	Inherits@damagefire: ^BuildingDamageFire1
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -739,7 +739,7 @@ catech01:
 	Tooltip:
 		Name: Tech Communications Center
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Armor:
 		Type: Steel
 	RevealsShroud:

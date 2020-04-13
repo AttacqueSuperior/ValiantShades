@@ -2,7 +2,7 @@ gacnst:
 	Inherits: ^ConYard
 	Inherits@damagefire: ^BuildingDamageFire2
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
@@ -35,7 +35,7 @@ gapowr:
 	Buildable:
 		Prerequisites: ~structures.allies
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -123,7 +123,7 @@ gapile:
 	Buildable:
 		Prerequisites: ~structures.allies
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	#ProvidesPrerequisite@england:
 	#	Prerequisite: infantry.england
 	#	Factions: england
@@ -159,7 +159,7 @@ garefn:
 	Buildable:
 		Prerequisites: ~structures.allies
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	FreeActor:
 		Actor: cmin
 	WithDockedOverlay:
@@ -188,7 +188,7 @@ gaweap:
 		Prerequisites: gapile, ~structures.allies
 		Description: Produces vehicles.
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	#ProvidesPrerequisite@germany:
 	#	Prerequisite: vehicles.germany
 	#	Factions: germany
@@ -241,7 +241,7 @@ gafcmd:
 		Prerequisites: gapile, garefn, ~structures.allies
 		IconPalette: fcmdicon
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Tooltip:
 		Name: Field Command
 	WithIdleOverlay@dish:
@@ -268,7 +268,7 @@ gayard:
 	Tooltip:
 		Name: Naval Yard
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 150
 	Buildable:
 		Prerequisites: gapile, ~structures.allies
 	WithIdleOverlay@crane:
@@ -305,7 +305,7 @@ gaairc:
 	#	Factions: korea
 	#	RequiresCondition: !build-incomplete
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 105
 	WithIdleOverlay@lamp:
 		Sequence: idle-lamp
 		PauseOnCondition: disabled
@@ -340,7 +340,7 @@ gatech:
 	Buildable:
 		Prerequisites: gafcmd, gaweap, ~structures.allies
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 180
 	Tooltip:
 		Name: Battle Lab
 	WithIdleOverlay@lights:
@@ -401,7 +401,7 @@ garbur:
 	Tooltip:
 		Name: Research Bureau
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	RenderSprites:
 		PlayerPalette: xuetallied2
 	ActorPreviewPlaceBuildingPreview:
@@ -448,7 +448,7 @@ gaorep:
 	-CapturableProgressBar:
 	-CaptureNotification:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -524,7 +524,7 @@ gaspysat:
 	-CapturableProgressBar:
 	-CaptureNotification:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -573,7 +573,7 @@ gagap:
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nRequires power to operate.
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 90
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -632,7 +632,7 @@ gaweat:
 	-CapturableProgressBar:
 	-CaptureNotification:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -700,7 +700,7 @@ gacsph:
 	-CapturableProgressBar:
 	-CaptureNotification:
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 45
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -779,7 +779,7 @@ gacran:
 	Buildable:
 		Prerequisites: gaweap, gafcmd, ~structures.allies
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 45
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
@@ -790,7 +790,7 @@ gadrop:
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Inherits@damagefire: ^BuildingDamageFire3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
@@ -886,7 +886,7 @@ gaspir:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Health:
 		HP: 750000
 	Armor:
@@ -954,7 +954,7 @@ gadept:
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 45
 	Valued:
 		Cost: 800
 	Tooltip:

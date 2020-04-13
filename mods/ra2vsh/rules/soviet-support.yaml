@@ -23,6 +23,8 @@ nalasr:
 		QuantizedFacings: 32
 	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
+	IsometricSelectable:
+		DecorationHeight: 30
 
 naflak:
 	Inherits: ^AADefense
@@ -33,7 +35,7 @@ naflak:
 	Tooltip:
 		Name: Flak Cannon
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 60
 	Turreted:
 		Offset: 0,0,0
 	Armament:
@@ -56,7 +58,7 @@ tesla:
 	Tooltip:
 		Name: Tesla Coil
 	IsometricSelectable:
-		DecorationHeight: 64
+		DecorationHeight: 75
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:
@@ -96,3 +98,5 @@ nasntl:
 	WithMuzzleOverlay:
 	WithRangeCircle:
 		Type: sentinel
+	IsometricSelectable:
+		DecorationHeight: 45
