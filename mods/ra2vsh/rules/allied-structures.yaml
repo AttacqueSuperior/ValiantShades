@@ -110,7 +110,7 @@ gapowrup:
 		Name: Power Turbine
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 180
+		BuildPaletteOrder: 65
 		Prerequisites: gatech, ~structures.allies
 		Description: Provides 100 more power when placed\non top of a Power Plant.
 	Plug:
@@ -788,7 +788,7 @@ gadrop:
 		Bounds: 212, 158, -7, -28
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 150
 		Description: Provides an additional copy of\nall Tier 1 and Tier 2 vehicles (sans MCVs).
 		BuildLimit: 1
 		Prerequisites: garbur, gaweap, ~structures.allies
