@@ -210,6 +210,7 @@
 	RevealOnDeath:
 		Radius: 512
 		DeathTypes: DefaultDeath
+	BotRepairOrSellCaptures:
 
 ^SupportBuilding:
 	Inherits: ^Building
