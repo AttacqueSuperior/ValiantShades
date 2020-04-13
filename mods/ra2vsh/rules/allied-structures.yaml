@@ -224,8 +224,11 @@ gaweap:
 	GrantConditionOnPrerequisite@gatech:
 		Condition: gatech
 		Prerequisites: gatech
+	GrantConditionOnPrerequisite@disable-ai-mggs:
+		Condition: disable-ai-mggs
+		Prerequisites: disable-ai-mggs
 	PeriodicProducer@mobilegapgen:
-		RequiresCondition: aihasprimarywarfactory && gatech && cheater-ai
+		RequiresCondition: aihasprimarywarfactory && gatech && cheater-ai  && !disable-ai-mggs
 		ResetTraitOnEnable: true
 		Type: WarFactory
 		ChargeDuration: 12500

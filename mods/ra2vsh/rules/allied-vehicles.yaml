@@ -1634,6 +1634,8 @@ mgg:
 		AffectsParent: true
 		Condition: prevent-mindcontrol
 		RequiresCondition: !disabled
+	GrantExternalConditionToOwner@disable-ai-mggs:
+		Condition: disable-ai-mggs
 
 succ:
 	Inherits: ^Vehicle

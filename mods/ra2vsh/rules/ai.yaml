@@ -632,3 +632,8 @@ Player:
 	ProvidesPrerequisite@disable-ai-engineers:
 		Prerequisite: disable-ai-engineers
 		RequiresCondition: disable-ai-engineers > 3 && enable-brutal-ai
+	ExternalCondition@disable-ai-mggs:
+		Condition: disable-ai-mggs
+	ProvidesPrerequisite@disable-ai-mggs:
+		Prerequisite: disable-ai-mggs
+		RequiresCondition: disable-ai-mggs > 3 && enable-brutal-ai
