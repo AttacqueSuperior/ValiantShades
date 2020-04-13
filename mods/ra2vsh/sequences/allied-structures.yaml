@@ -140,7 +140,7 @@ gafcmd:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Offset: 0, -30
+		Offset: 0, -36
 	idle: ggfcmd
 		ShadowStart: 2
 	damaged-idle: ggfcmd
@@ -157,9 +157,9 @@ gafcmd:
 			DESERT: GENERIC
 			NEWURBAN: GENERIC
 	damagefire1:
-		Offset: -20,-7,1
+		Offset: -20,-13,1
 	damagefire2:
-		Offset: 18,5,1
+		Offset: 18,-1,1
 	icon: fcmdicon.png
 		AddExtension: false
 
