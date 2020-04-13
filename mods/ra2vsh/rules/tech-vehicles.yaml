@@ -21,6 +21,8 @@ lasher:
 		VoiceSet: LasherTankVoice
 	-Cloneable:
 	-ProductionTimeMultiplier@dropship:
+	Turreted:
+		Offset: -125,0,0
 
 behold:
 	Inherits: ^Vehicle
