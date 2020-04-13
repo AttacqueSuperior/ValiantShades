@@ -2,8 +2,8 @@ caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
 	Inherits@damagefire: ^BuildingDamageFire3
-	Selectable:
-		Bounds: 96, 104, -2, -26
+	IsometricSelectable:
+		DecorationHeight: 64
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -96,6 +96,8 @@ caairp:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Airport
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 800000
 	Building:
@@ -188,6 +190,8 @@ cahosp:
 		Dimensions: 6, 4
 	Tooltip:
 		Name: Tech Hospital
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 800000
 	RevealsShroud:
@@ -307,6 +311,8 @@ cathosp:
 		Dimensions: 3,3
 	Tooltip:
 		Name: Tech Hospice
+	IsometricSelectable:
+		DecorationHeight: 64
 	SpawnActorOnDeath:
 		Actor: cathosp.rubble
 	-WithIdleDecorationOverlay@damagefire3:
@@ -341,10 +347,10 @@ caoutp:
 	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
-	Selectable:
-		Bounds: 178, 180, 0, -38
 	Tooltip:
 		Name: Tech Outpost
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 2000000
 	Building:
@@ -429,6 +435,8 @@ caslab:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Secret Lab
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 800000
 	Building:
@@ -554,8 +562,8 @@ camach:
 	Inherits@damagefire: ^BuildingDamageFire2
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
-	Selectable:
-		Bounds: 160, 140, -5, -30
+	IsometricSelectable:
+		DecorationHeight: 64
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -662,8 +670,8 @@ capowr:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
 	Inherits@damagefire: ^BuildingDamageFire1
-	Selectable:
-		Bounds: 96, 104, -2, -26
+	IsometricSelectable:
+		DecorationHeight: 64
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -730,6 +738,8 @@ catech01:
 	-SpawnSmokeParticleOnDeath@temporal:
 	Tooltip:
 		Name: Tech Communications Center
+	IsometricSelectable:
+		DecorationHeight: 64
 	Armor:
 		Type: Steel
 	RevealsShroud:

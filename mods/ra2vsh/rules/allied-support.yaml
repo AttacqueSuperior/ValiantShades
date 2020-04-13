@@ -13,8 +13,6 @@ gapill:
 		Prerequisites: barracks, ~structures.allies
 	Tooltip:
 		Name: Pill Box
-	Selectable:
-		Bounds: 50, 30, 0, -4
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 768,85,512
@@ -33,8 +31,8 @@ nasam:
 		Prerequisites: barracks, ~structures.allies
 	Tooltip:
 		Name: Patriot Missile System
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Turreted:
 		Offset: 0,0,0
 	Armament:
@@ -53,8 +51,8 @@ atesla:
 		Prerequisites: radar, ~structures.allies
 	Tooltip:
 		Name: Prism Tower
-	Selectable:
-		Bounds: 44, 102, 0, -40
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithTeslaChargeAnimation:
 	Armament:
 		Weapon: PrismShot

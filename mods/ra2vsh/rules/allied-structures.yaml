@@ -1,8 +1,8 @@
 gacnst:
 	Inherits: ^ConYard
 	Inherits@damagefire: ^BuildingDamageFire2
-	Selectable:
-		Bounds: 220, 155, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
@@ -34,8 +34,8 @@ gapowr:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
-	Selectable:
-		Bounds: 96, 98, -2, -24
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -122,8 +122,8 @@ gapile:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
-	Selectable:
-		Bounds: 134, 132, 0, -28
+	IsometricSelectable:
+		DecorationHeight: 64
 	#ProvidesPrerequisite@england:
 	#	Prerequisite: infantry.england
 	#	Factions: england
@@ -158,8 +158,8 @@ garefn:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: ~structures.allies
-	Selectable:
-		Bounds: 176, 150, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	FreeActor:
 		Actor: cmin
 	WithDockedOverlay:
@@ -187,8 +187,8 @@ gaweap:
 	Buildable:
 		Prerequisites: gapile, ~structures.allies
 		Description: Produces vehicles.
-	Selectable:
-		Bounds: 212, 158, -7, -28
+	IsometricSelectable:
+		DecorationHeight: 64
 	#ProvidesPrerequisite@germany:
 	#	Prerequisite: vehicles.germany
 	#	Factions: germany
@@ -240,8 +240,8 @@ gafcmd:
 	Buildable:
 		Prerequisites: gapile, garefn, ~structures.allies
 		IconPalette: fcmdicon
-	Selectable:
-		Bounds: 96, 98, -4, -30
+	IsometricSelectable:
+		DecorationHeight: 64
 	Tooltip:
 		Name: Field Command
 	WithIdleOverlay@dish:
@@ -267,6 +267,8 @@ gayard:
 	Inherits@damagefire: ^BuildingDamageFire3
 	Tooltip:
 		Name: Naval Yard
+	IsometricSelectable:
+		DecorationHeight: 64
 	Buildable:
 		Prerequisites: gapile, ~structures.allies
 	WithIdleOverlay@crane:
@@ -302,8 +304,8 @@ gaairc:
 	#	Prerequisite: aircraft.korea
 	#	Factions: korea
 	#	RequiresCondition: !build-incomplete
-	Selectable:
-		Bounds: 132, 134, -28, -28
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithIdleOverlay@lamp:
 		Sequence: idle-lamp
 		PauseOnCondition: disabled
@@ -337,8 +339,8 @@ gatech:
 	Inherits@damagefire: ^BuildingDamageFire3
 	Buildable:
 		Prerequisites: gafcmd, gaweap, ~structures.allies
-	Selectable:
-		Bounds: 122, 216, 0, -81
+	IsometricSelectable:
+		DecorationHeight: 64
 	Tooltip:
 		Name: Battle Lab
 	WithIdleOverlay@lights:
@@ -398,8 +400,8 @@ garbur:
 		IconPalette: rburicon
 	Tooltip:
 		Name: Research Bureau
-	Selectable:
-		Bounds: 152, 164, 0, -50
+	IsometricSelectable:
+		DecorationHeight: 64
 	RenderSprites:
 		PlayerPalette: xuetallied2
 	ActorPreviewPlaceBuildingPreview:
@@ -445,8 +447,8 @@ gaorep:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
 	-CaptureNotification:
-	Selectable:
-		Bounds: 134, 102, -10, -21
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -521,8 +523,8 @@ gaspysat:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
 	-CaptureNotification:
-	Selectable:
-		Bounds: 96, 98, -4, -30
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -570,8 +572,8 @@ gagap:
 		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nRequires power to operate.
-	Selectable:
-		Bounds: 50, 114, 0, -38
+	IsometricSelectable:
+		DecorationHeight: 64
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -629,8 +631,8 @@ gaweat:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
 	-CaptureNotification:
-	Selectable:
-		Bounds: 116, 106, -2, -26
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -697,8 +699,8 @@ gacsph:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
 	-CaptureNotification:
-	Selectable:
-		Bounds: 176, 110, -5, -14
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -776,8 +778,8 @@ gacran:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: gaweap, gafcmd, ~structures.allies
-	Selectable:
-		Bounds: 96, 98, -4, -30
+	IsometricSelectable:
+		DecorationHeight: 64
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e1, e1, e1
@@ -787,8 +789,8 @@ gadrop:
 	Inherits@shape: ^5x3Shape
 	Inherits@lowpower: ^DisableOnLowPowerOrPowerDown
 	Inherits@damagefire: ^BuildingDamageFire3
-	Selectable:
-		Bounds: 212, 158, -7, -28
+	IsometricSelectable:
+		DecorationHeight: 64
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
@@ -883,8 +885,8 @@ gaspir:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 136, 100, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 750000
 	Armor:
@@ -951,8 +953,8 @@ gadept:
 		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 144, 88, -12, -16
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 800
 	Tooltip:

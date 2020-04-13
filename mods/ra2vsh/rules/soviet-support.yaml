@@ -13,8 +13,6 @@ nalasr:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
 		Name: Sentry Gun
-	Selectable:
-		Bounds: 50, 30, 0, -12
 	Turreted:
 		TurnSpeed: 10
 		InitialFacing: 224
@@ -34,8 +32,8 @@ naflak:
 		Prerequisites: barracks, ~structures.soviets
 	Tooltip:
 		Name: Flak Cannon
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Turreted:
 		Offset: 0,0,0
 	Armament:
@@ -57,8 +55,8 @@ tesla:
 		Prerequisites: naradr, ~structures.soviets
 	Tooltip:
 		Name: Tesla Coil
-	Selectable:
-		Bounds: 44, 88, -2, -33
+	IsometricSelectable:
+		DecorationHeight: 64
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:

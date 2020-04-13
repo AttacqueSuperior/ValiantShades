@@ -32,8 +32,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	Selectable:
-		Bounds: 50, 30, 0, -12
 	WithRangeCircle:
 		Range: 6c0
 		Type: pillbox
@@ -144,8 +142,8 @@
 	RevealOnDeath:
 		Radius: 5c0
 		DeathTypes: DefaultDeath
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Turreted:
 		TurnSpeed: 3
 		InitialFacing: 224

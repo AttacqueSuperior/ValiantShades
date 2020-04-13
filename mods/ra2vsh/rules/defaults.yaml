@@ -99,9 +99,11 @@
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
-	SelectionDecorations:
-	Selectable:
+	IsometricSelectionDecorations:
+	IsometricSelectable:
 		Priority: 3
+		Height: 0
+		DecorationHeight: 32
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 		RequiresCondition: !being-warped
@@ -386,8 +388,8 @@
 	Inherits: ^CivBuilding
 	OwnerLostAction:
 		Action: ChangeOwner
-	Selectable:
-		Bounds: 50, 228, 0, 0
+	IsometricSelectable:
+		DecorationHeight: 64
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

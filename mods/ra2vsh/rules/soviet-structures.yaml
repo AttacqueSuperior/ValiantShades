@@ -1,8 +1,8 @@
 nacnst:
 	Inherits: ^ConYard
 	Inherits@damagefire: ^BuildingDamageFire1
-	Selectable:
-		Bounds: 220, 180, 0, -35
+	IsometricSelectable:
+		DecorationHeight: 64
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
@@ -40,8 +40,8 @@ napowr:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
-	Selectable:
-		Bounds: 126, 94, 2, -16
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		PauseOnCondition: disabled
@@ -73,8 +73,8 @@ nahand:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 94, 168, 0, -58
+	IsometricSelectable:
+		DecorationHeight: 64
 	Exit@n1_0:
 		SpawnOffset: 0,0,0
 		ExitCell: -1, 0
@@ -122,8 +122,8 @@ narefn:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Prerequisites: ~structures.soviets
-	Selectable:
-		Bounds: 170, 150, -6, -33
+	IsometricSelectable:
+		DecorationHeight: 64
 	FreeActor:
 		Actor: harv
 	WithDockedOverlay:
@@ -150,8 +150,8 @@ naweap:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: nahand, ~structures.soviets
-	Selectable:
-		Bounds: 196, 178, -6, -48
+	IsometricSelectable:
+		DecorationHeight: 64
 	#ProvidesPrerequisite@libya:
 	#	Prerequisite: vehicles.libya
 	#	Factions: libya
@@ -200,8 +200,8 @@ naradr:
 		Description: Provides radar.
 	Tooltip:
 		Name: Radar Tower
-	Selectable:
-		Bounds: 95, 130, 0, -40
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: disabled
@@ -229,6 +229,8 @@ nayard:
 	Inherits@damagefire: ^BuildingDamageFire3
 	Tooltip:
 		Name: Naval Yard
+	IsometricSelectable:
+		DecorationHeight: 64
 	Buildable:
 		Prerequisites: nahand, ~structures.soviets
 	WithIdleOverlay@crane:
@@ -258,8 +260,8 @@ naairc:
 	ProvidesPrerequisite:
 		Prerequisite: aircraft.soviets
 		RequiresCondition: !build-incomplete
-	Selectable:
-		Bounds: 132, 134, -28, -28
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithIdleOverlay@lamp:
 		Sequence: idle-lamp
 		PauseOnCondition: disabled
@@ -297,8 +299,8 @@ natek:
 	Inherits@damagefire: ^BuildingDamageFire3
 	Buildable:
 		Prerequisites: naweap, naradr, ~structures.soviets
-	Selectable:
-		Bounds: 122, 216, 0, -81
+	IsometricSelectable:
+		DecorationHeight: 64
 	Tooltip:
 		Name: Tech Center
 	WithIdleOverlay@lights:
@@ -385,8 +387,8 @@ nanrct:
 	Building:
 		Footprint: xxxx xxxx xxxx _xx_
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 167, 130, 9, -31
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 1000000
 	Armor:
@@ -424,8 +426,8 @@ natech:
 		Name: Palace
 	Buildable:
 		Prerequisites: natek, ~structures.soviets
-	Selectable:
-		Bounds: 152, 164, 0, -50
+	IsometricSelectable:
+		DecorationHeight: 64
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
@@ -455,8 +457,8 @@ naindp:
 	-CapturableProgressBlink:
 	-CapturableProgressBar:
 	-CaptureNotification:
-	Selectable:
-		Bounds: 152, 164, 0, -50
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -529,8 +531,8 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	Selectable:
-		Bounds: 108, 134, 0, -48
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 1000000
 	Armor:
@@ -634,8 +636,8 @@ napsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 82, 150, -1, -55
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 750000
 	Armor:
@@ -685,8 +687,8 @@ nairon:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 136, 100, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 750000
 	Armor:
@@ -760,8 +762,8 @@ napsyd:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 136, 100, 0, -20
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 750000
 	Armor:
@@ -833,8 +835,8 @@ namisl:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 152, 104, 0, -50
+	IsometricSelectable:
+		DecorationHeight: 64
 	Health:
 		HP: 1000000
 	Armor:
@@ -898,8 +900,8 @@ nacran:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Prerequisites: naweap, naradr, ~structures.soviets
-	Selectable:
-		Bounds: 95, 130, 0, -40
+	IsometricSelectable:
+		DecorationHeight: 64
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		RequiresCondition: !build-incomplete
@@ -916,8 +918,8 @@ nadept:
 		BuildPaletteOrder: 70
 		Prerequisites: naweap, ~structures.soviets
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 156, 150, 0, -38
+	IsometricSelectable:
+		DecorationHeight: 64
 	Valued:
 		Cost: 800
 	Tooltip:

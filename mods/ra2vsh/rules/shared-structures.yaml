@@ -10,8 +10,6 @@
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 220, 155, 0, -20
 	Health:
 		HP: 1000000
 	Armor:
