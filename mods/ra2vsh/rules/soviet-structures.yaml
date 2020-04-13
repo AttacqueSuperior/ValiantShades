@@ -618,7 +618,7 @@ napsis:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 70
 		Prerequisites: natech, ~structures.soviets
 		Description: Detects enemy units and buildings.
 		BuildLimit: 1
