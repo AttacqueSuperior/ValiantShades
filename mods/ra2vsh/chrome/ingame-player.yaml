@@ -484,7 +484,7 @@ Container@PLAYER_WIDGETS:
 					IconMargin: 2, 2
 					IconSpriteOffset: -1, -1
 					MinimumRows: 4
-					MaximumRows: 6
+					MaximumRows: 7
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 				Container@PALETTE_FOREGROUND:
@@ -607,7 +607,7 @@ Container@PLAYER_WIDGETS:
 						Button@SCROLL_UP_BUTTON:
 							Logic: AddFactionSuffixLogic
 							X: 89
-							Y: PARENT_BOTTOM + 305
+							Y: PARENT_BOTTOM + 355
 							Width: 77
 							Height: 27
 							VisualHeight: 0
@@ -617,7 +617,7 @@ Container@PLAYER_WIDGETS:
 						Button@SCROLL_DOWN_BUTTON:
 							Logic: AddFactionSuffixLogic
 							X: 12
-							Y: PARENT_BOTTOM + 305
+							Y: PARENT_BOTTOM + 355
 							Width: 77
 							Height: 27
 							VisualHeight: 0
