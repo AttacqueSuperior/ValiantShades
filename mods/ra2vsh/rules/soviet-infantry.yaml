@@ -723,7 +723,7 @@ boris:
 		SlaveDisposalOnKill: KillSlaves
 		SpawnAllAtOnce: true
 		ArmamentNames: secondary
-		PauseOnCondition: !airstike
+		PauseOnCondition: !airstrike
 	SelfHealing:
 		PercentageStep: 1
 		Step: 0
