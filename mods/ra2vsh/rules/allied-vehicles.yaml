@@ -377,10 +377,13 @@ mtnk:
 		BuildPaletteOrder: 100
 	Armament@primary:
 		Weapon: 105mm
-		LocalOffset: 640,0,512
+		LocalOffset: 900,0,689
+		MuzzleSequence: muzzle
 	Armament@elite:
 		Weapon: 105mmE
-		LocalOffset: 640,0,512
+		LocalOffset: 900,0,689
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:

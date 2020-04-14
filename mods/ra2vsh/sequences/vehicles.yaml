@@ -148,6 +148,7 @@ gtgcan:
 mtnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
 	icon: gtnkicon
 
 hammr:
