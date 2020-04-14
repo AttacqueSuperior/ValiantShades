@@ -139,6 +139,7 @@ mgtk:
 mnrva:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
 	icon: mnrvicon.png
 		AddExtension: false
 

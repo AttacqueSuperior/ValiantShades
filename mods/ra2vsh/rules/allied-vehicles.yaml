@@ -1740,12 +1740,15 @@ mnrva:
 		Offset: -180,0,0
 	Armament@primary:
 		Weapon: 90mm
-		LocalOffset: 640,0,512
+		LocalOffset: 855,0,1024
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 90mmE
-		LocalOffset: 640,0,512
+		LocalOffset: 855,0,1024
+		MuzzleSequence: muzzle
 		RequiresCondition: rank-heroic
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
