@@ -205,7 +205,7 @@ ltnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithCannonMuzzle
-	missile-muzzle: gunfire
+	missile-muzzle: ragunfire
 		Length: *
 	icon: ltnkicon.png
 		AddExtension: false

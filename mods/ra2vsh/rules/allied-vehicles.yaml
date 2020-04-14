@@ -342,6 +342,7 @@ ltnk:
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		MuzzleSequence: missile-muzzle
+		MuzzlePalette: ra
 	Armament@tow-elite:
 		Name: secondary
 		Weapon: WolverineTowE
@@ -349,6 +350,7 @@ ltnk:
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		MuzzleSequence: missile-muzzle
+		MuzzlePalette: ra
 	WithMuzzleOverlay:
 	AmmoPool:
 		Armaments: secondary
