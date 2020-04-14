@@ -303,6 +303,7 @@ zephusk:
 	FallsToEarthAS:
 		Explosion: KirovExplode
 		SpinInitial: 0
+		SpinAcceleration: 1
 		SpinAccelerationDelay: 8
 		VelocityAcceleration: 1
 		Velocity: 126
