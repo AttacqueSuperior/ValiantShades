@@ -710,6 +710,12 @@ boris:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	GrantConditionOnAttack:
+		Condition: airstrike
+		ArmamentNames: secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 9
 	AirstrikeMaster:
 		Actors: bpln, bpln
 		RespawnTicks: 300
@@ -717,6 +723,7 @@ boris:
 		SlaveDisposalOnKill: KillSlaves
 		SpawnAllAtOnce: true
 		ArmamentNames: secondary
+		PauseOnCondition: !airstike
 	SelfHealing:
 		PercentageStep: 1
 		Step: 0

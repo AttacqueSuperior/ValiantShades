@@ -286,10 +286,16 @@ carrier:
 	Voiced:
 		VoiceSet: AircraftCarrierVoice
 	HitShape:
+	GrantConditionOnAttack:
+		Condition: airstrike
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 22
 	CarrierMaster:
 		Actors: hornet, hornet, hornet
 		RespawnTicks: 300
 		LoadedCondition: loaded
+		PauseOnCondition: airstrike
 	Exit@0:
 		SpawnOffset: 0,0,0
 		Facing: 0
