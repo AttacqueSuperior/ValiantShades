@@ -196,11 +196,13 @@ hmmv:
 		RequiresCondition: !repairmode && !rank-heroic
 		LocalOffset: 317,0,985
 		MuzzleSequence: muzzle
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: HumveeGunE
 		RequiresCondition: !repairmode && rank-heroic
 		LocalOffset: 317,0,985
 		MuzzleSequence: muzzle
+		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
