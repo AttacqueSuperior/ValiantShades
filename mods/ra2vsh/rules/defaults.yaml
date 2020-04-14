@@ -14,6 +14,7 @@
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85
+	DevOffsetOverlay:
 
 ^SpriteActor:
 	Inherits: ^Orientable

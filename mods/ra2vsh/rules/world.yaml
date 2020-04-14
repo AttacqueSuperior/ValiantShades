@@ -251,6 +251,7 @@
 		TerrainType: Tiberium
 	CliffBackImpassabilityLayer:
 	ExitsDebugOverlayManager:
+	DevOffsetOverlayManager:
 
 World:
 	Inherits: ^BaseWorld
