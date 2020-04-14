@@ -279,7 +279,7 @@ dog:
 		CanHover: true
 		VTOL: true
 		TurnToDock: false
-		CruiseAltitude: 3072
+		CruiseAltitude: 4200
 		InitialFacing: 20
 		TurnSpeed: 64
 		Speed: 140
