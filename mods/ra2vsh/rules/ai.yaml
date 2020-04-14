@@ -566,7 +566,7 @@ Player:
 		HarvestersPerRefinery: 4
 		RefineryTypes: garefn, narefn
 		RequiresCondition: enable-brutal-ai && harvester-high > 1
-	BuildingRepairBotModule:
+	BuildingRepairBotModuleAS:
 		RequiresCondition: enable-ai
 	GrantConditionOnPrerequisite@powerplants:
 		Condition: allow-powerplug
