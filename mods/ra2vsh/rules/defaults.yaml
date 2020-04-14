@@ -992,6 +992,7 @@
 		Sequence: helicopter
 		RequiresCondition: !hide-gpsdot
 	Aircraft:
+		CruiseAltitude: 5600
 		TakeOffOnResupply: true
 		CanSlide: true
 		CanHover: true
@@ -1001,7 +1002,6 @@
 ^Plane:
 	Inherits: ^Aircraft
 	Aircraft:
-		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
 		CanSlide: false
@@ -1102,10 +1102,9 @@
 	FallsToEarthAS:
 		Explosion: PlaneExplode
 		Spins: true
-		SpinInitial: 2
-		SpinAcceleration: 1
-		SpinAccelerationDelay: 3
-		VelocityAcceleration: 4
+		SpinInitial: 3
+		SpinAcceleration: 3
+		VelocityAcceleration: 2
 	ExternalCondition@hide-gpsdot:
 		Condition: hide-gpsdot
 	GpsDotAS:

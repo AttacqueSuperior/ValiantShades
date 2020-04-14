@@ -36,7 +36,6 @@ shad:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
-		CruiseAltitude: 3072
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
 		TurnSpeed: 10
 		Speed: 140
@@ -182,7 +181,6 @@ hind:
 		Range: 6c0
 		Type: CenterPosition
 	Aircraft:
-		CruiseAltitude: 3072
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
 		TurnSpeed: 10
 		Speed: 125
@@ -237,7 +235,6 @@ zep:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		CruiseAltitude: 5600
 		TurnSpeed: 2
 		Speed: 25
 		Voice: Move
@@ -336,7 +333,6 @@ thor:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		CruiseAltitude: 5600
 		TurnSpeed: 2
 		Speed: 25
 		Voice: Move
@@ -726,7 +722,6 @@ pdplane:
 	Aircraft:
 		IdleBehavior: LeaveMap
 		Repulsable: false
-		CruiseAltitude: 5600
 		TurnSpeed: 5
 		Speed: 225
 		MaximumPitch: 56
@@ -1095,7 +1090,6 @@ wolfk:
 	Aircraft:
 		IdleBehavior: LeaveMap
 		Repulsable: false
-		CruiseAltitude: 5600
 		TurnSpeed: 5
 		Speed: 250
 		VTOL: true
