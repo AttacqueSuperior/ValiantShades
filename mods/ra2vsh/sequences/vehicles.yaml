@@ -168,6 +168,7 @@ harv:
 hmmv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithMachineGunMuzzle
 	icon: hmmvicon
 
 htk:
@@ -203,6 +204,9 @@ lcrf:
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
+	missile-muzzle: gunfire
+		Length: *
 	icon: ltnkicon.png
 		AddExtension: false
 
@@ -260,6 +264,7 @@ succ:
 tnkd:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
 	icon: tnkdicon
 
 topol:

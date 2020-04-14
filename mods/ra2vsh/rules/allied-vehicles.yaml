@@ -194,9 +194,14 @@ hmmv:
 	Armament@primary:
 		Weapon: HumveeGun
 		RequiresCondition: !repairmode && !rank-heroic
+		LocalOffset: 317,0,985
+		MuzzleSequence: muzzle
 	Armament@elite:
 		Weapon: HumveeGunE
 		RequiresCondition: !repairmode && rank-heroic
+		LocalOffset: 317,0,985
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
@@ -218,7 +223,7 @@ hmmv:
 		RequiresCondition: repairmode
 	Armament@repair:
 		Weapon: RepairBullet
-		LocalOffset: 164,0,864
+		LocalOffset: 317,0,1111
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
@@ -226,7 +231,7 @@ hmmv:
 		ForceTargetStances: None
 	Armament@defuse:
 		Weapon: DefuseKit
-		LocalOffset: 164,0,864
+		LocalOffset: 317,0,1111
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
@@ -320,24 +325,29 @@ ltnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 90mm
-		LocalOffset: 640,0,512
+		LocalOffset: 525,0,558
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: muzzle
 	Armament@elite:
 		Weapon: 90mmE
-		LocalOffset: 640,0,512
+		LocalOffset: 525,0,558
 		RequiresCondition: rank-heroic
+		MuzzleSequence: muzzle
 	Armament@tow:
 		Name: secondary
 		Weapon: WolverineTow
-		LocalOffset: 320,600,512
+		LocalOffset: 64,-272,640, 64,-216,640
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: missile-muzzle
 	Armament@tow-elite:
 		Name: secondary
 		Weapon: WolverineTowE
-		LocalOffset: 320,600,512
+		LocalOffset: 64,-272,640, 64,-216,640
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
+		MuzzleSequence: missile-muzzle
+	WithMuzzleOverlay:
 	AmmoPool:
 		Armaments: secondary
 		Ammo: 2
@@ -428,12 +438,15 @@ tnkd:
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: sabot
-		LocalOffset: 704,0,768
+		LocalOffset: 1020,0,608
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: muzzle
 	Armament@elite:
 		Weapon: sabotE
-		LocalOffset: 704,0,768
+		LocalOffset: 1020,0,608
 		RequiresCondition: rank-heroic
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1213,11 +1226,11 @@ sref:
 		Offset: 140,0,0
 	Armament@primary:
 		Weapon: Comet
-		LocalOffset: 240,0,1280
+		LocalOffset: 203,0,1287
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: SuperComet
-		LocalOffset: 240,0,1280
+		LocalOffset: 203,0,1287
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -1292,11 +1305,11 @@ mgtk:
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: MirageGun
-		LocalOffset: 640,0,640
+		LocalOffset: 825,0,792
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: MirageGunE
-		LocalOffset: 640,0,640
+		LocalOffset: 825,0,792
 		RequiresCondition: rank-heroic
 	Turreted:
 		TurnSpeed: 8
@@ -1381,11 +1394,12 @@ bfrt:
 	AttackGarrisoned:
 		Voice: Attack
 		Armaments: opentopped
-		PortOffsets: 768,0,256, 448,-682,256, -448,-682,256, -768,0,256, -448,682,256, 448,682,256
-		PortYaws: 0, 176, 341, 512, 682, 853
-		PortCones: 88, 88, 88, 88, 88, 88
+		PortOffsets: 740,0,1530, 160,-835,1035, 160,835,1035, -460,-835,1000, -460,835,1000
+		PortYaws: 0, 176, 341, 512, 682
+		PortCones: 256, 256, 256, 256, 256
 		RequiresCondition: loaded
 		PauseOnCondition: disabled
+	WithMuzzleOverlay:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -1496,12 +1510,13 @@ aero:
 		Offset: -120,0,0
 	Armament@primary:
 		Weapon: AeroblazeLaser
-		LocalOffset: 240,0,1280
+		LocalOffset: 705,-233,1229, 705,233,1229
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: AeroblazeLaserE
-		LocalOffset: 240,0,1280
+		LocalOffset: 705,-233,1229, 705,233,1229
 		RequiresCondition: rank-heroic
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1553,11 +1568,11 @@ chrp:
 		Offset: -310,0,0
 	Armament@primary:
 		Weapon: ChronoPrisonVehicle
-		# LocalOffset: 640,0,512
+		LocalOffset: 587,0,1958
 		ReloadingCondition: reloading
 	Armament@primary2:
 		Weapon: ChronoPrisonInfantry
-		# LocalOffset: 640,0,512
+		LocalOffset: 587,0,1958
 		ReloadingCondition: reloading
 	AttackTurreted:
 		Voice: Attack
@@ -1680,11 +1695,11 @@ succ:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: SuccubusCharm
-		LocalOffset: 640,0,512
+		LocalOffset: 0,0,1400
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: SuccubusCharm
-		LocalOffset: 640,0,512
+		LocalOffset: 0,0,1400
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
