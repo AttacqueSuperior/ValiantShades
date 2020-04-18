@@ -96,11 +96,11 @@ harv:
 		Type: Medium
 	Armament@primary:
 		Weapon: 20mmrapid
-		LocalOffset: 256,0,1024
+		LocalOffset: 375,0,1100
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 20mmrapidE
-		LocalOffset: 256,0,1024
+		LocalOffset: 375,0,1100
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -292,15 +292,19 @@ htk:
 	Armament@primary:
 		Weapon: FlakTrackGun
 		RequiresCondition: !repairmode && !rank-heroic
+		LocalOffset: 320,0,1540
 	Armament@elite:
 		Weapon: FlakTrackGunE
 		RequiresCondition: !repairmode && rank-heroic
+		LocalOffset: 320,0,1540
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
 		RequiresCondition: !repairmode && !rank-heroic
+		LocalOffset: 320,0,1540
 	Armament@secondary-elite:
 		Weapon: FlakTrackAAGunE
 		RequiresCondition: !repairmode && rank-heroic
+		LocalOffset: 320,0,1540
 	Turreted:
 		TurnSpeed: 15
 		Offset: -380,0,0
@@ -323,7 +327,7 @@ htk:
 		RequiresCondition: repairmode
 	Armament@repair:
 		Weapon: RepairBullet
-		LocalOffset: 164,0,864
+		LocalOffset: 335,0,1140
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
@@ -331,7 +335,7 @@ htk:
 		ForceTargetStances: None
 	Armament@defuse:
 		Weapon: DefuseKit
-		LocalOffset: 164,0,864
+		LocalOffset: 335,0,1140
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
@@ -428,9 +432,11 @@ drgn:
 	Armament@primary:
 		Weapon: DragonFlamer
 		RequiresCondition: !rank-heroic
+		LocalOffset: 450,0,750
 	Armament@elite:
 		Weapon: DragonFlamerE
 		RequiresCondition: rank-heroic
+		LocalOffset: 450,0,750
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
@@ -483,9 +489,11 @@ slost:
 	Armament@primary:
 		Weapon: GattlingGun
 		RequiresCondition: !rank-heroic
+		LocalOffset: 440,0,1025
 	Armament@elite:
 		Weapon: GattlingGunE
 		RequiresCondition: rank-heroic
+		LocalOffset: 440,0,1025
 	Turreted:
 		TurnSpeed: 10
 		Offset: -160,0,0
@@ -524,10 +532,10 @@ htnk:
 		Offset: 0,0,-120
 	Armament@primary:
 		Weapon: 120mm
-		LocalOffset: 640,0,384
+		LocalOffset: 890,0,685
 	Armament@elite:
 		Weapon: 120mmE
-		LocalOffset: 640,0,384
+		LocalOffset: 890,0,685
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
@@ -548,10 +556,10 @@ hammr:
 		BuildPaletteOrder: 500
 	Armament@primary:
 		Weapon: 120mm
-		LocalOffset: 640,100,384
+		LocalOffset: 905,90,500, 905,-90,500
 	Armament@elite:
 		Weapon: 120mmE
-		LocalOffset: 640,100,384
+		LocalOffset: 905,90,500, 905,-90,500
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
@@ -661,33 +669,33 @@ apoc:
 		TurnSpeed: 3
 	Armament@primary:
 		Weapon: 120mmx
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1095,106,905, 1095,-106,905
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 120mmxE
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1095,106,905, 1095,-106,905
 		RequiresCondition: rank-heroic
 	Armament@missiles:
 		Weapon: MammothTusk
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
 	Armament@missiles-elite:
 		Weapon: MammothTuskE
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
 	Armament@antiair:
 		Weapon: MammothTuskAA
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
 	Armament@antiair-elite:
 		Weapon: MammothTuskAAE
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
@@ -757,11 +765,11 @@ ttnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: TankBolt
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 400,255,905, 400,-255,905
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: TankBoltE
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 400,255,905, 400,-255,905
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -875,7 +883,7 @@ mind:
 		DeathTypes: DefaultDeath
 	Armament:
 		Weapon: MasterMindControl
-		LocalOffset: 0,0,960
+		LocalOffset: -235,0,896
 	MindController:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
@@ -883,7 +891,7 @@ mind:
 		RequiresCondition: !disabled
 	WithMindControlArc:
 		UsePlayerColor: true
-		Offset: 0,0,960
+		Offset: -235,0,896
 	AttackFrontal:
 		FacingTolerance: 64
 		Voice: Attack
@@ -904,23 +912,24 @@ mind:
 	ExplodeWeapon@brainwaveoverload:
 		RequiresCondition: controlling > 2
 		Weapon: BrainWaveOverload
-		LocalOffset: 0,0,384
+		LocalOffset: -235,0,896
 	ExplodeWeapon@brainwaveoverload2:
 		RequiresCondition: controlling > 4
 		Weapon: BrainWaveOverload
-		LocalOffset: 0,0,384
+		LocalOffset: -235,0,896
 	ExplodeWeapon@brainwaveoverload3:
 		RequiresCondition: controlling > 8
 		Weapon: BrainWaveOverload
-		LocalOffset: 0,0,384
+		LocalOffset: -235,0,896
 	ExplodeWeapon@brainwaveoverload4:
 		RequiresCondition: controlling > 16
 		Weapon: BrainWaveOverload
-		LocalOffset: 0,0,384
+		LocalOffset: -235,0,896
 	Explodes@mastermind:
 		Weapon: MasterMindExplode
 		EmptyWeapon: MasterMindExplode
 		DeathTypes: DefaultDeath
+		LocalOffset: -235,0,896
 	WithMindControllerPipsDecoration:
 		Palette: pips
 		Position: BottomLeft
@@ -961,11 +970,11 @@ bura:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: BuratinoMissile
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 425,37,1040, 425,-37,1040, 425,193,1040, 425,-193,1040
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: BuratinoMissileE
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 425,37,1040, 425,-37,1040, 425,193,1040, 425,-193,1040
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -1024,11 +1033,11 @@ gaunt:
 		Offset: 120,0,0
 	Armament@primary:
 		Weapon: GauntletMissile
-		LocalOffset: 240,0,1280
+		LocalOffset: 30,80,1162, 30,-80,1162, -65,80,1162, -65,-80,1162
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: GauntletMissileE
-		LocalOffset: 240,0,1280
+		LocalOffset: 30,80,1162, 30,-80,1162, -65,80,1162, -65,-80,1162
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -1080,11 +1089,11 @@ empr:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: EmpressMissile
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 25,325,916, 25,-325,916
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: EmpressMissileE
-		LocalOffset: 280,196,640, 280,-196,640
+		LocalOffset: 25,325,916, 25,-325,916
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
