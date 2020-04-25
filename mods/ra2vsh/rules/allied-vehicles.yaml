@@ -195,13 +195,13 @@ hmmv:
 		Weapon: HumveeGun
 		RequiresCondition: !repairmode && !rank-heroic
 		LocalOffset: 317,0,985
-		MuzzleSequence: muzzle
+		MuzzleSequence: mgmuzzle
 		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: HumveeGunE
 		RequiresCondition: !repairmode && rank-heroic
 		LocalOffset: 317,0,985
-		MuzzleSequence: muzzle
+		MuzzleSequence: mgmuzzle
 		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Turreted:
@@ -329,12 +329,12 @@ ltnk:
 		Weapon: 90mm
 		LocalOffset: 525,0,558
 		RequiresCondition: !rank-heroic
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 525,0,558
 		RequiresCondition: rank-heroic
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@tow:
 		Name: secondary
 		Weapon: WolverineTow
@@ -392,11 +392,11 @@ mtnk:
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 900,0,689
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
 		Weapon: 105mmE
 		LocalOffset: 900,0,689
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -444,12 +444,12 @@ tnkd:
 		Weapon: sabot
 		LocalOffset: 1020,0,608
 		RequiresCondition: !rank-heroic
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
 		Weapon: sabotE
 		LocalOffset: 1020,0,608
 		RequiresCondition: rank-heroic
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 	WithMuzzleOverlay:
 	AttackFrontal:
 		Voice: Attack
@@ -1760,12 +1760,12 @@ mnrva:
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 855,0,1024
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: 90mmE
 		LocalOffset: 855,0,1024
-		MuzzleSequence: muzzle
+		MuzzleSequence: ra2cannonmuzzle
 		RequiresCondition: rank-heroic
 	WithMuzzleOverlay:
 	AttackTurreted:

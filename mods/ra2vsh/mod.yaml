@@ -141,6 +141,7 @@ Sequences:
 	ra2vsh|sequences/vehicles.yaml
 	ra2vsh|sequences/explosions.yaml
 	ra2vsh|sequences/particles.yaml
+	ra2vsh|sequences/muzzles.yaml
 	ra2vsh|sequences/misc.yaml
 
 ModelSequences:
