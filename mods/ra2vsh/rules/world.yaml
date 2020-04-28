@@ -405,6 +405,7 @@ World:
 	TintedCellsLayer@radiation:
 		Darkest: 32
 		Brightest: 128
+		ZOffset: 2
 	ResourceTwinkleLayer@ore:
 		Types: Ore
 		Image: twinkle
