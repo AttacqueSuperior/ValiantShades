@@ -35,7 +35,98 @@
 				UseTilesetCode: false
 		Facings: 8
 		Length: 6
+		Tick: 80
 
 ^WithCannonMuzzle:
 	ra2cannonmuzzle: gunfire
 		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+
+^WithFlakMuzzle:
+	flakmuzzle: flak
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+
+^WithApocMuzzle:
+	apocmuzzle: apmuzzle
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+
+^WithLKOMuzzleA:
+	lkomuzzlea:
+		Combine:
+			lkomz1-n:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-nw:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-w:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-sw:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-s:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-se:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-e:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz1-ne:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+		Facings: 8
+		Length: 16
+
+^WithLKOMuzzleB:
+	lkomuzzleb:
+		Combine:
+			lkomz2-n:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-nw:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-w:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-sw:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-s:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-se:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-e:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+			lkomz2-ne:
+				Length: *
+				Offset: 0, 0
+				UseTilesetCode: false
+		Facings: 8
+		Length: 21
