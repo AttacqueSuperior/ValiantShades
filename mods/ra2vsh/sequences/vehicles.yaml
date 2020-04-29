@@ -134,6 +134,8 @@ mgg:
 mgtk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	miragemuzzle: miragmuz
+		Length: *
 	icon: rtnkicon
 
 mnrva:

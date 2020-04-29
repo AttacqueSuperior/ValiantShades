@@ -1311,10 +1311,13 @@ mgtk:
 		Weapon: MirageGun
 		LocalOffset: 825,0,792
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: miragemuzzle
 	Armament@elite:
 		Weapon: MirageGunE
 		LocalOffset: 825,0,792
 		RequiresCondition: rank-heroic
+		MuzzleSequence: miragemuzzle
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 8
 	AttackTurreted:
