@@ -8,10 +8,15 @@ lasher:
 		BuildPaletteOrder: 500
 	Armament@primary:
 		Weapon: 105mm
-		LocalOffset: 640,0,512
+		LocalOffset: 908,0,976
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: 105mmE
-		LocalOffset: 640,0,512
+		LocalOffset: 908,0,976
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
+	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:
@@ -102,12 +107,15 @@ ovrl:
 		TurnSpeed: 3
 	Armament@primary:
 		Weapon: 120mmx
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1248,360,896, 1248,-360,896
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: apocmuzzle
 	Armament@elite:
 		Weapon: 120mmxE
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1248,360,896, 1248,-360,896
 		RequiresCondition: rank-heroic
+		MuzzleSequence: apocmuzzle
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -174,11 +182,11 @@ malf:
 		Offset: -180,0,0
 	Armament@primary:
 		Weapon: MalfestorBeam
-		LocalOffset: 240,0,1280
+		LocalOffset: 512,0,834, 424,0,1184
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: MalfestorBeamE
-		LocalOffset: 240,0,1280
+		LocalOffset: 512,0,834, 424,0,1184
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -225,11 +233,11 @@ howi:
 		DeathTypes: DefaultDeath
 	Armament@primary:
 		Weapon: HowitzerGun
-		LocalOffset: 704,0,768
+		LocalOffset: 833,0,1280
 		RequiresCondition: !rank-heroic
 	Armament@elite:
 		Weapon: HowitzerGunE
-		LocalOffset: 704,0,768
+		LocalOffset: 833,0,1280
 		RequiresCondition: rank-heroic
 	AttackFrontal:
 		Voice: Attack
@@ -294,36 +302,43 @@ howi:
 		TurnSpeed: 3
 	Armament@primary:
 		Weapon: 120mmx
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1187,150,921, 1187,-150,921
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: apocmuzzle
 	Armament@elite:
 		Weapon: 120mmxE
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 1187,150,921, 1187,-150,921
 		RequiresCondition: rank-heroic
+		MuzzleSequence: apocmuzzle
 	Armament@missiles:
 		Weapon: MammothTusk
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: -30,406,896, -30,-406,896
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@missiles-elite:
 		Weapon: MammothTuskE
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: -30,406,896, -30,-406,896
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@antiair:
 		Weapon: MammothTuskAA
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: -30,406,896, -30,-406,896
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@antiair-elite:
 		Weapon: MammothTuskAAE
-		LocalOffset: 80,200,768, 80,-200,768
+		LocalOffset: -30,406,896, -30,-406,896
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
 	AmmoPool:
 		Armaments: secondary
 		Ammo: 2

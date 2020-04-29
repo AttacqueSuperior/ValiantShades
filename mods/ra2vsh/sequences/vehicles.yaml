@@ -1,6 +1,8 @@
 4tnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithApocMuzzle
+	Inherits@muzzle2: ^WithCannonMuzzle
 	icon: 4tnkicon.png
 		AddExtension: false
 
@@ -206,6 +208,7 @@ hyd:
 lasher:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithLKOMuzzleA
 	icon: ltnkicon
 
 lcrf:
@@ -237,6 +240,7 @@ apoc:
 ovrl:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithApocMuzzle
 	icon: ovrlicon.png
 		AddExtension: false
 
