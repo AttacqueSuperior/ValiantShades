@@ -255,6 +255,7 @@ naairc:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Prerequisites: naradr, ~structures.soviets
+		IconPalette: nairfico
 	Tooltip:
 		Name: Airforce Command Headquarters
 	ProvidesPrerequisite:
@@ -270,19 +271,10 @@ naairc:
 		Sequence: idle-bottom
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	WithIdleOverlay@mid:
-		Sequence: idle-mid
+	WithIdleOverlay@top:
+		Sequence: idle-top
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
-		PauseOnCondition: disabled
-		RequiresCondition: !build-incomplete
-	RenderSprites:
-		Image: gaairc
-	WithTextDecoration@placeholder:
-		Text: PLACEHOLDER
-		Position: Center
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: e2, e2, e2

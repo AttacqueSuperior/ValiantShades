@@ -222,6 +222,60 @@ nayard:
 		Offset: -57,-66,1
 	icon: yardicon
 
+naairc:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire2
+	Defaults:
+		Offset: 17, -43
+	idle: naairf
+		ShadowStart: 2
+		Length: 1
+		ZOffset: -512
+	damaged-idle: naairf
+		ShadowStart: 3
+		Start: 1
+		ZOffset: -512
+	idle-top: naairf_b
+		Length: 8
+		ShadowStart: -1
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	idle-bottom: naairfbb
+		Length: 1
+		ShadowStart: 2
+		ZOffset: -512
+	damage-idle-bottom: naairfbb
+		Start: 1
+		ShadowStart: 3
+		Length: 1
+		ZOffset: -512
+	idle-lamp: naairf_a
+		Length: 4
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	damaged-idle-lamp: naairf_a
+		Length: 4
+		Tick: 120
+		TilesetOverrides:
+			SNOW: GENERIC
+	autobounds: naairf
+	make: naairfmk
+		Length: 21
+		ShadowStart: 21
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			DESERT: GENERIC
+			NEWURBAN: GENERIC
+	damagefire1:
+		Offset: -21,-14,1
+	damagefire2:
+		Offset: -6,-31,1
+	icon: nairfico.png
+		AddExtension: false
+
 nadept:
 	Inherits: ^Structure
 	Defaults:
