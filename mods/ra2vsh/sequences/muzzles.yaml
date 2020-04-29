@@ -130,3 +130,9 @@
 				UseTilesetCode: false
 		Facings: 8
 		Length: 21
+
+^WithFlameMuzzle:
+	flamemuzzle: flammuzl
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false

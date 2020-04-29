@@ -98,10 +98,15 @@ harv:
 		Weapon: 20mmrapid
 		LocalOffset: 375,0,1100
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: mgmuzzle
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: 20mmrapidE
 		LocalOffset: 375,0,1100
 		RequiresCondition: rank-heroic
+		MuzzleSequence: mgmuzzle
+		MuzzlePalette: tsanim
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -293,18 +298,27 @@ htk:
 		Weapon: FlakTrackGun
 		RequiresCondition: !repairmode && !rank-heroic
 		LocalOffset: 320,0,1540
+		MuzzleSequence: flakmuzzle
+		MuzzlePalette: ra
 	Armament@elite:
 		Weapon: FlakTrackGunE
 		RequiresCondition: !repairmode && rank-heroic
 		LocalOffset: 320,0,1540
+		MuzzleSequence: flakmuzzle
+		MuzzlePalette: ra
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
 		RequiresCondition: !repairmode && !rank-heroic
 		LocalOffset: 320,0,1540
+		MuzzleSequence: flakmuzzle
+		MuzzlePalette: ra
 	Armament@secondary-elite:
 		Weapon: FlakTrackAAGunE
 		RequiresCondition: !repairmode && rank-heroic
 		LocalOffset: 320,0,1540
+		MuzzleSequence: flakmuzzle
+		MuzzlePalette: ra
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
 		Offset: -380,0,0
@@ -433,10 +447,13 @@ drgn:
 		Weapon: DragonFlamer
 		RequiresCondition: !rank-heroic
 		LocalOffset: 450,0,750
+		MuzzleSequence: flamemuzzle
 	Armament@elite:
 		Weapon: DragonFlamerE
 		RequiresCondition: rank-heroic
 		LocalOffset: 450,0,750
+		MuzzleSequence: flamemuzzle
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
@@ -490,10 +507,15 @@ slost:
 		Weapon: GattlingGun
 		RequiresCondition: !rank-heroic
 		LocalOffset: 440,0,1025
+		MuzzleSequence: mgmuzzle
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: GattlingGunE
 		RequiresCondition: rank-heroic
 		LocalOffset: 440,0,1025
+		MuzzleSequence: mgmuzzle
+		MuzzlePalette: tsanim
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 10
 		Offset: -160,0,0
@@ -533,9 +555,14 @@ htnk:
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 890,0,685
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: 120mmE
 		LocalOffset: 890,0,685
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
+	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
@@ -557,9 +584,14 @@ hammr:
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 905,90,500, 905,-90,500
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: 120mmE
 		LocalOffset: 905,90,500, 905,-90,500
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
+	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
@@ -671,34 +703,41 @@ apoc:
 		Weapon: 120mmx
 		LocalOffset: 1095,106,905, 1095,-106,905
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: apocmuzzle
 	Armament@elite:
 		Weapon: 120mmxE
 		LocalOffset: 1095,106,905, 1095,-106,905
 		RequiresCondition: rank-heroic
+		MuzzleSequence: apocmuzzle
 	Armament@missiles:
 		Weapon: MammothTusk
 		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@missiles-elite:
 		Weapon: MammothTuskE
 		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@antiair:
 		Weapon: MammothTuskAA
 		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: !rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@antiair-elite:
 		Weapon: MammothTuskAAE
 		LocalOffset: 10,348,1225, 10,-348,1225
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-heroic
 		Name: secondary
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
 	AmmoPool:
 		Armaments: secondary
 		Ammo: 2
@@ -972,10 +1011,13 @@ bura:
 		Weapon: BuratinoMissile
 		LocalOffset: 425,37,1040, 425,-37,1040, 425,193,1040, 425,-193,1040
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: buratinomuzzle
 	Armament@elite:
 		Weapon: BuratinoMissileE
 		LocalOffset: 425,37,1040, 425,-37,1040, 425,193,1040, 425,-193,1040
 		RequiresCondition: rank-heroic
+		MuzzleSequence: buratinomuzzle
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled || moving
@@ -1035,10 +1077,13 @@ gaunt:
 		Weapon: GauntletMissile
 		LocalOffset: 30,80,1162, 30,-80,1162, -65,80,1162, -65,-80,1162
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: gauntletmuzzle
 	Armament@elite:
 		Weapon: GauntletMissileE
 		LocalOffset: 30,80,1162, 30,-80,1162, -65,80,1162, -65,-80,1162
 		RequiresCondition: rank-heroic
+		MuzzleSequence: gauntletmuzzle
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1091,10 +1136,13 @@ empr:
 		Weapon: EmpressMissile
 		LocalOffset: 25,325,916, 25,-325,916
 		RequiresCondition: !rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
 		Weapon: EmpressMissileE
 		LocalOffset: 25,325,916, 25,-325,916
 		RequiresCondition: rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled

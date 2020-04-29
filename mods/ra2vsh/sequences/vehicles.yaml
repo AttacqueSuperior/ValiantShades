@@ -32,6 +32,8 @@ bfrt:
 bura:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	buratinomuzzle: buratmuz
+		Length: *
 	icon: buraicon.png
 		AddExtension: false
 
@@ -85,6 +87,7 @@ dred:
 drgn:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithFlameMuzzle
 	icon: drgnicon
 
 dron:
@@ -112,6 +115,7 @@ dron:
 empr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
 	icon: empricon.png
 		AddExtension: false
 
@@ -123,6 +127,8 @@ fv:
 gaunt:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	gauntletmuzzle: gauntmuz
+		Length: *
 	icon: gaunicon.png
 		AddExtension: false
 
@@ -157,11 +163,13 @@ mtnk:
 hammr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithLKOMuzzleA
 	icon: htn2icon.png
 		AddExtension: false
 
 harv:
 	Inherits: ^Vehicle
+	Inherits@muzzle: ^WithMachineGunMuzzle
 	harvest: oregath
 		Length: 15
 		Facings: 8
@@ -176,11 +184,13 @@ hmmv:
 htk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithFlakMuzzle
 	icon: htkicon
 
 htnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithLKOMuzzleA
 	icon: htnkicon
 
 howi:
@@ -220,6 +230,8 @@ malf:
 apoc:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithApocMuzzle
+	Inherits@muzzle2: ^WithCannonMuzzle
 	icon: mtnkicon
 
 ovrl:
@@ -246,6 +258,7 @@ smcv:
 slost:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithMachineGunMuzzle
 	icon: ytnkicon
 
 sref:
