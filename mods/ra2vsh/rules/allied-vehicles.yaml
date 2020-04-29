@@ -1402,12 +1402,10 @@ bfrt:
 			ccomand: loaded
 			snipe: loaded
 			cleg: loaded
-	AttackGarrisoned:
+	AttackOpenTopped:
 		Voice: Attack
 		Armaments: opentopped
 		PortOffsets: 740,0,1530, 160,-835,1035, 160,835,1035, -460,-835,1000, -460,835,1000
-		PortYaws: 0, 176, 341, 512, 682
-		PortCones: 256, 256, 256, 256, 256
 		RequiresCondition: loaded
 		PauseOnCondition: disabled
 	WithMuzzleOverlay:
