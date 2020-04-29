@@ -356,10 +356,12 @@ thor:
 		Weapon: ThorLightning
 		RequiresCondition: !rank-heroic
 		LocalOffset: 80,0,960
+		MuzzleSequence: thorboltmuzzle
 	Armament@elite:
 		Weapon: ThorLightningE
 		RequiresCondition: rank-heroic
 		LocalOffset: 80,0,960
+		MuzzleSequence: thorboltmuzzle
 	Armament@2:
 		Weapon: ThorLaser
 		RequiresCondition: !rank-heroic
@@ -368,6 +370,7 @@ thor:
 		Weapon: ThorLaserE
 		RequiresCondition: rank-heroic
 		LocalOffset: 1412,0,198
+	WithMuzzleOverlay:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled

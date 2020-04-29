@@ -66,6 +66,8 @@ spypl:
 
 thor:
 	Inherits: ^Aircraft
+	thorboltmuzzle: thorbmuz
+		Length: *
 	icon: thoricon.png
 		AddExtension: false
 
