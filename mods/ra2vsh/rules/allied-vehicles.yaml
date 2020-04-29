@@ -392,11 +392,13 @@ mtnk:
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 900,0,689
-		MuzzleSequence: ra2cannonmuzzle
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: 105mmE
 		LocalOffset: 900,0,689
-		MuzzleSequence: ra2cannonmuzzle
+		MuzzleSequence: lkomuzzlea
+		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Selectable:
 		Bounds: 64, 52, 0, -6
@@ -444,12 +446,14 @@ tnkd:
 		Weapon: sabot
 		LocalOffset: 1020,0,608
 		RequiresCondition: !rank-heroic
-		MuzzleSequence: ra2cannonmuzzle
+		MuzzleSequence: lkomuzzleb
+		MuzzlePalette: tsanim
 	Armament@elite:
 		Weapon: sabotE
 		LocalOffset: 1020,0,608
 		RequiresCondition: rank-heroic
-		MuzzleSequence: ra2cannonmuzzle
+		MuzzleSequence: lkomuzzleb
+		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	AttackFrontal:
 		Voice: Attack
