@@ -52,6 +52,7 @@ pdplane:
 shad:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithCannonMuzzle
 	icon: shadicon
 
 spirit:

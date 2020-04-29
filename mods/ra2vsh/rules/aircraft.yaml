@@ -15,9 +15,14 @@ shad:
 	Armament@primary:
 		Weapon: BlackHawkCannon
 		RequiresCondition: !rank-heroic
+		LocalOffset: 935,16,64
+		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
 		Weapon: BlackHawkCannonE
 		RequiresCondition: rank-heroic
+		LocalOffset: 935,16,64
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
 	Voiced:
 		VoiceSet: NighthawkVoice
 	Buildable:
@@ -249,9 +254,11 @@ zep:
 	Armament:
 		Weapon: BlimpBomb
 		RequiresCondition: !rank-heroic
+		LocalOffset: 40,0,-984
 	Armament@elite:
 		Weapon: BlimpBombE
 		RequiresCondition: rank-heroic
+		LocalOffset: 40,0,-984
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -348,15 +355,19 @@ thor:
 	Armament:
 		Weapon: ThorLightning
 		RequiresCondition: !rank-heroic
+		LocalOffset: 80,0,960
 	Armament@elite:
 		Weapon: ThorLightningE
 		RequiresCondition: rank-heroic
+		LocalOffset: 80,0,960
 	Armament@2:
 		Weapon: ThorLaser
 		RequiresCondition: !rank-heroic
+		LocalOffset: 1412,0,198
 	Armament@elite2:
 		Weapon: ThorLaserE
 		RequiresCondition: rank-heroic
+		LocalOffset: 1412,0,198
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
