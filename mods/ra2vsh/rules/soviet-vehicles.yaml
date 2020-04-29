@@ -968,7 +968,6 @@ mind:
 		Weapon: MasterMindExplode
 		EmptyWeapon: MasterMindExplode
 		DeathTypes: DefaultDeath
-		LocalOffset: -235,0,896
 	WithMindControllerPipsDecoration:
 		Palette: pips
 		Position: BottomLeft
