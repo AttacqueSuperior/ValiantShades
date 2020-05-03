@@ -191,7 +191,6 @@
 	icon:
 		Offset: 0,0
 		UseTilesetCode: false
-	autobounds:
 
 ^TechStructure:
 	Inherits@IvanBomb: ^IvanBombable
@@ -211,7 +210,6 @@
 		Start: 3
 		ShadowStart: 7
 		ZOffset: -3c0
-	autobounds:
 
 ^CivStructure:
 	Inherits@IvanBomb: ^IvanBombable
@@ -225,7 +223,6 @@
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-	autobounds:
 
 ^Vehicle:
 	Inherits@IvanBomb: ^IvanBombable
@@ -252,7 +249,6 @@
 	damaged-idle: causfgl
 		Start: 1
 		ShadowStart: 5
-	autobounds: causfgl
 
 ^Wall:
 	Defaults:

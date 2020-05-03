@@ -770,8 +770,6 @@ gacsph:
 		Actors: e1, e1, e1, e1, e1
 	Armor@resistsupers:
 		Type: ResistSupers
-	-ExternalCondition@autobounds:
-	-WithSpriteBody@autobounds:
 
 gacran:
 	Inherits: ^Crane

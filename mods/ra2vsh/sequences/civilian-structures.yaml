@@ -121,7 +121,6 @@ cawash18:
 		Length: 10
 		ShadowStart: 10
 		Tick: 80
-	autobounds: cawsh18a
 
 cawash19:
 	Inherits: ^CivStructure
@@ -1142,7 +1141,6 @@ graionbb:
 	damaged-idle:
 		Start: 63
 		Length: 63
-	autobounds:
 
 caegyp02:
 	Inherits: ^CivStructure

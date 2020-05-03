@@ -260,7 +260,6 @@ naairc:
 		Tick: 120
 		TilesetOverrides:
 			SNOW: GENERIC
-	autobounds: naairf
 	make: naairfmk
 		Length: 21
 		ShadowStart: 21
@@ -666,7 +665,6 @@ nalasr:
 			URBAN: GENERIC
 			DESERT: GENERIC
 			NEWURBAN: GENERIC
-	autobounds: nasnty
 	damagefire1:
 		Offset: -5,0,1
 	icon: plticon
@@ -697,7 +695,6 @@ tesla:
 		Tick: 100
 		ZOffset: 10
 	make: nttslamk
-	autobounds: ngtsla
 	damagefire1:
 		Offset: 0,-1,1
 	icon: tslaicon
@@ -754,7 +751,6 @@ nasntl:
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
-	autobounds: ngsntl
 	damagefire1:
 		Offset: -1,-2,3
 	icon: sntlicon
