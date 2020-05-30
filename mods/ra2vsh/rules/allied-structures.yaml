@@ -749,6 +749,8 @@ gacsph:
 		TargetCursor: chronosphere
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown && !aiowner
+		Dimensions: 4, 4
+		Footprint: _xx_ xxxx xxxx _xx_
 	DetonateWeaponPower@ChronosphereAI:
 		Weapon: ChronosphereAI
 		OrderName: ChronosphereAIInfoOrder

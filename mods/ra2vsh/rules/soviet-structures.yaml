@@ -792,7 +792,7 @@ napsyd:
 		DisplayRadarPing: True
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
-	WithNukeLaunchAnimation:
+	WithSupportPowerActivationAnimation:
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
 	RevealsShroud@revealhimself:
@@ -875,7 +875,7 @@ namisl:
 		FlightDelay: 200
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
-	WithNukeLaunchAnimation:
+	WithSupportPowerActivationAnimation:
 		RequiresCondition: !build-incomplete && !powerdown
 	RevealsShroud@revealhimself:
 		ValidStances: Neutral, Enemy

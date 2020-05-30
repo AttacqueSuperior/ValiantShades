@@ -142,7 +142,6 @@ Player:
 		Name: Unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
 		Id: unrestricted
-	ConditionManager:
 	GameSaveViewportManager:
 	GrantConditionOnPrerequisiteManager:
 	VeteranProductionIconOverlay:

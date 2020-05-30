@@ -7,7 +7,6 @@
 	GivesExperience:
 		PlayerExperienceModifier: 5
 	ScriptTriggers:
-	ConditionManager:
 	Huntable:
 
 ^Orientable:
@@ -423,7 +422,6 @@
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
-	-ConditionManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -1036,7 +1034,6 @@
 ^Husk:
 	Inherits@1: ^Orientable
 	Inherits@2: ^VoxelLighting
-	ConditionManager:
 	RenderVoxels:
 		LightAmbientColor: -0.4,-0.6,-0.6
 		LightDiffuseColor: 1.2,1.1,1.1
@@ -1353,7 +1350,6 @@
 ^Crate:
 	Inherits@1: ^SpriteActor
 	HiddenUnderFog:
-	ConditionManager:
 	Tooltip:
 		Name: Crate
 		GenericName: Crate

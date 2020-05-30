@@ -342,7 +342,6 @@ dog:
 		Explosion: InfantryExplode
 		Spins: false
 		VelocityAcceleration: 0
-	ConditionManager:
 	GrantConditionAboveAltitude:
 		Condition: inair
 		MinAltitude: 640

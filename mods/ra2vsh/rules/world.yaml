@@ -416,7 +416,6 @@ World:
 		Image: twinkle
 		Palette: effect
 		Interval: 25
-	ConditionManager:
 	LobbyWorldConditionCheckbox@METEORSTORMS:
 		ID: meteorstorms
 		Label: Meteor Storms
