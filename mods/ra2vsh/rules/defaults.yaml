@@ -82,6 +82,7 @@
 	Inherits@emp: ^AffectedByEMP
 	Inherits@temporal: ^Warpable
 	Inherits@forceshield: ^AffectedByForceShield
+	-UpdatesPlayerStatistics:
 	Targetable@Temporal2:
 		TargetTypes: ImmuneToPrison
 	Targetable@ivanbombable:
@@ -240,7 +241,6 @@
 	-GivesExperience:
 	-CaptureNotification:
 	-Sellable:
-	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
 	-GrantCondition@makeanim-disable:
 	-RepairableBuilding:
@@ -309,7 +309,6 @@
 	-MustBeDestroyed:
 	-GivesExperience:
 	-Sellable:
-	-UpdatesPlayerStatistics:
 	-WithMakeAnimation:
 	-GrantCondition@makeanim-disable:
 	Targetable@ivanbombable:
