@@ -671,7 +671,7 @@ boris:
 		PlayerExperience: 75
 		Voice: Move
 	Tooltip:
-		Name: Boris
+		Name: Boris Drubetskoy
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -810,7 +810,7 @@ volkov:
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
-		Name: Volkov
+		Name: Vladislav Volkov
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:

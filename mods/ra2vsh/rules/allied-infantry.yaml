@@ -651,7 +651,7 @@ tany:
 		PlayerExperience: 50
 		Voice: Move
 	Tooltip:
-		Name: Tanya
+		Name: Tanya Adams
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -743,7 +743,7 @@ tanya2:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Tanya
+		Name: Tanya Adams
 	Health:
 		HP: 250000
 	RevealsShroud:
@@ -813,7 +813,7 @@ hirano:
 		PlayerExperience: 75
 		Voice: Move
 	Tooltip:
-		Name: Hirano
+		Name: Hirano Nakatsuru
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
