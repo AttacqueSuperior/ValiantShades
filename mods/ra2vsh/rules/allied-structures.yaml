@@ -27,6 +27,16 @@ gacnst:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: aengineer, e1, e1, e1, e1
+	GrantConditionOnPrerequisite@america:
+		Condition: america
+		Prerequisites: america
+	InfiltrateForProxyActor@america:
+		RequiresCondition: america
+		ProxyActor: america
+		Types: SpyInfiltrate
+	SpawnProxyActorOnOwnerChange@america:
+		RequiresCondition: america
+		ProxyActor: america
 
 gapowr:
 	Inherits: ^BasicPower

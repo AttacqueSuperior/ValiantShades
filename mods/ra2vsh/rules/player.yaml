@@ -196,3 +196,9 @@ Player:
 	ProvidesPrerequisite@machineshop5:
 		Prerequisite: machineshop5
 		RequiresCondition: machineshop > 4
+	ProvidesPrerequisite@america:
+		Prerequisite: america
+		Factions: america
+	ProvidesPrerequisite@russia:
+		Prerequisite: russia
+		Factions: russia

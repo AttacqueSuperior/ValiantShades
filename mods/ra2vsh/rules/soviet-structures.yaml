@@ -23,6 +23,16 @@ nacnst:
 	SpawnSurvivors:
 		DeathTypes: DefaultDeath
 		Actors: sengineer, e2, e2, e2, e2, e2, e2
+	GrantConditionOnPrerequisite@russia:
+		Condition: russia
+		Prerequisites: russia
+	InfiltrateForProxyActor@russia:
+		RequiresCondition: russia
+		ProxyActor: russia
+		Types: SpyInfiltrate
+	SpawnProxyActorOnOwnerChange@russia:
+		RequiresCondition: russia
+		ProxyActor: russia
 
 napowr:
 	Inherits: ^BasicPower

@@ -1,3 +1,19 @@
+america:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: American Technology
+	Buildable:
+		Description: American Technology
+
+russia:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: Russian Technology
+	Buildable:
+		Description: Russian Technology
+
 barracks.infiltrated:
 	AlwaysVisible:
 	ProvidesPrerequisite:

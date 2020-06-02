@@ -62,6 +62,8 @@
 		ActivationChance: 50
 		DamageTypes: DefaultDeath
 		RequiresCondition: dmg_heavy && check-forceshield
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 ^Power:
 	Inherits: ^Building
