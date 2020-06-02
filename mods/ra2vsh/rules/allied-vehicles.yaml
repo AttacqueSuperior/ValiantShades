@@ -1208,7 +1208,7 @@ sref:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 220
-		Prerequisites: gatech, ~gaweap
+		Prerequisites: gatech, ~gaweap, ~germany
 		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1200
@@ -1277,6 +1277,72 @@ sref:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+
+howi:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@DropshipBay: ^DeliverableViaDropship
+	Inherits@Berserk: ^Berserkable
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Howitzer
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 220
+		Prerequisites: gatech, ~gaweap, ~america
+		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+	Mobile:
+		Speed: 75
+		TurnSpeed: 5
+		Locomotor: heavytracked
+	Health:
+		HP: 200000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Armament@primary:
+		Weapon: HowitzerGun
+		LocalOffset: 833,0,1280
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: HowitzerGunE
+		LocalOffset: 833,0,1280
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: HowitzerVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	GrantConditionOnAttack:
+		Condition: gattling
+		RequiredShotsPerInstance: 3
+		MaximumInstances: 3
+		RevokeDelay: 90
+	ReloadDelayMultiplier@gattling:
+		RequiresCondition: gattling
+		Modifier: 83
+	ReloadDelayMultiplier@gattling-stage2:
+		RequiresCondition: gattling == 2
+		Modifier: 83
+	ReloadDelayMultiplier@gattling-stage3:
+		RequiresCondition: gattling > 2
+		Modifier: 83
 
 mgtk:
 	Inherits: ^Vehicle

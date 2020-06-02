@@ -472,6 +472,7 @@ Player:
 			fv.ai4: 5
 			fv.ai5: 5
 			sref: 10
+			howi: 10
 			mgtk: 10
 			tnkd: 15
 			bfrt.ai: 5

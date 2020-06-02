@@ -475,7 +475,7 @@ caslab:
 		ExitCell: 2,2
 		Priority: 3
 	GrantRandomConditionOnDelivery:
-		Conditions: beholder, overlord, malfestor, howitzer, mammoth
+		Conditions: beholder, overlord, malfestor, mammoth
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -509,17 +509,6 @@ caslab:
 		Text: MALFESTOR
 		Position: Center
 		RequiresCondition: malfestor && !ownerless
-	PeriodicProducer@Howitzer:
-		Type: SecretLab
-		Actors: howi
-		ChargeDuration: 2200
-		ShowSelectionBar: true
-		RequiresCondition: howitzer && !ownerless
-		PauseOnCondition: disabled
-	WithTextDecoration@Howitzer:
-		Text: HOWITZER
-		Position: Center
-		RequiresCondition: howitzer && !ownerless
 	PeriodicProducer@Mammoth:
 		Type: SecretLab
 		Actors: 4tnk
