@@ -52,27 +52,9 @@ sabot:
 	Warhead@1Dam: SpreadDamage
 		Spread: 192
 		Falloff: 100, 50, 0
-		Damage: 175000
+		Damage: 225000
 		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
 		ValidStances: Neutral, Enemy
-		Versus:
-			None: 2
-			Flak: 2
-			Plate: 2
-			Light: 100
-			Medium: 40
-			Heavy: 100
-			Wood: 2
-			Steel: 2
-			Concrete: 2
-			Drone: 2
-			Rocket: 100
-	Warhead@2Dam: SpreadDamage
-		Spread: 96
-		Falloff: 100, 50, 0
-		Damage: 58333
-		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
-		ValidStances: Ally
 		Versus:
 			None: 2
 			Flak: 2
