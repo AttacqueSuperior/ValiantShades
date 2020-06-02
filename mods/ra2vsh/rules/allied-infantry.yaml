@@ -711,7 +711,7 @@ tany:
 		CloakDelay: 15
 		Palette: infantry-cloak
 		IsPlayerPalette: true
-		UncloakOn: Attack, Damage, Move
+		UncloakOn: Attack, Damage
 		CloakTypes: mirage
 		RequiresCondition: !disabled
 	SelfHealing:
