@@ -37,6 +37,16 @@ gacnst:
 	SpawnProxyActorOnOwnerChange@america:
 		RequiresCondition: america
 		ProxyActor: america
+	GrantConditionOnPrerequisite@germany:
+		Condition: germany
+		Prerequisites: germany
+	InfiltrateForProxyActor@germany:
+		RequiresCondition: germany
+		ProxyActor: germany
+		Types: SpyInfiltrate
+	SpawnProxyActorOnOwnerChange@germany:
+		RequiresCondition: germany
+		ProxyActor: germany
 
 gapowr:
 	Inherits: ^BasicPower

@@ -164,7 +164,7 @@
 	Faction@allies:
 		Name: Allies
 		InternalName: random-allies
-		RandomFactionMembers: america #, germany, england, france, korea
+		RandomFactionMembers: america, germany #, england, france, korea
 		Side: Randoms
 	Faction@soviets:
 		Name: Soviets
@@ -176,11 +176,11 @@
 		InternalName: america
 		Side: Allies
 		Description: America is the most\nnotable member of the Allies.# \nSpecial Ability: Paratroopers
-	#Faction@2:
-	#	Name: Germany
-	#	InternalName: germany
-	#	Side: Allies
-	#	Description: Germany\nSpecial Vehicle: Tank Destroyer
+	Faction@2:
+		Name: Germany
+		InternalName: germany
+		Side: Allies
+		Description: Germany#\nSpecial Vehicle: Tank Destroyer
 	#Faction@3:
 	#	Name: England
 	#	InternalName: england

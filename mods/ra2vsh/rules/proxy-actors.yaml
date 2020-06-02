@@ -6,6 +6,14 @@ america:
 	Buildable:
 		Description: American Technology
 
+germany:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: German Technology
+	Buildable:
+		Description: German Technology
+
 russia:
 	AlwaysVisible:
 	ProvidesPrerequisite:

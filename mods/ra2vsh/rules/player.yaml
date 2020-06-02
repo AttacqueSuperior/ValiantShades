@@ -199,6 +199,9 @@ Player:
 	ProvidesPrerequisite@america:
 		Prerequisite: america
 		Factions: america
+	ProvidesPrerequisite@germany:
+		Prerequisite: germany
+		Factions: germany
 	ProvidesPrerequisite@russia:
 		Prerequisite: russia
 		Factions: russia
