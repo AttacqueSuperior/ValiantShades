@@ -1108,7 +1108,7 @@ wolfk:
 		TurnSpeed: 5
 		Speed: 250
 		VTOL: true
-		TurnToDock: true
+		TurnToDock: false
 		AltitudeVelocity: 180
 	Health:
 		HP: 600000
