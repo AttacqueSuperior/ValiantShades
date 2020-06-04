@@ -223,6 +223,89 @@ hindhusk:
 	RenderVoxels:
 		Image: hind
 
+shab:
+	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 700
+	Tooltip:
+		Name: Balloon
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 199
+		Prerequisites: ~naweap, naairc, ~iraq
+	Selectable:
+		Bounds: 100,60,0,-10
+	Aircraft:
+		TurnSpeed: 2
+		Speed: 25
+		Voice: Move
+		AirborneCondition: airborne
+	Health:
+		HP: 850000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament@primary:
+		Weapon: BalloonGun
+		RequiresCondition: !rank-heroic
+		# LocalOffset: 0,0,0
+	Armament@elite:
+		Weapon: BalloonGunE
+		RequiresCondition: rank-heroic
+		# LocalOffset: 0,0,0
+	Armament@secondary:
+		Weapon: BalloonMissile
+		RequiresCondition: !rank-heroic
+		# LocalOffset: 0,0,0
+	Armament@elitesecondary:
+		Weapon: BalloonMissileE
+		RequiresCondition: rank-heroic
+		# LocalOffset: 0,0,0
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	Turreted:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Hovers:
+		BobDistance: -24
+		InitialHeight: 24
+	Voiced:
+		VoiceSet: KirovVoice
+	SpawnActorOnDeath:
+		Actor: shabhusk
+		DeathType: DefaultDeath
+	HitShape:
+
+shabhusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Balloon
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 25
+	FallsToEarthAS:
+		Explosion: KirovExplode
+		SpinInitial: 0
+		SpinAcceleration: 1
+		SpinAccelerationDelay: 8
+		VelocityAcceleration: 1
+		Velocity: 126
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+	RenderVoxels:
+		Image: shab
+
 zep:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

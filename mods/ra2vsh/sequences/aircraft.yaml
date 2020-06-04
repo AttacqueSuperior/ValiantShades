@@ -49,6 +49,10 @@ pdplane:
 	Inherits: ^Aircraft
 	icon: xxicon
 
+shab:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 shad:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable

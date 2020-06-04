@@ -515,6 +515,7 @@ Player:
 			gaunt: 3
 			empr: 1
 			topol: 1
+			shab: 1
 			zep: 1
 			yak: 15
 			fflash: 15
@@ -535,6 +536,7 @@ Player:
 			mind: 3
 			gaunt: 2
 			topol: 2
+			shab: 2
 			zep: 2
 	McvManagerBotModule@normal:
 		RequiresCondition: enable-normal-ai

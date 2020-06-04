@@ -394,3 +394,25 @@ PsychicJabE:
 	Inherits: M1Carbine
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
+
+BalloonGun:
+	Inherits: ^MG
+	Range: 5c0
+	MinRange: 0c001
+	Report: irocatta.wav
+	ValidTargets: Ground, Water, Air
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+		ValidTargets: Ground, Water, Air
+	Warhead@2Eff: CreateEffect
+		Explosions: rocketeerhit
+		ExplosionPalette: rookieraexp
+		ValidTargets: Ground, Water, Air
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+		Chance: 50
+
+BalloonGunE:
+	Inherits: BalloonGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicraexp

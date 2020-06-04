@@ -662,3 +662,42 @@ TopolKlaxon:
 	Warhead@1Dam: TargetDamage
 	Warhead@2Eff: CreateEffect
 		ImpactSounds: klax1.wav
+
+BalloonMissile:
+	Inherits: ^Missile
+	ReloadDelay: 80
+	Range: 5c0
+	Report: vapoat2a.wav, vapoat2b.wav, vapoat2c.wav
+	Burst: 2
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Inaccuracy: 128
+		ContrailLength: 8
+		RangeLimit: 10c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 171
+		Damage: 20000
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 20
+			Flak: 20
+			Plate: 20
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 60
+			Steel: 40
+			Concrete: 20
+			Drone: 80
+			Rocket: 100
+		DamageTypes: ExplosionDeath, DefaultDeath, TriggerProne
+	Warhead@2Eff: CreateEffect
+		Explosions: apocalypsemissilehit
+		ExplosionPalette: rookieapolloexp
+
+BalloonMissileE:
+	Inherits: BalloonMissile
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicapolloexp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp
