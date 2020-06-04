@@ -169,7 +169,7 @@
 	Faction@soviets:
 		Name: Soviets
 		InternalName: random-soviets
-		RandomFactionMembers: russia #, cuba, libya, iraq
+		RandomFactionMembers: russia, iraq #, cuba, libya
 		Side: Randoms
 	Faction@1:
 		Name: America
@@ -206,11 +206,11 @@
 	#	InternalName: libya
 	#	Side: Soviets
 	#	Description: Libya\nSpecial Vehicle: Demolition Truck
-	#Faction@8:
-	#	Name: Iraq
-	#	InternalName: iraq
-	#	Side: Soviets
-	#	Description: Iraq\nSpecial Infantry: Desolator
+	Faction@8:
+		Name: Iraq
+		InternalName: iraq
+		Side: Soviets
+		Description: Iraq#\nSpecial Infantry: Desolator
 	Faction@9:
 		Name: Russia
 		InternalName: russia

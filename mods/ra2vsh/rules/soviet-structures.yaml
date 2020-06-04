@@ -33,6 +33,16 @@ nacnst:
 	SpawnProxyActorOnOwnerChange@russia:
 		RequiresCondition: russia
 		ProxyActor: russia
+	GrantConditionOnPrerequisite@iraq:
+		Condition: iraq
+		Prerequisites: iraq
+	InfiltrateForProxyActor@iraq:
+		RequiresCondition: iraq
+		ProxyActor: iraq
+		Types: SpyInfiltrate
+	SpawnProxyActorOnOwnerChange@iraq:
+		RequiresCondition: iraq
+		ProxyActor: iraq
 
 napowr:
 	Inherits: ^BasicPower

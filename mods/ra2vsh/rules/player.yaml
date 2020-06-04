@@ -205,3 +205,6 @@ Player:
 	ProvidesPrerequisite@russia:
 		Prerequisite: russia
 		Factions: russia
+	ProvidesPrerequisite@iraq:
+		Prerequisite: iraq
+		Factions: iraq

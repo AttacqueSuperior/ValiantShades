@@ -22,6 +22,14 @@ russia:
 	Buildable:
 		Description: Russian Technology
 
+iraq:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	Tooltip:
+		Name: Iraqi Technology
+	Buildable:
+		Description: Iraqi Technology
+
 barracks.infiltrated:
 	AlwaysVisible:
 	ProvidesPrerequisite:
