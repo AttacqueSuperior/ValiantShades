@@ -902,6 +902,9 @@ pdplane.caairp:
 	-Targetable@Temporal:
 	SpawnActorOnDeath:
 		Actor: pdplane.caairp.husk
+	Aircraft:
+		TurnToLand: true
+		InitialFacing: 224
 
 pdplane.caairp.husk:
 	Inherits: ^PlaneHusk
