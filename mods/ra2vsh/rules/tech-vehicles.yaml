@@ -303,3 +303,58 @@ malf:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+
+ttnk2:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Tesla Tank
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 500
+		Prerequisites: ~disabled
+		Description: Special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+	Mobile:
+		Speed: 75
+		Locomotor: heavytracked
+	Health:
+		HP: 300000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: TankBolt
+		LocalOffset: 400,255,905, 400,-255,905
+		RequiresCondition: !rank-heroic
+	Armament@elite:
+		Weapon: TankBoltE
+		LocalOffset: 400,255,905, 400,-255,905
+		RequiresCondition: rank-heroic
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: TeslaTankVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:

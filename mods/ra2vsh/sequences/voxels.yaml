@@ -401,7 +401,10 @@ truckb:
 	idle:
 
 ttnk:
-	idle:
+	idle: ttnk2
+
+ttnk2:
+	idle: ttnk
 	turret: ttnktur
 
 tug:

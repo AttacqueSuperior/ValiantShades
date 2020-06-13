@@ -787,7 +787,7 @@ ttnk:
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 200
 		Prerequisites: ~naweap, natek #, ~vehicles.russia
-		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+		Description: Special tank armed with a giant Tesla Coil.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
 		Locomotor: heavytracked
@@ -801,14 +801,13 @@ ttnk:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
 	Armament@primary:
-		Weapon: TankBolt
-		LocalOffset: 400,255,905, 400,-255,905
+		Weapon: NewTankBolt
+		LocalOffset: 400,255,0
 		RequiresCondition: !rank-heroic
 	Armament@elite:
-		Weapon: TankBoltE
-		LocalOffset: 400,255,905, 400,-255,905
+		Weapon: NewTankBoltE
+		LocalOffset: 400,255,0
 		RequiresCondition: rank-heroic
 	AttackTurreted:
 		Voice: Attack
@@ -818,7 +817,6 @@ ttnk:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:
 	WithVoxelBody:
-	WithVoxelTurret:
 	Voiced:
 		VoiceSet: TeslaTankVoice
 	ProducibleWithLevel:

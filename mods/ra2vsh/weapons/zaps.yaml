@@ -770,3 +770,78 @@ MalfestorBeamE:
 		ExplosionPalette: heroictsexp
 	Warhead@emp: GrantExternalCondition
 		Duration: 30
+
+NewTankBolt:
+	Inherits: ^TeslaZap
+	Range: 7c0
+	ReloadDelay: 75
+	Report: vtesatta.wav, vtesattb.wav
+	Projectile: TeslaZap
+		BrightZaps: 2
+		DimZaps: 1
+		DimSequence: dim-grey
+	Warhead@1Dam: SpreadDamage
+		Damage: 80000
+	Warhead@emp: GrantExternalCondition
+		Range: 64
+		Duration: 8
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
+	Warhead@fsw: FireShrapnel
+		AimChance: 100
+		Weapon: NewTankBoltShrapnel
+		ValidTargets: Ground
+		ValidStances: Neutral, Enemy
+		AimTargetStances: Neutral, Enemy
+		Amount: 2
+
+NewTankBoltShrapnel:
+	Inherits: NewTankBolt
+	Range: 4c0
+	-Report:
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+	Warhead@fsw: FireShrapnel
+		Weapon: NewTankBoltShrapnel2
+		Amount: 1
+	Warhead@emp: GrantExternalCondition
+		Duration: 4
+
+NewTankBoltShrapnel2:
+	Inherits: NewTankBoltShrapnel
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+	-Warhead@fsw:
+	Warhead@emp: GrantExternalCondition
+		Duration: 2
+
+NewTankBoltE:
+	Inherits: NewTankBolt
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@emp: GrantExternalCondition
+		Duration: 16
+	Warhead@fsw: FireShrapnel
+		Weapon: NewTankBoltShrapnelE
+
+NewTankBoltShrapnelE:
+	Inherits: NewTankBoltE
+	Range: 4c0
+	-Report:
+	Warhead@1Dam: SpreadDamage
+		Damage: 40000
+	Warhead@fsw: FireShrapnel
+		Weapon: NewTankBoltShrapnel2E
+		Amount: 1
+	Warhead@emp: GrantExternalCondition
+		Duration: 8
+
+NewTankBoltShrapnel2E:
+	Inherits: NewTankBoltShrapnelE
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+	-Warhead@fsw:
+	Warhead@emp: GrantExternalCondition
+		Duration: 4

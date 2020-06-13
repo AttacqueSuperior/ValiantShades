@@ -311,6 +311,11 @@ ttnk:
 	Inherits@MC: ^MindControllable
 	icon: ttnkicon
 
+ttnk2:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	icon: ttnkicon
+
 tug:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
