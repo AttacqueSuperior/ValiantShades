@@ -680,7 +680,7 @@ v3:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 220
-		Prerequisites: natek, ~naweap
+		Prerequisites: natek, ~naweap, ~russia
 		Description: Ballistic missile launcher\n  Strong vs Building, Infantry\n  Weak vs Vehicle, Aircraft
 	Mobile:
 		Speed: 70
@@ -869,7 +869,7 @@ ttnk:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 200
-		Prerequisites: ~naweap, natek #, ~vehicles.russia
+		Prerequisites: ~naweap, natek, ~russia
 		Description: Special tank armed with a giant Tesla Coil.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
@@ -1089,7 +1089,7 @@ bura:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
 		BuildPaletteOrder: 350
-		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, natech, ~iraq
 		Description: Heavy artillery firing thermobaric missiles.\n  Strong vs Structures, Infantry\n  Weak vs Vehicles
 		IconPalette: buraicon
 	Mobile:
