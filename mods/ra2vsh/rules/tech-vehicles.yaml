@@ -355,8 +355,6 @@ ttnk2:
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
 	Inherits@Berserk: ^Berserkable
-	Inherits@factionparachute: ^SovietParachute
-	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
 		Cost: 1200
 	Tooltip:
