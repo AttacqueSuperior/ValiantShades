@@ -240,7 +240,7 @@ shab:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 255
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -270,10 +270,13 @@ shab:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 128
 	Turreted:
+		TurnSpeed: 2
 	RenderSprites:
 	RenderVoxels:
-	WithVoxelBody:
+	WithVoxelTurret:
+		Sequence: idle
 	Hovers:
 		BobDistance: -24
 		InitialHeight: 24
