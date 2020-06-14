@@ -1073,6 +1073,7 @@
 		RequiresForceFire: true
 	Chronoshiftable:
 	Tooltip:
+		Name: Destroyed Vehicle
 		GenericName: Destroyed Vehicle
 	SmokeParticleEmitter@1:
 		Sequences: smallsmoke
@@ -1099,6 +1100,7 @@
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
+		Name: Destroyed Aircraft
 		GenericName: Destroyed Aircraft
 	FallsToEarthAS:
 		Velocity: 252
