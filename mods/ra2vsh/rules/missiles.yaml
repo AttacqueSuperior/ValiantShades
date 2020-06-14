@@ -7,8 +7,8 @@ v3rocket:
 	Health:
 		HP: 135000
 	BallisticMissile:
-		LaunchAngle: 192
-		Speed: 112
+		LaunchAngle: 224
+		Speed: 168
 		DamageTypes: TriggerMissile
 	MissileSpawnerSlave:
 	SpawnedExplodes:

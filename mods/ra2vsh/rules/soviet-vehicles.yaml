@@ -669,19 +669,18 @@ v3:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
-	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Inherits@factionparachute: ^SovietParachute
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Valued:
-		Cost: 800
+		Cost: 1000
 	Tooltip:
 		Name: V3 Launcher
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
-		BuildPaletteOrder: 130
-		Prerequisites: naradr, ~naweap
+		BuildPaletteOrder: 220
+		Prerequisites: natek, ~naweap
 		Description: Ballistic missile launcher\n  Strong vs Building, Infantry\n  Weak vs Vehicle, Aircraft
 	Mobile:
 		Speed: 70
@@ -737,6 +736,8 @@ v3.Husk:
 		Image: v3
 	TransformOnCapture:
 		IntoActor: v3
+	WithVoxelBody:
+		Sequence: idle-empty
 
 apoc:
 	Inherits: ^Vehicle
