@@ -28,6 +28,15 @@ lasher:
 	-ProductionTimeMultiplier@dropship:
 	Turreted:
 		Offset: -125,0,0
+	SpawnActorOnDeath:
+		Actor: lasher.Husk
+
+lasher.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: lasher
+	TransformOnCapture:
+		IntoActor: lasher
 
 behold:
 	Inherits: ^Vehicle
@@ -71,6 +80,15 @@ behold:
 	WithRangeCircle:
 		Type: Beholder
 		Range: 4c512
+	SpawnActorOnDeath:
+		Actor: behold.Husk
+
+behold.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: behold
+	TransformOnCapture:
+		IntoActor: behold
 
 ovrl:
 	Inherits: ^Vehicle
@@ -145,6 +163,15 @@ ovrl:
 	WithRangeCircle:
 		Type: Propaganda
 		Range: 4c512
+	SpawnActorOnDeath:
+		Actor: ovrl.Husk
+
+ovrl.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: ovrl
+	TransformOnCapture:
+		IntoActor: ovrl
 
 malf:
 	Inherits: ^Vehicle
@@ -200,6 +227,15 @@ malf:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: malf.Husk
+
+malf.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: malf
+	TransformOnCapture:
+		IntoActor: malf
 
 4tnk:
 	Inherits: ^Vehicle
@@ -303,6 +339,15 @@ malf:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+	SpawnActorOnDeath:
+		Actor: 4tnk.Husk
+
+4tnk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: 4tnk
+	TransformOnCapture:
+		IntoActor: 4tnk
 
 ttnk2:
 	Inherits: ^Vehicle
@@ -358,3 +403,12 @@ ttnk2:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: ttnk2.Husk
+
+ttnk2.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: ttnk2
+	TransformOnCapture:
+		IntoActor: ttnk2

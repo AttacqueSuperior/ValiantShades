@@ -228,13 +228,16 @@
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
-	Inherits@Thor:^AffectedByThor
+	Inherits@Thor: ^AffectedByThor
+
+vehicle-husks:
+	Inherits@husk: ^HuskBurn
 
 ^Aircraft:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
-	Inherits@Thor:^AffectedByThor
+	Inherits@Thor: ^AffectedByThor
 
 ^Flag:
 	Inherits@IvanBomb: ^IvanBombable

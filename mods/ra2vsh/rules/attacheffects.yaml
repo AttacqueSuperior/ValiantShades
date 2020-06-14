@@ -795,6 +795,11 @@
 		RequiresCondition: propaganda
 		ValidStances: Ally
 
+^HuskBurn:
+	WithIdleOverlay:
+		Sequence: huskfire
+		Palette: rookiera2exp
+
 ^DummyDisable:
 	WithDecoration@disabled:
 		Image: inviso

@@ -60,6 +60,15 @@ smcv:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+	SpawnActorOnDeath:
+		Actor: smcv.Husk
+
+smcv.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: smcv
+	TransformOnCapture:
+		IntoActor: smcv
 
 harv:
 	Inherits: ^Vehicle
@@ -150,6 +159,15 @@ harv:
 			Ore: pip-yellow
 			Gems: pip-red
 			Tiberium: pip-green
+	SpawnActorOnDeath:
+		Actor: harv.Husk
+
+harv.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: harv
+	TransformOnCapture:
+		IntoActor: harv
 
 dron:
 	Inherits: ^Vehicle
@@ -244,6 +262,7 @@ dron:
 	DamageMultiplier@jousting:
 		RequiresCondition: jousting
 		Modifier: 50
+	-SpawnActorOnDeath:
 
 htk:
 	Inherits: ^Vehicle
@@ -369,6 +388,15 @@ htk:
 			yellow: pip-yellow
 			green: pip-green
 			red: pip-red
+	SpawnActorOnDeath:
+		Actor: htk.Husk
+
+htk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: htk
+	TransformOnCapture:
+		IntoActor: htk
 
 htk.ai:
 	Inherits: htk
@@ -465,6 +493,15 @@ drgn:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: drgn.Husk
+
+drgn.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: drgn
+	TransformOnCapture:
+		IntoActor: drgn
 
 slost:
 	Inherits: ^Vehicle
@@ -540,6 +577,15 @@ slost:
 	ReloadDelayMultiplier@gattling-stage2:
 		RequiresCondition: gattling > 1
 		Modifier: 83
+	SpawnActorOnDeath:
+		Actor: slost.Husk
+
+slost.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: slost
+	TransformOnCapture:
+		IntoActor: slost
 
 htnk:
 	Inherits: ^StandardTank
@@ -569,6 +615,15 @@ htnk:
 	WithVoxelTurret:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	SpawnActorOnDeath:
+		Actor: htnk.Husk
+
+htnk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: htnk
+	TransformOnCapture:
+		IntoActor: htnk
 
 hammr:
 	Inherits: ^StandardTank
@@ -599,6 +654,15 @@ hammr:
 	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: HammerTankVoice
+	SpawnActorOnDeath:
+		Actor: sref.Husk
+
+hammr.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: hammr
+	TransformOnCapture:
+		IntoActor: hammr
 
 v3:
 	Inherits: ^Vehicle
@@ -664,6 +728,15 @@ v3:
 		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
+	SpawnActorOnDeath:
+		Actor: v3.Husk
+
+v3.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: v3
+	TransformOnCapture:
+		IntoActor: v3
 
 apoc:
 	Inherits: ^Vehicle
@@ -769,6 +842,15 @@ apoc:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+	SpawnActorOnDeath:
+		Actor: apoc.Husk
+
+apoc.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: apoc
+	TransformOnCapture:
+		IntoActor: apoc
 
 ttnk:
 	Inherits: ^Vehicle
@@ -822,6 +904,15 @@ ttnk:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: ttnk.Husk
+
+ttnk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: ttnk
+	TransformOnCapture:
+		IntoActor: ttnk
 
 dtruck:
 	Inherits: ^Vehicle
@@ -889,6 +980,7 @@ dtruck:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
+	-SpawnActorOnDeath:
 
 mind:
 	Inherits: ^Vehicle
@@ -970,6 +1062,15 @@ mind:
 		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
+	SpawnActorOnDeath:
+		Actor: mind.Husk
+
+mind.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: mind
+	TransformOnCapture:
+		IntoActor: mind
 
 bura:
 	Inherits: ^Vehicle
@@ -1032,6 +1133,15 @@ bura:
 	GrantConditionOnMovement:
 		Condition: moving
 		ValidMovementTypes: Horizontal, Turn
+	SpawnActorOnDeath:
+		Actor: bura.Husk
+
+bura.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: bura
+	TransformOnCapture:
+		IntoActor: bura
 
 gaunt:
 	Inherits: ^Vehicle
@@ -1095,6 +1205,15 @@ gaunt:
 	HitShape:
 	AutoTarget:
 		InitialStanceAI: Defend
+	SpawnActorOnDeath:
+		Actor: gaunt.Husk
+
+gaunt.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: gaunt
+	TransformOnCapture:
+		IntoActor: gaunt
 
 empr:
 	Inherits: ^Vehicle
@@ -1167,6 +1286,15 @@ empr:
 	ExplodeWeapon@selfcurtain:
 		RequiresCondition: selfcurtain
 		Weapon: EmpressSelfCurtain
+	SpawnActorOnDeath:
+		Actor: empr.Husk
+
+empr.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: empr
+	TransformOnCapture:
+		IntoActor: empr
 
 topol:
 	Inherits: ^Vehicle
@@ -1400,3 +1528,12 @@ topol:
 		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
+	SpawnActorOnDeath:
+		Actor: topol.Husk
+
+topol.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: topol
+	TransformOnCapture:
+		IntoActor: topol

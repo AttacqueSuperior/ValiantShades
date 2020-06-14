@@ -863,6 +863,10 @@
 	SpeedMultiplier@hijack:
 		Modifier: 0
 		RequiresCondition: being-captured
+	SpawnActorOnDeath:
+		OwnerType: InternalName
+		InternalOwner: Creeps
+		DeathType: DefaultDeath
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -897,6 +901,7 @@
 		Categories: Civilian vehicle
 	ActorTag:
 		Type: civilian-vehicle
+	-SpawnActorOnDeath:
 
 ^NeutralAircraft:
 	Inherits@1: ^Orientable
@@ -1030,29 +1035,75 @@
 	Rearmable:
 		RearmActors: dummy
 
-^Husk:
+^BasicHusk:
 	Inherits@1: ^Orientable
 	Inherits@2: ^VoxelLighting
+	Interactable:
+	OwnerLostAction:
+		Action: ChangeOwner
+	Health:
+		HP: 28000
+	HiddenUnderFog:
+		Type: CenterPosition
+		AlwaysVisibleStances: None
+	ScriptTriggers:
+	HitShape:
+	MapEditorData:
+		Categories: Husk
 	RenderVoxels:
 		LightAmbientColor: -0.4,-0.6,-0.6
 		LightDiffuseColor: 1.2,1.1,1.1
 	WithVoxelBody:
 	BodyOrientation:
 		QuantizedFacings: 0
+
+^VehicleHusk:
+	Inherits@1: ^BasicHusk
+	Inherits@husk: ^HuskBurn
+	Husk:
+		AllowedTerrain: Clear, Rough, Rail, Road, Bridge, DirtRoad, Ore, Gems, Tiberium
+	CaptureManager:
+	Capturable:
+		Types: husk
+		ValidStances: Enemy, Neutral
+	TransformOnCapture:
+		ForceHealthPercentage: 25
+	Targetable:
+		TargetTypes: Ground, Husk, NoAutoTarget
+		RequiresForceFire: true
+	Chronoshiftable:
+	Tooltip:
+		GenericName: Destroyed Vehicle
+	SmokeParticleEmitter@1:
+		Sequences: smallsmoke
+		Palette: rookietsexp
+		SpawnFrequency: 4, 7
+		Speed: 0, 32
+		Gravity: 48
+		Offset: 0,0,192
+		Duration: 39
+	Explodes:
+		Weapon: HuskExplode
+		EmptyWeapon: HuskExplode
+	SelfHealing:
+		Step: -2000
+		Delay: 10
+		HealIfBelow: 150
+		DamageCooldown: 0
+	RenderSprites:
+		Image: vehicle-husks
+
+^AircraftHusk:
+	Inherits@1: ^BasicHusk
 	Aircraft:
 	HiddenUnderFog:
 		Type: CenterPosition
-	ScriptTriggers:
 	Tooltip:
 		GenericName: Destroyed Aircraft
-	Health:
-		HP: 1000
 	FallsToEarthAS:
 		Velocity: 252
-	HitShape:
 	MapEditorData:
 		Categories: Husk
-	Interactable:
 	SmokeParticleEmitter@crashsmoke:
 		Sequences: largesmoke
 		Palette: tsanim
@@ -1066,7 +1117,7 @@
 		DeathTypes: DefaultDeath
 
 ^PlaneHusk:
-	Inherits: ^Husk
+	Inherits: ^AircraftHusk
 	FallsToEarthAS:
 		Explosion: PlaneExplode
 		Spins: false
@@ -1080,7 +1131,7 @@
 		RequiresCondition: !hide-gpsdot
 
 ^HelicopterHusk:
-	Inherits: ^Husk
+	Inherits: ^AircraftHusk
 	Aircraft:
 		TakeOffOnResupply: true
 		CanSlide: true

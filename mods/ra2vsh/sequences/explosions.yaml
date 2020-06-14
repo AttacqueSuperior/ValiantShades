@@ -181,3 +181,4 @@ explosion:
 	smallmeteorexp: smeteorhit
 	malfestorhit: malfhit
 	initfire: initfire
+	huskexplode: huskexp

@@ -67,6 +67,23 @@ InfantryExplode:
 		Weapon: MediumFlame
 	-Warhead@destroyresource:
 
+HuskExplode:
+	Inherits: UnitExplode
+	Warhead@1Eff: CreateEffect
+		Explosions: huskexplode
+		ExplosionPalette: rookieapolloexp
+		ImpactSounds: expnew13.wav
+		ValidTargets: Ground, Water, Air
+	-Warhead@DebrisSpawn:
+	-Warhead@DebrisSpawn2:
+	-Warhead@DebrisSpawn3:
+	-Warhead@Smu:
+	Warhead@Smu2: LeaveSmudge
+		SmudgeType: SmallScorch
+	Warhead@flames: FireFragment
+		Weapon: MediumFlame
+	-Warhead@destroyresource:
+
 V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect

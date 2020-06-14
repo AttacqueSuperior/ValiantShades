@@ -69,3 +69,10 @@
 		Length: *
 		Offset: 0, 0, 24
 		UseTilesetExtension: false
+
+^HuskBurn:
+	huskfire: fire02
+		UseTilesetCode: false
+		Length: *
+		Offset: 0, 0, 24
+		UseTilesetExtension: false

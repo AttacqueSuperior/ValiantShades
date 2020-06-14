@@ -61,6 +61,15 @@ amcv:
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
+	SpawnActorOnDeath:
+		Actor: amcv.Husk
+
+amcv.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: amcv
+	TransformOnCapture:
+		IntoActor: amcv
 
 cmin:
 	Inherits: ^Vehicle
@@ -141,6 +150,15 @@ cmin:
 			Ore: pip-yellow
 			Gems: pip-red
 			Tiberium: pip-green
+	SpawnActorOnDeath:
+		Actor: cmin.Husk
+
+cmin.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: cmin
+	TransformOnCapture:
+		IntoActor: cmin
 
 hmmv:
 	Inherits: ^Vehicle
@@ -253,6 +271,15 @@ hmmv:
 			yellow: pip-yellow
 			green: pip-green
 			red: pip-red
+	SpawnActorOnDeath:
+		Actor: hmmv.Husk
+
+hmmv.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: hmmv
+	TransformOnCapture:
+		IntoActor: hmmv
 
 hmmv.ai:
 	Inherits: hmmv
@@ -378,6 +405,15 @@ ltnk:
 		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
+	SpawnActorOnDeath:
+		Actor: ltnk.Husk
+
+ltnk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: ltnk
+	TransformOnCapture:
+		IntoActor: ltnk
 
 mtnk:
 	Inherits: ^StandardTank
@@ -409,6 +445,15 @@ mtnk:
 		VoiceSet: AlliedVehicleVoice
 	Turreted:
 		Offset: 256,0,0
+	SpawnActorOnDeath:
+		Actor: mtnk.Husk
+
+mtnk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: mtnk
+	TransformOnCapture:
+		IntoActor: mtnk
 
 fv:
 	Inherits: ^Vehicle
@@ -459,6 +504,8 @@ fv:
 	Tooltip:
 		Name: Infantry Fighting Vehicle
 		RequiresCondition: !tooltiphack
+	SpawnActorOnDeath:
+		Actor: fv.Husk
 	#=== End of regular unit settings ===
 	Cargo:
 		Types: Infantry
@@ -1057,6 +1104,13 @@ fv:
 		RequiresCondition: ifv-ivan
 		ValidTargets: IvanBombable
 
+fv.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: fv
+	TransformOnCapture:
+		IntoActor: fv
+
 fv.ai:
 	Inherits: fv
 	RenderSprites:
@@ -1218,6 +1272,15 @@ sref:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: sref.Husk
+
+sref.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: sref
+	TransformOnCapture:
+		IntoActor: sref
 
 howi:
 	Inherits: ^Vehicle
@@ -1284,6 +1347,15 @@ howi:
 	ReloadDelayMultiplier@gattling-stage3:
 		RequiresCondition: gattling > 2
 		Modifier: 83
+	SpawnActorOnDeath:
+		Actor: howi.Husk
+
+howi.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: howi
+	TransformOnCapture:
+		IntoActor: howi
 
 tnkd:
 	Inherits: ^Vehicle
@@ -1342,6 +1414,15 @@ tnkd:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: tnkd.Husk
+
+tnkd.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: tnkd
+	TransformOnCapture:
+		IntoActor: tnkd
 
 mgtk:
 	Inherits: ^Vehicle
@@ -1408,6 +1489,15 @@ mgtk:
 		UncloakOn: Attack, Damage, Move
 		CloakTypes: mirage
 		RequiresCondition: !disabled
+	SpawnActorOnDeath:
+		Actor: mgtk.Husk
+
+mgtk.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: mgtk
+	TransformOnCapture:
+		IntoActor: mgtk
 
 bfrt:
 	Inherits: ^Vehicle
@@ -1494,6 +1584,15 @@ bfrt:
 			yellow: pip-yellow
 			green: pip-green
 			red: pip-red
+	SpawnActorOnDeath:
+		Actor: bfrt.Husk
+
+bfrt.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: bfrt
+	TransformOnCapture:
+		IntoActor: bfrt
 
 bfrt.ai:
 	Inherits: bfrt
@@ -1605,6 +1704,15 @@ aero:
 	HitShape:
 	AutoTarget:
 		InitialStanceAI: Defend
+	SpawnActorOnDeath:
+		Actor: aero.Husk
+
+aero.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: aero
+	TransformOnCapture:
+		IntoActor: aero
 
 chrp:
 	Inherits: ^Vehicle
@@ -1673,6 +1781,15 @@ chrp:
 		EmptyWeapon: UnitExplodeMedium
 	ReloadArmamentsBarAS:
 		Color: C0C0C0
+	SpawnActorOnDeath:
+		Actor: chrp.Husk
+
+chrp.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: chrp
+	TransformOnCapture:
+		IntoActor: chrp
 
 mgg:
 	Inherits: ^Vehicle
@@ -1735,6 +1852,15 @@ mgg:
 		RequiresCondition: !disabled
 	GrantExternalConditionToOwner@disable-ai-mggs:
 		Condition: disable-ai-mggs
+	SpawnActorOnDeath:
+		Actor: mgg.Husk
+
+mgg.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: mgg
+	TransformOnCapture:
+		IntoActor: mgg
 
 succ:
 	Inherits: ^Vehicle
@@ -1789,6 +1915,15 @@ succ:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	SpawnActorOnDeath:
+		Actor: succ.Husk
+
+succ.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: succ
+	TransformOnCapture:
+		IntoActor: succ
 
 mnrva:
 	Inherits: ^Vehicle
@@ -1868,6 +2003,15 @@ mnrva:
 			yellow: pip-yellow
 			green: pip-green
 			red: pip-red
+	SpawnActorOnDeath:
+		Actor: mnrva.Husk
+
+mnrva.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: mnrva
+	TransformOnCapture:
+		IntoActor: mnrva
 
 mnrva.paradrop:
 	Inherits: mnrva
