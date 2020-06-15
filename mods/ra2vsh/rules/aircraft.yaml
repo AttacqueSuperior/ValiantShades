@@ -309,6 +309,114 @@ shabhusk:
 	RenderVoxels:
 		Image: shab
 
+schp:
+	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Tooltip:
+		Name: Siege Chopper
+	Health:
+		HP: 300000
+	Armor:
+		Type: Light
+	Armament@primary:
+		Weapon: BlackHawkCannon
+		RequiresCondition: !rank-heroic && !deployed
+	Armament@primary-elite:
+		Weapon: BlackHawkCannonE
+		RequiresCondition: rank-heroic && !deployed
+	Armament@secondary:
+		Name: deployed
+		Weapon: 160mm
+		RequiresCondition: !rank-heroic && deployed
+	Armament@secondary-elite:
+		Name: deployed
+		Weapon: 160mmE
+		RequiresCondition: rank-heroic && deployed
+	Voiced:
+		VoiceSet: SiegeChopperVoice
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 290
+		Prerequisites: ~naweap, naairc, natek
+		Description: Siege Chopper\n  Strong vs Infantry, Structures\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 119, 58, 0, -20
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	Aircraft:
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
+		TurnSpeed: 6
+		Speed: 180
+		AltitudeVelocity: 120
+		CruisingCondition: cruising
+		PauseOnCondition: deployed
+		TurnToLand: false
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+		RequiresCondition: undeployed
+	RenderSprites:
+	WithVoxelHelicopterBody:
+		TickRate: 1
+		RequiresCondition: undeployed
+	Hovers@CRUISING:
+		RequiresCondition: cruising
+		BobDistance: -64
+		InitialHeight: 64
+	SpawnActorOnDeath:
+		Actor: schphusk
+	HitShape:
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		DeploySounds: vchodepa.wav
+		UndeploySounds: vchodepa.wav
+		AllowedTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
+		Voice: Deploy
+		CanDeployOnRamps: true
+		PauseOnCondition: disabled
+		Facing: 160
+		UndeployOnMove: true
+		LandOnDeploy: true
+	WithSpriteBody:
+	WithMakeAnimation:
+	WithVoxelBody:
+		Sequence: deployed
+		RequiresCondition: deployed
+	WithVoxelTurret:
+		Sequence: deployed-turret
+		RequiresCondition: deployed
+	RejectsOrders@deployment:
+		Reject: Move
+		RequiresCondition: !undeployed
+	Turreted:
+		TurnSpeed: 6
+	AttackTurreted:
+		Armaments: deployed
+		Voice: Attack
+		PauseOnCondition: disabled
+		RequiresCondition: deployed
+
+schphusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Siege Chopper
+	Aircraft:
+		TurnSpeed: 6
+		Speed: 180
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 3c512
+	RenderVoxels:
+		Image: schp	
+
 zep:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

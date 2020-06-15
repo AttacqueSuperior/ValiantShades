@@ -630,3 +630,45 @@ HowitzerGunE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+160mm:
+	Inherits: ^LargeBullet
+	ReloadDelay: 85
+	Report: vchoat2a.wav
+	Range: 16c0
+	MinRange: 4c0
+	TargetActorCenter: true
+	Projectile: BulletAS
+		Blockable: false
+		Image: 200mm
+		ContrailLength: 30
+		Speed: 227
+		LaunchAngle: 155
+	Warhead@1Dam: SpreadDamage
+		Spread: 533
+		Damage: 138000
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 80
+			Light: 60
+			Medium: 25
+			Heavy: 60
+			Wood: 60
+			Steel: 50
+			Concrete: 40
+			Drone: 60
+			Rocket: 60
+	Warhead@2Eff: CreateEffect
+		Explosions: large_tumu
+		ImpactSounds: gexp15a.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: watersplash_size2
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
+
+160mmE:
+	Inherits: 160mm
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp

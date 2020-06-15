@@ -277,6 +277,16 @@ HindVoice:
 		Select: vhoysed, vhoymoe
 		Move: vhoymoa, vhoymob, vhoymoc
 
+SiegeChopperVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vchosea, vchoseb, vchosec, vchosed, vchosee
+		Move: vchomoa, vchomob, vchomoc, vchomod, vchomoe
+		Attack: vchoa1a, vchoa1b, vchoa1c, vchoa1d
+		Deploy: vchoa2b
+		DeployedAttack: vchoa2a, vchoa2c, vchoa2d, vchoa2e, vchoa2f
+		Die: vchodia, vchodib, vchodic, vchodid, vchodie
+
 KirovVoice:
 	DefaultVariant: .wav
 	Voices:

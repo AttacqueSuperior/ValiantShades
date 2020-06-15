@@ -49,6 +49,14 @@ pdplane:
 	Inherits: ^Aircraft
 	icon: xxicon
 
+schp:
+	Inherits: ^Aircraft
+	make: schpdepl
+		Length: 11
+		ShadowStart: 11
+	idle: null
+	icon: schpicon
+
 shab:
 	Inherits: ^Aircraft
 	icon: xxicon
