@@ -798,7 +798,7 @@
 ^HuskBurn:
 	WithIdleOverlay:
 		Sequence: huskfire
-		Palette: rookiera2exp
+		Palette: heroicraexp
 
 ^DummyDisable:
 	WithDecoration@disabled:

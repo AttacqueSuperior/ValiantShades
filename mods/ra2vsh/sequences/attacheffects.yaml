@@ -71,8 +71,8 @@
 		UseTilesetExtension: false
 
 ^HuskBurn:
-	huskfire: fire02
+	huskfire: ra1fire
 		UseTilesetCode: false
 		Length: *
-		Offset: 0, 0, 24
+		Offset: 0, -10, 24
 		UseTilesetExtension: false
