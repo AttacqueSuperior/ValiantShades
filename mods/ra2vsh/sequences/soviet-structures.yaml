@@ -145,12 +145,12 @@ naweap:
 		ZOffset: 1024
 	build-air-open: ngweap_3
 		ShadowStart: 2
-	damaged-air-open: ngweap_3
+	damaged-build-air-open: ngweap_3
 		Start: 1
 		ShadowStart: 3
 	build-air-inside: ngweap_4
 		ShadowStart: 2
-	damaged-air-inside: ngweap_4
+	damaged-build-air-inside: ngweap_4
 		Start: 1
 		ShadowStart: 3
 	bib: ngweapbb

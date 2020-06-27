@@ -245,12 +245,12 @@ gaweap:
 		ZOffset: 1024
 	build-air-open: ggweap_3
 		ShadowStart: 2
-	damaged-air-open: ggweap_3
+	damaged-build-air-open: ggweap_3
 		Start: 1
 		ShadowStart: 3
 	build-air-inside: ggweap_4
 		ShadowStart: 2
-	damaged-air-inside: ggweap_4
+	damaged-build-air-inside: ggweap_4
 		Start: 1
 		ShadowStart: 3
 	bib: ggweapbb
