@@ -415,6 +415,9 @@ ttnk2:
 tug:
 	idle:
 
+turtl:
+	idle:
+
 v3:
 	idle:
 	idle-empty: v3wo

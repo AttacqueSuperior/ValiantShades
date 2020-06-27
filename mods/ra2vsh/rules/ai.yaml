@@ -509,6 +509,7 @@ Player:
 			v3: 15
 			dtruck: 10
 			apoc: 10
+			turtl: 10
 			ttnk: 15
 			mind: 10
 			bura: 10

@@ -321,6 +321,12 @@ tug:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
+turtl:
+	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
+	Inherits@muzzle: ^WithApocMuzzle
+	icon: xxicon
+
 v3:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

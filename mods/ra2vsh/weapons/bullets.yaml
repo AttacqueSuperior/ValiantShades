@@ -672,3 +672,42 @@ HowitzerGunE:
 		ExplosionPalette: heroicra2exp
 	Warhead@3EffWater: CreateEffect
 		ExplosionPalette: heroicwaterexp
+
+TurtleCannon:
+	ReloadDelay: 120
+	Range: 7c0
+	Projectile: BulletAS
+		Speed: 682
+		Image: 120mm
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 62
+	Warhead@1Dam: SpreadDamage
+		Spread: 384
+		Damage: 250000
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 80
+			Medium: 80
+			Heavy: 60
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: RadiationDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: turtlehit
+		ExplosionPalette: rookietsexp
+		ImpactSounds:
+		ValidTargets: Ground, Water, Air
+	Warhead@3Radiation: CreateTintedCells
+		Spread: 512
+		Level: 125
+
+TurtleCannonE:
+	Inherits: TurtleCannon
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroictsexp
