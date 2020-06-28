@@ -1253,7 +1253,7 @@
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^VoxelLighting
 	BodyOrientation:
-		QuantizedFacings: 32
+		QuantizedFacings: 0
 	Armor:
 		Type: Light
 	BallisticMissile:
