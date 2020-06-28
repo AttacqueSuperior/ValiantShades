@@ -676,6 +676,7 @@ HowitzerGunE:
 TurtleCannon:
 	ReloadDelay: 120
 	Range: 7c0
+	Report: scrin5b.wav
 	Projectile: BulletAS
 		Speed: 682
 		Image: 120mm
@@ -701,7 +702,7 @@ TurtleCannon:
 	Warhead@2Eff: CreateEffect
 		Explosions: turtlehit
 		ExplosionPalette: rookietsexp
-		ImpactSounds:
+		ImpactSounds: expnew12.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@3Radiation: CreateTintedCells
 		Spread: 512
