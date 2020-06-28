@@ -506,6 +506,7 @@
 		Speed: 60
 		Voice: Move
 		Locomotor: foot
+		AlwaysTurnInPlace: true
 		PauseOnCondition: disabled
 	SpeedMultiplier@disabled:
 		RequiresCondition: disabled
