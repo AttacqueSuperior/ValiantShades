@@ -349,7 +349,7 @@
 		Duration: 50
 		ShowSelectionBar: false
 	GrantConditionOnProduction@zeppelins:
-		Actors: shab, zep, thor
+		Actors: shab, zep, thor, soyuz
 		Condition: roof-open
 		Duration: 100
 		ShowSelectionBar: false
