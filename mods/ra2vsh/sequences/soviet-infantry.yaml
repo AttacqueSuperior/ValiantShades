@@ -376,6 +376,37 @@ kamikaze:
 	icon: kamiicon.png
 		AddExtension: false
 
+hopl:
+	Inherits: ^ArmedInfantry
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	idle1:
+		Start: 56
+	idle2:
+		Start: 71
+	die1:
+		Start: 101
+	die2:
+		Start: 86
+	shoot:
+		Start: 116
+		Length: 6
+	paradrop:
+		Start: 164
+	cheer:
+		Start: 165
+	-standup:
+	-liedown:
+	-prone-stand:
+	-prone-run:
+	-prone-shoot:
+	icon: hoplicon
+
 cyborg:
 	Inherits: ^ArmedInfantry
 	stand:

@@ -416,3 +416,64 @@ BalloonGunE:
 	Inherits: BalloonGun
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroicraexp
+
+HopliteGun:
+	Inherits: ^MG
+	Report: 120mmf.wav
+	Range: 6c0
+	ReloadDelay: 85
+	Warhead@1Dam: SpreadDamage
+		Damage: 35000
+		Spread: 384
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+	Warhead@2Dam: SpreadDamage
+		Delay: 3
+		Damage: 35000
+		Spread: 384
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: cyborghit
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: expnew17.wav
+	Warhead@emp: GrantExternalCondition
+		Range: 1c0
+		Duration: 110
+		Condition: emp
+		ValidTargets: Vehicle
+		InvalidTargets: EMPImmune, Air
+		ValidStances: Neutral, Enemy
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+HopliteGunE:
+	Inherits: HopliteGun
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp
+	Warhead@emp: GrantExternalCondition
+		Duration: 220

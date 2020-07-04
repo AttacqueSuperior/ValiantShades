@@ -743,7 +743,7 @@ cosmo:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	Buildable:
 		BuildPaletteOrder: 400
-		Prerequisites: natek, naairc, ~nahand, gatech.infiltrated
+		Prerequisites: ~nahand, ~disabled
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
 		Cost: 650
@@ -937,6 +937,69 @@ kamikaze:
 	AttackMove:
 		Voice: Move
 
+hopl:
+	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@cloning: ^Cloneable
+	Inherits@factionparachute: ^SovietParachute
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Barracks
+		BuildPaletteOrder: 450
+		Prerequisites: natek, ~nahand, gatech.infiltrated
+		Description: Mechanical infantry with EMP grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
+	Valued:
+		Cost: 850
+	DeliversCash:
+		Payload: 425
+		PlayerExperience: 43
+		Voice: Move
+	Tooltip:
+		Name: Hoplite
+	Armor:
+		Type: Plate
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 150000
+	RevealsShroud:
+		Range: 6c0
+	RevealOnDeath:
+		Radius: 3c0
+		DeathTypes: DefaultDeath
+	-Crushable:
+	Passenger:
+		CustomPipType: green
+	Armament@primary:
+		Weapon: HopliteGun
+		RequiresCondition: !rank-heroic
+		LocalOffset: 256,0,768
+	Armament@elite:
+		Weapon: HopliteGunE
+		RequiresCondition: rank-heroic
+		LocalOffset: 256,0,768
+	Armament@opentopped:
+		Name: opentopped
+		Weapon: HopliteGun
+		RequiresCondition: !rank-heroic
+	Armament@elite-opentopped:
+		Name: opentopped
+		Weapon: HopliteGunE
+		RequiresCondition: rank-heroic
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: CyborgVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	-TakeCover:
+
 cyborg:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
@@ -948,7 +1011,7 @@ cyborg:
 		BuildAtProductionType: Barracks
 		BuildPaletteOrder: 450
 		Prerequisites: natek, ~nahand, natek.infiltrated
-		Description: Mechanical infantry with EMP grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
+		Description: Mechanical infantry with grenades.\n  Strong vs Infantry, Vehicles\n  Weak vs Structures, Aircraft
 		IconPalette: cyboicon
 	Valued:
 		Cost: 850

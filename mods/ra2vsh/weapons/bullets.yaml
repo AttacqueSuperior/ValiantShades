@@ -542,7 +542,7 @@ CyborgGun:
 	Range: 6c0
 	ReloadDelay: 85
 	Warhead@1Dam: SpreadDamage
-		Damage: 90000
+		Damage: 110000
 		Spread: 384
 		Versus:
 			None: 100
@@ -563,7 +563,7 @@ CyborgGun:
 		ImpactSounds: expnew17.wav
 	Warhead@emp: GrantExternalCondition
 		Range: 1c0
-		Duration: 55
+		Duration: 3
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
@@ -587,7 +587,7 @@ CyborgGunE:
 	Warhead@3Shr: FireShrapnel
 		Weapon: CyborgShrapnelE
 	Warhead@emp: GrantExternalCondition
-		Duration: 110
+		Duration: 6
 
 HowitzerGun:
 	Inherits: ^LargeBullet
