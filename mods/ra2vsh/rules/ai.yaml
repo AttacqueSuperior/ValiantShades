@@ -443,6 +443,9 @@ Player:
 		SquadSize: 5
 		RushAttackScanRadius: 30
 		ProtectUnitScanRadius: 25
+		IdleScanRadius: 20
+		AttackScanRadius: 20
+		DangerScanRadius: 12
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, aero, gaunt, engineer, aengineer, sengineer
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@normal:
