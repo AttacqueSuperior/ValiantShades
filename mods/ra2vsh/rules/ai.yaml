@@ -521,6 +521,7 @@ Player:
 			topol: 1
 			shab: 1
 			zep: 1
+			soyuz: 1
 			yak: 15
 			fflash: 15
 		UnitLimits:
@@ -542,6 +543,7 @@ Player:
 			topol: 2
 			shab: 2
 			zep: 2
+			soyuz: 2
 	McvManagerBotModule@normal:
 		RequiresCondition: enable-normal-ai
 		McvTypes: amcv, smcv

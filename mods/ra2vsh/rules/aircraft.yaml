@@ -609,6 +609,84 @@ thorhusk:
 	RenderVoxels:
 		Image: thor
 
+soyuz:
+	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@factionrankpips: ^SovietVeteranRank
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Soyuz
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 400
+		Description: Sopaceship with a laser.\nProvides access to an orbital cannon.\n  Strong vs Units\n  Weak vs Buildings
+		Prerequisites: ~naweap, naairc, natech, garbur.infiltrated
+		# IconPalette: soyuzicon
+	Selectable:
+		Bounds: 100,60,0,-10
+	Aircraft:
+		TurnSpeed: 2
+		Speed: 25
+		Voice: Move
+		AirborneCondition: airborne
+	Health:
+		HP: 1500000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: CosmonautLaser
+		RequiresCondition: !rank-heroic
+		LocalOffset: 1412,0,198
+	Armament@elite:
+		Weapon: CosmonautLaserE
+		RequiresCondition: rank-heroic
+		LocalOffset: 1412,0,198
+	WithMuzzleOverlay:
+	AttackFrontal:
+		Voice: Attack
+		PauseOnCondition: disabled
+		FacingTolerance: 32
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Hovers:
+		BobDistance: -24
+		InitialHeight: 24
+	Voiced:
+		VoiceSet: CosmonautVoice
+	SpawnActorOnDeath:
+		Actor: soyuzhusk
+		DeathType: DefaultDeath
+	HitShape:
+
+soyuzhusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Soyuz
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 25
+	FallsToEarthAS:
+		Explosion: KirovExplode
+		SpinInitial: 0
+		SpinAcceleration: 0
+		SpinAccelerationDelay: 0
+		VelocityAcceleration: 1
+		Velocity: 126
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	RevealOnDeath:
+		Radius: 4c0
+	RenderVoxels:
+		Image: soyuz
+
 beag:
 	Inherits: ^Plane
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove

@@ -300,6 +300,9 @@ slost:
 	idle:
 	turret: slosttur
 
+soyuz:
+	idle:
+
 spirit:
 	idle:
 

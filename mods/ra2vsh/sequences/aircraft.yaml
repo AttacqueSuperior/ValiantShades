@@ -67,6 +67,10 @@ shad:
 	Inherits@muzzle: ^WithCannonMuzzle
 	icon: shadicon
 
+soyuz:
+	Inherits: ^Aircraft
+	icon: xxicon
+
 spirit:
 	Inherits: ^Aircraft
 	icon: spiricon.png
