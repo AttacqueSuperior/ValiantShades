@@ -475,7 +475,7 @@ caslab:
 		ExitCell: 2,2
 		Priority: 3
 	GrantRandomConditionOnDelivery:
-		Conditions: beholder, overlord, malfestor, mammoth, ttnk2
+		Conditions: beholder, overlord, malfestor, mammoth, ttnk2, empr
 	PeriodicProducer@Beholder:
 		Type: SecretLab
 		Actors: behold
@@ -531,6 +531,17 @@ caslab:
 		Text: TESLA TANK
 		Position: Center
 		RequiresCondition: ttnk2 && !ownerless
+	PeriodicProducer@empr:
+		Type: SecretLab
+		Actors: empr
+		ChargeDuration: 4400
+		ShowSelectionBar: true
+		RequiresCondition: empr && !ownerless
+		PauseOnCondition: disabled
+	WithTextDecoration@empr:
+		Text: EMPRESS
+		Position: Center
+		RequiresCondition: empr && !ownerless
 	TooltipDescription@ally:
 		Description: Periodically provides hidden units.
 		ValidStances: Ally

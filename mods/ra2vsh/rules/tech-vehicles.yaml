@@ -410,3 +410,82 @@ ttnk2.Husk:
 		Image: ttnk2
 	TransformOnCapture:
 		IntoActor: ttnk2
+
+empr:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
+	Inherits@Berserk: ^Berserkable
+	Valued:
+		Cost: 2200
+	Tooltip:
+		Name: Empress Tank
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 400
+		Prerequisites: ~disabled
+		Description: Heavy tank equipped with an iron curtain generator\nand two missile launchers.\nStrong vs. Ground
+		IconPalette: empricon
+	Mobile:
+		Speed: 75
+		Locomotor: heavytracked
+	Health:
+		HP: 450000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 5
+	Armament@primary:
+		Weapon: EmpressMissile
+		LocalOffset: 25,325,916, 25,-325,916
+		RequiresCondition: !rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
+	Armament@elite:
+		Weapon: EmpressMissileE
+		LocalOffset: 25,325,916, 25,-325,916
+		RequiresCondition: rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: EmpressVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	HitShape:
+	GrantPeriodicConditionOnEvent@selfcurtain:
+		PauseOnCondition: being-warped
+		CooldownDuration: 900
+		ActiveDuration: 300
+		Condition: selfcurtain
+		StartsCharged: true
+		ShowSelectionBar: true
+	GrantCondition@selfcurtain:
+		Condition: invulnerability
+		RequiresCondition: selfcurtain
+	ExplodeWeapon@selfcurtain:
+		RequiresCondition: selfcurtain
+		Weapon: EmpressSelfCurtain
+	SpawnActorOnDeath:
+		Actor: empr.Husk
+
+empr.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: empr
+	TransformOnCapture:
+		IntoActor: empr
