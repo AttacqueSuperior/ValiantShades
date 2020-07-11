@@ -415,7 +415,7 @@ schphusk:
 	RevealOnDeath:
 		Radius: 3c512
 	RenderVoxels:
-		Image: schp	
+		Image: schp
 
 zep:
 	Inherits: ^Aircraft

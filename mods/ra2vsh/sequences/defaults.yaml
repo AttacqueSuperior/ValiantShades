@@ -1,6 +1,6 @@
 ^Animal:
 	Inherits@IvanBomb: ^IvanBombable
-	Inherits@Thor:^AffectedByThor
+	Inherits@Thor: ^AffectedByThor
 	stand:
 		Facings: 8
 	run:

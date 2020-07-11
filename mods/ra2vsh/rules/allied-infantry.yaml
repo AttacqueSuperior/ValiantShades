@@ -1210,7 +1210,7 @@ artemis:
 	Armament@elite:
 		Weapon: ArtemisMissileE
 		RequiresCondition: rank-heroic
-		LocalOffset:256,0,1024
+		LocalOffset: 256,0,1024
 	Armament@opentopped:
 		Name: opentopped
 		Weapon: ArtemisMissile

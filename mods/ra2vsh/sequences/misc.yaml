@@ -334,8 +334,8 @@ misl:
 	idle:
 		Facings: 32
 
-canister:	
-	idle:	
+canister:
+	idle:
 		Length: 15
 
 parabomb:
