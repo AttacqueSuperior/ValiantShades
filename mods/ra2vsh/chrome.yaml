@@ -1800,6 +1800,23 @@ scrollpanel-button-disabled:
 	Image: dialog.png
 	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
+scrollpanel-decorations:
+	Image: glyphs.png
+	Regions:
+		down: 68, 17, 16, 16
+		down-pressed: 68, 17, 16, 16
+		down-disabled: 85, 17, 16, 16
+		up: 102, 17, 16, 16
+		up-pressed: 102, 17, 16, 16
+		up-disabled: 119, 17, 16, 16
+		right: 136, 17, 16, 16
+		right-pressed: 136, 17, 16, 16
+		right-disabled: 153, 17, 16, 16
+		left: 170, 17, 16, 16
+		left-pressed: 170, 17, 16, 16
+		left-disabled: 187, 17, 16, 16
+
+
 slider:
 	Image: dialog.png
 	Regions:
@@ -1857,6 +1874,12 @@ checkbox-highlighted:
 	Image: dialog.png
 	PanelRegion: 896, 0, 1, 1, 126, 126, 1, 1
 
+checkbox-highlighted-hover:
+	Inherits: checkbox-highlighted
+
+checkbox-highlighted-disabled:
+	Inherits: checkbox-disabled
+
 # A copy of dialog3 (pressed button)
 scrollitem-selected:
 	Image: dialog.png
@@ -1881,11 +1904,21 @@ mainmenu-border:
 	Image: dialog.png
 	PanelRegion: 648, 387, 40, 40, 40, 40, 40, 40
 
-dropdown:
+dropdown-separators:
 	Image: dialog.png
 	Regions:
 		separator: 512, 1, 1, 19
+		separator-hover: 512, 1, 1, 19
+		separator-pressed: 512, 1, 1, 19
+		separator-disabled: 512, 1, 1, 19
 		observer-separator: 768, 256, 1, 19
+
+dropdown-decorations:
+	Image: glyphs.png
+	Regions:
+		marker: 68, 17, 16, 16
+		marker-pressed: 68, 17, 16, 16
+		marker-disabled: 85, 17, 16, 16
 
 logos:
 	Image: loadscreen.png
