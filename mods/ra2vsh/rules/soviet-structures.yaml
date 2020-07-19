@@ -6,7 +6,7 @@ nacnst:
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		RequiresCondition: !build-incomplete

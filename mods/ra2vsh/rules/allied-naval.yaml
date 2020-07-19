@@ -20,7 +20,7 @@ lcrf:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: disabled || loading
@@ -32,7 +32,7 @@ lcrf:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems, Tiberium
 		UnloadVoice: Move
 		LoadingCondition: loading
@@ -73,7 +73,7 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
@@ -128,7 +128,7 @@ aegis:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
@@ -174,7 +174,7 @@ dlph:
 	Health:
 		HP: 200000
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
@@ -272,12 +272,12 @@ carrier:
 	Selectable:
 		Bounds: 160,68,0,-6
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 7c0
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled || !loaded

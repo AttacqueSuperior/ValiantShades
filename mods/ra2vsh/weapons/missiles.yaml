@@ -197,7 +197,7 @@ SubTorpedo:
 		Image: subt
 		Speed: 102
 		TrailImage: bbblelrg
-		HorizontalRateOfTurn: 12
+		HorizontalRateOfTurn: 48
 		RangeLimit: 14c0
 		BoundToTerrainType: Water
 		Palette: shadow
@@ -388,7 +388,7 @@ ArtemisMissile:
 		Image: misl
 		Palette: player
 		TrailImage: bbblelrg
-		HorizontalRateOfTurn: 12
+		HorizontalRateOfTurn: 48
 		RangeLimit: 14c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
@@ -512,7 +512,7 @@ TanyaMissileStage2:
 		Palette: player
 		TrailImage: tanyasmoke
 		TrailPalette: heroictsexp
-		HorizontalRateOfTurn: 12
+		HorizontalRateOfTurn: 48
 		RangeLimit: 11c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 426

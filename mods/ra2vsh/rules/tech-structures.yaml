@@ -380,8 +380,8 @@ caoutp:
 		Range: 12c0
 		Type: patriot
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 700,-1000,1500
 	AttackTurreted:
 		Voice:

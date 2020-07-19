@@ -14,8 +14,8 @@ nalasr:
 	Tooltip:
 		Name: Sentry Gun
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		PreviewFacing: 224
 	Armament:
 		Weapon: vulcan

@@ -385,7 +385,7 @@ deso:
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: True
 		SmartDeploy: True
-		Facing: 92
+		Facing: 368
 		Voice: Deploy
 		PauseOnCondition: disabled
 	WithSpriteBody@DEPLOYED:
@@ -768,7 +768,7 @@ cosmo:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
-		TurnSpeed: 64
+		TurnSpeed: 256
 		Speed: 140
 	Voiced:
 		VoiceSet: CosmonautVoice

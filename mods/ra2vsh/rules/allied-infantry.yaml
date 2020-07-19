@@ -85,7 +85,7 @@ e1:
 		Voice: Move
 		CanDeployOnRamps: True
 		SmartDeploy: True
-		Facing: 128
+		Facing: 512
 		RequiresCondition: !disabled
 		DeploySounds: igidepa.wav, igidepb.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
@@ -94,8 +94,8 @@ e1:
 	Turreted:
 		Turret: deploy
 		RealignDelay: -1
-		TurnSpeed: 50
-		InitialFacing: 128
+		TurnSpeed: 200
+		InitialFacing: 512
 	WithSpriteTurret:
 		Turret: deploy
 		Sequence: deployed
@@ -264,7 +264,7 @@ ggi:
 		Voice: Move
 		CanDeployOnRamps: True
 		SmartDeploy: True
-		Facing: 96
+		Facing: 384
 		RequiresCondition: !disabled
 		DeploySounds: iggidepa.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
@@ -273,8 +273,8 @@ ggi:
 	Turreted:
 		Turret: deploy
 		RealignDelay: -1
-		TurnSpeed: 50
-		InitialFacing: 96
+		TurnSpeed: 200
+		InitialFacing: 384
 	WithSpriteTurret:
 		Turret: deploy
 		Sequence: deployed
@@ -763,7 +763,7 @@ tanya2:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
-		TurnSpeed: 64
+		TurnSpeed: 256
 		Speed: 180
 	Voiced:
 		VoiceSet: TanyaVoice
@@ -945,7 +945,7 @@ jumpjet:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Aircraft:
-		TurnSpeed: 64
+		TurnSpeed: 256
 		Speed: 140
 	Voiced:
 		VoiceSet: RocketeerVoice

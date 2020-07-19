@@ -316,15 +316,15 @@ World:
 		ClassName: MCV Only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 	MPStartUnits@lightallies:
 		Class: light
 		ClassName: Light Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumallies:
@@ -332,9 +332,9 @@ World:
 		ClassName: Medium Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,ggi,ggi,hmmv,aengineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
@@ -342,9 +342,9 @@ World:
 		ClassName: Heavy Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,ggi,ggi,hmmv,hmmv,ltnk,aengineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@smcv:
@@ -352,15 +352,15 @@ World:
 		ClassName: MCV Only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 	MPStartUnits@lightsoviets:
 		Class: light
 		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumsoviets:
@@ -368,9 +368,9 @@ World:
 		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,flakt,flakt,flakt,htk,sengineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavysoviets:
@@ -378,9 +378,9 @@ World:
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,flakt,flakt,flakt,htk,htk,drgn,sengineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	CrateSpawner:

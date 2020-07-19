@@ -280,8 +280,8 @@ dog:
 		VTOL: true
 		TurnToDock: false
 		CruiseAltitude: 4200
-		InitialFacing: 20
-		TurnSpeed: 64
+		InitialFacing: 80
+		TurnSpeed: 256
 		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
@@ -336,7 +336,7 @@ dog:
 		CanHover: true
 		VTOL: true
 		TurnToDock: false
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	FallsToEarthAS:
 		Explosion: InfantryExplode

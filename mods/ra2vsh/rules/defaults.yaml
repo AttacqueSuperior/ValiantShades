@@ -779,7 +779,7 @@
 		DeathTypes: DefaultDeath
 	Mobile:
 		Voice: Move
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 		PauseOnCondition: disabled
 	SpeedMultiplier@disabled:
@@ -1003,11 +1003,11 @@
 		CanHover: false
 		VTOL: false
 		TurnToDock: true
-		TurnSpeed: 27
-		IdleTurnSpeed: 1
+		TurnSpeed: 108
+		IdleTurnSpeed: 4
 		Speed: 341
 		MaximumPitch: 168
-		InitialFacing: 224
+		InitialFacing: 896
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	WithVoxelBody:
@@ -1183,7 +1183,7 @@
 	Mobile:
 		Voice: Move
 		Locomotor: naval
-		TurnSpeed: 5
+		TurnSpeed: 20
 		PauseOnCondition: disabled
 	SpeedMultiplier@disabled:
 		RequiresCondition: disabled

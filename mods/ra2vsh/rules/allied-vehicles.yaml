@@ -22,7 +22,7 @@ amcv:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	-Crushable:
 	RevealsShroud:
@@ -37,7 +37,7 @@ amcv:
 		Voice: Move
 		IntoActor: gacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 		PauseOnCondition: disabled
@@ -115,7 +115,7 @@ cmin:
 		Type: Medium
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -183,7 +183,7 @@ hmmv:
 		Description: Infantry Transport and Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 140
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Locomotor: wheeled
 		PauseOnCondition: disabled || loading
 	Health:
@@ -223,7 +223,7 @@ hmmv:
 		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -339,7 +339,7 @@ ltnk:
 		IconPalette: ltnkicon
 	Mobile:
 		Speed: 120
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 200000
@@ -351,7 +351,7 @@ ltnk:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 90mm
 		LocalOffset: 525,0,558
@@ -473,7 +473,7 @@ fv:
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
 		Speed: 150
-		TurnSpeed: 5
+		TurnSpeed: 20
 		PauseOnCondition: disabled || loading
 	Health:
 		HP: 200000
@@ -485,7 +485,7 @@ fv:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1216,7 +1216,7 @@ sref:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -1225,7 +1225,7 @@ sref:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: 140,0,0
 	Armament@primary:
 		Weapon: Comet
@@ -1301,7 +1301,7 @@ howi:
 		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 200000
@@ -1377,7 +1377,7 @@ tnkd:
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 800000
@@ -1449,7 +1449,7 @@ mgtk:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 105
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -1469,7 +1469,7 @@ mgtk:
 		MuzzleSequence: miragemuzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 8
+		TurnSpeed: 32
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: disabled
@@ -1524,7 +1524,7 @@ bfrt:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: omnicrusher
 		PauseOnCondition: disabled || loading
@@ -1670,7 +1670,7 @@ aero:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -1679,7 +1679,7 @@ aero:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: -120,0,0
 	Armament@primary:
 		Weapon: AeroblazeLaser
@@ -1733,7 +1733,7 @@ chrp:
 		IconPalette: chrpicon
 	Mobile:
 		Speed: 60
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Locomotor: heavytracked
 	-Crushable:
 	Health:
@@ -1746,7 +1746,7 @@ chrp:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 4
+		TurnSpeed: 16
 		Offset: -310,0,0
 	Armament@primary:
 		Weapon: ChronoPrisonVehicle
@@ -1811,7 +1811,7 @@ mgg:
 		Description: Obscures the enemy's view with shroud.\nUnits around it cannot be mindcontrolled.\nUnarmed.
 	Mobile:
 		Speed: 90
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 	Health:
 		HP: 250000
@@ -1892,7 +1892,7 @@ succ:
 		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: SuccubusCharm
 		LocalOffset: 0,0,1400
@@ -1947,7 +1947,7 @@ mnrva:
 		IconPalette: mnrvicon
 	Mobile:
 		Speed: 140
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Locomotor: wheeled
 		PauseOnCondition: disabled || loading
 	Health:
@@ -1960,7 +1960,7 @@ mnrva:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Offset: -180,0,0
 	Armament@primary:
 		Weapon: 90mm

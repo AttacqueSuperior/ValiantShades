@@ -19,7 +19,7 @@ gapill:
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	IsometricSelectable:

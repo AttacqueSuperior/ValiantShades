@@ -22,7 +22,7 @@ smcv:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	-Crushable:
 	RevealsShroud:
@@ -37,7 +37,7 @@ smcv:
 		Voice: Move
 		IntoActor: nacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
@@ -120,11 +120,11 @@ harv:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: 92,0,0
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -201,7 +201,7 @@ dron:
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
 		Speed: 150
-		TurnSpeed: 255
+		TurnSpeed: 1023
 		Locomotor: drone
 	Health:
 		HP: 100000
@@ -287,7 +287,7 @@ htk:
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\nCan repair other vehicles with an Engineer inside.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 120
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: tracked
 		PauseOnCondition: disabled || loading
 	Health:
@@ -339,7 +339,7 @@ htk:
 		MuzzlePalette: ra
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 		Offset: -380,0,0
 	RenderSprites:
 	RenderVoxels:
@@ -457,7 +457,7 @@ drgn:
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 140
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: tracked
 	Health:
 		HP: 210000
@@ -483,7 +483,7 @@ drgn:
 		MuzzleSequence: flamemuzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
@@ -526,7 +526,7 @@ slost:
 		Description: Anti-Infantry vehicle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 140
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 	Health:
 		HP: 210000
@@ -554,7 +554,7 @@ slost:
 		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: -160,0,0
 	RenderSprites:
 	RenderVoxels:
@@ -684,7 +684,7 @@ v3:
 		Description: Ballistic missile launcher\n  Strong vs Building, Infantry\n  Weak vs Vehicle, Aircraft
 	Mobile:
 		Speed: 70
-		TurnSpeed: 10
+		TurnSpeed: 40
 	Health:
 		HP: 150000
 	Armor:
@@ -759,7 +759,7 @@ apoc:
 		Description: Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	-Crushable:
 	Health:
@@ -772,7 +772,7 @@ apoc:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 3
+		TurnSpeed: 12
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 1095,106,905, 1095,-106,905
@@ -941,7 +941,7 @@ dtruck:
 		Type: Light
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -1000,7 +1000,7 @@ mind:
 		Description: Heavy vehicle capable of mind controlling enemy units.\n  Strong vs Ground Unis\n  Weak vs Aircraft
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 350000
@@ -1093,7 +1093,7 @@ turtl:
 		Description: Advanced tank with a nuke cannon.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 40
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	-Crushable:
 	Health:
@@ -1180,7 +1180,7 @@ bura:
 		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: BuratinoMissile
 		LocalOffset: 425,37,1040, 425,-37,1040, 425,193,1040, 425,-193,1040
@@ -1245,7 +1245,7 @@ gaunt:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -1254,7 +1254,7 @@ gaunt:
 		Radius: 4c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: 120,0,0
 	Armament@primary:
 		Weapon: GauntletMissile
@@ -1312,7 +1312,7 @@ topol:
 		IconPalette: toplicon
 	Mobile:
 		Speed: 30
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Locomotor: heavytracked
 		PauseOnCondition: disabled || raise
 	-Crushable:

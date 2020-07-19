@@ -68,8 +68,8 @@
 		Radius: 2c512
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		PreviewFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
@@ -143,8 +143,8 @@
 		Radius: 5c0
 		DeathTypes: DefaultDeath
 	Turreted:
-		TurnSpeed: 3
-		InitialFacing: 224
+		TurnSpeed: 12
+		InitialFacing: 896
 		PreviewFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:

@@ -6,7 +6,7 @@ gacnst:
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete

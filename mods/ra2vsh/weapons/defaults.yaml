@@ -99,8 +99,8 @@
 		ContrailLength: 8
 		ContrailWidth: 24
 		ContrailColor: D8D8FF
-		HorizontalRateOfTurn: 38
-		VerticalRateOfTurn: 38
+		HorizontalRateOfTurn: 152
+		VerticalRateOfTurn: 152
 		MinimumLaunchSpeed: 175
 		MaximumLaunchSpeed: 350
 		Speed: 650

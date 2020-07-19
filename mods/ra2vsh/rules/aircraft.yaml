@@ -42,7 +42,7 @@ shad:
 		PauseOnCondition: disabled
 	Aircraft:
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
@@ -147,7 +147,7 @@ shadhusk:
 	Tooltip:
 		Name: Night Hawk
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	RevealsShroud:
 		Range: 7c0
@@ -187,7 +187,7 @@ hind:
 		Type: CenterPosition
 	Aircraft:
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 125
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
@@ -213,7 +213,7 @@ hindhusk:
 	Tooltip:
 		Name: Hind Carryall
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	RevealsShroud:
 		Range: 6c0
@@ -240,7 +240,7 @@ shab:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -272,7 +272,7 @@ shab:
 		PauseOnCondition: disabled
 		FacingTolerance: 128
 	Turreted:
-		TurnSpeed: 2
+		TurnSpeed: 8
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
@@ -292,7 +292,7 @@ shabhusk:
 	Tooltip:
 		Name: Balloon
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 	FallsToEarthAS:
 		Explosion: KirovExplode
@@ -350,7 +350,7 @@ schp:
 		Type: CenterPosition
 	Aircraft:
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems, Tiberium
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 180
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
@@ -380,7 +380,7 @@ schp:
 		Voice: Deploy
 		CanDeployOnRamps: true
 		PauseOnCondition: disabled
-		Facing: 160
+		Facing: 640
 		UndeployOnMove: true
 		LandOnDeploy: true
 	WithSpriteBody:
@@ -395,7 +395,7 @@ schp:
 		Reject: Move
 		RequiresCondition: !undeployed
 	Turreted:
-		TurnSpeed: 6
+		TurnSpeed: 24
 	AttackTurreted:
 		Armaments: deployed
 		Voice: Attack
@@ -407,7 +407,7 @@ schphusk:
 	Tooltip:
 		Name: Siege Chopper
 	Aircraft:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 180
 	RevealsShroud:
 		Range: 7c0
@@ -434,7 +434,7 @@ zep:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -499,7 +499,7 @@ zephusk:
 	Tooltip:
 		Name: Kirov Airship
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 	FallsToEarthAS:
 		Explosion: KirovExplode
@@ -535,7 +535,7 @@ thor:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -592,7 +592,7 @@ thorhusk:
 	Tooltip:
 		Name: Thor Platform
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 	FallsToEarthAS:
 		Explosion: KirovExplode
@@ -628,7 +628,7 @@ soyuz:
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -670,7 +670,7 @@ soyuzhusk:
 	Tooltip:
 		Name: Soyuz
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 	FallsToEarthAS:
 		Explosion: KirovExplode
@@ -743,7 +743,7 @@ beaghusk:
 	Tooltip:
 		Name: Black Eagle
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: beag
@@ -787,7 +787,7 @@ orcahusk:
 	Tooltip:
 		Name: Harrier
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: falc
@@ -835,7 +835,7 @@ yakhusk:
 	Tooltip:
 		Name: Yak
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: yak
@@ -875,7 +875,7 @@ fflashhusk:
 	Tooltip:
 		Name: Sapsan
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: fflash
@@ -919,7 +919,7 @@ bplnhusk:
 	Tooltip:
 		Name: Soviet MiG
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 394
 	RenderVoxels:
 		Image: bpln
@@ -969,7 +969,7 @@ spirit:
 	Rearmable:
 		RearmActors: gaairc, naairc
 	Aircraft:
-		TurnSpeed: 18
+		TurnSpeed: 72
 		Speed: 226
 	AutoTarget:
 		ScanOnIdle: false
@@ -985,7 +985,7 @@ spirithusk:
 	Tooltip:
 		Name: Spirit
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 150
 	RenderVoxels:
 		Image: spirit
@@ -1009,7 +1009,7 @@ pdplane:
 	Aircraft:
 		IdleBehavior: LeaveMap
 		Repulsable: false
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 		MaximumPitch: 56
 	Health:
@@ -1036,7 +1036,7 @@ pdplanehusk:
 	Tooltip:
 		Name: Cargo Plane
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 150
 	RenderVoxels:
 		Image: pdplane
@@ -1093,14 +1093,14 @@ pdplane.caairp:
 		Actor: pdplane.caairp.husk
 	Aircraft:
 		TurnToLand: true
-		InitialFacing: 224
+		InitialFacing: 896
 
 pdplane.caairp.husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
 		Name: Cargo Plane
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 150
 	RenderVoxels:
 		Image: pdplane.caairp
@@ -1180,7 +1180,7 @@ badgerhusk:
 	Tooltip:
 		Name: Badger Bomber
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: badger
@@ -1280,7 +1280,7 @@ a10husk:
 	Tooltip:
 		Name: A-10 Warthog
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	RenderVoxels:
 		Image: a10
@@ -1326,7 +1326,7 @@ spyplhusk:
 	Tooltip:
 		Name: Spy Plane
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 450
 	RenderVoxels:
 		Image: spypl
@@ -1361,7 +1361,7 @@ aurorahusk:
 	Tooltip:
 		Name: Aurora
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 446
 	RenderVoxels:
 		Image: aurora
@@ -1380,7 +1380,7 @@ wolfk:
 	Aircraft:
 		IdleBehavior: LeaveMap
 		Repulsable: false
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 250
 		VTOL: true
 		TurnToDock: false
@@ -1414,7 +1414,7 @@ wolfkhusk:
 	Tooltip:
 		Name: Wolfkrone Dropship
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 166
 	RenderVoxels:
 		Image: wolfk
