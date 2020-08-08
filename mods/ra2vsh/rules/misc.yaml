@@ -126,9 +126,9 @@ flameguy:
 		IdleSequences: run
 	Health:
 		HP: 240000
-	SelfHealing:
+	ChangesHealth:
 		Step: -10000
-		HealIfBelow: 101
+		StartIfBelow: 101
 	ScaredyCat:
 		PanicSequencePrefix:
 	WithDeathAnimation:

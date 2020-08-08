@@ -724,12 +724,12 @@ boris:
 		SpawnAllAtOnce: true
 		ArmamentNames: secondary
 		PauseOnCondition: !airstrike
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !disabled
 	WithSpawnerMasterPipsDecoration:
 		Palette: pips
@@ -845,12 +845,12 @@ volkov:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !disabled
 	-TakeCover:
 

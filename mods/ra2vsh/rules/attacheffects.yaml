@@ -51,18 +51,18 @@
 	ReloadAmmoDelayMultiplier@heroic:
 		RequiresCondition: rank-heroic
 		Modifier: 80
-	SelfHealing@elite:
+	ChangesHealth@elite:
 		Step: 0
 		PercentageStep: 1
 		Delay: 100
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 150
 		RequiresCondition: rank-elite && !rank-heroic
-	SelfHealing@heroic:
+	ChangesHealth@heroic:
 		Step: 0
 		PercentageStep: 1
 		Delay: 50
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 75
 		RequiresCondition: rank-heroic
 	GivesExperienceMultiplier@veteran:
@@ -586,12 +586,12 @@
 ^CraneRepair:
 	ExternalCondition@crane:
 		Condition: crane
-	SelfHealing@crane:
+	ChangesHealth@crane:
 		Step: 0
 		PercentageStep: 1
 		DamageTypes: DropTerrorDrone
 		Delay: 25
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 0
 		RequiresCondition: crane
 
@@ -668,39 +668,39 @@
 		Delay: 20
 
 ^HospitalHeal:
-	SelfHealing@hospital:
+	ChangesHealth@hospital:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital
-	SelfHealing@hospital2:
+	ChangesHealth@hospital2:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital > 1
-	SelfHealing@hospital3:
+	ChangesHealth@hospital3:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital > 2
-	SelfHealing@hospital4:
+	ChangesHealth@hospital4:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital > 3
-	SelfHealing@hospital5:
+	ChangesHealth@hospital5:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospital > 4
 	WithDecoration@hospital:
@@ -727,39 +727,39 @@
 		Prerequisites: hospital5
 
 ^MachineShopRepair:
-	SelfHealing@machineshop:
+	ChangesHealth@machineshop:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: machineshop
-	SelfHealing@machineshop2:
+	ChangesHealth@machineshop2:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: machineshop > 1
-	SelfHealing@machineshop3:
+	ChangesHealth@machineshop3:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: machineshop > 2
-	SelfHealing@machineshop4:
+	ChangesHealth@machineshop4:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: machineshop > 3
-	SelfHealing@machineshop5:
+	ChangesHealth@machineshop5:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: machineshop > 4
 	WithDecoration@machineshop:
@@ -788,11 +788,11 @@
 ^AffectedByPropaganda:
 	ExternalCondition@propaganda:
 		Condition: propaganda
-	SelfHealing@propaganda:
+	ChangesHealth@propaganda:
 		Step: 0
 		PercentageStep: 1
 		Delay: 125
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 0
 		RequiresCondition: propaganda
 	WithDecoration@propaganda:

@@ -963,7 +963,7 @@
 		Categories: Aircraft
 	RevealOnFire:
 		Duration: 50
-	SelfHealing@crane:
+	ChangesHealth@crane:
 		RequiresCondition: crane && !prevent-ground-target
 	Targetable@Temporal:
 		RequiresCondition: !airborne && !invulnerability
@@ -1087,10 +1087,10 @@
 	Explodes:
 		Weapon: HuskExplode
 		EmptyWeapon: HuskExplode
-	SelfHealing:
+	ChangesHealth:
 		Step: -2000
 		Delay: 10
-		HealIfBelow: 150
+		StartIfBelow: 150
 		DamageCooldown: 0
 	RenderSprites:
 		Image: vehicle-husks

@@ -714,12 +714,12 @@ tany:
 		UncloakOn: Attack, Damage
 		CloakTypes: mirage
 		RequiresCondition: !disabled
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !disabled
 	ProximityExternalCondition:
 		Condition: tanyabonus
@@ -773,12 +773,12 @@ tanya2:
 		Prerequisites: barracks.infiltrated
 	SpawnActorOnDeath:
 		Actor: tanya2.husk
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !disabled
 
 tanya2.husk:
@@ -886,12 +886,12 @@ hirano:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !parachute && !hilbertgenerate
 	-TakeCover:
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 		RequiresCondition: !disabled
 	GrantTimedConditionOnDeploy@hilberteffect:
 		DeployedCondition: hilbertgenerate

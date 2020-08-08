@@ -144,12 +144,12 @@ harv:
 	-DamagedByTintedCells:
 	Targetable@radimmune:
 		TargetTypes: ImmuneToRadiation
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 100
+		StartIfBelow: 100
 	WithHarvesterPipsDecoration:
 		Palette: pips
 		Position: BottomLeft
@@ -834,12 +834,12 @@ apoc:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 50
+		StartIfBelow: 50
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
@@ -1129,12 +1129,12 @@ turtl:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 50
+		StartIfBelow: 50
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
@@ -1346,12 +1346,12 @@ topol:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Step: 0
 		Delay: 150
 		DamageCooldown: 150
-		HealIfBelow: 50
+		StartIfBelow: 50
 	Explodes:
 		Weapon: UnitExplodeMedium
 		EmptyWeapon: UnitExplodeMedium
