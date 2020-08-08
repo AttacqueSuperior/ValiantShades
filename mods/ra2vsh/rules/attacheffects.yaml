@@ -135,44 +135,52 @@
 		ValidDamageStates: Critical
 
 ^BuildingDamageFire1:
-	WithIdleDecorationOverlay@damagefire1:
+	WithIdleOverlay@damagefire1:
+		IsDecoration: true
 		Sequence: damagefire1
 		Palette: weakfire
 		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
-	WithIdleDecorationOverlay@damagefire1-heavy:
+	WithIdleOverlay@damagefire1-heavy:
+		IsDecoration: true
 		Sequence: damagefire1
 		Palette: strongfire
 		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire2:
 	Inherits@damagefire: ^BuildingDamageFire1
-	WithIdleDecorationOverlay@damagefire2:
+	WithIdleOverlay@damagefire2:
+		IsDecoration: true
 		Sequence: damagefire2
 		Palette: weakfire
 		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
-	WithIdleDecorationOverlay@damagefire2-heavy:
+	WithIdleOverlay@damagefire2-heavy:
+		IsDecoration: true
 		Sequence: damagefire2
 		Palette: strongfire
 		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire3:
 	Inherits@damagefire: ^BuildingDamageFire2
-	WithIdleDecorationOverlay@damagefire3:
+	WithIdleOverlay@damagefire3:
+		IsDecoration: true
 		Sequence: damagefire3
 		Palette: weakfire
 		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
-	WithIdleDecorationOverlay@damagefire3-heavy:
+	WithIdleOverlay@damagefire3-heavy:
+		IsDecoration: true
 		Sequence: damagefire3
 		Palette: strongfire
 		RequiresCondition: dmg_crit && !being-warped
 
 ^BuildingDamageFire4:
 	Inherits@damagefire: ^BuildingDamageFire3
-	WithIdleDecorationOverlay@damagefire4:
+	WithIdleOverlay@damagefire4:
+		IsDecoration: true
 		Sequence: damagefire4
 		Palette: weakfire
 		RequiresCondition: dmg_heavy && !dmg_crit && !being-warped
-	WithIdleDecorationOverlay@damagefire4-heavy:
+	WithIdleOverlay@damagefire4-heavy:
+		IsDecoration: true
 		Sequence: damagefire4
 		Palette: strongfire
 		RequiresCondition: dmg_crit && !being-warped
