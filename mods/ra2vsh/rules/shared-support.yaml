@@ -70,7 +70,6 @@
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
-		PreviewFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
 		PauseOnCondition: disabled
@@ -145,7 +144,6 @@
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 896
-		PreviewFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:
 		PauseOnCondition: disabled

@@ -16,7 +16,6 @@ nalasr:
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
-		PreviewFacing: 224
 	Armament:
 		Weapon: vulcan
 	BodyOrientation:

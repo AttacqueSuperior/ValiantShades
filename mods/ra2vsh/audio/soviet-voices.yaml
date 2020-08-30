@@ -130,7 +130,7 @@ CosmonautVoice:
 	Voices:
 		Select: ilasseb, ilassec, ilassed, ilassee, ilasmod # ilassea, ilasseb, ilassec, ilassed, ilassee
 		Move: ilasmoa, ilasmob, ilasmoc, ilasmoe # ilasmoa, ilasmob, ilasmoc, ilasmod, ilasmoe
-		Action: ilasata, ilastatb, ilasatc, ilasatd, ilasate #ilasata, ilasatb, ilasatc, ilasatd, ilasatf 
+		Attack: ilasata, ilastatb, ilasatc, ilasatd, ilasate #ilasata, ilasatb, ilasatc, ilasatd, ilasatf
 		Feedback: ilasfea, ilasfeb, ilasfec, ilasfed
 		Die: ilasdia, ilasdib, ilasdic, ilasdid, ilasdie
 
