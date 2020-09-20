@@ -84,11 +84,11 @@ Section "Game" GAME
 	File "${SRCDIR}\COPYING"
 	File "${SRCDIR}\${MOD_ID}.ico"
 	File "${SRCDIR}\SDL2-CS.dll"
-	File "${SRCDIR}\OpenAL-CS.dll"
+	File "${SRCDIR}\OpenAL-CS.Core.dll"
 	File "${SRCDIR}\global mix database.dat"
 	File "${SRCDIR}\MaxMind.Db.dll"
 	File "${SRCDIR}\eluant.dll"
-	File "${SRCDIR}\rix0rrr.BeaconLib.dll"
+	File "${SRCDIR}\BeaconLib.dll"
 	File "${DEPSDIR}\soft_oal.dll"
 	File "${DEPSDIR}\SDL2.dll"
 	File "${DEPSDIR}\freetype6.dll"
@@ -188,8 +188,8 @@ Function ${UN}Clean
 	Delete $INSTDIR\eluant.dll
 	Delete $INSTDIR\freetype6.dll
 	Delete $INSTDIR\SDL2-CS.dll
-	Delete $INSTDIR\OpenAL-CS.dll
-	Delete $INSTDIR\rix0rrr.BeaconLib.dll
+	Delete $INSTDIR\OpenAL-CS.Core.dll
+	Delete $INSTDIR\BeaconLib.dll
 	RMDir /r $INSTDIR\Support
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
