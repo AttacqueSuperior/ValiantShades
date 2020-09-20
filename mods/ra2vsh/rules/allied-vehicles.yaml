@@ -614,14 +614,12 @@ fv:
 		Weapon: CRMachineGun
 		LocalOffset: 188,32,600
 		RequiresCondition: !rank-heroic && ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
+		MuzzleSequence: mgmuzzle
 	Armament@machinegun-elite:
 		Weapon: CRMachineGunE
 		LocalOffset: 188,32,600
 		RequiresCondition: rank-heroic && ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
+		MuzzleSequence: mgmuzzle
 	Tooltip@machinegun:
 		Name: Machinegun IFV
 		RequiresCondition: ifv-mg
@@ -682,14 +680,12 @@ fv:
 		Weapon: DioneGun
 		LocalOffset: 188,32,600
 		RequiresCondition: !rank-heroic && ifv-dione
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
+		MuzzleSequence: mgmuzzle
 	Armament@dione-elite:
 		Weapon: DioneGunE
 		LocalOffset: 188,32,600
 		RequiresCondition: rank-heroic && ifv-dione
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
+		MuzzleSequence: mgmuzzle
 	Tooltip@dione-machinegun:
 		Name: Dione Machinegun IFV
 		RequiresCondition: ifv-dione
@@ -731,10 +727,12 @@ fv:
 		Weapon: CRMP5
 		RequiresCondition: !rank-heroic && ifv-seal
 		LocalOffset: 188,0,600
+		MuzzleSequence: mgmuzzle
 	Armament@seal-elite:
 		Weapon: CRMP5E
 		RequiresCondition: rank-heroic && ifv-seal
 		LocalOffset: 188,0,600
+		MuzzleSequence: mgmuzzle
 	Tooltip@seal:
 		Name: Heavy Machinegun IFV
 		RequiresCondition: ifv-seal

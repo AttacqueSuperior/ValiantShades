@@ -124,6 +124,7 @@ empr:
 fv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	Inherits@machinegunmuzzle: ^WithMachineGunMuzzle
 	icon: fvicon
 
 gaunt:

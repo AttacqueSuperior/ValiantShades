@@ -16,8 +16,7 @@ gapill:
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 768,85,512
-		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
+		MuzzleSequence: mgmuzzle
 	Turreted:
 		TurnSpeed: 1023
 	BodyOrientation:
