@@ -1285,7 +1285,6 @@ howi:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Inherits@IndustrialPlant: ^AffectedByIndustrialPlant
-	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@Berserk: ^Berserkable
 	Valued:
 		Cost: 1100
