@@ -123,7 +123,7 @@ caairp:
 	ProductionAirdropAS:
 		Produces: TechAirport
 		ActorType: pdplane.caairp
-		Facing: 224
+		Facing: 896
 		ReadyAudio: ReinforcementsArrived
 	ExitsDebugOverlay:
 	Exit@1:

@@ -854,7 +854,7 @@ gadrop:
 	ProductionAirdropAS:
 		Produces: DropshipBay
 		ActorType: wolfk
-		Facing: 32
+		Facing: 128
 		ReadyAudio: ReinforcementsArrived
 		RequiresCondition: !build-incomplete && warfactory && !being-warped && !powerdown
 	Power:
