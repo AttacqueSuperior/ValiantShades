@@ -537,6 +537,8 @@
 	GrantCondition@emp-disable:
 		Condition: disabled
 		RequiresCondition: emp
+	RejectsOrders@emp:
+		RequiresCondition: emp
 
 ^DisableOnLowPower:
 	WithColoredOverlay@lowpower:

@@ -808,16 +808,18 @@ atesla:
 
 garobo:
 	Inherits: ^Structure
-	Inherits@damagefire: ^BuildingDamageFire1
+	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
 		Offset: 0, -31
 	idle: ggrobo_a
 		Length: 20
 		ShadowStart: 40
-		Tick: 100
+		Tick: 80
 	damaged-idle: ggrobo_a
 		Start: 20
+		Length: 20
 		ShadowStart: 60
+		Tick: 120
 	make: ggrobomk
 		Length: 20
 		ShadowStart: 20
@@ -826,4 +828,8 @@ garobo:
 			URBAN: GENERIC
 			NEWURBAN: GENERIC
 			DESERT: GENERIC
+	damagefire1:
+		Offset: -20,-7,1
+	damagefire2:
+		Offset: 18,5,1
 	icon: rbccicon

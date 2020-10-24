@@ -2082,11 +2082,27 @@ robo:
 		VoiceSet: RobotTankVoice
 	HitShape:
 	SpawnActorOnDeath:
+		RequiresCondition: !in-water
 		Actor: robo.Husk
 	MobSpawnerSlave:
-		HasFreeWill: true
 		AllowOwnerChange: true
-		DamageTypes: BulletDeath
+		DamageTypes: BulletDeath, DefaultDeath
+		MasterDeadCondition: rcc-dead
+	GrantCondition@disabled-on-rcc-dead:
+		Condition: emp
+		RequiresCondition: rcc-dead
+	GrantConditionOnTerrain@in-water:
+		TerrainTypes: Water
+		Condition: in-water
+	KillsSelf@sink:
+		RequiresCondition: in-water && disabled
+		DamageTypes: DefaultDeath
+	LeavesTrails@water:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 
 robo.Husk:
 	Inherits: ^VehicleHusk
