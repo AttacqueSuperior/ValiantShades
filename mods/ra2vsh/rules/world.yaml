@@ -268,33 +268,21 @@ World:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
-		SmokeType: inviso
-		SmokeSequence: null
 	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
-		SmokeType: inviso
-		SmokeSequence: null
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
-		SmokeType: inviso
-		SmokeSequence: null
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
 		Sequence: smallcraters
-		SmokeType: inviso
-		SmokeSequence: null
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
 		Sequence: mediumcraters
-		SmokeType: inviso
-		SmokeSequence: null
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
 		Sequence: largecraters
-		SmokeType: inviso
-		SmokeSequence: null
 	ResourceLayer:
 	ResourceRenderer:
 		RenderTypes: Ore, Gems, Tiberium

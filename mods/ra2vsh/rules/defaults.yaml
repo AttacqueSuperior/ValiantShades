@@ -373,6 +373,7 @@
 		SequencePalette: placebuilding
 		Palette: placefootprint
 	RenderSprites:
+		Image: plugs
 
 ^Flag:
 	Inherits: ^CivBuilding
@@ -992,7 +993,6 @@
 		CanSlide: true
 		CanHover: true
 		VTOL: true
-		TurnToDock: false
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -1002,7 +1002,6 @@
 		CanSlide: false
 		CanHover: false
 		VTOL: false
-		TurnToDock: true
 		TurnSpeed: 108
 		IdleTurnSpeed: 4
 		Speed: 341
@@ -1140,7 +1139,6 @@
 		CanSlide: true
 		CanHover: true
 		VTOL: true
-		TurnToDock: false
 	FallsToEarthAS:
 		Explosion: PlaneExplode
 		Spins: true

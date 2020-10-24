@@ -65,7 +65,7 @@ shad:
 			all: disable-bonus
 			polarb: disable-bonus
 			josh: disable-bonus
-			camel: disable-bonus
+			caml: disable-bonus
 	SpawnActorOnDeath:
 		Actor: shadhusk
 		DeathType: DefaultDeath
@@ -779,7 +779,6 @@ orca:
 	HitShape:
 	Aircraft:
 		VTOL: true
-		TurnToDock: true
 		AltitudeVelocity: 180
 
 orcahusk:
@@ -1383,7 +1382,6 @@ wolfk:
 		TurnSpeed: 20
 		Speed: 250
 		VTOL: true
-		TurnToDock: false
 		AltitudeVelocity: 180
 	Health:
 		HP: 600000

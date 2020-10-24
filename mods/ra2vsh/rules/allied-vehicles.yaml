@@ -521,7 +521,7 @@ fv:
 			gren: ifv-gren
 			tany: ifv-seal
 			ghost: ifv-seal
-			ccommand: ifv-seal
+			ccomand: ifv-seal
 			snipe: ifv-sniper
 			cleg: ifv-chrono
 			hirano: ifv-hirano
@@ -553,7 +553,7 @@ fv:
 			all: disable-ifvbonus
 			polarb: disable-ifvbonus
 			josh: disable-ifvbonus
-			camel: disable-ifvbonus
+			caml: disable-ifvbonus
 	WithCargoPipsDecoration:
 		Palette: pips
 		Position: BottomLeft

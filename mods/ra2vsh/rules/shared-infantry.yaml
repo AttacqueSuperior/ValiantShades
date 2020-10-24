@@ -278,7 +278,6 @@ dog:
 		CanSlide: false
 		CanHover: true
 		VTOL: true
-		TurnToDock: false
 		CruiseAltitude: 4200
 		InitialFacing: 80
 		TurnSpeed: 256
@@ -335,7 +334,6 @@ dog:
 		CanSlide: false
 		CanHover: true
 		VTOL: true
-		TurnToDock: false
 		TurnSpeed: 40
 		Speed: 140
 	FallsToEarthAS:

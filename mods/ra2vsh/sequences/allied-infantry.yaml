@@ -222,13 +222,16 @@ ccomand:
 	cheer:
 		Start: 340
 	-swim-cheer:
-	-paradrop:
+	paradrop: ccomand-paradrop
+		Start: 0
 	icon: ccomicon
 	
 ptroop:
 	Inherits: ccomand
 	muzzle: yuricntl
 		Length: *
+	paradrop: ptroop-paradrop
+		Start: 0
 	icon: psicicon
 
 tany:
