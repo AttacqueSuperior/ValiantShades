@@ -2027,3 +2027,71 @@ mnrva.paradrop:
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures\n Preloaded for Demeter Squad.
 	AIDeployNotifier:
 		DeployChance: 100
+
+robo:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@factionparachute: ^AlliedParachute
+	Inherits@factionrankpips: ^AlliedVeteranRank
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Robot Tank
+	Buildable:
+		Queue: Vehicle
+		BuildAtProductionType: WarFactory
+		BuildPaletteOrder: 9999
+		Prerequisites: ~disabled
+		Description: Robotic unit armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures
+	Mobile:
+		Speed: 120
+		TurnSpeed: 20
+		Locomotor: lcraft
+	Health:
+		HP: 150000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+		DeathTypes: DefaultDeath
+	Turreted:
+		TurnSpeed: 20
+	Armament@primary:
+		Weapon: 90mm
+		LocalOffset: 525,0,558
+		RequiresCondition: !rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
+	Armament@elite:
+		Weapon: 90mmE
+		LocalOffset: 525,0,558
+		RequiresCondition: rank-heroic
+		MuzzleSequence: ra2cannonmuzzle
+	WithMuzzleOverlay:
+	AttackTurreted:
+		Voice: Attack
+		PauseOnCondition: disabled
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: RobotTankVoice
+	HitShape:
+	SpawnActorOnDeath:
+		Actor: robo.Husk
+	MobSpawnerSlave:
+		HasFreeWill: true
+		AllowOwnerChange: true
+		DamageTypes: BulletDeath
+
+robo.Husk:
+	Inherits: ^VehicleHusk
+	RenderVoxels:
+		Image: robo
+	-CaptureManager:
+	-Capturable:
+	-TransformOnCapture:

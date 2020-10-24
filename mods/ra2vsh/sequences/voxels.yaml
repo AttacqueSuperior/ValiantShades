@@ -282,6 +282,10 @@ mnrva:
 	idle:
 	turret: mnrvatur
 
+robo:
+	idle:
+	turret: robotur
+
 schp:
 	idle:
 	deployed: schpd

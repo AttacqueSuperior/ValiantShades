@@ -320,3 +320,11 @@ AlliedCargoPlaneVoice:
 		Attack: silence
 		Action: silence
 		Die: vcpadia, vcpadib, vcpadic
+
+RobotTankVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vrobsela
+		Move: vrobmova,vrobmovb
+		Attack: vrobatca
+		Die: vrobdiea

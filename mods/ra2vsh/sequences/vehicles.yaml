@@ -250,6 +250,11 @@ propa:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
+robo:
+	Inherits: ^Vehicle
+	Inherits@muzzle: ^WithCannonMuzzle
+	icon: roboicon
+
 rtnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable

@@ -805,3 +805,25 @@ atesla:
 		ShadowStart: 27
 	damagefire1:
 		Offset: -1,1,1
+
+garobo:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
+	Defaults:
+		Offset: 0, -31
+	idle: ggrobo_a
+		Length: 20
+		ShadowStart: 40
+		Tick: 100
+	damaged-idle: ggrobo_a
+		Start: 20
+		ShadowStart: 60
+	make: ggrobomk
+		Length: 20
+		ShadowStart: 20
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+			NEWURBAN: GENERIC
+			DESERT: GENERIC
+	icon: rbccicon

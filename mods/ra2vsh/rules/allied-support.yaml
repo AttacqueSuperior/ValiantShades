@@ -91,3 +91,85 @@ gtgcan:
 		Type: grandcannon
 	IsometricSelectable:
 		DecorationHeight: 45
+
+garobo:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Inherits@damagefire: ^BuildingDamageFire1
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 15
+		Prerequisites: gatech, ~structures.allies
+		Description: Provides and controls 3 Robot Tanks.
+	-CaptureManager:
+	-Capturable:
+	-CapturableProgressBlink:
+	-CapturableProgressBar:
+	-CaptureNotification:
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Robot Control Center
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 600000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	RevealsShroudToIntelligenceOwner:
+		Types: SpySat
+		RevealGeneratedShroud: False
+		Range: 5c0
+	RevealOnDeath:
+		Radius: 2c512
+		DeathTypes: DefaultDeath
+	ExitsDebugOverlay:
+	Exit@n1_0:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 0
+	Exit@0_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 0, -1
+	Exit@n1_n1:
+		SpawnOffset: 280,-280,0
+		ExitCell: -1, -1
+	Exit@1_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 1, -1
+	Exit@n1_1:
+		SpawnOffset: -410,-140,0
+		ExitCell: -1, 1
+	Exit@2_0:
+		SpawnOffset: 410,140,0
+		ExitCell: 2, 0
+	Exit@2_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, -1
+	Exit@2_1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 1
+	Exit@0_2:
+		SpawnOffset: -280,280,0
+		ExitCell: 0, 2
+	Exit@n1_2:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 2
+	Exit@1_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 1, 2
+	Exit@2_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 2
+	MobSpawnerMaster:
+		Actors: robo, robo, robo
+		SlaveDisposalOnKill: DoNothing
+		NoRegeneration: false
+		RespawnTicks: 480
+		ExitByBudding: false
+		SlavesHaveFreeWill: true
+		AggregateHealth: false
