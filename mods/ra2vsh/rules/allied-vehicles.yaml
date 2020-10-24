@@ -2087,10 +2087,12 @@ robo:
 	MobSpawnerSlave:
 		AllowOwnerChange: true
 		DamageTypes: BulletDeath, DefaultDeath
-		MasterDeadCondition: rcc-dead
-	GrantCondition@disabled-on-rcc-dead:
+		MasterDeadCondition: rcc-down
+		GrantConditionWhenMasterIsDisabled: rcc-down
+		GrantConditionWhenMasterIsPaused: rcc-down
+	GrantCondition@disabled-on-rcc-down:
 		Condition: emp
-		RequiresCondition: rcc-dead
+		RequiresCondition: rcc-down
 	GrantConditionOnTerrain@in-water:
 		TerrainTypes: Water
 		Condition: in-water
@@ -2103,6 +2105,11 @@ robo:
 		TerrainTypes: Water
 		StationaryInterval: 18
 		MovingInterval: 6
+		SpawnAtLastPosition: false
+	Hovers:
+		RequiresCondition: !disabled
+		BobDistance: -64
+		InitialHeight: 384
 
 robo.Husk:
 	Inherits: ^VehicleHusk
