@@ -754,3 +754,24 @@ nasntl:
 	damagefire1:
 		Offset: -1,-2,3
 	icon: sntlicon
+
+nabnkr:
+	Inherits: ^Structure
+	Inherits@damagefire: ^BuildingDamageFire1
+	Defaults:
+		Offset: 0, -30
+	idle: ngbnkr
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	garrisoned:
+		Start: 2
+		ShadowStart: 6
+	damaged-garrisoned:
+		Start: 3
+		ShadowStart: 7
+	make: ntbnkrmk
+		Length: 25
+		ShadowStart: 25
+	icon: bnkricon
