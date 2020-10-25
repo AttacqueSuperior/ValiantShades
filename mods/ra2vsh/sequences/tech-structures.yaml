@@ -205,8 +205,10 @@ capowr:
 		Offset: -3,-25,1
 
 catech01:
-	Inherits: ^CivStructure
+	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire1
+	flag: caoild_f
+		Offset: 0, -9
 	Defaults:
 		Offset: 0,-45
 	damagefire1:

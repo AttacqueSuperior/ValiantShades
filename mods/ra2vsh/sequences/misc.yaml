@@ -74,6 +74,12 @@ beacon:
 	arrow: pbeacon
 		Length: 1
 		ZOffset: 2047
+	clock: null
+	circles: ring
+		Length: *
+		ZOffset: 2047
+	beacon-arrow: beacon-arrow
+		Length: *
 
 crate-effects:
 	Defaults: null
@@ -106,6 +112,7 @@ crate:
 debris:
 	Defaults:
 		Length: *
+	idle: null # HACK because weapon template sequences are validated by --check-yaml
 	small1: dbris1sm
 	small2: dbris2sm
 	small3: dbris3sm
@@ -412,6 +419,7 @@ fireball:
 meteor:
 	Defaults:
 		Length: *
+	idle: null # HACK because weapon template sequences are validated by --check-yaml
 	large: metlarge
 	small: metsmall
 	large-trailer: metltral

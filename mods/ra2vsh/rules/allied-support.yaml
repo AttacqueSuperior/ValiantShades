@@ -99,7 +99,7 @@ garobo:
 	Inherits@damagefire: ^BuildingDamageFire2
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 250
+		BuildPaletteOrder: 50
 		Prerequisites: gatech, ~structures.allies
 		Description: Provides and controls 3 Robot Tanks.
 	-CaptureManager:

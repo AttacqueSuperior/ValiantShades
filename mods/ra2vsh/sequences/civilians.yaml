@@ -57,8 +57,6 @@ vladimir:
 		Length: 2
 		Facings: 8
 	-cheer:
-	-panic-stand:
-	-panic-run:
 
 pentgen:
 	Inherits: ^CivInfantry
@@ -79,8 +77,6 @@ pentgen:
 		Length: 2
 		Facings: 8
 	-cheer:
-	-panic-stand:
-	-panic-run:
 
 pres:
 	Inherits: ^CivInfantry
@@ -88,7 +84,9 @@ pres:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-	-shoot:
+	shoot:
+		Start: 0
+		Length: 1
 	-cheer:
 	panic-run:
 		Start: 86
@@ -104,8 +102,6 @@ ssrv:
 		Length: 6
 		Facings: 8
 	-cheer:
-	-panic-stand:
-	-panic-run:
 
 civa:
 	Inherits: ^CivInfantry
@@ -121,7 +117,9 @@ civbbp:
 
 civbfm:
 	Inherits: ^CivInfantry
-	-shoot:
+	shoot:
+		Start: 0
+		Length: 1
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -133,7 +131,9 @@ civbfm:
 
 civbf:
 	Inherits: ^CivInfantry
-	-shoot:
+	shoot:
+		Start: 0
+		Length: 1
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -145,7 +145,9 @@ civbf:
 
 civbtm:
 	Inherits: ^CivInfantry
-	-shoot:
+	shoot:
+		Start: 0
+		Length: 1
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -191,6 +193,16 @@ eins:
 	die2:
 		Start: 118
 		Length: 15
+	shoot:
+		Start: 0
+		Length: 1
+	panic-stand:
+		Facings: 8
+	panic-run:
+		Start: 133
+		Length: 6
+		Facings: 8
+		Tick: 100
 
 rmnv:
 	Inherits: ^Infantry
@@ -201,3 +213,13 @@ rmnv:
 		Start: 180
 	cheer:
 		Start: 196
+	shoot:
+		Start: 0
+		Length: 1
+	panic-stand:
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100

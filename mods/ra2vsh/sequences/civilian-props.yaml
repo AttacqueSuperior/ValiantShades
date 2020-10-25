@@ -256,7 +256,9 @@ gagate_a:
 		ShadowStart: 30
 
 spkr01:
+	Inherits: ^Pole
 	Defaults:
 		AddExtension: false
+		UseTilesetExtension: false
 	idle: spkr01.urb
 		ShadowStart: 1

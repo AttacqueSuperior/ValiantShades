@@ -485,7 +485,7 @@ sign06:
 	Inherits: ^StreetSign
 
 spkr01:
-	Inherits: ^Tree
+	Inherits: ^TelephonePole
 	Tooltip:
 		Name: Drive-In Speaker
 	MapEditorData:

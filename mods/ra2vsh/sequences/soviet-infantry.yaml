@@ -371,8 +371,9 @@ kamikaze:
 	cheer:
 		Start: 89
 		Length: 13
-	-die1:
-	-die2:
+	shoot:
+		Start: 0
+		Length: 1
 	icon: kamiicon.png
 		AddExtension: false
 
