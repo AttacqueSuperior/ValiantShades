@@ -127,7 +127,11 @@ e1:
 	WithInfantryBody@Editor:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !editorhack
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployChance: 75
 		DeployTicks: 1000
 		UndeployTicks: 1000
@@ -316,7 +320,11 @@ ggi:
 	WithInfantryBody@Editor:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !editorhack
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployChance: 75
 		DeployTicks: 1000
 		UndeployTicks: 1000
@@ -910,7 +918,11 @@ hirano:
 	ExplodeWeapon@hilbert:
 		RequiresCondition: hilbertgenerate
 		Weapon: HilbertEffectCreator
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployTrigger: Attack
 		DeployChance: 33
 		DeployTicks: 1200

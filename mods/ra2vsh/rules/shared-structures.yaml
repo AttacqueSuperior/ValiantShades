@@ -183,8 +183,11 @@
 	GrantConditionOnPrerequisite@aideploy-soviet:
 		Condition: sovietengi
 		Prerequisites: sovietengi
-	AIDeployNotifier:
-		RequiresCondition: !aihasprimarybarracks
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai && !aihasprimarybarracks
 		DeployChance: 100
 		DeployTicks: 15
 		DeployTrigger: Periodically
@@ -363,8 +366,11 @@
 	GrantConditionOnPrerequisite@cheater-ai:
 		Condition: cheater-ai
 		Prerequisites: cheater-ai
-	AIDeployNotifier:
-		RequiresCondition: !aihasprimarywarfactory
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai && !aihasprimarywarfactory
 		DeployChance: 100
 		DeployTicks: 15
 		DeployTrigger: Periodically

@@ -413,7 +413,11 @@ htk.ai:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~naweap, ~cheater-ai
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployChance: 75
 
 htk.ai-repair:

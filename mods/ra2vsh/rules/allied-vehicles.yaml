@@ -296,7 +296,11 @@ hmmv.ai:
 	Buildable:
 		BuildPaletteOrder: 2000
 		Prerequisites: ~gaweap, ~cheater-ai
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployChance: 75
 
 hmmv.ai-repair:
@@ -2025,7 +2029,11 @@ mnrva.paradrop:
 	Buildable:
 		BuildPaletteOrder: 20001
 		Description: Armed with a cannon.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Structures\n Preloaded for Demeter Squad.
-	AIDeployNotifier:
+	GrantConditionOnBotOwner@shared:
+		Condition: enable-ai
+		Bots: normal, brutal
+	AutoDeployer:
+		RequiresCondition: enable-ai
 		DeployChance: 100
 
 robo:

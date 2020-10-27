@@ -208,3 +208,4 @@ Player:
 	ProvidesPrerequisite@iraq:
 		Prerequisite: iraq
 		Factions: iraq
+	AutoDeployManager:
