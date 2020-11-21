@@ -1003,8 +1003,9 @@
 		CanHover: false
 		VTOL: false
 		TurnSpeed: 108
-		IdleTurnSpeed: 4
+		IdleTurnSpeed: 8
 		Speed: 341
+		IdleSpeed: 132
 		MaximumPitch: 168
 		InitialFacing: 896
 	Hovers@CRUISING:
@@ -1012,11 +1013,6 @@
 	WithVoxelBody:
 	GpsDotAS:
 		Sequence: plane
-	GrantConditionWhileIdling:
-		Condition: idling
-	SpeedMultiplier@idling:
-		RequiresCondition: idling
-		Modifier: 40
 
 ^SpawnedPlane:
 	Inherits: ^Plane
