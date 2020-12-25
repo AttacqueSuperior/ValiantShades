@@ -2067,12 +2067,12 @@ robo:
 	Turreted:
 		TurnSpeed: 20
 	Armament@primary:
-		Weapon: 90mm
+		Weapon: RobotTankCannon
 		LocalOffset: 525,0,558
 		RequiresCondition: !rank-heroic
 		MuzzleSequence: ra2cannonmuzzle
 	Armament@elite:
-		Weapon: 90mmE
+		Weapon: RobotTankCannonE
 		LocalOffset: 525,0,558
 		RequiresCondition: rank-heroic
 		MuzzleSequence: ra2cannonmuzzle

@@ -712,3 +712,38 @@ TurtleCannonE:
 	Inherits: TurtleCannon
 	Warhead@2Eff: CreateEffect
 		ExplosionPalette: heroictsexp
+
+RobotTankCannon:
+	Inherits: ^LargeBullet
+	ReloadDelay: 40
+	Range: 5c0
+	Burst: 2
+	Report: tnkfire4v1.wav
+	Projectile: BulletAS
+		Image: 90mm
+	Warhead@1Dam: SpreadDamage
+		Damage: 15000
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: small_clsn
+		ExplosionPalette: rookiera2exp
+		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
+		ValidTargets: Ground, Air
+
+RobotTankCannonE:
+	Inherits: RobotTankCannon
+	Warhead@2Eff: CreateEffect
+		ExplosionPalette: heroicra2exp
+	Warhead@3EffWater: CreateEffect
+		ExplosionPalette: heroicwaterexp
