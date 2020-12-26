@@ -78,15 +78,14 @@ MirageGun:
 	ReloadDelay: 70
 	Range: 7c0
 	Report: vmiratta.wav
-	Projectile: LaserZap
-		Width: 48
+	Projectile: Railgun
 		Duration: 15
-		TrackTarget: false
-		Color: C06000
-		SecondaryBeam: true
-		SecondaryBeamColor: C0600060
-		SecondaryBeamWidth: 96
-		SecondaryBeamZOffset: 1
+		BeamWidth: 32
+		BeamColor: C06000
+		HelixColor: A05000
+		HelixRadius: 48
+		HelixThickness: 40
+		HelixRadiusDeltaPerTick: 4
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 100000
