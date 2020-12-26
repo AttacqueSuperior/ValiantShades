@@ -711,7 +711,7 @@
 		Palette: pips
 		Position: TopRight
 		RequiresCondition: hospital
-		ValidStances: Ally
+		ValidRelationships: Ally
 	GrantConditionOnPrerequisite@hospital:
 		Condition: hospital
 		Prerequisites: hospital
@@ -770,7 +770,7 @@
 		Palette: pips
 		Position: TopRight
 		RequiresCondition: machineshop
-		ValidStances: Ally
+		ValidRelationships: Ally
 	GrantConditionOnPrerequisite@machineshop:
 		Condition: machineshop
 		Prerequisites: machineshop
@@ -803,7 +803,7 @@
 		Palette: pips
 		Position: BottomLeft
 		RequiresCondition: propaganda
-		ValidStances: Ally
+		ValidRelationships: Ally
 
 ^HuskBurn:
 	WithIdleOverlay:

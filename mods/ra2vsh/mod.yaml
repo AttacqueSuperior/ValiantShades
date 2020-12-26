@@ -8,11 +8,11 @@ Metadata:
 PackageFormats: Mix, AudioBag
 
 Packages:
-	~^Content/ra2
+	~^SupportDir|Content/ra2
 	.
 	$ra2vsh: ra2vsh
-	./mods/common: common
-	./mods/as: as
+	^EngineDir
+	^EngineDir|mods/common: common
 	~ra2.mix
 	~ra2md.mix
 	~language.mix
@@ -80,7 +80,7 @@ Packages:
 
 MapFolders:
 	ra2vsh|maps: System
-	~^maps/ra2vsh/{DEV_VERSION}: User
+	~^SupportDir|maps/ra2vsh/{DEV_VERSION}: User
 
 Rules:
 	ra2vsh|rules/proxy-actors.yaml
@@ -154,9 +154,9 @@ Chrome:
 	ra2vsh|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
-	as|OpenRA.Mods.AS.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.AS.dll
 
 ChromeLayout:
 	ra2vsh|chrome/assetbrowser.yaml

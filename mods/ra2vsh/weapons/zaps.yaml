@@ -9,7 +9,7 @@ ElectricBolt:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 ElectricBoltE:
 	Inherits: ElectricBolt
@@ -32,7 +32,7 @@ AssaultBolt:
 		Range: 42
 		Duration: 75
 		Condition: charged
-		ValidStances: Ally
+		ValidRelationships: Ally
 		ValidTargets: TeslaBoost
 
 CoilBolt:
@@ -76,7 +76,7 @@ TankBolt:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 TankBoltE:
 	Inherits: TankBolt
@@ -106,7 +106,7 @@ SonicZap:
 		Falloff: 100, 100
 		Damage: 4000
 		AffectsParent: false
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		Versus:
 			Heavy: 80
 			Concrete: 60
@@ -117,7 +117,7 @@ SonicZap:
 		Falloff: 50, 50
 		Damage: 4000
 		AffectsParent: false
-		ValidStances: Ally
+		ValidRelationships: Ally
 		Versus:
 			Heavy: 80
 			Concrete: 60
@@ -418,7 +418,7 @@ FairyBolt:
 		ThrowWithoutTarget: false
 		Weapon: FairyBoltShrapnel
 		ValidTargets: Infantry, Vehicle, Ship, Structure
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		AimTargetStances: Neutral, Enemy
 	Warhead@2Eff: CreateEffect
 		Explosions: fairyhit
@@ -495,7 +495,7 @@ VolkovRail:
 		Falloff: 100, 0
 		Damage: 150000
 		DamageTypes: Prone50Percent, TriggerProne, Kamikazify, DefaultDeath
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		Versus:
 			None: 100
 			Flak: 100
@@ -720,7 +720,7 @@ CyborgShrapnel:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 CyborgShrapnelE:
 	Inherits: CyborgShrapnel
@@ -762,7 +762,7 @@ MalfestorBeam:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 MalfestorBeamE:
 	Inherits: MalfestorBeam
@@ -788,12 +788,12 @@ NewTankBolt:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 	Warhead@fsw: FireShrapnel
 		AimChance: 100
 		Weapon: NewTankBoltShrapnel
 		ValidTargets: Ground
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		AimTargetStances: Neutral, Enemy
 		Amount: 2
 

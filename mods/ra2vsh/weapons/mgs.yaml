@@ -465,7 +465,7 @@ HopliteGun:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 

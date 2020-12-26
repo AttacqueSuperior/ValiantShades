@@ -121,7 +121,7 @@ Maverick:
 		Condition: berserk
 		ValidTargets: Berserkable
 		InvalidTargets: Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 Medusa:
 	Inherits: ^AAMissile

@@ -54,7 +54,7 @@ sabot:
 		Falloff: 100, 50, 0
 		Damage: 225000
 		DamageTypes: Prone50Percent, TriggerProne, AltBulletDeath, DefaultDeath
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		Versus:
 			None: 2
 			Flak: 2
@@ -566,7 +566,7 @@ CyborgGun:
 		Condition: emp
 		ValidTargets: Vehicle
 		InvalidTargets: EMPImmune, Air
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 	Warhead@3Shr: FireShrapnel
 		Weapon: CyborgShrapnel
 		Amount: 3

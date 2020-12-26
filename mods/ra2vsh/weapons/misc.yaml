@@ -108,7 +108,7 @@ RepairBullet:
 		Spread: 213
 		Damage: -50000
 		AffectsParent: true
-		ValidStances: Ally
+		ValidRelationships: Ally
 		ValidTargets: Repair, TerrorDroned
 		DamageTypes: KillTerrorDrone
 	Warhead@spark: FireShrapnel
@@ -204,7 +204,7 @@ WeatherStormInit:
 		Delay: 18
 	Warhead@stormradar: GrantExternalConditionToPlayer
 		ValidTargets: Ground, Air, Water
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		Condition: radar-stormed
 		Range: 0
 		Duration: 350
@@ -698,7 +698,7 @@ HilbertEffect:
 		Range: 1c448
 		Duration: 500
 		Condition: hilberteffect
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 	Warhead@2Eff: CreateEffect
 		Explosions: hilberteffect
 		ExplosionPalette: heroictsexp
@@ -847,7 +847,7 @@ IronCurtainPower:
 		Range: 2c0
 		Duration: 750
 		Condition: invulnerability
-		ValidStances: Ally
+		ValidRelationships: Ally
 
 ForceShieldPower:
 	Projectile: InstantExplode
@@ -862,7 +862,7 @@ ForceShieldPower:
 		Range: 6c0
 		Duration: 375
 		Condition: forceshield
-		ValidStances: Ally
+		ValidRelationships: Ally
 		AffectsParent: true
 
 MeteorSpawner:

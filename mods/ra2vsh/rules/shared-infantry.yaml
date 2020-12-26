@@ -64,12 +64,12 @@ engineer:
 		LocalOffset: 164,0,864
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	AutoTargetPriority@defuse:
 		ValidTargets: C4Attached, IvanBombed
 		InvalidTargets: NoAutoTarget
-		ValidStances: Ally
+		ValidRelationships: Ally
 	AutoTarget:
 		ScanRadius: 4
 	AttackMove:

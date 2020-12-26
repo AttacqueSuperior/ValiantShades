@@ -694,7 +694,7 @@ gaweat:
 	ActorPreviewPlaceBuildingPreview:
 		OverridePalette: placeweathercontroller
 	RevealsShroud@revealhimself:
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
@@ -762,7 +762,7 @@ gacsph:
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		KillCargo: False
 		SelectionCursor: chronosphere
@@ -784,7 +784,7 @@ gacsph:
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown && aiowner
 	RevealsShroud@revealhimself:
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:
@@ -938,7 +938,7 @@ gaspir:
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
 	RevealsShroud@revealhimself:
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		MaxHeightDelta: 3
 		Range: 2c768
 	SpawnSurvivors:

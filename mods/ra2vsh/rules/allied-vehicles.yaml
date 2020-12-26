@@ -247,21 +247,21 @@ hmmv:
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Armament@defuse:
 		Weapon: DefuseKit
 		LocalOffset: 317,0,1111
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
 		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
-		ValidStances: Ally
+		ValidRelationships: Ally
 	WithCargoPipsDecoration:
 		Palette: pips
 		Position: BottomLeft
@@ -637,16 +637,16 @@ fv:
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Armament@defuse:
 		Weapon: IFVDefuseKit
 		LocalOffset: 164,0,864
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Tooltip@repair:
 		Name: Repair IFV
 		RequiresCondition: ifv-repair
@@ -1086,7 +1086,7 @@ fv:
 		RequiresCondition: ifv-repair
 		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
-		ValidStances: Ally
+		ValidRelationships: Ally
 	AutoTargetPriority@chrono:
 		RequiresCondition: ifv-chrono
 		ValidTargets: Temporal

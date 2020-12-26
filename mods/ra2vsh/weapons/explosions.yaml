@@ -569,11 +569,11 @@ DefuseKit:
 		Duration: 3
 		Condition: detach
 		ValidTargets: IvanBombed, C4Attached
-		ValidStances: Ally
+		ValidRelationships: Ally
 	Warhead@DetachDelayedWeapon: DetachDelayedWeapon
 		Types: ivanbomb, c4
 		Range: 128
-		ValidStances: Ally
+		ValidRelationships: Ally
 		ValidTargets: IvanBombed, C4Attached
 	Warhead@TargetValidator: SpreadDamage
 		ValidTargets: IvanBombed, C4Attached

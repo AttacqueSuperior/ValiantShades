@@ -364,21 +364,21 @@ htk:
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Armament@defuse:
 		Weapon: DefuseKit
 		LocalOffset: 335,0,1140
 		RequiresCondition: repairmode
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	AutoTargetPriority@Repair:
 		RequiresCondition: repairmode
 		ValidTargets: Repair, C4Attached, IvanBombed, TerrorDroned
 		InvalidTargets: NoAutoTarget
-		ValidStances: Ally
+		ValidRelationships: Ally
 	WithCargoPipsDecoration:
 		Palette: pips
 		Position: BottomLeft

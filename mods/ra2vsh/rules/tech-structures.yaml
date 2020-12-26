@@ -68,10 +68,10 @@ caoild:
 		DeathTypes: DefaultDeath
 	TooltipDescription@ally:
 		Description: Provides additional funds.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive additional funds.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 caoild.rubble:
 	Inherits: ^Rubble
@@ -157,10 +157,10 @@ caairp:
 	SupportPowerChargeBar:
 	TooltipDescription@ally:
 		Description: Provides paratroopers and additional reinforcements.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive paratroopers and additional reinforcements.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 caairp.rubble:
 	Inherits: ^Rubble
@@ -279,10 +279,10 @@ cahosp:
 		RequiresCondition: hospital > 4
 	TooltipDescription@ally:
 		Description: Provides infantry with self-healing.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to enable self-healing for infantry.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 cahosp.rubble:
 	Inherits: ^Rubble
@@ -404,10 +404,10 @@ caoutp:
 		RequiresCondition: dmg_crit
 	TooltipDescription@ally:
 		Description: Provides and defends buildable area. Can repair vehicles for a cost.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to gain and defend this buildable area.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 caoutp.rubble:
 	Inherits: ^Rubble
@@ -544,10 +544,10 @@ caslab:
 		RequiresCondition: empr && !ownerless
 	TooltipDescription@ally:
 		Description: Periodically provides hidden units.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to periodically receive hidden units.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 caslab.rubble:
 	Inherits: ^Rubble
@@ -654,10 +654,10 @@ camach:
 		RequiresCondition: machineshop > 4
 	TooltipDescription@ally:
 		Description: Provides mechanical units with self-healing.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to enable self-healing for mechanical units.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 camach.rubble:
 	Inherits: ^Rubble
@@ -720,10 +720,10 @@ capowr:
 		RequiresCondition: dmg_crit
 	TooltipDescription@ally:
 		Description: Provides additional power.
-		ValidStances: Ally
+		ValidRelationships: Ally
 	TooltipDescription@other:
 		Description: Capture to receive additional power.
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 
 capowr.rubble:
 	Inherits: ^Rubble

@@ -203,8 +203,8 @@ shk:
 		Name: secondary
 		Weapon: AssaultBolt
 		LocalOffset: 320,128,1024
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 		Cursor: ability
 		OutsideRangeCursor: ability
 	Armament@opentopped:

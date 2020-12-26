@@ -284,7 +284,7 @@
 	CapturableProgressBar:
 	Capturable:
 		Types: rubble
-		ValidStances: Ally, Neutral, Enemy
+		ValidRelationships: Ally, Neutral, Enemy
 	CapturableProgressBar:
 	TransformOnCapture:
 		ForceHealthPercentage: 15
@@ -1041,7 +1041,7 @@
 		HP: 28000
 	HiddenUnderFog:
 		Type: CenterPosition
-		AlwaysVisibleStances: None
+		AlwaysVisibleRelationships: None
 	ScriptTriggers:
 	HitShape:
 	MapEditorData:
@@ -1061,7 +1061,7 @@
 	CaptureManager:
 	Capturable:
 		Types: husk
-		ValidStances: Enemy, Neutral
+		ValidRelationships: Enemy, Neutral
 	TransformOnCapture:
 		ForceHealthPercentage: 25
 	Targetable:
