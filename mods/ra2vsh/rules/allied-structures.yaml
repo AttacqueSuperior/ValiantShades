@@ -686,7 +686,7 @@ gaweat:
 		Weapon: WeatherStormInit
 		AirburstAltitude: 4c512
 		DisplayRadarPing: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 	RenderSprites:
@@ -778,7 +778,7 @@ gacsph:
 		ChargeInterval: 7500
 		Description: Chronoshift
 		EndChargeSound: schropen.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		LongDesc: Teleports a group of units across\nthe map.
 		PauseOnCondition: disabled
@@ -933,7 +933,7 @@ gaspir:
 		Weapon: ForceShieldPower
 		EndChargeSound: siroread.wav
 		DisplayRadarPing: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:

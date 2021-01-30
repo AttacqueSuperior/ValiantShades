@@ -727,7 +727,7 @@ nairon:
 		Weapon: IronCurtainPower
 		EndChargeSound: siroread.wav
 		DisplayRadarPing: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
 	SupportPowerChargeBar:
@@ -808,7 +808,7 @@ napsyd:
 		LongDesc: Shifts ownership of enemy mindcontrollable units.
 		# TODO: This are actually no speech notifications
 		EndChargeSound: spsyopen.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		PauseOnCondition: disabled
 		RequiresCondition: !build-incomplete && !powerdown
