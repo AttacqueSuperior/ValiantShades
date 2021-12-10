@@ -96,10 +96,8 @@ suvw:
 stang:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Mustang
+		Name: Corvette
 		GenericName: Sports Car
-	RenderVoxels:
-		NormalsPalette: ts-normals
 
 ptruck:
 	Inherits: ^CivVehicle
