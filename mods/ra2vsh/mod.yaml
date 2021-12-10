@@ -76,6 +76,7 @@ Packages:
 	ra2vsh|bits/structures
 	ra2vsh|bits/animations
 	ra2vsh|bits/projectiles
+	ra2vsh|bits/civilian
 	ra2vsh|uibits
 
 MapFolders:
