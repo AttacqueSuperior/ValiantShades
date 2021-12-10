@@ -50,8 +50,6 @@ wini:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Recreational Vehicle
-	RenderVoxels:
-		NormalsPalette: ts-normals
 
 propa:
 	Inherits: ^CivVehicle
@@ -74,8 +72,6 @@ cona:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Excavator
-	RenderVoxels:
-		NormalsPalette: ts-normals
 
 trucka:
 	Inherits: ^CivVehicle
