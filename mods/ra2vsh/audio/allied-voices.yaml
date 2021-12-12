@@ -132,6 +132,14 @@ TDCommandoVoice:
 		Feedback: itdcomfea, itdcomfeb
 		Die: itdcomdia
 
+UmagonVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iumagsea, iumagseb, iumagsec, iumagsed
+		Move: iumagmoa, iumagmob, iumagmoc
+		Attack: iumagata, iumagatb, iumagatc, iumagatd
+		Die: iumagdia, iumagdib, iumagdic
+
 AlliedVehicleVoice:
 	DefaultVariant: .wav
 	Voices:
