@@ -401,7 +401,7 @@ Container@PLAYER_WIDGETS:
 							Width: 202
 							Height: 157
 							Children:
-						VqaPlayer@PLAYER:
+						VideoPlayer@PLAYER:
 							X: 15
 							Y: 49
 							Width: 202
