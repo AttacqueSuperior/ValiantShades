@@ -308,6 +308,8 @@ SoundFormats: Wav, Aud
 
 SpriteFormats: ShpTS, TmpTS, PngSheet, ShpTD
 
+TerrainFormat: DefaultTerrain
+
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:
 		TEMPERATE: .tem
