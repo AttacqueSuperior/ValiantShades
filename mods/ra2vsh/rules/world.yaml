@@ -216,39 +216,20 @@
 		InternalName: russia
 		Side: Soviets
 		Description: Russia is leading the Soviet\nUnion's political agenda on the globe. # \nSpecial Vehicle: Tesla Tank
-	ResourceType@Ore:
-		ResourceType: 1
-		Palette: resource
-		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
-		MaxDensity: 12
-		ValuePerUnit: 50
-		Type: Ore
-		Name: Valuable Ore - ($50/bale)
-		AllowedTerrainTypes: Clear, Rough, Road
-		AllowUnderActors: false
-		TerrainType: Ore
-	ResourceType@Gems:
-		ResourceType: 2
-		Palette: resource
-		Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
-		MaxDensity: 12
-		ValuePerUnit: 100
-		Type: Gems
-		Name: Valuable Gems - ($100/bale)
-		AllowedTerrainTypes: Clear, Rough, Road
-		AllowUnderActors: false
-		TerrainType: Gems
-	ResourceType@Tiberium:
-		ResourceType: 3
-		Palette: tibdawn
-		Sequences: tdtib01
-		MaxDensity: 12
-		ValuePerUnit: 37
-		Type: Tiberium
-		Name: Valuable Tiberium - ($37/bale)
-		AllowedTerrainTypes: Clear, Rough, Road
-		AllowUnderActors: false
-		TerrainType: Tiberium
+	ResourceRenderer:
+		ResourceTypes:
+			Ore:
+				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+				Palette: resource
+				Name: Valuable Ore - ($50/bale)
+			Gems:
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				Palette: resource
+				Name: Valuable Gems - ($100/bale)
+			Tiberium:
+				Sequences: tdtib01
+				Palette: tibdawn
+				Name: Valuable Tiberium - ($37/bale)
 	CliffBackImpassabilityLayer:
 	ExitsDebugOverlayManager:
 	DevOffsetOverlayManager:
@@ -284,8 +265,25 @@ World:
 		Type: LargeCrater
 		Sequence: largecraters
 	ResourceLayer:
-	ResourceRenderer:
-		RenderTypes: Ore, Gems, Tiberium
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				Palette: resource
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Ore
+			Gems:
+				ResourceIndex: 2
+				Palette: resource
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Gems
+			Tiberium:
+				ResourceIndex: 3
+				Palette: tibdawn
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Tiberium
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
@@ -437,6 +435,23 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorResourceLayer:
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Ore
+			Gems:
+				ResourceIndex: 2
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Gems
+			Tiberium:
+				ResourceIndex: 3
+				MaxDensity: 12
+				AllowedTerrainTypes: Clear, Rough, Road
+				TerrainType: Tiberium
 	EditorSelectionLayer:
 		FootprintAlpha: 0.55
 	LoadWidgetAtGameStart:

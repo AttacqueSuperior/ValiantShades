@@ -1,6 +1,11 @@
 ^BasePlayer:
 	AlwaysVisible:
 	Shroud:
+	PlayerResources:
+		ResourceValues:
+			Ore: 50
+			Gems: 100
+			Tiberium: 37
 
 EditorPlayer:
 	Inherits: ^BasePlayer
@@ -93,7 +98,6 @@ Player:
 	ConquestVictoryConditions:
 	PowerManager:
 	AllyRepair:
-	PlayerResources:
 	DeveloperMode:
 		CheckboxEnabled: true
 		CheckboxDisplayOrder: 5
