@@ -331,34 +331,36 @@ AssetBrowser:
 	SupportedExtensions: .shp, .png, .tem, .sno, .urb, .sha, .des, .ubn
 
 GameSpeeds:
-	slowest:
-		Name: Slowest
-		Timestep: 80
-		OrderLatency: 2
-	slower:
-		Name: Slower
-		Timestep: 50
-		OrderLatency: 3
-	default:
-		Name: Normal
-		Timestep: 40
-		OrderLatency: 3
-	fast:
-		Name: Fast
-		Timestep: 33
-		OrderLatency: 4
-	faster:
-		Name: Faster
-		Timestep: 25
-		OrderLatency: 6
-	fastest:
-		Name: Fastest
-		Timestep: 16
-		OrderLatency: 8
-	ludicrous:
-		Name: Ludicrous
-		Timestep: 5
-		OrderLatency: 9
+	DefaultSpeed: default
+	Speeds:
+		slowest:
+			Name: Slowest
+			Timestep: 80
+			OrderLatency: 2
+		slower:
+			Name: Slower
+			Timestep: 50
+			OrderLatency: 3
+		default:
+			Name: Normal
+			Timestep: 40
+			OrderLatency: 3
+		fast:
+			Name: Fast
+			Timestep: 33
+			OrderLatency: 4
+		faster:
+			Name: Faster
+			Timestep: 25
+			OrderLatency: 6
+		fastest:
+			Name: Fastest
+			Timestep: 16
+			OrderLatency: 8
+		ludicrous:
+			Name: Ludicrous
+			Timestep: 5
+			OrderLatency: 9
 
 ModContent:
 	InstallPromptMessage: Red Alert 2 - Valiant Shades requires artwork and audio from the original games.
