@@ -185,7 +185,7 @@
 		Sequence: null
 		RequiresCondition: !disabled
 	WithColoredOverlay@boris-airstrike:
-		Palette: boris-airstrike
+		Color: E0000080
 		RequiresCondition: boris-airstrike
 	ExternalCondition@boris-airstrike:
 		Condition: boris-airstrike
@@ -344,7 +344,7 @@
 		OwnerType: InternalName
 	-Warpable:
 	-Targetable@Temporal:
-	-WithColoredOverlay@temporal:
+	-WithFlickeringColoredOverlay@temporal:
 	-WithColoredOverlay@temporal2:
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:

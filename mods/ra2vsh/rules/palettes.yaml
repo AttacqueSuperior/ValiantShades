@@ -48,7 +48,6 @@
 		BaseName: artemis
 		BasePalette: artemis
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
-	PlayerHighlightPalette:
 	PaletteFromFile@player:
 		Name: player
 		Filename: unittem.pal
@@ -235,28 +234,6 @@
 		BaseName: infantry-cloak
 		BasePalette: infantry
 		Alpha: 0.50
-	PaletteFromRGBA@invuln:
-		Name: invuln
-		R: 128
-		G: 0
-		B: 0
-		A: 128
-	FlickeringPaletteEffect@invuln:
-		PaletteName: invuln
-		BaseColor: 40000080
-		AmplitudeRed: 48
-		QuantizationCount: 24
-	PaletteFromRGBA@forceshield:
-		Name: forceshield
-		R: 0
-		G: 0
-		B: 128
-		A: 128
-	FlickeringPaletteEffect@forceshield:
-		PaletteName: forceshield
-		BaseColor: 00005080
-		AmplitudeBlue: 36
-		QuantizationCount: 36
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255
@@ -269,49 +246,6 @@
 		G: 255
 		B: 255
 		A: 64
-	PaletteFromRGBA@lowpower:
-		Name: lowpower
-		R: 0
-		G: 0
-		B: 0
-		A: 96
-	PaletteFromRGBA@empdisable:
-		Name: empdisable
-		R: 40
-		G: 40
-		B: 80
-		A: 128
-	PaletteFromRGBA@temporal:
-		Name: temporal
-		R: 128
-		G: 200
-		B: 255
-		A: 128
-	FlickeringPaletteEffect@temporal:
-		PaletteName: temporal
-		BaseColor: 80D0FF10
-		AmplitudeRed: 8
-		AmplitudeGreen: 13
-		AmplitudeBlue: 16
-		QuantizationCount: 48
-	PaletteFromRGBA@berserk:
-		Name: berserk
-		R: 255
-		G: 88
-		B: 0
-		A: 128
-	PaletteFromRGBA@boris-airstrike:
-		Name: boris-airstrike
-		R: 224
-		G: 0
-		B: 0
-		A: 128
-	PaletteFromRGBA@hilberteffect:
-		Name: hilberteffect
-		R: 0
-		G: 255
-		B: 255
-		A: 128
 	TSShroudPalette@shroud:
 		Name: shroud
 	ShroudRenderer:

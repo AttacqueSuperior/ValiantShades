@@ -177,7 +177,7 @@ dron:
 	Inherits@factionrankpips: ^SovietVeteranRank
 	WithColoredOverlay@temporal2:
 		RequiresCondition: being-warped
-		Palette: lowpower
+		Color: 00000060
 	Explodes@temporal:
 		Weapon: SmallTemporalExplode
 		EmptyWeapon: SmallTemporalExplode

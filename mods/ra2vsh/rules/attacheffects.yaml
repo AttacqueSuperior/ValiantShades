@@ -315,8 +315,11 @@
 		RequiresCondition: swimming && !prevent-ground-target
 
 ^IronCurtainable:
-	WithColoredOverlay@ironcurtain:
+	WithFlickeringColoredOverlay@ironcurtain:
 		RequiresCondition: invulnerability
+		Color: 40000080
+		Amplitude: 300000
+		QuantizationCount: 24
 	DamageMultiplier@ironcurtain:
 		RequiresCondition: invulnerability
 		Modifier: 0
@@ -349,12 +352,14 @@
 		ScaleWithCurrentHealthPercentage: true
 	Targetable@Temporal:
 		TargetTypes: Temporal
-	WithColoredOverlay@temporal:
+	WithFlickeringColoredOverlay@temporal:
 		RequiresCondition: being-warped
-		Palette: temporal
+		Color: 80D0FF10
+		Amplitude: 080D10
+		QuantizationCount: 48
 	WithColoredOverlay@temporal2:
 		RequiresCondition: being-warped
-		Palette: lowpower
+		Color: 00000060
 	Explodes@temporal:
 		Weapon: TemporalExplode
 		EmptyWeapon: TemporalExplode
@@ -441,7 +446,7 @@
 	ExternalCondition@detachable:
 		Condition: detach
 	WithColoredOverlay@detach:
-		Palette: moveflash
+		Color: FFFFFF40
 		RequiresCondition: detach
 
 ^C4Plantable:
@@ -458,7 +463,7 @@
 	ExternalCondition@detachable:
 		Condition: detach
 	WithColoredOverlay@detach:
-		Palette: moveflash
+		Color: FFFFFF40
 		RequiresCondition: detach
 
 ^TanyaC4Plantable:
@@ -508,7 +513,7 @@
 	ExternalCondition@berserk:
 		Condition: berserk
 	WithColoredOverlay@berserk:
-		Palette: berserk
+		Color: FF580080
 		RequiresCondition: berserk
 	TimedConditionBar@berserk:
 		Condition: berserk
@@ -524,7 +529,7 @@
 ^AffectedByEMP:
 	WithColoredOverlay@emp:
 		RequiresCondition: emp
-		Palette: empdisable
+		Color: 28285080
 	TimedConditionBar@emp:
 		Condition: emp
 		Color: 000080
@@ -543,7 +548,7 @@
 ^DisableOnLowPower:
 	WithColoredOverlay@lowpower:
 		RequiresCondition: lowpower
-		Palette: lowpower
+		Color: 00000060
 	GrantConditionOnPowerState@lowpower:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -566,7 +571,7 @@
 		Position: Center
 	WithColoredOverlay@powerdown:
 		RequiresCondition: powerdown
-		Palette: lowpower
+		Color: 00000060
 	GrantCondition@powerdown-disable:
 		RequiresCondition: powerdown
 		Condition: lowpower
@@ -609,7 +614,7 @@
 		Modifier: 150
 	WithColoredOverlay@hilberteffect:
 		RequiresCondition: hilberteffect
-		Palette: hilberteffect
+		Color: 00FFFF80
 	TimedConditionBar@hilberteffect:
 		Condition: hilberteffect
 
@@ -632,9 +637,11 @@
 		RequiresCondition: thorarmor
 
 ^AffectedByForceShield:
-	WithColoredOverlay@forceshield:
+	WithFlickeringColoredOverlay@forceshield:
 		RequiresCondition: forceshield
-		Palette: forceshield
+		Color: 00005080
+		Amplitude: 000024
+		QuantizationCount: 36
 	DamageMultiplier@forceshield:
 		RequiresCondition: forceshield
 		Modifier: 0
