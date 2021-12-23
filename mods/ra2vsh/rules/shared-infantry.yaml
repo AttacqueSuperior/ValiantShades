@@ -273,6 +273,7 @@ dog:
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	-Mobile:
+	-Chronoshiftable:
 	Aircraft:
 		TakeOffOnResupply: true
 		CanSlide: false

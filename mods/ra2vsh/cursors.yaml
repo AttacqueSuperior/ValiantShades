@@ -280,6 +280,15 @@ Cursors:
 			Start: 392
 		joystick-tl-blocked:
 			Start: 393
+		# TODO fix?
+		attackmove-blocked:
+			Start: 41
+		attackmove-blocked-minimap:
+			Start: 52
+		assaultmove-blocked:
+			Start: 41
+		assaultmove-blocked-minimap:
+			Start: 52
 	undeploy.shp: mouse
 		undeploy:
 			Start: 0
