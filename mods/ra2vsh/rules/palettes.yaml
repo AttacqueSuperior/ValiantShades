@@ -279,18 +279,6 @@
 		BaseName: placebuilding
 		BasePalette: player
 		Alpha: 0.55
-	PaletteFromPlayerPaletteWithAlpha@placeweathercontroller:
-		BaseName: placeweathercontroller
-		BasePalette: weathercontroller
-		Alpha: 0.55
-	PaletteFromPlayerPaletteWithAlpha@placexuetallied1:
-		BaseName: placexuetallied1
-		BasePalette: xuetallied1
-		Alpha: 0.55
-	PaletteFromPlayerPaletteWithAlpha@placexuetallied2:
-		BaseName: placexuetallied2
-		BasePalette: xuetallied2
-		Alpha: 0.55
 	PaletteFromFile@graionbb:
 		Name: graionbb
 		Filename: graionbb.pal

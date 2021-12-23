@@ -108,8 +108,7 @@
 		RequiresBaseProvider: True
 	ActorPreviewPlaceBuildingPreview:
 		Palette: placefootprint
-		LineBuildSegmentPalette: placelinesegment
-		OverridePalette: placebuilding
+		PreviewAlpha: 0.55
 		FootprintUnderPreview: Valid, LineBuild, Invalid
 		FootprintOverPreview: None
 	FrozenUnderFog:
@@ -370,8 +369,8 @@
 		RemoveInstead: true
 	SequencePlaceBuildingPreview:
 		Sequence: place
-		SequencePalette: placebuilding
 		Palette: placefootprint
+		SequenceAlpha: 0.55
 	RenderSprites:
 		Image: plugs
 
@@ -429,7 +428,8 @@
 		TerrainTypes: Clear, Rough, Road, DirtRoad
 	FootprintPlaceBuildingPreview:
 		Palette: placefootprint
-		LineBuildSegmentPalette: placelinesegment
+		FootprintAlpha: 0.55
+		LineBuildFootprintAlpha: 0.55
 	BlocksProjectiles:
 	LineBuild:
 		Range: 8

@@ -424,8 +424,6 @@ garbur:
 		DecorationHeight: 90
 	RenderSprites:
 		PlayerPalette: xuetallied2
-	ActorPreviewPlaceBuildingPreview:
-		OverridePalette: placexuetallied2
 	WithIdleOverlay@bolt:
 		Sequence: idle-bolt
 		PauseOnCondition: disabled
@@ -691,8 +689,6 @@ gaweat:
 		RequiresCondition: !build-incomplete && !powerdown
 	RenderSprites:
 		PlayerPalette: weathercontroller
-	ActorPreviewPlaceBuildingPreview:
-		OverridePalette: placeweathercontroller
 	RevealsShroud@revealhimself:
 		ValidRelationships: Neutral, Enemy
 		MaxHeightDelta: 3
@@ -871,8 +867,6 @@ gadrop:
 		RequiresCondition: !build-incomplete && !being-warped && !powerdown
 	RenderSprites:
 		PlayerPalette: xuetallied1
-	ActorPreviewPlaceBuildingPreview:
-		OverridePalette: placexuetallied1
 	WithIdleOverlay@dock:
 		Sequence: idle-dock
 		RequiresCondition: !build-incomplete && !lowpower
@@ -948,8 +942,6 @@ gaspir:
 		Type: ResistSupers
 	RenderSprites:
 		PlayerPalette: xuetallied1
-	ActorPreviewPlaceBuildingPreview:
-		OverridePalette: placexuetallied1
 	WithIdleOverlay@ball:
 		Sequence: idle-ball
 		RequiresCondition: !build-incomplete && !lowpower && !being-warped

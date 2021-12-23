@@ -438,6 +438,7 @@ EditorWorld:
 	EditorActorLayer:
 	EditorResourceLayer:
 	EditorSelectionLayer:
+		FootprintAlpha: 0.55
 	LoadWidgetAtGameStart:
 	EditorActionManager:
 	EditorCursorLayer:
