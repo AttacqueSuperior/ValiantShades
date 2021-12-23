@@ -182,6 +182,11 @@ ChromeLayout:
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/settings.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/lobby.yaml
 	common|chrome/lobby-players.yaml
 	common|chrome/lobby-options.yaml
