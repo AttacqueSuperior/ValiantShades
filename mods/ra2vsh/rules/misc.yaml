@@ -158,7 +158,7 @@ mine:
 	Inherits@2: ^ExistsInWorld
 	Inherits@3: ^Warpable
 	Interactable:
-		Bounds: 24,24
+		Bounds: 579, 1158
 	RenderSprites:
 		PlayerPalette: infantry
 	WithSpriteBody:

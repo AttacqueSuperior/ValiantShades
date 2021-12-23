@@ -18,7 +18,7 @@ lasher:
 		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -54,7 +54,7 @@ behold:
 	Tooltip:
 		Name: Beholder
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 150000
 	Armor:
@@ -139,7 +139,7 @@ ovrl:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -190,7 +190,7 @@ malf:
 	Tooltip:
 		Name: Malfestor
 	Selectable:
-		Bounds: 64, 52, 0, -10
+		Bounds: 1544, 2509, 0, -482
 	Health:
 		HP: 175000
 	Armor:
@@ -321,7 +321,7 @@ malf.Husk:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -392,7 +392,7 @@ ttnk2:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -458,7 +458,7 @@ empr:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:

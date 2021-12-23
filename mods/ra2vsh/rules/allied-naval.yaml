@@ -14,7 +14,7 @@ lcrf:
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 300000
 	Armor:
@@ -81,7 +81,7 @@ dest:
 		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Selectable:
-		Bounds: 80, 80, 0, -6
+		Bounds: 1930, 3861, 0, -289
 	Armament@primary:
 		Weapon: 155mm
 		LocalOffset: 1024,0,768
@@ -122,7 +122,7 @@ aegis:
 	Tooltip:
 		Name: Aegis Cruiser
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 800000
 	Armor:
@@ -184,7 +184,7 @@ dlph:
 		RequiresCondition: being-warped
 	SelectionDecorations:
 	Selectable:
-		Bounds: 40, 40
+		Bounds: 965, 1930
 	Voiced:
 		VoiceSet: DolphinVoice
 	Armament:
@@ -270,7 +270,7 @@ carrier:
 		Radius: 3c512
 		DeathTypes: DefaultDeath
 	Selectable:
-		Bounds: 160,68,0,-6
+		Bounds: 3861, 3282, 0, -289
 	Mobile:
 		TurnSpeed: 4
 		Speed: 60

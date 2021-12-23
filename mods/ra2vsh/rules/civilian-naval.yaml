@@ -20,7 +20,7 @@ tug:
 		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
@@ -48,7 +48,7 @@ cruise:
 		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice

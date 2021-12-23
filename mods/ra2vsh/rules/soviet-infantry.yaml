@@ -30,7 +30,7 @@ e2:
 	Tooltip:
 		Name: Conscript
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 50000
 	Passenger:
@@ -89,7 +89,7 @@ flakt:
 	Tooltip:
 		Name: Flak Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 50000
 	Passenger:
@@ -175,7 +175,7 @@ shk:
 	Tooltip:
 		Name: Tesla Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 130000
 	RevealsShroud:
@@ -251,7 +251,7 @@ terror:
 	Tooltip:
 		Name: Terrorist
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 100000
 	Mobile:
@@ -333,7 +333,7 @@ deso:
 	Tooltip:
 		Name: Desolator
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 150000
 	RevealsShroud:
@@ -420,7 +420,7 @@ ivan:
 	Tooltip:
 		Name: Crazy Ivan
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: CrazyIvanVoice
 	Health:
@@ -522,7 +522,7 @@ yuri:
 	Tooltip:
 		Name: Yuri
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: YuriVoice
 	Health:
@@ -614,7 +614,7 @@ virus:
 	Tooltip:
 		Name: Virus
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 100000
 	RevealsShroud:
@@ -673,7 +673,7 @@ boris:
 	Tooltip:
 		Name: Boris Drubetskoy
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 250000
 	Mobile:
@@ -812,7 +812,7 @@ volkov:
 	Tooltip:
 		Name: Vladislav Volkov
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 250000
 	Mobile:
@@ -876,7 +876,7 @@ kamikaze:
 	Tooltip:
 		Name: Headless Kamikaze
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75000
 	Mobile:
@@ -960,7 +960,7 @@ hopl:
 	Armor:
 		Type: Plate
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 150000
 	RevealsShroud:
@@ -1024,7 +1024,7 @@ cyborg:
 	Armor:
 		Type: Plate
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 150000
 	RevealsShroud:

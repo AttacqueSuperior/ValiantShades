@@ -19,7 +19,7 @@ engineer:
 		Name: Engineer
 	Selectable:
 		Class: engineer
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75000
 	Passenger:
@@ -95,7 +95,7 @@ dog:
 	Tooltip:
 		Name: Attack Dog
 	Selectable:
-		Bounds: 30, 24, 0, -5
+		Bounds: 724, 1158, 0, -241
 	Health:
 		HP: 100000
 	Mobile:
@@ -231,7 +231,7 @@ dog:
 	DisguiseTooltip:
 		GenericName: Soldier
 	Selectable:
-		Bounds: 24, 28, -1, -8
+		Bounds: 579, 1351, -24, -386
 	Health:
 		HP: 25000
 	RevealsShroud:
@@ -271,7 +271,7 @@ dog:
 		Queue: Infantry
 		BuildAtProductionType: Barracks
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	-Mobile:
 	Aircraft:
 		TakeOffOnResupply: true

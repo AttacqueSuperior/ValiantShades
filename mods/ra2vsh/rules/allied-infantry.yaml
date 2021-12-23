@@ -30,7 +30,7 @@ e1:
 	Tooltip:
 		Name: G.I.
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 65000
 	Mobile:
@@ -159,7 +159,7 @@ ggi:
 	Tooltip:
 		Name: Guardian G.I.
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75000
 	Mobile:
@@ -362,7 +362,7 @@ snipe:
 		Prerequisites: garbur, ~gapile #, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125000
 	Passenger:
@@ -435,7 +435,7 @@ gren:
 	Tooltip:
 		Name: Grenadier
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125000
 	Passenger:
@@ -499,7 +499,7 @@ ghost:
 	Tooltip:
 		Name: Navy SEAL
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125000
 	Mobile:
@@ -661,7 +661,7 @@ tany:
 	Tooltip:
 		Name: Tanya Adams
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125000
 	Mobile:
@@ -823,7 +823,7 @@ hirano:
 	Tooltip:
 		Name: Hirano Nakatsuru
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 250000
 	Mobile:
@@ -986,7 +986,7 @@ cleg:
 	Inherits@factionparachute: ^AlliedParachute
 	Inherits@factionrankpips: ^AlliedVeteranRank
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Tooltip:
 		Name: Chrono Legionnaire
 	Buildable:
@@ -1078,7 +1078,7 @@ marks:
 	Tooltip:
 		Name: Marksman
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 200000
 	Passenger:
@@ -1142,7 +1142,7 @@ dione:
 	Tooltip:
 		Name: Dione
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 175000
 	Passenger:
@@ -1203,7 +1203,7 @@ artemis:
 	Tooltip:
 		Name: Artemis
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 175000
 	RevealsShroud:
@@ -1279,7 +1279,7 @@ fairy:
 	Tooltip:
 		Name: Fairy
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: FairyVoice
 	Health:

@@ -6,7 +6,7 @@ america:
 	Buildable:
 		Description: American Technology
 	Interactable:
-		Bounds: 0,0
+		Bounds: 0, 0
 
 germany:
 	AlwaysVisible:
@@ -16,7 +16,7 @@ germany:
 	Buildable:
 		Description: German Technology
 	Interactable:
-		Bounds: 0,0
+		Bounds: 0, 0
 
 russia:
 	AlwaysVisible:
@@ -26,7 +26,7 @@ russia:
 	Buildable:
 		Description: Russian Technology
 	Interactable:
-		Bounds: 0,0
+		Bounds: 0, 0
 
 iraq:
 	AlwaysVisible:
@@ -36,7 +36,7 @@ iraq:
 	Buildable:
 		Description: Iraqi Technology
 	Interactable:
-		Bounds: 0,0
+		Bounds: 0, 0
 
 barracks.infiltrated:
 	AlwaysVisible:

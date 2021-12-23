@@ -19,7 +19,7 @@ init:
 	Tooltip:
 		Name: Initiate
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 100000
 	Passenger:
@@ -76,7 +76,7 @@ brute:
 	Armor:
 		Type: Plate
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 200000
 	Mobile:

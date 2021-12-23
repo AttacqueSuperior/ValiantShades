@@ -7,7 +7,7 @@ shad:
 	Tooltip:
 		Name: Night Hawk
 	Selectable:
-		Bounds: 70,60,0,-20
+		Bounds: 1689, 2896, 0, -965
 	Health:
 		HP: 175000
 	Armor:
@@ -166,7 +166,7 @@ hind:
 	Tooltip:
 		Name: Hind Carryall
 	Selectable:
-		Bounds: 70,60,0,-20
+		Bounds: 1689, 2896, 0, -965
 	Health:
 		HP: 175000
 	Armor:
@@ -238,7 +238,7 @@ shab:
 		BuildPaletteOrder: 199
 		Prerequisites: ~naweap, naairc, ~iraq
 	Selectable:
-		Bounds: 100,60,0,-10
+		Bounds: 2413, 2896, 0, -482
 	Aircraft:
 		TurnSpeed: 1023
 		Speed: 25
@@ -342,7 +342,7 @@ schp:
 		Prerequisites: ~naweap, naairc, natek
 		Description: Siege Chopper\n  Strong vs Infantry, Structures\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Bounds: 119, 58, 0, -20
+		Bounds: 2871, 2799, 0, -965
 	Valued:
 		Cost: 1000
 	RevealsShroud:
@@ -432,7 +432,7 @@ zep:
 		BuildPaletteOrder: 390
 		Prerequisites: ~naweap, naairc, natech
 	Selectable:
-		Bounds: 100,60,0,-10
+		Bounds: 2413, 2896, 0, -482
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 25
@@ -533,7 +533,7 @@ thor:
 		Prerequisites: ~gaweap, gaairc, garbur, garbur.infiltrated
 		IconPalette: thoricon
 	Selectable:
-		Bounds: 100,60,0,-10
+		Bounds: 2413, 2896, 0, -482
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 25
@@ -626,7 +626,7 @@ soyuz:
 		Prerequisites: ~naweap, naairc, natech, garbur.infiltrated
 		# IconPalette: soyuzicon
 	Selectable:
-		Bounds: 100,60,0,-10
+		Bounds: 2413, 2896, 0, -482
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 25
@@ -702,7 +702,7 @@ beag:
 		Prerequisites: ~aircraft.allies
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Selectable:
-		Bounds: 30,24
+		Bounds: 724, 1158
 	Health:
 		HP: 200000
 	Armor:
@@ -939,7 +939,7 @@ spirit:
 		Description: Bomber aircraft.\n  Strong vs Buildings\n  Weak vs Units
 		IconPalette: spiricon
 	Selectable:
-		Bounds: 30,24
+		Bounds: 724, 1158
 	Health:
 		HP: 250000
 	Armor:
@@ -1001,7 +1001,7 @@ pdplane:
 		Cost: 2000
 	-Selectable:
 	Interactable:
-		Bounds: 100,80
+		Bounds: 2413, 3861
 	RejectsOrders:
 	Tooltip:
 		Name: Cargo Plane
@@ -1163,7 +1163,7 @@ badger:
 		RequiresCondition: ammo
 	-Selectable:
 	Interactable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	-Buildable:
 	-RevealsShroud:
 	-Rearmable:
@@ -1207,7 +1207,7 @@ hornet:
 	Tooltip:
 		Name: Hornet
 	Interactable:
-		Bounds: 15,12
+		Bounds: 362, 579
 	Health:
 		HP: 75000
 	Armor:
@@ -1259,7 +1259,7 @@ a10:
 		RequiresCondition: ammo
 	-Selectable:
 	Interactable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	-Buildable:
 	-RevealsShroud:
 	-Rearmable:
@@ -1306,7 +1306,7 @@ spypl:
 		RequiresCondition: ammo
 	-Selectable:
 	Interactable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	-Buildable:
 	-RevealsShroud:
 	-Rearmable:
@@ -1372,7 +1372,7 @@ wolfk:
 		Cost: 2000
 	-Selectable:
 	Interactable:
-		Bounds: 100,80
+		Bounds: 2413, 3861
 	RejectsOrders:
 	Tooltip:
 		Name: Wolfkrone Dropship

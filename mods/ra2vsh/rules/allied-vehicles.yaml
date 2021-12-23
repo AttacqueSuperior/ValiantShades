@@ -15,7 +15,7 @@ amcv:
 		Name: Mobile Construction Vehicle
 	Selectable:
 		Priority: 4
-		Bounds: 68, 56, 0, -7
+		Bounds: 1641, 2702, 0, -337
 	Health:
 		HP: 1000000
 	Armor:
@@ -89,7 +89,7 @@ cmin:
 		Name: Chrono Miner
 	Selectable:
 		Priority: 7
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Harvester:
 		Capacity: 10
 		Resources: Ore, Gems, Tiberium
@@ -174,7 +174,7 @@ hmmv:
 	Tooltip:
 		Name: Humvee
 	Selectable:
-		Bounds: 50, 40, 0, -6
+		Bounds: 1206, 1930, 0, -289
 	Buildable:
 		Queue: Vehicle
 		BuildAtProductionType: WarFactory
@@ -395,7 +395,7 @@ ltnk:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -441,7 +441,7 @@ mtnk:
 		MuzzlePalette: tsanim
 	WithMuzzleOverlay:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -494,7 +494,7 @@ fv:
 		Voice: Attack
 		PauseOnCondition: disabled
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -1212,7 +1212,7 @@ sref:
 	Tooltip:
 		Name: Prism Tank
 	Selectable:
-		Bounds: 64, 52, 0, -10
+		Bounds: 1544, 2509, 0, -482
 	Health:
 		HP: 150000
 	Armor:
@@ -1326,7 +1326,7 @@ howi:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
@@ -1407,7 +1407,7 @@ tnkd:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
@@ -1444,7 +1444,7 @@ mgtk:
 	Tooltip:
 		Name: Mirage Tank
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 200000
 	Armor:
@@ -1519,7 +1519,7 @@ bfrt:
 	Tooltip:
 		Name: Battle Fortress
 	Selectable:
-		Bounds: 72, 64, 0, -8
+		Bounds: 1737, 3089, 0, -386
 	Health:
 		HP: 600000
 	Armor:
@@ -1665,7 +1665,7 @@ aero:
 	Tooltip:
 		Name: Aeroblaze
 	Selectable:
-		Bounds: 64, 52, 0, -10
+		Bounds: 1544, 2509, 0, -482
 	Health:
 		HP: 150000
 	Armor:
@@ -1762,7 +1762,7 @@ chrp:
 		PauseOnCondition: disabled || reloading
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -1825,7 +1825,7 @@ mgg:
 		DeathTypes: DefaultDeath
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelAnimatedBody:
@@ -1907,7 +1907,7 @@ succ:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -1979,7 +1979,7 @@ mnrva:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -2082,7 +2082,7 @@ robo:
 		PauseOnCondition: disabled
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
