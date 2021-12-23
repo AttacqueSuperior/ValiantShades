@@ -298,14 +298,14 @@ World:
 		ShortGameCheckboxDisplayOrder: 2
 		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3
-	CreateMPPlayers:
-	MPStartUnits@amcv:
+	CreateMapPlayers:
+	StartingUnits@amcv:
 		Class: none
 		ClassName: MCV Only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 896
-	MPStartUnits@lightallies:
+	StartingUnits@lightallies:
 		Class: light
 		ClassName: Light Support
 		Factions: allies, america, germany, england, france, korea
@@ -315,7 +315,7 @@ World:
 		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@mediumallies:
+	StartingUnits@mediumallies:
 		Class: medium
 		ClassName: Medium Support
 		Factions: allies, america, germany, england, france, korea
@@ -325,7 +325,7 @@ World:
 		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@heavyallies:
+	StartingUnits@heavyallies:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: allies, america, germany, england, france, korea
@@ -335,13 +335,13 @@ World:
 		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@smcv:
+	StartingUnits@smcv:
 		Class: none
 		ClassName: MCV Only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 896
-	MPStartUnits@lightsoviets:
+	StartingUnits@lightsoviets:
 		Class: light
 		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
@@ -351,7 +351,7 @@ World:
 		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@mediumsoviets:
+	StartingUnits@mediumsoviets:
 		Class: medium
 		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
@@ -361,7 +361,7 @@ World:
 		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@heavysoviets:
+	StartingUnits@heavysoviets:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
@@ -379,9 +379,9 @@ World:
 		WaterChance: 25
 		InitialSpawnDelay: 1000
 		CheckboxDisplayOrder: 1
-	MPStartLocations:
+	MapStartingLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
-	SpawnMPUnits:
+	SpawnStartingUnits:
 	PathFinder:
 	ValidateOrder:
 	DebugPauseState:
