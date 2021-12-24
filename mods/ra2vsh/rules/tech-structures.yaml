@@ -145,8 +145,8 @@ caairp:
 		Cost: 1000
 		Icon: paradrop #TODO
 		ChargeInterval: 9000
-		Description: Tech Paradrop
-		LongDesc: A Cargo Plane drops six Initiates anywhere on the map.
+		Name: Tech Paradrop
+		Description: A Cargo Plane drops six Initiates anywhere on the map.
 		DropItems: init,init,init,init,init,init
 		QuantizedFacings: 8
 		UnitType: pdplane

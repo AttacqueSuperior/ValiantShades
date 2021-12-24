@@ -231,8 +231,8 @@ naradr:
 		Actors: e2, e2, e2, e2
 	AirstrikePowerAS@spyplane:
 		ChargeInterval: 6000
-		Description: Spy Plane
-		LongDesc: Reveals an area of the map.
+		Name: Spy Plane
+		Description: Reveals an area of the map.
 		OrderName: SpyPlaneInfoOrder
 		UnitType: spypl
 		SquadSize: 1
@@ -301,8 +301,8 @@ naairc:
 	ParatroopersPower:
 		OrderName: ParadropInfoOrder
 		Icon: paradrop
-		Description: Paradrop
-		LongDesc: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
+		Name: Paradrop
+		Description: A Cargo Plane drops 5 Conscripts\nand 3 Flak Troopers anywhere on the map.
 		DropItems: flakt,flakt,flakt,e2,e2,e2,e2,e2
 		UnitType: pdplane.soviet
 
@@ -332,8 +332,8 @@ natek:
 		Actors: e2, e2, e2, e2, e2, e2
 	AirstrikePowerAS@parabombs:
 		ChargeInterval: 8000
-		Description: Parabombs
-		LongDesc: Send in a bomber\nto saturate an area with bombs.
+		Name: Parabombs
+		Description: Send in a bomber\nto saturate an area with bombs.
 		OrderName: ParabombsInfoOrder
 		UnitType: badger
 		SquadSize: 1
@@ -350,8 +350,8 @@ natek:
 		Icon: tankdrop
 		IconPalette: tnkdrico
 		ChargeInterval: 9000
-		Description: Tank Drop
-		LongDesc: A Cargo Plane drops 2 Hammers\nand 2 Slostins anywhere on the map.
+		Name: Tank Drop
+		Description: A Cargo Plane drops 2 Hammers\nand 2 Slostins anywhere on the map.
 		DropItems: hammr,slost,hammr,slost
 		QuantizedFacings: 8
 		UnitType: pdplane.soviet
@@ -720,8 +720,8 @@ nairon:
 	DetonateWeaponPower@IronCurtain:
 		Icon: invuln
 		ChargeInterval: 3750
-		Description: Invulnerability
-		LongDesc: Makes a group of vehicles invulnerable\nfor 30 seconds.
+		Name: Invulnerability
+		Description: Makes a group of vehicles invulnerable\nfor 30 seconds.
 		TargetCircleRange: 2c0
 		OrderName: IronCurtainInfoOrder
 		Weapon: IronCurtainPower
@@ -804,8 +804,8 @@ napsyd:
 		Icon: psydom
 		IconPalette: domiicon
 		ChargeInterval: 7500
-		Description: Psychic Dominator
-		LongDesc: Shifts ownership of enemy mindcontrollable units.
+		Name: Psychic Dominator
+		Description: Shifts ownership of enemy mindcontrollable units.
 		# TODO: This are actually no speech notifications
 		EndChargeSound: spsyopen.wav
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -871,8 +871,8 @@ namisl:
 		Icon: nuke
 		IconPalette: nukeicon
 		ChargeInterval: 15000
-		Description: Nuclear Missile Strike
-		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		Name: Nuclear Missile Strike
+		Description: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic

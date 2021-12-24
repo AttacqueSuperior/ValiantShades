@@ -450,6 +450,8 @@ Player:
 		DangerScanRadius: 12
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, aero, gaunt, engineer, aengineer, sengineer
 		ConstructionYardTypes: gacnst, nacnst
+		AirUnitsTypes: tanya2, jumpjet, cosmo, shad, shad.ai, shad.ai2, shab, schp, zep, thor, soyuz, beag, orca, yak, fflash, spirit
+		ProtectionTypes: gacnst, gapowr, gapile, garefn, gaweap, gafcmd, gayard, gaairc, gatech, garbur, gaorep, gaspysat, gagap, gaweat, gacsph, gacran, gadrop, gaspir, gadept, nacnst, napowr, nahand, narefn, naweap, naradr, nayard, naairc, natek, nanrct, natech, naindp, naclon, napsis, nairon, napsyd, namisl, nacran, nadept, gapill, nasam, atesla, gtgcan, garobo, nalasr, naflak, tesla, nasntl, amcv, cmin, smcv, harv
 	UnitBuilderBotModule@normal:
 		RequiresCondition: enable-ai
 		UnitsToBuild:

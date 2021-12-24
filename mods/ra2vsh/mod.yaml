@@ -170,10 +170,12 @@ ChromeLayout:
 	ra2vsh|chrome/credits.yaml
 	common|chrome/mainmenu-prompts.yaml
 	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-info-lobby-options.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	common|chrome/ingame.yaml
 	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
@@ -210,6 +212,7 @@ ChromeLayout:
 	common|chrome/dropdowns.yaml
 	common|chrome/editor.yaml
 	common|chrome/playerprofile.yaml
+	common|chrome/text-notifications.yaml
 
 Weapons:
 	ra2vsh|weapons/bullets.yaml
