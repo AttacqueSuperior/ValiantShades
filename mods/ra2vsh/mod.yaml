@@ -4,6 +4,7 @@ Metadata:
 	Author: Valiant Shades Team
 	Website: https://github.com/AttacqueSuperior/ValiantShades
 	WebIcon32: https://raw.githubusercontent.com/AttacqueSuperior/ValiantShades/master/mods/ra2vsh/icon.png
+	WindowTitle: Red Alert 2 - Valiant Shades (OpenRA)
 
 PackageFormats: Mix, AudioBag
 
@@ -258,6 +259,7 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
+	common|hotkeys/chat.yaml
 	ra2vsh|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
