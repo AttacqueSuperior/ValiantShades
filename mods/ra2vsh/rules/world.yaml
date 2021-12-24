@@ -392,16 +392,16 @@ World:
 		Darkest: 32
 		Brightest: 128
 		ZOffset: 2
-	#ResourceTwinkleLayer@ore:
-	#	Types: Ore
-	#	Image: twinkle
-	#	Sequences: ra1-twinkle1, ra1-twinkle2, ra1-twinkle3
-	#	Palette: ra
-	#ResourceTwinkleLayer@gems:
-	#	Types: Gems
-	#	Image: twinkle
-	#	Palette: effect
-	#	Interval: 25
+	WithResourceAnimation@ore:
+		Types: Ore
+		Image: twinkle
+		Sequences: ra1-twinkle1, ra1-twinkle2, ra1-twinkle3
+		Palette: ra
+	WithResourceAnimation@gems:
+		Types: Gems
+		Image: twinkle
+		Palette: effect
+		Interval: 25
 	LobbyWorldConditionCheckbox@METEORSTORMS:
 		ID: meteorstorms
 		Label: Meteor Storms
