@@ -430,6 +430,11 @@ World:
 			5: FiveMinutesRemaining
 			10: TenMinutesRemaining
 			20: TwentyMinutesRemaining
+	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
+		PresetHues: 0, 0.125, 0.185, 0.4, 0.54, 0.66, 0.79, 0.875, 0, 0.14, 0.23, 0.43, 0.54, 0.625, 0.77, 0.85
+		PresetSaturations: 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5
+		# TeamColorPresets: ffc9ca, f50606, 98331f, f57606, f7bb06, f861a4, da06f3, ddb8ff, 06f739, cef7b2, 200738, 280df6, 2f86f2, 76d2f8, 34ba93, 000000
 
 EditorWorld:
 	Inherits: ^BaseWorld
