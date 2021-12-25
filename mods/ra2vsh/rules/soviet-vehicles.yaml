@@ -726,6 +726,7 @@ v3:
 	MissileSpawnerMaster:
 		Actors: v3rocket
 		RespawnTicks: 150
+		SpawnOffset: 640,0,384
 		LoadedCondition: loaded
 	WithSpawnerMasterPipsDecoration:
 		Palette: pips
