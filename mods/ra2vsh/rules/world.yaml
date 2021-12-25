@@ -231,7 +231,6 @@
 				Palette: tibdawn
 				Name: Valuable Tiberium - ($37/bale)
 	CliffBackImpassabilityLayer:
-	ExitsDebugOverlayManager:
 	DevOffsetOverlayManager:
 
 World:
@@ -439,6 +438,7 @@ World:
 		TerrainFlashImage: moveflsh
 		TerrainFlashSequence: idle
 		TerrainFlashPalette: moveflash
+	ExitsDebugOverlayManager:
 
 EditorWorld:
 	Inherits: ^BaseWorld
