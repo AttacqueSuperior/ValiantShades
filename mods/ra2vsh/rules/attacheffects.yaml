@@ -354,12 +354,9 @@
 		TargetTypes: Temporal
 	WithFlickeringColoredOverlay@temporal:
 		RequiresCondition: being-warped
-		Color: 80D0FF10
+		Color: 80D0FF80
 		Amplitude: 080D10
 		QuantizationCount: 48
-	WithColoredOverlay@temporal2:
-		RequiresCondition: being-warped
-		Color: 00000060
 	Explodes@temporal:
 		Weapon: TemporalExplode
 		EmptyWeapon: TemporalExplode

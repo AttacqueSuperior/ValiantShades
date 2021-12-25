@@ -344,7 +344,6 @@
 	-Warpable:
 	-Targetable@Temporal:
 	-WithFlickeringColoredOverlay@temporal:
-	-WithColoredOverlay@temporal2:
 	-Explodes@temporal:
 	-SpawnSmokeParticleOnDeath@temporal:
 	-GrantCondition@warp-disable:
@@ -774,7 +773,6 @@
 	Inherits@terrordrone: ^AffectedByTerrorDrone
 	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@machineshop: ^MachineShopRepair
-	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -921,7 +919,6 @@
 	Inherits@terrordrone: ^AffectedByTerrorDrone
 	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@machineshop: ^MachineShopRepair
-	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
@@ -1170,7 +1167,6 @@
 	Inherits@terrordrone: ^AffectedByTerrorDrone
 	Inherits@propaganda: ^AffectedByPropaganda
 	Inherits@machineshop: ^MachineShopRepair
-	-WithColoredOverlay@temporal2:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath

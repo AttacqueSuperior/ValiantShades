@@ -175,9 +175,6 @@ dron:
 	Inherits@DropshipBay: ^DeliverableViaDropship
 	Inherits@factionparachute: ^SovietParachute
 	Inherits@factionrankpips: ^SovietVeteranRank
-	WithColoredOverlay@temporal2:
-		RequiresCondition: being-warped
-		Color: 00000060
 	Explodes@temporal:
 		Weapon: SmallTemporalExplode
 		EmptyWeapon: SmallTemporalExplode
