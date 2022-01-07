@@ -781,6 +781,7 @@
 		TurnSpeed: 20
 		Locomotor: wheeled
 		PauseOnCondition: disabled
+		TerrainOrientationAdjustmentMargin: 256
 	SpeedMultiplier@disabled:
 		RequiresCondition: disabled
 		Modifier: 0

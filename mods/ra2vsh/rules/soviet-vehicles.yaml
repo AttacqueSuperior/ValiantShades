@@ -200,6 +200,7 @@ dron:
 		Speed: 150
 		TurnSpeed: 1023
 		Locomotor: drone
+		TerrainOrientationAdjustmentMargin: -1
 	Health:
 		HP: 100000
 	Armor:
