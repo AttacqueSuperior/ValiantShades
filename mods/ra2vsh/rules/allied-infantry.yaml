@@ -720,7 +720,7 @@ tany:
 		Palette: infantry-cloak
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage
-		CloakTypes: mirage
+		DetectionTypes: mirage
 		RequiresCondition: !disabled
 	ChangesHealth:
 		PercentageStep: 1
@@ -1107,7 +1107,7 @@ marks:
 		Palette: infantry-cloak
 		IsPlayerPalette: true
 		UncloakOn: Damage
-		CloakTypes: mirage
+		DetectionTypes: mirage
 		RequiresCondition: !disabled
 	AmmoPool:
 		Ammo: 1

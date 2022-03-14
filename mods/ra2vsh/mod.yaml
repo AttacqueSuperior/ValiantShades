@@ -263,6 +263,7 @@ Hotkeys:
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
 	common|hotkeys/chat.yaml
+	common|hotkeys/control-groups.yaml
 	ra2vsh|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
@@ -314,7 +315,7 @@ Fonts:
 
 SupportsMapsFrom: ra2vsh, ra2
 
-SoundFormats: Wav, Aud
+SoundFormats: Wav, Aud, Ogg
 
 SpriteFormats: ShpTS, TmpTS, PngSheet, ShpTD
 
@@ -338,7 +339,9 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 ModelSequenceFormat: VoxelModelSequence
 
 AssetBrowser:
-	SupportedExtensions: .shp, .png, .tem, .sno, .urb, .sha, .des, .ubn
+	SpriteExtensions: .shp, .png, .tem, .sno, .urb, .sha, .des, .ubn
+	ModelExtensions: .vxl
+	AudioExtensions: .aud, .wav, .ogg
 
 GameSpeeds:
 	DefaultSpeed: default

@@ -132,7 +132,7 @@ dog:
 		Range: 5c0
 	DetectCloaked@mirage:
 		Range: 5c0
-		CloakTypes: mirage
+		DetectionTypes: mirage
 	Voiced:
 		VoiceSet: DogVoice
 	ProducibleWithLevel:

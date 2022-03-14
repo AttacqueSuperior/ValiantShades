@@ -1488,7 +1488,7 @@ mgtk:
 		CloakDelay: 15
 		IsPlayerPalette: true
 		UncloakOn: Attack, Damage, Move
-		CloakTypes: mirage
+		DetectionTypes: mirage
 		RequiresCondition: !disabled
 	SpawnActorOnDeath:
 		Actor: mgtk.Husk

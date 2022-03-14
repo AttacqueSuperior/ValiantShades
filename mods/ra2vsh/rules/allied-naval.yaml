@@ -96,7 +96,7 @@ dest:
 		Voice: Attack
 		PauseOnCondition: disabled
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
 	WithVoxelBody:
@@ -198,7 +198,7 @@ dlph:
 		Radius: 2c0
 		DeathTypes: DefaultDeath
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -213,7 +213,7 @@ dlph:
 		TargetTypes: Underwater
 		RequiresCondition: underwater
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	HiddenUnderFog:
 	ActorLostNotification:

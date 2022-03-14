@@ -651,7 +651,7 @@
 		RequiresCondition: parachute
 	DetectCloaked@mirage:
 		Range: 3c0
-		CloakTypes: mirage
+		DetectionTypes: mirage
 	Explodes@temporal:
 		Weapon: SmallTemporalExplode
 		EmptyWeapon: SmallTemporalExplode

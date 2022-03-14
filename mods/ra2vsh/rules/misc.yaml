@@ -179,7 +179,7 @@ mine:
 		UncloakSound:
 		Palette: infantry-cloak
 		IsPlayerPalette: true
-		CloakTypes: mirage
+		DetectionTypes: mirage
 		InitialDelay: 0
 	Tooltip:
 		Name: Mine
