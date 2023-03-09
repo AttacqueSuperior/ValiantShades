@@ -37,4 +37,7 @@
 	RenderVoxels:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:

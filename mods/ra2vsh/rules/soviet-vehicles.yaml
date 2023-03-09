@@ -348,6 +348,9 @@ htk:
 		VoiceSet: FlakTrackVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	AutoTargetPriority@DEFAULT:
 		RequiresCondition: !repairmode && !stance-attackanything && !assault-move
@@ -494,6 +497,9 @@ drgn:
 		VoiceSet: DragonTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
 		Actor: drgn.Husk
@@ -565,6 +571,9 @@ slost:
 	Voiced:
 		VoiceSet: GattlingTankVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantConditionOnAttack:
@@ -720,6 +729,9 @@ v3:
 		VoiceSet: V3LauncherVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	MissileSpawnerMaster:
 		Actors: v3rocket
@@ -836,6 +848,9 @@ apoc:
 		VoiceSet: ApocalypseVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	ChangesHealth:
 		PercentageStep: 1
@@ -906,6 +921,9 @@ ttnk:
 	Voiced:
 		VoiceSet: TeslaTankVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
@@ -1208,6 +1226,9 @@ bura:
 		VoiceSet: BuratinoVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantConditionOnMovement:
 		Condition: moving
@@ -1281,6 +1302,9 @@ gaunt:
 		VoiceSet: GauntletVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	AutoTarget:
 		InitialStanceAI: Defend
@@ -1347,6 +1371,9 @@ topol:
 	Voiced:
 		VoiceSet: TopolMVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	ChangesHealth:

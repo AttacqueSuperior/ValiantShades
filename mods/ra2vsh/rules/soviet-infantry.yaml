@@ -63,6 +63,9 @@ e2:
 		VoiceSet: ConscriptVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
@@ -139,6 +142,9 @@ flakt:
 	Voiced:
 		VoiceSet: FlakTrooperVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -225,6 +231,9 @@ shk:
 	Voiced:
 		VoiceSet: TeslaTrooperVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -371,6 +380,9 @@ deso:
 	Voiced:
 		VoiceSet: DesolatorVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -648,6 +660,9 @@ virus:
 		VoiceSet: VirusVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
@@ -707,6 +722,9 @@ boris:
 	Voiced:
 		VoiceSet: BorisVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -773,6 +791,9 @@ cosmo:
 	Voiced:
 		VoiceSet: CosmonautVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	SpawnActorOnDeath:
 		Actor: cosmo.husk
@@ -842,6 +863,9 @@ volkov:
 	Voiced:
 		VoiceSet: VolkovVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -996,6 +1020,9 @@ hopl:
 		VoiceSet: CyborgVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	-TakeCover:
@@ -1059,6 +1086,9 @@ cyborg:
 	Voiced:
 		VoiceSet: CyborgVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand

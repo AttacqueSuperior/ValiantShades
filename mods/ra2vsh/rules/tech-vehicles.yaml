@@ -147,6 +147,9 @@ ovrl:
 		VoiceSet: OverlordVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	ChangesHealth:
 		PercentageStep: 1
@@ -225,6 +228,9 @@ malf:
 	Voiced:
 		VoiceSet: MalfestorVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
@@ -329,6 +335,9 @@ malf.Husk:
 		VoiceSet: MammothTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	ChangesHealth:
 		PercentageStep: 1
@@ -400,6 +409,9 @@ ttnk2:
 		VoiceSet: TeslaTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
 		Actor: ttnk2.Husk
@@ -465,6 +477,9 @@ empr:
 	Voiced:
 		VoiceSet: EmpressVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantPeriodicConditionOnEvent@selfcurtain:

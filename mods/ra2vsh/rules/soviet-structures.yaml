@@ -876,6 +876,7 @@ namisl:
 		EndChargeSound: snukread.wav
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic
+		MissileImage: atomic
 		MissilePalette: player
 		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0

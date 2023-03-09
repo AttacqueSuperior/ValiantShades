@@ -148,10 +148,11 @@ Player:
 		Id: unrestricted
 	GameSaveViewportManager:
 	GrantConditionOnPrerequisiteManager:
-	VeteranProductionIconOverlay:
+	ProductionIconOverlayManager:
 		Image: cameo-chevron
 		Sequence: idle
 		Palette: cameo-chevron
+		Type: Veterancy
 	PlayerCashTrickler:
 		Interval: 5000
 		InitialDelay: 2500

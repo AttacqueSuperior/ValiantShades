@@ -52,6 +52,9 @@ init:
 		VoiceSet: InitiateVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
@@ -111,6 +114,9 @@ brute:
 	Voiced:
 		VoiceSet: BruteVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand

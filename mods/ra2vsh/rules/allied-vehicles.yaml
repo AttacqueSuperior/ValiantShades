@@ -233,6 +233,9 @@ hmmv:
 		VoiceSet: HumveeVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	AutoTargetPriority@DEFAULT:
 		RequiresCondition: !repairmode && !stance-attackanything && !assault-move
@@ -404,6 +407,9 @@ ltnk:
 		VoiceSet: WolverineVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	WithAmmoPipsDecoration:
 		Palette: pips
@@ -501,6 +507,9 @@ fv:
 	Voiced:
 		VoiceSet: IFVVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantCondition@tooltiphack:
@@ -1273,6 +1282,9 @@ sref:
 		VoiceSet: PrismTankVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
 		Actor: sref.Husk
@@ -1332,6 +1344,9 @@ howi:
 	Voiced:
 		VoiceSet: HowitzerVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	GrantConditionOnAttack:
@@ -1414,6 +1429,9 @@ tnkd:
 		VoiceSet: TankDestroyerVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
 		Actor: tnkd.Husk
@@ -1481,6 +1499,9 @@ mgtk:
 	Voiced:
 		VoiceSet: MirageTankVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	Cloak:
@@ -1571,6 +1592,9 @@ bfrt:
 	Voiced:
 		VoiceSet: BattleFortressVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	Explodes:
@@ -1702,6 +1726,9 @@ aero:
 		VoiceSet: AeroblazeVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	AutoTarget:
 		InitialStanceAI: Defend
@@ -1770,6 +1797,9 @@ chrp:
 		VoiceSet: ChronoPrisonVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	ChangesHealth:
 		PercentageStep: 1
@@ -1835,6 +1865,9 @@ mgg:
 	Voiced:
 		VoiceSet: MobileGapGeneratorVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	CreatesShroud:
@@ -1915,6 +1948,9 @@ succ:
 		VoiceSet: SuccubusVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: warfactory.infiltrated
 	HitShape:
 	SpawnActorOnDeath:
 		Actor: succ.Husk
@@ -1986,6 +2022,9 @@ mnrva:
 	Voiced:
 		VoiceSet: MinervaVoice
 	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: warfactory.infiltrated
 	HitShape:
 	Cargo:

@@ -403,3 +403,8 @@ ModContent:
 ModCredits:
 	ModTabTitle: Valiant Shades
 	ModCreditsFile: ra2vsh|AUTHORS.RA2VSH
+
+Translations:
+	common|languages/en.ftl
+
+DefaultOrderGenerator: UnitOrderGenerator

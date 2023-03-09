@@ -119,6 +119,9 @@ e1:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	# HACK: negated conditions evaluate to true in EnabledByDefault, we can use this duplicate WIB to render it on map editor
@@ -312,6 +315,9 @@ ggi:
 		VoiceSet: GGIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	# HACK: negated conditions evaluate to true in EnabledByDefault, we can use this duplicate WIB to render it on map editor
@@ -397,6 +403,9 @@ snipe:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 
@@ -469,6 +478,9 @@ gren:
 	Voiced:
 		VoiceSet: GrenadierVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -546,6 +558,9 @@ ghost:
 	Voiced:
 		VoiceSet: SealVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -709,6 +724,9 @@ tany:
 		VoiceSet: TanyaVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	WithInfantryBody:
@@ -778,6 +796,9 @@ tanya2:
 	VoiceAnnouncement:
 		Voice: Build
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	SpawnActorOnDeath:
 		Actor: tanya2.husk
@@ -888,6 +909,9 @@ hirano:
 		VoiceSet: HiranoVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	WithInfantryBody:
@@ -963,6 +987,9 @@ jumpjet:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
 
@@ -996,6 +1023,9 @@ cleg:
 		Prerequisites: ~gapile, garbur
 		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	Valued:
 		Cost: 1000
@@ -1099,6 +1129,9 @@ marks:
 		VoiceSet: TDCommandoVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	Cloak:
@@ -1175,6 +1208,9 @@ dione:
 		VoiceSet: RA1TanyaVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	-TakeCover:
@@ -1239,6 +1275,9 @@ artemis:
 	Voiced:
 		VoiceSet: UmagonVoice
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -1306,6 +1345,9 @@ fairy:
 		Weapon: FairyBoltE
 		RequiresCondition: rank-heroic
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand

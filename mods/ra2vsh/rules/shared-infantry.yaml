@@ -137,6 +137,9 @@ dog:
 		VoiceSet: DogVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.infiltrated
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -306,6 +309,9 @@ dog:
 	-SpawnActorOnDeath@kamikaze:
 	-SpawnActorOnDeath@brute:
 	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: Veterancy
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
