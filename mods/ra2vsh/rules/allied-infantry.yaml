@@ -46,6 +46,7 @@ e1:
 		Voice: Attack
 		PauseOnCondition: disabled
 		RequiresCondition: undeployed
+		FacingTolerance: 0
 	AttackTurreted@deployed:
 		Turrets: deploy
 		Armaments: deployed, deployed-elite
@@ -178,6 +179,7 @@ ggi:
 		Voice: Attack
 		PauseOnCondition: disabled
 		RequiresCondition: undeployed
+		FacingTolerance: 0
 	AttackTurreted@deployed:
 		Turrets: deploy
 		Armaments: deployed, deployed-elite, deployed-secondary, deployed-secondary-elite
@@ -399,6 +401,7 @@ snipe:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Voiced:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
@@ -457,6 +460,7 @@ gren:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: GrenadeDisc
 		RequiresCondition: !rank-heroic
@@ -553,6 +557,7 @@ ghost:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	RenderSprites:
 		Image: seal
 	Voiced:
@@ -718,6 +723,7 @@ tany:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
@@ -788,6 +794,7 @@ tanya2:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Aircraft:
 		TurnSpeed: 256
 		Speed: 180
@@ -903,6 +910,7 @@ hirano:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
@@ -980,6 +988,7 @@ jumpjet:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Aircraft:
 		TurnSpeed: 256
 		Speed: 140
@@ -1068,6 +1077,7 @@ cleg:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	AutoTarget:
@@ -1121,6 +1131,7 @@ marks:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled || !ammo
+		FacingTolerance: 0
 	Armament:
 		Weapon: MarksmanFlare
 	WithInfantryBody:
@@ -1188,6 +1199,7 @@ dione:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: DioneGun
 		RequiresCondition: !rank-heroic
@@ -1270,6 +1282,7 @@ artemis:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -1355,6 +1368,7 @@ fairy:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	-Crushable:

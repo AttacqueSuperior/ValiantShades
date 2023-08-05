@@ -106,6 +106,7 @@ sub:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 4c0
@@ -153,6 +154,7 @@ hyd:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakTrackGun
 		LocalOffset: 256,0,1408
@@ -215,6 +217,7 @@ sqd:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	RevealsShroud:
 		Range: 5c0
 	RevealOnDeath:
@@ -297,6 +300,7 @@ dred:
 		Speed: 60
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithVoxelBody@loaded:
 		RequiresCondition: loaded
 	WithVoxelBody@empty:

@@ -360,6 +360,7 @@ schp:
 		Voice: Attack
 		PauseOnCondition: disabled
 		RequiresCondition: undeployed
+		FacingTolerance: 0
 	RenderSprites:
 	WithVoxelHelicopterBody:
 		TickRate: 1

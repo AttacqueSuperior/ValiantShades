@@ -130,6 +130,8 @@ caairp:
 		ExitCell: 2,1
 	RallyPoint:
 		Path: 3,1
+	CommandBarBlacklist:
+		DisableStop: false
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	CaptureManager:
@@ -358,6 +360,8 @@ caoutp:
 		Footprint: xx++ xx++ xx++
 	Reservable:
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired

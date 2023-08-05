@@ -487,7 +487,7 @@ Container@OBSERVER_WIDGETS:
 						Container@COMBAT_STATS_HEADERS:
 							X: 0
 							Y: 0
-							Width: 740
+							Width: 795
 							Height: PARENT_BOTTOM
 							Children:
 								ColorBlock@HEADER_COLOR:
@@ -575,6 +575,15 @@ Container@OBSERVER_WIDGETS:
 									Text: Army Value
 									Align: Right
 									Shadow: True
+								Label@VISION_HEADER:
+									X: 735
+									Y: 0
+									Width: 60
+									Height: PARENT_BOTTOM
+									Font: Bold
+									Text: Vision
+									Align: Right
+									Shadow: True
 				ScrollPanel@PLAYER_STATS_PANEL:
 					X: 0
 					Y: 54
@@ -619,7 +628,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 0
 							Width: 705
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -706,7 +715,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 0
 							Width: 735
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -786,7 +795,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 0
 							Width: 400
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -823,7 +832,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 0
 							Width: 400
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -860,7 +869,7 @@ Container@OBSERVER_WIDGETS:
 							Y: 0
 							Width: 400
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -895,9 +904,9 @@ Container@OBSERVER_WIDGETS:
 						ScrollItem@COMBAT_PLAYER_TEMPLATE:
 							X: 0
 							Y: 0
-							Width: 740
+							Width: 795
 							Height: 24
-							BaseName: scrollitem-nohover
+							Background: scrollitem-nohover
 							Children:
 								ColorBlock@PLAYER_COLOR:
 									X: 0
@@ -969,6 +978,13 @@ Container@OBSERVER_WIDGETS:
 									X: 645
 									Y: 0
 									Width: 90
+									Height: PARENT_BOTTOM
+									Align: Right
+									Shadow: True
+								Label@VISION:
+									X: 735
+									Y: 0
+									Width: 60
 									Height: PARENT_BOTTOM
 									Align: Right
 									Shadow: True

@@ -161,13 +161,13 @@ Assemblies:
 	^BinDir|OpenRA.Mods.AS.dll
 
 ChromeLayout:
-	ra2vsh|chrome/assetbrowser.yaml
 	ra2vsh|chrome/ingame-player.yaml
 	ra2vsh|chrome/ingame-infoobjectives.yaml
 	ra2vsh|chrome/mainmenu.yaml
 	ra2vsh|chrome/ingame-observer.yaml
 	ra2vsh|chrome/ingame-debug.yaml
 	ra2vsh|chrome/credits.yaml
+	common|chrome/assetbrowser.yaml
 	common|chrome/mainmenu-prompts.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-info-lobby-options.yaml

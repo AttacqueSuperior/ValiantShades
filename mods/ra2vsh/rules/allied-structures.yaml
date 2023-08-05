@@ -841,6 +841,8 @@ gadrop:
 		DeathTypes: DefaultDeath
 	RallyPoint:
 		Path: 5,1
+	CommandBarBlacklist:
+		DisableStop: false
 	ExitsDebugOverlay:
 	Exit@1:
 		ExitCell: 3,1
@@ -988,6 +990,8 @@ gadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired

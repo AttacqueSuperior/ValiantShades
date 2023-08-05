@@ -142,6 +142,8 @@
 		Radius: 2c512
 		DeathTypes: DefaultDeath
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	ExitsDebugOverlay:
 	Production:
 		Produces: Infantry, Barracks
@@ -318,6 +320,8 @@
 		DeathTypes: DefaultDeath
 	RallyPoint:
 		Path: 5,1
+	CommandBarBlacklist:
+		DisableStop: false
 	ExitsDebugOverlay:
 	Exit@1:
 		SpawnOffset: -384,-384,0
@@ -549,6 +553,8 @@
 		RequiresCondition: primary && !build-incomplete && !powerdown
 	RallyPoint:
 		Path: 5,1
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 		HpPerStep: 10000

@@ -606,6 +606,8 @@ naclon:
 		RequiresCondition: !build-incomplete && barracks && !being-warped && !powerdown
 	RallyPoint:
 		Path: 3,3
+	CommandBarBlacklist:
+		DisableStop: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 		ProductionType: Clone
@@ -957,6 +959,8 @@ nadept:
 		DeathTypes: DefaultDeath
 	Reservable:
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20000

@@ -37,7 +37,8 @@
 		Image: 120mm
 		LaunchAngle: 64
 		Speed: 341
-		ContrailColor: 404040C0
+		ContrailStartColor: 202020C0
+		ContrailEndColor: 808080
 		ContrailLength: 6
 		ContrailWidth: 24
 
@@ -98,7 +99,7 @@
 		TrailInterval: 1
 		ContrailLength: 8
 		ContrailWidth: 24
-		ContrailColor: D8D8FF
+		ContrailStartColor: D8D8FF
 		HorizontalRateOfTurn: 152
 		VerticalRateOfTurn: 152
 		MinimumLaunchSpeed: 175

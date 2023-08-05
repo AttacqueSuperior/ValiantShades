@@ -43,6 +43,7 @@ e2:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: M1Carbine
 		RequiresCondition: !rank-heroic
@@ -105,6 +106,7 @@ flakt:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakGuyGun
 		LocalOffset: 256,0,1536
@@ -197,6 +199,7 @@ shk:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-heroic
@@ -281,6 +284,7 @@ terror:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice
@@ -374,6 +378,7 @@ deso:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled || deployed
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !parachute && undeployed
@@ -461,6 +466,7 @@ ivan:
 		Cursor: bomb
 		OutsideRangeCursor: bomb
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -576,6 +582,7 @@ yuri:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament:
 		Weapon: MindControl
 		MuzzleSequence: muzzle
@@ -654,6 +661,7 @@ virus:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -703,6 +711,7 @@ boris:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: AKM
 		RequiresCondition: !rank-heroic
@@ -785,6 +794,7 @@ cosmo:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Aircraft:
 		TurnSpeed: 256
 		Speed: 140
@@ -848,6 +858,7 @@ volkov:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: VolkovRail
 		RequiresCondition: !rank-heroic
@@ -1014,6 +1025,7 @@ hopl:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -1081,6 +1093,7 @@ cyborg:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:

@@ -32,6 +32,7 @@ init:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: PsychicJab
 		RequiresCondition: !rank-heroic
@@ -106,6 +107,7 @@ brute:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	WithInfantryBody:
 		RequiresCondition: !parachute && !mutation
 		DefaultAttackSequence: shoot

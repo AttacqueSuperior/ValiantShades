@@ -716,6 +716,7 @@ v3:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled || !loaded
+		FacingTolerance: 0
 	RenderSprites:
 	Selectable:
 		Bounds: 1544, 2509, 0, -289
@@ -1140,6 +1141,7 @@ turtl:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	RenderSprites:
 	Selectable:
 		Bounds: 1544, 2509, 0, -289

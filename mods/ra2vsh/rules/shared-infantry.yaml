@@ -59,6 +59,7 @@ engineer:
 	AttackFrontal:
 		Voice: Action
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	Armament@defuse:
 		Weapon: DefuseKit
 		LocalOffset: 164,0,864
@@ -112,6 +113,7 @@ dog:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	AutoTarget:
 		InitialStance: AttackAnything
 		ScanRadius: 6

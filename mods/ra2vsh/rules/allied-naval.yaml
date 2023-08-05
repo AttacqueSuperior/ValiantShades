@@ -95,6 +95,7 @@ dest:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 4c0
@@ -140,6 +141,7 @@ aegis:
 		PauseOnCondition: disabled
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithVoxelBody:
 	RenderSprites:
 	Voiced:
@@ -192,6 +194,7 @@ dlph:
 	AttackFrontal:
 		Voice: Attack
 		PauseOnCondition: disabled
+		FacingTolerance: 0
 	RevealsShroud:
 		Range: 4c0
 	RevealOnDeath:
