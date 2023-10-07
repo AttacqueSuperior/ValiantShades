@@ -2,9 +2,6 @@ gacnst:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggcnst.shp
-		TilesetFilenames:
-			SNOW: gacnst.shp
 		Offset: 3, -60
 	idle:
 		Filename: ggcnst.shp
@@ -65,9 +62,6 @@ gapowr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggpowr.shp
-		TilesetFilenames:
-			SNOW: gapowr.shp
 		Offset: 0, -31
 	idle:
 		Filename: ggpowr.shp
@@ -160,9 +154,6 @@ gapile:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggpile.shp
-		TilesetFilenames:
-			SNOW: gapile.shp
 		Offset: -15, -38
 	idle:
 		Filename: ggpile.shp
@@ -208,9 +199,6 @@ garefn:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggrefn.shp
-		TilesetFilenames:
-			SNOW: garefn.shp
 		Offset: -12, -52
 	idle:
 		Filename: ggrefn.shp
@@ -268,9 +256,6 @@ gafcmd:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggfcmd.shp
-		TilesetFilenames:
-			SNOW: gafcmd.shp
 		Offset: 0, -36
 	idle:
 		Filename: ggfcmd.shp
@@ -307,9 +292,6 @@ gaairc:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggairc.shp
-		TilesetFilenames:
-			SNOW: gaairc.shp
 		Offset: 15, -37
 	idle:
 		Filename: ggairf.shp
@@ -394,9 +376,6 @@ gaweap:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ggweap.shp
-		TilesetFilenames:
-			SNOW: gaweap.shp
 		Offset: -30, -60
 	idle:
 		Filename: ggweap.shp
@@ -513,9 +492,6 @@ gayard:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ggyard.shp
-		TilesetFilenames:
-			SNOW: gayard.shp
 		Offset: 0, -45
 	idle:
 		Filename: ggyard.shp
@@ -598,9 +574,6 @@ gadept:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ggdept.shp
-		TilesetFilenames:
-			SNOW: gadept.shp
 		Offset: 7, -40
 	idle:
 		Filename: ggdept_d.shp
@@ -664,9 +637,6 @@ gatech:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ggtech.shp
-		TilesetFilenames:
-			SNOW: gatech.shp
 		Offset: -15, -40
 	idle:
 		Filename: ggtech.shp
@@ -716,9 +686,6 @@ garbur:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ggrbur.shp
-		TilesetFilenames:
-			SNOW: garbur.shp
 		Offset: 0, -45
 	idle:
 		Filename: ggrbur.shp
@@ -773,9 +740,6 @@ gaorep:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire4
 	Defaults:
-		Filename: ggorep.shp
-		TilesetFilenames:
-			SNOW: gaorep.shp
 		Offset: 0, -45
 	idle:
 		Filename: ggorep.shp
@@ -831,9 +795,6 @@ gacran:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggcran.shp
-		TilesetFilenames:
-			SNOW: gacran.shp
 		Offset: 0, -30
 	idle:
 		Filename: ggcran.shp
@@ -868,14 +829,17 @@ gadrop:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
+		Offset: -30, -60
+	idle:
 		Filename: ggdrop.shp
 		TilesetFilenames:
 			SNOW: gadrop.shp
-		Offset: -30, -60
-	idle:
 		ShadowStart: 2
 		ZOffset: -1024
 	damaged-idle:
+		Filename: ggdrop.shp
+		TilesetFilenames:
+			SNOW: gadrop.shp
 		ShadowStart: 3
 		ZOffset: -1024
 	bib:
@@ -927,13 +891,16 @@ gaspir:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Offset: 0, -45
+	idle:
 		Filename: ggspir.shp
 		TilesetFilenames:
 			SNOW: gaspir.shp
-		Offset: 0, -45
-	idle:
 		ShadowStart: 2
 	damaged-idle:
+		Filename: ggspir.shp
+		TilesetFilenames:
+			SNOW: gaspir.shp
 		ShadowStart: 3
 	idle-ball:
 		Filename: ggspir_a.shp
@@ -989,9 +956,6 @@ gaspir:
 gawall:
 	Inherits: ^Structure
 	Defaults:
-		Filename: ggwall.shp
-		TilesetFilenames:
-			SNOW: gawall.shp
 		Offset: 0, -15
 	-make:
 	idle:
@@ -1023,9 +987,6 @@ gapill:
 	Inherits@damagefire: ^BuildingDamageFire1
 	Inherits@muzzle: ^WithMachineGunMuzzle
 	Defaults:
-		Filename: ggpill.shp
-		TilesetFilenames:
-			SNOW: gapill.shp
 		Offset: 0, -15
 	idle:
 		Filename: ggpill.shp
@@ -1056,9 +1017,6 @@ nasam:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngsam.shp
-		TilesetFilenames:
-			SNOW: nasam.shp
 		Offset: 0, -15
 		ZOffset: -512
 	idle:
@@ -1093,9 +1051,6 @@ gtgcan:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: gggcan.shp
-		TilesetFilenames:
-			SNOW: gagcan.shp
 		Offset: 0, -30
 		ZOffset: -512
 	idle:
@@ -1133,9 +1088,6 @@ gaspysat:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggspysat.shp
-		TilesetFilenames:
-			SNOW: gaspysat.shp
 		Offset: 0, -31
 	idle:
 		Filename: ggspst.shp
@@ -1184,9 +1136,6 @@ gagap:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: gggap.shp
-		TilesetFilenames:
-			SNOW: gagap.shp
 		Offset: 0,-15
 	idle:
 		Filename: gggap.shp
@@ -1221,9 +1170,6 @@ gaweat:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggweat.shp
-		TilesetFilenames:
-			SNOW: gaweat.shp
 		Offset: 0, -45
 	idle:
 		Filename: ggweth.shp
@@ -1283,9 +1229,6 @@ gacsph:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ggcsph.shp
-		TilesetFilenames:
-			SNOW: gacsph.shp
 		Offset: -15, -50
 	idle:
 		Filename: ggcsph.shp
@@ -1325,9 +1268,6 @@ atesla:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: agesla.shp
-		TilesetFilenames:
-			SNOW: aaesla.shp
 		Offset: 1,-15
 	idle-normal:
 		Filename: ggpris.shp
@@ -1388,9 +1328,6 @@ garobo:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ggrobo.shp
-		TilesetFilenames:
-			SNOW: garobo.shp
 		Offset: 0, -31
 	idle:
 		Filename: ggrobo_a.shp

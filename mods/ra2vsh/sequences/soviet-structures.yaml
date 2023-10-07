@@ -2,9 +2,6 @@ nacnst:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngcnst.shp
-		TilesetFilenames:
-			SNOW: nacnst.shp
 		Offset: 4, -58
 	idle:
 		Filename: ngcnst_c.shp
@@ -76,9 +73,6 @@ napowr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngpowr.shp
-		TilesetFilenames:
-			SNOW: napowr.shp
 		Offset: -15, -37
 	idle:
 		Filename: ngpowr.shp
@@ -122,9 +116,6 @@ nahand:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: nghand.shp
-		TilesetFilenames:
-			SNOW: nahand.shp
 		Offset: 1, -31
 	idle:
 		Filename: nghand.shp
@@ -157,9 +148,6 @@ narefn:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngrefn.shp
-		TilesetFilenames:
-			SNOW: narefn.shp
 		Offset: -13, -53
 	idle:
 		Filename: ngrefn.shp
@@ -215,9 +203,6 @@ naradr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngradr.shp
-		TilesetFilenames:
-			SNOW: naradr.shp
 		Offset: 2, -31
 	idle:
 		Filename: ngradr.shp
@@ -263,9 +248,6 @@ naweap:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ngweap.shp
-		TilesetFilenames:
-			SNOW: naweap.shp
 		Offset: -30, -60
 	idle:
 		Filename: ngweap.shp
@@ -368,9 +350,6 @@ nayard:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ngyard.shp
-		TilesetFilenames:
-			SNOW: nayard.shp
 		Offset: 0, -45
 	idle:
 		Filename: ngyard.shp
@@ -466,9 +445,6 @@ naairc:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ngairc.shp
-		TilesetFilenames:
-			SNOW: naairc.shp
 		Offset: 17, -43
 	idle:
 		Filename: ngairf.shp
@@ -536,7 +512,6 @@ naairc:
 nadept:
 	Inherits: ^Structure
 	Defaults:
-		Filename: ngdept.shp
 		Offset: -15, -53
 	idle:
 		Filename: ngdept_b.shp
@@ -604,9 +579,6 @@ nanrct:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ngnrct.shp
-		TilesetFilenames:
-			SNOW: nanrct.shp
 		Offset: -12, -56
 	idle:
 		Filename: ngnrct.shp
@@ -659,9 +631,6 @@ natek:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ngtek.shp
-		TilesetFilenames:
-			SNOW: natek.shp
 		Offset: -15, -37
 	idle:
 		Filename: ngtek.shp
@@ -719,9 +688,6 @@ natech:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
-		Filename: ngtech.shp
-		TilesetFilenames:
-			SNOW: natech.shp
 		Offset: 0, -45
 	idle:
 		Filename: ngtech.shp
@@ -758,9 +724,6 @@ naindp:
 	Inherits@MC: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngindp.shp
-		TilesetFilenames:
-			SNOW: naindp.shp
 		Offset: 0, -45
 	idle:
 		Filename: ngindp.shp
@@ -814,9 +777,6 @@ naclon:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngclon.shp
-		TilesetFilenames:
-			SNOW: naclon.shp
 		Offset: 0, -30
 	idle:
 		Filename: inviso.shp
@@ -827,8 +787,14 @@ naclon:
 		TilesetFilenames:
 		ShadowStart: -1
 	inactive:
+		Filename: ngclon.shp
+		TilesetFilenames:
+			SNOW: naclon.shp
 		ShadowStart: 3
 	damaged-inactive:
+		Filename: ngclon.shp
+		TilesetFilenames:
+			SNOW: naclon.shp
 		Start: 1
 		ShadowStart: 4
 	active:
@@ -863,9 +829,6 @@ napsis:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngpsis.shp
-		TilesetFilenames:
-			SNOW: napsis.shp
 		Offset: 1, -30
 	idle:
 		Filename: ngpsis.shp
@@ -908,7 +871,6 @@ napsis:
 namisl:
 	Inherits: ^Structure
 	Defaults:
-		Filename: namisl.shp
 		Offset: 0, -42
 	idle:
 		Filename: ngmisl_e.shp
@@ -944,9 +906,6 @@ napsyd:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
-		Filename: ngpsyd.shp
-		TilesetFilenames:
-			SNOW: napsyd.shp
 		Offset: 0, -42
 	idle:
 		Filename: ngpsyd_a.shp
@@ -1018,9 +977,6 @@ nairon:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngiron.shp
-		TilesetFilenames:
-			SNOW: nairon.shp
 		Offset: 0, -45
 	idle:
 		Filename: inviso.shp
@@ -1031,8 +987,14 @@ nairon:
 		TilesetFilenames:
 		ShadowStart: -1
 	inactive:
+		Filename: ngiron.shp
+		TilesetFilenames:
+			SNOW: nairon.shp
 		ShadowStart: 3
 	damaged-inactive:
+		Filename: ngiron.shp
+		TilesetFilenames:
+			SNOW: nairon.shp
 		Start: 1
 		ShadowStart: 4
 	active:
@@ -1082,9 +1044,6 @@ nacran:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngcran.shp
-		TilesetFilenames:
-			SNOW: nacran.shp
 		Offset: 0, -30
 	idle:
 		Filename: ngcran.shp
@@ -1127,7 +1086,6 @@ nacran:
 nawall:
 	Inherits: ^Structure
 	Defaults:
-		Filename: ngwall.shp
 		Offset: 0, -15
 	idle:
 		Filename: ngwall.shp
@@ -1163,9 +1121,6 @@ nalasr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: nglasr.shp
-		TilesetFilenames:
-			SNOW: nalasr.shp
 		Offset: 0, -20
 	idle:
 		Filename: ngsnty.shp
@@ -1198,9 +1153,6 @@ tesla:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: tgsla.shp
-		TilesetFilenames:
-			SNOW: tasla.shp
 		Offset: 0, -15
 	idle:
 		Filename: ngtsla.shp
@@ -1259,9 +1211,6 @@ naflak:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngflak.shp
-		TilesetFilenames:
-			SNOW: naflak.shp
 		Offset: 0, -15
 	idle:
 		Filename: ngflaktur.shp
@@ -1295,7 +1244,6 @@ nasntl:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: nasntl.shp
 		Offset: 0, -30
 	idle:
 		Filename: ngsntl.shp
@@ -1325,9 +1273,6 @@ nabnkr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
-		Filename: ngbnkr.shp
-		TilesetFilenames:
-			SNOW: nabnkr.shp
 		Offset: 0, -30
 	idle:
 		Filename: ngbnkr.shp
@@ -1335,12 +1280,21 @@ nabnkr:
 			SNOW: nabnkr.shp
 		ShadowStart: 4
 	damaged-idle:
+		Filename: ngbnkr.shp
+		TilesetFilenames:
+			SNOW: nabnkr.shp
 		Start: 1
 		ShadowStart: 5
 	garrisoned:
+		Filename: ngbnkr.shp
+		TilesetFilenames:
+			SNOW: nabnkr.shp
 		Start: 2
 		ShadowStart: 6
 	damaged-garrisoned:
+		Filename: ngbnkr.shp
+		TilesetFilenames:
+			SNOW: nabnkr.shp
 		Start: 3
 		ShadowStart: 7
 	make:
