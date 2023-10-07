@@ -1,143 +1,403 @@
 tibtre01:
+	Defaults:
+		Filename: cgdrill.shp
+		TilesetFilenames:
+			SNOW: cadrill.shp
 	Inherits: ^Drill
 
 tibtre02:
+	Defaults:
+		Filename: cgdrill.shp
+		TilesetFilenames:
+			SNOW: cadrill.shp
 	Inherits: ^Drill
 
 tibtre03:
+	Defaults:
+		Filename: cgdrill.shp
+		TilesetFilenames:
+			SNOW: cadrill.shp
 	Inherits: ^Drill
 
 tibtre04:
+	Defaults:
+		Filename: cgdrill.shp
+		TilesetFilenames:
+			SNOW: cadrill.shp
 	Inherits: ^Drill
 
 tree01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree01.tem
+			SNOW: tree01.sno
+			URBAN: tree01.urb
+			DESERT: tree01.des
+			NEWURBAN: tree01.ubn
 	Inherits: ^Tree
 
 tree02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree02.tem
+			SNOW: tree02.sno
+			URBAN: tree02.urb
+			DESERT: tree02.des
+			NEWURBAN: tree02.ubn
 	Inherits: ^Tree
 
 tree03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree03.tem
+			SNOW: tree03.sno
+			URBAN: tree03.urb
+			DESERT: tree03.des
+			NEWURBAN: tree03.ubn
 	Inherits: ^Tree
 
 tree04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree04.tem
+			SNOW: tree04.sno
+			URBAN: tree04.urb
+			DESERT: tree04.des
+			NEWURBAN: tree04.ubn
 	Inherits: ^Tree
 
 tree05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree05.tem
+			SNOW: tree05.sno
+			URBAN: tree05.urb
+			DESERT: tree05.des
+			NEWURBAN: tree05.ubn
 	Inherits: ^Tree
 
 tree06:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree06.tem
+			SNOW: tree06.sno
+			URBAN: tree06.urb
+			DESERT: tree06.des
+			NEWURBAN: tree06.ubn
 	Inherits: ^Tree
 
 tree07:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree07.tem
+			SNOW: tree07.sno
+			URBAN: tree07.urb
+			DESERT: tree07.des
+			NEWURBAN: tree07.ubn
 	Inherits: ^Tree
 
 tree08:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree08.tem
+			SNOW: tree08.sno
+			URBAN: tree08.urb
+			DESERT: tree08.des
+			NEWURBAN: tree08.ubn
 	Inherits: ^Tree
 
 tree09:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree09.tem
+			SNOW: tree09.sno
+			URBAN: tree09.urb
+			DESERT: tree09.des
+			NEWURBAN: tree09.ubn
 	Inherits: ^Tree
 
 tree10:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree10.tem
+			SNOW: tree10.sno
+			URBAN: tree10.urb
+			DESERT: tree10.des
+			NEWURBAN: tree10.ubn
 	Inherits: ^Tree
 
 tree11:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree11.tem
+			SNOW: tree11.sno
+			URBAN: tree11.urb
+			DESERT: tree11.des
+			NEWURBAN: tree11.ubn
 	Inherits: ^Tree
 
 tree12:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree12.tem
+			SNOW: tree12.sno
+			URBAN: tree12.urb
+			DESERT: tree12.des
+			NEWURBAN: tree12.ubn
 	Inherits: ^Tree
 
 tree13:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree13.tem
+			SNOW: tree13.sno
+			URBAN: tree13.urb
+			DESERT: tree13.des
+			NEWURBAN: tree13.ubn
 	Inherits: ^Tree
 
 tree14:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree14.tem
+			SNOW: tree14.sno
+			URBAN: tree14.urb
+			DESERT: tree14.des
+			NEWURBAN: tree14.ubn
 	Inherits: ^Tree
 
 tree15:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree15.tem
+			SNOW: tree15.sno
+			URBAN: tree15.urb
+			DESERT: tree15.des
+			NEWURBAN: tree15.ubn
 	Inherits: ^Tree
 
 tree16:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree16.tem
+			SNOW: tree16.sno
+			URBAN: tree16.urb
+			DESERT: tree16.des
+			NEWURBAN: tree16.ubn
 	Inherits: ^Tree
 
 tree17:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree17.tem
+			SNOW: tree17.sno
+			URBAN: tree17.urb
+			DESERT: tree17.des
+			NEWURBAN: tree17.ubn
 	Inherits: ^Tree
 
 tree18:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree18.tem
+			SNOW: tree18.sno
+			URBAN: tree18.urb
+			DESERT: tree18.des
+			NEWURBAN: tree18.ubn
 	Inherits: ^Tree
 
 tree19:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree19.tem
+			SNOW: tree19.sno
+			URBAN: tree19.urb
+			DESERT: tree19.des
+			NEWURBAN: tree19.ubn
 	Inherits: ^Tree
 
 tree20:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree20.tem
+			SNOW: tree20.sno
+			URBAN: tree20.urb
+			DESERT: tree20.des
+			NEWURBAN: tree20.ubn
 	Inherits: ^Tree
 
 tree21:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree21.tem
+			SNOW: tree21.sno
+			URBAN: tree21.urb
+			DESERT: tree21.des
+			NEWURBAN: tree21.ubn
 	Inherits: ^Tree
 
 tree22:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree22.tem
+			SNOW: tree22.sno
+			URBAN: tree22.urb
+			DESERT: tree22.des
+			NEWURBAN: tree22.ubn
 	Inherits: ^Tree
 
 tree23:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree23.tem
+			SNOW: tree23.sno
+			URBAN: tree23.urb
+			DESERT: tree23.des
+			NEWURBAN: tree23.ubn
 	Inherits: ^Tree
 
 tree24:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree24.tem
+			SNOW: tree24.sno
+			URBAN: tree24.urb
+			DESERT: tree24.des
+			NEWURBAN: tree24.ubn
 	Inherits: ^Tree
 
 tree25:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree25.tem
+			SNOW: tree25.sno
+			URBAN: tree25.urb
+			DESERT: tree25.des
+			NEWURBAN: tree25.ubn
 	Inherits: ^Tree
 
 tree26:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree26.tem
+			SNOW: tree26.sno
+			URBAN: tree26.urb
+			DESERT: tree26.des
+			NEWURBAN: tree26.ubn
 	Inherits: ^Tree
 
 tree27:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree27.tem
+			SNOW: tree27.sno
+			URBAN: tree27.urb
+			DESERT: tree27.des
+			NEWURBAN: tree27.ubn
 	Inherits: ^Tree
 
 tree28:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tree28.tem
+			SNOW: tree28.sno
+			URBAN: tree28.urb
+			DESERT: tree28.des
+			NEWURBAN: tree28.ubn
 	Inherits: ^Tree
 
 tree29:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree29.urb
+			DESERT: tree29.des
+			NEWURBAN: tree29.ubn
+	idle:
+		Filename: tree29.tem
+	autobounds:
+		Filename: tree29.tem
 
 tree30:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree30.urb
+			DESERT: tree30.des
+			NEWURBAN: tree30.ubn
+	idle:
+		Filename: tree30.tem
+	autobounds:
+		Filename: tree30.tem
 
 tree31:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree31.urb
+			DESERT: tree31.des
+			NEWURBAN: tree31.ubn
+	idle:
+		Filename: tree31.tem
+	autobounds:
+		Filename: tree31.tem
 
 tree32:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree32.urb
+			DESERT: tree32.des
+			NEWURBAN: tree32.ubn
+	idle:
+		Filename: tree32.tem
+	autobounds:
+		Filename: tree32.tem
 
 tree33:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree33.urb
+			DESERT: tree33.des
+			NEWURBAN: tree33.ubn
+	idle:
+		Filename: tree33.tem
+	autobounds:
+		Filename: tree33.tem
 
 tree34:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree34.urb
+			DESERT: tree34.des
+			NEWURBAN: tree34.ubn
+	idle:
+		Filename: tree34.tem
+	autobounds:
+		Filename: tree34.tem
 
 tree35:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree35.urb
+			DESERT: tree35.des
+			NEWURBAN: tree35.ubn
+	idle:
+		Filename: tree35.tem
+	autobounds:
+		Filename: tree35.tem
 
 tree36:
 	Inherits: ^Tree
 	Defaults:
-		TilesetOverrides:
-			SNOW: TEMPERATE
+		TilesetFilenames:
+			URBAN: tree36.urb
+			DESERT: tree36.des
+			NEWURBAN: tree36.ubn
+	idle:
+		Filename: tree36.tem
+	autobounds:
+		Filename: tree36.tem

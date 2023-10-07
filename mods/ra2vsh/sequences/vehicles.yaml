@@ -3,96 +3,115 @@
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithApocMuzzle
 	Inherits@muzzle2: ^WithCannonMuzzle
-	icon: 4tnkicon.png
-		AddExtension: false
+	icon:
+		Filename: 4tnkicon.png
 
 amcv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: mcvicon
+	icon:
+		Filename: mcvicon.shp
 
 aegis:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: agisicon
+	icon:
+		Filename: agisicon.shp
 
 aero:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: aeroicon
+	icon:
+		Filename: aeroicon.shp
 
 behold:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 bfrt:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: bfrticon
+	icon:
+		Filename: bfrticon.shp
 
 bura:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	buratinomuzzle: buratmuz
+	buratinomuzzle:
+		Filename: buratmuz.shp
 		Length: *
-	icon: buraicon.png
-		AddExtension: false
+	icon:
+		Filename: buraicon.png
 
 car:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 carrier:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: carricon
+	icon:
+		Filename: carricon.shp
 
 chrp:
 	Inherits: ^Vehicle
-	icon: chrpicon.png
-		AddExtension: false
+	icon:
+		Filename: chrpicon.png
 
 cdest:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 cmin:
 	Inherits: ^Vehicle
-	harvest: oregath
+	harvest:
+		Filename: oregath.shp
 		Length: 15
 		Facings: 8
-	warpin: warpout
+	warpin:
+		Filename: warpout.shp
 		Frames: 20, 18, 16, 14, 12, 10, 8, 6, 4, 2
 		Length: 10
-	warpout: warpout
+	warpout:
+		Filename: warpout.shp
 		Length: 20
-	icon: ahrvicon
+	icon:
+		Filename: ahrvicon.shp
 
 cruise:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 dest:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: desticon
+	icon:
+		Filename: desticon.shp
 
 dred:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: dredicon
+	icon:
+		Filename: dredicon.shp
 
 drgn:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithFlameMuzzle
-	icon: drgnicon
+	icon:
+		Filename: drgnicon.shp
 
 dron:
+	Defaults:
+		Filename: dron.shp
 	Inherits: ^Vehicle
 	stand:
 		Start: 48
@@ -109,236 +128,292 @@ dron:
 		ShadowStart: 144
 		Length: 4
 		Facings: -8
-	shoot: dronp
+	shoot:
+		Filename: dronp.shp
 		Length: 1
 		Facings: 32
-	icon: dronicon
+	icon:
+		Filename: dronicon.shp
 
 empr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithCannonMuzzle
-	icon: empricon.png
-		AddExtension: false
+	icon:
+		Filename: empricon.png
 
 fv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@machinegunmuzzle: ^WithMachineGunMuzzle
-	icon: fvicon
+	icon:
+		Filename: fvicon.shp
+	mgmuzzle:
+		Filename: fv.shp
 
 gaunt:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	gauntletmuzzle: gauntmuz
+	gauntletmuzzle:
+		Filename: gauntmuz.shp
 		Length: *
-	icon: gaunicon.png
-		AddExtension: false
+	icon:
+		Filename: gaunicon.png
 
 mgg:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: mgapicon
+	icon:
+		Filename: mgapicon.shp
 
 mgtk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	miragemuzzle: miragmuz
+	miragemuzzle:
+		Filename: miragmuz.shp
 		Length: *
-	icon: rtnkicon
+	icon:
+		Filename: rtnkicon.shp
 
 mnrva:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithCannonMuzzle
-	icon: mnrvicon.png
-		AddExtension: false
+	icon:
+		Filename: mnrvicon.png
 
 gtgcan:
-	icon: gcanicon
+	icon:
+		Filename: gcanicon.shp
 
 mtnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithLKOMuzzleA
-	icon: gtnkicon
+	icon:
+		Filename: gtnkicon.shp
+	lkomuzzlea:
+		Filename: mtnk.shp
 
 hammr:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithLKOMuzzleA
-	icon: htn2icon.png
-		AddExtension: false
+	icon:
+		Filename: htn2icon.png
+	lkomuzzlea:
+		Filename: hammr.shp
 
 harv:
 	Inherits: ^Vehicle
 	Inherits@muzzle: ^WithMachineGunMuzzle
-	harvest: oregath
+	harvest:
+		Filename: oregath.shp
 		Length: 15
 		Facings: 8
-	icon: harvicon
+	icon:
+		Filename: harvicon.shp
+	mgmuzzle:
+		Filename: harv.shp
 
 hmmv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithMachineGunMuzzle
-	icon: hmmvicon
+	icon:
+		Filename: hmmvicon.shp
+	mgmuzzle:
+		Filename: hmmv.shp
 
 htk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithFlakMuzzle
-	icon: htkicon
+	icon:
+		Filename: htkicon.shp
 
 htnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithLKOMuzzleA
-	icon: htnkicon
+	icon:
+		Filename: htnkicon.shp
+	lkomuzzlea:
+		Filename: htnk.shp
 
 howi:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: howiicon
+	icon:
+		Filename: howiicon.shp
 
 hyd:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: hovricon
+	icon:
+		Filename: hovricon.shp
 
 lasher:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithLKOMuzzleA
-	icon: ltnkicon
+	icon:
+		Filename: ltnkicon.shp
+	lkomuzzlea:
+		Filename: lasher.shp
 
 lcrf:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: landicon
+	icon:
+		Filename: landicon.shp
 
 ltnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithCannonMuzzle
-	missile-muzzle: ragunfire
+	missile-muzzle:
+		Filename: ragunfire.shp
 		Length: *
-	icon: ltnkicon.png
-		AddExtension: false
+	icon:
+		Filename: ltnkicon.png
 
 malf:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 apoc:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithApocMuzzle
 	Inherits@muzzle2: ^WithCannonMuzzle
-	icon: mtnkicon
+	icon:
+		Filename: mtnkicon.shp
 
 ovrl:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithApocMuzzle
-	icon: ovrlicon.png
-		AddExtension: false
+	icon:
+		Filename: ovrlicon.png
 
 propa:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 robo:
 	Inherits: ^Vehicle
 	Inherits@muzzle: ^WithCannonMuzzle
-	icon: roboicon
+	icon:
+		Filename: roboicon.shp
 
 rtnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: rtnkicon
+	icon:
+		Filename: rtnkicon.shp
 
 smcv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: smcvicon
+	icon:
+		Filename: smcvicon.shp
 
 slost:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithMachineGunMuzzle
-	icon: ytnkicon
+	icon:
+		Filename: ytnkicon.shp
+	mgmuzzle:
+		Filename: slost.shp
 
 sref:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: sreficon
+	icon:
+		Filename: sreficon.shp
 
 sub:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: subicon
+	icon:
+		Filename: subicon.shp
 
 succ:
 	Inherits: ^Vehicle
-	icon: succicon.png
-		AddExtension: false
+	icon:
+		Filename: succicon.png
 
 tnkd:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithLKOMuzzleB
-	icon: tnkdicon
+	icon:
+		Filename: tnkdicon.shp
+	lkomuzzleb:
+		Filename: tnkd.shp
 
 topol:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: toplicon.png
-		AddExtension: false
+	icon:
+		Filename: toplicon.png
 
 sapc:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: sapcicon
+	icon:
+		Filename: sapcicon.shp
 
 dtruck:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: trkaicon
+	icon:
+		Filename: trkaicon.shp
 
 mind:
 	Inherits: ^Vehicle
-	icon: mindicon
+	icon:
+		Filename: mindicon.shp
 
 ttnk:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: ttnkicon
+	icon:
+		Filename: ttnkicon.shp
 
 ttnk2:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: ttnkicon
+	icon:
+		Filename: ttnkicon.shp
 
 tug:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 turtl:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithApocMuzzle
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 v3:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: v3icon
+	icon:
+		Filename: v3icon.shp
 
 vlad:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp

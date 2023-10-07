@@ -1,256 +1,552 @@
 hdstn01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: hdstn01.tem
+			SNOW: hdstn01.sno
+			URBAN: hdstn01.urb
+			DESERT: hdstn01.des
+			NEWURBAN: hdstn01.ubn
 	Inherits: ^Pole
 
 lt_gen01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_gen01.tem
+			SNOW: lt_gen01.sno
+			URBAN: lt_gen01.urb
+			DESERT: lt_gen01.des
+			NEWURBAN: lt_gen01.ubn
 	Inherits: ^Pole
 
 lt_gen02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_gen02.tem
+			SNOW: lt_gen02.sno
+			URBAN: lt_gen02.urb
+			DESERT: lt_gen02.des
+			NEWURBAN: lt_gen02.ubn
 	Inherits: ^Pole
 
 lt_gen03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_gen03.tem
+			SNOW: lt_gen03.sno
+			URBAN: lt_gen03.urb
+			DESERT: lt_gen03.des
+			NEWURBAN: lt_gen03.ubn
 	Inherits: ^Pole
 
 lt_gen04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_gen04.tem
+			SNOW: lt_gen04.sno
+			URBAN: lt_gen04.urb
+			DESERT: lt_gen04.des
+			NEWURBAN: lt_gen04.ubn
 	Inherits: ^Pole
 
 lt_sgn01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn01.tem
+			SNOW: lt_sgn01.sno
+			URBAN: lt_sgn01.urb
+			DESERT: lt_sgn01.des
+			NEWURBAN: lt_sgn01.ubn
 	Inherits: ^Pole
 
 lt_sgn02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn02.tem
+			SNOW: lt_sgn02.sno
+			URBAN: lt_sgn02.urb
+			DESERT: lt_sgn02.des
+			NEWURBAN: lt_sgn02.ubn
 	Inherits: ^Pole
 
 lt_sgn03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn03.tem
+			SNOW: lt_sgn03.sno
+			URBAN: lt_sgn03.urb
+			DESERT: lt_sgn03.des
+			NEWURBAN: lt_sgn03.ubn
 	Inherits: ^Pole
 
 lt_sgn04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn04.tem
+			SNOW: lt_sgn04.sno
+			URBAN: lt_sgn04.urb
+			DESERT: lt_sgn04.des
+			NEWURBAN: lt_sgn04.ubn
 	Inherits: ^Pole
 	idle:
 		ShadowStart: -1
 
 lt_eur01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_eur01.tem
+			SNOW: lt_eur01.sno
+			URBAN: lt_eur01.urb
+			DESERT: lt_eur01.des
+			NEWURBAN: lt_eur01.ubn
 	Inherits: ^Pole
 
 lt_eur02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: lt_eur02.tem
+			SNOW: lt_eur02.sno
+			URBAN: lt_eur02.urb
+			DESERT: lt_eur02.des
+			NEWURBAN: lt_eur02.ubn
 	Inherits: ^Pole
 
 pole01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: pole01.tem
+			SNOW: pole01.sno
+			URBAN: pole01.urb
+			DESERT: pole01.des
+			NEWURBAN: pole01.ubn
 	Inherits: ^Pole
 
 pole02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: pole02.tem
+			SNOW: pole02.sno
+			URBAN: pole02.urb
+			DESERT: pole02.des
+			NEWURBAN: pole02.ubn
 	Inherits: ^Pole
 
 sign01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign01.tem
+			SNOW: sign01.sno
+			URBAN: sign01.urb
+			DESERT: sign01.des
+			NEWURBAN: sign01.ubn
 	Inherits: ^Pole
 
 sign02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign02.tem
+			SNOW: sign02.sno
+			URBAN: sign02.urb
+			DESERT: sign02.des
+			NEWURBAN: sign02.ubn
 	Inherits: ^Pole
 
 sign03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign03.tem
+			SNOW: sign03.sno
+			URBAN: sign03.urb
+			DESERT: sign03.des
+			NEWURBAN: sign03.ubn
 	Inherits: ^Pole
 	idle:
 		ShadowStart: -1
 
 sign04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign04.tem
+			SNOW: sign04.sno
+			URBAN: sign04.urb
+			DESERT: sign04.des
+			NEWURBAN: sign04.ubn
 	Inherits: ^Pole
 
 sign05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign05.tem
+			SNOW: sign05.sno
+			URBAN: sign05.urb
+			DESERT: sign05.des
+			NEWURBAN: sign05.ubn
 	Inherits: ^Pole
 
 sign06:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: sign06.tem
+			SNOW: sign06.sno
+			URBAN: sign06.urb
+			DESERT: sign06.des
+			NEWURBAN: sign06.ubn
 	Inherits: ^Pole
 
 trff01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trff01.tem
+			SNOW: trff01.sno
+			URBAN: trff01.urb
+			DESERT: trff01.des
+			NEWURBAN: trff01.ubn
 	Inherits: ^Pole
 
 camsc01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc01.shp
+			SNOW: camsc01.shp
+			URBAN: cumsc01.shp
+			DESERT: cdmsc01.shp
+			NEWURBAN: cnmsc01.shp
 	Inherits: ^Prop
 
 camsc02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc02.shp
+			SNOW: camsc02.shp
+			URBAN: cumsc02.shp
+			DESERT: cdmsc02.shp
+			NEWURBAN: cnmsc02.shp
 	Inherits: ^Prop
 
 camsc03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc03.shp
+			SNOW: camsc03.shp
+			URBAN: cumsc03.shp
+			DESERT: cdmsc03.shp
+			NEWURBAN: cnmsc03.shp
 	Inherits: ^Prop
 
 camsc04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc04.shp
+			SNOW: camsc04.shp
+			URBAN: cumsc04.shp
+			DESERT: cdmsc04.shp
+			NEWURBAN: cnmsc04.shp
 	Inherits: ^Prop
 
 camsc05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc05.shp
+			SNOW: camsc05.shp
+			URBAN: cumsc05.shp
+			DESERT: cdmsc05.shp
+			NEWURBAN: cnmsc05.shp
 	Inherits: ^Prop
 
 camsc06:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc06.shp
+			SNOW: camsc06.shp
+			URBAN: cumsc06.shp
+			DESERT: cdmsc06.shp
+			NEWURBAN: cnmsc06.shp
 	Inherits: ^Prop
-	idle-fire: camsc06a
+	idle-fire:
+		TilesetFilenames:
+			TEMPERATE: ctmsc06a.shp
+			SNOW: camsc06a.shp
+			URBAN: cumsc06a.shp
+			DESERT: cdmsc06a.shp
+			NEWURBAN: cnmsc06a.shp
 		Length: 4
 		ShadowStart: 4
 		Tick: 80
 
 camsc11:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc11.shp
+			SNOW: camsc11.shp
+			URBAN: cumsc11.shp
+			DESERT: cdmsc11.shp
+			NEWURBAN: cnmsc11.shp
 	Inherits: ^Prop
 
 camsc12:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc12.shp
+			SNOW: camsc12.shp
+			URBAN: cumsc12.shp
+			DESERT: cdmsc12.shp
+			NEWURBAN: cnmsc12.shp
 	Inherits: ^Prop
 
 camsc13:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc13.shp
+			SNOW: camsc13.shp
+			URBAN: cumsc13.shp
+			DESERT: cdmsc13.shp
+			NEWURBAN: cnmsc13.shp
 	Inherits: ^Prop
 
 trff02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trff02.tem
+			SNOW: trff02.sno
+			URBAN: trff02.urb
+			DESERT: trff02.des
+			NEWURBAN: trff02.ubn
 	Inherits: ^Pole
 
 trff03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trff03.tem
+			SNOW: trff03.sno
+			URBAN: trff03.urb
+			DESERT: trff03.des
+			NEWURBAN: trff03.ubn
 	Inherits: ^Pole
 
 trff04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trff04.tem
+			SNOW: trff04.sno
+			URBAN: trff04.urb
+			DESERT: trff04.des
+			NEWURBAN: trff04.ubn
 	Inherits: ^Pole
 
 camisc01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc01.shp
+			SNOW: camisc01.shp
+			URBAN: cumisc01.shp
+			DESERT: cdmisc01.shp
+			NEWURBAN: cnmisc01.shp
 	Inherits: ^Prop
 
 camisc02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc02.shp
+			SNOW: camisc02.shp
+			URBAN: cumisc02.shp
+			DESERT: cdmisc02.shp
+			NEWURBAN: cnmisc02.shp
 	Inherits: ^Prop
 	idle:
 		ShadowStart: -1
 
 camisc03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc03.shp
+			SNOW: camisc03.shp
+			URBAN: cumisc03.shp
+			DESERT: cdmisc03.shp
+			NEWURBAN: cnmisc03.shp
 	Inherits: ^Prop
 
 camisc04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc04.shp
+			SNOW: camisc04.shp
+			URBAN: cumisc04.shp
+			DESERT: cdmisc04.shp
+			NEWURBAN: cnmisc04.shp
 	Inherits: ^Prop
 
 camisc05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc05.shp
+			SNOW: camisc05.shp
+			URBAN: cumisc05.shp
+			DESERT: cdmisc05.shp
+			NEWURBAN: cnmisc05.shp
 	Inherits: ^Prop
 
 camisc06:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc06.shp
+			SNOW: camisc06.shp
+			URBAN: cumisc06.shp
+			DESERT: cdmisc06.shp
+			NEWURBAN: cnmisc06.shp
 	Inherits: ^Prop
 
 caeuro05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cteuro05.shp
+			SNOW: caeuro05.shp
+			URBAN: cueuro05.shp
+			DESERT: cdeuro05.shp
+			NEWURBAN: cneuro05.shp
 	Inherits: ^Prop
 
 capark01:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			NEWURBAN: TEMPERATE
+		Filename: ctpark01.shp
+		TilesetFilenames:
+			SNOW: capark01.shp
+			URBAN: cupark01.shp
+			DESERT: cdpark01.shp
 
 capark02:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			NEWURBAN: TEMPERATE
+		Filename: ctpark02.shp
+		TilesetFilenames:
+			SNOW: capark02.shp
+			URBAN: cupark02.shp
+			DESERT: cdpark02.shp
 
 capark03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpark03.shp
+			SNOW: capark03.shp
+			URBAN: cupark03.shp
+			DESERT: cdpark03.shp
+			NEWURBAN: cnpark03.shp
 	Inherits: ^Prop
 
 capark04:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+		Filename: cgpark04.shp
+		TilesetFilenames:
+			SNOW: capark04.shp
 	idle:
 		ShadowStart: 1
 
 capark05:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+		Filename: cgpark05.shp
+		TilesetFilenames:
+			SNOW: capark05.shp
 	idle:
 		ShadowStart: 1
 
 capark06:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+		Filename: cgpark06.shp
+		TilesetFilenames:
+			SNOW: capark06.shp
 	idle:
 		ShadowStart: 1
 
 casin03e:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+		Filename: cgsin03e.shp
+		TilesetFilenames:
+			SNOW: casin03e.shp
 	idle:
 		ShadowStart: 1
 
 casin03s:
 	Inherits: ^Prop
 	Defaults:
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+		Filename: cgsin03s.shp
+		TilesetFilenames:
+			SNOW: casin03s.shp
 	idle:
 		ShadowStart: 1
 
 caurb01:
 	Inherits: ^Prop
 	Defaults:
+		Filename: cgurb01.shp
+		TilesetFilenames:
+			SNOW: caurb01.shp
 		Offset: 0, -15
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 1
 
 caurb02:
 	Inherits: ^Prop
 	Defaults:
+		Filename: cgurb02.shp
+		TilesetFilenames:
+			SNOW: caurb02.shp
 		Offset: 0, -15
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 1
 
 caurb03:
 	Inherits: ^Prop
 	Defaults:
+		Filename: cuurb03.shp
+		TilesetFilenames:
+			SNOW: caurb03.shp
 		Offset: 0, -15
-		TilesetOverrides:
-			TEMPERATE: URBAN
-			DESERT: URBAN
-			NEWURBAN: URBAN
 	idle:
 		ShadowStart: 1
 
 ammo01:
+	Defaults:
+		Filename: ammo01.shp
 	Inherits: ^Prop
 	idle:
-		UseTilesetCode: false
 	autobounds:
-		UseTilesetCode: false
 
 cabhut:
 	Inherits: ^Prop
 	idle:
-		UseTilesetCode: false
+		Filename: cabhut.shp
 		Offset: 0, -15
+	autobounds:
+		TilesetFilenames:
+			TEMPERATE: ctbhut.shp
+			SNOW: cabhut.shp
+			URBAN: cubhut.shp
+			DESERT: cdbhut.shp
+			NEWURBAN: cnbhut.shp
 
 gagate_a:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: gtgate_a.shp
+			SNOW: gagate_a.shp
+			URBAN: gugate_a.shp
+			DESERT: gdgate_a.shp
+			NEWURBAN: gngate_a.shp
 		Offset: 0, -15
 	idle:
 		Length: 10
 		ShadowStart: 21
-	make: gagate_a
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtgate_a.shp
+			SNOW: gagate_a.shp
+			URBAN: gugate_a.shp
+			DESERT: gdgate_a.shp
+			NEWURBAN: gngate_a.shp
 		Start: 10
 		Length: -10
 		ShadowStart: 30
@@ -258,7 +554,7 @@ gagate_a:
 spkr01:
 	Inherits: ^Pole
 	Defaults:
-		AddExtension: false
-		UseTilesetExtension: false
-	idle: spkr01.urb
+		Filename: spkr01
+	idle:
+		Filename: spkr01.urb
 		ShadowStart: 1

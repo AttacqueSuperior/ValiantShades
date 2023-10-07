@@ -2,765 +2,1337 @@ nacnst:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngcnst.shp
+		TilesetFilenames:
+			SNOW: nacnst.shp
 		Offset: 4, -58
-	idle: ngcnst_c
+	idle:
+		Filename: ngcnst_c.shp
+		TilesetFilenames:
+			SNOW: nacnst_c.shp
 		ShadowStart: 4
-	damaged-idle: ngcnst_c
+	damaged-idle:
+		Filename: ngcnst_c.shp
+		TilesetFilenames:
+			SNOW: nacnst_c.shp
 		ShadowStart: 5
-	make: ntcnstmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntcnstmk.shp
+			SNOW: nacnstmk.shp
+			URBAN: nucnstmk.shp
+			DESERT: ndcnstmk.shp
+			NEWURBAN: nncnstmk.shp
 		Length: 31
 		ShadowStart: 31
-	idle-top: ngcnst_a
+	idle-top:
+		Filename: ngcnst_a.shp
+		TilesetFilenames:
+			SNOW: nacnst_a.shp
 		Length: 11
 		Tick: 200
-	damaged-idle-top: ngcnst_a
+	damaged-idle-top:
+		Filename: ngcnst_a.shp
+		TilesetFilenames:
+			SNOW: nacnst_a.shp
 		Start: 11
 		Length: 11
 		Tick: 150
-	idle-normal: ngcnst
+	idle-normal:
+		Filename: ngcnst.shp
+		TilesetFilenames:
+			SNOW: nacnst.shp
 		ZOffset: -1024
-	damaged-idle-normal: ngcnst
+	damaged-idle-normal:
+		Filename: ngcnst.shp
+		TilesetFilenames:
+			SNOW: nacnst.shp
 		Start: 1
 		ZOffset: -1024
-	build: ngcnst_b
+	build:
+		Filename: ngcnst_b.shp
+		TilesetFilenames:
+			SNOW: nacnst_b.shp
 		Length: 21
 		ShadowStart: 42
 		Tick: 150
-	damaged-build: ngcnst_b
+	damaged-build:
+		Filename: ngcnst_b.shp
+		TilesetFilenames:
+			SNOW: nacnst_b.shp
 		Start: 21
 		Length: 21
 		ShadowStart: 63
 		Tick: 150
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -65,-19,1
-	icon: scnsicon
+	icon:
+		Filename: scnsicon.shp
+		TilesetFilenames:
 
 napowr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngpowr.shp
+		TilesetFilenames:
+			SNOW: napowr.shp
 		Offset: -15, -37
-	idle: ngpowr
-	damaged-idle: ngpowr
-	idle-lights: ngpowr_a
+	idle:
+		Filename: ngpowr.shp
+		TilesetFilenames:
+			SNOW: napowr.shp
+	damaged-idle:
+		Filename: ngpowr.shp
+		TilesetFilenames:
+			SNOW: napowr.shp
+	idle-lights:
+		Filename: ngpowr_a.shp
+		TilesetFilenames:
+			SNOW: napowr_a.shp
 		Length: 19
 		Tick: 150
-	damaged-idle-lights: ngpowr_a
+	damaged-idle-lights:
+		Filename: ngpowr_a.shp
+		TilesetFilenames:
+			SNOW: napowr_a.shp
 		Start: 19
 		Length: 19
 		Tick: 150
-	make: ntpowrmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntpowrmk.shp
+			SNOW: napowrmk.shp
+			URBAN: nupowrmk.shp
+			DESERT: ndpowrmk.shp
+			NEWURBAN: nnpowrmk.shp
 		Length: 26
 		ShadowStart: 26
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -27,-7,1
-	icon: npwricon
+	icon:
+		Filename: npwricon.shp
+		TilesetFilenames:
 
 nahand:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: nghand.shp
+		TilesetFilenames:
+			SNOW: nahand.shp
 		Offset: 1, -31
-	idle: nghand
-	damaged-idle: nghand
-	make: nthandmk
+	idle:
+		Filename: nghand.shp
+		TilesetFilenames:
+			SNOW: nahand.shp
+	damaged-idle:
+		Filename: nghand.shp
+		TilesetFilenames:
+			SNOW: nahand.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: nthandmk.shp
+			SNOW: nahandmk.shp
+			URBAN: nuhandmk.shp
+			DESERT: ndhandmk.shp
+			NEWURBAN: nnhandmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -8,-37,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 17,10,1
-	icon: handicon
+	icon:
+		Filename: handicon.shp
+		TilesetFilenames:
 
 narefn:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngrefn.shp
+		TilesetFilenames:
+			SNOW: narefn.shp
 		Offset: -13, -53
-	idle: ngrefn
-	damaged-idle: ngrefn
-	make: ntrefnmk
+	idle:
+		Filename: ngrefn.shp
+		TilesetFilenames:
+			SNOW: narefn.shp
+	damaged-idle:
+		Filename: ngrefn.shp
+		TilesetFilenames:
+			SNOW: narefn.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntrefnmk.shp
+			SNOW: narefnmk.shp
+			URBAN: nurefnmk.shp
+			DESERT: ndrefnmk.shp
+			NEWURBAN: nnrefnmk.shp
 		Length: 26
 		ShadowStart: 26
-	idle-drill: ngrefnl1
+	idle-drill:
+		Filename: ngrefnl1.shp
+		TilesetFilenames:
+			SNOW: narefnl1.shp
 		Length: 3
 		Tick: 1500
-	idle-bib: ngrefnbb
+	idle-bib:
+		Filename: ngrefnbb.shp
+		TilesetFilenames:
+			SNOW: narefnbb.shp
 		ShadowStart: 3
 		ZOffset: -512
-	damaged-idle-bib: ngrefnbb
+	damaged-idle-bib:
+		Filename: ngrefnbb.shp
+		TilesetFilenames:
+			SNOW: narefnbb.shp
 		Start: 1
 		ShadowStart: 4
 		ZOffset: -512
-	docking-overlay: ngrefnor
+	docking-overlay:
+		Filename: ngrefnor.shp
+		TilesetFilenames:
+			SNOW: narefnor.shp
 		Length: 20
 		ShadowStart: 20
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 15,22,1
-	icon: nreficon
+	icon:
+		Filename: nreficon.shp
+		TilesetFilenames:
 
 naradr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngradr.shp
+		TilesetFilenames:
+			SNOW: naradr.shp
 		Offset: 2, -31
-	idle: ngradr
-	damaged-idle: ngradr
-	idle-dish: ngradr_a
+	idle:
+		Filename: ngradr.shp
+		TilesetFilenames:
+			SNOW: naradr.shp
+	damaged-idle:
+		Filename: ngradr.shp
+		TilesetFilenames:
+			SNOW: naradr.shp
+	idle-dish:
+		Filename: ngradr_a.shp
+		TilesetFilenames:
+			SNOW: naradr_a.shp
 		ShadowStart: 92
 		Length: 45
 		Tick: 150
-	damaged-idle-dish: ngradr_a
+	damaged-idle-dish:
+		Filename: ngradr_a.shp
+		TilesetFilenames:
+			SNOW: naradr_a.shp
 		Start: 46
 		ShadowStart: 138
 		Length: 45
 		Tick: 150
-	make: ntradrmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntradrmk.shp
+			SNOW: naradrmk.shp
+			URBAN: nuradrmk.shp
+			DESERT: ndradrmk.shp
+			NEWURBAN: nnradrmk.shp
 		Length: 30
 		ShadowStart: 30
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -16,1,1
-	icon: nradicon
+	icon:
+		Filename: nradicon.shp
+		TilesetFilenames:
 
 naweap:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: ngweap.shp
+		TilesetFilenames:
+			SNOW: naweap.shp
 		Offset: -30, -60
-	idle: ngweap
+	idle:
+		Filename: ngweap.shp
+		TilesetFilenames:
+			SNOW: naweap.shp
 		ZOffset: -1536
-	damaged-idle: ngweap
+	damaged-idle:
+		Filename: ngweap.shp
+		TilesetFilenames:
+			SNOW: naweap.shp
 		ZOffset: -1536
-	build-door: ngweap_1
+	build-door:
+		Filename: ngweap_1.shp
+		TilesetFilenames:
+			SNOW: naweap_1.shp
 		ShadowStart: 2
 		ZOffset: -1024
-	damaged-build-door: ngweap_1
+	damaged-build-door:
+		Filename: ngweap_1.shp
+		TilesetFilenames:
+			SNOW: naweap_1.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -1024
-	build-top: ngweap_2
+	build-top:
+		Filename: ngweap_2.shp
+		TilesetFilenames:
+			SNOW: naweap_2.shp
 		ShadowStart: 2
 		ZOffset: 1024
-	damaged-build-top: ngweap_2
+	damaged-build-top:
+		Filename: ngweap_2.shp
+		TilesetFilenames:
+			SNOW: naweap_2.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 1024
-	build-air-open: ngweap_3
+	build-air-open:
+		Filename: ngweap_3.shp
+		TilesetFilenames:
+			SNOW: naweap_3.shp
 		ShadowStart: 2
-	damaged-build-air-open: ngweap_3
+	damaged-build-air-open:
+		Filename: ngweap_3.shp
+		TilesetFilenames:
+			SNOW: naweap_3.shp
 		Start: 1
 		ShadowStart: 3
-	build-air-inside: ngweap_4
+	build-air-inside:
+		Filename: ngweap_4.shp
+		TilesetFilenames:
+			SNOW: naweap_4.shp
 		ShadowStart: 2
-	damaged-build-air-inside: ngweap_4
+	damaged-build-air-inside:
+		Filename: ngweap_4.shp
+		TilesetFilenames:
+			SNOW: naweap_4.shp
 		Start: 1
 		ShadowStart: 3
-	bib: ngweapbb
+	bib:
+		Filename: ngweapbb.shp
+		TilesetFilenames:
+			SNOW: naweapbb.shp
 		ShadowStart: 3
 		ZOffset: -1024
-	damaged-bib: ngweapbb
+	damaged-bib:
+		Filename: ngweapbb.shp
+		TilesetFilenames:
+			SNOW: naweapbb.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -1024
-	idle-lights: ngweap_a
+	idle-lights:
+		Filename: ngweap_a.shp
+		TilesetFilenames:
+			SNOW: naweap_a.shp
 		Length: 13
 		ShadowStart: 13
 		Tick: 150
-	make: ntweapmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntweapmk.shp
+			SNOW: naweapmk.shp
+			URBAN: nuweapmk.shp
+			DESERT: ndweapmk.shp
+			NEWURBAN: nnweapmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -62,-25,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 1,14,1
-	icon: nwepicon
+	icon:
+		Filename: nwepicon.shp
+		TilesetFilenames:
 
 nayard:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
+		Filename: ngyard.shp
+		TilesetFilenames:
+			SNOW: nayard.shp
 		Offset: 0, -45
-	idle: ngyard
+	idle:
+		Filename: ngyard.shp
+		TilesetFilenames:
+			SNOW: nayard.shp
 		ShadowStart: 4
-	damaged-idle: ngyard
+	damaged-idle:
+		Filename: ngyard.shp
+		TilesetFilenames:
+			SNOW: nayard.shp
 		Start: 2
 		ShadowStart: 5
-	idle-crane: ngyard_a
+	idle-crane:
+		Filename: ngyard_a.shp
+		TilesetFilenames:
+			SNOW: nayard_a.shp
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	damaged-idle-crane: ngyard_a
+	damaged-idle-crane:
+		Filename: ngyard_a.shp
+		TilesetFilenames:
+			SNOW: nayard_a.shp
 		Start: 15
 		Length: 15
 		ShadowStart: 45
 		Tick: 200
-	idle-waves: ngyard_c
+	idle-waves:
+		Filename: ngyard_c.shp
+		TilesetFilenames:
+			SNOW: nayard_c.shp
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	damaged-idle-waves: ngyard_c
+	damaged-idle-waves:
+		Filename: ngyard_c.shp
+		TilesetFilenames:
+			SNOW: nayard_c.shp
 		Start: 30
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	production-lights: ngyard_b
+	production-lights:
+		Filename: ngyard_b.shp
+		TilesetFilenames:
+			SNOW: nayard_b.shp
 		Length: 15
 		ZOffset: 256
-	damaged-production-lights: ngyard_b
+	damaged-production-lights:
+		Filename: ngyard_b.shp
+		TilesetFilenames:
+			SNOW: nayard_b.shp
 		Start: 15
 		Length: 15
 		ZOffset: 256
-	make: ntyardmk
-	repair: ngyard_s
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntyardmk.shp
+			SNOW: nayardmk.shp
+			URBAN: nuyardmk.shp
+			DESERT: ndyardmk.shp
+			NEWURBAN: nnyardmk.shp
+	repair:
+		Filename: ngyard_s.shp
+		TilesetFilenames:
+			SNOW: nayard_s.shp
 		Length: 18
 		ShadowStart: 36
-	damaged-repair: ngyard_s
+	damaged-repair:
+		Filename: ngyard_s.shp
+		TilesetFilenames:
+			SNOW: nayard_s.shp
 		Start: 18
 		Length: 18
 		ShadowStart: 54
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 25,-15,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -37,-18,1
 	damagefire3:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -57,-66,1
-	icon: yardicon
+	icon:
+		Filename: yardicon.shp
+		TilesetFilenames:
 
 naairc:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: ngairc.shp
+		TilesetFilenames:
+			SNOW: naairc.shp
 		Offset: 17, -43
-	idle: naairf
+	idle:
+		Filename: ngairf.shp
+		TilesetFilenames:
+			SNOW: naairf.shp
 		ShadowStart: 2
 		Length: 1
 		ZOffset: -512
-	damaged-idle: naairf
+	damaged-idle:
+		Filename: ngairf.shp
+		TilesetFilenames:
+			SNOW: naairf.shp
 		ShadowStart: 3
 		Start: 1
 		ZOffset: -512
-	idle-top: naairf_b
+	idle-top:
+		Filename: ngairf_b.shp
+		TilesetFilenames:
 		Length: 8
 		ShadowStart: -1
 		Tick: 120
-		TilesetOverrides:
-			SNOW: GENERIC
-	idle-bottom: naairfbb
+	idle-bottom:
+		Filename: ngairfbb.shp
+		TilesetFilenames:
+			SNOW: naairfbb.shp
 		Length: 1
 		ShadowStart: 2
 		ZOffset: -512
-	damage-idle-bottom: naairfbb
+	damage-idle-bottom:
+		Filename: ngairfbb.shp
+		TilesetFilenames:
+			SNOW: naairfbb.shp
 		Start: 1
 		ShadowStart: 3
 		Length: 1
 		ZOffset: -512
-	idle-lamp: naairf_a
+	idle-lamp:
+		Filename: ngairf_a.shp
+		TilesetFilenames:
 		Length: 4
 		Tick: 120
-		TilesetOverrides:
-			SNOW: GENERIC
-	damaged-idle-lamp: naairf_a
+	damaged-idle-lamp:
+		Filename: ngairf_a.shp
+		TilesetFilenames:
 		Length: 4
 		Tick: 120
-		TilesetOverrides:
-			SNOW: GENERIC
-	make: naairfmk
+	make:
+		Filename: ngairfmk.shp
+		TilesetFilenames:
+			SNOW: naairfmk.shp
 		Length: 21
 		ShadowStart: 21
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -21,-14,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -6,-31,1
-	icon: nairfico.png
-		AddExtension: false
+	icon:
+		Filename: nairfico.png
+		TilesetFilenames:
 
 nadept:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ngdept.shp
 		Offset: -15, -53
-	idle: ngdept_b
+	idle:
+		Filename: ngdept_b.shp
+		TilesetFilenames:
+			SNOW: nadept_b.shp
 		Length: 10
 		ShadowStart: 20
 		Tick: 180
-	damaged-idle: ngdept_b
+	damaged-idle:
+		Filename: ngdept_b.shp
+		TilesetFilenames:
+			SNOW: nadept_b.shp
 		Start: 10
 		Length: 10
 		ShadowStart: 29
-	idle-normal: ngdept
+	idle-normal:
+		Filename: ngdept.shp
+		TilesetFilenames:
+			SNOW: nadept.shp
 		ShadowStart: 3
-	damaged-idle-normal: ngdept
+	damaged-idle-normal:
+		Filename: ngdept.shp
+		TilesetFilenames:
+			SNOW: nadept.shp
 		Start: 2
 		ShadowStart: 4
-	bib: ngdeptbb
+	bib:
+		Filename: ngdeptbb.shp
+		TilesetFilenames:
+			SNOW: nadeptbb.shp
 		ShadowStart: 3
 		ZOffset: -512
-	damaged-bib: ngdeptbb
+	damaged-bib:
+		Filename: ngdeptbb.shp
+		TilesetFilenames:
+			SNOW: nadeptbb.shp
 		Start: 1
 		ShadowStart: 2
-	make: ntdeptmk
-	repair: ngdept_c
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntdeptmk.shp
+			SNOW: nadeptmk.shp
+			URBAN: nudeptmk.shp
+			DESERT: nddeptmk.shp
+			NEWURBAN: nndeptmk.shp
+	repair:
+		Filename: ngdept_c.shp
+		TilesetFilenames:
+			SNOW: nadept_c.shp
 		Length: 50
 		ShadowStart: 100
 		Tick: 120
-	damaged-repair: ngdept_c
+	damaged-repair:
+		Filename: ngdept_c.shp
+		TilesetFilenames:
+			SNOW: nadept_c.shp
 		Start: 50
 		Length: 50
 		ShadowStart: 150
 		Tick: 120
-	icon: rfixicon
+	icon:
+		Filename: rfixicon.shp
 
 nanrct:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: ngnrct.shp
+		TilesetFilenames:
+			SNOW: nanrct.shp
 		Offset: -12, -56
-	idle: ngnrct
-	damaged-idle: ngnrct
-	idle-lights: ngnrct_a
+	idle:
+		Filename: ngnrct.shp
+		TilesetFilenames:
+			SNOW: nanrct.shp
+	damaged-idle:
+		Filename: ngnrct.shp
+		TilesetFilenames:
+			SNOW: nanrct.shp
+	idle-lights:
+		Filename: ngnrct_a.shp
+		TilesetFilenames:
+			SNOW: nanrct_a.shp
 		Length: 11
 		Tick: 150
-	damaged-idle-lights: ngnrct_a
+	damaged-idle-lights:
+		Filename: ngnrct_a.shp
+		TilesetFilenames:
+			SNOW: nanrct_a.shp
 		Start: 11
 		Length: 11
 		Tick: 150
-	critical-idle-lights: ngnrct_a
+	critical-idle-lights:
+		Filename: ngnrct_a.shp
+		TilesetFilenames:
+			SNOW: nanrct_a.shp
 		Start: 11
 		Length: 11
 		Tick: 150
-	make: ntnrctmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntnrctmk.shp
+			SNOW: nanrctmk.shp
+			URBAN: nunrctmk.shp
+			DESERT: ndnrctmk.shp
+			NEWURBAN: nnnrctmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 72,-45,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -44,11,1
-	icon: nrcticon
+	icon:
+		Filename: nrcticon.shp
+		TilesetFilenames:
 
 natek:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
+		Filename: ngtek.shp
+		TilesetFilenames:
+			SNOW: natek.shp
 		Offset: -15, -37
-	idle: ngtek
+	idle:
+		Filename: ngtek.shp
+		TilesetFilenames:
+			SNOW: natek.shp
 		ShadowStart: 2
-	damaged-idle: ngtek
+	damaged-idle:
+		Filename: ngtek.shp
+		TilesetFilenames:
+			SNOW: natek.shp
 		ShadowStart: 3
-	idle-lights: ngtek_a
+	idle-lights:
+		Filename: ngtek_a.shp
+		TilesetFilenames:
 		Length: 5
 		Tick: 120
-		TilesetOverrides:
-			SNOW: GENERIC
-	idle-bolts: ngtek_b
+	idle-bolts:
+		Filename: ngtek_b.shp
+		TilesetFilenames:
 		Length: 44
 		Tick: 60
-		TilesetOverrides:
-			SNOW: GENERIC
-	idle-body-lights: ngtek_c
+	idle-body-lights:
+		Filename: ngtek_c.shp
+		TilesetFilenames:
 		Length: 9
 		Tick: 160
-		TilesetOverrides:
-			SNOW: GENERIC
-	damaged-idle-body-lights: ngtek_cd
+	damaged-idle-body-lights:
+		Filename: ngtek_cd.shp
+		TilesetFilenames:
 		Length: 9
 		Tick: 160
-		TilesetOverrides:
-			SNOW: GENERIC
-	make: ngtekmk
+	make:
+		Filename: ngtekmk.shp
+		TilesetFilenames:
+			SNOW: natekmk.shp
 		Length: 15
 		ShadowStart: 15
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -41,-10,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -17,-94,1
 	damagefire3:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 7,13,1
-	icon: ntekicon
+	icon:
+		Filename: ntekicon.shp
+		TilesetFilenames:
 
 natech:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
+		Filename: ngtech.shp
+		TilesetFilenames:
+			SNOW: natech.shp
 		Offset: 0, -45
-	idle: ngtech
-	damaged-idle: ngtech
-	make: nttechmk
+	idle:
+		Filename: ngtech.shp
+		TilesetFilenames:
+			SNOW: natech.shp
+	damaged-idle:
+		Filename: ngtech.shp
+		TilesetFilenames:
+			SNOW: natech.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: nttechmk.shp
+			SNOW: natechmk.shp
+			URBAN: nutechmk.shp
+			DESERT: ndtechmk.shp
+			NEWURBAN: nntechmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -27,-8,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 24,-20,1
 	damagefire3:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 5,-58,1
-	icon: ntchicon
+	icon:
+		Filename: ntchicon.shp
+		TilesetFilenames:
 
 naindp:
 	Inherits@MC: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngindp.shp
+		TilesetFilenames:
+			SNOW: naindp.shp
 		Offset: 0, -45
-	idle: ngindp
-	damaged-idle: ngindp
-	idle-pistons: ngindp_a
+	idle:
+		Filename: ngindp.shp
+		TilesetFilenames:
+			SNOW: naindp.shp
+	damaged-idle:
+		Filename: ngindp.shp
+		TilesetFilenames:
+			SNOW: naindp.shp
+	idle-pistons:
+		Filename: ngindp_a.shp
+		TilesetFilenames:
+			SNOW: naindp_a.shp
 		Length: 13
 		ShadowStart: 26
-	damaged-idle-pistons: ngindp_a
+	damaged-idle-pistons:
+		Filename: ngindp_a.shp
+		TilesetFilenames:
+			SNOW: naindp_a.shp
 		Start: 13
 		Length: 13
 		ShadowStart: 39
-	idle-lights: ngindp_b
+	idle-lights:
+		Filename: ngindp_b.shp
+		TilesetFilenames:
+			SNOW: naindp_b.shp
 		Length: 13
 		ShadowStart: 26
-	damaged-idle-lights: ngindp_b
+	damaged-idle-lights:
+		Filename: ngindp_b.shp
+		TilesetFilenames:
+			SNOW: naindp_b.shp
 		Start: 13
 		Length: 13
 		ShadowStart: 39
-	make: ntindpmk
+	make:
+		Filename: ngindpmk.shp
+		TilesetFilenames:
+			SNOW: naindpmk.shp
 		Length: 26
 		ShadowStart: 26
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -40,-4,1
-	icon: indpicon
+	icon:
+		Filename: indpicon.shp
+		TilesetFilenames:
 
 naclon:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngclon.shp
+		TilesetFilenames:
+			SNOW: naclon.shp
 		Offset: 0, -30
-	idle: inviso
-		UseTilesetCode: false
+	idle:
+		Filename: inviso.shp
+		TilesetFilenames:
 		ShadowStart: -1
-	damaged-idle: inviso
-		UseTilesetCode: false
+	damaged-idle:
+		Filename: inviso.shp
+		TilesetFilenames:
 		ShadowStart: -1
 	inactive:
 		ShadowStart: 3
 	damaged-inactive:
 		Start: 1
 		ShadowStart: 4
-	active: ngclon_a
+	active:
+		Filename: ngclon_a.shp
+		TilesetFilenames:
+			SNOW: naclon_a.shp
 		Length: 11
 		ShadowStart: 22
 		Tick: 180
-	damaged-active: ngclon_a
+	damaged-active:
+		Filename: ngclon_a.shp
+		TilesetFilenames:
+			SNOW: naclon_a.shp
 		Start: 11
 		Length: 11
 		ShadowStart: 33
 		Tick: 180
-	make: ntclonmk
-		TilesetOverrides:
-			DESERT: TEMPERATE
-			NEWURBAN: TEMPERATE
+	make:
+		Filename: ntclonmk.shp
+		TilesetFilenames:
+			SNOW: naclonmk.shp
+			URBAN: nuclonmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 23,-3,1
-	icon: cameo|clonicon
+	icon:
+		Filename: cameo|clonicon.shp
+		TilesetFilenames:
 
 napsis:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngpsis.shp
+		TilesetFilenames:
+			SNOW: napsis.shp
 		Offset: 1, -30
-	idle: ngpsis
-	damaged-idle: ngpsis
-	idle-spin: ngpsis_a
+	idle:
+		Filename: ngpsis.shp
+		TilesetFilenames:
+			SNOW: napsis.shp
+	damaged-idle:
+		Filename: ngpsis.shp
+		TilesetFilenames:
+			SNOW: napsis.shp
+	idle-spin:
+		Filename: ngpsis_a.shp
+		TilesetFilenames:
+			SNOW: napsis_a.shp
 		Length: 40
 		Tick: 150
 		ShadowStart: 80
-	damaged-idle-spin: ngpsis_a
+	damaged-idle-spin:
+		Filename: ngpsis_a.shp
+		TilesetFilenames:
+			SNOW: napsis_a.shp
 		Start: 40
 		Length: 40
 		Tick: 150
 		ShadowStart: 120
-	make: ntpsismk
+	make:
+		Filename: ntpsismk.shp
+		TilesetFilenames:
+			SNOW: napsismk.shp
+			URBAN: nupsismk.shp
 		Length: 24
 		ShadowStart: 24
-		TilesetOverrides:
-			DESERT: TEMPERATE
-			NEWURBAN: TEMPERATE
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -23,4,1
-	icon: cameo|psisicon
+	icon:
+		Filename: cameo|psisicon.shp
+		TilesetFilenames:
 
 namisl:
 	Inherits: ^Structure
 	Defaults:
+		Filename: namisl.shp
 		Offset: 0, -42
-		UseTilesetCode: false
-		-TilesetOverrides:
-	idle: ngmisl_e
+	idle:
+		Filename: ngmisl_e.shp
 		ShadowStart: 2
-	damaged-idle: ngmisl_e
+	damaged-idle:
+		Filename: ngmisl_e.shp
 		ShadowStart: 3
 	# TODO: ngmisl_f is actually the open sequence
-	active: ngmisl_f
+	active:
+		Filename: ngmisl_f.shp
 		Length: 16
 		ShadowStart: 32
 		Tick: 120
-	damaged-active: ngmisl_f
+	damaged-active:
+		Filename: ngmisl_f.shp
 		Start: 17
 		Length: 16
 		ShadowStart: 48
 		Tick: 120
-	make: ntmislmk
-		UseTilesetCode: true
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntmislmk.shp
+			SNOW: namislmk.shp
+			URBAN: numislmk.shp
+			DESERT: ndmislmk.shp
+			NEWURBAN: nnmislmk.shp
 		Length: 26
 		ShadowStart: 26
-	icon: msslicon
+	icon:
+		Filename: msslicon.shp
 
 napsyd:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: ngpsyd.shp
+		TilesetFilenames:
+			SNOW: napsyd.shp
 		Offset: 0, -42
-	idle: ngpsyd_a
+	idle:
+		Filename: ngpsyd_a.shp
+		TilesetFilenames:
+			SNOW: napsyd_a.shp
 		Length: 15
 		ShadowStart: 30
-	damaged-idle: ngpsyd_a
+	damaged-idle:
+		Filename: ngpsyd_a.shp
+		TilesetFilenames:
+			SNOW: napsyd_a.shp
 		Start: 15
 		Length: 15
 		ShadowStart: 45
-	idle-bottom: ngpsyd
-	damaged-idle-bottom: ngpsyd
+	idle-bottom:
+		Filename: ngpsyd.shp
+		TilesetFilenames:
+			SNOW: napsyd.shp
+	damaged-idle-bottom:
+		Filename: ngpsyd.shp
+		TilesetFilenames:
+			SNOW: napsyd.shp
 		Start: 1
 	active:
+		Filename:
+		TilesetFilenames:
 		Combine:
-			ngpsyd_f:
+			0:
+				Filename: ngpsyd_f.shp
 				Length: 25
 				ShadowStart: 50
-			ngpsyd_h:
+			1:
+				Filename: ngpsyd_h.shp
 				Length: 15
 				ShadowStart: 30
 	damaged-active:
+		Filename:
+		TilesetFilenames:
 		Combine:
-			ngpsyd_f:
+			0:
+				Filename: ngpsyd_f.shp
 				Start: 25
 				Length: 25
 				ShadowStart: 75
-			ngpsyd_h:
+			1:
+				Filename: ngpsyd_h.shp
 				Start: 15
 				Length: 15
 				ShadowStart: 45
-	make: ngpsydmk
+	make:
+		Filename: ngpsydmk.shp
+		TilesetFilenames:
+			SNOW: napsydmk.shp
 		Length: 25
 		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -20,-13,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 3,-33,1
-	icon: npdomico.png
-		AddExtension: false
+	icon:
+		Filename: npdomico.png
+		TilesetFilenames:
 
 nairon:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngiron.shp
+		TilesetFilenames:
+			SNOW: nairon.shp
 		Offset: 0, -45
-	idle: inviso
-		UseTilesetCode: false
+	idle:
+		Filename: inviso.shp
+		TilesetFilenames:
 		ShadowStart: -1
-	damaged-idle: inviso
-		UseTilesetCode: false
+	damaged-idle:
+		Filename: inviso.shp
+		TilesetFilenames:
 		ShadowStart: -1
 	inactive:
 		ShadowStart: 3
 	damaged-inactive:
 		Start: 1
 		ShadowStart: 4
-	active: ngiron_a
+	active:
+		Filename: ngiron_h.shp
+		TilesetFilenames:
+			SNOW: nairon_h.shp
 		Length: 11
 		ShadowStart: 22
 		Tick: 120
-	damaged-active: ngiron_a
+	damaged-active:
+		Filename: ngiron_h.shp
+		TilesetFilenames:
+			SNOW: nairon_h.shp
 		Start: 11
 		Length: 11
 		ShadowStart: 33
 		Tick: 120
-	active: ngiron_h
+	active:
+		Filename: ngiron_h.shp
+		TilesetFilenames:
+			SNOW: nairon_h.shp
 		Length: 12
 		ShadowStart: 24
-	damaged-active: ngiron_h
+	damaged-active:
+		Filename: ngiron_h.shp
+		TilesetFilenames:
+			SNOW: nairon_h.shp
 		Start: 12
 		Length: 12
 		ShadowStart: 36
-	make: ntironmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntironmk.shp
+			SNOW: naironmk.shp
+			URBAN: nuironmk.shp
+			DESERT: ndironmk.shp
+			NEWURBAN: nnironmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -2,14,1
-	icon: ironicon
+	icon:
+		Filename: ironicon.shp
+		TilesetFilenames:
 
 nacran:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngcran.shp
+		TilesetFilenames:
+			SNOW: nacran.shp
 		Offset: 0, -30
-	idle: ngcran
+	idle:
+		Filename: ngcran.shp
+		TilesetFilenames:
+			SNOW: nacran.shp
 		ShadowStart: 3
-	damaged-idle: ngcran
+	damaged-idle:
+		Filename: ngcran.shp
+		TilesetFilenames:
+			SNOW: nacran.shp
 		Start: 2
 		ShadowStart: 4
-	idle-normal: ngcran_a
+	idle-normal:
+		Filename: ngcran_a.shp
+		TilesetFilenames:
+			SNOW: nacran_a.shp
 		Length: 10
 		ShadowStart: 20
 		Tick: 180
-	damaged-idle-normal: ngcran_a
+	damaged-idle-normal:
+		Filename: ngcran_a.shp
+		TilesetFilenames:
+			SNOW: nacran_a.shp
 		Start: 10
 		Length: 10
 		ShadowStart: 30
 		Tick: 180
-	make: ngcranmk
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
+	make:
+		Filename: ngcranmk.shp
+		TilesetFilenames:
+			SNOW: nacranmk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 0,-15,1
-	icon: rfixicon
+	icon:
+		Filename: rfixicon.shp
+		TilesetFilenames:
 
 nawall:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ngwall.shp
 		Offset: 0, -15
-	idle: ntwall
+	idle:
+		Filename: ngwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
 		Length: 16
 		ShadowStart: 48
-	damaged-idle: ntwall
+	damaged-idle:
+		Filename: ngwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
 		Start: 16
 		Length: 16
 		ShadowStart: 64
-	critical-idle: ntwall
+	critical-idle:
+		Filename: ngwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
 		Start: 32
 		Length: 16
 		ShadowStart: 80
-	icon: nwalicon
+	icon:
+		Filename: nwalicon.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntwall.shp
+			SNOW: nawall.shp
+			URBAN: nuwall.shp
+			DESERT: ndwall.shp
+			NEWURBAN: nnwall.shp
 
 nalasr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: nglasr.shp
+		TilesetFilenames:
+			SNOW: nalasr.shp
 		Offset: 0, -20
-	idle: nasnty
-	damaged-idle: nasnty
-	turret: nasntytur
+	idle:
+		Filename: ngsnty.shp
+		TilesetFilenames:
+			SNOW: nasnty.shp
+	damaged-idle:
+		Filename: ngsnty.shp
+		TilesetFilenames:
+			SNOW: nasnty.shp
+	turret:
+		Filename: ngsntytur.shp
+		TilesetFilenames:
 		Facings: 32
 		ShadowStart: 32
-		TilesetOverrides:
-			SNOW: GENERIC
-	make: nasntymk
+	make:
+		Filename: ngsntymk.shp
+		TilesetFilenames:
+			SNOW: nasntymk.shp
 		Length: 21
 		ShadowStart: 21
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -5,0,1
-	icon: plticon
+	icon:
+		Filename: plticon.shp
+		TilesetFilenames:
 
 tesla:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: tgsla.shp
+		TilesetFilenames:
+			SNOW: tasla.shp
 		Offset: 0, -15
-	idle: ngtsla
-	damaged-idle: ngtsla
-	idle-powered: ngtsla_a
+	idle:
+		Filename: ngtsla.shp
+		TilesetFilenames:
+			SNOW: natsla.shp
+	damaged-idle:
+		Filename: ngtsla.shp
+		TilesetFilenames:
+			SNOW: natsla.shp
+	idle-powered:
+		Filename: ngtsla_a.shp
+		TilesetFilenames:
+			SNOW: natsla_a.shp
 		Length: 10
 		ShadowStart: 20
-	damaged-idle-powered: ngtsla_a
+	damaged-idle-powered:
+		Filename: ngtsla_a.shp
+		TilesetFilenames:
+			SNOW: natsla_a.shp
 		Start: 10
 		Length: 10
 		ShadowStart: 30
-	active: ngtsla_b
+	active:
+		Filename: ngtsla_b.shp
+		TilesetFilenames:
+			SNOW: natsla_b.shp
 		Length: 10
 		ShadowStart: 20
 		Tick: 100
 		ZOffset: 10
-	damaged-active: ngtsla_b
+	damaged-active:
+		Filename: ngtsla_b.shp
+		TilesetFilenames:
+			SNOW: natsla_b.shp
 		Start: 10
 		ShadowStart: 20
 		Length: 10
 		Tick: 100
 		ZOffset: 10
-	make: nttslamk
+	make:
+		TilesetFilenames:
+			TEMPERATE: nttslamk.shp
+			SNOW: natslamk.shp
+			URBAN: nutslamk.shp
+			DESERT: ndtslamk.shp
+			NEWURBAN: nntslamk.shp
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 0,-1,1
-	icon: tslaicon
+	icon:
+		Filename: tslaicon.shp
+		TilesetFilenames:
 
 naflak:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngflak.shp
+		TilesetFilenames:
+			SNOW: naflak.shp
 		Offset: 0, -15
-	idle: ngflaktur
+	idle:
+		Filename: ngflaktur.shp
+		TilesetFilenames:
 		Facings: 32
 		ShadowStart: 32
-		TilesetOverrides:
-			SNOW: GENERIC
-	damaged-idle: ngflaktur
+	damaged-idle:
+		Filename: ngflaktur.shp
+		TilesetFilenames:
 		Facings: 32
 		ShadowStart: 32
-		TilesetOverrides:
-			SNOW: GENERIC
-	make: ngflakmk
+	make:
+		Filename: ngflakmk.shp
+		TilesetFilenames:
 		Length: 41
 		ShadowStart: 41
-		TilesetOverrides:
-			SNOW: GENERIC
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
-	muzzle: flak
+	muzzle:
+		Filename: flak.shp
+		TilesetFilenames:
 		Length: *
 		Offset: 0,0
-		UseTilesetCode: false
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -5,-2,1
-	icon: flakicon
+	icon:
+		Filename: flakicon.shp
+		TilesetFilenames:
 
 nasntl:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: nasntl.shp
 		Offset: 0, -30
-		UseTilesetCode: false
-	idle: ngsntl
+	idle:
+		Filename: ngsntl.shp
 		ShadowStart: 2
-	damaged-idle: ngsntl
+	damaged-idle:
+		Filename: ngsntl.shp
 		ShadowStart: 3
-	make: ngsntlmk
+	make:
+		Filename: ngsntlmk.shp
 		Length: 14
 		ShadowStart: 14
-	turret: ngsntltur
+	turret:
+		Filename: ngsntltur.shp
 		Facings: 32
 		ShadowStart: 32
-	muzzle: gcmuzzle
+	muzzle:
+		Filename: gcmuzzle.shp
 		Length: *
 		Offset: 0,0
-		UseTilesetCode: false
 	damagefire1:
+		Filename: fire02.shp
 		Offset: -1,-2,3
-	icon: sntlicon
+	icon:
+		Filename: sntlicon.shp
 
 nabnkr:
 	Inherits: ^Structure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: ngbnkr.shp
+		TilesetFilenames:
+			SNOW: nabnkr.shp
 		Offset: 0, -30
-	idle: ngbnkr
+	idle:
+		Filename: ngbnkr.shp
+		TilesetFilenames:
+			SNOW: nabnkr.shp
 		ShadowStart: 4
 	damaged-idle:
 		Start: 1
@@ -771,7 +1343,15 @@ nabnkr:
 	damaged-garrisoned:
 		Start: 3
 		ShadowStart: 7
-	make: ntbnkrmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntbnkrmk.shp
+			SNOW: nabnkrmk.shp
+			URBAN: nubnkrmk.shp
+			DESERT: ndbnkrmk.shp
+			NEWURBAN: nnbnkrmk.shp
 		Length: 25
 		ShadowStart: 25
-	icon: bnkricon
+	icon:
+		Filename: bnkricon.shp
+		TilesetFilenames:

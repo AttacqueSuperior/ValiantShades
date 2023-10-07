@@ -1,16 +1,23 @@
 sengineer:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
-	Defaults: engineer
+	Defaults:
+		Filename: engineer.shp
 	paradrop:
 		Start: 244
-	icon: yengicon
+	icon:
+		Filename: yengicon.shp
 
 dog:
+	Defaults:
+		Filename: dog.shp
 	Inherits: adog
-	icon: dogicon
+	icon:
+		Filename: dogicon.shp
 
 sqd:
+	Defaults:
+		Filename: sqd.shp
 	Inherits@IvanBomb: ^IvanBombable
 	stand:
 		Start: 160
@@ -25,19 +32,24 @@ sqd:
 		Length: 14
 		Facings: -8
 		Tick: 120
-	icon: sqdicon
+	icon:
+		Filename: sqdicon.shp
 
 e2:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: cons
+	Defaults:
+		Filename: cons.shp
 	run:
 		Tick: 120
 	paradrop:
 		Start: 292
-	icon: e2icon
+	icon:
+		Filename: e2icon.shp
 
 flakt:
+	Defaults:
+		Filename: flakt.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -60,32 +72,40 @@ flakt:
 		Start: 245
 	paradrop:
 		Start: 164
-	icon: flkticon
+	icon:
+		Filename: flkticon.shp
 
 shk:
+	Defaults:
+		Filename: shk.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	run: shkfix
+	run:
+		Filename: shkfix.shp
 		Start: 0
 		Tick: 120
 	paradrop:
 		Start: 292
-	charge: shkfix
+	charge:
+		Filename: shkfix.shp
 		Start: 48
 		Length: 6
 		Facings: 8
 		Tick: 80
-	prone-charge: shkfix
+	prone-charge:
+		Filename: shkfix.shp
 		Start: 96
 		Length: 6
 		Facings: 8
 		Tick: 80
-	icon: shkicon
+	icon:
+		Filename: shkicon.shp
 
 terror:
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: sabo
+	Defaults:
+		Filename: sabo.shp
 	run:
 		Tick: 120
 	die1:
@@ -101,9 +121,12 @@ terror:
 		Start: 164
 	cheer:
 		Start: 165
-	icon: trsticon
+	icon:
+		Filename: trsticon.shp
 
 deso:
+	Defaults:
+		Filename: deso.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -120,13 +143,16 @@ deso:
 		Tick: 80
 	cheer:
 		Start: 314
-	paradrop: desofix
-	icon: desoicon
+	paradrop:
+		Filename: desofix.shp
+	icon:
+		Filename: desoicon.shp
 
 agent:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
-	Defaults: nspy
+	Defaults:
+		Filename: nspy.shp
 	liedown:
 		Start: 164
 	standup:
@@ -135,9 +161,12 @@ agent:
 		Start: 196
 	paradrop:
 		Start: 204
-	icon: nspyicon
+	icon:
+		Filename: nspyicon.shp
 
 ivan:
+	Defaults:
+		Filename: ivan.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -153,15 +182,23 @@ ivan:
 		Length: 15
 	cheer:
 		Start: 259
-	paradrop: ivanfix
-	icon: ivanicon
+	paradrop:
+		Filename: ivanfix.shp
+	icon:
+		Filename: ivanicon.shp
 
 civan:
+	Defaults:
+		Filename: civan.shp
 	Inherits: ivan
-	paradrop: civanfix
-	icon: ivncicon
+	paradrop:
+		Filename: civanfix.shp
+	icon:
+		Filename: ivncicon.shp
 
 yuri:
+	Defaults:
+		Filename: yuri.shp
 	Inherits: ^ArmedInfantry
 	deploy:
 		Start: 292
@@ -174,13 +211,17 @@ yuri:
 		Length: 6
 	cheer:
 		Start: 308
-	muzzle: yuricntl
+	muzzle:
+		Filename: yuricntl.shp
 		Length: *
 	paradrop:
 		Start: 307
-	icon: yuriicon
+	icon:
+		Filename: yuriicon.shp
 
 virus:
+	Defaults:
+		Filename: virus.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	shoot:
@@ -191,9 +232,12 @@ virus:
 		Start: 300
 	cheer:
 		Start: 196
-	icon: vrusicon
+	icon:
+		Filename: vrusicon.shp
 
 boris:
+	Defaults:
+		Filename: boris.shp
 	Inherits: ^ArmedInfantry
 	shoot:
 		Start: 169
@@ -208,7 +252,8 @@ boris:
 		Start: 154
 	cheer:
 		Start: 297
-	paradrop: borisfix
+	paradrop:
+		Filename: borisfix.shp
 	flare:
 		Start: 401
 		Tick: 480
@@ -225,12 +270,14 @@ boris:
 		Start: 265
 	standup:
 		Start: 281
-	icon: brisicon
+	icon:
+		Filename: brisicon.shp
 
 cosmo:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@Thor: ^AffectedByThor
-	Defaults: lunr
+	Defaults:
+		Filename: lunr.shp
 	stand:
 		Facings: 8
 	run:
@@ -265,10 +312,12 @@ cosmo:
 		Length: 15
 		Facings: 2
 		Tick: 80
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Tick: 80
 	shoot:
@@ -302,26 +351,36 @@ cosmo:
 		Tick: 100
 	paradrop:
 		Start: 418
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
-	icon: lunricon
+	icon:
+		Filename: lunricon.shp
 
 cosmo.husk:
-	idle: lunr
+	idle:
+		Filename: lunr.shp
 		Start: 340
 		Length: 16
 		Facings: 2
 		Tick: 120
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
 
 yuripr:
+	Defaults:
+		Filename: yuripr.shp
 	Inherits: yuri
-	paradrop: yuri
+	paradrop:
+		Filename: yuri.shp
 		Start: 307
-	icon: yurpicon
+	icon:
+		Filename: yurpicon.shp
 
 volkov:
+	Defaults:
+		Filename: volkov.shp
 	Inherits: ^ArmedInfantry
 	stand:
 		Facings: 8
@@ -350,10 +409,12 @@ volkov:
 	-prone-stand:
 	-prone-run:
 	-prone-shoot:
-	icon: volkicon.png
-		AddExtension: false
+	icon:
+		Filename: volkicon.png
 
 kamikaze:
+	Defaults:
+		Filename: kamikaze.shp
 	Inherits: ^Animal
 	run:
 		Length: 8
@@ -374,10 +435,12 @@ kamikaze:
 	shoot:
 		Start: 0
 		Length: 1
-	icon: kamiicon.png
-		AddExtension: false
+	icon:
+		Filename: kamiicon.png
 
 hopl:
+	Defaults:
+		Filename: hopl.shp
 	Inherits: ^ArmedInfantry
 	stand:
 		Facings: 8
@@ -406,9 +469,12 @@ hopl:
 	-prone-stand:
 	-prone-run:
 	-prone-shoot:
-	icon: hoplicon
+	icon:
+		Filename: hoplicon.shp
 
 cyborg:
+	Defaults:
+		Filename: cyborg.shp
 	Inherits: ^ArmedInfantry
 	stand:
 		Facings: 8
@@ -437,5 +503,5 @@ cyborg:
 	-prone-stand:
 	-prone-run:
 	-prone-shoot:
-	icon: cyboicon.png
-		AddExtension: false
+	icon:
+		Filename: cyboicon.png

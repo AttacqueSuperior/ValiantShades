@@ -1,96 +1,116 @@
 a10:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 asw:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 aurora:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 badger:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 beag:
 	Inherits: ^Aircraft
-	icon: beagicon
+	icon:
+		Filename: beagicon.shp
 
 bpln:
 	Inherits: ^Aircraft
-	icon: bplnicon
+	icon:
+		Filename: bplnicon.shp
 
 cargoplane:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 falc:
 	Inherits: ^Aircraft
-	icon: falcicon
+	icon:
+		Filename: falcicon.shp
 
 fflash:
 	Inherits: ^Aircraft
-	icon: sapsicon.png
-		AddExtension: false
+	icon:
+		Filename: sapsicon.png
 
 hind:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
-	icon: hindicon.png
-		AddExtension: false
+	icon:
+		Filename: hindicon.png
 
 hornet:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 pdplane:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 schp:
 	Inherits: ^Aircraft
-	make: schpdepl
+	make:
+		Filename: schpdepl.shp
 		Length: 11
 		ShadowStart: 11
-	idle: null
-	icon: schpicon
+	idle:
+		Filename: null.shp
+	icon:
+		Filename: schpicon.shp
 
 shab:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 shad:
 	Inherits: ^Aircraft
 	Inherits@MC: ^MindControllable
 	Inherits@muzzle: ^WithCannonMuzzle
-	icon: shadicon
+	icon:
+		Filename: shadicon.shp
 
 soyuz:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 spirit:
 	Inherits: ^Aircraft
-	icon: spiricon.png
-		AddExtension: false
+	icon:
+		Filename: spiricon.png
 
 spypl:
 	Inherits: ^Aircraft
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 thor:
 	Inherits: ^Aircraft
-	thorboltmuzzle: thorbmuz
+	thorboltmuzzle:
+		Filename: thorbmuz.shp
 		Length: *
-	icon: thoricon.png
-		AddExtension: false
+	icon:
+		Filename: thoricon.png
 
 yak:
 	Inherits: ^Aircraft
-	icon: yakficon
+	icon:
+		Filename: yakficon.shp
 
 zep:
 	Inherits: ^Aircraft
-	icon: zepicon
+	icon:
+		Filename: zepicon.shp

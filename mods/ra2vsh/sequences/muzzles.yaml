@@ -1,138 +1,138 @@
 ^WithMachineGunMuzzle:
 	mgmuzzle:
 		Combine:
-			mgun-n:
+			0:
+				Filename: mgun-n.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-nw:
+			1:
+				Filename: mgun-nw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-w:
+			2:
+				Filename: mgun-w.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-sw:
+			3:
+				Filename: mgun-sw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-s:
+			4:
+				Filename: mgun-s.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-se:
+			5:
+				Filename: mgun-se.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-e:
+			6:
+				Filename: mgun-e.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-ne:
+			7:
+				Filename: mgun-ne.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
 		Facings: 8
 		Length: 6
 		Tick: 80
 
 ^WithCannonMuzzle:
-	ra2cannonmuzzle: gunfire
+	ra2cannonmuzzle:
+		Filename: gunfire.shp
 		Length: *
 		Offset: 0, 0
-		UseTilesetCode: false
 
 ^WithFlakMuzzle:
-	flakmuzzle: flak
+	flakmuzzle:
+		Filename: flak.shp
 		Length: *
 		Offset: 0, 0
-		UseTilesetCode: false
 
 ^WithApocMuzzle:
-	apocmuzzle: apmuzzle
+	apocmuzzle:
+		Filename: apmuzzle.shp
 		Length: *
 		Offset: 0, 0
-		UseTilesetCode: false
 
 ^WithLKOMuzzleA:
 	lkomuzzlea:
 		Combine:
-			lkomz1-n:
+			0:
+				Filename: lkomz1-n.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-nw:
+			1:
+				Filename: lkomz1-nw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-w:
+			2:
+				Filename: lkomz1-w.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-sw:
+			3:
+				Filename: lkomz1-sw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-s:
+			4:
+				Filename: lkomz1-s.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-se:
+			5:
+				Filename: lkomz1-se.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-e:
+			6:
+				Filename: lkomz1-e.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz1-ne:
+			7:
+				Filename: lkomz1-ne.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
 		Facings: 8
 		Length: 16
 
 ^WithLKOMuzzleB:
 	lkomuzzleb:
 		Combine:
-			lkomz2-n:
+			0:
+				Filename: lkomz2-n.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-nw:
+			1:
+				Filename: lkomz2-nw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-w:
+			2:
+				Filename: lkomz2-w.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-sw:
+			3:
+				Filename: lkomz2-sw.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-s:
+			4:
+				Filename: lkomz2-s.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-se:
+			5:
+				Filename: lkomz2-se.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-e:
+			6:
+				Filename: lkomz2-e.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
-			lkomz2-ne:
+			7:
+				Filename: lkomz2-ne.shp
 				Length: *
 				Offset: 0, 0
-				UseTilesetCode: false
 		Facings: 8
 		Length: 21
 
 ^WithFlameMuzzle:
-	flamemuzzle: flammuzl
+	flamemuzzle:
+		Filename: flammuzl.shp
 		Length: *
 		Offset: 0, 0
-		UseTilesetCode: false

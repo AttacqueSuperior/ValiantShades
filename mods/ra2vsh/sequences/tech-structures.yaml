@@ -2,214 +2,387 @@ caoild:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire3
 	Defaults:
+		Filename: fire02.shp
+		TilesetFilenames:
+			TEMPERATE: ctoild.shp
+			SNOW: caoild.shp
+			URBAN: cuoild.shp
+			DESERT: cdoild.shp
+			NEWURBAN: cnoild.shp
 		Offset: 0, -30
-	idle-pump: caoild_a
+	idle-pump:
+		TilesetFilenames:
+			TEMPERATE: ctoild_a.shp
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
+			DESERT: cdoild_a.shp
+			NEWURBAN: cnoild_a.shp
 		Length: 32
 		ShadowStart: 64
-	damaged-idle-pump: caoild_a
+	damaged-idle-pump:
+		TilesetFilenames:
+			TEMPERATE: ctoild_a.shp
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
+			DESERT: cdoild_a.shp
+			NEWURBAN: cnoild_a.shp
 		Start: 32
 		Length: 32
 		ShadowStart: 96
-	flag: caoild_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctoild_f.shp
+			SNOW: caoild_f.shp
+			URBAN: cuoild_f.shp
+			DESERT: cdoild_f.shp
+			NEWURBAN: cnoild_f.shp
 		Offset: 0, -9
 	damagefire1:
+		TilesetFilenames:
 		Offset: -2,4,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 7,-51,1
 	damagefire3:
+		TilesetFilenames:
 		Offset: 29,-20,1
 
 caairp:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctairp.shp
+			SNOW: caairp.shp
+			URBAN: cuairp.shp
+			DESERT: cdairp.shp
+			NEWURBAN: cnairp.shp
 		Offset: 7, -40
-	idle-overlay: caairp_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctairp_a.shp
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
+			DESERT: cdairp_a.shp
+			NEWURBAN: cnairp_a.shp
 		Length: 10
 		Tick: 400
-	damaged-idle-overlay: caairp_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctairp_a.shp
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
+			DESERT: cdairp_a.shp
+			NEWURBAN: cnairp_a.shp
 		Start: 10
 		Length: 10
 		Tick: 400
-	flag: caairp_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctairp_f.shp
+			SNOW: caairp_f.shp
+			URBAN: cuairp_f.shp
+			DESERT: cdairp_f.shp
+			NEWURBAN: cnairp_f.shp
 		ZOffset: 128
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -3,-40,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -65,-13,1
 
 cahosp:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire4
 	Defaults:
+		Filename: fire02.shp
+		TilesetFilenames:
+			TEMPERATE: cthosp.shp
+			SNOW: cahosp.shp
+			URBAN: cuhosp.shp
+			DESERT: cdhosp.shp
+			NEWURBAN: cnhosp.shp
 		Offset: -30, -75
-	idle-overlay: cahosp_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: cthosp_a.shp
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
+			DESERT: cdhosp_a.shp
+			NEWURBAN: cnhosp_a.shp
 		Length: 2
 		Tick: 400
-	damaged-idle-overlay: cahosp_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: cthosp_a.shp
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
+			DESERT: cdhosp_a.shp
+			NEWURBAN: cnhosp_a.shp
 		Start: 2
 		Length: 2
 		Tick: 400
-	flag: cahosp_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: cthosp_f.shp
+			SNOW: cahosp_f.shp
+			URBAN: cuhosp_f.shp
+			DESERT: cdhosp_f.shp
+			NEWURBAN: cnhosp_f.shp
 		ZOffset: 128
 		Offset: 0,0
 	damagefire1:
+		TilesetFilenames:
 		Offset: 40,-25,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 64,8,1
 	damagefire3:
+		TilesetFilenames:
 		Offset: 12,-84,1
 	damagefire4:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 46,-86,1
 
 cathosp:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: cgthosp.shp
+		TilesetFilenames:
+			SNOW: cathosp.shp
 		Offset: 0, -45
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 3
 	damaged-idle:
 		ShadowStart: 4
-	idle-overlay: cathosp_a
-		TilesetOverrides:
-			SNOW: GENERIC
+	idle-overlay:
+		Filename: cgthosp_a.shp
+		TilesetFilenames:
 		Length: 4
 		Tick: 400
-	flag: cahosp_f
+	flag:
+		Filename: cahosp_f.shp
+		TilesetFilenames:
 		ZOffset: 128
-		UseTilesetCode: false
 		Offset: -35, -16
-	rubble: cgthosp
-		UseTilesetCode: false
+	rubble:
+		Filename: cgthosp.shp
+		TilesetFilenames:
 		Start: 2
 		ShadowStart: 5
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -2,-11,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 29,-35,1
 
 caoutp:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: caoutp.shp
+		TilesetFilenames:
+			TEMPERATE: ctoutp.shp
+			SNOW: caoutp.shp
+			URBAN: cuoutp.shp
+			DESERT: cdoutp.shp
+			NEWURBAN: cnoutp.shp
 		Offset: -15, -50
 	idle-tower:
 	damaged-idle-tower:
 		Start: 1
-	idle: caoutp_d
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_d.shp
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
+			DESERT: cdoutp_d.shp
+			NEWURBAN: cnoutp_d.shp
 		ShadowStart: 2
-	damaged-idle: caoutp_d
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_d.shp
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
+			DESERT: cdoutp_d.shp
+			NEWURBAN: cnoutp_d.shp
 		ShadowStart: 3
-	active-crane: caoutp_a
+	active-crane:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_a.shp
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
+			DESERT: cdoutp_a.shp
+			NEWURBAN: cnoutp_a.shp
 		Length: 10
 		Tick: 200
 		ShadowStart: 20
-	damaged-active-crane: caoutp_a
+	damaged-active-crane:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_a.shp
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
+			DESERT: cdoutp_a.shp
+			NEWURBAN: cnoutp_a.shp
 		Start: 20
 		Length: 10
 		Tick: 200
 		ShadowStart: 30
-	bib: caoutpbb
-	damaged-bib: caoutpbb
+	bib:
+		TilesetFilenames:
+			TEMPERATE: ctoutpbb.shp
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
+			DESERT: cdoutpbb.shp
+			NEWURBAN: cnoutpbb.shp
+	damaged-bib:
+		TilesetFilenames:
+			TEMPERATE: ctoutpbb.shp
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
+			DESERT: cdoutpbb.shp
+			NEWURBAN: cnoutpbb.shp
 		Start: 1
-	flag: caoutp_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_f.shp
+			SNOW: caoutp_f.shp
+			URBAN: cuoutp_f.shp
+			DESERT: cdoutp_f.shp
+			NEWURBAN: cnoutp_f.shp
 	rubble:
-		UseTilesetCode: false
+		TilesetFilenames:
 	idle-tower-shadow:
-		UseTilesetCode: false
+		TilesetFilenames:
 		Start: 4
 	damaged-idle-tower-shadow:
-		UseTilesetCode: false
+		TilesetFilenames:
 		Start: 5
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -47,-53,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: -58,-24,1
 
 caslab:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: cgslab.shp
+		TilesetFilenames:
+			SNOW: caslab.shp
 		Offset: 0, -45
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 4
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-	flag: caslab_f
+	flag:
+		Filename: cgslab_f.shp
+		TilesetFilenames:
+			SNOW: caslab_f.shp
 		Length: 16
-	rubble: cgslab
-		UseTilesetCode: false
+	rubble:
+		Filename: cgslab.shp
+		TilesetFilenames:
 		Start: 3
 		ShadowStart: 7
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: 17,-75,1
 
 camach:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire2
 	Defaults:
+		Filename: cgmach.shp
+		TilesetFilenames:
+			SNOW: camach.shp
 		Offset: 0, -45
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 4
 	damaged-idle:
 		ShadowStart: 5
-	flag: camach_f
+	flag:
+		Filename: cgmach_f.shp
+		TilesetFilenames:
+			SNOW: camach_f.shp
 		Length: 16
-	rubble: cgmach
-		UseTilesetCode: false
+	rubble:
+		Filename: cgmach.shp
+		TilesetFilenames:
 		Start: 3
 		ShadowStart: 7
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -2,-11,1
 	damagefire2:
+		Filename: fire03.shp
+		TilesetFilenames:
 		Offset: 29,-35,1
 
 capowr:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire1
 	Defaults:
+		Filename: cgpowr.shp
+		TilesetFilenames:
+			SNOW: capowr.shp
 		Offset: 0, -30
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 4
 	damaged-idle:
 		ShadowStart: 5
-	flag: capowr_a
+	flag:
+		Filename: cgpowr_a.shp
+		TilesetFilenames:
+			SNOW: capowr_a.shp
 		Length: 15
-	rubble: cgpowr
-		UseTilesetCode: false
+	rubble:
+		Filename: cgpowr.shp
+		TilesetFilenames:
 		Start: 3
 		ShadowStart: 7
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -3,-25,1
 
 catech01:
 	Inherits: ^TechStructure
 	Inherits@damagefire: ^BuildingDamageFire1
-	flag: caoild_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctoild_f.shp
+			SNOW: caoild_f.shp
+			URBAN: cuoild_f.shp
+			DESERT: cdoild_f.shp
+			NEWURBAN: cnoild_f.shp
 		Offset: 0, -9
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttech01.shp
+			SNOW: catech01.shp
+			URBAN: cutech01.shp
+			DESERT: cdtech01.shp
+			NEWURBAN: cntech01.shp
 		Offset: 0,-45
 	damagefire1:
+		Filename: fire02.shp
+		TilesetFilenames:
 		Offset: -2,-25,1

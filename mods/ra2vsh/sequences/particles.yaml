@@ -1,60 +1,77 @@
 particles:
 	# For synced-with-art particle expiration
 	# (framecount*Tick/40) -1 for rounding errors
-	largesmoke: tslgrysmk1
+	largesmoke:
+		Filename: tslgrysmk1.shp
 		Length: *
 		Tick: 80
 		BlendMode: Translucent
-	smallsmoke: tssgrysmk1
+	smallsmoke:
+		Filename: tssgrysmk1.shp
 		Length: *
 		Tick: 80
 		BlendMode: Translucent
-	damagespark: dmgspark
+	damagespark:
+		Filename: dmgspark.shp
 		Length: *
 		Tick: 100
-	inviso: inviso
-	toveenasmoke1: nukepuff
+	inviso:
+		Filename: inviso.shp
+	toveenasmoke1:
+		Filename: nukepuff.shp
 		Start: 3
 		Length: 17
 		Tick: 160
 		BlendMode: Translucent
-	toveenasmoke2: gcmuzzle
+	toveenasmoke2:
+		Filename: gcmuzzle.shp
 		Start: 2
 		Length: 15
 		Tick: 160
 		BlendMode: Translucent
-	ra2-largesmoke: lgrysmk1
+	ra2-largesmoke:
+		Filename: lgrysmk1.shp
 		Length: *
 		Tick: 80
-	ra2-smallsmoke: sgrysmk1
+	ra2-smallsmoke:
+		Filename: sgrysmk1.shp
 		Length: *
 		Tick: 80
-	unitdeathsmoke1: unitdsmok1
+	unitdeathsmoke1:
+		Filename: unitdsmok1.shp
 		Length: 17
 		Tick: 80
 		BlendMode: Translucent
-	unitdeathsmoke2: unitdsmok2
+	unitdeathsmoke2:
+		Filename: unitdsmok2.shp
 		Length: 17
 		Tick: 80
 		BlendMode: Translucent
-	refinerysmoke: syelsmk1
+	refinerysmoke:
+		Filename: syelsmk1.shp
 		Length: *
 		Tick: 80
-	ra1-smoke: ra1smokey
+	ra1-smoke:
+		Filename: ra1smokey.shp
 		Length: *
 		Tick: 80
-	radparticle: radparticle
+	radparticle:
+		Filename: radparticle.shp
 		Length: *
 		Tick: 80
 		Offset: 0, -20
-	warpspark: warptwnk
+	warpspark:
+		Filename: warptwnk.shp
 		Length: *
-	v3trailer: v3trail
+	v3trailer:
+		Filename: v3trail.shp
 		Length: *
 		BlendMode: Translucent
-	tankdestroyersmoke: tnkdhits
+	tankdestroyersmoke:
+		Filename: tnkdhits.shp
 		Length: *
 		Tick: 80
-	flame: fire01
+	flame:
+		Filename: fire01.shp
 		Length: *
 		Tick: 60

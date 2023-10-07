@@ -1,185 +1,328 @@
 explosion:
 	Defaults:
 		Length: *
-	ionring: ring1
+	ionring:
+		Filename: ring1.shp
 		Tick: 160
-	watersplash_size1: donutwater1
-	watersplash_size2: donutwater2
-	watersplash_size3: donutwater3
-	watersplash_size4: donutwater4
-	watersplash_size5: donutwater5
-	watersplash_size6: donutwater6
-	watersplash_debris: tswake2
-	piff: piff
-	piffpiff: piffpiff
-	small_explosion: explosml
-	medium_explosion: explomed
-	large_explosion: explolrg
+	watersplash_size1:
+		Filename: donutwater1.shp
+	watersplash_size2:
+		Filename: donutwater2.shp
+	watersplash_size3:
+		Filename: donutwater3.shp
+	watersplash_size4:
+		Filename: donutwater4.shp
+	watersplash_size5:
+		Filename: donutwater5.shp
+	watersplash_size6:
+		Filename: donutwater6.shp
+	watersplash_debris:
+		Filename: tswake2.shp
+	piff:
+		Filename: piff.shp
+	piffpiff:
+		Filename: piffpiff.shp
+	small_explosion:
+		Filename: explosml.shp
+	medium_explosion:
+		Filename: explomed.shp
+	large_explosion:
+		Filename: explolrg.shp
 	# tiny_bang: s_bang16 - muzzle-sized, should be used as such
 	# small_bang: s_bang24 - muzzle-sized, should be used as such
-	medium_bang: s_bang34
-	large_bang: s_bang48
-	tiny_brnl: s_brnl20
-	small_brnl: s_brnl30
-	medium_brnl: s_brnl40
+	medium_bang:
+		Filename: s_bang34.shp
+	large_bang:
+		Filename: s_bang48.shp
+	tiny_brnl:
+		Filename: s_brnl20.shp
+	small_brnl:
+		Filename: s_brnl30.shp
+	medium_brnl:
+		Filename: s_brnl40.shp
 		Tick: 80
-	large_brnl: s_brnl58
+	large_brnl:
+		Filename: s_brnl58.shp
 		Tick: 80
 	# tiny_tumu: s_tumu22 - small_clsn with fewer frames
-	small_tumu: s_tumu30
+	small_tumu:
+		Filename: s_tumu30.shp
 	# medium_tumu: s_tumu42 - large_clsn with fewer frames
-	large_tumu: s_tumu60
-	tiny_clsn: s_clsn16
-	small_clsn: s_clsn22
-	medium_clsn: s_clsn30
-	large_clsn: s_clsn42
-	verylarge_clsn: s_clsn58
-	tiny_twlt: twlt026
-	small_twlt: twlt036
-	medium_twlt: twlt050
-	large_twlt: twlt070
-	verylarge_twlt: twlt100
-	tiny_grey_explosion: xgrysml1
-	small_grey_explosion: xgrysml2
-	medium_grey_explosion: xgrymed1
-	large_grey_explosion: xgrymed2
-	nuke_explosion: mignuke
-	nuke_ball: nukeball
-	demotruck_explosion: demtexp
-	elite_explosion: vtexplod
-	terrorist_explosion: mininuke
-	apoc_explosion: apocexp
-	kirovtesla: ktstlexp
-	flak_puff: htrkpuff
-	flak_puff_AA: smkpuff
-	bombcurs: bombcurs
+	large_tumu:
+		Filename: s_tumu60.shp
+	tiny_clsn:
+		Filename: s_clsn16.shp
+	small_clsn:
+		Filename: s_clsn22.shp
+	medium_clsn:
+		Filename: s_clsn30.shp
+	large_clsn:
+		Filename: s_clsn42.shp
+	verylarge_clsn:
+		Filename: s_clsn58.shp
+	tiny_twlt:
+		Filename: twlt026.shp
+	small_twlt:
+		Filename: twlt036.shp
+	medium_twlt:
+		Filename: twlt050.shp
+	large_twlt:
+		Filename: twlt070.shp
+	verylarge_twlt:
+		Filename: twlt100.shp
+	tiny_grey_explosion:
+		Filename: xgrysml1.shp
+	small_grey_explosion:
+		Filename: xgrysml2.shp
+	medium_grey_explosion:
+		Filename: xgrymed1.shp
+	large_grey_explosion:
+		Filename: xgrymed2.shp
+	nuke_explosion:
+		Filename: mignuke.shp
+	nuke_ball:
+		Filename: nukeball.shp
+	demotruck_explosion:
+		Filename: demtexp.shp
+	elite_explosion:
+		Filename: vtexplod.shp
+	terrorist_explosion:
+		Filename: mininuke.shp
+	apoc_explosion:
+		Filename: apocexp.shp
+	kirovtesla:
+		Filename: ktstlexp.shp
+	flak_puff:
+		Filename: htrkpuff.shp
+	flak_puff_AA:
+		Filename: smkpuff.shp
+	bombcurs:
+		Filename: bombcurs.shp
 		Tick: 300
-	ivan_explosion: crivexp
-	ivan_explosionE: crivexp3
-	tesla_impact: tstimpct
-	iron_fx: ironfx
-	chronosk: chronosk
-	psi_wave: ring1
-	weathercloud1: wccloud1
-	weathercloud2: wccloud2
-	weathercloud1f: wccloud1
+	ivan_explosion:
+		Filename: crivexp.shp
+	ivan_explosionE:
+		Filename: crivexp3.shp
+	tesla_impact:
+		Filename: tstimpct.shp
+	iron_fx:
+		Filename: ironfx.shp
+	chronosk:
+		Filename: chronosk.shp
+	psi_wave:
+		Filename: ring1.shp
+	weathercloud1:
+		Filename: wccloud1.shp
+	weathercloud2:
+		Filename: wccloud2.shp
+	weathercloud1f:
+		Filename: wccloud1.shp
 		FlipX: true
-	weathercloud2f: wccloud2
+	weathercloud2f:
+		Filename: wccloud2.shp
 		FlipX: true
-	weatherbolt1: wclbolt1
-	weatherbolt2: wclbolt2
-	weatherbolt3: wclbolt3
-	weatherbolt1f: wclbolt1
+	weatherbolt1:
+		Filename: wclbolt1.shp
+	weatherbolt2:
+		Filename: wclbolt2.shp
+	weatherbolt3:
+		Filename: wclbolt3.shp
+	weatherbolt1f:
+		Filename: wclbolt1.shp
 		FlipX: true
-	weatherbolt2f: wclbolt2
+	weatherbolt2f:
+		Filename: wclbolt2.shp
 		FlipX: true
-	weatherbolt3f: wclbolt3
+	weatherbolt3f:
+		Filename: wclbolt3.shp
 		FlipX: true
-	weatherboltexplosion: explolb
-	weatherboltexplosionf: explolb
+	weatherboltexplosion:
+		Filename: explolb.shp
+	weatherboltexplosionf:
+		Filename: explolb.shp
 		FlipX: true
-	desolator_hit: desohit
-	mirage_tank_hit: miraghit
-	buildingexplosion1: bldgexp1
+	desolator_hit:
+		Filename: desohit.shp
+	mirage_tank_hit:
+		Filename: miraghit.shp
+	buildingexplosion1:
+		Filename: bldgexp1.shp
 		BlendMode: Translucent
-	buildingexplosion2: bldgexp2
+	buildingexplosion2:
+		Filename: bldgexp2.shp
 		BlendMode: Translucent
-	buildingexplosion3: bldgexp3
+	buildingexplosion3:
+		Filename: bldgexp3.shp
 		BlendMode: Translucent
-	buildingexplosion4: bldgexp4
+	buildingexplosion4:
+		Filename: bldgexp4.shp
 		BlendMode: Translucent
-	buildingexplosion5: bldgexp5
+	buildingexplosion5:
+		Filename: bldgexp5.shp
 		BlendMode: Translucent
-	buildingexplosion6: bldgexp6
+	buildingexplosion6:
+		Filename: bldgexp6.shp
 		BlendMode: Translucent
-	tankexplosion: tankexpl
-	smalltankexplosion: tanksexp
-	biggertankexplosion: tanksexp2
-	prismtowerhit: prismthit
-	prismhit: prismhit
-	prismshrapnel: prismshr
-	donut_nuke_explosion: donutnuke
-	hugeflame: tsfire
+	tankexplosion:
+		Filename: tankexpl.shp
+	smalltankexplosion:
+		Filename: tanksexp.shp
+	biggertankexplosion:
+		Filename: tanksexp2.shp
+	prismtowerhit:
+		Filename: prismthit.shp
+	prismhit:
+		Filename: prismhit.shp
+	prismshrapnel:
+		Filename: prismshr.shp
+	donut_nuke_explosion:
+		Filename: donutnuke.shp
+	hugeflame:
+		Filename: tsfire.shp
 		Tick: 80
-	largeflame: tsfire
+	largeflame:
+		Filename: tsfire.shp
 		Length: 51
 		Start: 18
 		Tick: 80
-	mediumflame: tsfire
+	mediumflame:
+		Filename: tsfire.shp
 		Length: 33
 		Start: 36
 		Tick: 80
-	smallflame: tsfire
+	smallflame:
+		Filename: tsfire.shp
 		Length: 15
 		Start: 54
 		Tick: 80
-	debrishit: tss_bang16
+	debrishit:
+		Filename: tss_bang16.shp
 		BlendMode: Translucent
-	largedebrishit: tss_bang24
+	largedebrishit:
+		Filename: tss_bang24.shp
 		BlendMode: Translucent
-	c4_explosion: tstwlt070
-	tanya_c4_explosion: tanyac4exp
-	virusdeath: virusd
-	alliedpowerplantexplosion: gtpowexp
-	sovietpowerplantexplosion: tstlexp
-	rocketeerhit: art-exp1
-	fireflashhit: fflashhit
-	grenadierhit: grenahit
-	berserkhit: brsrkexp
-	berserkgas: brsrkgas
-	infantryexplode: fball1
-	napalmhit: firehit
-	warpaway: warpaway
-	smallwarpaway: smallwarpaway
-	largewarpaway: largewarpaway
-	warpawayf: warpaway
+	c4_explosion:
+		Filename: tstwlt070.shp
+	tanya_c4_explosion:
+		Filename: tanyac4exp.shp
+	virusdeath:
+		Filename: virusd.shp
+	alliedpowerplantexplosion:
+		Filename: gtpowexp.shp
+	sovietpowerplantexplosion:
+		Filename: tstlexp.shp
+	rocketeerhit:
+		Filename: art-exp1.shp
+	fireflashhit:
+		Filename: fflashhit.shp
+	grenadierhit:
+		Filename: grenahit.shp
+	berserkhit:
+		Filename: brsrkexp.shp
+	berserkgas:
+		Filename: brsrkgas.shp
+	infantryexplode:
+		Filename: fball1.shp
+	napalmhit:
+		Filename: firehit.shp
+	warpaway:
+		Filename: warpaway.shp
+	smallwarpaway:
+		Filename: smallwarpaway.shp
+	largewarpaway:
+		Filename: largewarpaway.shp
+	warpawayf:
+		Filename: warpaway.shp
 		FlipX: true
-	smallwarpawayf: smallwarpaway
+	smallwarpawayf:
+		Filename: smallwarpaway.shp
 		FlipX: true
-	largewarpawayf: largewarpaway
+	largewarpawayf:
+		Filename: largewarpaway.shp
 		FlipX: true
-	hornethit: tss_brnl58
-	spawnedplaneexplosion: spwnpexp
-	chrono-target: chronotg
-	psychicdominator: pdfxcld
-	psychicdominatorring: ndomring
-	ra1-nuke: atomsfx
-	apocalypsemissilehit: apocmhit
-	v3missilehit: v3mislhit
-	spirithit: spirithit
-	parabombhit: tss_tumu60
+	hornethit:
+		Filename: tss_brnl58.shp
+	spawnedplaneexplosion:
+		Filename: spwnpexp.shp
+	chrono-target:
+		Filename: chronotg.shp
+	psychicdominator:
+		Filename: pdfxcld.shp
+	psychicdominatorring:
+		Filename: ndomring.shp
+	ra1-nuke:
+		Filename: atomsfx.shp
+	apocalypsemissilehit:
+		Filename: apocmhit.shp
+	v3missilehit:
+		Filename: v3mislhit.shp
+	spirithit:
+		Filename: spirithit.shp
+	parabombhit:
+		Filename: tss_tumu60.shp
 		Tick: 80
-	wolverinemissilehit: tsxgrymed1
-	artemishit: atmishit
-	cosmonauthit: cosmohit
-	warthoghit: a10hit
-	tanyahit: tanyaexp
-	fairyhit: fairyhit
-	mineexplosion: mineexp
-	volkovhit: volkrailhit
-	hilberteffect: hilbert
-	mindwave: mindwave
+	wolverinemissilehit:
+		Filename: tsxgrymed1.shp
+	artemishit:
+		Filename: atmishit.shp
+	cosmonauthit:
+		Filename: cosmohit.shp
+	warthoghit:
+		Filename: a10hit.shp
+	tanyahit:
+		Filename: tanyaexp.shp
+	fairyhit:
+		Filename: fairyhit.shp
+	mineexplosion:
+		Filename: mineexp.shp
+	volkovhit:
+		Filename: volkrailhit.shp
+	hilberteffect:
+		Filename: hilbert.shp
+	mindwave:
+		Filename: mindwave.shp
 		Tick: 80
-	buratinohit: buratexp
-	thorbolthit: thorbhit
-	thorbolthitf: thorbhit
+	buratinohit:
+		Filename: buratexp.shp
+	thorbolthit:
+		Filename: thorbhit.shp
+	thorbolthitf:
+		Filename: thorbhit.shp
 		FlipX: true
-	thorairhit: thorahit
-	kirovhit: kirovhit
-	empresshit: emprehit
-	empressironcurtain: empriron
-	aurorahit: aurorahit
-	succubihit: succhit
-	gauntlethit: gaunthit
-	ironcurtain: ironblst
-	cyborghit: cyborghit
-	forceshield: forcshld
+	thorairhit:
+		Filename: thorahit.shp
+	kirovhit:
+		Filename: kirovhit.shp
+	empresshit:
+		Filename: emprehit.shp
+	empressironcurtain:
+		Filename: empriron.shp
+	aurorahit:
+		Filename: aurorahit.shp
+	succubihit:
+		Filename: succhit.shp
+	gauntlethit:
+		Filename: gaunthit.shp
+	ironcurtain:
+		Filename: ironblst.shp
+	cyborghit:
+		Filename: cyborghit.shp
+	forceshield:
+		Filename: forcshld.shp
 		BlendMode: Translucent
-	oilderrickexplosion1: brrlexp1
-	oilderrickexplosion2: brrlexp2
-	largemeteorexp: lmeteorhit
-	smallmeteorexp: smeteorhit
-	malfestorhit: malfhit
-	initfire: initfire
-	huskexplode: huskexp
-	turtlehit: plxplo
+	oilderrickexplosion1:
+		Filename: brrlexp1.shp
+	oilderrickexplosion2:
+		Filename: brrlexp2.shp
+	largemeteorexp:
+		Filename: lmeteorhit.shp
+	smallmeteorexp:
+		Filename: smeteorhit.shp
+	malfestorhit:
+		Filename: malfhit.shp
+	initfire:
+		Filename: initfire.shp
+	huskexplode:
+		Filename: huskexp.shp
+	turtlehit:
+		Filename: plxplo.shp

@@ -1,10 +1,14 @@
 plugs:
-	idle: null
-	place: null
-	icon: xxicon
+	idle:
+		Filename: null.shp
+	place:
+		Filename: null.shp
+	icon:
+		Filename: xxicon.shp
 
 overlay:
-	Defaults: place
+	Defaults:
+		Filename: place.shp
 		Offset: 0, -15
 	build-valid:
 	build-invalid:
@@ -16,13 +20,16 @@ overlay:
 		Start: 2
 
 editor-overlay:
-	Defaults: place
+	Defaults:
+		Filename: place.shp
 		Offset: 0, -15
 	copy:
 	paste:
 		Start: 1
 
 gpsdot:
+	Defaults:
+		Filename: gpsdot.shp
 	idle:
 	structure:
 		Start: 1
@@ -46,163 +53,254 @@ gpsdot:
 		Start: 10
 
 poweroff:
-	offline: poweroff
+	offline:
+		Filename: poweroff.shp
 		Length: *
 		Tick: 160
 		Offset: 0,-50
 		ZOffset: 2047
 
 allyrepair:
-	repair: wrench
+	repair:
+		Filename: wrench.shp
 		Length: 7
 		Tick: 160
 		ZOffset: 2047
 
 rallypoint:
-	flag: rallypoint
+	flag:
+		Filename: rallypoint.shp
 		Length: *
 		ZOffset: -1023
-	circles: rallypb
+	circles:
+		Filename: rallypb.shp
 		Length: *
 		ZOffset: -2047
 
 beacon:
-	idle: pbeacon
+	idle:
+		Filename: pbeacon.shp
 		Length: 20
 		Tick: 200
 		ZOffset: 2047
-	arrow: pbeacon
+	arrow:
+		Filename: pbeacon.shp
 		Length: 1
 		ZOffset: 2047
-	clock: null
-	circles: ring
+	clock:
+		Filename: null.shp
+	circles:
+		Filename: ring.shp
 		Length: *
 		ZOffset: 2047
-	beacon-arrow: beacon-arrow
+	beacon-arrow:
+		Filename: beacon-arrow.shp
 		Length: *
 
 crate-effects:
-	Defaults: null
+	Defaults:
 		Length: *
-	dollar: money
-	reveal-map: reveal
-	hide-map: shroudx
-	fpower: firepowr
-	armor: armor
-	heal: healall
-	nuke: mltimisl
-	levelup: veteran
-	speed: speed
+	dollar:
+		Filename: money.shp
+	reveal-map:
+		Filename: reveal.shp
+	hide-map:
+		Filename: shroudx.shp
+	fpower:
+		Filename: firepowr.shp
+	armor:
+		Filename: armor.shp
+	heal:
+		Filename: healall.shp
+	nuke:
+		Filename: mltimisl.shp
+	levelup:
+		Filename: veteran.shp
+	speed:
+		Filename: speed.shp
 
 crate:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: crate.tem
+			SNOW: crate.sno
+			URBAN: crate.urb
+			DESERT: crate.des
+			NEWURBAN: crate.ubn
 	idle:
 		Offset: 0, -12
-		UseTilesetExtension: true
 	land:
 		Offset: 0, -12
 		ShadowStart: 1
-		UseTilesetExtension: true
-	water: wcrate
+	water:
+		TilesetFilenames:
+			TEMPERATE: wcrate.tem
+			SNOW: wcrate.sno
+			URBAN: wcrate.urb
+			DESERT: wcrate.des
+			NEWURBAN: wcrate.ubn
 		ShadowStart: 1
 		Offset: 0, -12
-		UseTilesetExtension: true
-	shadow: cratshdw
+	shadow:
+		Filename: cratshdw.shp
+		TilesetFilenames:
 		Offset: 0, 0
 
 debris:
 	Defaults:
 		Length: *
-	idle: null # HACK because weapon template sequences are validated by --check-yaml
-	small1: dbris1sm
-	small2: dbris2sm
-	small3: dbris3sm
-	small4: dbris4sm
-	small5: dbris5sm
-	small6: dbris6sm
-	small7: dbris7sm
-	small8: dbris8sm
-	small9: dbris9sm
-	large1: dbris1lg
-	large2: dbris2lg
-	large3: dbris3lg
-	large4: dbris4lg
-	large5: dbris5lg
-	large6: dbris6lg
-	large7: dbris7lg
-	large8: dbris8lg
-	large9: dbris9lg
-	large10: dbrs10lg
-	rock1: dbri-wm1
-	rock2: dbri-wm2
-	rock3: dbri-wm3
+	idle: # HACK because weapon template sequences are validated by --check-yaml
+		Filename: null.shp
+	small1:
+		Filename: dbris1sm.shp
+	small2:
+		Filename: dbris2sm.shp
+	small3:
+		Filename: dbris3sm.shp
+	small4:
+		Filename: dbris4sm.shp
+	small5:
+		Filename: dbris5sm.shp
+	small6:
+		Filename: dbris6sm.shp
+	small7:
+		Filename: dbris7sm.shp
+	small8:
+		Filename: dbris8sm.shp
+	small9:
+		Filename: dbris9sm.shp
+	large1:
+		Filename: dbris1lg.shp
+	large2:
+		Filename: dbris2lg.shp
+	large3:
+		Filename: dbris3lg.shp
+	large4:
+		Filename: dbris4lg.shp
+	large5:
+		Filename: dbris5lg.shp
+	large6:
+		Filename: dbris6lg.shp
+	large7:
+		Filename: dbris7lg.shp
+	large8:
+		Filename: dbris8lg.shp
+	large9:
+		Filename: dbris9lg.shp
+	large10:
+		Filename: dbrs10lg.shp
+	rock1:
+		Filename: dbri-wm1.shp
+	rock2:
+		Filename: dbri-wm2.shp
+	rock3:
+		Filename: dbri-wm3.shp
 	# was unused in vRA2
-	flyingbody: dbrs10sm
-	ts-small1: tsdbris1sm
-	ts-small2: tsdbris2sm
-	ts-small3: tsdbris3sm
-	ts-small4: tsdbris4sm
-	ts-small5: tsdbris5sm
-	ts-small6: tsdbris6sm
-	ts-small7: tsdbris7sm
-	ts-small8: tsdbris8sm
-	ts-small9: tsdbris9sm
-	ts-small10: tsdbrs10sm
-	ts-large1: tsdbris1lg
-	ts-large2: tsdbris2lg
-	ts-large3: tsdbris3lg
-	ts-large4: tsdbris4lg
-	ts-large5: tsdbris5lg
-	ts-large6: tsdbris6lg
-	ts-large7: tsdbris7lg
-	ts-large8: tsdbris8lg
-	ts-large9: tsdbris9lg
-	ts-large10: tsdbrs10lg
+	flyingbody:
+		Filename: dbrs10sm.shp
+	ts-small1:
+		Filename: tsdbris1sm.shp
+	ts-small2:
+		Filename: tsdbris2sm.shp
+	ts-small3:
+		Filename: tsdbris3sm.shp
+	ts-small4:
+		Filename: tsdbris4sm.shp
+	ts-small5:
+		Filename: tsdbris5sm.shp
+	ts-small6:
+		Filename: tsdbris6sm.shp
+	ts-small7:
+		Filename: tsdbris7sm.shp
+	ts-small8:
+		Filename: tsdbris8sm.shp
+	ts-small9:
+		Filename: tsdbris9sm.shp
+	ts-small10:
+		Filename: tsdbrs10sm.shp
+	ts-large1:
+		Filename: tsdbris1lg.shp
+	ts-large2:
+		Filename: tsdbris2lg.shp
+	ts-large3:
+		Filename: tsdbris3lg.shp
+	ts-large4:
+		Filename: tsdbris4lg.shp
+	ts-large5:
+		Filename: tsdbris5lg.shp
+	ts-large6:
+		Filename: tsdbris6lg.shp
+	ts-large7:
+		Filename: tsdbris7lg.shp
+	ts-large8:
+		Filename: tsdbris8lg.shp
+	ts-large9:
+		Filename: tsdbris9lg.shp
+	ts-large10:
+		Filename: tsdbrs10lg.shp
 
 rank:
-	veteran: vpips
-	elite: vpips
+	veteran:
+		Filename: vpips.shp
+	elite:
+		Filename: vpips.shp
 		Start: 1
-	heroic: vpips
+	heroic:
+		Filename: vpips.shp
 		Start: 2
 
 allied-rank:
-	veteran: avpips
-	elite: avpips
+	veteran:
+		Filename: avpips.shp
+	elite:
+		Filename: avpips.shp
 		Start: 1
-	heroic: avpips
+	heroic:
+		Filename: avpips.shp
 		Start: 2
 
 soviet-rank:
-	veteran: svpips
-	elite: svpips
+	veteran:
+		Filename: svpips.shp
+	elite:
+		Filename: svpips.shp
 		Start: 1
-	heroic: svpips
+	heroic:
+		Filename: svpips.shp
 		Start: 2
 
 mpspawn:
 	idle:
+		Filename: mpspawn.shp
 		Length: *
 
 waypoint:
 	idle:
+		Filename: waypoint.shp
 		Length: *
 
 clock:
 	idle:
+		Filename: clock.shp
 		Length: *
 		BlendMode: Multiply
 
 parach:
-	open: gparach
+	open:
+		Filename: gparach.shp
 		Length: 19
-	idle: gparach
+	idle:
+		Filename: gparach.shp
 		Start: 19
 		Length: 20
-	close: gparach
+	close:
+		Filename: gparach.shp
 		Start: 40
 		Length: 29
 
 aparach:
+	Defaults:
+		Filename: aparach.shp
 	open:
 		Length: 19
 	idle:
@@ -213,6 +311,8 @@ aparach:
 		Length: 29
 
 sparach:
+	Defaults:
+		Filename: sparach.shp
 	open:
 		Length: 19
 	idle:
@@ -223,28 +323,39 @@ sparach:
 		Length: 29
 
 cameo-chevron:
-	idle: cameo-chevron.png
-		AddExtension: false
+	idle:
+		Filename: cameo-chevron.png
 
 pips:
+	Defaults:
+		Filename: pips.shp
 	medic:
 		Start: 13
-	groups: pipsra #TODO: backfall to RA asset
+	groups: #TODO: backfall to RA asset
+		Filename: pipsra.shp
 		Start: 8
 		Length: 10
-	pip-empty: pips2
-	pip-green: pips2
+	pip-empty:
+		Filename: pips2.shp
+	pip-green:
+		Filename: pips2.shp
 		Start: 1
-	pip-yellow: pips2
+	pip-yellow:
+		Filename: pips2.shp
 		Start: 2
-	pip-gray: pips2
+	pip-gray:
+		Filename: pips2.shp
 		Start: 3
-	pip-red: pips2
+	pip-red:
+		Filename: pips2.shp
 		Start: 4
-	pip-blue: pips2
+	pip-blue:
+		Filename: pips2.shp
 		Start: 5
-	pip-ammo: ammopips
-	pip-ammoempty: ammopips
+	pip-ammo:
+		Filename: ammopips.shp
+	pip-ammoempty:
+		Filename: ammopips.shp
 		Start: 1
 	# TODO:
 	pip-empty-building:
@@ -258,139 +369,176 @@ pips:
 		Start: 4
 	pip-blue-building:
 		Start: 5
-	pip-disguise: pip-disguise
+	pip-disguise:
+		Filename: pip-disguise.shp
 		Length: *
 		Tick: 300
 		Offset: 6, -2
 	repair:
 		Start: 20
-	pip-overlord: pip-overlord
+	pip-overlord:
+		Filename: pip-overlord.shp
 
 discus:
 	idle:
+		Filename: discus.shp
 		Length: *
 
 dragon:
 	idle:
+		Filename: dragon.shp
 		Facings: 32
 
 missile:
 	idle:
+		Filename: missile.shp
 		Facings: 32
 
 patriot:
 	idle:
+		Filename: patriot.shp
 		Facings: 32
 
 v2:
 	idle:
+		Filename: v2.shp
 		Facings: 32
 
 spiritbomb:
 	idle:
+		Filename: spiritbomb.shp
 		Facings: 32
 
 smokey2:
 	idle:
+		Filename: smokey2.shp
 		Frames: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
 		Length: 9
 
 smokey2-slow:
-	idle: smokey2
+	idle:
+		Filename: smokey2.shp
 		Length: *
 
 90mm:
 	idle:
+		Filename: 90mm.shp
 
 120mm:
 	idle:
+		Filename: 120mm.shp
 
 155mm:
 	idle:
+		Filename: 155mm.shp
 
 200mm:
 	idle:
+		Filename: 200mm.shp
 
 discgrenade:
-	idle: grendiscus
+	idle:
+		Filename: grendiscus.shp
 
 bbblelrg:
 	idle:
+		Filename: bbblelrg.shp
 		Length: *
 
 zbomb:
 	idle:
+		Filename: zbomb.shp
 		Facings: 32
 
 subt:
 	idle:
+		Filename: subt.shp
 		Facings: 32
 
 misla10:
 	idle:
+		Filename: misla10.shp
 		Facings: 32
 
 mislbura:
 	idle:
+		Filename: mislbura.shp
 		Facings: 32
 
 mislgaun:
 	idle:
+		Filename: mislgaun.shp
 		Facings: 32
 
 mislsam:
 	idle:
+		Filename: mislsam.shp
 		Facings: 32
 
 misl:
 	idle:
+		Filename: misl.shp
 		Facings: 32
 
 canister:
 	idle:
+		Filename: canister.shp
 		Length: 15
 
 parabomb:
-	idle: pbomb
-	chute-open: sparach
+	idle:
+		Filename: pbomb.shp
+	chute-open:
+		Filename: sparach.shp
 		Length: 19
-	chute-idle: sparach
+	chute-idle:
+		Filename: sparach.shp
 		Start: 19
 		Length: 20
-	chute-close: sparach
+	chute-close:
+		Filename: sparach.shp
 		Start: 40
 		Length: 29
 
 largesmoke:
-	idle: lgrysmk1
+	idle:
+		Filename: lgrysmk1.shp
 		Length: *
 
 smallsmoke:
-	idle: sgrysmk1
+	idle:
+		Filename: sgrysmk1.shp
 		Length: *
 
 nukesmoke:
-	idle: nukepuff2
+	idle:
+		Filename: nukepuff2.shp
 		Length: *
 		BlendMode: Translucent
 
 tanyasmoke:
-	idle: tanytral
+	idle:
+		Filename: tanytral.shp
 		Length: *
 
 largefire:
-	idle: fire01
+	idle:
+		Filename: fire01.shp
 		Length: *
 
 mediumfire:
-	idle: fire02
+	idle:
+		Filename: fire02.shp
 		Length: *
 
 smallfire:
-	idle: fire03
+	idle:
+		Filename: fire03.shp
 		Length: *
 
 litning:
+	Defaults:
+		Filename: litning.shp
 	bright:
 		Length: 4
 	dim:
@@ -410,32 +558,43 @@ litning:
 		Length: 4
 
 fireball:
-	idle: fb1
+	idle:
+		Filename: fb1.shp
 		Length: *
-	trailer: fb2
+	trailer:
+		Filename: fb2.shp
 		Length: *
 		Tick: 80
 
 meteor:
 	Defaults:
 		Length: *
-	idle: null # HACK because weapon template sequences are validated by --check-yaml
-	large: metlarge
-	small: metsmall
-	large-trailer: metltral
-	small-trailer: metstral
+	idle: # HACK because weapon template sequences are validated by --check-yaml
+		Filename: null.shp
+	large:
+		Filename: metlarge.shp
+	small:
+		Filename: metsmall.shp
+	large-trailer:
+		Filename: metltral.shp
+	small-trailer:
+		Filename: metstral.shp
 
 topolm:
-	up: topolup
-	down: topoldown
+	up:
+		Filename: topolup.shp
+	down:
+		Filename: topoldown.shp
 
 moveflsh:
-	idle: ring
+	idle:
+		Filename: ring.shp
 		Length: *
 		Tick: 30
 
 wake:
-	idle: conquer|wake1
+	idle:
+		Filename: conquer|wake1.shp
 		Length: *
 		Tick: 180
 		ZOffset: -512
@@ -444,138 +603,364 @@ wake:
 
 smallscorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15
-	sc1: burnt01
-	sc2: burnt02
-	sc3: burnt03
-	sc4: burnt04
-	sc5: burnt05
-	sc6: burnt06
+	sc1:
+		TilesetFilenames:
+			TEMPERATE: burnt01.tem
+			SNOW: burnt01.sno
+			URBAN: burnt01.urb
+			DESERT: burnt01.des
+			NEWURBAN: burnt01.ubn
+	sc2:
+		TilesetFilenames:
+			TEMPERATE: burnt02.tem
+			SNOW: burnt02.sno
+			URBAN: burnt02.urb
+			DESERT: burnt02.des
+			NEWURBAN: burnt02.ubn
+	sc3:
+		TilesetFilenames:
+			TEMPERATE: burnt03.tem
+			SNOW: burnt03.sno
+			URBAN: burnt03.urb
+			DESERT: burnt03.des
+			NEWURBAN: burnt03.ubn
+	sc4:
+		TilesetFilenames:
+			TEMPERATE: burnt04.tem
+			SNOW: burnt04.sno
+			URBAN: burnt04.urb
+			DESERT: burnt04.des
+			NEWURBAN: burnt04.ubn
+	sc5:
+		TilesetFilenames:
+			TEMPERATE: burnt05.tem
+			SNOW: burnt05.sno
+			URBAN: burnt05.urb
+			DESERT: burnt05.des
+			NEWURBAN: burnt05.ubn
+	sc6:
+		TilesetFilenames:
+			TEMPERATE: burnt06.tem
+			SNOW: burnt06.sno
+			URBAN: burnt06.urb
+			DESERT: burnt06.des
+			NEWURBAN: burnt06.ubn
 
 mediumscorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -20
-	sc7: burnt07
-	sc8: burnt08
-	sc9: burnt09
-	sc10: burnt10
+	sc7:
+		TilesetFilenames:
+			TEMPERATE: burnt07.tem
+			SNOW: burnt07.sno
+			URBAN: burnt07.urb
+			DESERT: burnt07.des
+			NEWURBAN: burnt07.ubn
+	sc8:
+		TilesetFilenames:
+			TEMPERATE: burnt08.tem
+			SNOW: burnt08.sno
+			URBAN: burnt08.urb
+			DESERT: burnt08.des
+			NEWURBAN: burnt08.ubn
+	sc9:
+		TilesetFilenames:
+			TEMPERATE: burnt09.tem
+			SNOW: burnt09.sno
+			URBAN: burnt09.urb
+			DESERT: burnt09.des
+			NEWURBAN: burnt09.ubn
+	sc10:
+		TilesetFilenames:
+			TEMPERATE: burnt10.tem
+			SNOW: burnt10.sno
+			URBAN: burnt10.urb
+			DESERT: burnt10.des
+			NEWURBAN: burnt10.ubn
 
 largescorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -30
-	sc11: burnt11
-	sc12: burnt12
+	sc11:
+		TilesetFilenames:
+			TEMPERATE: burnt11.tem
+			SNOW: burnt11.sno
+			URBAN: burnt11.urb
+			DESERT: burnt11.des
+			NEWURBAN: burnt11.ubn
+	sc12:
+		TilesetFilenames:
+			TEMPERATE: burnt12.tem
+			SNOW: burnt12.sno
+			URBAN: burnt12.urb
+			DESERT: burnt12.des
+			NEWURBAN: burnt12.ubn
 
 smallcraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15
-	cr1: crater01
-	cr2: crater02
-	cr3: crater03
-	cr4: crater04
-	cr5: crater05
-	cr6: crater06
+	cr1:
+		TilesetFilenames:
+			TEMPERATE: crater01.tem
+			SNOW: crater01.sno
+			URBAN: crater01.urb
+			DESERT: crater01.des
+			NEWURBAN: crater01.ubn
+	cr2:
+		TilesetFilenames:
+			TEMPERATE: crater02.tem
+			SNOW: crater02.sno
+			URBAN: crater02.urb
+			DESERT: crater02.des
+			NEWURBAN: crater02.ubn
+	cr3:
+		TilesetFilenames:
+			TEMPERATE: crater03.tem
+			SNOW: crater03.sno
+			URBAN: crater03.urb
+			DESERT: crater03.des
+			NEWURBAN: crater03.ubn
+	cr4:
+		TilesetFilenames:
+			TEMPERATE: crater04.tem
+			SNOW: crater04.sno
+			URBAN: crater04.urb
+			DESERT: crater04.des
+			NEWURBAN: crater04.ubn
+	cr5:
+		TilesetFilenames:
+			TEMPERATE: crater05.tem
+			SNOW: crater05.sno
+			URBAN: crater05.urb
+			DESERT: crater05.des
+			NEWURBAN: crater05.ubn
+	cr6:
+		TilesetFilenames:
+			TEMPERATE: crater06.tem
+			SNOW: crater06.sno
+			URBAN: crater06.urb
+			DESERT: crater06.des
+			NEWURBAN: crater06.ubn
 
 mediumcraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15
-	cr7: crater07
-	cr8: crater08
-	cr9: crater09
-	cr10: crater10
+	cr7:
+		TilesetFilenames:
+			TEMPERATE: crater07.tem
+			SNOW: crater07.sno
+			URBAN: crater07.urb
+			DESERT: crater07.des
+			NEWURBAN: crater07.ubn
+	cr8:
+		TilesetFilenames:
+			TEMPERATE: crater08.tem
+			SNOW: crater08.sno
+			URBAN: crater08.urb
+			DESERT: crater08.des
+			NEWURBAN: crater08.ubn
+	cr9:
+		TilesetFilenames:
+			TEMPERATE: crater09.tem
+			SNOW: crater09.sno
+			URBAN: crater09.urb
+			DESERT: crater09.des
+			NEWURBAN: crater09.ubn
+	cr10:
+		TilesetFilenames:
+			TEMPERATE: crater10.tem
+			SNOW: crater10.sno
+			URBAN: crater10.urb
+			DESERT: crater10.des
+			NEWURBAN: crater10.ubn
 
 largecraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -30
-	cr11: crater11
-	cr12: crater12
+	cr11:
+		TilesetFilenames:
+			TEMPERATE: crater11.tem
+			SNOW: crater11.sno
+			URBAN: crater11.urb
+			DESERT: crater11.des
+			NEWURBAN: crater11.ubn
+	cr12:
+		TilesetFilenames:
+			TEMPERATE: crater12.tem
+			SNOW: crater12.sno
+			URBAN: crater12.urb
+			DESERT: crater12.des
+			NEWURBAN: crater12.ubn
 
 inviso:
 	null:
+		Filename: inviso.shp
 
 icon:
-	gps: asaticon
-	invuln: ircricon
-	chrono: chroicon
-	nuke: nukeicon.png
-		AddExtension: false
-	paradrop: paraicon
-	airborne: aparicon
-	bolticon: bolticon
-	psyreveal: psyricon
-	parabombs: pbombico
-	psydom: domiicon.png
-		AddExtension: false
-	satscan: scanicon.png
-		AddExtension: false
-	spyplane: spypicon
-	tankdrop: tnkdrico.png
-		AddExtension: false
-	demeter: demeicon.png
-		AddExtension: false
-	warthogs: warticon.png
-		AddExtension: false
-	forceshield: forcicon
+	gps:
+		Filename: asaticon.shp
+	invuln:
+		Filename: ircricon.shp
+	chrono:
+		Filename: chroicon.shp
+	nuke:
+		Filename: nukeicon.png
+	paradrop:
+		Filename: paraicon.shp
+	airborne:
+		Filename: aparicon.shp
+	bolticon:
+		Filename: bolticon.shp
+	psyreveal:
+		Filename: psyricon.shp
+	parabombs:
+		Filename: pbombico.shp
+	psydom:
+		Filename: domiicon.png
+	satscan:
+		Filename: scanicon.png
+	spyplane:
+		Filename: spypicon.shp
+	tankdrop:
+		Filename: tnkdrico.png
+	demeter:
+		Filename: demeicon.png
+	warthogs:
+		Filename: warticon.png
+	forceshield:
+		Filename: forcicon.shp
 
 atomic:
-	up: nkmslup
-	down: nkmsldn
+	up:
+		Filename: nkmslup.shp
+	down:
+		Filename: nkmsldn.shp
 		Offset: 0, 144
 
 ivanbomb:
-	idle: ivanproj
+	idle:
+		Filename: ivanproj.shp
 		Length: *
 
 volkovrail:
-	idle: volkrail
+	idle:
+		Filename: volkrail.shp
 		Length: *
 
 succubusball:
-	idle: succproj
+	idle:
+		Filename: succproj.shp
 		Length: *
 
 trock01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trock01.tem
+			SNOW: trock01.sno
+			URBAN: trock01.urb
+			DESERT: trock01.des
+			NEWURBAN: trock01.ubn
 	Inherits: ^Rock
 
 trock02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trock02.tem
+			SNOW: trock02.sno
+			URBAN: trock02.urb
+			DESERT: trock02.des
+			NEWURBAN: trock02.ubn
 	Inherits: ^Rock
 
 trock03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trock03.tem
+			SNOW: trock03.sno
+			URBAN: trock03.urb
+			DESERT: trock03.des
+			NEWURBAN: trock03.ubn
 	Inherits: ^Rock
 
 trock04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trock04.tem
+			SNOW: trock04.sno
+			URBAN: trock04.urb
+			DESERT: trock04.des
+			NEWURBAN: trock04.ubn
 	Inherits: ^Rock
 
 trock05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: trock05.tem
+			SNOW: trock05.sno
+			URBAN: trock05.urb
+			DESERT: trock05.des
+			NEWURBAN: trock05.ubn
 	Inherits: ^Rock
 
 srock01:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: srock01.tem
+			SNOW: srock01.sno
+			URBAN: srock01.urb
+			DESERT: srock01.des
+			NEWURBAN: srock01.ubn
 	Inherits: ^Rock
 
 srock02:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: srock02.tem
+			SNOW: srock02.sno
+			URBAN: srock02.urb
+			DESERT: srock02.des
+			NEWURBAN: srock02.ubn
 	Inherits: ^Rock
 
 srock03:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: srock03.tem
+			SNOW: srock03.sno
+			URBAN: srock03.urb
+			DESERT: srock03.des
+			NEWURBAN: srock03.ubn
 	Inherits: ^Rock
 
 srock04:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: srock04.tem
+			SNOW: srock04.sno
+			URBAN: srock04.urb
+			DESERT: srock04.des
+			NEWURBAN: srock04.ubn
 	Inherits: ^Rock
 
 srock05:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: srock05.tem
+			SNOW: srock05.sno
+			URBAN: srock05.urb
+			DESERT: srock05.des
+			NEWURBAN: srock05.ubn
 	Inherits: ^Rock
 
 camera:
 	idle:
+		Filename: camera.shp
 		Length: *
 
 flameguy:
 	Defaults:
+		Filename: flameguy.shp
 		Facings: 8
 		Tick: 80
 	idle:
@@ -591,15 +976,22 @@ flameguy:
 twinkle:
 	Defaults:
 		Length: *
-	idle: twnk1
-	ra1-twinkle1: twinkle1
-	ra1-twinkle2: twinkle2
-	ra1-twinkle3: twinkle3
+	idle:
+		Filename: twnk1.shp
+	ra1-twinkle1:
+		Filename: twinkle1.shp
+	ra1-twinkle2:
+		Filename: twinkle2.shp
+	ra1-twinkle3:
+		Filename: twinkle3.shp
 
 v3rocket:
-	idle: null
+	idle:
+		Filename: null.shp
 
 mine:
+	Defaults:
+		Filename: mine.shp
 	idle:
 	blink1:
 		Start: 1
@@ -611,6 +1003,7 @@ mine:
 		Start: 9
 
 chronobolt:
-	idle: chronosk
+	idle:
+		Filename: chronosk.shp
 		Length: *
 		Offset: 0,23

@@ -1,78 +1,75 @@
 ^BuildingDamageFire1:
-	damagefire1: fire02
-		UseTilesetCode: false
+	damagefire1:
+		Filename: fire02.shp
 		Length: *
 		
 ^BuildingDamageFire2:
 	Inherits@damagefire: ^BuildingDamageFire1
-	damagefire2: fire03
-		UseTilesetCode: false
+	damagefire2:
+		Filename: fire03.shp
 		Length: *
 
 ^BuildingDamageFire3:
 	Inherits@damagefire: ^BuildingDamageFire2
-	damagefire3: fire02
-		UseTilesetCode: false
+	damagefire3:
+		Filename: fire02.shp
 		Length: *
 
 ^BuildingDamageFire4:
 	Inherits@damagefire: ^BuildingDamageFire3
-	damagefire4: fire03
-		UseTilesetCode: false
+	damagefire4:
+		Filename: fire03.shp
 		Length: *
 
 ^MindControllable:
-	mindcontrol: mindanim
+	mindcontrol:
+		Filename: mindanim.shp
 		Length: *
 		Offset: 0, -24, 24
-	permanent-mindcontrol: mindanimr
+	permanent-mindcontrol:
+		Filename: mindanimr.shp
 		Length: *
 		Offset: 0, -24, 24
-	charm: mindanims
+	charm:
+		Filename: mindanims.shp
 		Length: *
 		Offset: 0, -24, 24
 
 ^IvanBombable:
-	ivanbomb: mouse
-		UseTilesetCode: false
+	ivanbomb:
+		Filename: mouse.shp
 		Start: 204
 		Length: 5
 		Offset: 0, -21, 24
-		UseTilesetExtension: false
 
 ^C4Plantable:
-	c4: ts-mouse
-		UseTilesetCode: false
+	c4:
+		Filename: ts-mouse.shp
 		Start: 309
 		Length: 10
 		Offset: 0, 0, 24
-		UseTilesetExtension: false
 
 ^TanyaC4Plantable:
-	tanyac4: mouse
-		UseTilesetCode: false
+	tanyac4:
+		Filename: mouse.shp
 		Start: 309
 		Length: 10
 		Offset: 0, 0, 24
-		UseTilesetExtension: false
 
 ^AffectedByEMP:
-	emp-overlay: emp_fx01
-		UseTilesetCode: false
+	emp-overlay:
+		Filename: emp_fx01.shp
 		Length: *
 		Offset: 0, 0, 24
-		UseTilesetExtension: false
 
 ^AffectedByThor:
-	thor-overlay: thorarmor
-		UseTilesetCode: false
+	thor-overlay:
+		Filename: thorarmor.shp
 		Length: *
 		Offset: 0, 0, 24
-		UseTilesetExtension: false
 
 ^HuskBurn:
-	huskfire: ra1fire
-		UseTilesetCode: false
+	huskfire:
+		Filename: ra1fire.shp
 		Length: *
 		Offset: 0, -10, 24
-		UseTilesetExtension: false

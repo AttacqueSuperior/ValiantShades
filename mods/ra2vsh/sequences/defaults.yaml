@@ -21,9 +21,11 @@
 		Start: 101
 		Length: 15
 	paradrop:
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 ^BasicInfantry:
 	Inherits: ^Animal
@@ -41,48 +43,62 @@
 		Start: 149
 	die3:
 		Combine:
-			laserguy:
+			0:
+				Filename: laserguy.shp
 				Length: *
 				FlipX: true
-			flameguy:
+			1:
+				Filename: flameguy.shp
 				Start: 44
 				Length: 104
 				FlipX: true
 		Length: *
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die5: yuridie
+	die5:
+		Filename: yuridie.shp
 		Length: *
 		Tick: 80
 	die6:
 		Combine:
-			electro:
+			0:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			1:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			2:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			3:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			4:
+				Filename: electro.shp
 				Length: *
 		Length: *
 		Tick: 80
-	die10: brutdie
+	die10:
+		Filename: brutdie.shp
 		Length: *
 		Tick: 80
 	die11:
 		Combine:
-			tselectro:
+			0:
+				Filename: tselectro.shp
 				Length: 3
-			tselectro:
+			1:
+				Filename: tselectro.shp
 				Length: 3
-			tselectro:
+			2:
+				Filename: tselectro.shp
 				Length: *
 		Length: *
 		Tick: 80
-	die12: kamimake
+	die12:
+		Filename: kamimake.shp
 		Length: *
 		Tick: 80
 
@@ -158,7 +174,6 @@
 ^bridge:
 	Defaults:
 		ZOffset: -1c511
-		UseTilesetExtension: true
 		Start: 1
 		ZRamp: 1
 		Offset: 0, 0, 0.5
@@ -169,28 +184,16 @@
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 3
 	make:
 		Length: 25
 		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
-			DESERT: DESERT
-			NEWURBAN: NEWURBAN
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
 	icon:
 		Offset: 0,0
-		UseTilesetCode: false
 
 ^TechStructure:
 	Inherits@IvanBomb: ^IvanBombable
@@ -198,7 +201,6 @@
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -217,7 +219,6 @@
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -245,18 +246,28 @@ vehicle-husks:
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetCode: true
 		Offset: 0,-15
-	idle: causfgl
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctusfgl.shp
+			SNOW: causfgl.shp
+			URBAN: cuusfgl.shp
+			DESERT: cdusfgl.shp
+			NEWURBAN: cnusfgl.shp
 		ShadowStart: 4
-	damaged-idle: causfgl
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: ctusfgl.shp
+			SNOW: causfgl.shp
+			URBAN: cuusfgl.shp
+			DESERT: cdusfgl.shp
+			NEWURBAN: cnusfgl.shp
 		Start: 1
 		ShadowStart: 5
 
 ^Wall:
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
 	idle:
 		Length: 16
 		ShadowStart: 32
@@ -266,7 +277,6 @@ vehicle-husks:
 		ShadowStart: 48
 	icon:
 		Offset: 0,0
-		UseTilesetCode: false
 
 ^Pole:
 	Inherits@IvanBomb: ^IvanBombable
@@ -274,7 +284,6 @@ vehicle-husks:
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetExtension: true
 	idle:
 		ShadowStart: 1
 	autobounds:
@@ -285,7 +294,6 @@ vehicle-husks:
 	Inherits@tanyac4: ^TanyaC4Plantable
 	Inherits@emp: ^AffectedByEMP
 	Defaults:
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 	autobounds:
@@ -293,20 +301,16 @@ vehicle-husks:
 ^Rock:
 	Defaults:
 		Offset: 0, -15
-		UseTilesetExtension: true
 	idle:
 		ShadowStart: 1
 	autobounds:
 
 ^Drill:
-	Defaults: cgdrill
+	Defaults:
+		Filename: cgdrill.shp
+		TilesetFilenames:
+			SNOW: cadrill.shp
 		Offset: -1, -16
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
-			DESERT: GENERIC
-			NEWURBAN: GENERIC
 	idle:
 		ShadowStart: 11
 	active:
@@ -319,6 +323,4 @@ vehicle-husks:
 ^Tree:
 	idle:
 		ShadowStart: 1
-		UseTilesetExtension: true
 	autobounds:
-		UseTilesetExtension: true

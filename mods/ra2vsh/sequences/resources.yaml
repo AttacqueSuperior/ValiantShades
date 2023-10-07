@@ -1,52 +1,211 @@
 shroud:
 	shroud:
+		Filename: shroud.shp
 		Length: *
-	fog: fog
+	fog:
+		Filename: fog.shp
 		Length: *
 
 resources:
 	Defaults:
-		UseTilesetExtension: true
 		Length: 12
 		ShadowStart: 12
 		Offset: 0, -15
-		TilesetOverrides:
-			DESERT: TEMPERATE
-	tib01: tib01
-	tib02: tib02
+	tib01:
+		Filename: tib01.tem
+		TilesetFilenames:
+			SNOW: tib01.sno
+			URBAN: tib01.urb
+			NEWURBAN: tib01.ubn
+	tib02:
+		Filename: tib02.tem
+		TilesetFilenames:
+			SNOW: tib02.sno
+			URBAN: tib02.urb
+			NEWURBAN: tib02.ubn
 		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
-	tib03: tib03
-	tib04: tib04
-	tib05: tib05
-	tib06: tib06
-	tib07: tib07
-	tib08: tib08
-	tib09: tib09
-	tib10: tib10
-	tib11: tib11
-	tib12: tib12
-	tib13: tib13
-	tib14: tib14
+	tib03:
+		Filename: tib03.tem
+		TilesetFilenames:
+			SNOW: tib03.sno
+			URBAN: tib03.urb
+			NEWURBAN: tib03.ubn
+	tib04:
+		Filename: tib04.tem
+		TilesetFilenames:
+			SNOW: tib04.sno
+			URBAN: tib04.urb
+			NEWURBAN: tib04.ubn
+	tib05:
+		Filename: tib05.tem
+		TilesetFilenames:
+			SNOW: tib05.sno
+			URBAN: tib05.urb
+			NEWURBAN: tib05.ubn
+	tib06:
+		Filename: tib06.tem
+		TilesetFilenames:
+			SNOW: tib06.sno
+			URBAN: tib06.urb
+			NEWURBAN: tib06.ubn
+	tib07:
+		Filename: tib07.tem
+		TilesetFilenames:
+			SNOW: tib07.sno
+			URBAN: tib07.urb
+			NEWURBAN: tib07.ubn
+	tib08:
+		Filename: tib08.tem
+		TilesetFilenames:
+			SNOW: tib08.sno
+			URBAN: tib08.urb
+			NEWURBAN: tib08.ubn
+	tib09:
+		Filename: tib09.tem
+		TilesetFilenames:
+			SNOW: tib09.sno
+			URBAN: tib09.urb
+			NEWURBAN: tib09.ubn
+	tib10:
+		Filename: tib10.tem
+		TilesetFilenames:
+			SNOW: tib10.sno
+			URBAN: tib10.urb
+			NEWURBAN: tib10.ubn
+	tib11:
+		Filename: tib11.tem
+		TilesetFilenames:
+			SNOW: tib11.sno
+			URBAN: tib11.urb
+			NEWURBAN: tib11.ubn
+	tib12:
+		Filename: tib12.tem
+		TilesetFilenames:
+			SNOW: tib12.sno
+			URBAN: tib12.urb
+			NEWURBAN: tib12.ubn
+	tib13:
+		Filename: tib13.tem
+		TilesetFilenames:
+			SNOW: tib13.sno
+			URBAN: tib13.urb
+			NEWURBAN: tib13.ubn
+	tib14:
+		Filename: tib14.tem
+		TilesetFilenames:
+			SNOW: tib14.sno
+			URBAN: tib14.urb
+			NEWURBAN: tib14.ubn
 		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
-	tib15: tib15
-	tib16: tib16
-	tib17: tib17
-	tib18: tib18
-	tib19: tib19
-	tib20: tib20
-	gem01: gem01
-	gem02: gem02
-	gem03: gem03
-	gem04: gem04
-	gem05: gem05
-	gem06: gem06
-	gem07: gem07
-	gem08: gem08
-	gem09: gem09
-	gem10: gem10
-	gem11: gem11
-	gem12: gem12
-	tdtib01: tdtib01
-		UseTilesetExtension: false
+	tib15:
+		Filename: tib15.tem
+		TilesetFilenames:
+			SNOW: tib15.sno
+			URBAN: tib15.urb
+			NEWURBAN: tib15.ubn
+	tib16:
+		Filename: tib16.tem
+		TilesetFilenames:
+			SNOW: tib16.sno
+			URBAN: tib16.urb
+			NEWURBAN: tib16.ubn
+	tib17:
+		Filename: tib17.tem
+		TilesetFilenames:
+			SNOW: tib17.sno
+			URBAN: tib17.urb
+			NEWURBAN: tib17.ubn
+	tib18:
+		Filename: tib18.tem
+		TilesetFilenames:
+			SNOW: tib18.sno
+			URBAN: tib18.urb
+			NEWURBAN: tib18.ubn
+	tib19:
+		Filename: tib19.tem
+		TilesetFilenames:
+			SNOW: tib19.sno
+			URBAN: tib19.urb
+			NEWURBAN: tib19.ubn
+	tib20:
+		Filename: tib20.tem
+		TilesetFilenames:
+			SNOW: tib20.sno
+			URBAN: tib20.urb
+			NEWURBAN: tib20.ubn
+	gem01:
+		Filename: gem01.tem
+		TilesetFilenames:
+			SNOW: gem01.sno
+			URBAN: gem01.urb
+			NEWURBAN: gem01.ubn
+	gem02:
+		Filename: gem02.tem
+		TilesetFilenames:
+			SNOW: gem02.sno
+			URBAN: gem02.urb
+			NEWURBAN: gem02.ubn
+	gem03:
+		Filename: gem03.tem
+		TilesetFilenames:
+			SNOW: gem03.sno
+			URBAN: gem03.urb
+			NEWURBAN: gem03.ubn
+	gem04:
+		Filename: gem04.tem
+		TilesetFilenames:
+			SNOW: gem04.sno
+			URBAN: gem04.urb
+			NEWURBAN: gem04.ubn
+	gem05:
+		Filename: gem05.tem
+		TilesetFilenames:
+			SNOW: gem05.sno
+			URBAN: gem05.urb
+			NEWURBAN: gem05.ubn
+	gem06:
+		Filename: gem06.tem
+		TilesetFilenames:
+			SNOW: gem06.sno
+			URBAN: gem06.urb
+			NEWURBAN: gem06.ubn
+	gem07:
+		Filename: gem07.tem
+		TilesetFilenames:
+			SNOW: gem07.sno
+			URBAN: gem07.urb
+			NEWURBAN: gem07.ubn
+	gem08:
+		Filename: gem08.tem
+		TilesetFilenames:
+			SNOW: gem08.sno
+			URBAN: gem08.urb
+			NEWURBAN: gem08.ubn
+	gem09:
+		Filename: gem09.tem
+		TilesetFilenames:
+			SNOW: gem09.sno
+			URBAN: gem09.urb
+			NEWURBAN: gem09.ubn
+	gem10:
+		Filename: gem10.tem
+		TilesetFilenames:
+			SNOW: gem10.sno
+			URBAN: gem10.urb
+			NEWURBAN: gem10.ubn
+	gem11:
+		Filename: gem11.tem
+		TilesetFilenames:
+			SNOW: gem11.sno
+			URBAN: gem11.urb
+			NEWURBAN: gem11.ubn
+	gem12:
+		Filename: gem12.tem
+		TilesetFilenames:
+			SNOW: gem12.sno
+			URBAN: gem12.urb
+			NEWURBAN: gem12.ubn
+	tdtib01:
+		Filename: tdtib01.shp
 		ShadowStart: -1
 		Offset: 0, 0

@@ -1,4 +1,6 @@
 cow:
+	Defaults:
+		Filename: cow.shp
 	Inherits: ^Animal
 	stand:
 		ShadowStart: 116
@@ -17,6 +19,8 @@ cow:
 		ShadowStart: 217
 
 all:
+	Defaults:
+		Filename: all.shp
 	Inherits: ^Animal
 	stand:
 		ShadowStart: 164
@@ -33,6 +37,8 @@ all:
 		ShadowStart: 217
 
 polarb:
+	Defaults:
+		Filename: polarb.shp
 	Inherits: ^Animal
 	run:
 		Tick: 120
@@ -42,6 +48,8 @@ polarb:
 		Facings: 8
 
 josh:
+	Defaults:
+		Filename: josh.shp
 	Inherits: ^Animal
 	run:
 		Tick: 120
@@ -50,53 +58,72 @@ josh:
 		Length: 6
 		Facings: 8
 	die3:
+		Filename:
 		Combine:
-			laserguy:
+			0:
+				Filename: laserguy.shp
 				Length: *
 				FlipX: true
-			flameguy:
+			1:
+				Filename: flameguy.shp
 				Start: 44
 				Length: 104
 				FlipX: true
 		Length: *
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die5: yuridie
+	die5:
+		Filename: yuridie.shp
 		Length: *
 		Tick: 80
 	die6:
+		Filename:
 		Combine:
-			electro:
+			0:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			1:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			2:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			3:
+				Filename: electro.shp
 				Length: 3
-			electro:
+			4:
+				Filename: electro.shp
 				Length: *
 		Length: *
 		Tick: 80
-	die10: brutdie
+	die10:
+		Filename: brutdie.shp
 		Length: *
 		Tick: 80
 	die11:
+		Filename:
 		Combine:
-			tselectro:
+			0:
+				Filename: tselectro.shp
 				Length: 3
-			tselectro:
+			1:
+				Filename: tselectro.shp
 				Length: 3
-			tselectro:
+			2:
+				Filename: tselectro.shp
 				Length: *
 		Length: *
 		Tick: 80
-	die12: kamimake
+	die12:
+		Filename: kamimake.shp
 		Length: *
 		Tick: 80
 
 caml:
+	Defaults:
+		Filename: caml.shp
 	Inherits: ^Animal
 	run:
 		Tick: 120

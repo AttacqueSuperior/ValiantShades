@@ -1,11 +1,16 @@
 aengineer:
+	Defaults:
+		Filename: aengineer.shp
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	paradrop:
 		Start: 244
-	icon: engnicon
+	icon:
+		Filename: engnicon.shp
 
 adog:
+	Defaults:
+		Filename: adog.shp
 	Inherits: ^BasicInfantry
 	cheer:
 		Start: 164
@@ -24,9 +29,12 @@ adog:
 	shoot:
 		Start: 116
 		Length: 6
-	icon: adogicon
+	icon:
+		Filename: adogicon.shp
 
 dlph:
+	Defaults:
+		Filename: dlph.shp
 	Inherits@IvanBomb: ^IvanBombable
 	stand:
 		Start: 48
@@ -47,12 +55,14 @@ dlph:
 		Start: 56
 		Length: 6
 		Facings: 8
-	icon: dlphicon
+	icon:
+		Filename: dlphicon.shp
 
 e1:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: gi
+	Defaults:
+		Filename: gi.shp
 	run:
 		Tick: 120
 	deployed:
@@ -72,12 +82,14 @@ e1:
 		Start: 363
 	cheer:
 		Start: 364
-	icon: giicon
+	icon:
+		Filename: giicon.shp
 
 ggi:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: ggi2
+	Defaults:
+		Filename: ggi2.shp
 	liedown:
 		Start: 164
 	standup:
@@ -88,7 +100,8 @@ ggi:
 		Start: 252
 	run:
 		Tick: 120
-	deployed: ggi
+	deployed:
+		Filename: ggi.shp
 		Start: 315
 		Facings: 8
 	deploy:
@@ -97,7 +110,8 @@ ggi:
 	undeploy:
 		Frames: 314, 313, 312, 311, 310, 309, 308, 307, 306, 305, 304, 303, 302, 301, 300
 		Length: 15
-	shoot-deployed: ggi
+	shoot-deployed:
+		Filename: ggi.shp
 		Start: 323
 		Length: 6
 		Facings: 8
@@ -105,16 +119,22 @@ ggi:
 		Start: 315
 	cheer:
 		Start: 196
-	icon: gdgiicon
+	icon:
+		Filename: gdgiicon.shp
 
 snipe:
+	Defaults:
+		Filename: snipe.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	paradrop:
 		Start: 292
-	icon: snipicon
+	icon:
+		Filename: snipicon.shp
 
 gren:
+	Defaults:
+		Filename: gren.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -151,10 +171,12 @@ gren:
 		Length: 10
 	paradrop:
 		Start: 541
-	icon: grenicon.png
-		AddExtension: false
+	icon:
+		Filename: grenicon.png
 
 spy:
+	Defaults:
+		Filename: spy.shp
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	liedown:
@@ -163,10 +185,14 @@ spy:
 		Start: 180
 	cheer:
 		Start: 196
-	paradrop: spyfix
-	icon: spyicon
+	paradrop:
+		Filename: spyfix.shp
+	icon:
+		Filename: spyicon.shp
 
 seal: # TODO: seala on SNOW
+	Defaults:
+		Filename: seal.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -208,9 +234,12 @@ seal: # TODO: seala on SNOW
 		Tick: 120
 	paradrop:
 		Start: 602
-	icon: sealicon
+	icon:
+		Filename: sealicon.shp
 
 ccomand:
+	Defaults:
+		Filename: ccomand.shp
 	Inherits: seal
 	-swim-stand:
 	-swim-idle1:
@@ -222,19 +251,28 @@ ccomand:
 	cheer:
 		Start: 340
 	-swim-cheer:
-	paradrop: ccomand-paradrop
+	paradrop:
+		Filename: ccomand-paradrop.shp
 		Start: 0
-	icon: ccomicon
+	icon:
+		Filename: ccomicon.shp
 	
 ptroop:
+	Defaults:
+		Filename: ptroop.shp
 	Inherits: ccomand
-	muzzle: yuricntl
+	muzzle:
+		Filename: yuricntl.shp
 		Length: *
-	paradrop: ptroop-paradrop
+	paradrop:
+		Filename: ptroop-paradrop.shp
 		Start: 0
-	icon: psicicon
+	icon:
+		Filename: psicicon.shp
 
 tany:
+	Defaults:
+		Filename: tany.shp
 	Inherits: ^ArmedInfantry
 	run:
 		Tick: 120
@@ -275,9 +313,12 @@ tany:
 		Tick: 120
 	paradrop:
 		Start: 602
-	icon: tanyicon
+	icon:
+		Filename: tanyicon.shp
 
 tanya2:
+	Defaults:
+		Filename: tanya2.shp
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@Thor: ^AffectedByThor
 	stand:
@@ -311,10 +352,12 @@ tanya2:
 		Start: 470
 		Length: 20
 		Tick: 80
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Tick: 80
 	shoot:
@@ -345,22 +388,27 @@ tanya2:
 		Facings: 8
 	paradrop:
 		Start: 113
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
-	icon: tanyicon
+	icon:
+		Filename: tanyicon.shp
 
 tanya2.husk:
-	idle: tanya2
+	idle:
+		Filename: tanya2.shp
 		Start: 470
 		Length: 8
 		Tick: 80
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
 
 jumpjet:
 	Inherits@IvanBomb: ^IvanBombable
 	Inherits@Thor: ^AffectedByThor
-	Defaults: rock
+	Defaults:
+		Filename: rock.shp
 	stand:
 		Facings: 8
 	run:
@@ -395,10 +443,12 @@ jumpjet:
 		Length: 15
 		Facings: 2
 		Tick: 80
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Tick: 80
 	shoot:
@@ -432,20 +482,26 @@ jumpjet:
 		Tick: 100
 	paradrop:
 		Start: 418
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
-	icon: jjeticon
+	icon:
+		Filename: jjeticon.shp
 
 jumpjet.husk:
-	idle: rock
+	idle:
+		Filename: rock.shp
 		Start: 340
 		Length: 16
 		Facings: 2
 		Tick: 120
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
 
 cleg:
+	Defaults:
+		Filename: cleg.shp
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -466,9 +522,12 @@ cleg:
 		Start: 116
 	cheer:
 		Start: 165
-	icon: clegicon
+	icon:
+		Filename: clegicon.shp
 
 dione:
+	Defaults:
+		Filename: dione.shp
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -485,9 +544,12 @@ dione:
 		Start: 116
 		Facings: 8
 		Length: 6
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 artemis:
+	Defaults:
+		Filename: artemis.shp
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
 	stand:
@@ -509,16 +571,19 @@ artemis:
 	die2:
 		Start: 246
 		Length: 12
-	die2-explosion: artemisdie2
+	die2-explosion:
+		Filename: artemisdie2.shp
 		Length: *
 	shoot:
 		Start: 72
 		Facings: 8
 		Length: 6
-	icon: arteicon.png
-		AddExtension: false
+	icon:
+		Filename: arteicon.png
 
 fairy:
+	Defaults:
+		Filename: fairy.shp
 	Inherits: ^BasicInfantry
 	stand:
 		Facings: 8
@@ -545,10 +610,12 @@ fairy:
 	cheer:
 		Start: 426
 		Length: 32
-	icon: fairicon.png
-		AddExtension: false
+	icon:
+		Filename: fairicon.png
 
 hirano:
+	Defaults:
+		Filename: hirano.shp
 	Inherits: ^BasicInfantry
 	stand:
 		Facings: 8
@@ -584,10 +651,12 @@ hirano:
 	deploy:
 		Start: 302
 		Length: 25
-	icon: hiraicon.png
-		AddExtension: false
+	icon:
+		Filename: hiraicon.png
 
 marks:
+	Defaults:
+		Filename: marks.shp
 	Inherits: seal
 	-swim-stand:
 	-swim-idle1:
@@ -601,4 +670,5 @@ marks:
 	-swim-cheer:
 	paradrop:
 		Start: 348
-	icon: ccomicon
+	icon:
+		Filename: ccomicon.shp

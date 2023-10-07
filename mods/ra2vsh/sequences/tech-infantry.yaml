@@ -1,4 +1,6 @@
 init:
+	Defaults:
+		Filename: init.shp
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	run:
@@ -25,9 +27,12 @@ init:
 		Start: 305
 	cheer:
 		Start: 201
-	icon: initicon
+	icon:
+		Filename: initicon.shp
 
 brute:
+	Defaults:
+		Filename: brute.shp
 	Inherits: ^ArmedInfantry
 	run:
 		Tick: 120
@@ -47,6 +52,8 @@ brute:
 		Start: 284
 	cheer:
 		Start: 276
-	mutate: gendeath
+	mutate:
+		Filename: gendeath.shp
 		Length: 60
-	icon: bruticon
+	icon:
+		Filename: bruticon.shp
