@@ -642,9 +642,9 @@ gagate_a:
 			URBAN: gugate_a.shp
 			DESERT: gdgate_a.shp
 			NEWURBAN: gngate_a.shp
-		Start: 10
-		Length: -10
-		ShadowStart: 30
+		Frames: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21
+		Length: 10
+		ShadowStart: 10
 	autobounds:
 		Filename: gtgate_a.shp
 
