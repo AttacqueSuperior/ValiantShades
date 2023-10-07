@@ -7,7 +7,7 @@ caoild:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	EngineerRepairable:
+	InstantlyRepairable:
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	CashTrickler:
@@ -690,7 +690,7 @@ capowr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	EngineerRepairable:
+	InstantlyRepairable:
 	GrantConditionIfOwnerIsNeutral:
 		Condition: ownerless
 	Power:

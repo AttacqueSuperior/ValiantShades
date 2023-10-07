@@ -24,7 +24,7 @@ engineer:
 		HP: 75000
 	Passenger:
 		CustomPipType: blue
-	EngineerRepair:
+	InstantlyRepairs:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
 	Captures:

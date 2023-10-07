@@ -566,7 +566,7 @@ casin03s:
 
 caurb01:
 	Inherits: ^Prop
-	Defaults: 
+	Defaults:
 		Offset: 0, -15
 	idle:
 		Filename: cgurb01.shp
@@ -578,7 +578,7 @@ caurb01:
 
 caurb02:
 	Inherits: ^Prop
-	Defaults: 
+	Defaults:
 		Offset: 0, -15
 	idle:
 		Filename: cgurb02.shp
@@ -590,7 +590,7 @@ caurb02:
 
 caurb03:
 	Inherits: ^Prop
-	Defaults: 
+	Defaults:
 		Offset: 0, -15
 	idle:
 		Filename: cuurb03.shp
@@ -609,7 +609,7 @@ ammo01:
 
 cabhut:
 	Inherits: ^Prop
-	Defaults: 
+	Defaults:
 		Offset: 0, -15
 	idle:
 		Filename: cabhut.shp
@@ -624,7 +624,7 @@ cabhut:
 
 gagate_a:
 	Inherits: ^Prop
-	Defaults: 
+	Defaults:
 		Offset: 0, -15
 	idle:
 		TilesetFilenames:

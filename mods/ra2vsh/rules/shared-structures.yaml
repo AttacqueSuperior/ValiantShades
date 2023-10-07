@@ -242,7 +242,7 @@
 	RevealOnDeath:
 		Radius: 3c0
 		DeathTypes: DefaultDeath
-	TiberianSunRefinery:
+	Refinery:
 		DockOffset: 3,1
 		ShowTicks: True
 		TickLifetime: 30

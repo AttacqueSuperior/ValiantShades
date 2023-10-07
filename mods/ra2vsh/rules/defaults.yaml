@@ -146,7 +146,7 @@
 	RepairableBuilding:
 		RepairStep: 7000
 		RequiresCondition: !build-incomplete && !being-warped
-	EngineerRepairable:
+	InstantlyRepairable:
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	ShakeOnDeath:
